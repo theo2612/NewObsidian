@@ -1,0 +1,51 @@
+- Group membership
+	- Compromising an Azure AD account with ability to change group permissions can allow lateral movement to RBAC
+		- Groups:
+			- Global Administrator
+			- User Administrator
+			- Groups Administrator
+			- Directory Writers
+			- Any custom role with `microsoft.directory/groups/members/update`
+	- Identifying privileged groups in subscriptions
+		- Review the Azure AD sign-in log
+		- AzureAD (or AzureADPreview)
+			- Get successful Azure Portal sign-ins in the time range
+				- `Get-AzureADAuditSignInLogs -Filter "appDisplayName eq RAzure Portal' and createdDateTime gt $((Get-Date).AddDays(-1). ToString('yyyy-MM-dd')) and status/errorCode eq 0"`
+			- Get successful Azure PowerShell sign-ins in the time range
+				- `Get-AzureADAuditSignInLogs -Filter "appDisplayName eq 'Microsoft Azure PowerShell' and createdDateTime gt $((GetDate).AddDays(-1).ToString('yyyy-MM-dd')) and status/errorCode eq 0"`
+			- Filter for interesting authentication properties
+				- `Get-AzureADAuditSignInLogs -Filter "appDisplayName eq 'Azure Portal' and createdDateTime gt $((Get-Date).AddDays(-1).ToString('yyyy-MM-dd')) and status/errorCode eq 0" | Select-Object UserPrincipalName, MfaDetail, AppliedConditionalAccessPolicies`
+			- Must have one of these permissions in Azure AD:
+				- Security Administrator
+				- Security Reader
+				- Report Reader
+				- Any custom role with `microsoft.directory/groups/allProperties/allTasks` or `microsoft.directory/signInReports/allProperties/read`
+
+- Resetting user passwords
+	- Requires one of these roles:
+		- Password Administrator
+		- Helpdesk Administrator
+		- Authentication Administrator
+		- User Administrator
+		- Privileged Authentication Administrator (unlimited password permissions)
+
+- Exploiting service principal secrets
+	- Requires one of these roles:
+		- Application Administrator
+		- Cloud Application Administrator
+		- Directory Synchronization Accounts
+		- Hybrid Identity Administrator
+		- Any custom role with the following permission: `microsoft.directory/servicePrincipals/credentials/update`
+	- Identify Service Principals that have access to Azure resources (non-interactive logins)
+	- Get app ID for application and add a new client secret
+	- Authenticate as the service principal (and hopefully gain Contributor which is the default in Azure Dev-Ops)
+
+- Gain access to root management group
+	- Can only be done as Global Administrator
+	- Implicitly grants User Access Administrator to all subscriptions and management groups
+	- Azure CLI
+		- Use Global Administrator account to assign itself complete permissions to assign access to any subscription or management group
+			- `az rest --method post --url "/providers/Microsoft.Authorization/elevateAccess?api-version=2016-07-01"`
+		- Assign subscription Owner role to Global Administrator account
+			- `userPrincipalName=$(az ad signed-in-user show --query userPrincipalName -o tsv)`
+			- `az role assignment create --role "Owner" --assignee $userPrincipalName`

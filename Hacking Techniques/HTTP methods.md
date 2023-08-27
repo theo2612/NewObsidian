@@ -1,0 +1,3 @@
+[https://www.tutorialspoint.com/http/http_methods.htm](https://www.tutorialspoint.com/http/http_methods.htm)  
+
+![image](https://i.imgur.com/zK3KABc.png)

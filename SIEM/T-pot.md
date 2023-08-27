@@ -1,0 +1,2 @@
+[T-Pot - The All In One Multi Honeypot Platform](https://github.com/telekom-security/tpotce)
+[# Deploying T-Pot — The All In One Honeypot Platform on AWS EC2](https://medium.com/@mkmety/deploying-t-pot-the-all-in-one-honeypot-platform-on-aws-ec2-33f019c645fb)

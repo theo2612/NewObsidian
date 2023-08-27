@@ -1,0 +1,1 @@
+So the way I studied for this massive memorization test (NCLEX) was by taking a bunch of practice questions. Do like 20-30 a day, all in one sitting like u would a real test. Then go thru the answers and see what u got wrong and right. That’s it. Do that everyday, just eat practice questions for breakfast lunch and dinner

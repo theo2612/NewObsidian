@@ -1,0 +1,2 @@
+[Protocol - What the massive Optus breach tells us about API security risks](https://www.protocol.com/bulletins/optus-data-breach-api-security)
+[News.com.au - # ‘Not the villains’: Optus CEO Kelly Bayer Rosmarin’s bizarre data hack claim](https://www.news.com.au/technology/online/hacking/not-the-villains-optus-ceo-kelly-bayer-rosmarins-bizarre-data-hack-claim/news-story/aa6e7b74c97a19bcb25facab455e3085)

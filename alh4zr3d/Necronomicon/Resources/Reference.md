@@ -1,0 +1,53 @@
+- Active Directory
+	- https://zer1t0.gitlab.io/posts/attacking_ad/
+	- https://adsecurity.org/
+	- https://hausec.com/2019/09/09/bloodhound-cypher-cheatsheet/
+- Cobalt Strike
+	- Resource Kit - https://www.youtube.com/watch?v=ka7ICHxt9jU
+	- Artifact Kit - https://www.youtube.com/watch?v=6mC21kviwG4
+	- https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/appendix-a_beacon-opsec-considerations.htm - OPSEC considerations
+	- External C2
+		- https://download.cobaltstrike.com/downloads/externalc2spec.pdf - Documentation from CS
+		- https://github.com/Und3rf10w/external_c2_framework (Python)
+		- https://github.com/rasta-mouse/ExternalC2.NET (.NET)
+		- https://github.com/outflanknl/external_c2 (C++)
+- OSINT
+	- https://onlinesecurityworld.com/what-is-shodan-and-how-to-use-it/
+	- www.crimeflare.org
+- LDAP
+	- https://ldapwiki.com/
+- AV Evasion/Applocker Bypass
+	- https://macrosec.tech/index.php/2020/09/20/creating-a-fud-backdoor/
+	- https://github.com/p3nt4/PowerShdll
+- C2
+	- https://www.thec2matrix.com/matrix
+- Tactics
+	- https://attack.mitre.org/matrices/enterprise/
+	- https://redteam.guide/docs/
+- Docs
+	- https://docs.microsoft.com/en-us/openspecs/windows_protocols/MS-WINPROTLP/e36c976a-6263-42a8-b119-7a3cc41ddd2a
+- Lateral Movement
+	- https://shellz.club/pass-the-hash-with-rdp-in-2019/
+- Connection
+	- https://systemoverlord.com/2018/01/20/socat-as-a-handler-for-multiple-reverse-shells.html - Socat encrypted reverse shell handler
+- Specific Exploits
+	- https://pentestlab.blog/2021/08/17/domain-escalation-printnightmare/
+	- https://pentestlab.blog/2021/08/16/hivenightmare/
+- Credential Guard
+	- https://blog.xpnsec.com/exploring-mimikatz-part-1/
+	- https://teamhydra.blog/2020/08/25/bypassing-credential-guard/
+- Reporting
+	- https://redteam.guide/docs/templates/report_template/
+	- https://redteam.guide/
+- Docker
+	- https://blog.ropnop.com/docker-for-pentesters/
+- Ops
+	- https://www.trustedsec.com/blog/obsidian-taming-a-collective-consciousness/
+	- https://github.com/GhostManager/Ghostwriter
+	- http://freemind.sourceforge.net/wiki/index.php/Main_Page
+	- https://github.com/SecurityRiskAdvisors/VECTR
+	- https://github.com/Renegade-Labs/5head
+- Blue Team Shit (DansGame)
+	- https://github.com/Sentinel-One/CobaltStrikeParser - Harvest staged CS beacon shellcode and mine for intel
+- Programming
+	- https://docs.microsoft.com/en-us/dotnet/framework/interop/marshalling-data-with-platform-invoke - PInvoke/Marshall type mappings

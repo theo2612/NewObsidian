@@ -1,0 +1,1 @@
+[https://www.tutorialspoint.com/security_testing/testing_cross_site_scripting.htm](https://www.tutorialspoint.com/security_testing/testing_cross_site_scripting.htm)

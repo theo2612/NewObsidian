@@ -1,0 +1,3 @@
+- Disable staging
+	- `set host_stage "false";`
+	- Restart teamserver

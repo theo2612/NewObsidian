@@ -1,0 +1,22 @@
+As with TCP scans, SYN scans (`-sS`) are used to scan the TCP port-range of a target or targets; however, the two scan types work slightly differently. SYN scans are sometimes referred to as "_Half-open"_ scans, or _"Stealth"_ scans.  
+  
+Where TCP scans perform a full three-way handshake with the target, SYN scans sends back a RST TCP packet after receiving a SYN/ACK from the server (this prevents the server from repeatedly trying to make the request). In other words, the sequence for scanning an **open** port looks like this:  
+![image](https://i.imgur.com/cPzF0kU.png)  
+![image](https://i.imgur.com/bcgeZmI.png)  
+  
+  
+This has a variety of advantages for us as hackers:  
+• It can be used to bypass older Intrusion Detection systems as they are looking out for a full three way handshake. This is often no longer the case with modern IDS solutions; it is for this reason that SYN scans are still frequently referred to as "stealth" scans.  
+• SYN scans are often not logged by applications listening on open ports, as standard practice is to log a connection once it's been fully established. Again, this plays into the idea of SYN scans being stealthy.  
+• Without having to bother about completing (and disconnecting from) a three-way handshake for every port, SYN scans are significantly faster than a standard TCP Connect scan.  
+  
+There are, however, a couple of disadvantages to SYN scans, namely:  
+◇ They require sudo permissions[1] in order to work correctly in Linux. This is because SYN scans require the ability to create raw packets (as opposed to the full TCP handshake), which is a privilege only the root user has by default.  
+◇ Unstable services are sometimes brought down by SYN scans, which could prove problematic if a client has provided a production environment for the test.  
+  
+All in all, the pros outweigh the cons.  
+For this reason, SYN scans are the default scans used by Nmap _if run with sudo permissions_. If run **without** sudo permissions, Nmap defaults to the TCP Connect scan we saw in the previous task.  
+When using a SYN scan to identify closed and filtered ports, the exact same rules as with a TCP Connect scan apply.  
+If a port is closed then the server responds with a RST TCP packet. If the port is filtered by a firewall then the TCP SYN packet is either dropped, or spoofed with a TCP reset.  
+In this regard, the two scans are identical: the big difference is in how they handle _open_ ports.  
+[1] SYN scans can also be made to work by giving Nmap the CAP_NET_RAW, CAP_NET_ADMIN and CAP_NET_BIND_SERVICE capabilities; however, this may not allow many of the NSE scripts to run properly.

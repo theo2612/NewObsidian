@@ -1,0 +1,1 @@
+1st boot - sudo apt update && sudo apt full -upgrade -y

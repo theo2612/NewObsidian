@@ -1,0 +1,10 @@
+{
+  "baseFontSize": 29,
+  "translucency": true,
+  "cssTheme": "Things",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "side-menu-style"
+  ],
+  "accentColor": ""
+}

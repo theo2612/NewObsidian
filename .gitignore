@@ -1,0 +1,9 @@
+# Obsidian specifice
+.obsidian/cache
+.trash/
+.DS_Store
+.obsidian/workspace.json
+
+# hidden
+/hidden
+/hidden/*

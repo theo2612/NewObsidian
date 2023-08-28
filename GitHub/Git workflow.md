@@ -10,7 +10,7 @@ $ git add .
 
 commit filed to be pushed 
 ```bash
-$ commit -m "commit msg"
+$ git commit -m "commit msg"
 ```
 
 push added and committed files

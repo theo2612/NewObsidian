@@ -1,8 +1,0 @@
-- Parse .pol files: https://github.com/PowerShell/GPRegistryPolicyParser
-- LAPS tools: https://github.com/leoloobeek/LAPSToolkit
-- Reverse Shell Generator: https://www.revshells.com/
-- CyberChef: https://gchq.github.io/CyberChef/
-- AMSI Bypass Generator: https://amsi.fail
-- LOLBAS: https://lolbas-project.github.io/
-- GTFOBins: https://gtfobins.github.io/
-- Buy domains with desired categorization: https://www.expireddomains.net/ 

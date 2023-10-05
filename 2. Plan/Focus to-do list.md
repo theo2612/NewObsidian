@@ -1,9 +1,8 @@
 ## Focus Todo list
 1. Typing
 2. Security+
-3. THM/HTB - hacking practice
+3. THM/HTB - SQL injection, XSS, Insecure auth authentication/authorization, 
 4. extreme ownership
-5. SSL deep dive, Reverse proxies, set up more webservers, nginx, http protocol, 
 
 
 ## Master ToDo list

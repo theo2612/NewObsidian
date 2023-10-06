@@ -1,7 +1,5 @@
 [https://tryhackme.com/room/sqlinjectionlm](https://tryhackme.com/room/sqlinjectionlm)  
   
-[https://tryhackme.com/room/sqlinjectionlm](https://tryhackme.com/room/sqlinjectionlm)  
-  
 SELECT - query used to retrieve data from the database.  
   
 select * from users;  

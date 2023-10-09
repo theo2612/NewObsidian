@@ -1,3 +1,14 @@
+GoPhish Docker commands
+```bash
+docker compose up
+docker compose down
+docker compose logs -f
+docker image ls -a
+docker container ls -a
+docker exec -it container_name <command>
+docker run --rm -it image:version <command>
+```
+
 - _Images_ - The blueprints of our application which form the basis of containers. In the demo above, we used the `docker pull` command to download the **busybox** image.
 - _Containers_ - Created from Docker images and run the actual application. We create a container using `docker run` which we did using the busybox image that we downloaded. A list of running containers can be seen using the `docker ps` command.
 - _Docker Daemon_ - The background service running on the host that manages building, running and distributing Docker containers. The daemon is the process that runs in the operating system which clients talk to.

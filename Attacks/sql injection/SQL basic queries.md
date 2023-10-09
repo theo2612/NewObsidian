@@ -77,10 +77,19 @@ insert into users (username, password) values ('bob', 'password')';
 update users SET username='root', password='pass123' where username='admin';
 ```
 - update tells the database to update one or more of the data within a table
-- 
+- specify the table to update using "update %tablename%" SET. Then select field/s to update, comma-separated like 'username='root',password='pass123'
+- then specify which rows to update using the where clause "where username='admin'""
+# DELETE
+```sql
+delete from users where username='martin';
+```
+- deletes table and/or rows specified similar to Select
+- delete from the table 'users' and from the column 'username' where the username is martin
 
-
-
+```sql
+delete from users;
+```
+- no where clause being used deletes all the data in the table
 
 
 

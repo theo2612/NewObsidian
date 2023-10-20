@@ -87,3 +87,5 @@
 * `<` - send file to stdin
 * `lolcat` - colorize things
 * `cowsay` - fun way to show output
+
+- `ssh-keygen -f key -N ''` - generates a 'key' and 'key.pub' for ssh connections. key.pub is supplied to what you want to connect to. Then connect to remote system over ssh with `ssh -i key username@ip.ip.ip.ip`

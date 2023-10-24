@@ -3,6 +3,7 @@
 2. Security+
 3. THM/HTB - SQL injection, command injection, XSS, Insecure auth authentication/authorization, 
 5. extreme ownership
+6. Create Amazon Affiliate link page store - GitHub Pages
 
 
 ## Master ToDo list
@@ -20,7 +21,7 @@
 12. Portswigger labs
 13. [Passsbolt](https://www.passbolt.com/ce/ubuntu)
 14. [Impacket](https://latesthackingnews.com/2023/05/22/impacket-cheatsheet-for-penetration-testers/#amp_tf=From%20%251%24s&aoh=16851841473163&csi=0&referrer=https%3A%2F%2Fwww.google.com&ampshare=https%3A%2F%2Flatesthackingnews.com%2F2023%2F05%2F22%2Fimpacket-cheatsheet-for-penetration-testers)
-15. [Docker](https://docker-curriculum.com/#introduction) and [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs/
+15. [Docker](https://docker-curriculum.com/#introduction) and [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs/)
 16. rwxrob boost
 17. [John Hammond Active Directory Lab](https://www.youtube.com/playlist?list=PL1H1sBF1VAKVoU6Q2u7BBGPsnkn-rajlp)
 18. Aurae Runtime

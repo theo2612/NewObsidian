@@ -1,0 +1,2 @@
+https://knowledge.validity.com/hc/en-us/articles/222437627
+https://www.mailgun.com/pricing/

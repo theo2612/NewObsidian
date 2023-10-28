@@ -1,9 +1,10 @@
-[https://tryhackme.com/room/sqlinjectionlm](https://tryhackme.com/room/sqlinjectionlm)  
+[SQL injection](https://tryhackme.com/room/sqlinjectionlm)  
   
 SELECT - query used to retrieve data from the database.  
   
-select * from users;  
-#SELECT tells the database we want to retrieve some data, the * tells the database we want to receive back all columns from the table. For example, the table may contain three columns (id, username and password). "from users" tells the database we want to retrieve the data from the table named users. Finally, the semicolon at the end tells the database that this is the end of the query.  
+`select * from users;`
+# SELECT 
+tells the database we want to retrieve some data, the * tells the database we want to receive back all columns from the table. For example, the table may contain three columns (id, username and password). "from users" tells the database we want to retrieve the data from the table named users. Finally, the semicolon at the end tells the database that this is the end of the query.  
   
 select username,password from users;  
 #select tells the database we want to retrieve some data, using username and password limits the request to just those fields  

@@ -53,6 +53,7 @@ and the SQL after the input is still executed.
 ## Find out what database is used by using db specific syntax
 After you got a working query with an injection you want to start figuring out what database is used, you might already have an idea on what is used due to the previous step, but in case you don't you can further fingerprint the type of database by using database specific syntax. You can lookup what syntax is supported by what database in the docs, the cheat-sheet provided for the labs by portswigger also contains all information you need.
 https://portswigger.net/web-security/sql-injection/cheat-sheet
+https://book.hacktricks.xyz/pentesting-web/sql-injection#identifying-back-end
 
 ### STEP 4
 ## Try to add a select query by either using a union or a sub query

@@ -1,3 +1,6 @@
+
+[SQL injection](https://tryhackme.com/room/sqlinjectionlm)
+
 # SELECT
 
 ```sql
@@ -92,5 +95,14 @@ delete from users;
 - no where clause being used deletes all the data in the table
 
 
+# Task 5 - In Band SQLi
+- In-Band SQL injection
+	- refers to the same method of communication being used to exploit the vulnerability and receive results
+	- ex. discovering a SQL injection vulnerability on a webpage and being able to extract data from the database to the same page
+- Error-Based SQL injection
+	- most useful for easily obtaining info the database structure since error messages from the database are printed directly to the browser screen 
+- Union-Based SQL injection
+	- utilizes the SQL UNION operator alongside a SELECT statement to return additional results to the page
+	- common way of extracting large amounts of data via SQL injection vulnerability
 
 

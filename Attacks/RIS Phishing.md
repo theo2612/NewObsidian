@@ -4,8 +4,8 @@
 Username, oldpassword, new password
 
 # template / landing page pairs
-- email tempalate - connectwise locked
-- Landing page - cwlogin acct locked
+- email tempalate - CW password expired
+- Landing page - CW login acct locked
 
 - email template - Cw password expired
 - landing page - connectwise change password

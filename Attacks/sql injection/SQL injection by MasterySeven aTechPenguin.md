@@ -24,7 +24,11 @@ For all beginner exercises we will only fuzz with the `'` character, but it's go
 ## Step 2
 # Verify it's a SQL injection
 
-After finding what you think is a SQL vulnerability you can verify it's a SQL injection by fixing the query (breaking them wit the character and making them valid again), as a beginner there  are 2 main ways to do this: 1 commenting out the rest of the query and 2 concatenating an empty value. note that commenting out the query deletes everything in the query after the input ends and can completely change the query, concatenation tries to not change the query and works by "fixing" the syntax take the following query:
+After finding what you think is a SQL vulnerability you can verify it's a SQL injection by fixing the query (breaking them wit the character and making them valid again), as a beginner there  are 2 main ways to do this: 
+1. Commenting out the rest of the query
+	1. This deletes everything in the query after the input ends and can completely change the query
+2. Concatenating an empty value. 
+	1. This tries to not change the query and works by "fixing" the syntax take the following query:
 
 ```SQL
 SELECT * from users WHERE input='input' order by 1

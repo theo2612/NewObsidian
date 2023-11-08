@@ -22,8 +22,12 @@ Q. Are you in IT or another industry?
 	3. Contribute
 	4. This show that you can start projects and increment to completion
 4. read Daniel Kelly's post 
-	1. https://cybersecurityandgrowth.substack.com/p/a-roadmap-for-transitioning-into-cybersecurity  
-5. Go on interviews
+	1. https://cybersecurityandgrowth.substack.com/p/a-roadmap-for-transitioning-into-cybersecurity 
+5. Browse NICCS/ National Institute for Cybersecurity Careers and Studies
+	1. https://niccs.cisa.gov/workforce-development/nice-framework
+6. Browse 
+	1. https://www.ukcybersecuritycouncil.org.uk/careers-and-learning/cyber-career-framework/
+7. Go on interviews
 	1. Just go on interviews, get comfortable hearing 'no'  and start respectfully asking why?
 	2. You have 2 gatekeepers to pass. 
 		1. First is HR or an algorithm and second are the interviewers themselves.
@@ -33,12 +37,12 @@ Q. Are you in IT or another industry?
 		3. If you don't know something they are asking you, ask them if it is ok (I never had anyone tell me 'no') to jot it down, and learn it for the next interview.
 	4. Hiring manager insight
 		1. Here’s my overarching, critical message for understanding what you need to communicate with your resume to me as a hiring manager: 1) I care most about what you have done 2) I care a little about what you’re capable of doing but haven’t done 3) I could care less about what you know how to do if you aren’t capable of turning that knowledge into action.
-6. Don't compare yourself to where others 
+8. Don't compare yourself to where others 
 	1.  In their journey
 	2.  In their career
 	3.  you are miles ahead of the people who are too scared to start
 	4.  or who have search paralysis
-7. Resume - add it all to your resume
+9. Resume - add it all to your resume
 	1. Github
 	2. THM, HTB, codewars rank
 	3. home lab specs
@@ -49,7 +53,7 @@ Q. Are you in IT or another industry?
 	8. Continuing education
 	9. content creation
 	10. AOwenDev [Writing a résumé or curriculum vitae](https://andrewowen.net/blog/writing-a-resume-or-cv/)
-8. Other twitch creators
+10. Other twitch creators
 	1.  0xtib3rius - mentorship mondays
 	2.  alh4zr3d - Newbie Tuesdays
 	3.  KrisNova - Industry professional and DevOps Sensei

@@ -1,4 +1,4 @@
-![I want to work in cyber](https://imgur.com/a/UeBUasg"Cyber meme")
+![I want to work in cyber](https://imgur.com/a/UeBUasg "Cyber meme")
 
 Q. Are you in school - High School or University?
 	1. Consider grabbing an entry level job and get experience in the industry while you're younger with less overhead  

@@ -2,9 +2,9 @@
   "port": "3000",
   "autoReload": true,
   "exportDirectory": "/export",
-  "enableChalkboard": false,
-  "enableOverview": false,
-  "enableMenu": false,
+  "enableChalkboard": true,
+  "enableOverview": true,
+  "enableMenu": true,
   "enablePointer": false,
   "enableTimeBar": false,
   "theme": "black",
@@ -17,5 +17,5 @@
   "showGrid": false,
   "autoComplete": "inPreview",
   "paneMode": "split",
-  "motm": "2023-04-11T19:27:48.868Z"
+  "motm": "2023-11-07T16:35:51.017Z"
 }

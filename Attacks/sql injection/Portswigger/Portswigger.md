@@ -60,6 +60,43 @@ https://insecure-website.com/products?category=Gifts'+OR+1=1--
 ## Warning
 Take care when injecting the condition `OR 1=1` into a SQL query. Even if it appears to be harmless in the context you're injecting into, it's common for applications to use data from a single request in multiple different queries. If your condition reaches an `UPDATE` or `DELETE` statement, for example, it can result in an accidental loss of data.
 
+## Subverting application logic
+- On a Web page or WebApp that lets users log in with a username and password
+- If a user submits the username `weiner` and the password `bluecheese`, the application checks the credentials by performing the following SQL query
+```SQL
+SELECT * FROM users WHERE username = 'wiener' AND password = 'bluecheese'
+```
+- If the query returns the details of a user, then the login is successful, otherwise it is rejected.
+- In this case, and attacker can log in as any user without the need for a password
+- Can be done using the SQL comment sequence `--` to remove the password check from the `WHERE` clause of the query.
+- For example, submitting the username `adminstrator'--` and a blank password results in the following query
+```sql
+SELECT * FROM users WHERE username = 'administrator'--' AND password = ''
+```
+- This query returns the user whose 'username' is  `administrator` and successfully logs the attacker in as that user
+
+## SQL injection UNION attacks
+- When an application is vulnerable to SQL injection, and the results of the query are returned within the applications responses, you can use the `UNION`  keyword to retrieve data from other tables within the database.
+- The `UNION` keyword enables you to execute one or more additional `SELECT` queries and append the results to the original query. for example
+```sql
+SELECT a, b FROM table1 UNION SELECT c, d FROM table2
+```
+- This SQL query returns a single result set with two columns, containing values from columns `a` and `b` in `table1` and columns `c` and  `d` in `table2`
+
+- For a `UNION` query to work, two key requirements must be met
+	- The individual queries must return the same number of columns 
+	- The data types in each column must be compatible between individual queries
+- To carry out a SQL injection UNION attack, make sure that your attack meets these two requirements. involves discovering 
+	- How many columns are being returned  from the original query
+	- Which columns returned from the original query are of a suitable data type to hold the results from the injected query
+## Determining the number of columns required
+
+
+
+
+
+
+
 
 
 

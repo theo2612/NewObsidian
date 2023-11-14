@@ -1,0 +1,8 @@
+[My Daily Schedule](https://docs.google.com/spreadsheets/d/1HJCOlRobVOcczLHz7vVzZA2xS949IsFxTG7f5Zf4xls/edit#gid=0)
+[Blank Daily Schedule](https://docs.google.com/spreadsheets/d/1Yt4q6SmHcO33wG9Sj8pUv9ZeUx_WLuJwsNn2d2eSOAM/edit#gid=0)
+[Discord](https://discord.gg/KqgRWYZANX)
+[Podcast- Anchor](https://anchor.fm/usbog(https://anchor.fm/usbog)
+[Podcast - Spotify]([https://open.spotify.com/show/1Gvt1x2dlLZvzR5QSHu740?si=351ecb7aa6384a66](https://open.spotify.com/show/1Gvt1x2dlLZvzR5QSHu740?si=351ecb7aa6384a66))
+[Github](https://github.com/theo2612)
+[Amazon Shopping link](https://amzn.to/3B0sMYC)
+[Amazon Affiliate links](https://theo2612.github.io/7h30-amazon-affiliate-links/)

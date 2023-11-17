@@ -112,9 +112,9 @@ SELECT a, b FROM table1 UNION SELECT c, d FROM table2
  - **Method 2**
 	- Involves submitting a series of `UNION SELECT` payloads specifying a different number of null values
 ```SQL
-'UNION SELECT NULL--
-'UNION SELECT NULL--, NULL--
-'UNION SELECT NULL--, NULL--, NULL--
+'UNION+SELECT+NULL--
+'UNION+SELECT+NULL,NULL--
+'UNION+SELECT+NULL,NULL,NULL--
 ```
 - If the number of nulls does not match the number of columns, the database returns and error, like
 `All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.

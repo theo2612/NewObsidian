@@ -1,6 +1,14 @@
 
 
-New Podcast - How I got hacked - Trying to take the stigma out of it, you are not dumb
+### New Episode 
+- How I got hacked/phished 
+- Talking to people for 5-10min
+-  Trying to take the stigma out of it, you are not dumb
+
+### New episode
+- ALPHV ransomware group's BFF the SEC
+
+
 
 New Twitch - Watch me get hacked - live stream of how to get hacked to teach how to avoid getting hacked - f
  

@@ -156,7 +156,9 @@ SELECT a, b FROM table1 UNION SELECT c, d FROM table2
 	- The database contains a table called `users` with the columns `username` and `password`
 - In this example, you can retrieve the contents of the `users` table by submitting the input
 `'UNION SELECT username, password FROM users--`
-- In order to perform this attack, you need to know that there is a table called `users` with 2 columns called username and 
+- In order to perform this attack, you need to know that there is a table called `users` with 2 columns called `username` and `password`
+- without this info, you would have to guess the names of the tables and columns
+- All modern databases provide ways to examine the databases structure, and determine what tables and columns they contain
 
 
 

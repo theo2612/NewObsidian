@@ -160,6 +160,27 @@ SELECT a, b FROM table1 UNION SELECT c, d FROM table2
 - without this info, you would have to guess the names of the tables and columns
 - All modern databases provide ways to examine the databases structure, and determine what tables and columns they contain
 
+## Retrieving multiple values within a single column
+- The previous example may only return a single column
+- Retrieving multiple values together within a single column is possible by concatenating the values together.
+- Including a separator will let you distinguish the combined values. Oracle example below.
+` 'UNION SELECT username || '~' || password FROM users--`
+- double pipe `||` is string concatenation on Oracle
+- This query concatenates together the values `username` and  `password` fields, separated by the `'~'`. and results in the following.
+```html
+... 
+administrator~s3cure 
+wiener~peter 
+carlos~montoya 
+...
+```
+- Different databases use different syntax to perform string concatenation 
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,4 @@
-[YouMom](318144411987083274.md)
-
+[Python Programming .net](https://pythonprogramming.net/)
 [Introduction to computing](https://www.davidjoyner.net/b/wp-content/uploads/2017/03/Joyner_IntroductiontoComputing_1stEdition.pdf)
 [https://roadmap.sh/python](Python Developer Road Map)
 [Codecademy Docs: Python](https://www.codecademy.com/resources/docs/python)

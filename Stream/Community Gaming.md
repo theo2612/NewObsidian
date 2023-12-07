@@ -1,8 +1,13 @@
+https://www.3daimtrainer.com/fortnite-aim-trainer-guide-for-better-aim/
+DOS_DECK https://dosdeck.com/game/doom
+Binding of ISAAC
 Destiny
 Apex
 Deep Rock Galactica
 Fortnite
 VR Chat
+
+Binding of ISAAC
 
 
 Nori's NHL 94 ass kicking

@@ -1,0 +1,19 @@
+| Password Length | Allowed Characters | Number of Possible Password | 
+|---|---|---|
+| 4 | Uppercase, lowercase, and digits | 14,776,336 |
+| 6 | Uppercase, lowercase, and digits | 56,800,235,584 |
+| 8 | Uppercase, lowercase, and digits | 218,340,105,584,896 |
+| 10 | Uppercase, lowercase, and digits | 839,299,365,868,340,224 |
+| 12 | Uppercase, lowercase, and digits | 3,226,266,762,397,899,821,056 |
+| 14 | Uppercase, lowercase, and digits | 12,401,769,434,657,526,912,139,261 |
+| 16 | Uppercase, lowercase, and digits | 47,672,401,706,823,533,450,263,330,816 |
+
+- 14,776,336 possible passwords is a large number but don't it fool you. 
+- Using a computer to brute force the password 
+	- trying a password takes .001 seconds due to system throttling
+	- We can try 1000 passwords per second
+	- Finding the password will only take 4 hours
+	- math 
+		- 62 to 4th pwr=14,776,336 × 0.001 = 14,776 seconds
+		- 1 hour = 3600 seconds
+		- 14,776 seconds / 3600 seconds = 4.1 hours

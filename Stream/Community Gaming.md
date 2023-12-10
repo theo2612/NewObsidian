@@ -3,16 +3,17 @@ DOS_DECK https://dosdeck.com/game/doom
 Binding of ISAAC
 Destiny
 Apex
-Deep Rock Galactica
+Deep Rock Galactic
+Plate UP
 Fortnite
-VR Chat
+VR Chat - escape rooms
+Discord Games
 
 Binding of ISAAC
 
 
 Nori's NHL 94 ass kicking
 
-Deep Rock Galactica
 [pico park](https://picoparkgame.com/en/)
 [Words on Stream](https://wos.gg/en/)
 [Art on Stream - Gartic on stream](https://gos.gg/en/)

@@ -1,1 +1,3 @@
-Get up and watch stream - Tue, Wed, Fri
+Pass Avaya exams
+Renew AWS cloud Practioner
+

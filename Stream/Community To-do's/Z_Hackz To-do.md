@@ -19,10 +19,4 @@ Z_Hackz To-do-
 
 -self Study
 	dedicate take daily/weekly
-	sec+, pentest+ 
-
-Lil Bryan To-do
-- Update LinkedIn and Postively engage and ask question of people and posts
-	[Gerry Auger on LinkedIn]( https://www.linkedin.com/in/geraldauger/)
-	"#simplyCybercommunitychallenge"
-	
+	sec+, pentest+ 	

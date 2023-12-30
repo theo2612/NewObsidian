@@ -5,6 +5,8 @@
 	- location
 	- age
 	- previous jobs
+	- scripting lang? pearl, bash, 
+	- do you worry about being noticed for the extra work you do? toot your horn?
 - What is your education level (or lack of)
 - What have you taught yourself?
 - How important are certs?

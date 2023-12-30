@@ -1,3 +1,3 @@
-Pass Avaya exams
-Renew AWS cloud Practioner
+- Pass Avaya exams
+- Renew AWS cloud Practioner
 

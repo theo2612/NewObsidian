@@ -1,2 +1,3 @@
-- Find my car keys in my khakis
 - GetGud
+- Get AWS dev cert
+- Find my car keys in my khakis

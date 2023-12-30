@@ -1,28 +1,6 @@
 Hello and welcome back to USB our Guest, Cyber Security tips. I’m Theo, here to help you break down cyber security news and hacks and how they affect you. However, today I am interviewing Tegora, an L3 System Administrator & Senior Technical Leader with technical responsibilities for Networking/Linux/HPC. We recorded the interview in an open discord voice channel with video while monitoring chat with Text-to-speech developed by Security_Live. While this time I had his volume level closer to mine, the music wasn't low enough in some parts.  Tegora became fascinated with computers at an early age, funded his education enlisting in the Army, pursued and obtained multiple degrees, taught and then pivoting into a career in IT. He has an excellent point of view regarding work effort, stepping out of your comfort zone and shares excellent tips on getting started on your path and interviewing. Also, I send people I interview a list of questions to answer, and Tegora did that, offering well thought and candid answers. Find the document here on my [Github]()
 This is a little longer than my normal format so feel free to speed it up. Thank you for listening and enjoy.
  
- TimeZone? -  
-- availability - weekdays ?? - Weekends ??
-- voice, tts, video, avatar?
-- Who are you? background - as much or little as you are comfortable with. 
-	- location
-	- age
-	- previous jobs
-	- scripting lang? pearl, bash, batch, powershell
-	- do you worry about being noticed for the extra work you do? toot your horn?
-- What is your education level (or lack of)
-- What have you taught yourself?
-- How important are certs?
-- How you did you land your job in cyber security to get in the industry?
-- How necessary is Networking? LinkedIn, Discord, in person? 
-- The importance of stepping out of your comfort zone
-- What is your current role?
-- What are your employers expectations in your current role?
-	- Hours
-	- Testing timeline
-	- Working with others
-- What is advice that you wish  you knew when you started on your path in cybersecurity.
-
 ### Tegora BIO: This is 21+ years of my life condensed into a couple of paragraphs, but I tried my best to at least speak to the relevant bits of my experience to hopefully stoke further conversation.
 I'm a 41 y/o IT Professional. I started my career by enlisting in the US Army at age 18. At that point I knew that I wanted to work with computers and that I was poor. I needed a leg up. So, I joined the Army for the GI Bill so that I could afford college when I got out. During my time as an enlisted member, I learned advanced networking skills, how to be a leader of people, and became a part of the largest naturally occurring professional/social network: US Military Veterans. What's super cool is that during that time in my life, I got to jump from airplanes, travel the world and eventually work for the White House Communications Agency and their secure communications switchboard -- for two different presidential administrations: Both G.W. Bush and B. Obama. After leaving the Army in 2009, I went to college. I had a rough time choosing a major because I had in the interim become interested in health and medicine-- to be Pre-Med, you can choose any degree, so I chose initially Bio-Informatics, then that degree plan was cancelled by the university due to lack of enrollment. Then I chose philosophy, and I think before starting my first term I'd switch at least once more to a Medicinal Chemistry degree -- eventually settling for a degree called Biology & Society at the sort of intersection of Biomedical Ethics and enough Biology to be able to understand and explain to anyone who would listen. I then did a Master's degree focusing on the history and biomedicalization of Autism in the United States. Afterwards, I went to study History & Philosophy of Biology at the University of Toronto with a woman named Marga Vicedo who was working on a history of Autism at that time. I spent a year there and earned a Master's of Arts degree, then returned to Arizona State University to pursue a PhD in History and Philosophy of Biology. In late 2017, I had become disallusioned with what I was up to and decided to return to the working world (rather than the academic world)... I continued working on my dissertation while working but ultimately stopped writing the dissertation in summer 2019 and left that PhD program in ABD (all but dissertation) status. Upon exiting academia, I picked up a job working as a career tech instructor in Information Technology. I taught young people, roughly Juniors/Seniors in high school, how to work on the Infrastructure side of IT (basically help desk, system administration, and networking type roles). I continued in that role for four years, earning a third Master's degree in Education in the process. I worked before and through covid 19, and just after starting the school year in 2022 a recruiter reached out through LinkedIn and I was quickly offered an interview. I interviewed for a Level 2 System Administrator role with my current employer, Belcan LLC, contracted to support GE Aviation. I started working that role in October of 2022. For several months, I was waiting on a security clearance to get approved and thereafter found myself thrown into an ill-defined role and thriving. 
 
@@ -67,3 +45,26 @@ Career advice for those getting started:
 1. The fundamentals are critically important. There's a cute little meme image going around about people who desire to work in cybersecurity, skipping the first 5 steps of a staircase. This goes back to some advice that I've heard about people who desire to work in Cyber spending a few years, at first, doing their "system time". That system time is basically giving you the opportunity to verify that you're well versed in "the fundamentals" -- we'll go ahead and black-box that term, basically as a stand-in for a bunch of often unstated expectations about technical knowledge that anyone who works in the first is supposed to know and be capable of troubleshooting, de-facto, without the need to google search. i.e. What's an A record or a AAAA record? What's an ARP table? What are the layers of the Network Model (OSI / TCP-IP)?
 
 2. Treat every problem that you solve like it will need to be solved 500 or 1000 more times. Sure, this once, you used the GUI the first time... but what if 300 tickets came in and you needed to solve each one in that same way. Figuring out how to do things at the command line, with batch/bash/powershell/perl scripting allows you to leverage the logic of code to solve business critical problems efficiently. Also, how awesome does it feel when the first time you do something maybe it takes you 30 minutes or 45 minutes, then you develop a script that allows you to click a button to start the script, specify a computer name or a list of computer names, then you solve the same problem 300 times over in less time than it took you the very first time. 
+   
+   Industry Professional interview outline
+    TimeZone? -  
+- availability - weekdays ?? - Weekends ??
+- voice, tts, video, avatar?
+- Who are you? background - as much or little as you are comfortable with. 
+	- location
+	- age
+	- previous jobs
+	- scripting lang? pearl, bash, batch, powershell
+	- do you worry about being noticed for the extra work you do? toot your horn?
+- What is your education level (or lack of)
+- What have you taught yourself?
+- How important are certs?
+- How you did you land your job in cyber security to get in the industry?
+- How necessary is Networking? LinkedIn, Discord, in person? 
+- The importance of stepping out of your comfort zone
+- What is your current role?
+- What are your employers expectations in your current role?
+	- Hours
+	- Testing timeline
+	- Working with others
+- What is advice that you wish  you knew when you started on your path in cybersecurity.

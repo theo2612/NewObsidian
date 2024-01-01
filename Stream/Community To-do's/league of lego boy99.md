@@ -1,0 +1,1 @@
+operate ethically as a hacker

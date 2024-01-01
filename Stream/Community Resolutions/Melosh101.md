@@ -1,0 +1,3 @@
+-  learn about common attack vectors 
+- how to protect against them
+- start a course from thm?

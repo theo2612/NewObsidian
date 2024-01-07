@@ -1,1 +1,1 @@
-operate ethically as a hacker
+- operate ethically as a hacker

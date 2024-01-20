@@ -13,4 +13,12 @@ Next upgrade
 	- 8 core / 16 threads
 		- 6 / 12 min
 - Graphics card
-	- 
+
+- ? 13600k for as low as $160 now. Crazy the motherboard is like $145~$180 ?
+
+-----
+look for bracket atx am4 
+AMD Ryzen 5 5600G 3.9 GHz6-core - 12-Thread unlocked desktop processor with Radeon Graphics
+
+
+

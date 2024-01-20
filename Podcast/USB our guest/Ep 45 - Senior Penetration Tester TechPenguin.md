@@ -1,0 +1,75 @@
+Hello and welcome back to USB our Guest, Cyber Security tips. 
+I’m Theo, here to help you break down cyber security news and hacks and how they affect you. However, today I am interviewing Tech Penguin who is a Senior Penetration Tester
+We recorded the interview in an open discord voice channel with video while monitoring chat with Text-to-speech developed by Security_Live. 
+The Tech Penguin has 5 years experience as a penetration tester with an different entry to Cyber Security and We are very excited to talk to him.
+Also, I send people I interview a list of questions to answer, and the Tech Penguin did that, offering well thought and honest answers. Find the document linked on the episode page, on my Github.  This is a little longer than my normal format so feel free to speed it up. Thank you for listening and enjoy.
+
+
+- Timezone:
+	- CET
+- Availability 
+	- is mostly weekends/fridays
+- medium
+	- i'm fine with camera and voice depending on what we talk about,
+- location: 
+	- netherlands
+- age: 
+	- 27
+- What do you do in your downtime? Hobbies, sports, video games?
+- previous jobs: N/A
+- current role and can we deep dive on what this entails?
+	- senior pentester (small comp so flexible job requirements/titles etc)
+- education level - High School, university?
+	- (mostly irrelevant i don't have anything official)
+- What you taught yourself
+	- Prior to getting your job?
+		- languages - how did you make the jump to proficient
+	- and after?
+	- as a interviewer - a combination of things that help get hired
+		- foundational knowledge - 
+		- github, projects
+		- enthusiasm
+		- coding
+- What's your go-to comfort movie, the one you can watch repeatedly without getting bored? 
+	- Toy story 2
+- How important are certifications?
+	- certs are a nuanced discussion on what's useful and for whom
+	- just one of the puzzle pieces to helping getting a job
+- - How you did you land your job in cyber security to get in the industry?
+	- i got my job by getting my foot in the door, and get a 6 month internship / got a mentor on the job and afterwards i was hired
+- How necessary/important is Building relationships/Networking? LinkedIn, Discord, in person?
+	- takes effort
+	- 
+- The importance of stepping out of your comfort zone?
+	- ???
+- What are your employers expectations in your current role?
+	- employers expectations are somewhat of a long story, but i work at a small company so it's more personally tailored
+- Hours
+	- I work normally 32 hours a week, but i'm very flexible(this does get called upon occasionally) and i learn for myself in the weekends aswell
+- Working with others?
+	- working with others is a fun / longer subject we can talk about that requires some getting into how we do pentests
+- Burnout - 
+	- advice to avoid
+	- counting days to vacation
+	- spend spare time doing things you enjoy
+		- 
+- advise i would have to think about for a while
+	- ???
+- Pentesting & consultancy - 
+	- difference 
+	- pentest - 
+		- hack
+		- break things
+	- consult - social work
+		- educate customers
+	- rea - be a resource
+- How do you provide value to your customers?
+	- what are your clients paying you for?
+		- find vulns
+		- but also patch mgmt
+		- if never done pentest, perhaps do  an automated scan?
+		- if always doing pentest, perhaps do a more advanced pentest 
+- What do your customers value scoping estimations etc?
+	- ask questions to advise 
+	- different company security levels and laws will dictate/necessitate the type of service 
+- Entry level pentesting vs more advanced types of pentests

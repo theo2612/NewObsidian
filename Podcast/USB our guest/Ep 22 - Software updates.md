@@ -10,7 +10,7 @@ WannaCry Ransomware [https://en.wikipedia.org/wiki/WannaCry_ransomware_attack](h
 
  Updates. The update may include a fix for a reported bug that crashes the app or program or a patch for security flaws. For example, In may 2017 The WannaCrypt/WannaCry Ransomware attack infected Microsoft Windows machines. These machines were either running an old version of Windows no longer supported by Microsoft or they were not updated with current patches to protect from this exploit. WannaCry Ransomware then demanded $300-$600 in bitcoin per machine to decrypt files or they would be deleted
 
- Your Data. Our devices /computers, tablets, phones, gaming systems/ all have more data saved on them than ever before. Updating your software, keeps the security up to date, therefore keeping your data more safe than on an updated system. 
+ Your Data. Our devices /computers, tablets, phones, gaming systems/ all have more data saved on them than ever before. Updating your software, keeps the security up to date, therefore keeping your data more safe than on an un-updated system. 
 
  Other People's Devices. If your device becomes infected there is a good chance that you could pass the virus on to family, friends or business contacts. Keeping you device updated can help protect it from cyber attacks
 

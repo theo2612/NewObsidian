@@ -10,7 +10,7 @@
 
  What is Phishing? 
 
- Phishing is the practice of sending emails masquerading as legitiamte companies to fool someone into revealing personal info such as passwords or credit card numbers.  Every type of communication has it's own type of phishing. For this tip we are focusing on email phishing. 
+ Phishing is the practice of sending emails masquerading as a trusted entity, to fool someone into revealing personal info such as passwords or credit card numbers.  Every type of communication has it's own type of phishing. For this tip we are focusing on email phishing. 
 
  A phishing email will look like an email from Amazon saying that your delivery is delayed and to click the tracking number to fix, and then redirecting you to a fake sign in screen for Amazon where your credentials will be stole if you enter them. Or an email from netflix asking you to update your payment details and asking you to click on a button that says "update account now". Then redirecting you to a fake netflix account screen where your credit card number will be stolen if you enter your info. 
 
@@ -22,7 +22,7 @@
 
  First, protect your phone and Computer from attack by setting them to automatically update. Almost all major Technology companies include security fixes to their updates. any amount of time that you do not install them is leaving your device vulnerable to an attack. 
 
- Second, enable Two-factor authentication on all of your acocunts that offer it. They basically require to supply additional credentials to log in to your account. I did an episode on Two-factor authorization. Just pull it up and take a listen from the previous episodes.
+ Second, enable Two-factor or Mult-factor authentication on all of your accounts that offer it. They basically require to supply additional credentials to log in to your account. I did an episode on Two-factor authorization. Just pull it up and take a listen from the previous episodes.
 
  Finally, Protect your data by backing it up. I'm planning on doing an episode on backups soon. 
 

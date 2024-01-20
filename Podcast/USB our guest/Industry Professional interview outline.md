@@ -5,20 +5,21 @@
 	- location
 	- age
 	- previous jobs
-	- scripting lang? pearl, bash, 
-	- do you worry about being noticed for the extra work you do? toot your horn?
+	- scripting lang?
 - What is your education level (or lack of)
+- What is your current role?
 - What have you taught yourself?
+	- Before employment?
+	- After employment?
 - How important are certs?
 - How you did you land your job in cyber security to get in the industry?
-- How necessary is Networking? LinkedIn, Discord, in person? 
-- The importance of stepping out of your comfort zone
-- What is your current role?
+- How necessary is Building Relationships/Networking? LinkedIn, Discord, in person? 
+- The importance of stepping out of your comfort zone?
 - What are your employers expectations in your current role?
 	- Hours
 	- Testing timeline
 	- Working with others
-- What is advice that you wish  you knew when you started on your path in cybersecurity.
+- What is advice that you wish  you knew when you started on your path in cybersecurity? Dev? 
 
 Sleeper questions
 -    Favorite vintage Arizona beverage that takes you on a trip down memory lane?

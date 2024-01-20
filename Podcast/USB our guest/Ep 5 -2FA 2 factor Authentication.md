@@ -10,7 +10,7 @@
 
  Hello.  Welcome back and Thanks for adding "USB our Guest Cyber Security Tips" to your flash briefing. 
 
- Today's Tip is about 2 factor authentication, Also refered to as 2FA, comes from Trend Micro. A link to the article and 2 factor apps are in the show notes. 
+ Today's we are talking about 2 factor authentication, Also refered to as 2FA, comes from Trend Micro. A link to the article and 2 factor apps are in the show notes. 
 
  In addition to good password hygenie 2 Factor Authentication is another layer of security that you can add in case Cyber thieves somehow get a hold of your username and password. 
 
@@ -22,7 +22,7 @@
 
  Once activated they will ask you preference or require you to supply both, phone number and email. 
 
- Then, if you log in from an unrecognized device or if someone else does, like say a hacker, you or they will be prompted for a second factor such as a token sent to your phone or email. 
+ Then, if you log in from an unrecognized device or if someone else does, like say a hacker, you or they will be prompted for your second factor, such as a token sent to your phone, email or from your authenticator app. 
 
  If you are not using an unrecognized device and you receive a notification like this, then it is safe to say that someone is trying to access your account. Report this immediately to the acocunt you are signed up for. 
 

@@ -1,7 +1,4 @@
 # Speed Run time - 2 hr to level 23
-test for git hub
-test for github
-
 
 Bandit0  
  cat readme -- cat is short for concatenate - Concatenate files and print standard output to the screen  
@@ -125,6 +122,7 @@ Bandit 13
 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e  
    
 Bandit14  
+
 Use password 13-14 on port 30000 on localhost  
  nc localhost 30000  
 =nc(netcat) localhost(host ip) 30000(port)  
@@ -140,6 +138,7 @@ Also works
  openssl s_client -connect localhost:30001  
  openssl(openssl command)  
 cluFn7wTiGryunymYOu4RcffSxQluehd  
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
    
 Bandit16  
  nmap localhost -p 31000-32000  
@@ -147,6 +146,8 @@ Bandit16
    
  nmap -sV -p 31000-32000 localhost  
 =nmap(invoke nmap) -sV(parameter for service) -p(port scan) 31000-32000(these ports) localhost(on this ip)  
+
+openssl s_client --connect localhost:31790
    
  ncat --ssl localhost 31790  
 =ncat(netcat) --ssl(use ssl encryption) localhost(ip addr) 31790(port)  
@@ -176,6 +177,8 @@ Bandit17
  =diff(command that compares files line by line) -y(output in 2 columns) passwords.new(file1) passwords.old(file2)  
 Or diff passwords.new passwords.old  
 kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd  
+
+hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
    
 Bandit18  
 Exit bandit17  

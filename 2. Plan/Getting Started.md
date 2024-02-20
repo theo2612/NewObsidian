@@ -27,6 +27,7 @@ Q. Are you in IT or another industry?
 	1. https://niccs.cisa.gov/workforce-development/nice-framework
 6. Browse 
 	1. https://www.ukcybersecuritycouncil.org.uk/careers-and-learning/cyber-career-framework/
+	2. https://roadmap.sh/cyber-security
 7. Go on interviews
 	1. Just go on interviews, get comfortable hearing 'no'  and start respectfully asking why?
 	2. You have 2 gatekeepers to pass. 

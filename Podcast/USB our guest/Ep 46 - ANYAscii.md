@@ -5,7 +5,7 @@
 - Who are you? background - as much or little as you are comfortable with. 
 	- location
 	- age
-	- previous jobs
+	- previous jobs - 
 	- scripting lang?
 - What is your education level (or lack of)
 - What is your current role?

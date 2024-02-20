@@ -1,8 +1,7 @@
 ## Focus Todo list
 1. Typing
 2. Security+
-3. THM/HTB - SQL injection, command injection, XSS, Insecure auth authentication/authorization, 
-4. extreme ownership
+3. extreme ownership
 
 
 

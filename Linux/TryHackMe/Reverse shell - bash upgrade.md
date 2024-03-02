@@ -4,7 +4,7 @@
 (on the reverse shell) **`python3 -c "import pty; pty.spawn('/bin/bash')"`**  
 (press on your keyboard) **`Ctrl+Z`**  
 (press on your keyboard) **`Enter`**  
-(on your local host) **`stty raw -echo`**  
+(on your local host) **`stty raw -echo`; fg;
 (on your local host) **`fg`** (you will not see your keystrokes -- trust yourself and hit **`Enter`**)  
 (press on your keyboard) **`Enter`**  
 (press on your keyboard) **`Enter`**  

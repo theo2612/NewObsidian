@@ -44,5 +44,6 @@
 36. [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/)
 37. [Open culture freeonlinecourses](https://www.openculture.com/freeonlinecourses)
 38. eve-ng / gns3
-39. 
+39. setup obs triggers for chat
 40. 
+41. 

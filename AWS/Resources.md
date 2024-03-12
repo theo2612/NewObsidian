@@ -1,0 +1,1 @@
+We have some general approaches outlined here: [https://docs.aws.amazon.com/eks/latest/userguide/security.html](https://docs.aws.amazon.com/eks/latest/userguide/security.html) We also maintain/curated content for AWS github open source projects: [https://aws.github.io/aws-eks-best-practices/security/docs/](https://aws.github.io/aws-eks-best-practices/security/docs/) 

@@ -1,6 +1,6 @@
 To Do list
 - vpn
-- google photos - move all to my local backup
+- google photos - move all to my local backup and delete - DONE
 	- google takeout [https://takeout.google.com/settings/takeout/custom/photos](https://takeout.google.com/settings/takeout/custom/photos "https://takeout.google.com/settings/takeout/custom/photos")
 - fb
 - twitter

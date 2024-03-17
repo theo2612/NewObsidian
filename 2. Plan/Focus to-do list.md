@@ -1,7 +1,8 @@
 ## Focus Todo list
-1. Typing
-2. Security+
-3. extreme ownership
+1. Job Hunt
+2. Typing
+3. Security+
+4. extreme ownership
 
 
 

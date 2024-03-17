@@ -1,12 +1,21 @@
+Hello and welcome back to USB our Guest, Cyber Security tips. 
+I’m Theo, here to help you break down cyber security news and hacks and how they affect you. However, today I am interviewing Anyaacii a Linux in HPC Administrator. 
+We recorded the interview in an open discord voice channel with video while monitoring chat with Text-to-speech developed by Security_Live. 
+Anya was kind enough to go through my questions in advance and answer them at length. Please send any questions to me in a Dm or chat while we are live and we'll cover them. 
+ 
+
 - Who are you? 
 	- background - as much or little as you are comfortable with. 
 		- "I'm a *Linux Administrator in HPC/Research Computing* with a background that's taken many twists and turns. As a kid, I was drawn to filmmaking and the arts but was later steered towards careers that required analytical skills and big-picture thinking. I initially studied economics and political science in university and worked in various roles, including IT recruiting and accounts payable. However, my journey took a turn when I returned to university, began work in desktop support, and truly discovered a passion for technology. Now I realize that passion was present earlier than I thought."
+		- what kind of movies would you make? - Wes Anderson style
 	- What is your current role? 
 		- "I currently work as a Linux Administrator in HPC/Research Computing, where I manage and support high-performance computing systems used for research and scientific computing."
-		- "I work as a Linux Administrator in HPC/Research Computing, managing high- performance computing systems for research. My tasks include cluster management, SLURM scheduler optimization, parallel file system management, RHEL 8 server configuration, LAMP stack utilization for web services, networking troubleshooting, user support, bash scripting for automation, and infrastructure design for optimal HPC performance. I also spend time in the data center for routine maintenance and to install and  deploy state-of-the-art architecture. For example, we recently received state-of-the-art NVIDIA AI superchips called the 'Grace Hopper' boxes in the data center. This was my first time working with such equipment and helping to install Linux on the box."
+		- "I work as a Linux Administrator in HPC/Research Computing, managing high- performance computing systems for research. My tasks include cluster management, SLURM scheduler optimization, parallel file system management, RHEL 8 server configuration, LAMP/ stack utilization for web services, networking troubleshooting, user support, bash scripting for automation, and infrastructure design for optimal HPC performance. I also spend time in the data center for routine maintenance and to install and  deploy state-of-the-art architecture. For example, we recently received state-of-the-art NVIDIA AI superchips called the 'Grace Hopper' boxes in the data center. This was my first time working with such equipment and helping to install Linux on the box."
 	- location - "I live in the United States and work in academia."
 	- age - "You know, they say 'never ask a woman her age and a man his salary' (but seriously, I am in my mid-30s)."
 	- previous jobs -"Before my current role in HPC/Linux, I worked odd jobs in IT recruiting, administration, and accounts payable. Eventually, I entered IT in an entry-level desktop support role and spent a few years grinding it out in application layer support. In these various jobs, I gained valuable skills in communication, organization, and problem-solving that I continue to utilize today."
+		- Don't be afraid to fail
+		- be positive
 	- scripting lang? - 
 		- "I regularly use scripting languages like Python and Bash to automate tasks and streamline processes in my role."
 		- "Also learned visual C# in university, toyed around with Golang and Rust projects (mostly on Twitch), and basically whatever tickles my fancy."
@@ -42,6 +51,17 @@
 	- "I also wish I had not written off STEM earlier in my life and would encourage people to be more open-minded about their abilities. The recent Linux workshop reinforce this, as there were as many paths to HPC/Linux as there were people at the conference."
 	- *"Additionally, I wish I knew earlier that it was okay to fail and to try again. Very few people can immediately grasp a concept and replicate those steps in a work  environment. with the right mindset, you can learn from failure and be stronger for it.*
 	- "Finally, it's important to know your worth as a worker. Ultimately, a company needs your labor and you have more bargaining power than you may think."
+- stream questions
+	- rritenhouse - Does HPC still use Beowulf clusters or is that very old tech by now?
+	- structs - Any non-tech books that changed your life or the way you think about elements in your life?
+		- Fear and Loathing in Las Vegas
+	- Chadb -Are you going to Defcon?
+	- Tegora - Is there value in getting out into the world and touching grass every once in a while?
+	- Tegora - A big project of mine as an educator and even now is to encourage women to work on systems (sysadmin, Hpc, etc) -- what's your perspective on encouraging young women to get into this side of IT?
+	- luca - what's your favorite cli tool and why? and what's the worst you always have to google the syntax?
+	- redtacoma - hey, do you play hack the box? consider vulnhub
+	- genralissms - How would you execute a reverse shell attack on a target system with strict outbound firewall rules in place?
+	- 
 
 Sleeper questions
 -    Favorite vintage Arizona beverage that takes you on a trip down memory lane?

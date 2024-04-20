@@ -156,7 +156,7 @@ Adaptation
 Self Teaching / Self Learning  / continuous education  [https://tryhackme.com/room/outlookntlmleak](https://tryhackme.com/room/outlookntlmleak)
 Collaboration - help others
 	Less experienced to encourage
-	Same experience for accoutability
+	Same experience for accountability
 	More experience for mentorship
 Note taking
 	CherryTree, notion, obsidian, word ... 

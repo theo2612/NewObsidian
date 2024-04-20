@@ -1,0 +1,1 @@
+Give me a full prompt to create a AI portrait of 7h30 -- Point Value 5000?

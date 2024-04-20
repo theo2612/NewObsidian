@@ -13,3 +13,6 @@ To Do list
 	- turn off search suggestions
 - self host BitWarden with VaultWarden
 - self host FireFox sync server
+
+- https://permissionslipcr.com/
+- https://privacybadger.org/

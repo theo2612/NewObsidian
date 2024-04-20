@@ -1,7 +1,7 @@
 {
-  "baseFontSize": 24,
+  "baseFontSize": 17,
   "translucency": true,
-  "cssTheme": "Things",
+  "cssTheme": "",
   "theme": "obsidian",
   "enabledCssSnippets": [
     "side-menu-style"

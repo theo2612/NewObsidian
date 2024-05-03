@@ -4,8 +4,11 @@ A knights tale
 Shawshank redemption
 the replacements
 
+Lean on me
+Stand by me
 the matrix
 Die hard
+City of Angels
 UP
 Sherlock Holmes movies
 Clash of the Titans
@@ -42,6 +45,8 @@ Young guns
 Idocracy
 
 Need to watch
+Fear and Loathing in Las Vegas
+The Hitchhikers Guide to the Galaxy
 Interstellar
 
 Immortals

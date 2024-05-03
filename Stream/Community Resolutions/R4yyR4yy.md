@@ -1,0 +1,1 @@
+- dedicate 1 hour on Wednesday or Saturday to Self Study

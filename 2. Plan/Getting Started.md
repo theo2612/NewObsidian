@@ -1,9 +1,8 @@
 ![I want to work in cyber](https://imgur.com/a/UeBUasg "Cyber meme")
 
 Q. Are you in school - High School or University?
-	1. Consider grabbing an entry level job and get experience in the industry while you're younger with less overhead  
+1. Consider grabbing an entry level job and get experience in the industry while you're younger with less overhead  
 Q. Are you in IT or another industry?
-
 1. Self study
 	1. Focus on 1 or 2 subject areas to avoid losing traction on too many
 	3. Budget yourself time daily/weekly 
@@ -12,10 +11,9 @@ Q. Are you in IT or another industry?
 	6. note taking obsidian, notion, cherry tree
 	7. To-do list and a master to-do list- and swap out when done with item from to-do
 2. Network on linkedIn
-	1. like
-	2. comment
-	3. ask questions
-	4. engage positively
+	1. like and comment but
+	2. ask questions
+	3. engage positively
 3. GitHub
 	1. Add what projects/code you have already
 	2. Create

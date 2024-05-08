@@ -3,8 +3,7 @@
 2. Typing
 3. Security+
 4. skill building
-	1. BHIS cyber Range
-	2. python
+	1. 
 5. extreme ownership
 
 

@@ -43,4 +43,4 @@ note: Hi! BT, PT, Welcome to External Penetration Testing Methodology
 
 Full presentation on my Github
 https://github.com/theo2612​
-![[undefined - Imgur.gif]]
+![[hacking 4 arms.gif]]

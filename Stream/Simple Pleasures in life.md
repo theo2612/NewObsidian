@@ -1,4 +1,4 @@
-Fresh cup of hot black coffee
+Fresh hot cup of black coffee
 Enjoying Coffee in peace and quiet
 Ice cold beer on a hot day  
 Sunrise on the east coast  

@@ -3,7 +3,7 @@
 2. Typing
 3. Security+
 4. skill building
-	1. 
+	1. Your Mom
 5. extreme ownership
 
 

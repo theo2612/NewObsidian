@@ -218,6 +218,113 @@ A CA / Certificate authority key is commonly used to validate the digital signat
 Session keys are commonly used temporarily to provide confidentiality during a single session. Once the session is complete, the keys are discarded
 ## Public key
 In asymmetric encryption, a public key is already available to everyone.
+## Kerberos
+Kerberos uses ticket-based system to provide SSO (Single Sign on). You only need to authenticate once with Kerberos to gain access to multiple resources. 
+## TACACS+
+TACACS+ (Terminal Access Controller Access-Control System) is a common authentication method, but does not provide any single sign-on functionality.
+## LDAPS
+LDAPS (Lightweight Directory Access Protocol secure) is a standard for accessing a network directory. Can provide an authentication method, but does not provide any single sign on functionality
+## 802.1x
+802.1x is a standard for port-based network access control (PNAC), but it does not inherently provide any single sign-on functionality.
+## VLANs
+VLANs / Virtual local Area Network will segment a network without requiring additional switches. 
+## VPN
+VPN / Virtual Private Network will encrypt all information between 2 networks, but not provide any segmentation. 
+## Air gapped network
+An air gapped network would require separate physical switches on each side of the gap.
+## Personal Firewalls
+Personal Firewalls provide protection for individual devices
+## VPN tunnels
+VPN / Virtual Private Network
+Usually send traffic unfiltered through the encrypted tunnel.
+Non-split / Full Tunnels redirect all traffic through the encrypted tunnel. 
+Split tunnel only sends a portion of the traffic through the encrypted tunnel.
+## Faraday Cage
+A Faraday cage is a mesh of conductive material that will cancel electromagnetic fields.
+Does not prevent physical access to servers with out credentials
+Does not provide any additional cooling features.
+Does not provide any additional fire protection features
+## Templates
+Templates can be used to easily build the basic structure of an application instance. 
+Templates are not used to identify or prevent the introduction of vulnerabilities
+## Elasticity
+Elasticity is important when scaling resources as the demand increases or decreases. 
+Will not help with the identification of vulnerabilities.
+## Master image
+A master image is used to quickly copy a server for easy deployment. The image will need to be updated and maintained to prevent issues associated with unexpected vulnerabilities.
+## Salting
+adding random data, or salt, to a password when performing the hashing process will create a unique hash, even if other users have chosen the dame password.
+## Obfuscation
+Obfuscation is the process of making something difficult for humans to read or understand.
+## Key Stretching
+Key Stretching is a process that uses a key multiple times for additional protection against brute force attacks. 
+## Digital signature
+Digital signatures use a hash and asymmetric encryption to provide integrity of data. 
+A certificate authority will digitally sign a certificate to add trust.
+If you trust the certificate authority you can then trust the certificate.
+## X.509
+X.509 standard defines the structure of a certificate.
+This standard format makes it easy for everyone to view the contents of a certificate. 
+Does not provide any additional trust.
+## Hash
+A hash can help verify that the certificate has not been altered.
+But it does not provide additional third part trust
+## Symmetric encryption
+Symmetric encryption has the same issue as asymmetric encryption. 
+The information in a certificate commonly needs to be viewable by others. 
+## Data custodian
+The Data custodian manages access rights and sets security controls to the data
+## Data processor
+The data processor manages the operational use of the data, but not the rights and permissions to the information.
+## Data Owner
+The Data owner is usually a higher level exec who makes business decisions regarding the data
+## Privacy officer 
+The Privacy officer sets privacy policies and implements privacy processes and procedures
+## PII
+PII / Personally Identifiable Information is often associated with privacy and compliance concerns
+## PHI
+PHI / Protected Health Information would most likely be Healthcare data
+## HSM
+An HSM / Hardware Security module is a high end cryptographic hardware appliance that can securely store keys and certificates for all devices.
+## TPM
+A TPM / Trusted Platform Module is used on individual devices to provide cryptographic functions and securely store encryption keys. 
+## SLE
+SLE / Single Loss Expectancy describes the financial impact of a single event
+## ALE
+ALE / Annual Loss Expectancy is the financial loss over and entire 12 month period
+## RTO
+RTO / Recovery  Time Objectives define a set of objectives needed to restore a particular sevice level.
+## ARO
+ARO / Annualized Rate of Occurrence is the number of times an event will occur in a 12 month period
+## SQL injection
+SQL / Structured Query Language injection takes advantage of poor input validation to circumvent the application and perform queries directly to the database.
+## CSRF
+CSRF / Cross Site Request Forgery takes advantage of a third-party trust to a web application. 
+## Buffer Overflow
+A Buffer Overflow uses an application vulnerability to submit more information than an application can properly manage. 
+## SSL Stripping
+SSL Stripping allows an on-path attack to rewrite web site addresses to gain access to encrypted information
+## RAT
+RAT / Remote Access Trojan is malware that can control a computer using desktop sharing and other administrative functions. 
+Once the RAT is installed, the attacker can control the desktop, capture screenshots, reboot the computer, and many other administrator functions.
+## On-path / Man-in-the-middle
+On-path / Man-in-the-middle attack commonly occurs without any knowledge to the parties involved, and there's usually no additional notification that an attack is underway.
+## Worm
+A worm is malware that can replicate itself between systems without any user intervention.
+A spreadsheet that requires a user to click warning messages would not be categorized as a worm.
+## Logic Bomb
+A Logic Bomb is malware that installs and operates silently until a certain event occurs. Once the logic bomb has been triggered, the results usually involve loss of data or a disabled operating system
+## PCI DSS
+The PCI DSS / Payment Card Industry Data Security Standard specifies the minimum security requirements for storing and protecting credit card information. 
+## GDPR
+GDPR / General Data Protection Regulation is a European Union regulation that governs data protection and privacy for individuals in the EU.
+## ISO 27001 
+The ISO / International Organization for Standardization 27001 standard focuses on the requirements for an Information Security Management System (ISMS)
+## CSA CCM 
+The CSA CCM / Cloud Security Alliance Cloud Controls Matrix provides documents for implementing and managing cloud-specific security controls.
+
+
+
 
 
 

@@ -3,8 +3,7 @@ Obsidian notes One Way - Host to GitHub
 
 New notebook name?
 
-rustbelt field manual
-onyx 
+rustbelt field manual 
 CyberForge 
 Rustbelt Redteam Forge
 Metallurgy 

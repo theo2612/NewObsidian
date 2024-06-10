@@ -1,3 +1,8 @@
+check for diff from last commit
+```bash
+$ git diff --histogram
+```
+
 check for existing commits
 ```bash
 $ git status 
@@ -17,3 +22,4 @@ push added and committed files
 ```bash
 $ git push origin main
 ```
+

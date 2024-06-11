@@ -1,2 +1,0 @@
-- Convoluted Rick Roll
-	- `echo H4sIAAAAAAAAA1WNQQqAMAwE774iL/IP0S4q1kRiU+nvLdWDPQSW2WUyIsNoURGmZcugok5+DuOPR6SGg97SFeZCbOoSiOsFXLA2  7VYH7692ttIVF5eaNEwFHU+IkerbDU27+id9ACq9dHasAAAA | base64 -d | gzip -d`

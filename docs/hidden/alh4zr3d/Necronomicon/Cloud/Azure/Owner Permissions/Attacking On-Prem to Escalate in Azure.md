@@ -1,4 +1,0 @@
-- With Contributor or Owner role on a subscription, VMs can be used (and possibly created) to begin attacking connected on-prem networks
-- Bloodhound has updates that can also identify/graph Azure roles and relationships
-- Azure tokens are stored on user workstations in the `.Azure` profile folders - compromise dev machines and pivot
-- With elevated domain rights, might be able to add a new MFA token for a Global Administrator and crack their password to take over their account

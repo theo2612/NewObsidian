@@ -1,3 +1,0 @@
-- Free Course Material
-	- https://guyinatuxedo.github.io/
-	- https://portswigger.net/web-security

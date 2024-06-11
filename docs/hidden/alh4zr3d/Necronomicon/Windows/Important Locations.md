@@ -1,0 +1,14 @@
+- Registry
+	- WDigest enable
+		- `HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest\UseLogonCredential`
+		- Set to "1"
+	- LSA Secrets
+		- `HKLM\SECURITY\Policy\Secrets`
+		- Accounts found here:
+			- Domain Computer Account
+				- Changes every 30 days, can be used to generate Silver ticket or perform RBCD attack
+			- Autologon
+				- `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon`
+		- DPAPI master keys
+	- Applocker rules - `HKLM\Software\Policies\Microsoft\Windows\SrpV2`
+	- Restricted admin - `HKLM\System\CurrentControlSet\Control\Lsa\DisableRestrictedAdmin`

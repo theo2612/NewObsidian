@@ -1,0 +1,22 @@
+- Search specific website
+	- `site:"linkedin.com" "<company name>"`
+	- `site:s3.amazonaws.com COMPANY_NAME`
+- Look for string in URL
+	- `inurl:"/course/jumpto.php" site:example.com`
+- Find string in page title
+	- `intitle:"index of" site:example.com`
+- Find pages that contain links to a certain page
+	- `link:"https:// en.wikipedia.org/wiki/ReDoS"`
+- Find pages with a specific file extension
+	- `filetype:log site:example.com`
+	- `site:example.com ext:php`
+	- `site:example.com ext:txt password`
+- Wildcards - match any character or series of characters in string
+	- `how to hack * using Google`
+- Force an exact match to a string - use quotes
+	- `"how to hack"`
+- "OR" operator - match pages with either one of two criteria
+	- `"how to hack" site:(reddit.com | stackoverflow.com)`
+	- `(SQL Injection | SQLi)`
+- Minus operator - exclude certain search results
+	- `"how to hack websites" -php`

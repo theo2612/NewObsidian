@@ -1,0 +1,2 @@
+- [Abusing dynamic groups in Azure AD for privilege escalation (mnemonic.io)](https://www.mnemonic.io/resources/blog/abusing-dynamic-groups-in-azure-ad-for-privilege-escalation/)
+- In brief, look for dynamic groups that assign membership based on parameters that users have control over

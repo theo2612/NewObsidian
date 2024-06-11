@@ -1,0 +1,107 @@
+- Python
+	- `bloodhound-python -u USERNAME -p ‘PASSWORD’ -d CYBERPUNK.COM -c all -v`
+	- `bloodhound-python -c All -u 'enterprise-core-vn' -p 'ry=ibfkfv,s6h,' -gc 'WIN-2BO8M1OE1M1.vulnnet-rst.local' -dc 'WIN-2BO8M1OE1M1.vulnnet-rst.local' -d 'vulnnet-rst.local' -ns 10.10.131.192`
+
+- Custom Cipher queries
+	- Find computers with unconstrained delegation
+		- `MATCH (c:Computer {unconstraineddelegation:true}) RETURN c`
+	- Shortest path to unconstrained delegation systems from owned users
+		- `MATCH (u:User {owned:true}), (c:Computer {unconstraineddelegation:true}), p=shortestPath((u)-[*1..]->(c)) RETURN p`
+	- Find computers and services for constrained delegation
+		- `MATCH (c:Computer), (t:Computer), p=((c)-[:AllowedToDelegate]->(t)) RETURN p`
+	- Find paths to target computer from owned users
+		- `MATCH (u:User {owned:true}), (c:Computer {name: "WEB-2.CYBERBOTIC.IO"}), p=shortestPath((u)-[*1..]->(c)) RETURN p`
+	- Find computers with LAPS enabled
+		- `MATCH (c:Computer {haslaps: true}) RETURN c`
+	- Find groups with an edge to machines via LAPS
+		- `MATCH p=(g:Group)-[:ReadLAPSPassword]->(c:Computer) RETURN p`
+	- Find users with SQLAdmin to MSSQL servers
+		- `MATCH p=(u:User)-[:SQLAdmin]->(c:Computer) RETURN p`
+	- Find principals with GenericAll on another principal
+		- `MATCH (g1:Group), (g2:Group), p=((g1)-[:GenericAll]->(g2)) RETURN p`
+		- `MATCH (g1:Group {name:"1ST LINE SUPPORT@DEV.CYBERBOTIC.IO"}), (g2:Group), p=((g1)-[:GenericAll]->(g2)) RETURN p`
+	- Find computers that contain a given string in their name
+		- `Match (n:Computer) WHERE n.name CONTAINS "<string>" return n`
+	- Find workstations a user can RDP into.
+		- `match p=(g:Group)-[:CanRDP]->(c:Computer) where g.objectid ENDS WITH '-513'  AND NOT c.operatingsystem CONTAINS 'Server' return p`
+	- Find servers a user can RDP into.
+		- `match p=(g:Group)-[:CanRDP]->(c:Computer) where  g.objectid ENDS WITH '-513'  AND c.operatingsystem CONTAINS 'Server' return p`
+	- All Domain Admin sessions
+		- `MATCH (n:User)-[:MemberOf*1..]->(g:Group) WHERE g.objectid ENDS WITH '-512' MATCH p = (c:Computer)-[:HasSession]->(n) return p`
+	- Domain Admin sessions not on a certain group
+		- `OPTIONAL MATCH (c:Computer)-[:MemberOf]->(t:Group) WHERE NOT t.name = 'DOMAIN CONTROLLERS@TESTLAB.LOCAL' WITH c as NonDC MATCH p=(NonDC)-[:HasSession]->(n:User)-[:MemberOf]->(g:Group {name:”DOMAIN ADMINS@TESTLAB.LOCAL”}) RETURN DISTINCT (n.name) as Username, COUNT(DISTINCT(NonDC)) as Connexions ORDER BY COUNT(DISTINCT(NonDC)) DESC`
+	- All sessions a member of a given group has
+		- `MATCH (n:User)-[:MemberOf*1..]->(g:Group {name:'DOMAIN ADMINS@TESTLAB.LOCAL'}) MATCH p = (c:Computer)-[:HasSession]->(n) return p`
+- ACL Abuse
+	- Interesting privileges/ACLs configured to a particular group (DOMAIN USERS)
+		- `MATCH (m:Group) WHERE m.name =~ 'DOMAIN USERS@.*' MATCH p=(m)-[r:Owns|:WriteDacl|:GenericAll|:WriteOwner|:ExecuteDCOM|:GenericWrite|:AllowedToDelegate|:ForceChangePassword]->(n:Computer) RETURN p`
+	- Interesting edges related to "ACL Abuse" for unpriv users against other users
+		- `MATCH (n:User {admincount:False}) MATCH (m:User) WHERE NOT m.name = n.name MATCH p=allShortestPaths((n)-[r:AllExtendedRights|ForceChangePassword|GenericAll|GenericWrite|Owns|WriteDacl|WriteOwner*1..]->(m)) RETURN p`
+	- Interesting edges related to "ACL Abuse" for unpriv users against computers
+		- `MATCH (n:User {admincount:False}) MATCH p=allShortestPaths((n)-[r:AllExtendedRights|GenericAll|GenericWrite|Owns|WriteDacl|WriteOwner|AdminTo|CanRDP|ExecuteDCOM|ForceChangePassword*1..]->(m:Computer)) RETURN p`
+	- Users that are not AdminCount 1, have Generic All, and no local admin
+		- `MATCH (u:User)-[:GenericAll]->(c:Computer) WHERE  NOT u.admincount AND NOT (u)-[:AdminTo]->(c) RETURN u.name, c.name`
+- Groups
+	- Unpriv users with rights to add members to groups
+		- `MATCH (n:User {admincount:False}) MATCH p=allShortestPaths((n)-[r:AddMember*1..]->(m:Group)) RETURN p`
+	- Groups with RDP
+		- `MATCH p=(m:Group)-[r:CanRDP]->(n:Computer) RETURN m.name, n.name ORDER BY m.name`
+	- Groups which can reset passwords
+		- `MATCH p=(m:Group)-[r:ForceChangePassword]->(n:User) RETURN m.name, n.name ORDER BY m.name`
+	- Groups with local admin
+		- `MATCH p=(m:Group)-[r:AdminTo]->(n:Computer) RETURN m.name, n.name ORDER BY m.name`
+	- Users with local admin
+		- `MATCH p=(m:User)-[r:AdminTo]->(n:Computer) RETURN m.name, n.name ORDER BY m.name`
+	- Groups of all owned users
+		- `MATCH (m:User) WHERE m.owned=TRUE WITH m MATCH p=(m)-[:MemberOf*1..]->(n:Group) RETURN m.name, n.name ORDER BY m.name`
+	- Unique groups of all owned users
+		- `MATCH (m:User) WHERE m.owned=TRUE WITH m MATCH (m)-[r:MemberOf*1..]->(n:Group) RETURN DISTINCT(n.name)`
+	- Groups with default privileged rights on domain users and groups and ability to logon to DCs
+		- `MATCH (u:User)-[r1:MemberOf*1..]->(g1:Group {name:'ACCOUNT OPERATORS@DOMAIN.GR'}) RETURN u.name`
+	- Groups containing the word "admin"
+		- `Match (n:Group) WHERE n.name CONTAINS "ADMIN" return n`
+	- Permissions of Everyone/Authenticated users/Domain users/Domain computers
+		- `MATCH p=(m:Group)-[r:AddMember|AdminTo|AllExtendedRights|AllowedToDelegate|CanRDP|Contains|ExecuteDCOM|ForceChangePassword|GenericAll|GenericWrite|GetChanges|GetChangesAll|HasSession|Owns|ReadLAPSPassword|SQLAdmin|TrustedBy|WriteDACL|WriteOwner|AddAllowedToAct|AllowedToAct]->(t) WHERE m.objectsid ENDS WITH '-513' OR m.objectsid ENDS WITH '-515' OR m.objectsid ENDS WITH 'S-1-5-11' OR m.objectsid ENDS WITH 'S-1-1-0' RETURN m.name,TYPE(r),t.name,t.enabled`
+- Domain Trusts
+	- Can an object from domain "A" do anything to an object in domain "B"
+		- `MATCH (n {domain:"TEST.LOCAL"})-[r]->(m {domain:"LAB.LOCAL"}) RETURN LABELS(n)[0],n.name,TYPE(r),LABELS(m)[0],m.name`
+	- All connections to a different domain/forest
+		- `MATCH (n)-[r]->(m) WHERE NOT n.domain = m.domain RETURN LABELS(n)[0],n.name,TYPE(r),LABELS(m)[0],m.name`
+- Computers
+	- List all descriptions
+		- `MATCH (c:Computer) WHERE c.description IS NOT NULL RETURN c.name,c.description`
+	- List computers that are NOT domain controllers but are trusted for unconstrained delegation
+		- `MATCH (c1:Computer)-[:MemberOf*1..]->(g:Group) WHERE g.objectid ENDS WITH '-516' WITH COLLECT(c1.name) AS domainControllers MATCH (c2:Computer {unconstraineddelegation:true}) WHERE NOT c2.name IN domainControllers RETURN c2.name,c2.operatingsystem ORDER BY c2.name ASC`
+	- Computer accounts with local admin rights on other computers (descending order)
+		- `MATCH (c1:Computer) OPTIONAL MATCH (c1)-[:AdminTo]->(c2:Computer) OPTIONAL MATCH (c1)-[:MemberOf*1..]->(:Group)-[:AdminTo]->(c3:Computer) WITH COLLECT(c2) + COLLECT(c3) AS tempVar,c1 UNWIND tempVar AS computers RETURN c1.name AS COMPUTER,COUNT(DISTINCT(computers)) AS ADMIN_TO_COMPUTERS ORDER BY COUNT(DISTINCT(computers)) DESC`
+	- Computers where Domain Admins are logged in
+		- `MATCH (n:User)-[:MemberOf*1..]->(g:Group {name:'DOMAIN ADMINS@DOMAIN.GR'}) WITH n as privusers`
+	- Find which users can RDP to a given computer
+		- `MATCH (c:Computer) OPTIONAL MATCH (u:User)-[:CanRDP]->(c) WHERE u.enabled=true OPTIONAL MATCH (u1:User)-[:MemberOf*1..]->(:Group)-[:CanRDP]->(c) where u1.enabled=true WITH COLLECT(u) + COLLECT(u1) as tempVar,c UNWIND tempVar as users RETURN c.name AS COMPUTER,COLLECT(DISTINCT(users.name)) as USERS ORDER BY USERS desc`
+	- Computers with constrained delegation permissions and corresponding targets to which they are allowed to delegate
+		- `MATCH (c:Computer) WHERE c.allowedtodelegate IS NOT NULL RETURN c.name,c.allowedtodelegate`
+	- Unsupported OSs
+		- `MATCH (H:Computer) WHERE H.operatingsystem =~ '.*(2000|2003|2008|xp|vista|7|me)*.' RETURN H`
+- Users
+	- User objects where "userpassword" attribute is populated
+		- `MATCH (u:User) WHERE NOT u.userpassword IS null RETURN u.name,u.userpassword`
+	- Kerberoastable users
+		- `MATCH (u:User {hasspn:true}) RETURN u`
+		- With path to other computer
+			- `MATCH (u:User {hasspn:true}), (c:Computer), p=shortestPath((u)-[*1..]->(c)) RETURN p`
+		- With password last set > 5 years ago
+			- `MATCH (u:User) WHERE u.hasspn=true AND u.pwdlastset < (datetime().epochseconds - (1825 * 86400)) AND NOT u.pwdlastset IN [-1.0, 0.0] RETURN u.name, u.pwdlastset order by u.pwdlastset`
+		- With keyword
+			- `MATCH (u:User) WHERE ANY (x IN u.serviceprincipalnames WHERE toUpper(x) CONTAINS 'SQL')RETURN u`
+	- ASREPRoastable users with path to any computer:
+		- `MATCH (u:User {dontreqpreauth:true}), (c:Computer), p=shortestPath((u)-[*1..]->(c)) RETURN p`
+	- Users trusted for constrained delegation
+		- `MATCH (u:User)-[:AllowedToDelegate]->(c:Computer) RETURN u.name,COUNT(c) ORDER BY COUNT(c) DESC`
+	- Users trusted for constrained delegation and the corresponding targets to which they are allowed to delegate
+		- `MATCH (u:User) WHERE u.allowedtodelegate IS NOT NULL RETURN u.name,u.allowedtodelegate`
+	- Users with constrained delegation permissions,the corresponding targets where they are allowed to delegate, the privileged users that can be impersonated (based on sensitive:false and admincount:true) and find where these users (with constrained deleg privs) have active sessions (user hunting) as well as count the shortest paths to them
+		- `OPTIONAL MATCH (u:User {sensitive:false, admincount:true}) WITH u.name AS POSSIBLE_TARGETS OPTIONAL MATCH (n:User) WHERE n.allowedtodelegate IS NOT NULL WITH n AS USER_WITH_DELEG, n.allowedtodelegate as DELEGATE_TO, POSSIBLE_TARGETS OPTIONAL MATCH (c:Computer)-[:HasSession]->(USER_WITH_DELEG) WITH USER_WITH_DELEG,DELEGATE_TO,POSSIBLE_TARGETS,c.name AS USER_WITH_DELEG_HAS_SESSION_TO OPTIONAL MATCH p=shortestPath((o)-[r:MemberOf|HasSession|AdminTo|AllExtendedRights|AddMember|ForceChangePassword|GenericAll|GenericWrite|Owns|WriteDacl|WriteOwner|CanRDP|ExecuteDCOM|AllowedToDelegate|ReadLAPSPassword|Contains|GpLink|AddAllowedToAct|AllowedToAct*1..]->(USER_WITH_DELEG)) WHERE NOT o=USER_WITH_DELEG WITH USER_WITH_DELEG,DELEGATE_TO,POSSIBLE_TARGETS,USER_WITH_DELEG_HAS_SESSION_TO,p RETURN USER_WITH_DELEG.name AS USER_WITH_DELEG, DELEGATE_TO, COLLECT(DISTINCT(USER_WITH_DELEG_HAS_SESSION_TO)) AS USER_WITH_DELEG_HAS_SESSION_TO, COLLECT(DISTINCT(POSSIBLE_TARGETS)) AS PRIVILEGED_USERS_TO_IMPERSONATE, COUNT(DISTINCT(p)) AS PATHS_TO_USER_WITH_DELEG`
+	- Active sessions that a specific domain user has on all domain computers
+		- `MATCH p1=shortestPath(((u1:User {name:'USER@DOMAIN.GR'})-[r1:MemberOf*1..]->(g1:Group))) MATCH (c:Computer)-[r:HasSession*1..]->(u1) RETURN DISTINCT(u1.name) as users, c.name as computers ORDER BY computers`
+	- Users with interesting GPO permissions
+		- `MATCH p=(u:User)-[r:AllExtendedRights|GenericAll|GenericWrite|Owns|WriteDacl|WriteOwner|GpLink*1..]->(g:GPO) RETURN p LIMIT 25`

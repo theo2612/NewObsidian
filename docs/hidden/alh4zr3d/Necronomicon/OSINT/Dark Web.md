@@ -1,5 +1,0 @@
-- Tools
-	- [Ahmia](https://ahmia.fi/)  
-	- [OnionLink](https://onion.link/) 
-	- [List of 30 unusual Web search engines](https://www.deepwebsiteslinks.com/page/2/)  
-	- [Quora list of unusual Web sites](https://www.quora.com/What-are-some-cool-dark-web-websites/)

@@ -58,99 +58,68 @@ WPA2 or Wi-Fi Protected Access 2 encryption with AES or Advances Encryption Stan
 Discretionary Access Control is used in many operating systems and this model allows the owner of the resource to control who has access.
 ## MAC
 Manditory Access Control allows access based on the security level assigned to an object. Only users with the object's assigned security level or higher may access the resource.
-
 ## ABAC
 Attribute Based Access Control combines many different parameters to determine if a user has access to a resource.
-
 ## RBAC
 Role Based Access Control assign rights and permissions based on the role of a user. These roles are usually assigned by group
-
 ## Prepending 
 Prepending adds information before a domain name in an attempt to fool the victim into visiting a website managed by the attacker.
-
 ## Disassociation 
 Dissociation attacks are commonly associated with wireless networks. The disassociation attack is used to remove devices from the wireless network, and it does not commonly redirect clients to a different website.
-
 ## Buffer overflow
 Buffer overflows are associated with application attacks and can cause applications to crash or act in unexpected ways.
-
 ## Hybrid model
 A hybrid cloud model combines both private and public cloud infrastructures
-
 ## SaaS
 Software as a Service is a cloud deployment model that provides on-demand software without any context about the software's location.
-
 ## Community model
 A Community Cloud model allows multiple organizations to share the same cloud resources, regardless of the resources location.
-
 ## Containerization
 Containerization can be used with mobile phones to partition user data and corporate data
-
 ## MAC filtering
 Filtering by MAC (Media Access Control) address will limit which devices ca connect to the wireless network. If a device is filtered by MAC address, it will be able to see and access point but it will not be able to connect,
-
 ## SSID broadcast suppression
 A suppressed SSID (Service Set Identifier) broadcast will hide the name from the list of available wireless networks. Properly configured client devices can still connect to the wireless network, even with the SSID suppression
-
 ## 802.1X authentication
 With 802.1X authentication, users will be prompted for a username and password to gain access to the wireless network. Enabling 802.1X would not restirct properly configured devices. 
-
 ## Anti-spoofing
 Anti-spoofing features are commonly used with routers to prevent communication from spoofed IP addresses. This issue in this question
-
 ## Privilege escalation
 A Privilege escalation attack allows a user to exceed their normal rights and permissions
-
 ## Spoofing
 Spoofing is when a device pretends to be a different device or pretends to be something they aren't 
-
 ## Replay attack
 A Replay Attack captures information and then replays that information as the method of attack.
-
 ## Reconstitution  
 The recovery after after a breach can be a phased approach that may take months to complete
-
 ## Lessons learned
 Once the event is over, it's useful to revisit the process to learn and improve for next time. A post-incident meeting can help the incident response participants
 discuss the phases of the incident that went well and which processes can
 be improved for future events
-
 ## Isolation and containment
 During an incident, it's useful to separate infected systems from the rest of the network
-
 ## Precursors
 Log files and alerts can often warn you of potential problems
-
 ## Detection
 The Detection phase occurs prior to the system administrator arriving and identifying the potential problem.
-
 ## DLP
 DLP / Data Loss Prevention can identify and block PII / Personally Identifiable Information and other private details from being transferred across the network
-
 ## SIEM
 A SIEM / Security Information and Event Management is a management system for log consolidation and reporting
-
 ## IPS
 An IPS / Intrusion Prevention System can identify and block known vulnerabilities on the network.
-
 ## After-action report
 An after-action report is commonly created after a disaster recovery drill to document which aspects of the plan worked of did not work
-
 ## Business impact analysis
 A business impact analysis is usually created during the disaster recovery planning process. Once the disaster has occurred, it becomes much more difficult to complete and accurate impact analysis.
-
 ## Alternate business practice
 An Alternate business practice is one of the steps in completing a disaster recovery exercise.
-
 ## DNS Sinkhole
 A DNS (Domain name system) sinkhole can be used to redirect and identify devices that may attempt to communicate with an external command and control (C2) server. The DNS sinkhole will resolve an internal IP address adn can report on all devices that attempt to access the malicious domain. 
-
 ## Data Masking
 Data Masking provides a way to hide data by substitution, shuffling, encryption and other methods
-
 ## DLP
 DLP / Data Loss Prevention systems can identify and block private information from transferring between systems
-
 ## Remote Wipe
 Most organizations will use a mobile device manager (MDM) to manage mobile phones and tablets. Using the MDM, specific security policies can be created for each mobile device, including the ability to remotely send a remote wipe command that will erase all data on a mobile device. 
 ## Dump file
@@ -169,7 +138,6 @@ The Trusted Boot portion of the startup process verifies the operating system ke
 Measured Boot occurs after the Trusted Boot process and verifies that nothing on the computer has been changed by malicious software or other processes
 ## Secure Boot
 Secure Boot is a UEFI BIOS boot feature that checks the digital signature of the bootloader. the Trusted boot process occurs after Secure boot has completed 
-
 ## POST 
 POST / Power on self test  is a hardware check performed prior to booting an operating system.
 ## VDI
@@ -186,6 +154,8 @@ A preventative control physically limits access to a device or area.
 A managerial control sets a policy that is designed to control how people act.
 ## Detective 
 A detective control may not prevent access but it can identify and record any intrusion attempts
+## Physical control
+A Physical control wold block access. Ex, a door lock or a security guard
 ## most volatile to least volatile
 CPU registers, memory, temporary files, remote monitoring data
 ## Mitigation
@@ -259,7 +229,7 @@ Obfuscation is the process of making something difficult for humans to read or u
 ## Key Stretching
 Key Stretching is a process that uses a key multiple times for additional protection against brute force attacks. 
 ## Digital signature
-Digital signatures use a hash and asymmetric encryption to provide integrity of data. 
+Digital signatures use a hash and asymmetric encryption to provide integrity of data and non repudiation of data. 
 A certificate authority will digitally sign a certificate to add trust.
 If you trust the certificate authority you can then trust the certificate.
 ## X.509
@@ -272,12 +242,16 @@ But it does not provide additional third part trust
 ## Symmetric encryption
 Symmetric encryption has the same issue as asymmetric encryption. 
 The information in a certificate commonly needs to be viewable by others. 
-## Data custodian
-The Data custodian manages access rights and sets security controls to the data
+## Data custodian/steward
+The Data custodian manages access rights and sets security controls to the data. Associates sensitivity labels to the data. Ensures compliance with any applicable laws and standards. Implements security controls
 ## Data processor
 The data processor manages the operational use of the data, but not the rights and permissions to the information.
 ## Data Owner
 The Data owner is usually a higher level exec who makes business decisions regarding the data
+## Data Protection Officer
+The data protection officer (DPO) is responsible for the organization's data privacy. The DPO commonly sets processes and procedures for maintaining the privacy of data
+## Data Processor
+The data processor is often a third-party that processes data on behalf of the data controller.
 ## Privacy officer 
 The Privacy officer sets privacy policies and implements privacy processes and procedures
 ## PII
@@ -322,6 +296,76 @@ GDPR / General Data Protection Regulation is a European Union regulation that go
 The ISO / International Organization for Standardization 27001 standard focuses on the requirements for an Information Security Management System (ISMS)
 ## CSA CCM 
 The CSA CCM / Cloud Security Alliance Cloud Controls Matrix provides documents for implementing and managing cloud-specific security controls.
+## Data encryption
+Data encryption ensures that information can be securely transmitted from a source to a destination.
+
+## Key Escrow
+Key Escrow is commonly used as a method of storing decryption keys with a trusted third-party.
+## Certificate Authority
+Certificate Authorities are used as a method of trusting a certificate. If a certificate has been signed by a trusted CA, then the certificate owner can also be trusted.
+## Perfect Forward Secrecy
+Perfect forward secrecy uses temporary encryption keys that change between sessions. This constant switching of keys makes it more difficult for a third-party to decrypt the data later.
+## Data in-transit, at-rest, in-use, 
+- is the data moving from A to B across the network.
+- is the data doing nothing other than sitting in persistent storage
+- is the data currently in memory or being processed by a CPU on a device
+## OSINT
+OSINT/Open Source Intelligence describes the process of obtaining information from open sources, such as social media sites, corporate websites, online forums and other publicly available locations. 
+## Partially known environment
+A Partially known environment text describes how much information the attacker knows about the test. The attacker may have access to some information about the test  but not all information is disclosed
+## Known environment
+A known environment test is performed when the attacker has complete details about the victim's systems and infrastructure
+## Passive Footprinting
+Passive Footprinting is the process of gathering information from publicly available sites, such as social media or corporate websites
+## Ping scan
+A ping scan is a type of network scan that can identify devices connected to the network.
+## Exfiltration
+Exfiltration describes the theft of data by an attacker
+## Active footprinting
+Active footprinting would show some evidence of data gathering. For example performing a ping scan or DNS query wouldn't exploit a vulnerability but it would show that someone was haghering information. 
+## Invoice Scam
+Invoice scams attempt to take advantage of the miscommunication between different parts of the organization. Fake invoices are submitted by the attacker, and these invoices can sometime be incorrectly paid without going through the expected verification process.
+## Spear phishing
+Spear phishing is a directed attack that attempts to obtain private or personal information.
+## Watering hole attack
+A watering hole attack requires users to visit a central website or location. 
+## Credential harvesting
+Credential harvesting attempts to transfer password files and authentication information from other computers.
+## VM escape
+A VM/Virtual Machine escape is a vulnerability that allows communication between separate VMs.
+## Containerization
+Containerization is an application deployment architecture that uses a self-contained group of application code and dependencies. Many separate containers run on a single system.
+## Service integration
+Service integration and Management/SIAM allows the integration of many different service providers into a single management system. This simplifies the application management and deployment process when using separate cloud providers
+## SDN
+SDN/Software defined networking separates the controlplane of networkign devices from the data plane. This allows for more automation and dynamic changes to the infrastructure.
+## DNS poisoning
+An attacker that gains access to a DNS/Domain Name System server can modify the configuration files and redirect users to a different website. Anyone using a different DNS server may not see any problems with connectivity to the original site
+## Bluejacking
+Bluejacking allows a third-party to send unsolicited messages to another device using Bluetooth.
+## Wireless Disassociation
+Wireless Disassociation would cause users on a wireless network to constantly disconnect. 
+## DDOS
+DDOS/Distributed Denial of Service would attack a service from many different devices and cause the service to be unavailable
+## Authentication
+The process or proving who you say you are is authentication.
+## Accounting
+Accounting will document information regarding a users session, such as login time, data sent and received, files transferred and logout time.
+## Authorization
+The authorization process assigns users to resources. This process commonly occurs after the authentication process is complete.
+## Federation
+Federation provides a way to authenticate and authorize between two different organizations. 
+
+# 1st pass - quickly answer what you know
+# 2nd pass -  eliminate wrong answers
+# 3rd pass -  only change for tangible reasons
+
+
+
+
+
+
+
 
 
 

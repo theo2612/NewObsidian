@@ -6,3 +6,8 @@ Dr Kelso
 
 Sam Reich of gamechanger 
 “The only way to learn is by playing, the only way to win is by learning, and the only way to begin is by beginning,”
+
+???
+Your first workout, podcast, speech, video or ANYTHING will be bad.
+You can't make your 100th without making your FIRST. 
+Put your ego aside and START.

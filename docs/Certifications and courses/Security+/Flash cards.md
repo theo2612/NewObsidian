@@ -10,11 +10,11 @@ defines privacy and extends ISO 27001 & 27002 standards to include detailed mana
 ## ISO 31000 #card 
 defines risk over all of the below sets international standards for risk management
 ## MTBF #card 
-Mean time between failure
+Mean time between failure is the average time expected between outages
 ## RTO #card
-Recovery time objectives
+Recovery time objectives  define the minimum objectives  required to get up and running to particular service leverl
 ## MTTR #card
-Mean time to restore
+Mean time to repair is the time required to repair a product or system after failure
 ## MTTF
 mean time to failure
 ## EAP-TLS
@@ -43,7 +43,7 @@ mobile device containerization allows an organization to securely separate user 
 ## VDI
 a Virtual Desktop Infrastructure separates the applications from the mobile device or device.
 ## Geofencing
-could be used to prevent mobile device use from other countries, but you still need a MDM to implement the other requirements
+Geofencing uses location information from GPS, 802.11 wireless and other methods to use an access control method. Could be used to prevent mobile device use from other countries, but you still need a MDM to implement the other requirements
 ## False negative
 is a result that fails to detect an issue when one actually exists
 ## 802.1X
@@ -61,7 +61,7 @@ Manditory Access Control allows access based on the security level assigned to a
 ## ABAC
 Attribute Based Access Control combines many different parameters to determine if a user has access to a resource.
 ## RBAC
-Role Based Access Control assign rights and permissions based on the role of a user. These roles are usually assigned by group
+Role Based Access Control assign rights and permissions based on the role of a user in an operating sytsem. These roles are usually assigned by group
 ## Prepending 
 Prepending adds information before a domain name in an attempt to fool the victim into visiting a website managed by the attacker.
 ## Disassociation 
@@ -197,11 +197,11 @@ LDAPS (Lightweight Directory Access Protocol secure) is a standard for accessing
 ## 802.1x
 802.1x is a standard for port-based network access control (PNAC), but it does not inherently provide any single sign-on functionality.
 ## VLANs
-VLANs / Virtual local Area Network will segment a network without requiring additional switches. 
+VLANs / Virtual local Area Network will segment a network without requiring additional switches. The devices in each segmented VLAN can only communicate with other devices in the same VLAN.
 ## VPN
-VPN / Virtual Private Network will encrypt all information between 2 networks, but not provide any segmentation. 
+VPN / Virtual Private Network will encrypt all information between 2 networks or remote end-user communication, but not provide any segmentation. 
 ## Air gapped network
-An air gapped network would require separate physical switches on each side of the gap.
+An air gap is a segmentation strategy that separates devices or networks by physically disconnedcting them from each other. An air gapped network would require separate physical switches on each side of the gap.
 ## Personal Firewalls
 Personal Firewalls provide protection for individual devices
 ## VPN tunnels
@@ -259,7 +259,7 @@ PII / Personally Identifiable Information is often associated with privacy and c
 ## PHI
 PHI / Protected Health Information would most likely be Healthcare data
 ## HSM
-An HSM / Hardware Security module is a high end cryptographic hardware appliance that can securely store keys and certificates for all devices.
+An HSM / Hardware Security module is a high end cryptographic hardware appliance that can securely storing and backing up cryptographic keys and certificates for all devices.
 ## TPM
 A TPM / Trusted Platform Module is used on individual devices to provide cryptographic functions and securely store encryption keys. 
 ## SLE
@@ -355,6 +355,34 @@ Accounting will document information regarding a users session, such as login ti
 The authorization process assigns users to resources. This process commonly occurs after the authentication process is complete.
 ## Federation
 Federation provides a way to authenticate and authorize between two different organizations. 
+## Orchestratrion
+The process of automating the configuration, maintenance, and operation of an application instance is called orchestration. 
+## Wireshark
+Wireshark is a protocol analyzer, and it provide information about every frame that traverses the network. From a security perspective, the protocol decode can show the exploitation process and details about payloads used during exploit attempts.
+## Netstat 
+The netstat command can display connectivity information about a device. 
+## Nmap
+A Nmap scan is a useful tool for understanding the potential exploit vectors of a device. 
+## Nessus
+Nessus is a vulnerability scanner that can help identify potential exploit vectors
+## FTPS
+FTPS/File Transfer Protocol Secure provides mechanisms for transferring files using encrypted communication.
+## SNMPv3 
+SNMPv3/Simple Network Management Protocol version 3 uses encrypted communication to manage devices
+## SRTP 
+SRTP/Secure Real-Time Transport protocol is used for secure voice over IP and media communication across the network
+## DNSSEC
+DNSSEC/Domain Name System Secure Extensions are used on DNS servers to validate DNS responses using public key cryptography
+## NAT
+NAT / Network Address Translation  is used to modify the source or destination IP address or port number of a network traffic flow
+## NAC 
+NAC/Network access control is a broad term describing access control based on a health check or posture assessment. NAC will deny access to devices that don't meet the minimum security requirements
+## Jump Server
+A jump server is a highly secured device commonly used to access secure areas of another network. A technician would first connect to the jump server using ssh of a vpn tunnel and then "jump" from the jump server to other devices on the inside of the protected network. 
+## WAF
+WAF / Web application firewall is used to protect exploits against web-based applications
+## Proxy
+A proxy is used to make network or application requests on behalf of another person or device.
 
 # 1st pass - quickly answer what you know
 # 2nd pass -  eliminate wrong answers

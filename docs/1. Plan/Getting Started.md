@@ -10,7 +10,7 @@
 	5. Cert study, THM, HTB, CTF's, overthewire.org
 	6. note taking obsidian, notion, cherry tree
 	7. To-do list and a master to-do list- and swap out when done with item from to-do
-2. Network on linkedIn
+2. Network / Relationship building
 	1. like and comment but
 	2. ask questions
 	3. engage positively

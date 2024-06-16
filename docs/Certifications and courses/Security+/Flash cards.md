@@ -383,7 +383,20 @@ A jump server is a highly secured device commonly used to access secure areas of
 WAF / Web application firewall is used to protect exploits against web-based applications
 ## Proxy
 A proxy is used to make network or application requests on behalf of another person or device.
-
+## MFA
+MFA/Multi-factor Authentication.
+Something you know - password, PIN
+Something you have - smartphone, USB key, smart card
+Something you are - fingerprint, facial recognition, voice print
+## RADIUS
+RADIUS / Remote Authentication Dial-In User Service is a common method of centralizing authentication for users. Instead of having separate local accounts on differnent devices, users can authenticate with account information that is maintained in a centralized database. 
+## PAP
+PAP/Password Authentication Protocol is an authentication method that can validate a username and password but PAP does not provide any mechanism for a centralized authentication database
+## IPsec
+IPsec is commonly used as an encrypted tunnel between sites or endpoints. It's useful for protecting data sent over the network. 
+## MS-CHAP
+MS-CHAP/ Microsoft Challenge-Handshake Authentication Protocol was commonly used in Microsoft PPTP/Point-to-point tunneling protocol but vulnerabilities related to the use of DES/Data Encryption Standard encryption make it relatively easy to brute force the NTLM hash used in MS-CHAP
+##
 # 1st pass - quickly answer what you know
 # 2nd pass -  eliminate wrong answers
 # 3rd pass -  only change for tangible reasons

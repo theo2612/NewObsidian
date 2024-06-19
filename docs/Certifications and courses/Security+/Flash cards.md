@@ -51,7 +51,7 @@ uses a centralized authentication server, and all users can use their normal cre
 ## WPA2-PSK 
 PSK is the shared password that this network administration would like to avoid using in the future
 ## WPS
-Wi-Fi protected setup connects users to a wireless network using a shared PIN or personal identification number
+Wi-Fi protected setup connects users to a wireless network using a shared PIN or personal identification number. WPS Bad
 ## WPA2-AES
 WPA2 or Wi-Fi Protected Access 2 encryption with AES or Advances Encryption Standard is a common encryption method for wireless networks but it does not provide any centralized authentication functionality.
 ## DAC
@@ -155,17 +155,19 @@ A managerial control sets a policy that is designed to control how people act.
 ## Detective 
 A detective control may not prevent access but it can identify and record any intrusion attempts
 ## Physical control
-A Physical control wold block access. Ex, a door lock or a security guard
+A Physical control would block access. Ex, a door lock, fences, bollards or a security guard
+## Corrective 
+A corrective control is designed to mitigate any potential damage.
 ## most volatile to least volatile
 CPU registers, memory, temporary files, remote monitoring data
 ## Mitigation
-Mitigation is a strategy that decreases the threat level
+Mitigation is a strategy that decreases the threat level. If the organization was to purchase additional backup facilities and update their backup processes to include offline backup storage, they would be mitigating the risk of a ransomware infection.
 ## Transference
-Transference would move risk from one entity to another
+Transference would move risk from one entity to another. Purchasing insurance to cover a risky activity is a common method of transferring risk from the organization to the insurance company.
 ## Acceptance
-The acceptance of risk is a position where the owner understands the risk  and has decided to accept the portential results
+The acceptance of risk is a position where the owner understands the risk  and has decided to accept the potential results.
 ## Risk Avoidance
-With risk-avoidance, the owner of the risk decides to stop participating in a high-risk activity. This effectively avoids the risky acti8vityt and prevents any future issues.
+With risk-avoidance, the owner of the risk decides to stop participating in a high-risk activity. This effectively avoids the risky activity and prevents any future issues.
 ## Integrity measurement
 An integrity measurement is designed to check for the secure baseline of firewall settings, patch levels, operating system versions, and any other security components associated with the applicatoin.
 ## Sandbox
@@ -199,7 +201,7 @@ LDAPS (Lightweight Directory Access Protocol secure) is a standard for accessing
 ## VLANs
 VLANs / Virtual local Area Network will segment a network without requiring additional switches. The devices in each segmented VLAN can only communicate with other devices in the same VLAN.
 ## VPN
-VPN / Virtual Private Network will encrypt all information between 2 networks or remote end-user communication, but not provide any segmentation. 
+VPN / Virtual Private Network will encrypt all information between 2 networks or remote end-user communication. a VPN will not provide any segmentation or monitoring or threat identification.
 ## Air gapped network
 An air gap is a segmentation strategy that separates devices or networks by physically disconnedcting them from each other. An air gapped network would require separate physical switches on each side of the gap.
 ## Personal Firewalls
@@ -298,7 +300,6 @@ The ISO / International Organization for Standardization 27001 standard focuses 
 The CSA CCM / Cloud Security Alliance Cloud Controls Matrix provides documents for implementing and managing cloud-specific security controls.
 ## Data encryption
 Data encryption ensures that information can be securely transmitted from a source to a destination.
-
 ## Key Escrow
 Key Escrow is commonly used as a method of storing decryption keys with a trusted third-party.
 ## Certificate Authority
@@ -396,10 +397,62 @@ PAP/Password Authentication Protocol is an authentication method that can valida
 IPsec is commonly used as an encrypted tunnel between sites or endpoints. It's useful for protecting data sent over the network. 
 ## MS-CHAP
 MS-CHAP/ Microsoft Challenge-Handshake Authentication Protocol was commonly used in Microsoft PPTP/Point-to-point tunneling protocol but vulnerabilities related to the use of DES/Data Encryption Standard encryption make it relatively easy to brute force the NTLM hash used in MS-CHAP
-##
+## Separation of Duties
+A separation of duties policy ensures that multiple users are required to complete a single business process. 
+## Offboarding 
+The offboarding process describes the policies and procedures associated with someone leaving the organization of someone who is no longer an employee of the company.
+## Insecure protocols
+An insecure protocol will transmit information "in the clear", or without any type of encryption.
+## Weak encryption
+A weak encryption cipher will appea to protect data, but instead can be commonly circumvented to reveal plaintext.
+## Improper Patch management 
+Maintaining Systems to the latest patch version will protect against vulnerabilities and security issues. 
+## Sideloading
+If an OS has been circumvented using jailbreaking, then apps can be installed without using the device's app store.
+## RAID 0
+RAID Redundant Array of Independent Disks type 0 is a striped storage system with no parity, and a single drive failure does not maintain uptime or any redundancy of data.
+## RAID 1
+RAID / Redundant Array of Independent Disks type 1 maintains a mirror (exact duplicate) of data across multiple drives. If a single drive was to fail, the mirror would continue to operate with the redundant data. 
+## RAID 5
+RAID 5 provides redundancy through striping with parity. RAID 5 arrays would continue to operate through a single drive failure, the data is not replicated across drives. 
+## RAID 10
+RAID 10 or RAID 1+0 maintains mirrored drives that contain striped data. 
+## NGFW
+An NGFW / Next Generation Firewall is a .... It Will not provide any cloud based security policy monitoring
+## DLP 
+DLP / Data Loss Prevention can monitor data to prevent the transfer of sensitive information. It doesn't identify threats or force the transfer of encrypted data.
+## Improper Error Handling  
+Error messages can sometimes provide additional information about a system.
+## Weak cipher suite
+A weak cipher suite implies that the cryptography used in a system may be circumvented or decrypted.
+## NULL pointer dereference
+A NULL pointer dereference is a programming issue that causes application crashes and a potential denial of service. 
+## Supply Chain
+A supply chain attack infects part of the product manufacturing process in an attempt to also infect everything further down the chain.
+## Impersonation 
+Impersonation attacks use misdirection and pretext to allow an attacker to pretend they are someone else. 
+## UPS
+UPS / Uninterruptable power supply can provide backup power when the main power source is unavailable
+## Dual power supply
+Dual power supplies can maintain uptime when power surges cause physical damage to one of the power supplies in a system.
+## NIC teaming
+NIC / Network Interface Card teaming can be used for redundant network paths from a server, but it won't help with power related issues.
+## Port aggregation 
+Port aggregation  is used to increase network bandwidth between switches or devices
+## Load balancing
+Load balancers provide a way to manage busy services by increasing the number of available servers and balancing the load between them.
+
+
 # 1st pass - quickly answer what you know
 # 2nd pass -  eliminate wrong answers
 # 3rd pass -  only change for tangible reasons
+
+
+
+
+
+
+
 
 
 

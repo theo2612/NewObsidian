@@ -39,6 +39,9 @@
 	- Circuit switched
 		- Telephone system
 		- Optical networking
+		- Nodes establish a dedicated circuit across a sequence of links and then allows. Then allows the source node to send a stream of bits across the circuit to the destination node
 	- Packet Switched
 		- Computer networks
+		-  Use store and forward 
+			- Each node receives complete packet, stores in internal memory & forwards complete packet to next node.
 		- 

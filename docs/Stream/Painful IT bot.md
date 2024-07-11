@@ -19,7 +19,12 @@
 
 - **Movement to location** 
 	- !hack email
+	- !hack /etc/shadow
 	- !hack website
+	- !hack database
+	- !hack server
+	- !hack network
+	- !hack evilcorp
 - **System command once at location**
 	- !phish
 	- !crack

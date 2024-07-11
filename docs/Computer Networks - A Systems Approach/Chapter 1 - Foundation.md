@@ -1,0 +1,44 @@
+# 1.1 Applications
+- Groups of people who interact with the Internet
+	- Users
+	- Those who create applications
+	- Those who operate or manage networks
+	- Those who design and build devices and protocols that collectively make up the internet. 
+- Classes of applications of the internet
+	- Web
+		- Webpages
+		- Static images, links, text
+	- Streaming of audio and video
+		- Netflix, youtube.
+		- The whole video file doesn't download at once.
+	- Real-time Audio and video
+		- Zoom, videoconferencing
+		- even tighter constraints than streaming
+
+# 1.2 Requirements
+- Stakeholders and what they would list their requirements for a network
+	- Application programmer
+		- Services that their application needs
+		- 
+	- Network operator
+		- Characteristics of a system that are easy to administer and manage
+	- Network designer
+		- Properties of a cost effective design
+- Scale 
+	- A system that is designed to support growth to an arbitrarily large size 
+- Link 
+	- a physical medium that directly connects 2 or more computers on a network
+- nodes
+	- Can be computers or other pieces of specialized hardware. 
+	- pair of nodes are 'point to point'
+	- more than 2 nodes are 'multiple-access'
+- Types of networks
+	- Direct Links
+		- Point to Point
+		- Multiple-access
+	- Circuit switched
+		- Telephone system
+		- Optical networking
+	- Packet Switched
+		- Computer networks
+		- 

@@ -1,6 +1,6 @@
 {
   "promptDelete": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",

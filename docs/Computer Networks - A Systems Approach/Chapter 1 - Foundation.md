@@ -44,4 +44,45 @@
 		- Computer networks
 		-  Use store and forward 
 			- Each node receives complete packet, stores in internal memory & forwards complete packet to next node.
+- Network definitions
+	- nodes 
+		- Switches are inside the network 
+			- implement the network
+			- primary function to store and forward packets
+		- Hosts are outside the network
+			- use the network
+			- support users and run application programs
+		- Router or Gateway
+			- A node that is connected to two or more networks
+			- same role as a switch where it forwards messages from one network to another. 
+		- Address
+			- must be assigned to each node on a network
+			- a byte string that identifies a node
+		- Routing 
+			- The process of determining systematically how to forward messages toward the destination node based on its address
+		- Unicast
+			- A source node that sends a message to a single destination node
+		- Multicast
+			- A source node that wants to broadcast a message to all nodes on a network 
+			- A source node that wants to broadcast a message to a subset nodes but not all of them.
+	- Multiplexing
+		- When a system resource is shared among multiple users
+		- Synchronous Time-Division multiplexing / STDM
+			- Dividing time into equal-sized quanta
+			- In round robin fashion, giving each flow a chance to send its data over the physical link.
+				- 
+		- Frequency-division multiplexing / FDM
+			- Transmitting each flow over the physical link at a different frequency
+			- Similar way that the signals for different TV stations are transmitted at different frequencies over the airwaves
 		- 
+
+
+
+
+
+
+
+
+
+
+

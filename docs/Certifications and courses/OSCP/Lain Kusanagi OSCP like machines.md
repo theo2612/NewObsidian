@@ -1,4 +1,5 @@
-
+[editable Lain Kusanagi file](https://docs.google.com/spreadsheets/d/1gY4_48mP_MAhjhgrnfIz3hHR5MjflSoD/edit?gid=487240997#gid=487240997)
+[Lain Kusanagi list of OSCP like Machines](https://docs.google.com/spreadsheets/u/0/d/18weuz_Eeynr6sXFQ87Cd5F0slOj9Z6rt/htmlview?pli=1)
 # Hackthebox		
 - Start learning to Try harder here. Don’t fully skip hackthebox some boxes have important concepts that are rare even in PG practice like SNMP and Keepass also AD ones are pretty good practice even if harder than OSCP in some ways. At the very least watch ippsec videos and take notes
 

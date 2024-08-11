@@ -1,6 +1,4 @@
-- Write your own script to automate your basic enum
-
-- nmap for open ports
+nmap for open ports
 	- `nmap -p- -T4 -vvv ###.###.###.###`
 	- document
 - nmap for services and versions running on open ports

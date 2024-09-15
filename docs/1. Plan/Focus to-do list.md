@@ -1,9 +1,8 @@
 ## Focus Todo list
-1. Job Hunt
-2. Typing
-3. skill building
-4. [Computer Networks: A systems approach](https://book.systemsapproach.org/index.html)
-5. Extreme ownership - Apple books
+1. SC-900
+2. OSCP
+3. [Computer Networks: A systems approach](https://book.systemsapproach.org/index.html)
+4. Extreme ownership - Apple books
 
 ## Shiny Object list
 1. Next Cert - [CISA](https://www.isaca.org/credentialing/cisa)

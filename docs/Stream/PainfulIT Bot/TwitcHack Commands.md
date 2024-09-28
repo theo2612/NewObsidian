@@ -1,0 +1,11 @@
+- ~start 
+	- Register for TwitcHack
+- ~hack 
+	- ~hack email
+	- move to a location
+- ~phish
+	- phish email
+- ~ points
+	- check you point total
+- ~leaderboard
+	- Check leaderboard for point leader

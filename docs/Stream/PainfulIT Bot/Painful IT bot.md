@@ -1,5 +1,13 @@
 ## TwitcHack
 
+- Create manual in Obsidian for RustBelt link for chat
+
+- boss / party system into this game
+	- where the streamer is the boss and chat is rolling ~d20 to land an attack
+	- it chat rolls fail, they take damage. if chat rolls succeed, you take damage
+	- have a ticker that heals both chat and the streamer over time
+	- 17+ rolls land a critical blow
+
 - **Points System**
 	- Players earn points/items for successful attacks
 		- Successful attacks with be determined randomly

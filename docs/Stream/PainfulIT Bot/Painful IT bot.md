@@ -1,12 +1,17 @@
 ## TwitcHack
 
-- Create manual in Obsidian for RustBelt link for chat
-
-- boss / party system into this game
-	- where the streamer is the boss and chat is rolling ~d20 to land an attack
-	- it chat rolls fail, they take damage. if chat rolls succeed, you take damage
-	- have a ticker that heals both chat and the streamer over time
-	- 17+ rolls land a critical blow
+- **Boss / party system into this game**
+	- where the streamer is the boss with set hit points 
+	- viewers attack and also have hit points 
+	- Chat rolling ~d20 to land an attack
+	- it chat rolls fail, they take damage. 
+	- if chat rolls succeed, you take damage
+	- When I roll then a random viewer is selected for damage
+	- ticker that heals both chat and the streamer over time
+	- chat rolls
+		- over 12 
+		- 19+ rolls land a critical blow
+		- hp scale 
 
 - **Points System**
 	- Players earn points/items for successful attacks
@@ -17,6 +22,8 @@
 - **Leveling Up**: 
 	- Players can level up
 	- Unlocking more advanced commands and abilities.
+	- fix leveling, losing points then leveling again
+	- 
 - **Leaderboards**: 
 	- Display top players based on points.
 - **Random Events**: 
@@ -26,22 +33,15 @@
 	- (e.g., security updates, user errors).
 
 - **Movement to location** 
-	- !hack email
-	- !hack /etc/shadow
-	- !hack website
-	- !hack database
-	- !hack server
-	- !hack network
-	- !hack evilcorp
-- **System command once at location**
-	- !phish
-	- !crack
-	- !burp, etc...
-- Additional commands
-	- !location
-	- !items
-	- !leaderboard
-
+	- - **System command once at location**
+- !hack - shows location
+- !hack email
+- !hack /etc/shadow
+- !hack website
+- !hack database
+- !hack server
+- !hack network
+- !hack evilcorp
 #### Locations & Attacks
 - **Locations**
 	- *Attacks 

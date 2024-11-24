@@ -1,0 +1,6 @@
+- The Make-A-Wish Foundation's mission is to grant life-changing wishes to children with critical illnesses.
+- These wishes are more than just a nice thing. And they are far more than gifts, or singular events in time. 
+- Wishes impact everyone involved—wish kids, volunteers, donors, sponsors, medical professionals and communities. 
+	- For wish kids, just the act of making their wish come true can give them the courage to comply with their medical treatments. 
+	- Parents might finally feel like they can be optimistic. 
+	- And still others might realize all they have to offer the world through volunteer work or philanthropy. 

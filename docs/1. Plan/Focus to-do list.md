@@ -1,8 +1,8 @@
 ## Focus Todo list
-1. SC-900
-2. OSCP
-3. [Computer Networks: A systems approach](https://book.systemsapproach.org/index.html)
-4. Extreme ownership - Apple books
+1. OSCP - 3 months
+2. [Computer Networks: A systems approach](https://book.systemsapproach.org/index.html) 1 month
+3. Extreme ownership - Apple books 1 month
+
 
 ## Shiny Object list
 1. Next Cert - [CISA](https://www.isaca.org/credentialing/cisa)

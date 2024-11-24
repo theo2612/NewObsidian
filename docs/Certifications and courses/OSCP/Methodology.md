@@ -1,5 +1,5 @@
-- Write your own script to automate your basic enum
-
+- ping machine
+	- `ping ###.###.###.###`
 - nmap for open ports
 	- `nmap -p- -T4 -vvv ###.###.###.###`
 	- document

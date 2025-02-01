@@ -5,7 +5,6 @@
 
 
 ## Shiny Object list
-1. Next Cert - [CISA](https://www.isaca.org/credentialing/cisa)
 2. [Container training](https://container.training/)
 3. [Netmaker](https://www.netmaker.io/)
 4. Create browser extension that integrated with chatGPT that gives a TL:DR and explain like I'm five for the webpage I'm on or selected text
@@ -14,15 +13,16 @@
 7. Carrot Invoke boxes
 8. Metasploit courses
 9. pi hole
-10. linux box in chat
 11. Rosie Game creation
 12. Supply chain attacks
-13. Computer Networks: A System Approach
 14. [Prime's VIM course](https://frontendmasters.com/courses/vim-fundamentals/)
 15. customize my linux 
 16. zerotier or tailscale
 17. udemy nmap course
 18. host an AI
+	2. VM in a proxmox host if it is possible and KodeKLoud. 
+	3. Then create your VMs and install whatever in Security or OS you prefer.
+	4. https://msty.app/
 19. PNPT
 20. Sql injection
 21. XSS

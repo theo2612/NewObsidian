@@ -8,6 +8,20 @@
 - Need a better description of your presentation?
 - Couple tools he wrote to do basic post compromise commands 
 and send info back to a discord server
+- Why are we doing this? 
+	- Just to see if we can
+	- Bring to light this functionality
+	- Making the case for not clicking links or downloading files 
+	- Discord is not as safe as one may think.
+	- Showing the impact
+- The order of events
+	- Notta hacker - hacker 
+	- Testy mctester - likes clicking on things
+	- Notta hacker sends the malicious file - Initial access vector
+	- testy mctester clicks link and runs file
+	- attack machine will have output of commands on the 
+	- Steal data, encrypt data
+- How to protect yourself
 
 ## Presentation after interview
 - 1. Data wipe then fork bomb for a Linux machine
@@ -38,7 +52,8 @@ and send info back to a discord server
 - How you did you land your job in cyber security to get in the industry?
 - How necessary is Building Professional Relationships/Networking? 
 	- LinkedIn, Discord, in person? 
-- The importance of stepping out of your comfort zone?
+- The importance of stepping out of your comfort zone? 
+	- IMO learning happens outside your 
 - What is advice that you wish  you knew when you started on your path in cybersecurity? Dev? 
 
 Sleeper questions - pick one.... or?

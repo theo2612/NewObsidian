@@ -1,0 +1,4 @@
+- # [Using Discord as a C2 server](https://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689) 
+	- https://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689
+- # [Recaptcha Phish](https://github.com/JohnHammond/recaptcha-phish) 
+	- https://github.com/JohnHammond/recaptcha-phish

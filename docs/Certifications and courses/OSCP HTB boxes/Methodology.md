@@ -35,7 +35,7 @@
 	- Metaspolit
 	- document
 
-- Foothold
+- Foothold - Look around and check things out for a second
 	- search local directory
 	- search root directory
 	- sudo -l
@@ -43,4 +43,3 @@
 		- `$ find / -perm /4000 2>/dev/null'
 		- 
 
-look aroiunm d and check thinkgs our for a sec

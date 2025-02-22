@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "1c1ff979909db7c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f5a00bfae81fce1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ecb85e5de6447410",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CTF's/Reverse shell - bash upgrade.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "5c01e1bdc35a249b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certifications and courses/OSCP HTB boxes/Methodology.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Methodology"
+            }
+          },
+          {
+            "id": "5ddea6cf5233c7a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certifications and courses/OSCP HTB boxes/CozyHosting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CozyHosting"
+            }
+          },
+          {
+            "id": "c54fe66070f41b8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Certifications and courses/OSCP HTB boxes/checker.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "checker"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ddd8930fcef2358f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2b55357dcd1e3b87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f1a8a87fd810e4b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "afb2d3ad8afdb4e2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "pirate soft",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c7a2261c5fb5ce6d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "6ae6e5bb3620afa1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9036ad84c0805c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d09a42fbb6ab8fa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CTF's/Reverse shell - bash upgrade.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "c59f27312fc78e4b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CTF's/Reverse shell - bash upgrade.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "7c0f45dbd636ff77",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6c5aa66e76510a4d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CTF's/Reverse shell - bash upgrade.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Reverse shell - bash upgrade"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c54fe66070f41b8b",
+  "lastOpenFiles": [
+    "Certifications and courses/OSCP HTB boxes/CozyHosting.md",
+    "Certifications and courses/OSCP HTB boxes/checker.md",
+    "Pasted image 20250222160752.png",
+    "Certifications and courses/OSCP HTB boxes/Pasted image 20250124065056.png",
+    "Pasted image 20250222160046.png",
+    "Certifications and courses/OSCP HTB boxes/OSCP CheckMethodology.md",
+    "Certifications and courses/OSCP HTB boxes/Pasted image 20250209145035.png",
+    "Certifications and courses/OSCP HTB boxes/Pasted image 20250209145926.png",
+    "Certifications and courses/OSCP HTB boxes/Pasted image 20250208174348.png",
+    "Certifications and courses/OSCP HTB boxes/Methodology.md",
+    "CTF's/Reverse shell - bash upgrade.md",
+    "Gaming/Minecraft.md",
+    "CTF's/Hack the Box/Titanic.md",
+    "1. Plan/Getting Started working. I'm no hiring manager.md",
+    "Tryhackme/Linux PrivEsc.md",
+    "Pentesting Notes/Stabilize shell - Python.md",
+    "Tryhackme/Super-Spam.md",
+    "Certifications and courses/OSCP HTB boxes/Precious.md",
+    "Certifications and courses/OSCP HTB boxes/yourFace.md",
+    "Certifications and courses/OSCP HTB boxes/Sunday.md",
+    "Certifications and courses/OSCP HTB boxes/yourMom.md"
+  ]
+}

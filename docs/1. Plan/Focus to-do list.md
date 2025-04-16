@@ -1,4 +1,5 @@
-## Focus Todo list
+*This document tracks my current learning priorities ("Current Focus") and intriguing new topics ("Shiny Objects"). It helps me stay disciplined by clearly separating what I'm actively working on from exciting ideas and tools I want to explore later.*
+## ✅ Current Focus:
 1. OSCP - take in April
 2. Family Budget / Checkbook balance
 3. View Calendar for day and week
@@ -6,7 +7,7 @@
 5. Extreme ownership - Apple books 1 month
 
 
-## Shiny Object list
+## ✨ Shiny Objects (Future Interests):
 6. [Container training](https://container.training/)
 7. [Netmaker](https://www.netmaker.io/)
 8. Create browser extension that integrated with chatGPT that gives a TL:DR and explain like I'm five for the webpage I'm on or selected text

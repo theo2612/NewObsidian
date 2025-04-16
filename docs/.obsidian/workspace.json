@@ -52,23 +52,8 @@
               "icon": "lucide-file",
               "title": "CozyHosting"
             }
-          },
-          {
-            "id": "c54fe66070f41b8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Certifications and courses/OSCP HTB boxes/checker.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "checker"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -125,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6ae6e5bb3620afa1",
@@ -216,10 +200,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c54fe66070f41b8b",
+  "active": "ecb85e5de6447410",
   "lastOpenFiles": [
+    "CTF's/Hack the Box/Seasonal hidden/Titanic.md",
+    "CTF's/Hack the Box/Seasonal hidden/checker.md",
+    "CTF's/Hack the Box/Seasonal hidden",
     "Certifications and courses/OSCP HTB boxes/CozyHosting.md",
-    "Certifications and courses/OSCP HTB boxes/checker.md",
     "Pasted image 20250222160752.png",
     "Certifications and courses/OSCP HTB boxes/Pasted image 20250124065056.png",
     "Pasted image 20250222160046.png",
@@ -230,7 +216,6 @@
     "Certifications and courses/OSCP HTB boxes/Methodology.md",
     "CTF's/Reverse shell - bash upgrade.md",
     "Gaming/Minecraft.md",
-    "CTF's/Hack the Box/Titanic.md",
     "1. Plan/Getting Started working. I'm no hiring manager.md",
     "Tryhackme/Linux PrivEsc.md",
     "Pentesting Notes/Stabilize shell - Python.md",

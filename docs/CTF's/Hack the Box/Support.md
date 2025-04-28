@@ -117,7 +117,7 @@ Nmap done: 1 IP address (1 host up) scanned in 99.20 seconds
 ```
 
 - smb found running on port 139, 445
-- using smbclient to enumerate shares 
+- using smbclient to enumerate list shares `-L` 
 ```bash
  ✘ kali@kali  ~/htb  smbclient -L 10.10.11.174
 Password for [WORKGROUP\kali]:
@@ -133,8 +133,11 @@ Password for [WORKGROUP\kali]:
 Reconnecting with SMB1 for workgroup listing.
 do_connect: Connection to 10.10.11.174 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
 Unable to connect with SMB1 -- no workgroup available
-
 ```
+- tried to log on to each share - only netlogon, support-tools available 
+- 
+
+
 
 - Gobuster to enumerate website if machine has 80 or 443
 	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`

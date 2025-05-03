@@ -135,7 +135,107 @@ do_connect: Connection to 10.10.11.174 failed (Error NT_STATUS_RESOURCE_NAME_NOT
 Unable to connect with SMB1 -- no workgroup available
 ```
 - tried to log on to each share - only netlogon, support-tools available 
-- 
+	- pulling down all the files reveals there is a folder and files UserInfo.zip
+		- Within UserInfo.zip there is a UserInfo.exe, UserInfo.exe.config
+		- viewing the UserInfo.exe.config we note that it is running on .NETFramework,Version=v4.8
+```bash
+ kali@kali  ~/htb/support  cat UserInfo.exe.config 
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+    </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b0
+3f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding> 
+  </runtime>
+</configuration>%     
+
+```
+- running the executable - the file appears to be a way to query an ldap database for credentials
+```bash
+ kali@kali  ~/htb/support  ./UserInfo.exe 
+
+Usage: UserInfo.exe [options] [commands]
+
+Options: 
+  -v|--verbose        Verbose output                                    
+
+Commands: 
+  find                Find a user                                       
+  user                Get information about a user                      
+
+ kali@kali  ~/htb/support  ./UserInfo.exe -v find -first YourMom
+[*] LDAP query to use: (givenName=YourMom)
+[-] Exception: No Such Object
+
+```
+- We can decompile the file to understand how it works with AvaloniaILSpy
+	- https://github.com/icsharpcode/AvaloniaILSpy?tab=readme-ov-file
+	- `Protected` class has an encoded password, username and getPassword()
+	![[Pasted image 20250503125655.png]]
+```bash
+using System;
+using System.Text;
+
+internal class Protected
+{
+	private static string enc_password = "0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E";
+
+	private static byte[] key = Encoding.ASCII.GetBytes("armando");
+
+	public static string getPassword()
+	{
+		byte[] array = Convert.FromBase64String(enc_password);
+		byte[] array2 = array;
+		for (int i = 0; i < array.Length; i++)
+		{
+			array2[i] = (byte)((uint)(array[i] ^ key[i % key.Length]) ^ 0xDFu);
+		}
+		return Encoding.Default.GetString(array2);
+	}
+}
+```
+- using https://dotnetfiddle.net/ to run the code to decode the password
+	- armando:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
+![[Pasted image 20250503131347.png]]
+```bash
+using System;
+using System.Text;
+
+internal class Protected
+{
+	private static string enc_password = "0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E";
+
+	private static byte[] key = Encoding.ASCII.GetBytes("armando");
+
+	public static string getPassword()
+	{
+		byte[] array = Convert.FromBase64String(enc_password);
+		byte[] array2 = array;
+		for (int i = 0; i < array.Length; i++)
+		{
+			array2[i] = (byte)((uint)(array[i] ^ key[i % key.Length]) ^ 0xDFu);
+		}
+		return Encoding.Default.GetString(array2);
+	}
+}					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine(Protected.getPassword());
+	}
+	
+	
+}
+```
+
 
 
 

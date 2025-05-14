@@ -9,12 +9,16 @@
 ```bash
 
 ```
+- if server is running dns 
+	- `dig @10.10.11.174 +short support.htb any`
+
 then
 - nmap for services and versions running on open ports
 	- `nmap -p port#, port#, port# -sC -sV ###.###.###.### -oN nameServicesVersionsNmap` 
 ```bash
 
 ```
+
 or
 
 - nmap open ports

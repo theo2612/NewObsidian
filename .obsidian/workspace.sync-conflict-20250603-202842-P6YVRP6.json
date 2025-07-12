@@ -84,9 +84,37 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2025-04-12 12.02.14.excalidraw"
             }
+          },
+          {
+            "id": "3e18da716929cef4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF's/Hack the Box/Cicada.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cicada"
+            }
+          },
+          {
+            "id": "0c5d40c7b5463603",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/1. Plan/Focus to-do list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Focus to-do list"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -162,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.51103591918945
+    "width": 309.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "f574baf1cafd6ad8",
@@ -180,19 +209,45 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "daily-notes:Open today's daily note": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4f2ad141cff4c70d",
+  "active": "3e18da716929cef4",
   "lastOpenFiles": [
-    "docs/CTF's/Hack the Box/Support.md",
-    "Excalidraw/~syncthing~Drawing 2025-04-12 12.02.14.excalidraw.md.tmp",
-    "Excalidraw/Drawing 2025-04-12 12.02.14.excalidraw.md",
-    "docs/Presentations/HackYSU/2025 topics.md",
+    "docs/Pentesting Notes/Wi-Fi hacking.md",
+    "docs/Pentesting Notes/Wi-Fi hacking",
     "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
-    "docs/1. Plan/Getting Your First Cybersecurity Job (From a Non-Hiring Manager Perspective).md",
+    "docs/CTF's/Hack the Box/Cicada.md",
+    "docs/CTF's/Hack the Box/Support.md",
+    "hidden/Seasonal hidden/~syncthing~fluffy.md.tmp",
+    "hidden/Seasonal hidden/fluffy.md",
+    "docs/CTF's/Hack the Box/~syncthing~Support.md.tmp",
     "docs/1. Plan/Focus to-do list.md",
+    "docs/CTF's/Hack the Box/Pasted image 20250517120156.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250517120035.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250517114233.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250517114658.png",
+    "docs/rwxrob/Boost/04.md",
+    "docs/Pentesting Notes/OSCP Checklist.md",
+    "Excalidraw/Drawing 2025-04-12 12.02.14.excalidraw.md",
+    "docs/CTF's/TryHackMe/Shrek.md",
+    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~Methodology.md.tmp",
+    "Excalidraw/~syncthing~Drawing 2025-04-12 12.02.14.excalidraw.md.tmp",
+    "docs/CTF's/Hack the Box/Pasted image 20250503131347.png",
+    "docs/CTF's/Hack the Box/~syncthing~Pasted image 20250503131347.png.tmp",
+    "docs/CTF's/Hack the Box/Pasted image 20250503131159.png",
+    "docs/CTF's/Hack the Box/~syncthing~Pasted image 20250503131159.png.tmp",
+    "docs/CTF's/Hack the Box/Pasted image 20250503125655.png",
+    "docs/CTF's/Hack the Box/~syncthing~Pasted image 20250503125655.png.tmp",
+    "docs/CTF's/Hack the Box/Pasted image 20250503125640.png",
+    "docs/CTF's/Hack the Box/~syncthing~Pasted image 20250503125640.png.tmp",
+    "docs/CTF's/Hack the Box/Forest.md",
+    "docs/CTF's/Hack the Box/Clicker.md",
+    "docs/CTF's/Hack the Box/Appointment.md",
+    "docs/Pentesting Notes/Commands per Port.md",
+    "docs/Pentesting Notes/Engagement outline.md",
+    "docs/Presentations/HackYSU/2025 topics.md",
+    "docs/1. Plan/Getting Your First Cybersecurity Job (From a Non-Hiring Manager Perspective).md",
     "docs/Podcast/USB our guest/EP 47 - Zoog's Deux.md",
     "docs/Podcast/USB our guest/Ep 46 - ANYAscii.md",
     "docs/Podcast/USB our guest/Industry Professional interview outline.md",
@@ -202,36 +257,9 @@
     "docs/Podcast/USB our guest/Ep N - optus api breach.md",
     "docs/Podcast/USB our guest/Ep N - Microsoft Teams.md",
     "docs/Podcast/USB our guest/Ep N - Medibank.md",
-    "docs/Podcast/USB our guest/Ep 42 - Interviewing Industry Professional Zoogs.md",
-    "docs/Podcast/USB our guest/Ep N - Browser in the Browser attack on Steam users.md",
-    "docs/Podcast/USB our guest/Ep N - xmetrix theo doxing.md",
-    "docs/Presentations/HackYSU/2024 topics.md",
-    "docs/Presentations/Rea Info Sys Road Show.md",
-    "docs/Presentations/HackYSU/HackYSU 2024.md",
     "docs/Untitled",
-    "hidden/Seasonal hidden/~syncthing~Dog.md.tmp",
-    "hidden/Seasonal hidden/Dog.md",
-    "hidden/Seasonal hidden/~syncthing~checker.md.tmp",
     "hidden/Seasonal hidden/Pasted image 20250223164008.png",
-    "hidden/Seasonal hidden/~syncthing~Pasted image 20250223164008.png.tmp",
-    "hidden/Seasonal hidden/checker.md",
-    "docs/Certifications and courses/OSCP HTB boxes/CozyHosting.md",
-    "hidden/alh4zr3d/Necronomicon/Programming/Nim/Process Injection/CreateRemoteThread.md",
-    "docs/Certifications and courses/OSCP HTB boxes/Precious.md",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~CozyHosting.md.tmp",
-    "docs/CTF's/Hack the Box/~syncthing~Titanic.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~yourFace.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~yourMom.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~Untitled.md.tmp",
     "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209145926.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209145035.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209125443.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209124540.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209123948.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250208174348.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250124065056.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Lain Kusanagi machines/pasted images/Pasted image 20241123122432.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Lain Kusanagi machines/pasted images/Pasted image 20241111102523.png",
     "docs/Certifications and courses/OSCP/Untitled.canvas",
     "docs/Images/Untitled.canvas",
     "Images/Untitled.canvas",

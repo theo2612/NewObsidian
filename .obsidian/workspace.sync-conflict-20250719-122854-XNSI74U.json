@@ -72,49 +72,21 @@
             }
           },
           {
-            "id": "4f2ad141cff4c70d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-04-12 12.02.14.excalidraw.md"
-              },
-              "pinned": true,
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-04-12 12.02.14.excalidraw"
-            }
-          },
-          {
-            "id": "69e900cc233f77ea",
+            "id": "0c5d40c7b5463603",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CTF's/TryHackMe/Shrek.md",
+                "file": "docs/CTF's/Hack the Box/Active.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shrek"
-            }
-          },
-          {
-            "id": "3e18da716929cef4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/CTF's/Hack the Box/Support.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Support"
+              "title": "Active"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -146,7 +118,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "networking",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,8 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.51103591918945,
-    "collapsed": true
+    "width": 309.51103591918945
   },
   "right": {
     "id": "f574baf1cafd6ad8",
@@ -212,54 +183,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3e18da716929cef4",
+  "active": "0c5d40c7b5463603",
   "lastOpenFiles": [
+    "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
+    "docs/CTF's/Hack the Box/Active.md",
+    "docs/Introductory Networking/Packet Tracer/ITN 9.1.3.md",
+    "docs/Introductory Networking/Encapsulating.md",
+    "docs/Introductory Networking/port forwarding.md",
+    "docs/Introductory Networking/Packet Tracer/Cisco switch commands.md",
+    "docs/Introductory Networking/Packet Tracer",
+    "docs/1. Plan/Focus to-do list.md",
+    "docs/Certifications and courses/Network+ Comptia/Cybrary Practice Labs/1.2 Networking Topologies and Characteristics.md",
+    "docs/CTF's/Hack the Box/Cicada.md",
+    "docs/Juniper labs/IPv4 subnetting.md",
+    "docs/Juniper labs/cast identifiers MAC addresses.md",
+    "docs/Juniper labs/Untitled.md",
+    "docs/Juniper labs/useful commands.md",
+    "docs/Juniper labs",
+    "docs/Untitled 1",
+    "Networking/osi-model-data-encapsulation-decapsulation2.png",
+    "Networking/OSI model Data encapsulation decapsulation.md",
+    "Networking/Untitled.md",
+    "Networking",
+    "docs/Pentesting Notes/Wi-Fi hacking/WiFi hacking.pdf",
+    "docs/Pentesting Notes/Wi-Fi hacking.md",
+    "docs/Pentesting Notes/Wi-Fi hacking",
+    "docs/CTF's/Hack the Box/Support.md",
+    "hidden/Seasonal hidden/~syncthing~fluffy.md.tmp",
+    "hidden/Seasonal hidden/fluffy.md",
+    "docs/CTF's/Hack the Box/~syncthing~Support.md.tmp",
+    "docs/CTF's/Hack the Box/Pasted image 20250517120156.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250517120035.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250517114233.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250517114658.png",
+    "docs/rwxrob/Boost/04.md",
+    "docs/Pentesting Notes/OSCP Checklist.md",
+    "Excalidraw/Drawing 2025-04-12 12.02.14.excalidraw.md",
+    "docs/CTF's/TryHackMe/Shrek.md",
+    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~Methodology.md.tmp",
+    "Excalidraw/~syncthing~Drawing 2025-04-12 12.02.14.excalidraw.md.tmp",
+    "docs/CTF's/Hack the Box/Pasted image 20250503131347.png",
+    "docs/CTF's/Hack the Box/Pasted image 20250503131159.png",
     "docs/CTF's/Hack the Box/Pasted image 20250503125655.png",
     "docs/CTF's/Hack the Box/Pasted image 20250503125640.png",
-    "docs/CTF's/Hack the Box/~syncthing~Support.md.tmp",
-    "Excalidraw/~syncthing~Drawing 2025-04-12 12.02.14.excalidraw.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~Methodology.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
-    "docs/CTF's/TryHackMe/Shrek.md",
     "docs/CTF's/Hack the Box/Forest.md",
     "docs/CTF's/Hack the Box/Clicker.md",
     "docs/CTF's/Hack the Box/Appointment.md",
     "docs/Pentesting Notes/Commands per Port.md",
-    "docs/Pentesting Notes/OSCP Checklist.md",
-    "docs/Pentesting Notes/Engagement outline.md",
-    "Excalidraw/Drawing 2025-04-12 12.02.14.excalidraw.md",
-    "docs/CTF's/Hack the Box/Support.md",
-    "docs/Presentations/HackYSU/2025 topics.md",
-    "docs/1. Plan/Getting Your First Cybersecurity Job (From a Non-Hiring Manager Perspective).md",
-    "docs/1. Plan/Focus to-do list.md",
-    "docs/Podcast/USB our guest/EP 47 - Zoog's Deux.md",
-    "docs/Podcast/USB our guest/Ep 46 - ANYAscii.md",
-    "docs/Podcast/USB our guest/Industry Professional interview outline.md",
-    "docs/Podcast/USB our guest/Ep N - grepStrength - Kelvin.md",
-    "docs/Podcast/USB our guest/Ep N - Uber Breaach.md",
-    "docs/Podcast/USB our guest/Ep N - Rockstar GTA6 hack.md",
-    "docs/Podcast/USB our guest/Ep N - optus api breach.md",
-    "docs/Podcast/USB our guest/Ep N - Microsoft Teams.md",
-    "docs/Podcast/USB our guest/Ep N - Medibank.md",
-    "docs/Podcast/USB our guest/Ep 42 - Interviewing Industry Professional Zoogs.md",
-    "docs/Podcast/USB our guest/Ep N - Browser in the Browser attack on Steam users.md",
-    "docs/Podcast/USB our guest/Ep N - xmetrix theo doxing.md",
-    "docs/Untitled",
-    "hidden/Seasonal hidden/~syncthing~Dog.md.tmp",
-    "hidden/Seasonal hidden/~syncthing~checker.md.tmp",
     "hidden/Seasonal hidden/Pasted image 20250223164008.png",
-    "hidden/Seasonal hidden/~syncthing~Pasted image 20250223164008.png.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~CozyHosting.md.tmp",
-    "docs/CTF's/Hack the Box/~syncthing~Titanic.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~yourFace.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209145926.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209145035.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209125443.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209124540.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250209123948.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250208174348.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Pasted image 20250124065056.png",
-    "docs/Certifications and courses/OSCP HTB boxes/Lain Kusanagi machines/pasted images/Pasted image 20241123122432.png",
     "docs/Certifications and courses/OSCP/Untitled.canvas",
     "docs/Images/Untitled.canvas",
     "Images/Untitled.canvas",

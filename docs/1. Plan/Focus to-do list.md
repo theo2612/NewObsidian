@@ -1,8 +1,9 @@
 *This document tracks my current learning priorities ("Current Focus") and intriguing new topics ("Shiny Objects"). It helps me stay disciplined by clearly separating what I'm actively working on from exciting ideas and tools I want to explore later.*
 ## ✅ Current Focus:
-1. OSCP - take in May
-2. [Computer Networks: A systems approach](https://book.systemsapproach.org/index.html) 1 month
-3. Extreme ownership - Apple books 1 month
+1. Write traceroute program in Go
+2. OSCP - take in May
+3. [Computer Networks: A systems approach](https://book.systemsapproach.org/index.html) 1 month
+4. Extreme ownership - Apple books 1 month
 
 
 ## ✨ Shiny Objects (Future Interests):

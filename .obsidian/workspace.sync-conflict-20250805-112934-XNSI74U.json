@@ -1,0 +1,268 @@
+{
+  "main": {
+    "id": "14318a14942bc58a",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f98059d3533496e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8e36327be28e31d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Pentesting Notes/OSCP Checklist.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "OSCP Checklist"
+            }
+          },
+          {
+            "id": "f4c214dfd1e507b7",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Pentesting Notes/Stabilize Shell - BASH.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Stabilize Shell - BASH"
+            }
+          },
+          {
+            "id": "fbeb2547a3a48cd2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF's/Reverse shell - bash upgrade.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "dc56a4ba50ad69ec",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Methodology"
+            }
+          },
+          {
+            "id": "f492a4970d87ed73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Pentesting Notes/Active Directory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Active Directory"
+            }
+          },
+          {
+            "id": "3646460dc3f6e6b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF's/Hack the Box/Active.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Active"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ef5768269860cc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f85f90c68e112aa1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a44158c1c6915adf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "276bf231fe87d856",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "smbclient",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3434bf30ead6b0c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Linux/App download and make world run-able.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "App download and make world run-able"
+            }
+          },
+          {
+            "id": "4e4f58df7aa8e821",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Linux/TryHackMe/Reverse shell - bash upgrade.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "8a05d3ddc65acda6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 328.5
+  },
+  "right": {
+    "id": "f574baf1cafd6ad8",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "3646460dc3f6e6b7",
+  "lastOpenFiles": [
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ClickOnce for Initial Access.md",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/aa671935-0842-411b-9fc2-7933a63c0448.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/de80f23f-f435-4234-aa9c-aadfc2fae3be.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/0b5b6f3b-7f00-409e-b32a-192d5a13b434.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fa9cb73f-8727-4740-8c71-ff6fccd14518.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/2dffe1c2-81fe-481b-b2a4-7f6c6f68d454.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/785b2504-deb7-4539-b14c-410c9daf0cff.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/8f54178e-e6f2-44a5-aa77-7cd142fac9ae.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/Assembly Loader.md",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/93eb4bd4-9033-41ed-a987-7d266b170fea.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/b1b84d5c-b692-478b-992e-3f6b48c2606f.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/89c9331b-79a6-4c78-947a-95799a557470.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon",
+    "docs/Pentesting Notes/Attacks/Hacking Tools/kerbrute.md",
+    "docs/CTF's/Hack the Box/Sauna.md",
+    "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
+    "docs/Linux/App download and make world run-able.md",
+    "docs/Pentesting Notes/Attacks/Tools.md",
+    "docs/Pentesting Notes/Attacks/RIS Phishing.md",
+    "docs/Pentesting Notes/Attacks/HTTP methods.md",
+    "docs/Pentesting Notes/Attacks/Google Dorking.md",
+    "docs/Pentesting Notes/Attacks/Cross site Scriping - XSS.md",
+    "docs/Pentesting Notes/Attacks/Brute Forcing Passwords.md",
+    "docs/Pentesting Notes/Attacks/Brute Forcing.md",
+    "docs/Pentesting Notes/Attacks/Attack vectors.md",
+    "docs/CTF's/Hack the Box/Active.md",
+    "docs/Linux/Ghostty.md",
+    "docs/Pentesting Notes/Active Directory.md",
+    "docs/Introductory Networking/Packet Tracer/ITN 9.2.9.md",
+    "hidden/alh4zr3d/Necronomicon/Tools/BloodHound.md",
+    "docs/Active Directory/TryHackMe/2. Active Directory.Domain Services (AD DS) Data Store.md",
+    "docs/Active Directory/TryHackMe/3. The Forest.md",
+    "docs/CTF's/Hack the Box/Forest.md",
+    "docs/CTF's/Hack the Box/Clicker.md",
+    "docs/CTF's/Hack the Box/Appointment.md",
+    "docs/CTF's/Hack the Box/Cicada.md",
+    "docs/Introductory Networking/Packet Tracer/ITN 9.1.3.md",
+    "docs/Introductory Networking/Packet Tracer",
+    "docs/Juniper labs",
+    "docs/Untitled 1",
+    "Networking",
+    "docs/Pentesting Notes/Wi-Fi hacking/WiFi hacking.pdf",
+    "docs/Pentesting Notes/Wi-Fi hacking",
+    "hidden/Seasonal hidden/~syncthing~fluffy.md.tmp",
+    "docs/CTF's/Hack the Box/~syncthing~Support.md.tmp",
+    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~Methodology.md.tmp",
+    "docs/Certifications and courses/OSCP/Untitled.canvas",
+    "docs/Images/Untitled.canvas",
+    "Images/Untitled.canvas",
+    "hidden/Rea Information Systems/Untitled.canvas"
+  ]
+}

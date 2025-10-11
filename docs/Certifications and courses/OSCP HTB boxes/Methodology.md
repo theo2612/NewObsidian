@@ -56,6 +56,14 @@ or
 
 ```
 
+- active directory boxes
+	- null smb
+	- anonymous ldap bind
+	- guest accounts
+	- rpc
+	- straight brute force kerberos for users
+
+
 - search for exploits, RCEs, etc on service's versions running on those open ports
 	- SearchSploit
 	- Metaspolit

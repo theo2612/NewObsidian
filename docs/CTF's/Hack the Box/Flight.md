@@ -84,7 +84,7 @@ Nmap done: 1 IP address (1 host up) scanned in 95.48 seconds
 
 
 
-
+- directory brute forcing reveals nothing
 ```bash
 
 ```
@@ -93,7 +93,7 @@ Nmap done: 1 IP address (1 host up) scanned in 95.48 seconds
 
 
 
-
+- subdomain brute forcing reveals school.flight.com
 ```bash
 
 ```
@@ -101,7 +101,19 @@ Nmap done: 1 IP address (1 host up) scanned in 95.48 seconds
 
 
 
-
+- `.php?view=` indicates that we can send commands to the website
 ```bash
-
+http://school.flight.htb/index.php?view=about.html
 ```
+
+- testing poc with impacket
+
+
+
+
+
+
+
+
+
+

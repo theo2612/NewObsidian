@@ -2,23 +2,23 @@
 
   
 
-A Closer Look at the DarkSide Ransomware Gang - [https://krebsonsecurity.com/2021/05/a-closer-look-at-the-darkside-ransomware-gang/#more-55529](https://krebsonsecurity.com/2021/05/a-closer-look-at-the-darkside-ransomware-gang/#more-55529) 
+A Closer Look at the DarkSide Ransomware Gang - [[[https]]://krebsonsecurity.com/2021/05/a-closer-look-at-the-darkside-ransomware-gang/#more-55529]([[https]]://krebsonsecurity.com/2021/05/a-closer-look-at-the-darkside-ransomware-gang/#more-55529) 
 
   
 
-Colonial Pipeline attack: Everything you need to know- [https://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/](https://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/)
+Colonial Pipeline attack: Everything you need to know- [[[https]]://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/]([[https]]://www.zdnet.com/article/colonial-pipeline-ransomware-attack-everything-you-need-to-know/)
 
   
 
 Colonial Pipeline ransomware attack linked to a single VPN login
 
-[https://www.engadget.com/pipeline-ransomware-010631984.html](https://www.engadget.com/pipeline-ransomware-010631984.html) 
+[[[https]]://www.engadget.com/pipeline-ransomware-010631984.html]([[https]]://www.engadget.com/pipeline-ransomware-010631984.html) 
 
   
 
 Hackers Breached Colonial Pipeline Using Compromised Password
 
-[https://www.bloomberg.com/news/articles/2021-06-04/hackers-breached-colonial-pipeline-using-compromised-password?sref=10lNAhZ9](https://www.bloomberg.com/news/articles/2021-06-04/hackers-breached-colonial-pipeline-using-compromised-password?sref=10lNAhZ9) 
+[[[https]]://www.bloomberg.com/news/articles/2021-06-04/hackers-breached-colonial-pipeline-using-compromised-password?sref=10lNAhZ9]([[https]]://www.bloomberg.com/news/articles/2021-06-04/hackers-breached-colonial-pipeline-using-compromised-password?sref=10lNAhZ9) 
 
   
 
@@ -30,7 +30,7 @@ From ZDNet - the victim, Colonial Pipeline provides 45% of the east coast's fuel
 
 From Krebs on Security- The Ransomware gang DarkSide - If you didn’t know any better you would think their advertisement aimed at affiliates to use their ransomware was Legit off of LinkedIn. The advertisement bills Darkside as a Ransomware-as-a-service platform. What does that mean? Much like how I described in the RAT’s episode- You, me, anyone can go on any “Dark-mart” website and download a Ransomware service. You’d select your Ransomware, add to cart and pay with crypto... or would it be gift card codes…. Anyway, my point is, anyone can do this and run the Ransomware-as-a-service like they run any other program on their computer. 
 
-From Bloomberg - The compromise - Mandiant, part of FireEye was brought in to respond to the attack. They told bloomberg that Compromised VPN login credentials were used to access Colonials system. I have not been able to find what level employee’s credentials were used. The compromised accounts password has been discovered in a batch of leaked passwords on the dark web. What does that mean? Speculating and generally here, because the details have not been made public, but that password could have been included in a brute force or dictionary attack to attempt to access Colonial’s systems. 
+From Bloomberg - The compromise - Mandiant, part of FireEye was brought in to respond to the attack. They told bloomberg that Compromised VPN login credentials were used to access Colonials system. I have not been able to find what level employee’s credentials were used. The compromised accounts password has been discovered in a batch of leaked passwords on the dark web. What does that mean? Speculating and generally here, because the details have not been made public, but that password could have been included in a [[brute force]] or dictionary attack to attempt to access Colonial’s systems. 
 
 The repercussions - upon Colonial bringing down their system to mitigate the damage done by DarkSide, east coast gas prices shot up midday and sent droves of people to gas stations to stockpile fuel. Some gas stations were reporting outages. On May 13th Colonial had reported that operations were up running again.
 

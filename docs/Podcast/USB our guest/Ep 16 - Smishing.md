@@ -1,6 +1,6 @@
 **16 Smishing What is Smishing and how to protect yourself from an attack
 
- https://us.norton.com/internetsecurity-emerging-threats-what-is-smishing.html
+ [[https]]://us.norton.com/internetsecurity-emerging-threats-what-is-smishing.html
 
  Hello and Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your routine
 
@@ -26,6 +26,6 @@
 
  Also, remember that SMishing attacks can occur over text, sms, and Direct messages on most social media sites like Facebook, Twitter and Instagram. 
 
- That's all for today. On a final note. Please take a minute and leave us Voice note at https://anchor.fm/usbog/message. I'd appreciate any feedback on or topic suggestions for the flash briefing and soon to be podcast. The links will be in the show notes also.
+ That's all for today. On a final note. Please take a minute and leave us Voice note at [[https]]://anchor.fm/usbog/message. I'd appreciate any feedback on or topic suggestions for the flash briefing and soon to be podcast. The links will be in the show notes also.
 
  Thank you again for listening and we'll talk to you tomorrow.**

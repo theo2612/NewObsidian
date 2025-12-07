@@ -1,2 +1,2 @@
-https://geekprank.com/hacker/
-speedruns http://livesplit.org/
+[[https]]://geekprank.com/hacker/
+speedruns [[http]]://livesplit.org/

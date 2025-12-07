@@ -1,6 +1,6 @@
 31 RAT’s - Remote Access Trojan
 
-Dark Reading - [RATs 101: The Grimy Trojans That Scurry Through Remote Access Pipes...](https://www.darkreading.com/edge/theedge/rats-101-the-grimy-trojans-that-scurry-through-remote-access-pipes/b/d-id/1337996) 
+Dark Reading - [RATs 101: The Grimy Trojans That Scurry Through Remote Access Pipes...]([[https]]://www.darkreading.com/edge/theedge/rats-101-the-grimy-trojans-that-scurry-through-remote-access-pipes/b/d-id/1337996) 
 
  Hello and welcome back to USB our Guest Cyber Security Tips. I’m Theo and Today’s episode covers RATs or Remote Access Trojans. There is a great article on DarkReading that gives an overview of what RATs do and I’ll include it in the show notes. In This episode we will cover What are RATs, how do they find their way on your computer, what they do when they find themselves on there and what you can do to protect your device from them. 
 

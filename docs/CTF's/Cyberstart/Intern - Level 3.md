@@ -1,7 +1,7 @@
 CO1 0x1badb007  
 These are the two codes ROXy sent us, which we think can be combined in some way to generate a secret code. See what you do with it. We believe the code should start with the same 0x prefix.  
 0xB105F00D 0xAAA8400A  
-Calculate XOR - [http://xor.pw/#](http://xor.pw/#)  
+Calculate XOR - [[[http]]://xor.pw/#]([[http]]://xor.pw/#)  
   
 CO2 wUMB01Ni2Ik6fJV0a7nC  
 bypass a security gateway to a warehouse we believe holds clues to the whereabouts of a gang we are in hot pursuit of. The thing is, the gateway was created by someone who loves doing everything super fast! That means you only get 0.1 seconds to answer the question asked by the gateway. Can you find a way around it?  
@@ -48,7 +48,7 @@ The main tourism website for Barcelona has been hacked. They've devised a progra
 **Tip:** The characters at the 5 URLs change quickly, but computers can be far quicker than humans, especially when getting data!  
 Hint: With a little code you could probably get the contents from those 5 URLs as strings and join them together. I wonder what you need to do with the validation URL?  
   
-[https://pastebin.com/raw/pq5gJbYg](https://pastebin.com/raw/pq5gJbYg)  
-var base_url = "https://roambarcelona.com" var verify = "verify=Na2Q%2BeqhSP5hTRLDwpTNoA%3D%3D" var p1 = await fetch(`${base_url}/clock-pt1?${verify}`).then(response => response.text()); var p2 = await fetch(`${base_url}/clock-pt2?${verify}`).then(response => response.text()); var p3 = await fetch(`${base_url}/clock-pt3?${verify}`).then(response => response.text()); var p4 = await fetch(`${base_url}/clock-pt4?${verify}`).then(response => response.text()); var p5 = await fetch(`${base_url}/clock-pt5?${verify}`).then(response => response.text()); var answer = p1+p2+p3+p4+p5; var flag = await fetch(`${base_url}/get-flag?${verify}&string=${answer}`).then(response => response.text()); console.log(flag);  
+[[[https]]://pastebin.com/raw/pq5gJbYg]([[https]]://pastebin.com/raw/pq5gJbYg)  
+var base_url = "[[https]]://roambarcelona.com" var verify = "verify=Na2Q%2BeqhSP5hTRLDwpTNoA%3D%3D" var p1 = await fetch(`${base_url}/clock-pt1?${verify}`).then(response => response.text()); var p2 = await fetch(`${base_url}/clock-pt2?${verify}`).then(response => response.text()); var p3 = await fetch(`${base_url}/clock-pt3?${verify}`).then(response => response.text()); var p4 = await fetch(`${base_url}/clock-pt4?${verify}`).then(response => response.text()); var p5 = await fetch(`${base_url}/clock-pt5?${verify}`).then(response => response.text()); var answer = p1+p2+p3+p4+p5; var flag = await fetch(`${base_url}/get-flag?${verify}&string=${answer}`).then(response => response.text()); console.log(flag);  
   
 paste script into console on validation console.

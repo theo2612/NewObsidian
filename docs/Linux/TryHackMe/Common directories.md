@@ -1,7 +1,7 @@
 /etc  
 The root directory /etc is a commonplace location to store system files that are used by your OS  
 sudoers - contains a list of the user and groups that have permisson to run sudo or commands as the root user  
-passwd and shadow - special for linux as they show how your system stores the passwords for each user in encrypted formatting called sha12  
+passwd and shadow - special for [[linux]] as they show how your system stores the passwords for each user in encrypted formatting called sha12  
   
 /var  
 short for variable data.  

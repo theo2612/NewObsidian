@@ -1,11 +1,11 @@
 - ping machine
 	- `ping ###.###.###.###`
-- nmap for open ports
+- [[nmap]] for open ports
 	- `nmap -p- -T4 --open -vvv -Pn 10.10.10.51 -oN solidstate.txt`
-	- 22 ssh
-	- 25 smtp
-	- 80 http
-	- 110 pop3
+	- 22 [[ssh]]
+	- 25 [[smtp]]
+	- 80 [[http]]
+	- 110 [[pop3]]
 	- 119 nntp
 	- 4555 rsip
 ```bash
@@ -149,10 +149,10 @@ Nmap done: 1 IP address (1 host up) scanned in 262.28 seconds
 ```
 - search for exploits, RCEs, etc on service's versions running on those open ports
 	- 4555 JAMES Remote Administration Tool 2.3.2
-		- https://www.exploit-db.com/exploits/50347
+		- [[https]]://www.[[exploit-db]].com/exploits/50347
 		- has default creds root:root
 		- listusers 
-			- james, thomas, john, mindy, mailadmin
+			- james, thomas, [[john]], mindy, mailadmin
 			- setpassword password on all users
 		- login to pop with changed passwords
 			- telnet 10.10.10.51 110
@@ -160,14 +160,14 @@ Nmap done: 1 IP address (1 host up) scanned in 262.28 seconds
 			- pass password
 			- list
 			- retr \#
-			- john and mindy have message
-			- mindy has a message from john with her creds in it
+			- [[john]] and mindy have message
+			- mindy has a message from [[john]] with her creds in it
 			- username: mindy
 			- pass: P@55W0rd1!2@
 - Mindy has a restricted shell
 	- can only use cat, ls, env commands
 	- gtfo bins has an env section that can be used to escape restricted shell
-		- https://gtfobins.github.io/gtfobins/env/
+		- [[https]]://gtfobins.github.io/gtfobins/env/
 - Priv Esc
 	- 
 

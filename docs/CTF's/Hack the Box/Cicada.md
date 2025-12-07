@@ -121,7 +121,7 @@ SMB         10.10.11.35     445    CICADA-DC        1601: CICADA\emily.oscars (S
 
 ```
 - we can pull a list of user out of the scan with 
-- `nxc smb CICADA-DC -u guest -p '' --rid-brute | grep SidTypeUser | cut -d'\' -f2 | cut -d' ' -f1 | tee smbUsers.txt`
+- `nxc [[smb]] CICADA-DC -u guest -p '' --rid-brute | grep SidTypeUser | cut -d'\' -f2 | cut -d' ' -f1 | tee smbUsers.txt`
 ``
 
 

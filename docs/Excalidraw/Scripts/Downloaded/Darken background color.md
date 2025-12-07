@@ -1,9 +1,9 @@
 /*
-![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-download-raw.jpg)
+![]([[https]]://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-download-raw.jpg)
 
 Download this file and save to your Obsidian Vault including the first line, or open it in "Raw" and copy the entire contents to Obsidian.
 
-![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/darken-lighten-background-color.png)
+![]([[https]]://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/darken-lighten-background-color.png)
 
 This script darkens the background color of the selected element by 2% at a time. 
 
@@ -11,7 +11,7 @@ You can use this script several times until you are satisfied. It is recommended
 
 In contrast to the `Modify background color opacity` script, the advantage is that the background color of the element is not affected by the canvas color, and the color value does not appear in a strange rgba() form.
 
-The color conversion method was copied from [color-convert](https://github.com/Qix-/color-convert).
+The color conversion method was copied from [color-convert]([[https]]://github.com/Qix-/color-convert).
 
 ```javascript
 */

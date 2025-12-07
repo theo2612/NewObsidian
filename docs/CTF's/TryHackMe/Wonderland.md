@@ -1,4 +1,4 @@
-nmap to view open ports reveals 22 ssh and 80 http
+[[nmap]] to view open ports reveals 22 [[ssh]] and 80 [[http]]
 ```bash
 ┌──(kali㉿kali)-[~/thm/wonderland]
 └─$ cat nmapPortScan.txt 
@@ -127,7 +127,7 @@ reveals
 - poem
 	- the poem called 'the jabberwockey'
 
-- viewing page source of http://ip.ip.ip.ip/r/a/b/b/i/t reveals 
+- viewing page source of [[http]]://ip.ip.ip.ip/r/a/b/b/i/t reveals 
 	- username:password
 	- alice:
 
@@ -138,4 +138,4 @@ reveals
 
 
 
-"execute this file as the rabbit user". The file they imports your cutsom [random.py](https://random.py) which says "Open up a bash terminal as this user"
+"execute this file as the rabbit user". The file they imports your cutsom [random.py]([[https]]://random.py) which says "Open up a bash terminal as this user"

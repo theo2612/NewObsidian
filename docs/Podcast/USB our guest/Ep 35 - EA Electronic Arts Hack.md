@@ -1,36 +1,36 @@
 35. EA / Electronic Arts Hack
 
-Hackers Steal Wealth of Data from Game Giant EA - [https://www.vice.com/en/article/wx5xpx/hackers-steal-data-electronic-arts-ea-fifa-source-code](https://www.vice.com/en/article/wx5xpx/hackers-steal-data-electronic-arts-ea-fifa-source-code) 
+Hackers Steal Wealth of Data from Game Giant EA - [[[https]]://www.vice.com/en/article/wx5xpx/hackers-steal-data-electronic-arts-ea-fifa-source-code]([[https]]://www.vice.com/en/article/wx5xpx/hackers-steal-data-electronic-arts-ea-fifa-source-code) 
 
   
 
 Hackers leak full EA data after failed extortion attempt
 
-[https://therecord.media/hackers-leak-full-ea-data-after-failed-extortion-attempt/](https://therecord.media/hackers-leak-full-ea-data-after-failed-extortion-attempt/) 
+[[[https]]://therecord.media/hackers-leak-full-ea-data-after-failed-extortion-attempt/]([[https]]://therecord.media/hackers-leak-full-ea-data-after-failed-extortion-attempt/) 
 
   
 
 How Hackers Used Slack to Break into EA Games
 
-[https://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack](https://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack) 
+[[[https]]://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack]([[https]]://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack) 
 
   
 
 EA ignored domain vulnerabilities for months despite warnings and breaches
 
-[https://www.zdnet.com/article/ea-ignored-domain-vulnerabilities-for-months-despite-warnings-and-breaches/](https://www.zdnet.com/article/ea-ignored-domain-vulnerabilities-for-months-despite-warnings-and-breaches/) 
+[[[https]]://www.zdnet.com/article/ea-ignored-domain-vulnerabilities-for-months-despite-warnings-and-breaches/]([[https]]://www.zdnet.com/article/ea-ignored-domain-vulnerabilities-for-months-despite-warnings-and-breaches/) 
 
   
 
 Hackers selling access to FIFA matchmaking servers and other games after EA attack 
 
-[https://www.zdnet.com/article/hackers-selling-access-to-fifa-matchmaking-servers-and-other-games-after-ea-attack/](https://www.zdnet.com/article/hackers-selling-access-to-fifa-matchmaking-servers-and-other-games-after-ea-attack/) 
+[[[https]]://www.zdnet.com/article/hackers-selling-access-to-fifa-matchmaking-servers-and-other-games-after-ea-attack/]([[https]]://www.zdnet.com/article/hackers-selling-access-to-fifa-matchmaking-servers-and-other-games-after-ea-attack/) 
 
   
 
 How Hackers Used Slack to Break into EA Games
 
-[https://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack](https://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack) 
+[[[https]]://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack]([[https]]://www.vice.com/en/article/7kvkqb/how-ea-games-was-hacked-slack) 
 
   
 
@@ -82,7 +82,7 @@ Thoughts
 
  Interestingly, the bad guys either decided not to encrypt data and steal Personal Identifiable information or couldn’t access it. It seems that without that kind of leverage, companies feel better about declining demands from the bad guys. Especially if they have backups or in EA’s position, an online marketplace where their games can be downloaded legally.
 
-As for the domains, why not just take them down and wipe the DNS records? The domains may be in use publicly or privately or they may be holding on to them to sell in the future. At any rate, EA may need to review security practices. At the time of recording only one of the domains in the ZDNet article was accessible via a browser.
+As for the domains, why not just take them down and wipe the [[DNS]] records? The domains may be in use publicly or privately or they may be holding on to them to sell in the future. At any rate, EA may need to review security practices. At the time of recording only one of the domains in the ZDNet article was accessible via a browser.
 
   
 

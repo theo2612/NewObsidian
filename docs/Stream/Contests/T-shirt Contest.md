@@ -5,7 +5,7 @@
 5. Nothing offensive.
 6. 
 
-[Zazzle International shipping](https://help.zazzle.com/hc/en-us/articles/220677087-International-Shipping-Destinations)
+[Zazzle International shipping]([[https]]://help.zazzle.com/hc/en-us/articles/220677087-International-Shipping-Destinations)
 
 
 

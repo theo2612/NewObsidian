@@ -1,1 +1,1 @@
-[Gentoo Linux](https://xerolinux.xyz/)
+[Gentoo [[Linux]]]([[https]]://xerolinux.xyz/)

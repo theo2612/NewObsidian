@@ -8,4 +8,4 @@ PS C:\Users\Owner\Downloads\c2-3.1.2> .\c2-3.1.2_amd64_windows.exe -hostname 10.
 [*] Initial Setup Required - Setup token: SFHH-N2CH-QQWT-4C69  
 [*] Running Hak5 Cloud C2  
   
-Browse to [http://localhost/#/dashboard](http://localhost/#/dashboard)
+Browse to [[[http]]://localhost/#/dashboard]([[http]]://localhost/#/dashboard)

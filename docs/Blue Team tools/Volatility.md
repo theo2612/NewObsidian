@@ -1,5 +1,5 @@
 - Volatility is an open-source memory forensics toolkit written in python
-- Volatility allows us to analyse memory dumps taken from Windows, Linux and Mac OS devices and is an extremely popular tool in memory forensics
+- Volatility allows us to analyse memory dumps taken from [[Windows]], [[Linux]] and Mac OS devices and is an extremely popular tool in memory forensics
 - Volatility allows us to
 	- List all processes that were running on the device at the time of the capture
 	- List active and closed network connections
@@ -37,7 +37,7 @@ optional arguments:
 
 |Plugin|Description|Objective|
 |-|-|-|
-|windows.pslist|This plugin lists all of the processes that were running at the time of the capture.|To discover what processes were running on the system.|
-|windows.psscan|This plugin allows us to analyse a specific process further.|To discover what a specific process was actually doing.  |
-|windows.dumpfiles|This plugin allows us to export the process, where we can perform further analysis (i.e. static or dynamic analysis).|To export a specific binary that allows us further to analyse it through static or dynamic analysis.  |
-|windows.netstat|This plugin lists all network connections at the time of the cpture.|To understand what connections were being made. For example, was a process causing the computer to connect to a malicious server? We can use this IP address to implement defensive measures on other devices. For example, if we know an IP address is malicious, and another device is communicating with it, then we know that device is also infected.|
+|[[windows]].pslist|This plugin lists all of the processes that were running at the time of the capture.|To discover what processes were running on the system.|
+|[[windows]].psscan|This plugin allows us to analyse a specific process further.|To discover what a specific process was actually doing.  |
+|[[windows]].dumpfiles|This plugin allows us to export the process, where we can perform further analysis (i.e. static or dynamic analysis).|To export a specific binary that allows us further to analyse it through static or dynamic analysis.  |
+|[[windows]].netstat|This plugin lists all network connections at the time of the cpture.|To understand what connections were being made. For example, was a process causing the computer to connect to a malicious server? We can use this IP address to implement defensive measures on other devices. For example, if we know an IP address is malicious, and another device is communicating with it, then we know that device is also infected.|

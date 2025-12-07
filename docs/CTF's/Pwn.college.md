@@ -1,1 +1,1 @@
-[Pwn.college](https://pwn.college/)
+[Pwn.college]([[https]]://pwn.college/)

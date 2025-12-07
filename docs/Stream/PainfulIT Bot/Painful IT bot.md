@@ -28,7 +28,7 @@
 	- Display top players based on points.
 - **Random Events**: 
 	- Introduce random events that can help or hinder players 
-	- Windows and/or Linux updates
+	- [[Windows]] and/or [[Linux]] updates
 		- all firewalls deactivate
 	- (e.g., security updates, user errors).
 
@@ -52,17 +52,17 @@
 - **/etc/shadow** - Access and crack hashed passwords.
 	- *!crack:* Crack hashed passwords.
 	- *!stealth*: Hide your tracks by modifying log files.
-	- *!bruteforce*: Perform a brute force attack on password hashes.
+	- *!bruteforce*: Perform a [[brute force]] attack on password hashes.
 - **Website** - Target websites to find vulnerabilities.
-	- *!burp*: Scan for vulnerabilities using Burp Suite techniques.
-	- *!sqliw*: Perform an SQL injection attack.
-	- *!xss*: Execute a cross-site scripting attack.
+	- *![[burp]]*: Scan for vulnerabilities using [[Burp]] Suite techniques.
+	- *!sqliw*: Perform an [[SQL injection]] attack.
+	- *![[xss]]*: Execute a [[cross-site scripting]] attack.
 - **Database** - Access and manipulate databases.
 	- *!dumpdb*: Dump all data from the database.
-	- *!sqlidb*: Perform an SQL injection.
+	- *!sqlidb*: Perform an [[SQL injection]].
 	- *!admin*: Try to escalate privileges to gain admin access.
 - **Server** - Gain control over servers to execute commands.
-	- *!revshell*: Gain a reverse shell on the server.
+	- *!revshell*: Gain a [[reverse shell]] on the server.
 	- *!root*: Attempt to escalate privileges to root.
 	- *!ransom*: Encrypt files and demand a ransom.
 - **Network** - Monitor and intercept network traffic.

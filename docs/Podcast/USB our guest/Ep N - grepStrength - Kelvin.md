@@ -1,8 +1,8 @@
 # Interview with Kelvin / GrepStrength and Presentation
 
 ## Socials
-- [Blog](https://grepstrength.dev/) https://grepstrength.dev/
-- [GitHub](https://github.com/grepstrength)https://github.com/grepstrength? or remove this?
+- [Blog]([[https]]://grepstrength.dev/) [[https]]://grepstrength.dev/
+- [GitHub]([[https]]://github.com/grepstrength)[[https]]://github.com/grepstrength? or remove this?
 
 ## Preview to presentation
 - Need a better description of your presentation?
@@ -24,8 +24,8 @@ and send info back to a discord server
 - How to protect yourself
 
 ## Presentation after interview
-- 1. Data wipe then fork bomb for a Linux machine
-- 2. Ransomware for a windows
+- 1. Data wipe then fork bomb for a [[Linux]] machine
+- 2. Ransomware for a [[windows]]
 
 
 ## Interview questions - We can add to or remove from this list 
@@ -47,7 +47,7 @@ and send info back to a discord server
 	- I often get the question "What cert should I go after to break into cyber"
 - How do you learn to do what you do?
 	- platforms - tcm security - malware analysis - beginner
-	- o2auto - https://courses.zero2auto.com/
+	- o2auto - [[https]]://courses.zero2auto.com/
 	- GREM - GIAC Reverse Engineering Malware
 - How you did you land your job in cyber security to get in the industry?
 - How necessary is Building Professional Relationships/Networking? 

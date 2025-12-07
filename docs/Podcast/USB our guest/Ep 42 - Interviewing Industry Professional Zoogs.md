@@ -1,6 +1,6 @@
 Hello and welcome back to USB our Guest, Cyber Security tips. I’m Theo, here to help you break down cyber security news and hacks and how they affect you. However, today I am interviewing Zoogs. He has been in the industry for a bit now and I wanted to pick his brain on a variety of topics. We decided to record this live on twitch with chat using text to speech, while in Minecraft and recording audio in discord. So If you want to watch the VOD it is available on twitch or YouTube. We talk about his prior experience, current role, their expectations and what it took for him to get into that role. We also talk about Certificates, different learning techniques, the importance of stepping outside of your comfort zone, and advice that he wish he knew when he started on his path in cybersecurity. I include some sleeper questions that really don't have anything to do with cyber security And zoogs triggers himself @ 44:45!!
 
-https://linktr.ee/b7h30
+[[https]]://linktr.ee/b7h30
 
 Who are you? background - as much or little as you are comfortable with. 
 	- location

@@ -1,5 +1,5 @@
 /*
-![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-change-shape.jpg)
+![]([[https]]://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-change-shape.jpg)
 
 The script allows you to change the shape and fill style of selected Rectangles, Diamonds, Ellipses, Lines, Arrows and Freedraw. 
 

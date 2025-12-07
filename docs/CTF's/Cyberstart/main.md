@@ -1,1 +1,1 @@
-CyberStart - https://play.cyberstart.com
+CyberStart - [[https]]://play.cyberstart.com

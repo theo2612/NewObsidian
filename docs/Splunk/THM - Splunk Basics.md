@@ -7,8 +7,8 @@
 - takes very few resources to process so it does not affect the endpoints performance
 - Key data sources
 	- web server generating traffic
-	- Windows machine generating Windows event logs, Powershell, and Sysmon data 
-	- Linux host generating host-centric logs 
+	- [[Windows]] machine generating [[Windows]] event logs, Powershell, and Sysmon data 
+	- [[Linux]] host generating host-centric logs 
 	- Database generating DB connection requests, responses, and errors
 
 # Splunk indexer
@@ -52,7 +52,7 @@
 	- Security Services 
 	- Virtualization Services
 	- Application Services
-	- Windows sources
+	- [[Windows]] sources
 	- Other  sources
 	
 

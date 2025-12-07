@@ -9,9 +9,9 @@ The main use case in mind when implementing the plugin is classroom usage in whi
 
 The plugin records all drawings made so that they can be play backed using the `autoSlide` feature or the `audio-slideshow` plugin.
 
-[Check out the live demo](https://rajgoel.github.io/reveal.js-demos/chalkboard-demo.html)
+[Check out the live demo]([[https]]://rajgoel.github.io/reveal.js-demos/chalkboard-demo.html)
 
-The chalkboard effect is based on [Chalkboard](https://github.com/mmoustafa/Chalkboard) by Mohamed Moustafa.
+The chalkboard effect is based on [Chalkboard]([[https]]://github.com/mmoustafa/Chalkboard) by Mohamed Moustafa.
 
 ## Installation
 

@@ -1,5 +1,5 @@
 # Passwords
-[Knowbe4 blog - 5 easy steps to create strong passwords](https://blog.knowbe4.com/bid/352493/5-easy-steps-to-create-strong-passwords)
+[Knowbe4 blog - 5 easy steps to create strong passwords]([[https]]://blog.knowbe4.com/bid/352493/5-easy-steps-to-create-strong-passwords)
 
  Hey there. Thanks. Really appreciate you adding 'USB our Guest, cyber security tips' to your flash briefing.
 

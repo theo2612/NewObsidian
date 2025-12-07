@@ -1,8 +1,8 @@
 11 RoboCalls / Utility Scams utility RoboCalls Scams
 
- [Federal Trade Commission website - Empower yourself against utility scams - by Lisa Lake](https://www.consumer.ftc.gov/blog/2018/09/empower-yourself-against-utility-scams)
+ [Federal Trade Commission website - Empower yourself against utility scams - by Lisa Lake]([[https]]://www.consumer.ftc.gov/blog/2018/09/empower-yourself-against-utility-scams)
 
- [Federal Trade Commission Complaint Assistant](https://www.ftccomplaintassistant.gov/#crnt&panel1-1)
+ [Federal Trade Commission Complaint Assistant]([[https]]://www.ftccomplaintassistant.gov/#crnt&panel1-1)
 
  Hello. Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your Flash Briefing.
 

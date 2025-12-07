@@ -1,7 +1,7 @@
 Dox Theo on podcast
 	obfuscate sensitive info
 Powershell Rick Roll
-ssh into Rick Roll
+[[ssh]] into Rick Roll
 
 
 - TimeZone? -

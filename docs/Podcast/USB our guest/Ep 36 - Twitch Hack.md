@@ -2,29 +2,29 @@
 
 The entirety of Twitch has reportedly been leaked
 
-[https://www.videogameschronicle.com/news/the-entirety-of-twitch-has-reportedly-been-leaked/](https://www.videogameschronicle.com/news/the-entirety-of-twitch-has-reportedly-been-leaked/) 
+[[[https]]://www.videogameschronicle.com/news/the-entirety-of-twitch-has-reportedly-been-leaked/]([[https]]://www.videogameschronicle.com/news/the-entirety-of-twitch-has-reportedly-been-leaked/) 
 
 A Devastating Twitch Hack Sends Streamers Reeling - 
 
-[https://www.wired.com/story/devastating-twitch-hack-sends-streamers-reeling/](https://www.wired.com/story/devastating-twitch-hack-sends-streamers-reeling/) 
+[[[https]]://www.wired.com/story/devastating-twitch-hack-sends-streamers-reeling/]([[https]]://www.wired.com/story/devastating-twitch-hack-sends-streamers-reeling/) 
 
 Twitch confirms it was hacked after its source code and secrets leak out
 
-[https://www.theverge.com/2021/10/6/22712365/twitch-data-leak-breach-security-confirmation-comments](https://www.theverge.com/2021/10/6/22712365/twitch-data-leak-breach-security-confirmation-comments) 
+[[[https]]://www.theverge.com/2021/10/6/22712365/twitch-data-leak-breach-security-confirmation-comments]([[https]]://www.theverge.com/2021/10/6/22712365/twitch-data-leak-breach-security-confirmation-comments) 
 
 Twitch’s twitter posts
 
-[https://twitter.com/Twitch/status/1445770441176469512](https://twitter.com/Twitch/status/1445770441176469512)
+[[[https]]://twitter.com/Twitch/status/1445770441176469512]([[https]]://twitter.com/Twitch/status/1445770441176469512)
 
-[https://twitter.com/Twitch/status/1445985601174392835](https://twitter.com/Twitch/status/1445985601174392835)
+[[[https]]://twitter.com/Twitch/status/1445985601174392835]([[https]]://twitter.com/Twitch/status/1445985601174392835)
 
 Twitch’s blog - Update on the Twitch Security incident
 
-[https://blog.twitch.tv/en/2021/10/06/updates-on-the-twitch-security-incident/?utm_referrer=https://t.co/](https://blog.twitch.tv/en/2021/10/06/updates-on-the-twitch-security-incident/?utm_referrer=https://t.co/) 
+[[[https]]://blog.twitch.tv/en/2021/10/06/updates-on-the-twitch-security-incident/?utm_referrer=[[https]]://t.co/]([[https]]://blog.twitch.tv/en/2021/10/06/updates-on-the-twitch-security-incident/?utm_referrer=[[https]]://t.co/) 
 
 FB Update about the October 4th outage
 
-[https://engineering.fb.com/2021/10/04/networking-traffic/outage/](https://engineering.fb.com/2021/10/04/networking-traffic/outage/)
+[[[https]]://engineering.fb.com/2021/10/04/networking-traffic/outage/]([[https]]://engineering.fb.com/2021/10/04/networking-traffic/outage/)
 
   
 

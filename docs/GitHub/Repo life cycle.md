@@ -1,6 +1,6 @@
-[Git cheet sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
-[Setting up a new repo](https://gist.github.com/alexpchin/dc91e723d4db5018fef8)
-[https://www.atlassian.com/git](https://www.atlassian.com/git)
+[Git cheet sheet]([[https]]://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+[Setting up a new repo]([[https]]://gist.github.com/alexpchin/dc91e723d4db5018fef8)
+[[[https]]://www.atlassian.com/git]([[https]]://www.atlassian.com/git)
 from within the folder you want to make a repo
 ## Create a new repository on the command line 
 ```bash

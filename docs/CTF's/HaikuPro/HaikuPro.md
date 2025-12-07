@@ -17,4 +17,4 @@
 
 After all tutorials are complete it defaults you to - Intro to Ethical Hacker
 
-I prefer to work on ctf/ranges in my kali VM - interested to see how it runs without doing that
+I prefer to work on ctf/ranges in my [[kali]] VM - interested to see how it runs without doing that

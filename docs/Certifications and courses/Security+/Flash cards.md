@@ -49,7 +49,7 @@ Geofencing uses location information from GPS, 802.11 wireless and other methods
 ## False negative
 is a result that fails to detect an issue when one actually exists
 ## 802.1X
-802.1x is a standard for authentication using AAA (Authentication, Authorization, Accounting) services. 802.1x is commonly used in conjunction with LDAP, RADIUS, TACACS+ or Kerberos or similar authentication services. Uses a centralized authentication server, and all users can use their normal credentials to authenticate to an 802.1X network
+802.1x is a standard for authentication using AAA (Authentication, Authorization, Accounting) services. 802.1x is commonly used in conjunction with [[LDAP]], RADIUS, TACACS+ or [[Kerberos]] or similar authentication services. Uses a centralized authentication server, and all users can use their normal credentials to authenticate to an 802.1X network
 ## WEP
 WEP / Wireless Equivalent Privacy is an older wireless encryption algorithm that was ultimately found to have cryptographic vulnerabilities.
 ## WPA2-PSK 
@@ -72,7 +72,7 @@ Role-based access controls assign a user's permissions based on their role in th
 Prepending adds information before a domain name in an attempt to fool the victim into visiting a website managed by the attacker.
 ## Disassociation 
 Dissociation attacks are commonly associated with wireless networks. The disassociation attack is used to remove devices from the wireless network, and it does not commonly redirect clients to a different website.
-## Buffer overflow
+## [[Buffer overflow]]
 Buffer overflows allow and attacker to manipulate the contents of memory. are associated with application attacks and can cause applications to crash or act in unexpected ways.
 ## Hybrid model
 A hybrid cloud model combines both private and public cloud infrastructures
@@ -94,16 +94,16 @@ A suppressed SSID (Service Set Identifier) broadcast will hide the name from the
 With 802.1X authentication, users will be prompted for a username and password to gain access to the wireless network. Enabling 802.1X would not restirct properly configured devices. 
 ## Anti-spoofing
 Anti-spoofing features are commonly used with routers to prevent communication from spoofed IP addresses. This issue in this question
-## Privilege escalation
-A Privilege escalation attack allows a user to exceed their normal rights and permissions
+## [[Privilege escalation]]
+A [[Privilege escalation]] attack allows a user to exceed their normal rights and permissions
 ## Spoofing
 Spoofing is when a device pretends to be a different device or pretends to be something they aren't 
 ## Replay attack
 A Replay Attack captures information and then replays that information as the method of attack. To perform a replay attack, the attacker needs to capture the original non-encrypted content. If an application is not using encrypted communication, the data capture process is simple for the attacker
 ## Resource Exhaustion
 Resource exhaustion can take many different forms, but those resource issues don't necessariuly require the network communication to be sent in the clear.
-## Directory Traversal
-Directory Traversal is commonly associated with moving around the file system of a server. Non-encrypted communication is not a prerequisite in a directory traversal attack
+## [[Directory Traversal]]
+[[Directory Traversal]] is commonly associated with moving around the file system of a server. Non-encrypted communication is not a prerequisite in a [[directory traversal]] attack
 ## Reconstitution  
 The recovery after after a breach can be a phased approach that may take months to complete
 ## Precursors
@@ -125,8 +125,8 @@ An after-action report is commonly created after a disaster recovery drill to do
 A business impact analysis is usually created during the disaster recovery planning process. Once the disaster has occurred, it becomes much more difficult to complete and accurate impact analysis.
 ## Alternate business practice
 An Alternate business practice is one of the steps in completing a disaster recovery exercise.
-## DNS Sinkhole
-A DNS (Domain name system) sinkhole can be used to redirect and identify devices that may attempt to communicate with an external command and control (C2) server. The DNS sinkhole will resolve an internal IP address adn can report on all devices that attempt to access the malicious domain. 
+## [[DNS]] Sinkhole
+A [[DNS]] (Domain name system) sinkhole can be used to redirect and identify devices that may attempt to communicate with an external command and control (C2) server. The [[DNS]] sinkhole will resolve an internal IP address adn can report on all devices that attempt to access the malicious domain. 
 ## Data Masking
 Data Masking provides a way to hide data by substitution, shuffling, encryption and other methods. It hides some of the original data to protect sensitive information.
 ## Minimization
@@ -145,8 +145,8 @@ A dump file contains the contents of system memory.
 Web server logs will document web pages that were accessed, but it doesn't show what information may be contained in the system RAM
 ## Packet 
 A Packet Trace would provide information regarding network communication but it would not include any details regarding the contents of memory
-##  DNS 
-DNS (Domain Naming System) server logs can show which domain names were accessed by internal systems and this information can help identify systems that may be infected. 
+##  [[DNS]] 
+[[DNS]] (Domain Naming System) server logs can show which domain names were accessed by internal systems and this information can help identify systems that may be infected. 
 ## Boot order
 POST/ Power on self test --> Secure --> Trust --> Measured
 ## Trusted Boot
@@ -207,8 +207,8 @@ A CA / Certificate authority key is commonly used to validate the digital signat
 Session keys are commonly used temporarily to provide confidentiality during a single session. Once the session is complete, the keys are discarded
 ## Public key
 In asymmetric encryption, a public key is already available to everyone.
-## Kerberos
-Kerberos uses ticket-based system to provide SSO (Single Sign on). You only need to authenticate once with Kerberos to gain access to multiple resources. 
+## [[Kerberos]]
+[[Kerberos]] uses ticket-based system to provide SSO (Single Sign on). You only need to authenticate once with [[Kerberos]] to gain access to multiple resources. 
 ## TACACS+
 TACACS+ (Terminal Access Controller Access-Control System) is a common authentication method, but does not provide any single sign-on functionality.
 ## LDAPS
@@ -247,7 +247,7 @@ adding random data, or salt, to a password when performing the hashing process w
 Obfuscation is the process of making something difficult for humans to read or understand. It is the process of taking something that is normally understandable and making it very difficult to understand.
 
 ## Key Stretching
-Key Stretching is a process that uses a key multiple times for additional protection against brute force attacks. 
+Key Stretching is a process that uses a key multiple times for additional protection against [[brute force]] attacks. 
 ## Digital signature
 Digital signatures use a hash and asymmetric encryption to provide integrity of data and non repudiation of data. 
 A certificate authority will digitally sign a certificate to add trust.
@@ -293,12 +293,12 @@ ALE / Annual Loss Expectancy is the financial loss over and entire 12 month peri
 RTO / Recovery  Time Objectives define a set of objectives needed to restore a particular sevice level.
 ## ARO
 ARO / Annualized Rate of Occurrence is the number of times an event will occur in a 12 month period
-## SQL injection
+## [[SQL injection]]
 SQL / Structured Query Language injection takes advantage of poor input validation to circumvent the application and perform queries directly to the database.
-## CSRF
-CSRF / Cross Site Request Forgery takes advantage of a third-party trust to a web application. 
-## Buffer Overflow
-A Buffer Overflow uses an application vulnerability to submit more information than an application can properly manage. It takes advantage of an application vulnerability and can perform this overflow over both encrypted or non-encrypted channel.
+## [[CSRF]]
+[[CSRF]] / Cross Site Request Forgery takes advantage of a third-party trust to a web application. 
+## [[Buffer Overflow]]
+A [[Buffer Overflow]] uses an application vulnerability to submit more information than an application can properly manage. It takes advantage of an application vulnerability and can perform this overflow over both encrypted or non-encrypted channel.
 
 ## SSL Stripping
 SSL Stripping allows an on-path attack to rewrite web site addresses to gain access to encrypted information
@@ -352,7 +352,7 @@ A ping scan is a type of network scan that can identify devices connected to the
 ## Exfiltration
 Exfiltration describes the theft of data by an attacker
 ## Active footprinting
-Active footprinting would show some evidence of data gathering. For example performing a ping scan or DNS query wouldn't exploit a vulnerability but it would show that someone was haghering information. 
+Active footprinting would show some evidence of data gathering. For example performing a ping scan or [[DNS]] query wouldn't exploit a vulnerability but it would show that someone was haghering information. 
 ## Invoice Scam
 Invoice scams attempt to take advantage of the miscommunication between different parts of the organization. Fake invoices are submitted by the attacker, and these invoices can sometime be incorrectly paid without going through the expected verification process.
 ## Phishing 
@@ -373,8 +373,8 @@ Containerization is an application deployment architecture that uses a self-cont
 Service integration and Management/SIAM allows the integration of many different service providers into a single management system. This simplifies the application management and deployment process when using separate cloud providers
 ## SDN
 SDN/Software defined networking separates the controlplane of networkign devices from the data plane. This allows for more automation and dynamic changes to the infrastructure.
-## DNS poisoning
-An attacker that gains access to a DNS/Domain Name System server can modify the configuration files and redirect users to a different website. Anyone using a different DNS server may not see any problems with connectivity to the original site
+## [[DNS]] poisoning
+An attacker that gains access to a [[DNS]]/Domain Name System server can modify the configuration files and redirect users to a different website. Anyone using a different [[DNS]] server may not see any problems with connectivity to the original site
 ## Bluejacking
 Bluejacking allows a third-party to send unsolicited messages to another device using Bluetooth.
 ## Wireless Disassociation
@@ -397,12 +397,12 @@ The authorization process assigns users to resources. This process commonly occu
 Federation provides a way to authenticate and authorize between two different organizations. 
 ## Orchestratrion
 The process of automating the configuration, maintenance, and operation of an application instance is called orchestration. 
-## Wireshark
-Wireshark is a protocol analyzer, and it provide information about every frame that traverses the network. From a security perspective, the protocol decode can show the exploitation process and details about payloads used during exploit attempts.
+## [[Wireshark]]
+[[Wireshark]] is a protocol analyzer, and it provide information about every frame that traverses the network. From a security perspective, the protocol decode can show the exploitation process and details about payloads used during exploit attempts.
 ## Netstat 
 The netstat command can display connectivity information about a device. 
-## Nmap
-A Nmap scan is a useful tool for understanding the potential exploit vectors of a device. 
+## [[Nmap]]
+A [[Nmap]] scan is a useful tool for understanding the potential exploit vectors of a device. 
 ## Nessus
 Nessus is a vulnerability scanner that can help identify potential exploit vectors
 ## FTPS
@@ -412,13 +412,13 @@ SNMPv3/Simple Network Management Protocol version 3 uses encrypted communication
 ## SRTP 
 SRTP/Secure Real-Time Transport protocol is used for secure voice over IP and media communication across the network
 ## DNSSEC
-DNSSEC/Domain Name System Secure Extensions are used on DNS servers to validate DNS responses using public key cryptography
+DNSSEC/Domain Name System Secure Extensions are used on [[DNS]] servers to validate [[DNS]] responses using public key cryptography
 ## NAT
 NAT / Network Address Translation is used to modify the source or destination IP address or port number of a network traffic flow 
 ## NAC 
 NAC/Network access control is a broad term describing access control based on a health check or posture assessment. NAC will deny access to devices that don't meet the minimum security requirements
 ## Jump Server
-A jump server is a highly secured device commonly used to access secure areas of another network. A technician would first connect to the jump server using ssh of a vpn tunnel and then "jump" from the jump server to other devices on the inside of the protected network. 
+A jump server is a highly secured device commonly used to access secure areas of another network. A technician would first connect to the jump server using [[ssh]] of a vpn tunnel and then "jump" from the jump server to other devices on the inside of the protected network. 
 ## WAF
 WAF / Web application firewall is used to protect exploits against web-based applications
 ## Proxy
@@ -435,7 +435,7 @@ PAP/Password Authentication Protocol is an authentication method that can valida
 ## IPsec
 IPsec is commonly used as an encrypted tunnel between sites or endpoints. It's useful for protecting data sent over the network. 
 ## MS-CHAP
-MS-CHAP/ Microsoft Challenge-Handshake Authentication Protocol was commonly used in Microsoft PPTP/Point-to-point tunneling protocol but vulnerabilities related to the use of DES/Data Encryption Standard encryption make it relatively easy to brute force the NTLM hash used in MS-CHAP. This security issue eliminate MS-CHAP for modern authentication
+MS-CHAP/ Microsoft Challenge-Handshake Authentication Protocol was commonly used in Microsoft PPTP/Point-to-point [[tunneling]] protocol but vulnerabilities related to the use of DES/Data Encryption Standard encryption make it relatively easy to [[brute force]] the [[NTLM]] hash used in MS-CHAP. This security issue eliminate MS-CHAP for modern authentication
 ## Separation of Duties
 A separation of duties policy ensures that multiple users are required to complete a single business process. 
 ## Offboarding 
@@ -504,10 +504,10 @@ arp / Address Resolution Protocol command shows a mapping of IP addresses to loc
 the ping command can be used to determine if a device may be connected to the network.
 ## ipconfig
 the ipconfig command shows the IP address configuration of a local device
-## netcat
-netcat reads or writes information to the network. 
-## Metasploit
-Metasploit is an exploitation framework that can use known vulnerabilities to gain access to remote systems.
+## [[netcat]]
+[[netcat]] reads or writes information to the network. 
+## [[Metasploit]]
+[[Metasploit]] is an exploitation framework that can use known vulnerabilities to gain access to remote systems.
 ## FTK Imager 
 FTK imager is a third-party storage drive imaging tool and it can support many different drive types and encryption methods.
 ## Autopsy
@@ -519,36 +519,36 @@ A chain of custody is a documented record of the evidence. The chain of custody 
 ## | ports secure | insecure |
 | **insecure** | **secure**       | **secure** |
 | ------------ | ---------------- | ---------- |
-| FTP 20, 21   | SFTP 22          | FTPS       |
-| TELNET 23    | SSH 22           |            |
-| SMTP 25      | *SMTPS 465 587*  |            |
-| DNS 53       | DNSSEC 853       |            |
-| HTTP 80      | HTTPS 443        |            |
+| [[FTP]] 20, 21   | SFTP 22          | FTPS       |
+| TELNET 23    | [[SSH]] 22           |            |
+| [[SMTP]] 25      | *SMTPS 465 587*  |            |
+| [[DNS]] 53       | DNSSEC 853       |            |
+| [[HTTP]] 80      | [[HTTPS]] 443        |            |
 | DHCP 67 68   |                  |            |
 | POP 110      | *Secure POP 995* |            |
 | NNTP 119     |                  |            |
 | NTP 123      | NTPsec           |            |
-| SMB 139 445  |                  |            |
-| IMAP 143     | *SecureIMAP 993* |            |
-| LDAP 389     | LDAPS 636 3269   | SASL       |
+| [[SMB]] 139 445  |                  |            |
+| [[IMAP]] 143     | *SecureIMAP 993* |            |
+| [[LDAP]] 389     | LDAPS 636 3269   | SASL       |
 |              | SRTP             |            |
-| SNMP 161     | SNMPv3           |            |
+| [[SNMP]] 161     | SNMPv3           |            |
 |              |                  |            |
 | **insecure** | **secure**       | **secure** |
-| FTP          | SFTP             | FTPS       |
-| TELNET       | SSH              |            |
-| SMTP         | *SMTPS*          |            |
-| DNS          | DNSSEC           |            |
-| HTTP         | HTTPS            |            |
+| [[FTP]]          | SFTP             | FTPS       |
+| TELNET       | [[SSH]]              |            |
+| [[SMTP]]         | *SMTPS*          |            |
+| [[DNS]]          | DNSSEC           |            |
+| [[HTTP]]         | [[HTTPS]]            |            |
 | DHCP         |                  |            |
 | POP          | *Secure POP*     |            |
 | NNTP         |                  |            |
 | NTP          | NTPsec           |            |
-| SMB          |                  |            |
-| IMAP         | *SecureIMAP*     |            |
-| LDAP         | LDAPS            | SASL       |
+| [[SMB]]          |                  |            |
+| [[IMAP]]         | *SecureIMAP*     |            |
+| [[LDAP]]         | LDAPS            | SASL       |
 |              | SRTP             |            |
-| SNMP         | SNMPv3           |            |
+| [[SNMP]]         | SNMPv3           |            |
 |              |                  |            |
 | **insecure** | **secure**       | **secure** |
 | 20, 21       | 22               | FTPS       |

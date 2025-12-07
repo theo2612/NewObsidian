@@ -2,7 +2,7 @@
 
  KnowBe4 website 
 
- https://www.knowbe4.com/spear-phishing/
+ [[https]]://www.knowbe4.com/spear-phishing/
 
  Hello and Welcome back to USB our Guest, Cyber Security Tips. Thank you for taking time out of your day to listen
 

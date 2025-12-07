@@ -10,7 +10,7 @@
 
 ```
 - if server is running dns 
-	- `dig @10.10.11.174 +short support.htb any`
+	- `dig @10.10.11.174 +short support.[[htb]] any`
 
 then
 - nmap for services and versions running on open ports
@@ -22,7 +22,7 @@ then
 or
 
 - nmap open ports
-	- `nmap -p- --min-rate=3000 support.htb -Pn -oN BoxNmapOpenPorts.txt`
+	- `nmap -p- --min-rate=3000 support.[[htb]] -Pn -oN BoxNmapOpenPorts.txt`
 ```bash
 
 ```
@@ -33,7 +33,7 @@ or
 
 ```
 - Scan with nmap again using scripts
-	- `nmap -p$ports -sSCV --min-rate=2000 support.htb -Pn -oN BoxNmapServicesVersions.txt`
+	- `nmap -p$ports -sSCV --min-rate=2000 support.[[htb]] -Pn -oN BoxNmapServicesVersions.txt`
 ```bash
 
 ```
@@ -43,7 +43,7 @@ or
 
 
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
 ```bash
 
 ```

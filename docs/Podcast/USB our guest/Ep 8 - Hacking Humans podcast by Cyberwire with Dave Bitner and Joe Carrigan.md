@@ -1,8 +1,8 @@
 8 Hacking Humans podcast by Cyberwire with Dave Bitner and Joe Carrigan
 
-[Hacking Humans](https://thecyberwire.com/podcasts/hacking-humans.html)
+[Hacking Humans]([[https]]://thecyberwire.com/podcasts/hacking-humans.html)
 
-[CyberWire](https://thecyberwire.com/podcasts/daily-podcast.html)
+[CyberWire]([[https]]://thecyberwire.com/podcasts/daily-podcast.html)
 
 Hello.  Welcome back and Thanks for adding "USB our Guest Cyber Security Tips" to your flash briefing. 
 

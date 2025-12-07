@@ -1,6 +1,6 @@
-assumed kerberos was running on the machine on port 88
+assumed [[kerberos]] was running on the machine on port 88
 checked for the MAC address in Virtual box in network settings
-cross referenced the MAC address with the following nmap to locate the boxes ip on the network
+cross referenced the MAC address with the following [[nmap]] to locate the boxes ip on the network
 
 ```bash
 sudo nmap -p 88 --open 192.168.0.0/24 
@@ -130,10 +130,10 @@ $krb5asrep$18$ALICE@HATTER.LOCAL:0a0762e86a611c950c11665a9c563779$2a307d61b4c0dd
 
 
 Carrot's hints:139
-impacket, kerbrute, ldapdomaindump
+[[impacket]], kerbrute, ldapdomaindump
 
-powerup.ps1, winpeas.exe or .bat for priv esc
+powerup.ps1, [[winpeas]].exe or .bat for priv esc
 
-so the hash you have john and hashcat do not like. So what you need to do is now use an impacket script to actually get a pre-auth not required, but I am not going to tell you which one, that is for you to research. But there is something you can use to get that hash into a format so you can crack with john or with hashcat, just need impacket to be able to do it
+so the hash you have [[john]] and [[hashcat]] do not like. So what you need to do is now use an [[impacket]] script to actually get a pre-auth not required, but I am not going to tell you which one, that is for you to research. But there is something you can use to get that hash into a format so you can crack with [[john]] or with [[hashcat]], just need [[impacket]] to be able to do it
 
 

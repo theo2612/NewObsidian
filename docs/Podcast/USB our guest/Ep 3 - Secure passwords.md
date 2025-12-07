@@ -1,5 +1,5 @@
 # Secure passwords
-https://blog.knowbe4.com/bid/352493/5-easy-steps-to-create-strong-passwords
+[[https]]://blog.knowbe4.com/bid/352493/5-easy-steps-to-create-strong-passwords
 
  Hey, How's it going? Thanks for adding "USB our Guest Cyber Security Tips" to your flash briefing
 
@@ -13,6 +13,6 @@ https://blog.knowbe4.com/bid/352493/5-easy-steps-to-create-strong-passwords
 
  5. Lastly use special characters, such as $, &, +, !, @, to replace a couple letters. It's a good idea to replace a letter that may be repeated. Also feel free to add an additional special character - I used a + for the second T, an @ for the A and added a $ at the end. I'm left with TcB+tmW1iT@$, a completely incoherent random group of letters, numbers and special characters.
 
- Also, knowbe4 suggests to check your password at https://howsecureismypassword.net/. Enter your password and it will tell you how long it would take a computer to crack you password. You want it to tell you a computer would need over a few million years to crack your password. If your password is anything less, keep adding special characters to the end until it goes up.
+ Also, knowbe4 suggests to check your password at [[https]]://howsecureismypassword.net/. Enter your password and it will tell you how long it would take a computer to crack you password. You want it to tell you a computer would need over a few million years to crack your password. If your password is anything less, keep adding special characters to the end until it goes up.
 
  Thank you stopping by and I'll see you here tomorrow

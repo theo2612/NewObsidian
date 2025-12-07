@@ -1,8 +1,8 @@
 # Command line upgrade
-[ohmyposh](https://ohmyposh.dev/docs/installation/linux)
+[ohmyposh]([[https]]://ohmyposh.dev/docs/installation/[[linux]])
 
 # Hacking tools
-- nmap, john, aircrack-ng, hydra, sqlmap, nikto
+- [[nmap]], [[john]], aircrack-ng, [[hydra]], [[sqlmap]], [[nikto]]
 ```bash
 sudo apt update && sudo apt install nmap john aircrack-ng hydra sqlmap nikto
 ```

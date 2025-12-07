@@ -4,9 +4,9 @@ Hello and Welcome back to USB our Guest, Cyber Security Tips.
 
  Thank you for taking a little bit of time out of you day to better protect yourself from the bad guys
 
- Today's topic is Coronavirus Phishing Scams. Please check the show notes for more info on the topic. [https://www.consumer.ftc.gov/blog/2020/06/help-covid-19-contact-tracers-not-scammers](https://www.consumer.ftc.gov/blog/2020/06/help-covid-19-contact-tracers-not-scammers)
+ Today's topic is Coronavirus Phishing Scams. Please check the show notes for more info on the topic. [[[https]]://www.consumer.ftc.gov/blog/2020/06/help-covid-19-contact-tracers-not-scammers]([[https]]://www.consumer.ftc.gov/blog/2020/06/help-covid-19-contact-tracers-not-scammers)
 
-[https://www.irs.gov/coronavirus/economic-impact-payments](https://www.irs.gov/coronavirus/economic-impact-payments) https://www.consumer.ftc.gov/blog/2020/04/coronavirus-stimulus-payment-scams-what-you-need-know [https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program](https://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program) 
+[[[https]]://www.irs.gov/coronavirus/economic-impact-payments]([[https]]://www.irs.gov/coronavirus/economic-impact-payments) [[https]]://www.consumer.ftc.gov/blog/2020/04/coronavirus-stimulus-payment-scams-what-you-need-know [[[https]]://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program]([[https]]://coronavirus.ohio.gov/wps/portal/gov/covid-19/covid-19-vaccination-program) 
 
  I could have done an episode on this a while ago but I feel it is just as relevant now. With the release of a couple vaccines and more to come, stimulus payments and contact tracing calls the opportunity for scammers to try and fool you out of your money or personal Identifiable Info is high. Today we'll be covering what to be on the lookout for and how to protect yourself. 
 

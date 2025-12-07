@@ -1,6 +1,6 @@
-downloaded burp community from https://portswigger.net/burp/releases/professional-community-2023-10-3-7
+downloaded [[burp]] community from [[https]]://portswigger.net/[[burp]]/releases/professional-community-2023-10-3-7
 ![[Pasted image 20231207103505.png]]
-- in windows - go to your downloads
+- in [[windows]] - go to your downloads
 	- right click in the window where the downloaded file is
 	- select open cmd terminal in that folder
 	- run certutil

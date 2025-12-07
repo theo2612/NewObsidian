@@ -1,2 +1,2 @@
-[webinstall.dev](https://webinstall.dev/)
+[webinstall.dev]([[https]]://webinstall.dev/)
 

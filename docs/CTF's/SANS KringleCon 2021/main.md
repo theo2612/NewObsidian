@@ -18,10 +18,10 @@ $ cat bigscan.gnmap | grep <stuff I want to find>
 $ grep 34.76.1.22 bigscan.gnmap  
 This looks for "34.76.1.22" in the bigscan.gnmap file and shows us every place where it shows up. In the results, we see:  
 62078/open/tcp//iphone-sync///  
-This tells us port TCP 62078 was found open by nmap.  
+This tells us port TCP 62078 was found open by [[nmap]].  
 $ grep 34.77.207.226 bigscan.gnmap  
-Like the previous challenge, this searches the nmap output file for a specific IP address. In the output, we see TCP port 8080 is open:  
-8080/open/tcp//http-proxy///  
+Like the previous challenge, this searches the [[nmap]] output file for a specific IP address. In the output, we see TCP port 8080 is open:  
+8080/open/tcp//[[http]]-proxy///  
   
 - How many hosts appear "Up" in the scan? 26054  
 $ sort bigscan.gnmap | grep "Status: Up" -c  

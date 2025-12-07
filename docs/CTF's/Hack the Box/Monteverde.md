@@ -1,5 +1,5 @@
-- nmap scan for open ports
-	- seeing **88 (Kerberos), 389 (LDAP), 445 (SMB), 5985 (WinRM), and 3389 (RDP)** immediately tells us this is an **Active Directory Domain Controller**
+- [[nmap]] scan for open ports
+	- seeing **88 ([[Kerberos]]), 389 ([[LDAP]]), 445 ([[SMB]]), 5985 ([[WinRM]]), and 3389 ([[RDP]])** immediately tells us this is an **[[Active Directory]] Domain Controller**
 ```bash
 $ sudo -p- --min-rate=3000 -Pn -oN monteverdeNmapOpenPorts.txt 10.10.10.172
 Nmap scan report for 10.10.10.172

@@ -19,16 +19,16 @@
 
 
 **Links to Include:**
-- [https://tryhackme.com](https://tryhackme.com)
-- [https://tryhackme.com/r/path/outline/cybersecurity101](https://tryhackme.com/r/path/outline/cybersecurity101)
+- [[[https]]://[[tryhackme]].com]([[https]]://[[tryhackme]].com)
+- [[[https]]://[[tryhackme]].com/r/path/outline/cybersecurity101]([[https]]://[[tryhackme]].com/r/path/outline/cybersecurity101)
 **Promotion:** 
-Once you've created your video, share it to social media  TryHackMe and use  #THMCyberSecurity101.
+Once you've created your video, share it to social media  [[TryHackMe]] and use  #THMCyberSecurity101.
 - **Instagram:** @realtryhackme
 - **TikTok:** @tryhackmeofficial
 - **Twitter:** @realtryhackme
 You can get a maximum of 5 extra points!
 **Submission:**
-- Email the link to your video to [tickets@tryhackme.com](mailto:tickets@tryhackme.com).
+- Email the link to your video to [tickets@[[tryhackme]].com](mailto:tickets@[[tryhackme]].com).
 - Include "Cyber Security 101 content created" in the email title.
-- Mention your TryHackMe username in the email.
+- Mention your [[TryHackMe]] username in the email.
 - Expect a delay in response due to volume of emails.

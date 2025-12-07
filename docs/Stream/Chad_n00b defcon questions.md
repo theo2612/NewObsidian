@@ -5,7 +5,7 @@ favorite Atari game?
 favorite video game?
 favorite board game as a child?
 What did you want to be when you grew up? 
-favorite linux distro?
+favorite [[linux]] distro?
 Do you have a Guilty pleasure playlist and if so What is a song from it?
 First programming language you learned?
 First concert?

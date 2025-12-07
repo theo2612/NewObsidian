@@ -1,8 +1,8 @@
 32 Gamers and Modders are under attack
 
-Tech Republic - Malicious attack now targeting video gamers and modders [https://www.techrepublic.com/article/malicious-attack-now-targeting-video-gamers-and-modders/](https://www.techrepublic.com/article/malicious-attack-now-targeting-video-gamers-and-modders/) 
+Tech Republic - Malicious attack now targeting video gamers and modders [[[https]]://www.techrepublic.com/article/malicious-attack-now-targeting-video-gamers-and-modders/]([[https]]://www.techrepublic.com/article/malicious-attack-now-targeting-video-gamers-and-modders/) 
 
-Cisco Talos - Cheating the cheater: How adversaries are using backdoored video game cheat engines and modding tools [https://blog.talosintelligence.com/2021/03/cheating-cheater-how-adversaries-are.html](https://blog.talosintelligence.com/2021/03/cheating-cheater-how-adversaries-are.html)
+Cisco Talos - Cheating the cheater: How adversaries are using backdoored video game cheat engines and modding tools [[[https]]://blog.talosintelligence.com/2021/03/cheating-cheater-how-adversaries-are.html]([[https]]://blog.talosintelligence.com/2021/03/cheating-cheater-how-adversaries-are.html)
 
 
 

@@ -1,4 +1,4 @@
-https://pwn.college/cse365-f2023/talking-web
+[[https]]://pwn.college/cse365-f2023/talking-web
 # URI - syntax
 ```http
 <scheme>:<authority>/<path>?<query>#<fragment>

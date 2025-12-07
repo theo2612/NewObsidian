@@ -72,8 +72,8 @@ NEUTER
 *** WARNING ***  
 ALL SAVED CONFIGURATIONS AND PAYLOADS WILL BE ERASED!  
   
-GUI/WINDOWS  
-Use windows key or Mac CMD key  
+GUI/[[WINDOWS]]  
+Use [[windows]] key or Mac CMD key  
 GUI  
 GUI A  
 GUI SPACE  

@@ -1,7 +1,7 @@
-ping 64bytes indicates linux
+ping 64bytes indicates [[linux]]
 
-**nmap**  all the ports, verbose to see output, and agressive scan reveal
-- 80/tcp open  http
+**[[nmap]]**  all the ports, verbose to see output, and agressive scan reveal
+- 80/tcp open  [[http]]
 - 4012/tcp open  pda-gate
 - 4019/tcp open  talarian-mcast5
 - 5901/tcp open  vnc-1

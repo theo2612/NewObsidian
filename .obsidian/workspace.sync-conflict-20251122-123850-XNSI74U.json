@@ -8,22 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a8e36327be28e31d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Pentesting Notes/OSCP Checklist.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "OSCP Checklist"
-            }
-          },
-          {
             "id": "f4c214dfd1e507b7",
             "type": "leaf",
             "pinned": true,
@@ -72,35 +56,31 @@
             }
           },
           {
-            "id": "f492a4970d87ed73",
+            "id": "aa970c0e9b620484",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Pentesting Notes/Active Directory.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Active Directory"
+              "title": "New tab"
             }
           },
           {
-            "id": "3646460dc3f6e6b7",
+            "id": "370d287a5cca737d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CTF's/Hack the Box/Active.md",
+                "file": "docs/CTF's/Hack the Box/Return.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active"
+              "title": "Return"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -132,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "smbclient",
+                "query": "oscp",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,8 +166,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -203,6 +182,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -212,54 +192,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3646460dc3f6e6b7",
+  "active": "a44158c1c6915adf",
   "lastOpenFiles": [
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ClickOnce for Initial Access.md",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/aa671935-0842-411b-9fc2-7933a63c0448.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/de80f23f-f435-4234-aa9c-aadfc2fae3be.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/0b5b6f3b-7f00-409e-b32a-192d5a13b434.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fa9cb73f-8727-4740-8c71-ff6fccd14518.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/2dffe1c2-81fe-481b-b2a4-7f6c6f68d454.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/785b2504-deb7-4539-b14c-410c9daf0cff.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/8f54178e-e6f2-44a5-aa77-7cd142fac9ae.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/Assembly Loader.md",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/93eb4bd4-9033-41ed-a987-7d266b170fea.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/b1b84d5c-b692-478b-992e-3f6b48c2606f.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/89c9331b-79a6-4c78-947a-95799a557470.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon",
-    "docs/Pentesting Notes/Attacks/Hacking Tools/kerbrute.md",
-    "docs/CTF's/Hack the Box/Sauna.md",
     "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
-    "docs/Linux/App download and make world run-able.md",
-    "docs/Pentesting Notes/Attacks/Tools.md",
-    "docs/Pentesting Notes/Attacks/RIS Phishing.md",
-    "docs/Pentesting Notes/Attacks/HTTP methods.md",
-    "docs/Pentesting Notes/Attacks/Google Dorking.md",
-    "docs/Pentesting Notes/Attacks/Cross site Scriping - XSS.md",
-    "docs/Pentesting Notes/Attacks/Brute Forcing Passwords.md",
-    "docs/Pentesting Notes/Attacks/Brute Forcing.md",
-    "docs/Pentesting Notes/Attacks/Attack vectors.md",
-    "docs/CTF's/Hack the Box/Active.md",
-    "docs/Linux/Ghostty.md",
-    "docs/Pentesting Notes/Active Directory.md",
-    "docs/Introductory Networking/Packet Tracer/ITN 9.2.9.md",
-    "hidden/alh4zr3d/Necronomicon/Tools/BloodHound.md",
-    "docs/Active Directory/TryHackMe/2. Active Directory.Domain Services (AD DS) Data Store.md",
-    "docs/Active Directory/TryHackMe/3. The Forest.md",
-    "docs/CTF's/Hack the Box/Forest.md",
-    "docs/CTF's/Hack the Box/Clicker.md",
-    "docs/CTF's/Hack the Box/Appointment.md",
-    "docs/CTF's/Hack the Box/Cicada.md",
-    "docs/Introductory Networking/Packet Tracer/ITN 9.1.3.md",
+    "docs/CTF's/Reverse shell - bash upgrade.md",
+    "docs/Pentesting Notes/Stabilize Shell - BASH.md",
+    "docs/CTF's/Hack the Box/Return.md",
+    "docs/CTF's/Hack the Box/Flight.md",
+    "docs/Pentesting Notes/Commands per Port.md",
+    "docs/CTF's/Hack the Box/~syncthing~Flight.md.tmp",
+    "hidden/alh4zr3d/Necronomicon/Enumeration/DNS.md",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ClickOnce for Initial Access.md",
+    "hidden/alh4zr3d/Necronomicon/Tools/Nmap.md",
+    "docs/Pentesting Notes/Attacks/LFI - RFI.md",
+    "docs/CTF's/Hack the Box/timelapse htb.md",
+    "docs/CTF's/Hack the Box/Timelapse.md",
+    "Untitled 1.md",
+    "docs/Stream/Loaf's, Nori and Jess favorite js tool.md",
+    "timelapse htb.md",
+    "docs/Pentesting Notes/OSCP/OSCP machines.md",
+    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.206.md",
+    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.111.md",
+    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.112.md",
+    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.110.md",
+    "docs/Pentesting Notes/OSCP/OSCP Checklist.md",
+    "docs/Pentesting Notes/OSCP/~syncthing~OSCP machine 192.168.115.112.md.tmp",
+    "docs/Pentesting Notes/OSCP/Report.pdf",
+    "docs/Pentesting Notes/OSCP/~syncthing~Report.pdf.tmp",
+    "docs/CTF's/Hack the Box/Monteverde.md",
+    "docs/CTF's/Hack the Box/~syncthing~Monteverde.md.tmp",
+    "docs/Pentesting Notes/OSCP/OSCP methodology commands.md",
+    "docs/Pentesting Notes/OSCP/todo.md",
+    "docs/Pentesting Notes/OSCP",
+    "hidden/alh4zr3d/Necronomicon/Binary Exploitation/OSCP Buffer Overflow.md",
+    "docs/Pentesting Notes/OSCP/OSCP pentest report outline.md",
+    "docs/Pentesting Notes/OSCP-Exam-Report.docx",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fb2946bb-824f-4b5f-95db-64b1fa601f83.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fa9cb73f-8727-4740-8c71-ff6fccd14518.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ee7ee769-112f-4150-bfdd-362ebb41fcb9.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ecb3ea0d-f744-4813-85cf-140175bb0e6b.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/e98119d3-25b0-4bab-9a07-b836f82f42d8.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/de80f23f-f435-4234-aa9c-aadfc2fae3be.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/dde03c03-ad9b-465e-b8d7-cc936ef5445f.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/c42905bd-bd5d-4995-9a6a-7018d0f24ade.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/b1b84d5c-b692-478b-992e-3f6b48c2606f.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/aa671935-0842-411b-9fc2-7933a63c0448.png",
+    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon",
     "docs/Introductory Networking/Packet Tracer",
     "docs/Juniper labs",
-    "docs/Untitled 1",
-    "Networking",
-    "docs/Pentesting Notes/Wi-Fi hacking/WiFi hacking.pdf",
-    "docs/Pentesting Notes/Wi-Fi hacking",
-    "hidden/Seasonal hidden/~syncthing~fluffy.md.tmp",
-    "docs/CTF's/Hack the Box/~syncthing~Support.md.tmp",
-    "docs/Certifications and courses/OSCP HTB boxes/~syncthing~Methodology.md.tmp",
     "docs/Certifications and courses/OSCP/Untitled.canvas",
     "docs/Images/Untitled.canvas",
     "Images/Untitled.canvas",

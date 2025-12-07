@@ -8,19 +8,19 @@ CHAP Challenge Handshake Authentication Protocol - Client responds to a Challeng
 EAP Extensible Authentication Protocol - Extends capabilities beyond passwords. ex. smartcards, biometrics, token devices)  
   
   
-Tunneling - A function of VPN's - Tunnel encapulates one protcol within another creating a virtual network  
+[[Tunneling]] - A function of VPN's - Tunnel encapulates one protcol within another creating a virtual network  
 Provides encapsulation and can also provide securtiy services such as encryption and authentication  
 Allows for routing non routable protocols and IP addresses  
 ![[1.png]]
   
-PPTP - Point to Point Tunneling Protocol  
+PPTP - Point to Point [[Tunneling]] Protocol  
 Based on PPP (uses MPPE for encryption and PAP, CHAP or EAP for Authentication)  
-Lead by Microsoft protocol for a tunneling VPN  
+Lead by Microsoft protocol for a [[tunneling]] VPN  
 Only works accross IP networks  
 Remote user connects to ISP, gets an Internet Address  
 Establishes VPN connection to work VPN server, get's internal IP address  
 Sends private IP packets encrtypted within other IP packets  
-L2TP - Layer 2 Tunneling Protocol  
+L2TP - Layer 2 [[Tunneling]] Protocol  
 Cisco designed L2F to break free of dependence on IP networks, but kept it proprietary  
 L2TP was a combination of L2F and PPTP  
 Designed to be implemented in software solutions  

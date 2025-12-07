@@ -4,11 +4,11 @@
 
 Hello and welcome back to USB our Guest Cyber Security tips. 
 
-Wired article [https://www.wired.com/story/cd-projekt-red-ransomware-hack-cyberpunk-2077-source-code/](https://www.wired.com/story/cd-projekt-red-ransomware-hack-cyberpunk-2077-source-code/) knowbe4 blog [https://blog.knowbe4.com/cyberheistnews-vol-11-08-eye-opener-major-video-game-maker-refuses-to-negotiate-with-ransomware-cyber-criminals](https://blog.knowbe4.com/cyberheistnews-vol-11-08-eye-opener-major-video-game-maker-refuses-to-negotiate-with-ransomware-cyber-criminals) 
+Wired article [[[https]]://www.wired.com/story/cd-projekt-red-ransomware-hack-cyberpunk-2077-source-code/]([[https]]://www.wired.com/story/cd-projekt-red-ransomware-hack-cyberpunk-2077-source-code/) knowbe4 blog [[[https]]://blog.knowbe4.com/cyberheistnews-vol-11-08-eye-opener-major-video-game-maker-refuses-to-negotiate-with-ransomware-cyber-criminals]([[https]]://blog.knowbe4.com/cyberheistnews-vol-11-08-eye-opener-major-video-game-maker-refuses-to-negotiate-with-ransomware-cyber-criminals) 
 
 USB our Guest - Backups
 
-[https://anchor.fm/usbog/episodes/Backups-eju9r7](https://anchor.fm/usbog/episodes/Backups-eju9r7)
+[[[https]]://anchor.fm/usbog/episodes/Backups-eju9r7]([[https]]://anchor.fm/usbog/episodes/Backups-eju9r7)
 
   
 

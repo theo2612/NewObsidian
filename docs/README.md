@@ -4,7 +4,7 @@
 - The notebook is mostly red team  with a few blue team items sprinkled in. 
 
 <iframe
-    src="https://player.twitch.tv/?channel=b7h30&parent=theo2612.github.io"
+    src="[[https]]://player.twitch.tv/?channel=b7h30&parent=theo2612.github.io"
     height="480"
     width="720"
     allowfullscreen="true">

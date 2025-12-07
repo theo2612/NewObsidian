@@ -1,5 +1,5 @@
-- nmap ports
-	- reveals 80 http, 139 smb, 445 smb
+- [[nmap]] ports
+	- reveals 80 [[http]], 139 [[smb]], 445 [[smb]]
 ```bash
 nmap -p- -T4 -vvv 10.10.221.31
 

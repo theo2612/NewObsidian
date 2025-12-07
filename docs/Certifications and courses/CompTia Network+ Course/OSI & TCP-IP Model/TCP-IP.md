@@ -7,7 +7,7 @@ OSI TCP/IP - Comes from DoD (Department of Defense)
 6 Presentation Pizza Application  
 7 Application Away Application  
   
- ![image](https://i.imgur.com/T4sM8yn.png)
+ ![image]([[https]]://i.imgur.com/T4sM8yn.png)
 
 Requests for comments (RFC's)  
 The TCP/IP Protocol is an open Protocol  

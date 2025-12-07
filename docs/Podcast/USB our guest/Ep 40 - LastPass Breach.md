@@ -1,9 +1,9 @@
-[LastPass - Notice of Recent Security Incident](https://blog.lastpass.com/2022/08/notice-of-recent-security-incident/)
-[Explore how LastPass keeps you safe during a security event or potential hack](https://www.lastpass.com/security/what-if-lastpass-gets-hacked)
-[LastPass - Zero knowledge ](https://www.lastpass.com/security/zero-knowledge-security)
-[Forbes - LastPass Hacked: Password Manager With 25 Million Users Confirms Breach](https://www.forbes.com/sites/daveywinder/2022/08/25/lastpass-hacked-password-manager-with-25-million-users-confirms-breach/?sh=4c25e8b87d5a)
-[Dark Reading - LastPass Suffers Data breach, Source Code Stolen](https://www.darkreading.com/cloud/lastpass-data-breach-source-code-stolen)
-[Bleeping Computer - LastPass says hackers had internal access for four days](https://www.bleepingcomputer.com/news/security/lastpass-says-hackers-had-internal-access-for-four-days/)
+[LastPass - Notice of Recent Security Incident]([[https]]://blog.lastpass.com/2022/08/notice-of-recent-security-incident/)
+[Explore how LastPass keeps you safe during a security event or potential hack]([[https]]://www.lastpass.com/security/what-if-lastpass-gets-hacked)
+[LastPass - Zero knowledge ]([[https]]://www.lastpass.com/security/zero-knowledge-security)
+[Forbes - LastPass Hacked: Password Manager With 25 Million Users Confirms Breach]([[https]]://www.forbes.com/sites/daveywinder/2022/08/25/lastpass-hacked-password-manager-with-25-million-users-confirms-breach/?sh=4c25e8b87d5a)
+[Dark Reading - LastPass Suffers Data breach, Source Code Stolen]([[https]]://www.darkreading.com/cloud/lastpass-data-breach-source-code-stolen)
+[Bleeping Computer - LastPass says hackers had internal access for four days]([[https]]://www.bleepingcomputer.com/news/security/lastpass-says-hackers-had-internal-access-for-four-days/)
 
 Hello and welcome back to USB our Guest Cyber Security tips. I’m Theo, here to help you break down cyber security news and hacks and how they affect you. 
 

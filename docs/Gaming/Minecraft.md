@@ -1,5 +1,5 @@
 To-do
 
-[PirateSoftware's MMO](https://blockgame.info/)
-[The Trash House](https://sweaty.balls.ac/#)
+[PirateSoftware's MMO]([[https]]://blockgame.info/)
+[The Trash House]([[https]]://sweaty.balls.ac/#)
 

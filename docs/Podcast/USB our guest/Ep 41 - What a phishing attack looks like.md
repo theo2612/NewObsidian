@@ -1,14 +1,14 @@
-[Get a Windows 11 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/)
+[Get a [[Windows]] 11 development environment]([[https]]://developer.microsoft.com/en-us/[[windows]]/downloads/virtual-machines/)
 
-Create Windows VM
-Create files and folders on Windows VM
+Create [[Windows]] VM
+Create files and folders on [[Windows]] VM
 Take snapshot
 Attack Machine
 	click phishing links [phishing link](ntur.net/learn/pentest/discord-nitro-sim ), 
 	Browser-in-Browser attacks
 	Excel macros attacks
-	Download malware [VX Underground](https://www.vx-underground.org/)
-Click on phishing links in a Windows VM
+	Download malware [VX Underground]([[https]]://www.vx-underground.org/)
+Click on phishing links in a [[Windows]] VM
 
 c:\> deno task Phishnet
 

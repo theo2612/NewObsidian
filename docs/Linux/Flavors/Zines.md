@@ -1,1 +1,1 @@
-[Wizard Zines](https://wizardzines.com/)
+[Wizard Zines]([[https]]://wizardzines.com/)

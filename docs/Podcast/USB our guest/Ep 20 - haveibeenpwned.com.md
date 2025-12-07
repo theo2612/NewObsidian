@@ -1,4 +1,4 @@
-20 "haveibeenpwned.com" Hello and welcome back to USB our Guest, Cyber Security tips. Thank you for taking a few minutes out of you day to listen. It's a great way to help protect yourself from cyber-attacks. Today's episode covers the website https://haveibeenpwned.com. 
+20 "haveibeenpwned.com" Hello and welcome back to USB our Guest, Cyber Security tips. Thank you for taking a few minutes out of you day to listen. It's a great way to help protect yourself from cyber-attacks. Today's episode covers the website [[https]]://haveibeenpwned.com. 
 
  Home Depot, Target, LinkedIn, Adobe, Ancestry.com, Coachella, Dominos, Epic Games, My Fitness Pal, Patreon, Sephora, Snapchat, Sony, and Yahoo. If you have had an account with one of these companies chances are your username and passwords combinations or credentials have been bought and sold numerous times. With all of the breaches that have happened it can be hard to understand if or how you have been affected. Where can you go to find out? 
 

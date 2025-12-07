@@ -2,7 +2,7 @@
 
 This plugin allows to add responsive custom controls to reveal.js which allow arbitrary positioning, layout, and behaviour of the controls.
 
-[Check out the live demo](https://rajgoel.github.io/reveal.js-demos/customcontrols-demo.html)
+[Check out the live demo]([[https]]://rajgoel.github.io/reveal.js-demos/customcontrols-demo.html)
 
 
 ## Installation

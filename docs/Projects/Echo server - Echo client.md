@@ -1,4 +1,4 @@
-how do you run python commands on linux?
+how do you run python commands on [[linux]]?
 	how do print to the console?
 	how do you create a variable, and then print to console?
 	how do I write a main function?
@@ -15,11 +15,11 @@ clean up
 
 does python use buffering and if so, how do you flush the buffer?
 
-how do you run python commands on linux?
+how do you run python commands on [[linux]]?
 	how do print to the console
 	how do you create a variable, and then print to console
 
-how do I set up a server using python on linux
+how do I set up a server using python on [[linux]]
 	
 tutorials 
 	find the core piece that does what I want
@@ -27,10 +27,10 @@ tutorials
 
 
 
-how do you use python to run bash commands on linux?
+how do you use python to run bash commands on [[linux]]?
 	
 
-should I use netcat or should I be digging into the more basic ?
+should I use [[netcat]] or should I be digging into the more basic ?
 	
 should I use python basic server? no
 	how does it work?
@@ -44,7 +44,7 @@ server
 	ports and address
 
 Create a server socket that will connect to a given port
-	nc -lnvp 6969?
+	[[nc]] -lnvp 6969?
 
 
 Create the server socket by giving it a port number

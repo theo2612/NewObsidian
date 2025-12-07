@@ -1,12 +1,12 @@
 # 2FA 2 factor Authentication
 
- https://blog.trendmicro.com/two-factor-authentication-what-is-it-and-why-do-i-need-it-to-stay-safe-online/ 
+ [[https]]://blog.trendmicro.com/two-factor-authentication-what-is-it-and-why-do-i-need-it-to-stay-safe-online/ 
 
- Google Authenticator - Apple https://apps.apple.com/us/app/google-authenticator/id388497605
+ Google Authenticator - Apple [[https]]://apps.apple.com/us/app/google-authenticator/id388497605
 
- Microsoft Authenticator https://www.microsoft.com/en-us/account/authenticator
+ Microsoft Authenticator [[https]]://www.microsoft.com/en-us/account/authenticator
 
- Authy - https://authy.com/
+ Authy - [[https]]://authy.com/
 
  Hello.  Welcome back and Thanks for adding "USB our Guest Cyber Security Tips" to your flash briefing. 
 

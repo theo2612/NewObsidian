@@ -4,8 +4,8 @@ Painful IT presents man page ASMR
 
 ls
 find
-nc
-nmap
-posix https://ieeexplore.ieee.org/document/8277153
+[[nc]]
+[[nmap]]
+posix [[https]]://ieeexplore.ieee.org/document/8277153
 
 man - DONE

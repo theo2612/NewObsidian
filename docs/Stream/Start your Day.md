@@ -1,6 +1,6 @@
 ![[Pasted image 20240827061306.png]]
 
-[General McRaven's Commencement speech](https://www.youtube.com/watch?v=yaQZFhrW0fU)
+[General McRaven's Commencement speech]([[https]]://www.youtube.com/watch?v=yaQZFhrW0fU)
 General McRaven's commencement speech at the University of Texas in 2014 was a powerful call to action, drawing upon his experiences as a Navy SEAL to offer valuable life lessons. These timeless pieces of advice, drawn from McRaven's experiences, serve as a guiding light for anyone striving to make a positive impact and change the world for the better.
 Here's a summary of his speech, highlighting the 10 pieces of advice he shared:
 

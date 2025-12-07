@@ -1,4 +1,4 @@
-# Setting an Organizational Level Policy in Active Directory
+# Setting an Organizational Level Policy in [[Active Directory]]
 * Click *start*
 * Select *Adminstrative tools*
 * Select *Group Policy Management

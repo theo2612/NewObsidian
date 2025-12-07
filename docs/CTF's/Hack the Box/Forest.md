@@ -1,10 +1,10 @@
-nmap of the ip reveals the 
+[[nmap]] of the ip reveals the 
 - following services running on ports
-	- 88 Kerberos
-	- 389 3268 LDAP
+	- 88 [[Kerberos]]
+	- 389 3268 [[LDAP]]
 - Service info 
 	- Host: Forest 
-	- OS: Windows
+	- OS: [[Windows]]
 - 
 ```bash
 ┌──(kali㉿kali)-[~]

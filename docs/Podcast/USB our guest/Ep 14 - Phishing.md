@@ -2,7 +2,7 @@
 
  How to Recognize and Avoid Phishing Scams
 
- https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
+ [[https]]://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams
 
  Hello. Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your Routine.
 

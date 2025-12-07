@@ -4,9 +4,9 @@ Allwin email - allwin@itpodcast.club
 
 IG - @itpodcast.club 
 
-Link allwin’s podcast - ITpodcast.Club [https://open.spotify.com/show/2qjTo5KX5lDoEgGymvx4mU?si=Dc46RQssQn2PBKZALuuXwA](https://open.spotify.com/show/2qjTo5KX5lDoEgGymvx4mU?si=Dc46RQssQn2PBKZALuuXwA) 
+Link allwin’s podcast - ITpodcast.Club [[[https]]://open.spotify.com/show/2qjTo5KX5lDoEgGymvx4mU?si=Dc46RQssQn2PBKZALuuXwA]([[https]]://open.spotify.com/show/2qjTo5KX5lDoEgGymvx4mU?si=Dc46RQssQn2PBKZALuuXwA) 
 
-Link CFTE server - [https://discord.gg/uWPvAR6HTR](https://discord.gg/uWPvAR6HTR) 
+Link CFTE server - [[[https]]://discord.gg/uWPvAR6HTR]([[https]]://discord.gg/uWPvAR6HTR) 
 
   
 

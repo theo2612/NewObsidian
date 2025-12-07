@@ -1,32 +1,32 @@
 37 Log4shell, Log4j exploit or Log4what, is that a new crossfit trend?
 
-TryHackMe’s Solar, exploiting log4j [https://tryhackme.com/room/solar](https://tryhackme.com/room/solar) 
+[[TryHackMe]]’s Solar, exploiting log4j [[[https]]://[[tryhackme]].com/room/solar]([[https]]://[[tryhackme]].com/room/solar) 
 
-The Log4J Vulnerability Will Haunt the Internet for Years [https://www.wired.com/story/log4j-log4shell/](https://www.wired.com/story/log4j-log4shell/) 
+The Log4J Vulnerability Will Haunt the Internet for Years [[[https]]://www.wired.com/story/log4j-log4shell/]([[https]]://www.wired.com/story/log4j-log4shell/) 
 
-Huntress Log4Shell Vulnerability Tester [https://log4shell.huntress.com/](https://log4shell.huntress.com/) 
+Huntress Log4Shell Vulnerability Tester [[[https]]://log4shell.huntress.com/]([[https]]://log4shell.huntress.com/) 
 
-Apache logging services [https://logging.apache.org/](https://logging.apache.org/)
+Apache logging services [[[https]]://logging.apache.org/]([[https]]://logging.apache.org/)
 
-The Apache Software Foundation [https://www.apache.org/](https://www.apache.org/) 
+The Apache Software Foundation [[[https]]://www.apache.org/]([[https]]://www.apache.org/) 
 
-USB our Guest - Episode 22 Updates - [https://anchor.fm/usbog/episodes/Software-Updates-emgnsh](https://anchor.fm/usbog/episodes/Software-Updates-emgnsh)
+USB our Guest - Episode 22 Updates - [[[https]]://anchor.fm/usbog/episodes/Software-Updates-emgnsh]([[https]]://anchor.fm/usbog/episodes/Software-Updates-emgnsh)
 
-Log4j Attack surface - [https://github.com/YfryTchsGD/Log4jAttackSurface](https://github.com/YfryTchsGD/Log4jAttackSurface)
+Log4j Attack surface - [[[https]]://github.com/YfryTchsGD/Log4jAttackSurface]([[https]]://github.com/YfryTchsGD/Log4jAttackSurface)
 
-Log4j - Apache Log4j Security Vulnerabilities - [https://logging.apache.org/log4j/2.x/security.html](https://logging.apache.org/log4j/2.x/security.html)
+Log4j - Apache Log4j Security Vulnerabilities - [[[https]]://logging.apache.org/log4j/2.x/security.html]([[https]]://logging.apache.org/log4j/2.x/security.html)
 
-JDBC Appender [https://logging.apache.org/log4j/2.x/manual/appenders.html#JDBCAppender](https://logging.apache.org/log4j/2.x/manual/appenders.html#JDBCAppender) 
+JDBC Appender [[[https]]://logging.apache.org/log4j/2.x/manual/appenders.html#JDBCAppender]([[https]]://logging.apache.org/log4j/2.x/manual/appenders.html#JDBCAppender) 
 
-Apache Log4j Security Vulnerabilities [https://logging.apache.org/log4j/2.x/security.html](https://logging.apache.org/log4j/2.x/security.html)
+Apache Log4j Security Vulnerabilities [[[https]]://logging.apache.org/log4j/2.x/security.html]([[https]]://logging.apache.org/log4j/2.x/security.html)
 
-What is JDBC? [https://www.ibm.com/docs/en/informix-servers/12.10?topic=started-what-is-jdbc](https://www.ibm.com/docs/en/informix-servers/12.10?topic=started-what-is-jdbc) 
+What is JDBC? [[[https]]://www.ibm.com/docs/en/informix-servers/12.10?topic=started-what-is-jdbc]([[https]]://www.ibm.com/docs/en/informix-servers/12.10?topic=started-what-is-jdbc) 
 
-Lesson: Overview of JNDI [https://docs.oracle.com/javase/tutorial/jndi/overview/index.html](https://docs.oracle.com/javase/tutorial/jndi/overview/index.html)
+Lesson: Overview of JNDI [[[https]]://docs.oracle.com/javase/tutorial/jndi/overview/index.html]([[https]]://docs.oracle.com/javase/tutorial/jndi/overview/index.html)
 
-W3Schools - Addressing [https://www.w3.org/Addressing/URL/uri-spec.html](https://www.w3.org/Addressing/URL/uri-spec.html) 
+W3Schools - Addressing [[[https]]://www.w3.org/Addressing/URL/uri-spec.html]([[https]]://www.w3.org/Addressing/URL/uri-spec.html) 
 
-Amazon Affiliate link - [https://amzn.to/3rpF5KI](https://amzn.to/3rpF5KI) 
+Amazon Affiliate link - [[[https]]://amzn.to/3rpF5KI]([[https]]://amzn.to/3rpF5KI) 
 
   
 
@@ -68,9 +68,9 @@ So, that was a lot. Long and short, This logging utility is used in known and un
 
   
 
- IMO opinion the best resource I came across for understanding log4j was a TryHackMe room created by John Hammond. John writes 
+ IMO opinion the best resource I came across for understanding log4j was a [[TryHackMe]] room created by [[John]] Hammond. [[John]] writes 
 
-“Please use the information you learn in this room to better the security landscape. Test systems you own, apply patches and mitigations where appropriate, and help the whole industry recover. This is a very current and real-world threat -- whether you are a penetration tester, red teamer, incident responder, security analyst, blue team member, or what have you -- this exercise is to help you and the world understand and gain awareness on this widespread vulnerability. It should not be used for exploitative gain or self-serving financial incentive (I'm looking at you, beg bounty hunters)
+“Please use the information you learn in this room to better the security landscape. Test systems you own, apply patches and mitigations where appropriate, and help the whole industry recover. This is a very current and real-world threat -- whether you are a penetration tester, red teamer, incident [[responder]], security analyst, blue team member, or what have you -- this exercise is to help you and the world understand and gain awareness on this widespread vulnerability. It should not be used for exploitative gain or self-serving financial incentive (I'm looking at you, beg bounty hunters)
 
 Additionally, please bear in mind that the developers of the log4j package work on the open source project as a labor of love and passion. They are volunteer developers that maintain their project in their spare time. There should be absolutely no bashing, shame, or malice towards those individuals. As with all things, please further your knowledge so you can be a pedestal and pillar for the information security community. Educate, share, and help.”
 

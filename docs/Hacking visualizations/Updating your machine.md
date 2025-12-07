@@ -1,4 +1,4 @@
-and tie in Outlook NTLM vulnerability abusing CVE-2023-23397
+and tie in Outlook [[NTLM]] vulnerability abusing [[CVE-2023-23397]]
 
 Who updates as soon as one is released? 
 	that includes Desktop, Laptop, phone, Software
@@ -18,7 +18,7 @@ Download malicious files
 
 
 Reason you should update
-Outlook NTLM vulnerability 
+Outlook [[NTLM]] vulnerability 
 
 
 

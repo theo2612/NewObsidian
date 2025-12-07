@@ -1,14 +1,14 @@
 # Password Managers
 
- https://www.wired.com/story/best-password-managers/
+ [[https]]://www.wired.com/story/best-password-managers/
 
- https://1password.com/
+ [[https]]://1password.com/
 
- https://www.dashlane.com/
+ [[https]]://www.dashlane.com/
 
- https://www.lastpass.com/hp
+ [[https]]://www.lastpass.com/hp
 
- https://keepassxc.org/
+ [[https]]://keepassxc.org/
 
  Hello.  Thanks for adding "USB our Guest Cyber Security Tips" to your flash briefing. 
 

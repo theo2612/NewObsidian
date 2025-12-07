@@ -1,7 +1,7 @@
 Network Attached Storage - NAS  
 Network Appliance that provides file level storage  
 Files are accessed through network protocols such as  
-SMB - Server Message Blocks  
+[[SMB]] - Server Message Blocks  
 NFS - Network Filing System  
 ![[1.png]]
   

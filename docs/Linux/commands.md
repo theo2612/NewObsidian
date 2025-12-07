@@ -18,9 +18,9 @@
 * `cd -` - change to previous directory
 * `cd /` change to the root directory
 
-* `ip a` - show all IP addresses (`ipconfig /all`, on Windows)
+* `ip a` - show all IP addresses (`ipconfig /all`, on [[Windows]])
 * `clear` - clears the screen
-* `which ssh` - display full path to ssh program
+* `which ssh` - display full path to [[ssh]] program
 * `type ssh` - display what type of thing it is
 * `who` - display who is logged in an how
 * `id` - display user and group names and ids for self
@@ -32,12 +32,12 @@
 * `| less` or `| more` - see scrolled output in terminal (`q` to quit)
 * `<Ctrl>-c` - interrupt whatever (exit)
 * `<Ctrl>-d` - send "end of data/file"
-* `sudo apt install openssh-server` - install ssh server (if not)
+* `sudo apt install openssh-server` - install [[ssh]] server (if not)
 * `vboxmanage startvm <VMNAME> --type headless` - start vm headless
 * `vboxmanage list runningvms` - list running vms
 * `vboxmanage list vms` - list all vms
 * `vboxmanage controlvm <VMNAME> poweroff` - power off headless vm
-* `vim` - basic vim https://rwx.gg/visurvive
+* `vim` - basic vim [[https]]://rwx.gg/visurvive
 * `nano` - just so you understand nano editor is a thing
 
 * `ip -c a` - lookup IP addresses
@@ -88,4 +88,4 @@
 * `lolcat` - colorize things
 * `cowsay` - fun way to show output
 
-- `ssh-keygen -f key -N ''` - generates a 'key' and 'key.pub' for ssh connections. key.pub is supplied to what you want to connect to. Then connect to remote system over ssh with `ssh -i key username@ip.ip.ip.ip`
+- `ssh-keygen -f key -N ''` - generates a 'key' and 'key.pub' for [[ssh]] connections. key.pub is supplied to what you want to connect to. Then connect to remote system over [[ssh]] with `ssh -i key username@ip.ip.ip.ip`

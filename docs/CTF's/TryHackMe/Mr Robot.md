@@ -1,8 +1,8 @@
-# nmap scans
+# [[nmap]] scans
 - scan ip address for open ports
-	- 22/tcp closed ssh conn-refused
-	- 80/tcp open http syn-ack
-	- 443/tcp open https syn-ack
+	- 22/tcp closed [[ssh]] conn-refused
+	- 80/tcp open [[http]] syn-ack
+	- 443/tcp open [[https]] syn-ack
 
 ```bash
 ┌──(kali㉿kali)-[~]
@@ -223,10 +223,10 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-03-02 15:02:
 - -L fsocity.dic`: This option specifies a list of usernames to be tested during the attack, taken from the `fsocity.dic` file. `-L` is used when you have a list of usernames.
 - `-p test`: This specifies the password to use for each username being tested. `-p` is used for a single password; in this case, "test" is used for all usernames.
 - `http://10.10.0.129`: This is the target's URL or IP address.
-- `http-post-form`: This tells Hydra to use the HTTP POST method for the form-based login.
+- `http-post-form`: This tells [[Hydra]] to use the [[HTTP]] POST method for the form-based login.
 - `"/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In:Invalid username"`: This is the path to the login form and the POST request's parameters.
 - `/wp-login.php` is the login page for a WordPress site.
-- `log=^USER^` and `pwd=^PASS^` are the parameters where Hydra will inject the username and password from the list.
+- `log=^USER^` and `pwd=^PASS^` are the parameters where [[Hydra]] will inject the username and password from the list.
 -  `wp-submit=Log In` is the name of the submit button in the form.
 - Invalid username` is the failure condition; Hydra looks for this text to determine if a login attempt failed. If this text is found in the response, Hydra understands that the provided credentials did not work.
 In summary, this command uses Hydra to perform a brute-force attack against a WordPress login form located at `http://10.10.0.129/wp-login.php`. It tries all usernames from the `fsocity.dic` file with the password "test" and looks for the phrase "Invalid username" to identify failed login attempts. This kind of attack aims to identify valid login credentials by systematically trying various combinations of usernames and passwords.

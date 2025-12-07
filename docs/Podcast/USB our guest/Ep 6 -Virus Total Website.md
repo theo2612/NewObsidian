@@ -1,4 +1,4 @@
-[VirusTotal Website](https://virustotal.com)
+[VirusTotal Website]([[https]]://virustotal.com)
 
  Hello and Welcome back to "USB our Guest, Cyber Security Tips". Thank you for adding us to your flash briefing. 
 

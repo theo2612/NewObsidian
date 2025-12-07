@@ -1,5 +1,5 @@
 victim vm/pc 
-Windows machine
+[[Windows]] machine
 email address to send phishing link to
 vpn
 
@@ -7,6 +7,6 @@ vpn
 
 
 attacking vm/pc
-email address for sending phishing link / gophish https://getgophish.com/
+email address for sending phishing link / gophish [[https]]://getgophish.com/
 deno installed
 registered domain new/used

@@ -16,8 +16,8 @@ Console> turnCircle("three", -4)
 CO3 YjVQ6KFBVCzwtW3e2iLD  
 right click on Forum, Inspect element - Takes us directly to it  
 data-sd='my-chat'  
-Cycling maps link = [http://my-routes/trafficdisruptors.com/312324494](http://my-routes/trafficdisruptors.com/312324494)  
-change to [http://my-chat/trafficdisruptors.com/312324494](http://my-chat/trafficdisruptors.com/312324494)  
+Cycling maps link = [[[http]]://my-routes/trafficdisruptors.com/312324494]([[http]]://my-routes/trafficdisruptors.com/312324494)  
+change to [[[http]]://my-chat/trafficdisruptors.com/312324494]([[http]]://my-chat/trafficdisruptors.com/312324494)  
   
 CO4 eWGG6k3OWzpHg9aR3Ewl  
 F12 or right click on email address field, inspect element  

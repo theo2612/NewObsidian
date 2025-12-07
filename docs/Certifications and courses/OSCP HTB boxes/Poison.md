@@ -59,7 +59,7 @@ Nmap done: 1 IP address (1 host up) scanned in 8.94 seconds
 ```
 	- 
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10 -x  ??PHP, HTM, HTML, ASP, TXT, JS, CSS??` 
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10 -x  ??PHP, HTM, HTML, ASP, TXT, JS, CSS??` 
 	- info.php
 		- FreeBSD Poison 11.1-RELEASE FreeBSD 11.1-RELEASE #0 r321309: Fri Jul 21 02:08:28 UTC 2017 root@releng2.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC amd64
 	- 

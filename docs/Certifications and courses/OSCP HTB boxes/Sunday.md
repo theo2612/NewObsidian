@@ -270,11 +270,11 @@ root@sunday:~# cat root.txt
 
 
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
 	- 
 
 - search for exploits, RCEs, etc on service's versions running on those open ports
-	- SearchSploit
+	- [[SearchSploit]]
 	- Metaspolit
 	- document
 

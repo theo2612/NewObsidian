@@ -1,6 +1,6 @@
 17 Ransomware What is and how devastating can it be?
 
- https://www.knowbe4.com/ransomware
+ [[https]]://www.knowbe4.com/ransomware
 
  Hello and thank you for taking the time to listen to USB our Guest, Cyber Security Tips. It's a great way to help protect yourself from cyber attacks
 

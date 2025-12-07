@@ -1,1 +1,1 @@
-- Getting my oscp this year
+- Getting my [[oscp]] this year

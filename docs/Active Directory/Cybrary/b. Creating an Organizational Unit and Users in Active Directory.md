@@ -1,4 +1,4 @@
-To open the *Active directory Users and Computers Interface* type the following command
+To open the *[[Active directory]] Users and Computers Interface* type the following command
 ```powershell
 C:\>dsa.msc
 ```

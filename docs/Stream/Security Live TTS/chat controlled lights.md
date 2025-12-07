@@ -25,7 +25,7 @@ Philips A19 bulb use the WIZ
 
 Key activities
 - Receive Twitch Chat message
-	- EventSub https://dev.twitch.tv/docs/eventsub/
+	- EventSub [[https]]://dev.twitch.tv/docs/eventsub/
 	- !blue
 - send signal to light
 	- 

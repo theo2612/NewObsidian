@@ -23,18 +23,18 @@ Nmap done: 1 IP address (1 host up) scanned in 11.42 seconds
 
 Scan open ports for Services and versions
 
-┌──(kali㉿kali)-[~]                                                                          
-└─$ nmap -p 22,80,111,2049,37261,39993,40417,52313,60655 -sC -sV 10.10.11.232                            
-Starting Nmap 7.93 ( https://nmap.org ) at 2024-02-04 10:19 EST                                          
-Nmap scan report for clicker.htb (10.10.11.232)                                                          
+┌──([[kali]]㉿[[kali]])-[~]                                                                          
+└─$ [[nmap]] -p 22,80,111,2049,37261,39993,40417,52313,60655 -sC -sV 10.10.11.232                            
+Starting [[Nmap]] 7.93 ( [[https]]://[[nmap]].org ) at 2024-02-04 10:19 EST                                          
+[[Nmap]] scan report for clicker.[[htb]] (10.10.11.232)                                                          
 Host is up (0.077s latency).   
 PORT      STATE  SERVICE VERSION                                                                         
-22/tcp    open   ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)                    
-| ssh-hostkey:                                                                                           
+22/tcp    open   [[ssh]]     OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu [[Linux]]; protocol 2.0)                    
+| [[ssh]]-hostkey:                                                                                           
 |   256 89d7393458a0eaa1dbc13d14ec5d5a92 (ECDSA)                                                         
 |_  256 b4da8daf659cbbf071d51350edd81130 (ED25519)                                                       
-80/tcp    open   http    Apache httpd 2.4.52 ((Ubuntu))                                                  
-| http-cookie-flags:                                                                                     
+80/tcp    open   [[http]]    Apache httpd 2.4.52 ((Ubuntu))                                                  
+| [[http]]-cookie-flags:                                                                                     
 |   /:                                                                                                   
 |     PHPSESSID:                                                                                         
 |_      httponly flag not set                                                                            
@@ -69,8 +69,8 @@ PORT      STATE  SERVICE VERSION
 40417/tcp closed unknown
 52313/tcp closed unknown
 60655/tcp closed unknown
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+Service Info: OS: [[Linux]]; CPE: cpe:/o:[[linux]]:linux_kernel
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 9.57 seconds
+Service detection performed. Please report any incorrect results at [[https]]://[[nmap]].org/submit/ .
+[[Nmap]] done: 1 IP address (1 host up) scanned in 9.57 seconds
 

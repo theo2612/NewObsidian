@@ -2,18 +2,18 @@
 
 ip discovery
 
-nmap scan
--sC = Use standard NMAP scripts. (The same as —script=default) 
+[[nmap]] scan
+-sC = Use standard [[NMAP]] scripts. (The same as —script=default) 
 -sV = Scan for service version.
 -p- = Scan all ports
 	22 and 80 open
 	
-80/tcp open ftp
+80/tcp open [[ftp]]
 	Anonymous login allowed
 	get notes, 
 	cd ..., get id_rsa
 	
-use id_rsa to ssh into ftp-user - (not previously given)
+use id_rsa to [[ssh]] into [[ftp]]-user - (not previously given)
 
 view /etc/passwd for users with bash
 ```bash
@@ -37,7 +37,7 @@ bob
 boss
 ceo
 debug
-ftp-user
+[[ftp]]-user
 interen
 it
 supervisor

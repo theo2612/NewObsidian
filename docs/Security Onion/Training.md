@@ -1,4 +1,4 @@
-[Training](https://securityonionsolutions.com/training/)
+[Training]([[https]]://securityonionsolutions.com/training/)
 
 # 3 Workflows
 - Workflow 1 
@@ -48,7 +48,7 @@
 	- Forensic Analysis
 		- Import node analyzing pcap, logs, packet captures
 	- Analyst workstation 
-		- Analyst - wireshark
+		- Analyst - [[wireshark]]
 - For live mode
 	- Testing - For evaluation mode
 	- Production

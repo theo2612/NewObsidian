@@ -1,4 +1,4 @@
-nmap scan of box ip 
+[[nmap]] scan of box ip 
 ```bash
 ┌──(kali㉿kali)-[~]                                                                                                                 
 └─$ nmap -sV -sC -v 10.10.209.23                                                                                                    

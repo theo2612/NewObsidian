@@ -1,11 +1,11 @@
-- http://thm.box.ip
+- [[http]]://thm.box.ip
 - reveals an email signup box
 
-- the basic command injection that I tried didn't reveal anything. 
+- the basic [[command injection]] that I tried didn't reveal anything. 
 - I used an actual email address and clicked sign up and nothing came to my inbox
 # What is the rdbms installed on the server?
 # What port is the rdbms running on?
-- nmap scan to probe the box network reveals the rdbms postgresql running on port 5432
+- [[nmap]] scan to probe the box network reveals the rdbms postgresql running on port 5432
 ```bash
 ┌─(kali㉿kali)-[~]
 └─$ sudo nmap -p- -T4 -vv -O --min-rate 20000 -Pn 10.10.118.139

@@ -1,1 +1,1 @@
-[XeroLinux](https://xerolinux.xyz/)
+[XeroLinux]([[https]]://xerolinux.xyz/)

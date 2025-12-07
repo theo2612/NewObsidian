@@ -1,6 +1,6 @@
 10 Social security scam Social Security RoboCalls
 
-[Federal Trade Commission - Getting Calls from the SSA?](https://www.consumer.ftc.gov/blog/2019/03/getting-calls-ssa)
+[Federal Trade Commission - Getting Calls from the SSA?]([[https]]://www.consumer.ftc.gov/blog/2019/03/getting-calls-ssa)
 
 Hello. Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your Flash Briefing.
 

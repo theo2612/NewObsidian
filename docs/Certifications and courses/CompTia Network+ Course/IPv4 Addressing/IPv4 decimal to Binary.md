@@ -1,4 +1,4 @@
-![image](https://i.imgur.com/OO3sq0l.png)
+![image]([[https]]://i.imgur.com/OO3sq0l.png)
 
 192.168.1.1 = 11000000.10101000.00000001.00000001  
    

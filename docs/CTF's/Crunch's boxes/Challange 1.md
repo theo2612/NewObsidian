@@ -1,8 +1,8 @@
-##### [Captain Cruch video writeup](https://www.youtube.com/watch?v=8yzs1ehicRk)
+##### [Captain Cruch video writeup]([[https]]://www.youtube.com/watch?v=8yzs1ehicRk)
 
 ##### Ryan's pdf writeup ![[CRUNCHS_CTF.pdf]]
 
-### nmap
+### [[nmap]]
 visit 192.168.246.132 --> apache/Ubuntu "Default" page
 
 scan 192.168.246.132 for open ports - ports 22 and 80 are open
@@ -251,7 +251,7 @@ if they don't already have key files in ~/.ssh, here's a good one liner
 ```bash
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_hacked -P "" && cat ~/.ssh/[id_rsa_hacked.pub](https://id_rsa_hacked.pub/) >> ~/.ssh/authorized_keys && cat ~/.ssh/id_rsa_hacked
 ```
-it generates you a new SSH key, makes it authorized to use for the account, then reads the private key file that you copy the contents of locally
+it generates you a new [[SSH]] key, makes it authorized to use for the account, then reads the private key file that you copy the contents of locally
 
 
 

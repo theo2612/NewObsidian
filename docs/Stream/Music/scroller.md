@@ -1,1 +1,1 @@
-https://widgetapp.stream/
+[[https]]://widgetapp.stream/

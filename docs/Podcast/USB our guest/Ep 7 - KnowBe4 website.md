@@ -1,4 +1,4 @@
-7 [KnowBe4.com](https://blog.knowbe4.com)
+7 [KnowBe4.com]([[https]]://blog.knowbe4.com)
 
 Hey, How's it going? Thanks for adding "USB our Guest Cyber Security Tips" to your flash briefing
 

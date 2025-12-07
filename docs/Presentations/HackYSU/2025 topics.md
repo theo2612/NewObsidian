@@ -1,7 +1,7 @@
-- # [Using Discord as a C2 server](https://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689) 
-	- https://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689
-- # [Recaptcha Phish](https://github.com/JohnHammond/recaptcha-phish) 
-	- https://github.com/JohnHammond/recaptcha-phish
+- # [Using Discord as a C2 server]([[https]]://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689) 
+	- [[https]]://infosecwriteups.com/using-discord-as-a-c2-cf90b3480689
+- # [Recaptcha Phish]([[https]]://github.com/JohnHammond/recaptcha-phish) 
+	- [[https]]://github.com/JohnHammond/recaptcha-phish
 - 
 - # EvilGinx
 	- github phish account
@@ -29,7 +29,7 @@
 	- enable github phishlet `phishlets enable github`
 	- create lure `lures create github`
 	- get lure url `lures get-url 0`
-		- https://login-github.org/yoaydmQM
+		- [[https]]://login-github.org/yoaydmQM
 	- navigate to url 
 	- input creds PhishBaitPwn / YourComputerIsMyOtherComputer
 	- Input MFA

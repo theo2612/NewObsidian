@@ -1,4 +1,4 @@
-- After opening wireshark and opening a PCAP file
+- After opening [[wireshark]] and opening a PCAP file
 
 # **TCP/UDP**
 - open Statistics/Protocol Hierarchy
@@ -16,24 +16,24 @@
 -   Which port numbers and services are in use?
 -   Is there an abnormal level of traffic on any port or service?
 
-# **DNS**
-- filter by typing DNS in the search bar
+# **[[DNS]]**
+- filter by typing [[DNS]] in the search bar
 - *Checks to do*
-	-   DNS queries
-	-   DNS answers
+	-   [[DNS]] queries
+	-   [[DNS]] answers
 - *Questions to answer*
 	-   Which domain addresses are communicated?
 	-   Do the communicated domain addresses contain unusual or suspicious destinations? 
-	-   Do the DNS queries look unusual, suspicious or malformed?
+	-   Do the [[DNS]] queries look unusual, suspicious or malformed?
 
-# **HTTP**
+# **[[HTTP]]**
 - *Checks to do*
-	-   DNS queries
-	-   DNS answers
+	-   [[DNS]] queries
+	-   [[DNS]] answers
 - *Questions to answer*
 	-   Which domain addresses are communicated?
 	-   Do the communicated domain addresses contain unusual or suspicious destinations? 
-	-   Do the DNS queries look unusual, suspicious or malformed?
+	-   Do the [[DNS]] queries look unusual, suspicious or malformed?
 
 
 

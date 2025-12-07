@@ -37,7 +37,7 @@
 | `Ctrl` `b`, `d` | Detach from session   |
 | `Ctrl` `b`, `,` | Rename current window |
 | `Ctrl` `b`, `&` | Close current window  |
-| `Ctrl` `b`, `w` | List windows          |
+| `Ctrl` `b`, `w` | List [[windows]]          |
 | `Ctrl` `b`, `p` | Previous window       |
 | `Ctrl` `b`, `n` | Next window           |
 

@@ -1,4 +1,4 @@
-**nmap 'ip'**
+**[[nmap]] 'ip'**
 ```bash
 sudo nmap -O -sV -v -A -p- 172.31.1.7
 -O enables OS detection

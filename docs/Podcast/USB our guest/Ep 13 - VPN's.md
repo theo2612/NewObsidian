@@ -2,7 +2,7 @@
 
  PC Mag - The Best VPN services for 2019
 
- https://www.pcmag.com/roundup/296955/the-best-vpn-services
+ [[https]]://www.pcmag.com/roundup/296955/the-best-vpn-services
 
  Hey There. Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your Flash Briefing.
 
@@ -12,7 +12,7 @@
 
  Think of the connection from your computer to your router and to the website's server you are visiting as a clear tube. If you are in a coffee shop and connected to a fake WiFi hotspot, a Cyber Criminal can see every piece of data you are sending through that tunnel. Websites you are visiting, Login credentials, medical info and your secret Spice Girls playlist on Spotify. 
 
- While connected to a VPN, this clear tube becomes cast iron pipe where all of your data is encrypted. No one can see your data transmitting until your data enters the public internet. and as long as you are visiting websites with HTTPS in the beginning of their address your data stay encrypted. 
+ While connected to a VPN, this clear tube becomes cast iron pipe where all of your data is encrypted. No one can see your data transmitting until your data enters the public internet. and as long as you are visiting websites with [[HTTPS]] in the beginning of their address your data stay encrypted. 
 
  Why should you use a VPN? 
 

@@ -1,9 +1,9 @@
-[Brooklyn99](https://tryhackme.com/room/brooklynninenine)
+[Brooklyn99]([[https]]://[[tryhackme]].com/room/brooklynninenine)
 
-**nmap** reveals
-- 21/tcp ftp
-- 22/tcp ssh
-- 80/tcp http
+**[[nmap]]** reveals
+- 21/tcp [[ftp]]
+- 22/tcp [[ssh]]
+- 80/tcp [[http]]
 ```bash
 ┌──(kali㉿kali)-[~/cyberseclabs/shares]
 └─$ sudo nmap -O -sV -vv -A 10.10.226.25

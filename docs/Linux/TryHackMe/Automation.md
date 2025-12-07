@@ -12,7 +12,7 @@ cmd - what command to execute
 #backup “cmnatic”'s “Documents” every 12 hours  
 * - wildcard for crontabs. If we don't wish to provide a value for a field or don't care what month, day, year it is execute... only that it is executed 12 hrs - use an *  
 Resources  
-Crontab generator [https://crontab-generator.org/](https://crontab-generator.org/)  
-Cron Guru [https://crontab.guru/](https://crontab.guru/)  
+Crontab generator [[[https]]://crontab-generator.org/]([[https]]://crontab-generator.org/)  
+Cron Guru [[[https]]://crontab.guru/]([[https]]://crontab.guru/)  
 $ crontab -e  
 #use to edit Crontabs

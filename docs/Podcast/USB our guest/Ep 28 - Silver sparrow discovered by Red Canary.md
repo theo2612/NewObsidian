@@ -2,15 +2,15 @@
 
   
 
- RedCanary's silver sparrow discovery - [https://redcanary.com/blog/clipping-silver-sparrows-wings/](https://redcanary.com/blog/clipping-silver-sparrows-wings/) 
+ RedCanary's silver sparrow discovery - [[[https]]://redcanary.com/blog/clipping-silver-sparrows-wings/]([[https]]://redcanary.com/blog/clipping-silver-sparrows-wings/) 
 
- Computer world - [https://www.computerworld.com/article/3609611/30k-macs-infected-with-silver-sparrow-virus-m1-mac-ssd-health.html](https://www.computerworld.com/article/3609611/30k-macs-infected-with-silver-sparrow-virus-m1-mac-ssd-health.html)
+ Computer world - [[[https]]://www.computerworld.com/article/3609611/30k-macs-infected-with-silver-sparrow-virus-m1-mac-ssd-health.html]([[https]]://www.computerworld.com/article/3609611/30k-macs-infected-with-silver-sparrow-virus-m1-mac-ssd-health.html)
 
- MITRE|ATT&CK - LaunchAgents - [https://attack.mitre.org/techniques/T1543/001/](https://attack.mitre.org/techniques/T1543/001/)
+ MITRE|ATT&CK - LaunchAgents - [[[https]]://attack.mitre.org/techniques/T1543/001/]([[https]]://attack.mitre.org/techniques/T1543/001/)
 
- CyberWire- Silver Sparrow targets Macs - [https://thecyberwire.com/newsletters/week-that-was/5/8](https://thecyberwire.com/newsletters/week-that-was/5/8) 
+ CyberWire- Silver Sparrow targets Macs - [[[https]]://thecyberwire.com/newsletters/week-that-was/5/8]([[https]]://thecyberwire.com/newsletters/week-that-was/5/8) 
 
- USB our Guest - Episode 22 Updates - [https://anchor.fm/usbog/episodes/Software-Updates-emgnsh](https://anchor.fm/usbog/episodes/Software-Updates-emgnsh)
+ USB our Guest - Episode 22 Updates - [[[https]]://anchor.fm/usbog/episodes/Software-Updates-emgnsh]([[https]]://anchor.fm/usbog/episodes/Software-Updates-emgnsh)
 
  Welcome back to USB our Guest, Cyber Security Tips. Today’s episode covers Red Canary’s discovery of the Silver Sparrow malware strain. Red Canary? Silver Sparrow? So, quick note, you did not just stumble into a bird watching podcast. Because neither of those do not sound like a cyber security threat, Let’s break this down.
 

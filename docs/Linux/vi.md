@@ -1,4 +1,4 @@
-[RWX - Survive vi](https://rwx.gg/tools/editors/vi/how/survive/)
+[RWX - Survive vi]([[https]]://rwx.gg/tools/editors/vi/how/survive/)
 
 | Action | Mode | Description |
 |---|---|---|
@@ -21,7 +21,7 @@
 
 
 
--   [https://openvim.com](https://openvim.com)
--   [https://vimgenius.com](https://vimgenius.com)
--   [http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+-   [[[https]]://openvim.com]([[https]]://openvim.com)
+-   [[[https]]://vimgenius.com]([[https]]://vimgenius.com)
+-   [[[http]]://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/]([[http]]://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 -   `:help` (from within Vim)![[vim_cheat_sheet_for_programmers_screen.png]]

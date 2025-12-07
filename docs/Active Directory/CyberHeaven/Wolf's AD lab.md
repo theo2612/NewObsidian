@@ -1,1 +1,1 @@
-https://cyberheaven.eu/courses/active-directory-penetration-testing/lesson/introduction/
+[[https]]://cyberheaven.eu/courses/active-directory-penetration-testing/lesson/introduction/

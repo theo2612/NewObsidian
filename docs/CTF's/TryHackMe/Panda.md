@@ -1,5 +1,5 @@
-### nmap
-basic nmap scan 
+### [[nmap]]
+basic [[nmap]] scan 
 ```bash
 $ nmap 10.10.99.186
 
@@ -72,7 +72,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-04-02 09:17:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-04-02 09:18:53
 ```
 
-ssh into shifu/batman
+[[ssh]] into shifu/batman
 
 
 ### 

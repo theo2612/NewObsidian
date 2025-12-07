@@ -291,7 +291,7 @@ user:[stoll.rachelle] rid:[0x45f]
 user:[ford.victoria] rid:[0x460]              
 ```
 - Further enumeration of the users reveals password in support user info
-	- `ldapsearch -x -H ldap://support.htb -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(sAMAccountName=support)"`
+	- `ldapsearch -x -H [[ldap]]://support.[[htb]] -D "[[ldap]]@support.[[htb]]" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=[[htb]]" "(sAMAccountName=support)"`
 	- info: Ironside47pleasure40Watchful
 ```bash
  kali@kali  ~/htb/support  ldapsearch -x -H ldap://support.htb -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=h
@@ -570,7 +570,7 @@ AuditFlags         : None
 
 
 - Gobuster to enumerate website if machine has 80 or 443
-	- `gobuster dir -u http://precious.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
+	- `gobuster dir -u [[http]]://precious.[[htb]] -w /usr/share/seclists/Discovery/Web-Content/directory-list-lowercase-2.3-small.txt -o nameGobuster.txt -t 10`
 ```bash
 
 ```

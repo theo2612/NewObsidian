@@ -1,4 +1,4 @@
-nmap open ports and services
+[[nmap]] open ports and services
 ```
 ┌──(kali㉿kali)-[~/htb/timelapse]                                                                   
 └─$ nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5986,9389,49667,49673,49674,49693,49719 -sC 

@@ -2,9 +2,9 @@
 
  Hello. Welcome back to USB our Guest, Cyber Security Tips. Thank you for adding us to your Routine. Today's episode is about Backups
 
- There is a great article on PC mag that goes in depth on backing up your PC. I'll include the web address in the show notes. https://www.pcmag.com/news/the-beginners-guide-to-pc-backup 
+ There is a great article on PC mag that goes in depth on backing up your PC. I'll include the web address in the show notes. [[https]]://www.pcmag.com/news/the-beginners-guide-to-pc-backup 
 
- I'll also include another link in the show notes to a Microsoft support article titled "Backup and Restore in Windows 10"  - https://support.microsoft.com/en-us/help/4027408/windows-10-backup-and-restore
+ I'll also include another link in the show notes to a Microsoft support article titled "Backup and Restore in [[Windows]] 10"  - [[https]]://support.microsoft.com/en-us/help/4027408/[[windows]]-10-backup-and-restore
 
  What is a backup? It is a second copy of all your important files - photos, videos, documents or any file on your computer that is an original. A backup is a copy of these items, only in another place, not your computer. 
 

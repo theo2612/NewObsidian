@@ -1,7 +1,7 @@
 **Presentation Layer- Layer 6**  
 3 Things happen at the Presentation layer  
 Formatting - Presenting the in a universal format  
-If sending messages from a Mac to a Windows PC, both can understand the message  
+If sending messages from a Mac to a [[Windows]] PC, both can understand the message  
 because at somepoint the message has been formatted to a universal format  
 Multimedia Formatting - JPG, GIF, MP3  
   
@@ -26,6 +26,6 @@ Protocols - referring to presenting file types to the user , audio, visual, text
 The presentation layer is responsible for formatting and delivering information to the application for further processing or display. It relieves the application layer of concern regarding syntactical differences in data representation within the end-user systems.  
 Encryption device operates at this level - Formats data  
    
-Examples of these layers functioning within the Windows environment include the use of NetBIOS names for the Session layer and character code translation such as from ASCII to EDCDIC and back.  
+Examples of these layers functioning within the [[Windows]] environment include the use of NetBIOS names for the Session layer and character code translation such as from ASCII to EDCDIC and back.  
    
-For the most part these functionalities cannot be directly viewed within a Windows environment as most Windows network components are structured around the TCP/IP model and as such, these layers are included within the Application layer.
+For the most part these functionalities cannot be directly viewed within a [[Windows]] environment as most [[Windows]] network components are structured around the TCP/IP model and as such, these layers are included within the Application layer.

@@ -12,7 +12,7 @@ used for streaming, voip, internet relat, chat
   
 Ports are added at this level  
   
-netstat and nmap can be used to view ports  
+netstat and [[nmap]] can be used to view ports  
   
 Flow control take place at this level  
    

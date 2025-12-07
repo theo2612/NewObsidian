@@ -1,7 +1,7 @@
-- navigating to htb provided ip redirects http://precious.htb but does not resolve
+- navigating to [[htb]] provided ip redirects [[http]]://precious.[[htb]] but does not resolve
 	- Adding ip address and domain to /etc/hosts fixes this.
 
-- nmap for open ports 
+- [[nmap]] for open ports 
 ```bash
 ┌──(kali㉿kali)-[~/htb/precious]
 └─$ nmap -p- -T4 --open -vvv -Pn -oN preciousNmap.txt precious.htb 
@@ -264,9 +264,9 @@ User henry may run the following commands on precious:
 - Bringing linpeas on to vulnerable machine to help exploitation
 	- with a reverse shell running over a python simple server at port 6969
 	- on attack machine 
-		- `wget -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh`
+		- `wget -L [[https]]://github.com/peass-ng/PEASS-ng/releases/latest/download/[[linpeas]].sh`
 		- start a simple python server on port 6969
-		- `$ python3 -m http.server 6969`
+		- `$ python3 -m [[http]].server 6969`
 	- on target machine 
 		- navigate to /tmp
 		- curl it down and run from attack machine

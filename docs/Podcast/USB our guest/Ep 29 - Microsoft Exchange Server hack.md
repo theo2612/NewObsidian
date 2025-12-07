@@ -1,20 +1,20 @@
 29 Microsoft Exchange Server hack
 
-Krebs on Security - At Least 30,000 U.S. Organizations Newly Hacked Via Holes in Microsoft’s Email Software - [https://krebsonsecurity.com/2021/03/at-least-30000-u-s-organizations-newly-hacked-via-holes-in-microsofts-email-software/](https://krebsonsecurity.com/2021/03/at-least-30000-u-s-organizations-newly-hacked-via-holes-in-microsofts-email-software/) 
+Krebs on Security - At Least 30,000 U.S. Organizations Newly Hacked Via Holes in Microsoft’s Email Software - [[[https]]://krebsonsecurity.com/2021/03/at-least-30000-u-s-organizations-newly-hacked-via-holes-in-microsofts-email-software/]([[https]]://krebsonsecurity.com/2021/03/at-least-30000-u-s-organizations-newly-hacked-via-holes-in-microsofts-email-software/) 
 
-ZD Net - Everything you need to know about the Microsoft Exchange Server hack - [https://www.zdnet.com/article/everything-you-need-to-know-about-microsoft-exchange-server-hack/](https://www.zdnet.com/article/everything-you-need-to-know-about-microsoft-exchange-server-hack/) 
+ZD Net - Everything you need to know about the Microsoft Exchange Server hack - [[[https]]://www.zdnet.com/article/everything-you-need-to-know-about-microsoft-exchange-server-hack/]([[https]]://www.zdnet.com/article/everything-you-need-to-know-about-microsoft-exchange-server-hack/) 
 
-Microsoft’s Github with tools for mitigation - [https://github.com/microsoft/CSS-Exchange/tree/main/Security](https://github.com/microsoft/CSS-Exchange/tree/main/Security) 
+Microsoft’s Github with tools for mitigation - [[[https]]://github.com/microsoft/CSS-Exchange/tree/main/Security]([[https]]://github.com/microsoft/CSS-Exchange/tree/main/Security) 
 
 ZD Net
 
-Microsoft blog with patch update - [https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/](https://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/) 
+Microsoft blog with patch update - [[[https]]://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/]([[https]]://msrc-blog.microsoft.com/2021/03/02/multiple-security-updates-released-for-exchange-server/) 
 
-Krebs on Security - A Basic Timeline of the Exchange Mass Hack [https://krebsonsecurity.com/2021/03/a-basic-timeline-of-the-exchange-mass-hack/](https://krebsonsecurity.com/2021/03/a-basic-timeline-of-the-exchange-mass-hack/) 
+Krebs on Security - A Basic Timeline of the Exchange Mass Hack [[[https]]://krebsonsecurity.com/2021/03/a-basic-timeline-of-the-exchange-mass-hack/]([[https]]://krebsonsecurity.com/2021/03/a-basic-timeline-of-the-exchange-mass-hack/) 
 
 USB our Guest - Software Updates
 
-[https://anchor.fm/usbog/episodes/Software-Updates-emgnsh](https://anchor.fm/usbog/episodes/Software-Updates-emgnsh) 
+[[[https]]://anchor.fm/usbog/episodes/Software-Updates-emgnsh]([[https]]://anchor.fm/usbog/episodes/Software-Updates-emgnsh) 
 
   
 
@@ -40,17 +40,17 @@ Timeline pulled from Krebs on Security - This timeline is not to cast additional
     
 -   Feb. 26-27: Targeted exploitation gradually turns into a global mass-scan; attackers start rapidly backdooring vulnerable servers.
     
--   Mar. 2: A week earlier than previously planned, Microsoft [releases updates to plug 4 zero-day flaws in Exchange](https://krebsonsecurity.com/2021/03/microsoft-chinese-cyberspies-used-4-exchange-server-flaws-to-plunder-emails/).
+-   Mar. 2: A week earlier than previously planned, Microsoft [releases updates to plug 4 zero-day flaws in Exchange]([[https]]://krebsonsecurity.com/2021/03/microsoft-chinese-cyberspies-used-4-exchange-server-flaws-to-plunder-emails/).
     
 -   Mar. 3: Tens of thousands of Exchange servers compromised worldwide, with thousands more servers getting freshly hacked each hour.
     
--   Mar. 5: KrebsOnSecurity [breaks the news](https://krebsonsecurity.com/2021/03/at-least-30000-u-s-organizations-newly-hacked-via-holes-in-microsofts-email-software/) that at least 30,000 organizations in the U.S. — and hundreds of thousands worldwide — now have backdoors installed.
+-   Mar. 5: KrebsOnSecurity [breaks the news]([[https]]://krebsonsecurity.com/2021/03/at-least-30000-u-s-organizations-newly-hacked-via-holes-in-microsofts-email-software/) that at least 30,000 organizations in the U.S. — and hundreds of thousands worldwide — now have backdoors installed.
     
 -   Mar. 9: Microsoft says 100,000 of 400,000 Exchange servers globally remain unpatched.
     
--   Mar. 9: Microsoft “[Patch Tuesday](https://krebsonsecurity.com/2021/03/microsoft-patch-tuesday-march-2021-edition/),” (the original publish date for the Exchange updates); Redmond patches 82 security holes in Windows and other software, including a zero-day vulnerability in its web browser software.
+-   Mar. 9: Microsoft “[Patch Tuesday]([[https]]://krebsonsecurity.com/2021/03/microsoft-patch-tuesday-march-2021-edition/),” (the original publish date for the Exchange updates); Redmond patches 82 security holes in [[Windows]] and other software, including a zero-day vulnerability in its web browser software.
     
--   Mar. 12: Microsoft [says](https://twitter.com/briankrebs/status/1370565978153684994) there are still 82,000 unpatched Exchange servers exposed. “Groups trying to take advantage of this vulnerability are attempting to implant ransomware and other malware that could interrupt business continuity.”
+-   Mar. 12: Microsoft [says]([[https]]://twitter.com/briankrebs/status/1370565978153684994) there are still 82,000 unpatched Exchange servers exposed. “Groups trying to take advantage of this vulnerability are attempting to implant ransomware and other malware that could interrupt business continuity.”
     
 
 Who is responsible for the known attacks? Halfnium, who is a state sponsored advanced persistent threat (APT) group from China. While Hafnium Hails from China, they also use VPN’s located in the US to disguise their location.  But is it just Hafnium? NO. Once a Zero day has been found by bad guys and patches are released, it becomes a race by other bad guys to exploit the vulnerability. 
@@ -59,7 +59,7 @@ What do you do? If you haven’t done so, First  use the link in the show notes
 
 -   Mitigates against current known attacks
     
--   Scan the Exchange Server using the [Microsoft Safety Scanner](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download)
+-   Scan the Exchange Server using the [Microsoft Safety Scanner]([[https]]://docs.microsoft.com/en-us/[[windows]]/security/threat-protection/intelligence/safety-scanner-download)
     
 -   Attempt to remediate compromises detected by the Microsoft Safety Scanner.
     

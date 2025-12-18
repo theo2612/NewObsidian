@@ -6,4 +6,4 @@
 
 # hidden
 /hidden
-/hidden/*
+/hidden/*lsass*.dmp

@@ -109,6 +109,10 @@ Copy/pasting terminal output is cumbersome. Prefer capturing output to files.
 
 ### Rules
 - By default, suggest commands that save output under `./<MachineName>/logs/` (or `nmap/`, `ffuf/`).
+- Use `cmd.log` as the timeline spine; use `out.log` only for evidence snippets when needed.
+- Prefer `note ...` / `n ...` for decision points so notes are clean in `cmd.log` (inline `#` comments are noisy in `out.log`).
+- Even with `out.log`, still write tool outputs to dedicated files (`nmap -oA`, `ffuf -o`) for clean evidence and sharing.
+- Assume tmux session name == machine name; logs live at `$PPL_LOG_ROOT/<MachineName>/logs/`.
 - When output is large, tell me:
   1) what file to save it to, and
   2) what excerpt to share (e.g., `head`, `tail`, `grep`, `sed -n 'X,Yp'`).

@@ -8,22 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a8e36327be28e31d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Untitled 1"
-            }
-          },
-          {
             "id": "f4c214dfd1e507b7",
             "type": "leaf",
             "pinned": true,
@@ -46,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CTF's/Reverse shell - bash upgrade.md",
+                "file": "docs/CTF/Reverse shell - bash upgrade.md",
                 "mode": "source",
                 "source": false
               },
@@ -62,7 +46,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
+                "file": "docs/Pentesting Notes/Methodology.md",
                 "mode": "source",
                 "source": false
               },
@@ -72,17 +56,61 @@
             }
           },
           {
-            "id": "368b62147c12633d",
+            "id": "c82848b60dbf308f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF/HTB/TMUX whitespace remover.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "TMUX whitespace remover"
+            }
+          },
+          {
+            "id": "88e6fdc25b9cee16",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CTF's/Hack the Box/Timelapse.md",
+                "file": "docs/CTF/HTB/administrator/Administrator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Timelapse"
+              "title": "Administrator"
+            }
+          },
+          {
+            "id": "fb1ba78c505c4692",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Pentesting Notes/Methodology.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Methodology"
+            }
+          },
+          {
+            "id": "9fca8b853fe96f73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF/HTB/Sauna/Sauna.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sauna"
             }
           }
         ],
@@ -118,7 +146,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pass-the-hash",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,7 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.5
+    "width": 267.51103591918945
   },
   "right": {
     "id": "f574baf1cafd6ad8",
@@ -198,54 +226,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "368b62147c12633d",
+  "active": "a44158c1c6915adf",
   "lastOpenFiles": [
-    "docs/CTF's/Hack the Box/Timelapse.md",
-    "Untitled 1.md",
-    "docs/Certifications and courses/OSCP HTB boxes/Methodology.md",
+    "docs/CTF/HTB/Painful-Pentest-Logger/scripts/htb-tmux-prefix",
+    "docs/CTF/HTB/Painful-Pentest-Logger/scripts/~syncthing~htb-tmux-prefix.tmp",
+    "docs/CTF/HTB/Painful-Pentest-Logger/scripts/htb-tmux-pipe-pane",
+    "docs/CTF/HTB/Painful-Pentest-Logger/scripts/~syncthing~htb-tmux-pipe-pane.tmp",
+    "docs/CTF/HTB/Painful-Pentest-Logger/snippets",
+    "docs/CTF/HTB/Painful-Pentest-Logger/scripts",
+    "docs/CTF/HTB/Painful-Pentest-Logger",
+    "docs/CTF/HTB/YourMom/logs",
+    "docs/CTF/HTB/YourMom",
+    "docs/CTF/HTB/administrator/Pasted image 20260104213050.png",
+    "docs/CTF/HTB/administrator/Pasted image 20260104200123.png",
+    "docs/CTF/HTB/administrator/Pasted image 20260104074734.png",
+    "docs/CTF/HTB/administrator/Administrator.md",
+    "docs/CTF/HTB/template.md",
+    "docs/CTF/HTB/Sauna/Sauna.md",
+    "docs/CTF/HTB/blackfield/blackfield.md",
+    "docs/CTF/HTB/administrator/BloodHound.py/sessionresume_ymcKutGC",
+    "docs/CTF/HTB/administrator/BloodHound.py/20260104001045_bloodhound.zip",
+    "docs/Pentesting Notes/Attacks/Kerberoasting/Kerberoasting.md",
+    "docs/Pentesting Notes/Methodology.md",
+    "docs/CTF/HTB/administrator/BloodHound.py/README.md",
+    "docs/Pentesting Notes/Attacks/Kerberoasting/Pasted image 20260103165433.png",
+    "docs/CTF/HTB/Escape/Escape.md",
+    "hidden/alh4zr3d/Necronomicon/Tools/BloodHound.md",
+    "docs/Pentesting Notes/Commands per Port.md",
+    "hidden/alh4zr3d/Necronomicon/Attacks/Active Directory/AD CS.md",
+    "docs/CTF/HTB/README.md",
+    "docs/CTF/HTB/Escape/README.md",
+    "docs/CTF/Reverse shell - bash upgrade.md",
     "docs/Pentesting Notes/Stabilize Shell - BASH.md",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ClickOnce for Initial Access.md",
-    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.112.md",
-    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.206.md",
-    "docs/Pentesting Notes/OSCP/Report.pdf",
+    "hidden/alh4zr3d/Necronomicon/Tools/Impacket.md",
+    "docs/CTF/HTB/TMUX whitespace remover.md",
     "docs/Linux/App download and make world run-able.md",
-    "docs/Pentesting Notes/OSCP-Exam-Report.docx",
-    "docs/Pentesting Notes/OSCP/OSCP machines.md",
-    "docs/Pentesting Notes/OSCP/todo.md",
-    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.110.md",
-    "docs/Pentesting Notes/OSCP/OSCP Checklist.md",
-    "docs/Pentesting Notes/OSCP/OSCP machine 192.168.115.111.md",
-    "docs/Pentesting Notes/OSCP/OSCP pentest report outline.md",
-    "docs/Pentesting Notes/OSCP/OSCP methodology commands.md",
-    "docs/Certifications and courses/CompTia Network+ Course/OSI & TCP-IP Model/Application Layer/Application Layer- Layer 7.md",
-    "docs/Certifications and courses/CompTia Network+ Course/OSI & TCP-IP Model/Physical layer/Physical Layer - Layer 1.md",
-    "docs/Certifications and courses/CompTia Network+ Course/OSI & TCP-IP Model/Network Layer/Network layer - Layer 3.md",
-    "docs/Certifications and courses/CompTia Network+ Course/OSI & TCP-IP Model/Transport Layer/Transport layer- Layer 4.md",
-    "docs/Certifications and courses/CompTia Network+ Course/OSI & TCP-IP Model/Data Link Layer/Data Link - Layer 2.md",
-    "docs/Pentesting Notes/OSCP",
-    "docs/CTF's/Hack the Box/Monteverde.md",
-    "docs/CTF's/Hack the Box/Sauna.md",
-    "docs/Pentesting Notes/Attacks/sql injection/SQL injection by MasterySeven aTechPenguin.md",
-    "hidden/alh4zr3d/Necronomicon/Attacks/Web Exploitation/SQL Injection.md",
-    "docs/Pentesting Notes/Engagement outline.md",
-    "docs/Pentesting Notes/exfil data.md",
+    "docs/CTF/HTB/Active/Active.md",
+    "docs/CTF/HTB/Timelapse/Timelapse.md",
+    "docs/CTF/HTB/Pasted image 20250503131159.png",
+    "docs/CTF/HTB/blackfield/README.md",
+    "docs/CTF/HTB/blackfield/Pasted image 20251215100243.png",
+    "docs/Pentesting Notes/Attacks/LSASS.md",
+    "docs/Pentesting Notes/Attacks/Tools.md",
+    "docs/Pentesting Notes/Attacks/Windows methodology.md",
+    "docs/CTF/HTB/yourMom/yourMom.md",
+    "docs/CTF/HTB/Pasted image 20251211180026.png",
+    "docs/CTF/HTB/Pasted image 20251122133248.png",
     "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fb2946bb-824f-4b5f-95db-64b1fa601f83.png",
     "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fa9cb73f-8727-4740-8c71-ff6fccd14518.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ee7ee769-112f-4150-bfdd-362ebb41fcb9.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/ecb3ea0d-f744-4813-85cf-140175bb0e6b.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/e98119d3-25b0-4bab-9a07-b836f82f42d8.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/de80f23f-f435-4234-aa9c-aadfc2fae3be.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/dde03c03-ad9b-465e-b8d7-cc936ef5445f.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/c42905bd-bd5d-4995-9a6a-7018d0f24ade.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/b1b84d5c-b692-478b-992e-3f6b48c2606f.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/aa671935-0842-411b-9fc2-7933a63c0448.png",
-    "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon",
-    "docs/Introductory Networking/Packet Tracer",
-    "docs/Juniper labs",
-    "docs/Untitled 1",
-    "Networking",
-    "docs/Pentesting Notes/Wi-Fi hacking/WiFi hacking.pdf",
-    "docs/Pentesting Notes/Wi-Fi hacking",
     "docs/Certifications and courses/OSCP/Untitled.canvas",
     "docs/Images/Untitled.canvas",
     "Images/Untitled.canvas",

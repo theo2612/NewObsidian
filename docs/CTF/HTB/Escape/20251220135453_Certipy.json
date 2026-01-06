@@ -1,0 +1,116 @@
+{
+  "Certificate Authorities": {
+    "0": {
+      "CA Name": "sequel-DC-CA",
+      "DNS Name": "dc.sequel.htb",
+      "Certificate Subject": "CN=sequel-DC-CA, DC=sequel, DC=htb",
+      "Certificate Serial Number": "1EF2FA9A7E6EADAD4F5382F4CE283101",
+      "Certificate Validity Start": "2022-11-18 20:58:46+00:00",
+      "Certificate Validity End": "2121-11-18 21:08:46+00:00",
+      "Web Enrollment": {
+        "http": {
+          "enabled": false
+        },
+        "https": {
+          "enabled": false,
+          "channel_binding": null
+        }
+      },
+      "User Specified SAN": "Disabled",
+      "Request Disposition": "Issue",
+      "Enforce Encryption for Requests": "Enabled",
+      "Active Policy": "CertificateAuthority_MicrosoftDefault.Policy",
+      "Permissions": {
+        "Owner": "SEQUEL.HTB\\Administrators",
+        "Access Rights": {
+          "1": [
+            "SEQUEL.HTB\\Administrators",
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ],
+          "2": [
+            "SEQUEL.HTB\\Administrators",
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ],
+          "512": [
+            "SEQUEL.HTB\\Authenticated Users"
+          ]
+        }
+      }
+    }
+  },
+  "Certificate Templates": {
+    "0": {
+      "Template Name": "UserAuthentication",
+      "Display Name": "UserAuthentication",
+      "Certificate Authorities": [
+        "sequel-DC-CA"
+      ],
+      "Enabled": true,
+      "Client Authentication": true,
+      "Enrollment Agent": false,
+      "Any Purpose": false,
+      "Enrollee Supplies Subject": true,
+      "Certificate Name Flag": [
+        1
+      ],
+      "Enrollment Flag": [
+        1,
+        8
+      ],
+      "Private Key Flag": [
+        16
+      ],
+      "Extended Key Usage": [
+        "Client Authentication",
+        "Secure Email",
+        "Encrypting File System"
+      ],
+      "Requires Manager Approval": false,
+      "Requires Key Archival": false,
+      "Authorized Signatures Required": 0,
+      "Schema Version": 2,
+      "Validity Period": "10 years",
+      "Renewal Period": "6 weeks",
+      "Minimum RSA Key Length": 2048,
+      "Template Created": "2022-11-18 21:10:22+00:00",
+      "Template Last Modified": "2024-01-19 00:26:38+00:00",
+      "Permissions": {
+        "Enrollment Permissions": {
+          "Enrollment Rights": [
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Domain Users",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ]
+        },
+        "Object Control Permissions": {
+          "Owner": "SEQUEL.HTB\\Administrator",
+          "Full Control Principals": [
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ],
+          "Write Owner Principals": [
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ],
+          "Write Dacl Principals": [
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ],
+          "Write Property Enroll": [
+            "SEQUEL.HTB\\Domain Admins",
+            "SEQUEL.HTB\\Domain Users",
+            "SEQUEL.HTB\\Enterprise Admins"
+          ]
+        }
+      },
+      "[+] User Enrollable Principals": [
+        "SEQUEL.HTB\\Domain Users"
+      ],
+      "[!] Vulnerabilities": {
+        "ESC1": "Enrollee supplies subject and template allows client authentication."
+      }
+    }
+  }
+}

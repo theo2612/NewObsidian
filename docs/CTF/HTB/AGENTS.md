@@ -44,10 +44,10 @@ Within each machine folder in the HTB repo, prefer one of:
 Purpose: this is NOT the main writeup; it’s a local index for artifacts + quick timeline.
 The main narrative writeup stays in Obsidian.
 
-## Default Coaching Style (MANDATORY)
+## Default Coaching Style - MANDATORY
 Use: **Command → Output → Analysis → Next**
 
-For every step you propose, format it exactly like:
+For every step you propose, format it exactly like
 
 **Command**
 - Provide 1–3 commands max (prioritize lowest effort / highest signal).

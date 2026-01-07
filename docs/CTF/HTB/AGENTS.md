@@ -49,21 +49,21 @@ Use: **Command → Output → Analysis → Next**
 
 For every step you propose, format it exactly like:
 
-1. **Command**
+**Command**
 - Provide 1–3 commands max (prioritize lowest effort / highest signal).
 - Use code blocks for commands.
 - Break down parameters/flags like I’m new to them.
 - Assume I will run them manually.
 
-2. **What good output looks like**
+**What good output looks like**
 - Give 2–4 bullet examples of success signals.
 - Also mention 1–2 common failure outputs and what they usually mean.
 
-3. **Analysis**
+**Analysis**
 - Explain what the output implies.
 - Connect it to the decision tree (“we’re on branch X because…”).
 
-4. **Next (pick a branch)**
+**Next (pick a branch)**
 - Give the next best move.
 - Also provide **two alternatives if it fails**.
 

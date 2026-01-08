@@ -8,6 +8,6 @@
     height="480"
     width="720"
     allowfullscreen="true"
-    allow="autoplay; fullscreen>
+    allow="autoplay; fullscreen">
 </iframe>
 

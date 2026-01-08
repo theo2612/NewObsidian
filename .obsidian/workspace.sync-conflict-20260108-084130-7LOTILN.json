@@ -128,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -240,8 +240,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "01758ac2d8bdd559",
+  "active": "a44158c1c6915adf",
   "lastOpenFiles": [
+    "docs/Markdown cheat sheet.md",
+    "docs/CTF/YourMom.md",
     "docs/CTF/HTB/AGENTS.md",
     "docs/CTF/HTB/administrator/Administrator.md",
     "docs/Pentesting Notes/Methodology.md",
@@ -282,8 +284,6 @@
     "docs/CTF/HTB/blackfield/README.md",
     "docs/CTF/HTB/blackfield/Pasted image 20251215100243.png",
     "docs/Pentesting Notes/Attacks/LSASS.md",
-    "docs/Pentesting Notes/Attacks/Tools.md",
-    "docs/Pentesting Notes/Attacks/Windows methodology.md",
     "docs/CTF/HTB/Pasted image 20251211180026.png",
     "docs/CTF/HTB/Pasted image 20251122133248.png",
     "hidden/alh4zr3d/Necronomicon/ClickOnce - Patreon/fb2946bb-824f-4b5f-95db-64b1fa601f83.png",

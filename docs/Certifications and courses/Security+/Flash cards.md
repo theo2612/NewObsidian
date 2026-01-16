@@ -519,7 +519,7 @@ A chain of custody is a documented record of the evidence. The chain of custody 
 ## | ports secure | insecure |
 | **insecure** | **secure**       | **secure** |
 | ------------ | ---------------- | ---------- |
-| [[FTP]] 20, 21   | SFTP 22          | FTPS       |
+| [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]] 20, 21   | SFTP 22          | FTPS       |
 | TELNET 23    | [[SSH]] 22           |            |
 | [[SMTP]] 25      | *SMTPS 465 587*  |            |
 | [[DNS]] 53       | DNSSEC 853       |            |
@@ -535,7 +535,7 @@ A chain of custody is a documented record of the evidence. The chain of custody 
 | [[SNMP]] 161     | SNMPv3           |            |
 |              |                  |            |
 | **insecure** | **secure**       | **secure** |
-| [[FTP]]          | SFTP             | FTPS       |
+| [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]]          | SFTP             | FTPS       |
 | TELNET       | [[SSH]]              |            |
 | [[SMTP]]         | *SMTPS*          |            |
 | [[DNS]]          | DNSSEC           |            |

@@ -1,0 +1,6 @@
+grep "malicious string" srctree.gr.ht.log | 
+sed -nr 's/(.*) - - .*/\1/p' | 
+sort | 
+uniq | 
+xargs -I "[]" echo nft add element inet filter abuse-extra "{ [] comment \"abusive botnet" }"
+

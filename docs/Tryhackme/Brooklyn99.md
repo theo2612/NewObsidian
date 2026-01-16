@@ -1,7 +1,7 @@
 [Brooklyn99]([[https]]://[[tryhackme]].com/room/brooklynninenine)
 
 **[[nmap]]** reveals
-- 21/tcp [[ftp]]
+- 21/tcp [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]]
 - 22/tcp [[ssh]]
 - 80/tcp [[http]]
 ```bash

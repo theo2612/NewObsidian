@@ -1,15 +1,15 @@
-File Transfer Protocol - [[FTP]]  
+File Transfer Protocol - [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]]  
 Operates on TCP Ports 20 21  
 Not secure!  
 Standard network protocol used for transferring computer files  
 Built on client-server architecture  
 Can be encrypted/secured through SSL/TLS or [[SSH]]  
-[[FTP]] - TCP Connection oriention  
+[[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]] - TCP Connection oriention  
 TFTP - UDP connectionless  
   
 Secure Shell - [[SSH]]  
 Operates on TCP port 22  
-SCP and S/[[FTP]] both use [[SSH]] and also use port 22  
+SCP and S/[[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]] both use [[SSH]] and also use port 22  
 Two major versions - [[SSH]]-1 & [[SSH]]-2  
 Graphical Network Protocol  
 Used over unsecure networks  
@@ -56,10 +56,10 @@ DORA - Discover, Offer, Request, Acknowledge
   
 Trivial File Transfer Protocol - TFTP  
 Operates on Port 69  
-Simple [[FTP]] that allows clients to file(s) from a remote host  
+Simple [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]] that allows clients to file(s) from a remote host  
 Primarily used in early stages of compter booting in a LAN  
 TFTP - UDP connectionless  
-[[FTP]] - TCP Connection oriention  
+[[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]] - TCP Connection oriention  
   
 Hypertext Transfer Protocol - [[HTTP]]  
 Operates at Port 80  

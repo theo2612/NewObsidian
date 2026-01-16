@@ -8,12 +8,12 @@ ip discovery
 -p- = Scan all ports
 	22 and 80 open
 	
-80/tcp open [[ftp]]
+80/tcp open [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]]
 	Anonymous login allowed
 	get notes, 
 	cd ..., get id_rsa
 	
-use id_rsa to [[ssh]] into [[ftp]]-user - (not previously given)
+use id_rsa to [[ssh]] into [[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]]-user - (not previously given)
 
 view /etc/passwd for users with bash
 ```bash
@@ -37,7 +37,7 @@ bob
 boss
 ceo
 debug
-[[ftp]]-user
+[[docs/Pentesting Notes/Attacks/Hacking Tools/Network Exploitation/Network Services/ftp]]-user
 interen
 it
 supervisor

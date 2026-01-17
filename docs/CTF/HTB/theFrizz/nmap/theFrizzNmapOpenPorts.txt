@@ -1,0 +1,26 @@
+# Nmap 7.95 scan initiated Fri Jan 16 12:43:02 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=3000 -vvv -Pn -oN nmap/theFrizzNmapOpenPorts.txt 10.129.232.168
+Nmap scan report for 10.129.232.168
+Host is up, received user-set (0.030s latency).
+Scanned at 2026-01-16 12:43:02 EST for 44s
+Not shown: 65518 filtered tcp ports (no-response)
+PORT      STATE SERVICE          REASON
+22/tcp    open  ssh              syn-ack ttl 127
+53/tcp    open  domain           syn-ack ttl 127
+80/tcp    open  http             syn-ack ttl 127
+88/tcp    open  kerberos-sec     syn-ack ttl 127
+135/tcp   open  msrpc            syn-ack ttl 127
+139/tcp   open  netbios-ssn      syn-ack ttl 127
+445/tcp   open  microsoft-ds     syn-ack ttl 127
+464/tcp   open  kpasswd5         syn-ack ttl 127
+593/tcp   open  http-rpc-epmap   syn-ack ttl 127
+636/tcp   open  ldapssl          syn-ack ttl 127
+3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+49667/tcp open  unknown          syn-ack ttl 127
+49670/tcp open  unknown          syn-ack ttl 127
+63668/tcp open  unknown          syn-ack ttl 127
+63672/tcp open  unknown          syn-ack ttl 127
+63687/tcp open  unknown          syn-ack ttl 127
+
+Read data files from: /usr/share/nmap
+# Nmap done at Fri Jan 16 12:43:46 2026 -- 1 IP address (1 host up) scanned in 43.87 seconds

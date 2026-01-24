@@ -1,0 +1,22 @@
+2024-10-22 20:36:46,814 - waptwinsetup - INFO - Installing PostgreSQL as a service managed by itself
+2024-10-22 20:36:46,814 - waptwinsetup - INFO - Install postgres database
+2024-10-22 20:36:46,814 - waptwinsetup - INFO - About to build database directory
+2024-10-22 20:36:54,798 - waptwinsetup - INFO - Start postgresql database
+2024-10-22 20:36:55,673 - waptwinsetup - INFO - Starting postgresql
+2024-10-22 20:36:58,236 - waptwinsetup - INFO - Checking 'wapt' database
+2024-10-22 20:36:58,267 - waptwinsetup - INFO - wapt pgsql user does not exists, creating wapt user
+2024-10-22 20:36:58,282 - waptwinsetup - INFO - Database wapt does not exists, creating wapt db
+2024-10-22 20:36:59,251 - waptwinsetup - INFO - Creating/upgrading wapt db tables
+2024-10-22 20:37:01,298 - waptwinsetup - INFO - Done
+2024-10-22 20:37:01,298 - waptwinsetup - INFO - Import local Packages data into database
+2024-10-22 20:37:01,360 - waptwinsetup - INFO - Installing WAPT Server as a service managed by waptsvc
+2024-10-22 20:37:01,360 - waptwinsetup - INFO - Install waptserver
+2024-10-22 20:37:01,610 - waptwinsetup - INFO - Create a certificate and key for clients certificate signing
+2024-10-22 20:37:01,610 - waptwinsetup - INFO - Create SSL RSA Key C:\wapt\conf\ca-192.168.120.158.pem
+2024-10-22 20:37:01,876 - waptwinsetup - INFO - Create X509 cert C:\wapt\conf\ca-192.168.120.158.crt
+2024-10-22 20:37:12,907 - waptwinsetup - INFO - Install wapttasks
+2024-10-22 20:37:12,939 - waptwinsetup - INFO - Installing nginx as a service managed by waptsvc
+2024-10-22 20:37:12,939 - waptwinsetup - INFO - Register nginx frontend
+2024-10-22 20:37:13,126 - waptwinsetup - INFO - Create SSL RSA Key C:\wapt\waptserver\nginx\ssl\key.pem
+2024-10-22 20:37:13,282 - waptwinsetup - INFO - Create X509 cert C:\wapt\waptserver\nginx\ssl\cert.pem
+2024-10-22 20:37:13,345 - waptwinsetup - INFO - Create nginx conf file C:\wapt\waptserver\nginx\conf\nginx.conf

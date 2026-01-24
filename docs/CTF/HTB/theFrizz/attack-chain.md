@@ -1,6 +1,6 @@
 # Attack Chain - theFrizz
 
-## Current Path
+## Complete Attack Path (ROOT)
 ```
 Web Enumeration → Gibbon-LMS v25.0.00 Discovery →
 Unauthenticated RCE Exploit (gibbonlms_cmd_shell.py) →
@@ -8,7 +8,15 @@ Basic Command Shell → Reverse Shell Upgrade (PowerShell Base64) →
 Stable Interactive Shell → config.php Enumeration →
 Database Credentials (MrGibbonsDB) → MySQL gibbonperson Query →
 f.frizzle Hash + Salt Extraction → Hashcat Mode 1420 Cracking →
-Domain User Credentials: f.frizzle@frizz.htb / Jenni_Luvs_Magic23
+Domain User Credentials (f.frizzle) → Kerberos SSH Access →
+Hidden File Enumeration → Recycle Bin Discovery →
+wapt-backup-sunday.7z Extraction → waptserver.ini Password (Base64) →
+m.schoolbus Credentials → SSH as m.schoolbus →
+BloodHound Analysis → WriteGPLink Permission Discovery →
+Manual GPO Creation (theo-rev2) → Link to Domain (DC=frizz,DC=htb) →
+SharpGPOAbuse Scheduled Task → PowerShell Reverse Shell Payload →
+GPO Propagation (gpupdate /force) → Reverse Shell as NT AUTHORITY\SYSTEM →
+Root Flag: 35a0ed09f6d1e66eb5906ade78c5ae8a
 ```
 
 ## Branch Points
@@ -43,14 +51,29 @@ Domain User Credentials: f.frizzle@frizz.htb / Jenni_Luvs_Magic23
 - **Option C:** Enumerate LDAP with credentials
 - **Why B:** Domain user credentials likely grant access to Windows services, potential for shell access
 
-## Next Steps (Current Position)
+## Privilege Escalation Method: GPO Abuse via WriteGPLink
 
-- [ ] Test f.frizzle credentials against SMB (nxc smb)
-- [ ] Test f.frizzle credentials against WinRM (nxc winrm → evil-winrm if successful)
-- [ ] Test f.frizzle credentials against SSH
-- [ ] Enumerate SMB shares with valid credentials
-- [ ] Locate and retrieve user.txt flag
-- [ ] Enumerate Active Directory for privilege escalation paths (BloodHound)
+**Permissions:**
+- m.schoolbus is member of **Group Policy Creator Owners**
+- m.schoolbus has **WriteGPLink** permission over DC=frizz,DC=htb
+
+**Attack Steps:**
+1. Created GPO manually: `New-GPO -name "theo-rev2"`
+2. Linked to domain root: `New-GPLink -Name "theo-rev2" -target "DC=frizz,DC=htb"`
+3. Used SharpGPOAbuse to inject malicious scheduled task:
+   - Task executes PowerShell reverse shell payload (base64 encoded)
+   - Payload connects back to 10.10.14.89:6969
+   - Task runs as NT AUTHORITY\SYSTEM on DC
+4. Forced GPO refresh: `gpupdate /force`
+5. GPO propagated to DC, scheduled task executed
+6. Received reverse shell as SYSTEM
+7. Retrieved root flag from C:\Users\Administrator\Desktop\root.txt
+
+**Why This Works:**
+- WriteGPLink allows linking GPOs to OUs (including domain root)
+- GPOs linked to domain root apply to ALL computers, including DCs
+- Scheduled tasks in GPOs execute as SYSTEM
+- Immediate execution via scheduled task (no reboot required)
 
 ## Tools Used
 - **Reconnaissance:** nmap, curl

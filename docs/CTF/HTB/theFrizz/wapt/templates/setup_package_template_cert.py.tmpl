@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+from setuphelpers import *
+
+crt_name = '%(installer)s'
+
+def install():
+    filecopyto(crt_name, makepath(WAPT.wapt_base_dir, 'ssl'))
+    WAPT.reload_config_if_updated()
+
+def uninstall():
+    remove_file(makepath(WAPT.wapt_base_dir, 'ssl', crt_name))
+    WAPT.reload_config_if_updated()
+
+def audit():
+    crt_location = makepath(WAPT.wapt_base_dir, 'ssl', crt_name)
+
+    if isfile(crt_location):
+        print("Certificate %s found" % (crt_location,))
+        return "OK"
+    else:
+        print("Certificate %s not found" % (crt_location,))
+        return "ERROR"
+
+
+

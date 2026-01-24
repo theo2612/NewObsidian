@@ -1,0 +1,502 @@
+Impacket v0.13.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Retrieving endpoint list from 10.129.68.132
+Protocol: [MS-NRPC]: Netlogon Remote Protocol 
+Provider: netlogon.dll 
+UUID    : 12345678-1234-ABCD-EF00-01234567CFFB v1.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[51662]
+          ncalrpc:[NETLOGON_LRPC]
+          ncacn_np:\\FRIZZDC[\pipe\2f7c37cf215fc5e4]
+          ncacn_http:10.129.68.132[49670]
+          ncalrpc:[NTDS_LPC]
+          ncalrpc:[OLEF1D48B0D98943E8745E6994104A6]
+          ncacn_ip_tcp:10.129.68.132[49668]
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+
+Protocol: [MS-RAA]: Remote Authorization API Protocol 
+Provider: N/A 
+UUID    : 0B1C2170-5732-4E0E-8CD3-D9B16F3B84D7 v0.0 RemoteAccessCheck
+Bindings: 
+          ncalrpc:[NETLOGON_LRPC]
+          ncacn_np:\\FRIZZDC[\pipe\2f7c37cf215fc5e4]
+          ncacn_http:10.129.68.132[49670]
+          ncalrpc:[NTDS_LPC]
+          ncalrpc:[OLEF1D48B0D98943E8745E6994104A6]
+          ncacn_ip_tcp:10.129.68.132[49668]
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+          ncalrpc:[NETLOGON_LRPC]
+          ncacn_np:\\FRIZZDC[\pipe\2f7c37cf215fc5e4]
+          ncacn_http:10.129.68.132[49670]
+          ncalrpc:[NTDS_LPC]
+          ncalrpc:[OLEF1D48B0D98943E8745E6994104A6]
+          ncacn_ip_tcp:10.129.68.132[49668]
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+
+Protocol: N/A 
+Provider: efssvc.dll 
+UUID    : 04EEB297-CBF4-466B-8A2A-BFD6A2F10BBA v1.0 EFSK RPC Interface
+Bindings: 
+          ncacn_np:\\FRIZZDC[\pipe\efsrpc]
+          ncalrpc:[LRPC-a9bdb20fc69241710a]
+
+Protocol: N/A 
+Provider: efssvc.dll 
+UUID    : DF1941C5-FE89-4E79-BF10-463657ACF44D v1.0 EFS RPC Interface
+Bindings: 
+          ncacn_np:\\FRIZZDC[\pipe\efsrpc]
+          ncalrpc:[LRPC-a9bdb20fc69241710a]
+
+Protocol: [MS-LSAT]: Local Security Authority (Translation Methods) Remote 
+Provider: lsasrv.dll 
+UUID    : 12345778-1234-ABCD-EF00-0123456789AB v0.0 
+Bindings: 
+          ncacn_np:\\FRIZZDC[\pipe\2f7c37cf215fc5e4]
+          ncacn_http:10.129.68.132[49670]
+          ncalrpc:[NTDS_LPC]
+          ncalrpc:[OLEF1D48B0D98943E8745E6994104A6]
+          ncacn_ip_tcp:10.129.68.132[49668]
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+
+Protocol: [MS-DRSR]: Directory Replication Service (DRS) Remote Protocol 
+Provider: ntdsai.dll 
+UUID    : E3514235-4B06-11D1-AB04-00C04FC2DCD2 v4.0 MS NT Directory DRS Interface
+Bindings: 
+          ncacn_np:\\FRIZZDC[\pipe\2f7c37cf215fc5e4]
+          ncacn_http:10.129.68.132[49670]
+          ncalrpc:[NTDS_LPC]
+          ncalrpc:[OLEF1D48B0D98943E8745E6994104A6]
+          ncacn_ip_tcp:10.129.68.132[49668]
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+
+Protocol: N/A 
+Provider: sysntfy.dll 
+UUID    : C9AC6DB5-82B7-4E55-AE8A-E464ED7B4277 v1.0 Impl friendly name
+Bindings: 
+          ncalrpc:[OLEF1D48B0D98943E8745E6994104A6]
+          ncacn_ip_tcp:10.129.68.132[49668]
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+          ncalrpc:[LRPC-a75d2e596252d4055e]
+          ncalrpc:[LRPC-b1a03570535d190cdc]
+          ncalrpc:[IUserProfile2]
+          ncalrpc:[LRPC-7b937e912ef7c86160]
+          ncalrpc:[senssvc]
+
+Protocol: [MS-SAMR]: Security Account Manager (SAM) Remote Protocol 
+Provider: samsrv.dll 
+UUID    : 12345778-1234-ABCD-EF00-0123456789AC v1.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[49664]
+          ncalrpc:[MicrosoftLaps_LRPC_0fb2f016-fe45-4a08-a7f9-a467f5e5fa0b]
+          ncalrpc:[samss lpc]
+          ncalrpc:[SidKey Local End Point]
+          ncalrpc:[protected_storage]
+          ncalrpc:[lsasspirpc]
+          ncalrpc:[lsapolicylookup]
+          ncalrpc:[LSA_EAS_ENDPOINT]
+          ncalrpc:[lsacap]
+          ncalrpc:[LSARPC_ENDPOINT]
+          ncalrpc:[securityevent]
+          ncalrpc:[audit]
+          ncacn_np:\\FRIZZDC[\pipe\lsass]
+
+Protocol: [MS-RSP]: Remote Shutdown Protocol 
+Provider: wininit.exe 
+UUID    : D95AFE70-A6D5-4259-822E-2C84DA1DDB0D v1.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[49665]
+          ncalrpc:[WindowsShutdown]
+          ncacn_np:\\FRIZZDC[\PIPE\InitShutdown]
+          ncalrpc:[WMsgKRpc08D150]
+
+Protocol: N/A 
+Provider: winlogon.exe 
+UUID    : 76F226C3-EC14-4325-8A99-6A46348418AF v1.0 
+Bindings: 
+          ncalrpc:[WindowsShutdown]
+          ncacn_np:\\FRIZZDC[\PIPE\InitShutdown]
+          ncalrpc:[WMsgKRpc08D150]
+          ncalrpc:[WMsgKRpc08F811]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : D09BDEB5-6171-4A34-BFE2-06FA82652568 v1.0 
+Bindings: 
+          ncalrpc:[csebpub]
+          ncalrpc:[LRPC-dbbf200c9b3fecc0e6]
+          ncalrpc:[LRPC-fad4858d4c65a96300]
+          ncalrpc:[LRPC-77829a2d268cd96682]
+          ncalrpc:[actkernel]
+          ncalrpc:[umpo]
+          ncalrpc:[LRPC-fad4858d4c65a96300]
+          ncalrpc:[LRPC-77829a2d268cd96682]
+          ncalrpc:[actkernel]
+          ncalrpc:[umpo]
+          ncalrpc:[LRPC-77829a2d268cd96682]
+          ncalrpc:[actkernel]
+          ncalrpc:[umpo]
+          ncalrpc:[LRPC-0fb716c188f02fcd11]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 697DCDA9-3BA9-4EB2-9247-E11F1901B0D2 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-dbbf200c9b3fecc0e6]
+          ncalrpc:[LRPC-fad4858d4c65a96300]
+          ncalrpc:[LRPC-77829a2d268cd96682]
+          ncalrpc:[actkernel]
+          ncalrpc:[umpo]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 9B008953-F195-4BF9-BDE0-4471971E58ED v1.0 
+Bindings: 
+          ncalrpc:[LRPC-fad4858d4c65a96300]
+          ncalrpc:[LRPC-77829a2d268cd96682]
+          ncalrpc:[actkernel]
+          ncalrpc:[umpo]
+
+Protocol: N/A 
+Provider: nsisvc.dll 
+UUID    : 7EA70BCF-48AF-4F6A-8968-6A440754D5FA v1.0 NSI server endpoint
+Bindings: 
+          ncalrpc:[LRPC-d481ac8aea9df14123]
+
+Protocol: N/A 
+Provider: gpsvc.dll 
+UUID    : 2EB08E3E-639F-4FBA-97B1-14F878961076 v1.0 Group Policy RPC Interface
+Bindings: 
+          ncalrpc:[LRPC-2b3881905c95085535]
+
+Protocol: [MS-EVEN6]: EventLog Remoting Protocol 
+Provider: wevtsvc.dll 
+UUID    : F6BEAFF7-1E19-4FBB-9F8F-B89E2018337C v1.0 Event log TCPIP
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[49666]
+          ncacn_np:\\FRIZZDC[\pipe\eventlog]
+          ncalrpc:[eventlog]
+
+Protocol: N/A 
+Provider: dhcpcsvc6.dll 
+UUID    : 3C4728C5-F0AB-448B-BDA1-6CE01EB0A6D6 v1.0 DHCPv6 Client LRPC Endpoint
+Bindings: 
+          ncalrpc:[dhcpcsvc6]
+          ncalrpc:[dhcpcsvc]
+
+Protocol: N/A 
+Provider: dhcpcsvc.dll 
+UUID    : 3C4728C5-F0AB-448B-BDA1-6CE01EB0A6D5 v1.0 DHCP Client LRPC Endpoint
+Bindings: 
+          ncalrpc:[dhcpcsvc]
+
+Protocol: N/A 
+Provider: nrpsrv.dll 
+UUID    : 30ADC50C-5CBC-46CE-9A0E-91914789E23C v1.0 NRP server endpoint
+Bindings: 
+          ncalrpc:[LRPC-ed3dc14b41fcb2015c]
+          ncalrpc:[DNSResolver]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 3A9EF155-691D-4449-8D05-09AD57031823 v1.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[49667]
+          ncalrpc:[ubpmtaskhostchannel]
+          ncacn_np:\\FRIZZDC[\PIPE\atsvc]
+          ncalrpc:[LRPC-c3bedb899c403ef1dc]
+
+Protocol: [MS-TSCH]: Task Scheduler Service Remoting Protocol 
+Provider: schedsvc.dll 
+UUID    : 86D35949-83C9-4044-B424-DB363231FD0C v1.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[49667]
+          ncalrpc:[ubpmtaskhostchannel]
+          ncacn_np:\\FRIZZDC[\PIPE\atsvc]
+          ncalrpc:[LRPC-c3bedb899c403ef1dc]
+
+Protocol: [MS-TSCH]: Task Scheduler Service Remoting Protocol 
+Provider: taskcomp.dll 
+UUID    : 378E52B0-C0A9-11CF-822D-00AA0051E40F v1.0 
+Bindings: 
+          ncacn_np:\\FRIZZDC[\PIPE\atsvc]
+          ncalrpc:[LRPC-c3bedb899c403ef1dc]
+
+Protocol: [MS-TSCH]: Task Scheduler Service Remoting Protocol 
+Provider: taskcomp.dll 
+UUID    : 1FF70682-0A51-30E8-076D-740BE8CEE98B v1.0 
+Bindings: 
+          ncacn_np:\\FRIZZDC[\PIPE\atsvc]
+          ncalrpc:[LRPC-c3bedb899c403ef1dc]
+
+Protocol: N/A 
+Provider: schedsvc.dll 
+UUID    : 0A74EF1C-41A4-4E06-83AE-DC74FB1CDD53 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-c3bedb899c403ef1dc]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 7F1343FE-50A9-4927-A778-0C5859517BAC v1.0 DfsDs service
+Bindings: 
+          ncacn_np:\\FRIZZDC[\PIPE\wkssvc]
+          ncalrpc:[LRPC-7c1019d83f6877c482]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : EB081A0D-10EE-478A-A1DD-50995283E7A8 v3.0 Witness Client Test Interface
+Bindings: 
+          ncalrpc:[LRPC-7c1019d83f6877c482]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : F2C9B409-C1C9-4100-8639-D8AB1486694A v1.0 Witness Client Upcall Server
+Bindings: 
+          ncalrpc:[LRPC-7c1019d83f6877c482]
+
+Protocol: N/A 
+Provider: MPSSVC.dll 
+UUID    : 2FB92682-6599-42DC-AE13-BD2CA89BD11C v1.0 Fw APIs
+Bindings: 
+          ncalrpc:[LRPC-deabb7e4422978769a]
+          ncalrpc:[LRPC-9d4256918631c5e560]
+          ncalrpc:[LRPC-de963f0fe493fd3967]
+          ncalrpc:[LRPC-6bbf496784f3eb949a]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : F47433C3-3E9D-4157-AAD4-83AA1F5C2D4C v1.0 Fw APIs
+Bindings: 
+          ncalrpc:[LRPC-9d4256918631c5e560]
+          ncalrpc:[LRPC-de963f0fe493fd3967]
+          ncalrpc:[LRPC-6bbf496784f3eb949a]
+
+Protocol: N/A 
+Provider: MPSSVC.dll 
+UUID    : 7F9D11BF-7FB9-436B-A812-B2D50C5D4C03 v1.0 Fw APIs
+Bindings: 
+          ncalrpc:[LRPC-de963f0fe493fd3967]
+          ncalrpc:[LRPC-6bbf496784f3eb949a]
+
+Protocol: N/A 
+Provider: BFE.DLL 
+UUID    : DD490425-5325-4565-B774-7E27D6C09C24 v1.0 Base Firewall Engine API
+Bindings: 
+          ncalrpc:[LRPC-6bbf496784f3eb949a]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : A500D4C6-0DD1-4543-BC0C-D5F93486EAF8 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-0b24c4bd62d6fb75ee]
+          ncalrpc:[LRPC-0fb716c188f02fcd11]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 3473DD4D-2E88-4006-9CBA-22570909DD10 v5.1 WinHttp Auto-Proxy Service
+Bindings: 
+          ncalrpc:[f2cfc6ec-e696-4017-b3f4-62a79891da27]
+          ncalrpc:[LRPC-5f875c0d54ef5b3141]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 0D3C7F20-1C8D-4654-A1B3-51563B298BDA v1.0 UserMgrCli
+Bindings: 
+          ncalrpc:[LRPC-946e6f4c48e732247c]
+          ncalrpc:[OLE9402A2B7158514BB65A4712DA86E]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : B18FBAB6-56F8-4702-84E0-41053293A869 v1.0 UserMgrCli
+Bindings: 
+          ncalrpc:[LRPC-946e6f4c48e732247c]
+          ncalrpc:[OLE9402A2B7158514BB65A4712DA86E]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 1A0D010F-1C33-432C-B0F5-8CF4E8053099 v1.0 IdSegSrv service
+Bindings: 
+          ncalrpc:[LRPC-1600b75641b6f1c7f1]
+
+Protocol: N/A 
+Provider: srvsvc.dll 
+UUID    : 98716D03-89AC-44C7-BB8C-285824E51C4A v1.0 XactSrv service
+Bindings: 
+          ncalrpc:[LRPC-1600b75641b6f1c7f1]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 3F787932-3452-4363-8651-6EA97BB373BB v1.0 NSP Rpc Interface
+Bindings: 
+          ncalrpc:[LRPC-de177b0d257fbeb440]
+          ncalrpc:[OLEB32B1AFEDE17F21FC8A48E26E4B0]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 1D45E083-478F-437C-9618-3594CED8C235 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 98CD761E-E77D-41C8-A3C0-0FB756D90EC2 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : D22895EF-AFF4-42C5-A5B2-B14466D34AB4 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : E38F5360-8572-473E-B696-1B46873BEEAB v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 95095EC8-32EA-4EB0-A3E2-041F97B36168 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : FD8BE72B-A9CD-4B2C-A9CA-4DED242FBE4D v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 4C9DBF19-D39E-4BB9-90EE-8F7179B20283 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : D4051BDE-9CDD-4910-B393-4AA85EC3C482 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-caadef7c4eedaec96f]
+          ncalrpc:[OLEDF923F45845499F9BA015ECB32A6]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : 7DF1CEAE-DE4E-4E6F-AB14-49636E7C2052 v1.0 
+Bindings: 
+          ncalrpc:[LRPC-cdc13b686f55e176db]
+
+Protocol: [MS-CMPO]: MSDTC Connection Manager: 
+Provider: msdtcprx.dll 
+UUID    : 906B0CE0-C70B-1067-B317-00DD010662DA v1.0 
+Bindings: 
+          ncalrpc:[LRPC-64ada375a8ef385397]
+          ncalrpc:[OLE835493C7FECD98B354135DEB10C4]
+          ncalrpc:[LRPC-c5a296c9c7a1bc5c70]
+          ncalrpc:[LRPC-c5a296c9c7a1bc5c70]
+          ncalrpc:[LRPC-c5a296c9c7a1bc5c70]
+
+Protocol: [MS-SCMR]: Service Control Manager Remote Protocol 
+Provider: services.exe 
+UUID    : 367ABB81-9844-35F1-AD32-98F038001003 v2.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[64584]
+
+Protocol: N/A 
+Provider: N/A 
+UUID    : F3F09FFD-FBCF-4291-944D-70AD6E0E73BB v1.0 
+Bindings: 
+          ncalrpc:[LRPC-e32075229c42af1e4e]
+
+Protocol: [MS-DNSP]: Domain Name Service (DNS) Server Management 
+Provider: dns.exe 
+UUID    : 50ABC2A4-574D-40B3-9D66-EE4FD5FBA076 v5.0 
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[51666]
+
+Protocol: [MS-FRS2]: Distributed File System Replication Protocol 
+Provider: dfsrmig.exe 
+UUID    : 897E2E5F-93F3-4376-9C9C-FD2277495C27 v1.0 Frs2 Service
+Bindings: 
+          ncacn_ip_tcp:10.129.68.132[51676]
+          ncalrpc:[OLEB537CEC2FD8856FE54C7BBB039F9]
+
+[*] Received 238 endpoints.

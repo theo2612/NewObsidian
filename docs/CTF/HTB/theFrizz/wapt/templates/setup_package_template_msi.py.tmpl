@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+from setuphelpers import *
+
+r"""
+Usable WAPT package functions: install(), uninstall(), session_setup(), audit(), update_package()
+
+"""
+# Declaring global variables - Warnings: 1) WAPT context is only available in package functions; 2) Global variables are not persistent between calls
+
+
+def install():
+    # Declaring local variables
+
+    # Installing the software
+    print("Installing: %(installer)s")
+    install_msi_if_needed('%(installer)s')
+
+
+

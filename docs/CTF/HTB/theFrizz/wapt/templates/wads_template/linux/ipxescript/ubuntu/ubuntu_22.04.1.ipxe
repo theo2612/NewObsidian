@@ -1,0 +1,11 @@
+#!ipxe
+
+# To retrieve vmlinuz and initrd:
+# wget https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso
+# mount ubuntu-22.04.1-live-server-amd64.iso /mnt/iso/
+# /mnt/iso/casper/initrd
+# /mnt/iso/casper/vmlinuz
+
+kernel http://wapt.tranquil.it/ubuntu/netinstall/ubuntu/ubuntu-22.04.1/vmlinuz ip=dhcp cloud-config-url={{server_url}}api/v3/get_wads_config?mac_address=${net0/mac}&conf_only=true&ip_address=${net0/ip}&uuid=${uuid} url=https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso autoinstall
+initrd http://wapt.tranquil.it/ubuntu/netinstall/ubuntu/ubuntu-22.04.1/initrd
+boot  

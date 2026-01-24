@@ -1,0 +1,152 @@
+/lib/ld-linux.so.2
+libc.so.6
+_IO_stdin_used
+exit
+fopen
+__isoc99_scanf
+puts
+stdin
+printf
+fgets
+getchar
+stdout
+fclose
+malloc
+stderr
+fread
+setvbuf
+__libc_start_main
+free
+__stack_chk_fail
+GLIBC_2.7
+GLIBC_2.4
+GLIBC_2.1
+GLIBC_2.0
+__gmon_start__
+Rj"P
+Pj,R
+[^_]
+./flag.txt
+You schooled the school!
+Now run this on the server to get the flag!
+Student list is full
+Student name?
+Student grade level?
+Student GPA?
+Student %d created!
+Which student would you like to remove?
+Invalid student number
+Student removed!
+Which student would you like to modify?
+Which option would you like to modify?
+1) Name
+2) Grade level
+3) GPA
+New student name: 
+Student name changed!
+New student grade level: 
+Grade level changed!
+New student GPA: 
+GPA changed!
+Student number: 
+Students name: %s
+Students grade level: %d
+Students GPA: %0.2f
+Student Information System
+1) Add student
+2) Remove student
+3) Modify student
+4) Get student information
+5) exit
+Invalid option
+9*2$"
+GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.7618
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+source.c
+.L29
+.L35
+.L34
+.L33
+.L32
+.L30
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+studentCount
+__x86.get_pc_thunk.bx
+printf@@GLIBC_2.0
+stderr@@GLIBC_2.0
+__x86.get_pc_thunk.bp
+free@@GLIBC_2.0
+ModifyStudent
+getchar@@GLIBC_2.0
+fgets@@GLIBC_2.0
+_edata
+fclose@@GLIBC_2.1
+menu
+__stack_chk_fail@@GLIBC_2.4
+fread@@GLIBC_2.0
+malloc@@GLIBC_2.0
+__data_start
+puts@@GLIBC_2.0
+CreateStudent
+__gmon_start__
+exit@@GLIBC_2.0
+__dso_handle
+_IO_stdin_used
+__libc_start_main@@GLIBC_2.0
+__libc_csu_init
+stdin@@GLIBC_2.0
+students
+setvbuf@@GLIBC_2.0
+fopen@@GLIBC_2.1
+_dl_relocate_static_pie
+_fp_hw
+stdout@@GLIBC_2.0
+GetStudent
+__bss_start
+main
+__x86.get_pc_thunk.ax
+__stack_chk_fail_local
+__isoc99_scanf@@GLIBC_2.7
+__TMC_END__
+RemoveStudent
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.build-id
+.note.gnu.property
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment

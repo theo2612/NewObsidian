@@ -1,0 +1,22 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: uwapthttputils.rsdlstoppedbyuser
+msgid "Download stopped by the user"
+msgstr "Téléchargement interrompu par l'utilisateur"
+
+#: uwapthttputils.rsdownloadcorrupted
+#, object-pascal-format
+msgid "Downloaded file %s is corrupted. MD5 mismatch."
+msgstr "Le fichier téléchargé %s est corrompu. MD5 incorrect."
+
+#: uwapthttputils.rsdownloadingurl
+#, object-pascal-format
+msgid "Downloading %s"
+msgstr "Téléchargement de %s"
+
+#: uwapthttputils.rsuploadingfileurl
+#, object-pascal-format
+msgid "Uploading %s to %s"
+msgstr "Envoi de %s vers %s"
+

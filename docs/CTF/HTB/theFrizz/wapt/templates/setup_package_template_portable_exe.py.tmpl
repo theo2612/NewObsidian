@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+from setuphelpers import *
+
+r"""
+Usable WAPT package functions: install(), uninstall(), session_setup(), audit(), update_package()
+
+"""
+# Declaring global variables - Warnings: 1) WAPT context is only available in package functions; 2) Global variables are not persistent between calls
+bin_name = '%(installer)s'
+app_name = '%(description)s'
+app_dir = makepath(programfiles32, app_name)
+app_path = makepath(app_dir, bin_name)
+
+
+def install():
+    # Initializing variables
+
+    # Installing software
+    print("Installing: %(packagename)s")
+    killalltasks(control.get_impacted_process_list())
+    mkdirs(app_dir)
+    if isfile(app_path):
+        remove_file(app_path)
+    print(f"Copying: {bin_name} to: {app_dir}")
+    filecopyto(bin_name, app_dir)
+
+    # Creating shortcuts
+    create_desktop_shortcut(app_name, app_path)
+    create_programs_menu_shortcut(app_name, app_path)
+
+
+def uninstall():
+    # Uninstalling software
+    killalltasks(control.get_impacted_process_list())
+    if isdir(app_dir):
+        remove_tree(app_dir)
+
+    # Removing shortcuts
+    remove_desktop_shortcut(app_name)
+    remove_programs_menu_shortcut(app_name)
+
+
+def audit():
+    # Declaring local variables
+    package_version = '%(version)s'
+
+    # Getting installed software version
+    if isfile(app_path):
+        installed_version = get_version_from_binary(app_path)
+    else :
+        installed_version = None
+
+    # Auditing software
+    print("Auditing: %(packagename)s")
+    if installed_version is None or installed_version < package_version:
+        print(f'{app_name} version is incorrect {installed_version}')
+        return "ERROR"
+    else:
+        print(f'{app_name} is installed in correct version ({installed_version})')
+        return "OK"

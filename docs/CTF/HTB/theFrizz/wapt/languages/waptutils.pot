@@ -1,0 +1,28 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: waptutils.rsaccountreuseblockedbypolicy
+msgid "An account with the same name exists in Active Directory. Re-using the account was blocked by security policy."
+msgstr ""
+
+#: waptutils.rsdjoinfailed
+msgid "The Djoin has failed, please try again."
+msgstr ""
+
+#: waptutils.rsexistingaccountdjoin
+msgid "The machine already exists."
+msgstr ""
+
+#: waptutils.rsfatalerrordjoin
+#, object-pascal-format
+msgid "Fatal djoin error: %s"
+msgstr ""
+
+#: waptutils.rsinvalidaclsdjoin
+msgid "You cannot prepare djoin with the current session user."
+msgstr ""
+
+#: waptutils.rstoomuchjoin
+msgid "You have reached the limit of Djoin on the Microsoft AD."
+msgstr ""
+

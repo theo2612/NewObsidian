@@ -1,0 +1,54 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tviswaptbuildparams.actok.caption
+msgid "ActOK"
+msgstr ""
+
+#: tviswaptbuildparams.actselectconf.caption
+msgid "ActSelectConf"
+msgstr ""
+
+#: tviswaptbuildparams.caption
+msgid "Package Build parameters"
+msgstr ""
+
+#: tviswaptbuildparams.cbconfiguration.text
+msgctxt "tviswaptbuildparams.cbconfiguration.text"
+msgid "waptconsole"
+msgstr ""
+
+#: tviswaptbuildparams.edkeypath.caption
+msgid "EdKeyPath"
+msgstr ""
+
+#: tviswaptbuildparams.labconfiguration.caption
+msgctxt "tviswaptbuildparams.labconfiguration.caption"
+msgid "Configuration"
+msgstr ""
+
+#: tviswaptbuildparams.labkeypassword.caption
+msgctxt "tviswaptbuildparams.labkeypassword.caption"
+msgid "Private key password :"
+msgstr ""
+
+#: tviswaptbuildparams.labkeypath.caption
+msgctxt "tviswaptbuildparams.labkeypath.caption"
+msgid "For key matching the certificate: "
+msgstr ""
+
+#: tviswaptbuildparams.labpassword.caption
+msgctxt "tviswaptbuildparams.labpassword.caption"
+msgid "Password"
+msgstr ""
+
+#: tviswaptbuildparams.labserver.caption
+msgctxt "tviswaptbuildparams.labserver.caption"
+msgid "Server"
+msgstr ""
+
+#: tviswaptbuildparams.labuser.caption
+msgctxt "tviswaptbuildparams.labuser.caption"
+msgid "User"
+msgstr ""
+

@@ -1,0 +1,112 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: topenfiledialog.button1.caption
+msgid "Button1"
+msgstr ""
+
+#: topenfiledialog.caption
+msgid "Open file"
+msgstr ""
+
+#: topenfiledialog.directoryedit1.text
+msgid "DirectoryEdit1"
+msgstr ""
+
+#: topenfiledialog.edit1.text
+msgid "Edit1"
+msgstr ""
+
+#: topenfiledialog.filenameedit1.text
+msgid "FileNameEdit1"
+msgstr ""
+
+#: tviswaptbuildparams.actok.caption
+msgid "ActOK"
+msgstr ""
+
+#: tviswaptbuildparams.actselectconf.caption
+msgid "ActSelectConf"
+msgstr ""
+
+#: tviswaptbuildparams.bitbtn1.caption
+msgid "OK"
+msgstr ""
+
+#: tviswaptbuildparams.bitbtn2.caption
+msgid "Cancel"
+msgstr ""
+
+#: tviswaptbuildparams.caption
+msgid "Package Build parameters"
+msgstr ""
+
+#: tviswaptbuildparams.cbconfiguration.text
+msgid "waptconsole"
+msgstr ""
+
+#: tviswaptbuildparams.edkeypath.caption
+msgid "EdKeyPath"
+msgstr ""
+
+#: tviswaptbuildparams.labconfiguration.caption
+msgid "Configuration"
+msgstr ""
+
+#: tviswaptbuildparams.labkeypassword.caption
+msgid "Private key password :"
+msgstr ""
+
+#: tviswaptbuildparams.labkeypath.caption
+msgid "For key matching the certificate: "
+msgstr ""
+
+#: tviswaptbuildparams.labpassword.caption
+msgid "Password"
+msgstr ""
+
+#: tviswaptbuildparams.labserver.caption
+msgid "Server"
+msgstr ""
+
+#: tviswaptbuildparams.labuser.caption
+msgid "User"
+msgstr ""
+
+#: tviswaptcombo.caption
+msgid "Choose an option"
+msgstr ""
+
+#: tviswaptcombo.textlabel.caption
+msgctxt "tviswaptcombo.textlabel.caption"
+msgid "TextLabel"
+msgstr ""
+
+#: tviswaptgrid.caption
+msgid "Grid"
+msgstr ""
+
+#: tviswaptgrid.searchlabel.caption
+msgid "Search"
+msgstr "Rechercher"
+
+#: tviswaptinputbox.caption
+msgctxt "tviswaptinputbox.caption"
+msgid "Input a text"
+msgstr ""
+
+#: tviswaptinputbox.textlabel.caption
+msgctxt "tviswaptinputbox.textlabel.caption"
+msgid "TextLabel"
+msgstr ""
+
+#: tviswaptmemobox.caption
+msgctxt "tviswaptmemobox.caption"
+msgid "Input a text"
+msgstr ""
+
+#: tviswaptmemobox.textlabel.caption
+msgctxt "tviswaptmemobox.textlabel.caption"
+msgid "TextLabel"
+msgstr ""
+

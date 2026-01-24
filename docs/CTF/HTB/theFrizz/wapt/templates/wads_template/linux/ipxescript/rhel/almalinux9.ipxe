@@ -1,0 +1,5 @@
+#!ipxe
+set base http://repo.almalinux.org/almalinux/9.1/BaseOS/x86_64/os
+initrd ${base}/images/pxeboot/initrd.img
+kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img inst.repo=${base} inst.ks={{server_url}}api/v3/get_wads_config?mac_address=${net0/mac}&conf_only=true&ip_address=${net0/ip}&uuid=${uuid}
+boot

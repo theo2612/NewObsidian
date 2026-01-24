@@ -1,0 +1,192 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tdmwapttray.actcancelalltasks.caption
+msgid "Cancel all current tasks"
+msgstr ""
+
+#: tdmwapttray.actcancelrunningtask.caption
+msgid "Cancel current task"
+msgstr ""
+
+#: tdmwapttray.actconfigure.caption
+msgid "View configuration file"
+msgstr ""
+
+#: tdmwapttray.actforceregister.caption
+msgid "Save this host's inventory to the server"
+msgstr ""
+
+#: tdmwapttray.actlaunchselfservice.caption
+msgid "ActLaunchSelfService"
+msgstr ""
+
+#: tdmwapttray.actlaunchwaptconsole.caption
+msgid "Run WAPT Console"
+msgstr ""
+
+#: tdmwapttray.actlocalinfo.caption
+msgid "About this host"
+msgstr ""
+
+#: tdmwapttray.actquit.caption
+msgid "Quit"
+msgstr ""
+
+#: tdmwapttray.actreloadconfig.caption
+msgid "Reload network related service configuration"
+msgstr ""
+
+#: tdmwapttray.actserviceenable.caption
+msgid "Wapt service running"
+msgstr ""
+
+#: tdmwapttray.actsessionsetup.caption
+msgid "Configure all installed packages for your own session"
+msgstr ""
+
+#: tdmwapttray.actshowmain.caption
+msgid "Configure"
+msgstr ""
+
+#: tdmwapttray.actshowstatus.caption
+msgid "View software status"
+msgstr ""
+
+#: tdmwapttray.actshowtasks.caption
+msgid "View tasks"
+msgstr ""
+
+#: tdmwapttray.actupdate.caption
+msgid "Update software inventory"
+msgstr ""
+
+#: tdmwapttray.actupgrade.caption
+msgid "Install updates"
+msgstr ""
+
+#: tdmwapttray.actwaptupgrade.caption
+msgid "Update WAPT software on this host"
+msgstr ""
+
+#: tdmwapttray.menuitem10.caption
+msgid "Configuration"
+msgstr ""
+
+#: tdmwapttray.menuitem3.caption
+msgid "Run WAPT Self-service"
+msgstr ""
+
+#: tdmwapttray.menuwaptversion.caption
+msgid "Version"
+msgstr ""
+
+#: tviswapttray.caption
+msgid "WAPT Software Manager"
+msgstr ""
+
+#: tviswapttray.pgstatus.caption
+msgid "Status"
+msgstr ""
+
+#: tviswapttray.tabsheet2.caption
+msgid "TabSheet2"
+msgstr ""
+
+#: uwapttrayres.rscanceling
+#, object-pascal-format
+msgid "Canceling %s"
+msgstr ""
+
+#: uwapttrayres.rschecking
+msgid "Checking..."
+msgstr ""
+
+#: uwapttrayres.rserror
+msgid "Error"
+msgstr ""
+
+#: uwapttrayres.rserrorfor
+#, object-pascal-format
+msgid "Error for %s"
+msgstr ""
+
+#: uwapttrayres.rserrorwhilechecking
+msgid "Error while checking..."
+msgstr ""
+
+#: uwapttrayres.rsinstalling
+msgid "Install in progess"
+msgstr ""
+
+#: uwapttrayres.rsnotaskcanceled
+msgid "No task canceled"
+msgstr ""
+
+#: uwapttrayres.rspackageconfigdone
+msgid "Done configuring packages for the current user session"
+msgstr ""
+
+#: uwapttrayres.rspackageconfigerror
+msgid "Error while configuring packages for the current user session"
+msgstr ""
+
+#: uwapttrayres.rspendinginstalls
+#, object-pascal-format
+msgid "Pending packages installs: %s"
+msgstr ""
+
+#: uwapttrayres.rspendingremoves
+#, object-pascal-format
+msgid "Pending packages removes: %s"
+msgstr ""
+
+#: uwapttrayres.rspendingwuaupdates
+#, object-pascal-format
+msgid "Pending WUA updates: %s"
+msgstr ""
+
+#: uwapttrayres.rsstartingwaptservice
+msgid "Starting WAPTService"
+msgstr ""
+
+#: uwapttrayres.rsstoppingwaptservice
+msgid "Stopping WAPTService"
+msgstr ""
+
+#: uwapttrayres.rstaskdone
+#, object-pascal-format
+msgid ""
+"%s done\n"
+"%s"
+msgstr ""
+
+#: uwapttrayres.rstaskinprogress
+#, object-pascal-format
+msgid "%s in progress"
+msgstr ""
+
+#: uwapttrayres.rstaskstarted
+#, object-pascal-format
+msgid "%s started"
+msgstr ""
+
+#: uwapttrayres.rsupdatesavailablefor
+#, object-pascal-format
+msgid ""
+"Available updates for :\n"
+"-%s"
+msgstr ""
+
+#: uwapttrayres.rswaptservicestarted
+msgid "WAPTService started"
+msgstr ""
+
+#: uwapttrayres.rswaptservicestopped
+msgid "WAPTService stopped"
+msgstr ""
+
+#: uwapttrayres.rswaptserviceterminated
+msgid "WAPTService terminated"
+msgstr ""
+

@@ -1,0 +1,12 @@
+{
+    "python.defaultInterpreterPath": "C:\\Program Files (x86)\\wapt\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Program Files (x86)\\wapt\\Scripts\\python.exe",
+    "python.wapt-get": "C:\\Program Files (x86)\\wapt\\wapt-get.py",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "150"
+    ],
+    "editor.insertSpaces": true,
+    "files.eol": "\n"
+}

@@ -1,0 +1,40 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: uwaptpackage.rscheckpackagesignaturefailed
+#, object-pascal-format
+msgid ""
+"CheckPackageSignature failed for %s. Signer %s\n"
+"%s"
+msgstr ""
+
+#: uwaptpackage.rserrorunsafefilenameinpackagefile
+#, object-pascal-format
+msgid "Unzip Package %s: Unsafe filename %s in zip file %s."
+msgstr ""
+
+#: uwaptpackage.rsnocertificatefoundinpackage
+msgid "No certificate found in the package. Is the package signed with Wapt version prior to 1.5 ?"
+msgstr ""
+
+#: uwaptpackage.rspackagefilescorrupted
+#, object-pascal-format
+msgid "Error in package %s in %s, files corrupted, SHA not matching for %s."
+msgstr ""
+
+#: uwaptpackage.rspackagewithscriptbutnotcodesigningcertificate
+msgid "Package has package script but certificate is not a code signing"
+msgstr ""
+
+#: uwaptpackage.rssignaturecannotbecheckedwithbundle
+msgid ""
+"Signature can not be checked with any of certificates:\n"
+"%"
+msgstr ""
+
+#: uwaptpackage.rssignaturecanotbecheckedwithcertificate
+msgid ""
+"Signature can not be checked with supplied package certificate\n"
+"%"
+msgstr ""
+

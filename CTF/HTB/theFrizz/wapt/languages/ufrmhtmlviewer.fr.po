@@ -1,0 +1,38 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: ufrmhtmlviewer.rsconfirmcaption
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: ufrmhtmlviewer.rsconfirmopenurl
+#, object-pascal-format
+msgid ""
+"Are you sure you want to open URL \n"
+"%s\n"
+" in your browser ?"
+msgstr ""
+"Êtes vous sûr de couloir ouvrir l'URL \n"
+"%s\n"
+" dans votre navigateur Internet ?"
+
+
+#: ufrmhtmlviewer.rsconfirmpostform
+#, object-pascal-format
+msgid ""
+"You are about to send your answer to the URL\n"
+"%s\n"
+"Do you want to continue ?"
+msgstr ""
+"Vous allez envoyer votre réponse à l'URL\n"
+"%s\n"
+"voulez-vous continuer ?"
+
+#: ufrmhtmlviewer.rscopyhtmltemplatetouserdir
+msgid "Current template file is read only, do you want to edit a copy from your home directory ?"
+msgstr "Le fichier modèle HTML courant en en lecteure seule, voulez-vous en éditer une copie dans votre répertoire personnel ?"
+
+#: ufrmhtmlviewer.rsunabletocopyfile
+msgid "Unable to copy file % to %"
+msgstr "Impossible de copier le fichier % vers %"
+

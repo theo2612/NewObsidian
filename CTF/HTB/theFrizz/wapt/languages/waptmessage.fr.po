@@ -1,0 +1,62 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tviswaptmessage.caption
+msgctxt "tviswaptmessage.caption"
+msgid "Message"
+msgstr "Message"
+
+#: tviswaptmessage.panmessage.caption
+msgid "panMessage"
+msgstr ""
+
+#: uwaptmessageres.rsconfirmcaption
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: uwaptmessageres.rsconfirmopenurl
+#, object-pascal-format, fuzzy
+#| msgid ""
+#| "Are you sure you want to open URL \n"
+#| "%s\n"
+#| " in your browser ?\n"
+msgid ""
+"Are you sure you want to open URL \n"
+"%s\n"
+" in your browser ?"
+msgstr ""
+"Êtes-vous sûr de vouloir ouvrir l'URL \n"
+"%s\n"
+"\"dans votre navigateur ?\n"
+
+#: uwaptmessageres.rsconfirmpostform
+#, object-pascal-format, fuzzy
+#| msgid ""
+#| "You are about to send your answer to the URL\n"
+#| "%s\n"
+#| "Do you want to continue ?\n"
+msgid ""
+"You are about to send your answer to the URL\n"
+"%s\n"
+"Do you want to continue ?"
+msgstr ""
+"Vous allez envoyer vos réponses vers l'URL\n"
+"%s\n"
+"Voulez-vous continuer ?\n"
+
+#: uwaptmessageres.rshelp
+msgid ""
+"USAGE : waptmessage [-h] [-f file] [message] [-s widthXheight] \n"
+"-h  Display this help message.\n"
+"-b  <base64-string> : Load HTML message by decoding this base64 encoded string\n"
+"-f  <html filename> Reads message from a file.\n"
+"-c  initialize stdout console on windows (for STDOUT form post).\n"
+"-s <width>X<height> Requested size for the window.\n"
+msgstr ""
+"USAGE : ./waptmessage [-h] [-f file] [message]\n"
+"-h  Affiche ce message d'aide.\n"
+"-b  <base64-string> : Charge le message HTML en décodant une chaîne encodée en utf8 / base64\n"
+"-f  <html filename> : Lit le message depuis un fichier.\n"
+"-c  initialise la console stdout pour Windows (pour les form post vers STDOUT ).\n"
+"-s <largeur>X<hauteur> : Taille requise pour la fenêtre.\n"
+

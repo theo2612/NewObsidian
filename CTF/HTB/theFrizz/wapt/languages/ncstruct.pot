@@ -1,0 +1,87 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: ncstruct.rs_ip4_bt_6_to_4
+msgid "IPv6 to IPv4 relay"
+msgstr ""
+
+#: ncstruct.rs_ip4_bt_link_local
+msgctxt "ncstruct.rs_ip4_bt_link_local"
+msgid "Link Local"
+msgstr ""
+
+#: ncstruct.rs_ip4_bt_loopback
+msgctxt "ncstruct.rs_ip4_bt_loopback"
+msgid "Loopback"
+msgstr ""
+
+#: ncstruct.rs_ip4_bt_multicast
+msgctxt "ncstruct.rs_ip4_bt_multicast"
+msgid "Multicast"
+msgstr ""
+
+#: ncstruct.rs_ip4_bt_private_address
+msgid "Private address"
+msgstr ""
+
+#: ncstruct.rs_ip4_bt_sas
+msgid "Shared Address Space"
+msgstr ""
+
+#: ncstruct.rs_ip4_normal
+msgctxt "ncstruct.rs_ip4_normal"
+msgid "Unicast"
+msgstr ""
+
+#: ncstruct.rs_ip6_6_to_4
+msgid "6to4"
+msgstr ""
+
+#: ncstruct.rs_ip6_bmwg
+msgid "Benchmarking Methodology Working Group"
+msgstr ""
+
+#: ncstruct.rs_ip6_documentation
+msgid "Documentation"
+msgstr ""
+
+#: ncstruct.rs_ip6_ipv4
+msgid "IPv4 Compatible"
+msgstr ""
+
+#: ncstruct.rs_ip6_link_local
+msgctxt "ncstruct.rs_ip6_link_local"
+msgid "Link Local"
+msgstr ""
+
+#: ncstruct.rs_ip6_loopback
+msgctxt "ncstruct.rs_ip6_loopback"
+msgid "Loopback"
+msgstr ""
+
+#: ncstruct.rs_ip6_multicast
+msgctxt "ncstruct.rs_ip6_multicast"
+msgid "Multicast"
+msgstr ""
+
+#: ncstruct.rs_ip6_normal
+msgctxt "ncstruct.rs_ip6_normal"
+msgid "Unicast"
+msgstr ""
+
+#: ncstruct.rs_ip6_orchid
+msgid "Overlay Routable Cryptographic Hash Identifiers"
+msgstr ""
+
+#: ncstruct.rs_ip6_siit
+msgid "Stateless IP/ICMP Translation"
+msgstr ""
+
+#: ncstruct.rs_ip6_teredo
+msgid "Teredo tunneling"
+msgstr ""
+
+#: ncstruct.rs_ip6_ula
+msgid "Unique local addresses"
+msgstr ""
+

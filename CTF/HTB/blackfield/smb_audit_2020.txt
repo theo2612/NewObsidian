@@ -1,0 +1,12 @@
+SMB                      10.10.10.192    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:BLACKFIELD.local) (signing:True) (SMBv1:False)
+SMB                      10.10.10.192    445    DC01             [+] BLACKFIELD.local\audit2020:password1!!!
+SMB                      10.10.10.192    445    DC01             [*] Enumerated shares
+SMB                      10.10.10.192    445    DC01             Share           Permissions     Remark
+SMB                      10.10.10.192    445    DC01             -----           -----------     ------
+SMB                      10.10.10.192    445    DC01             ADMIN$                          Remote Admin
+SMB                      10.10.10.192    445    DC01             C$                              Default share
+SMB                      10.10.10.192    445    DC01             forensic        READ            Forensic / Audit share.
+SMB                      10.10.10.192    445    DC01             IPC$            READ            Remote IPC
+SMB                      10.10.10.192    445    DC01             NETLOGON        READ            Logon server share
+SMB                      10.10.10.192    445    DC01             profiles$       READ            
+SMB                      10.10.10.192    445    DC01             SYSVOL          READ            Logon server share

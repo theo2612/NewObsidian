@@ -1,0 +1,42 @@
+package           : tis-waptupgrade
+version           : 1.9-45
+architecture      : all
+section           : base
+priority          : critical
+name              : WAPT Agent
+categories        : System and network
+maintainer        : WAPT Team,Jimmy PELÉ,Hubert TOUVET,Simon Fonteneau
+description       : Deployement of the WAPT Agent (with the WAPT Console)
+depends           :
+conflicts         :
+maturity          : PROD
+locale            : all
+target_os         : windows
+min_os_version    : 6.1
+min_wapt_version  : 1.8
+sources           :
+installed_size    :
+impacted_process  : 
+description_fr    : Déploiement de l'agent WAPT (avec la console WAPT)
+description_pl    :
+description_de    :
+description_es    :
+description_pt    :
+description_it    :
+description_nl    :
+description_ru    :
+audit_schedule    : 60
+editor            : Tranquil IT
+keywords          :
+licence           :
+homepage          : https://www.wapt.fr/
+package_uuid      :
+valid_from        :
+valid_until       :
+forced_install_on :
+changelog         :
+signer            :
+signer_fingerprint:
+signature         :
+signature_date    :
+signed_attributes :

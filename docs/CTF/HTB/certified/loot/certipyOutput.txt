@@ -1,0 +1,1331 @@
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 15 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'certified-DC01-CA' via RRP
+[*] Successfully retrieved CA configuration for 'certified-DC01-CA'
+[*] Checking web enrollment for CA 'certified-DC01-CA' @ 'DC01.certified.htb'
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : certified-DC01-CA
+    DNS Name                            : DC01.certified.htb
+    Certificate Subject                 : CN=certified-DC01-CA, DC=certified, DC=htb
+    Certificate Serial Number           : 36472F2C180FBB9B4983AD4D60CD5A9D
+    Certificate Validity Start          : 2024-05-13 15:33:41+00:00
+    Certificate Validity End            : 2124-05-13 15:43:41+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : CERTIFIED.HTB\Administrators
+      Access Rights
+        ManageCa                        : CERTIFIED.HTB\Administrators
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        ManageCertificates              : CERTIFIED.HTB\Administrators
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Enroll                          : CERTIFIED.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : CertifiedAuthentication
+    Display Name                        : Certified Authentication
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : PublishToDs
+                                          AutoEnrollment
+                                          NoSecurityExtension
+    Extended Key Usage                  : Server Authentication
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1000 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:48:52+00:00
+    Template Last Modified              : 2024-05-13T15:55:20+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\operator ca
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Administrator
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  1
+    Template Name                       : KerberosAuthentication
+    Display Name                        : Kerberos Authentication
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDomainDns
+                                          SubjectAltRequireDns
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+                                          Smart Card Logon
+                                          KDC Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 80 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2025-06-11T21:13:48+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Enterprise Read-only Domain Controllers
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+        Write Property AutoEnroll       : CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+  2
+    Template Name                       : OCSPResponseSigning
+    Display Name                        : OCSP Response Signing
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : AddOcspNocheck
+                                          Norevocationinfoinissuedcerts
+    Extended Key Usage                  : OCSP Signing
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    RA Application Policies             : msPKI-Asymmetric-Algorithm`PZPWSTR`RSA`msPKI-Hash-Algorithm`PZPWSTR`SHA1`msPKI-Key-Security-Descriptor`PZPWSTR`D:P(A;;FA;;;BA)(A;;FA;;;SY)(A;;GR;;;S-1-5-80-3804348527-3718992918-2141599610-3686422417-2726379419)`msPKI-Key-Usage`DWORD`2`
+    Authorized Signatures Required      : 0
+    Schema Version                      : 3
+    Validity Period                     : 2 weeks
+    Renewal Period                      : 2 days
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  3
+    Template Name                       : RASAndIASServer
+    Display Name                        : RAS and IAS Server
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireCommonName
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\RAS and IAS Servers
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\RAS and IAS Servers
+  4
+    Template Name                       : Workstation
+    Display Name                        : Workstation Authentication
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Computers
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Computers
+                                          CERTIFIED.HTB\Enterprise Admins
+  5
+    Template Name                       : DirectoryEmailReplication
+    Display Name                        : Directory Email Replication
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDirectoryGuid
+                                          SubjectAltRequireDns
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Extended Key Usage                  : Directory Service Email Replication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Enterprise Read-only Domain Controllers
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+        Write Property AutoEnroll       : CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+  6
+    Template Name                       : DomainControllerAuthentication
+    Display Name                        : Domain Controller Authentication
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+                                          Smart Card Logon
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Enterprise Read-only Domain Controllers
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+        Write Property AutoEnroll       : CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+  7
+    Template Name                       : KeyRecoveryAgent
+    Display Name                        : Key Recovery Agent
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PendAllRequests
+                                          PublishToKraContainer
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Key Recovery Agent
+    Requires Manager Approval           : True
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  8
+    Template Name                       : CAExchange
+    Display Name                        : CA Exchange
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+    Extended Key Usage                  : Private Key Archival
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 week
+    Renewal Period                      : 1 day
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  9
+    Template Name                       : CrossCA
+    Display Name                        : Cross Certification Authority
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : True
+    Any Purpose                         : True
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : PublishToDs
+    Private Key Flag                    : ExportableKey
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    RA Application Policies             : Qualified Subordination
+    Authorized Signatures Required      : 1
+    Schema Version                      : 2
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  10
+    Template Name                       : ExchangeUserSignature
+    Display Name                        : Exchange Signature Only
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Secure Email
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  11
+    Template Name                       : ExchangeUser
+    Display Name                        : Exchange User
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Secure Email
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  12
+    Template Name                       : CEPEncryption
+    Display Name                        : CEP Encryption
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : True
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Certificate Request Agent
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  13
+    Template Name                       : OfflineRouter
+    Display Name                        : Router (Offline request)
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  14
+    Template Name                       : IPSECIntermediateOffline
+    Display Name                        : IPSec (Offline request)
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : IP security IKE intermediate
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  15
+    Template Name                       : IPSECIntermediateOnline
+    Display Name                        : IPSec
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : IP security IKE intermediate
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Computers
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Computers
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+  16
+    Template Name                       : SubCA
+    Display Name                        : Subordinate Certification Authority
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : True
+    Any Purpose                         : True
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Private Key Flag                    : ExportableKey
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  17
+    Template Name                       : CA
+    Display Name                        : Root Certification Authority
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : True
+    Any Purpose                         : True
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Private Key Flag                    : ExportableKey
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  18
+    Template Name                       : WebServer
+    Display Name                        : Web Server
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  19
+    Template Name                       : DomainController
+    Display Name                        : Domain Controller
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDirectoryGuid
+                                          SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Enterprise Read-only Domain Controllers
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Controllers
+                                          CERTIFIED.HTB\Enterprise Admins
+                                          CERTIFIED.HTB\Enterprise Domain Controllers
+  20
+    Template Name                       : Machine
+    Display Name                        : Computer
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Computers
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Computers
+                                          CERTIFIED.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CERTIFIED.HTB\Domain Computers
+    [*] Remarks
+      ESC2 Target Template              : Template can be targeted as part of ESC2 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.
+      ESC3 Target Template              : Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.
+  21
+    Template Name                       : MachineEnrollmentAgent
+    Display Name                        : Enrollment Agent (Computer)
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : True
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Certificate Request Agent
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  22
+    Template Name                       : EnrollmentAgentOffline
+    Display Name                        : Exchange Enrollment Agent (Offline request)
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : True
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Certificate Request Agent
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  23
+    Template Name                       : EnrollmentAgent
+    Display Name                        : Enrollment Agent
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : True
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Certificate Request Agent
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  24
+    Template Name                       : CTLSigning
+    Display Name                        : Trust List Signing
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Microsoft Trust List Signing
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  25
+    Template Name                       : CodeSigning
+    Display Name                        : Code Signing
+    Enabled                             : False
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Code Signing
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  26
+    Template Name                       : EFSRecovery
+    Display Name                        : EFS Recovery Agent
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : File Recovery
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  27
+    Template Name                       : Administrator
+    Display Name                        : Administrator
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Microsoft Trust List Signing
+                                          Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  28
+    Template Name                       : EFS
+    Display Name                        : Basic EFS
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CERTIFIED.HTB\Domain Users
+  29
+    Template Name                       : SmartcardLogon
+    Display Name                        : Smartcard Logon
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Extended Key Usage                  : Client Authentication
+                                          Smart Card Logon
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  30
+    Template Name                       : ClientAuth
+    Display Name                        : Authenticated Session
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+  31
+    Template Name                       : SmartcardUser
+    Display Name                        : Smartcard User
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+    Extended Key Usage                  : Secure Email
+                                          Client Authentication
+                                          Smart Card Logon
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+  32
+    Template Name                       : UserSignature
+    Display Name                        : User Signature Only
+    Enabled                             : False
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+  33
+    Template Name                       : User
+    Display Name                        : User
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:43:41+00:00
+    Template Last Modified              : 2024-05-13T15:43:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Enterprise Admins
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Domain Users
+                                          CERTIFIED.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CERTIFIED.HTB\Domain Users
+    [*] Remarks
+      ESC2 Target Template              : Template can be targeted as part of ESC2 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.
+      ESC3 Target Template              : Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.

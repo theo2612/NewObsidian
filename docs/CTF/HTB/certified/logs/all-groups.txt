@@ -1,0 +1,49 @@
+cn: Administrators
+cn: Users
+cn: Guests
+cn: Print Operators
+cn: Backup Operators
+cn: Replicator
+cn: Remote Desktop Users
+cn: Network Configuration Operators
+cn: Performance Monitor Users
+cn: Performance Log Users
+cn: Distributed COM Users
+cn: IIS_IUSRS
+cn: Cryptographic Operators
+cn: Event Log Readers
+cn: Certificate Service DCOM Access
+cn: RDS Remote Access Servers
+cn: RDS Endpoint Servers
+cn: RDS Management Servers
+cn: Hyper-V Administrators
+cn: Access Control Assistance Operators
+cn: Remote Management Users
+cn: Storage Replica Administrators
+cn: Domain Computers
+cn: Domain Controllers
+cn: Schema Admins
+cn: Enterprise Admins
+cn: Cert Publishers
+cn: Domain Admins
+cn: Domain Users
+cn: Domain Guests
+cn: Group Policy Creator Owners
+cn: RAS and IAS Servers
+cn: Server Operators
+cn: Account Operators
+cn: Pre-Windows 2000 Compatible Access
+cn: Incoming Forest Trust Builders
+cn: Windows Authorization Access Group
+cn: Terminal Server License Servers
+cn: Allowed RODC Password Replication Group
+cn: Denied RODC Password Replication Group
+cn: Read-only Domain Controllers
+cn: Enterprise Read-only Domain Controllers
+cn: Cloneable Domain Controllers
+cn: Protected Users
+cn: Key Admins
+cn: Enterprise Key Admins
+cn: DnsAdmins
+cn: DnsUpdateProxy
+cn: Management

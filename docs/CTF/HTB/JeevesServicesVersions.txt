@@ -1,0 +1,33 @@
+# Nmap 7.98 scan initiated Wed Feb  4 19:27:50 2026 as: /usr/lib/nmap/nmap --privileged -p80,135,445,50000 -sSCV --min-rate=2000 -Pn -oN JeevesServicesVersions.txt 10.129.228.112
+Nmap scan report for 10.129.228.112
+Host is up (0.029s latency).
+
+PORT      STATE SERVICE      VERSION
+80/tcp    open  http         Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Ask Jeeves
+| http-methods: 
+|_  Potentially risky methods: TRACE
+135/tcp   open  msrpc        Microsoft Windows RPC
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+50000/tcp open  http         Jetty 9.4.z-SNAPSHOT
+|_http-title: Error 404 Not Found
+|_http-server-header: Jetty(9.4.z-SNAPSHOT)
+Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-02-04T22:28:07
+|_  start_date: 2026-02-04T22:05:08
+|_clock-skew: mean: -1h59m52s, deviation: 0s, median: -1h59m52s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb  4 19:28:38 2026 -- 1 IP address (1 host up) scanned in 47.84 seconds

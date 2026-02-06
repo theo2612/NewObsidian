@@ -1,0 +1,18 @@
+[2026-02-06 16:24:52] [pane=%0] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/Baby
+[2026-02-06 16:24:55] [pane=%0] [CMD] ll
+[2026-02-06 16:24:59] [pane=%0] [CMD] cd logs
+[2026-02-06 16:25:00] [pane=%0] [CMD] ll
+[2026-02-06 16:25:03] [pane=%0] [CMD] cd ..
+[2026-02-06 16:26:26] [pane=%0] [CMD] ll
+[2026-02-06 16:27:33] [pane=%0] [CMD] cat ~/.ip
+[2026-02-06 17:14:42] [pane=%0] [CMD] echo export IP=10.129.234.71 > ~/.ip
+[2026-02-06 17:15:24] [pane=%0] [CMD] echo $IP
+[2026-02-06 17:19:57] [pane=%0] [CMD] mkdir -p nmap ffuf loot evidence bloodhound
+[2026-02-06 17:20:26] [pane=%0] [CMD] source ~/.ip
+[2026-02-06 17:20:33] [pane=%0] [CMD] echo $IP
+[2026-02-06 17:24:46] [pane=%0] [CMD] nmap -p- --min-rate 3000 -Pn -oA nmap/BabyAllPorts $IP
+[2026-02-06 17:27:50] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' nmap/BabyAllPorts.nmap  | cut -d/ -f1 | paste -sd,)
+[2026-02-06 17:27:55] [pane=%0] [CMD] echo $ports
+[2026-02-06 17:29:01] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/BabyServicesVersions.txt $IP
+[2026-02-06 17:44:42] [pane=%0] [CMD] ll nmap
+[2026-02-06 17:48:09] [pane=%0] [CMD] sudo vim /etc/hosts

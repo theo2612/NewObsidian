@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "14318a14942bc58a",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f98059d3533496e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4c214dfd1e507b7",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Pentesting Notes/Stabilize Shell - BASH.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Stabilize Shell - BASH"
+            }
+          },
+          {
+            "id": "fbeb2547a3a48cd2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF/Reverse shell - bash upgrade.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "dc56a4ba50ad69ec",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Pentesting Notes/Methodology.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Methodology"
+            }
+          },
+          {
+            "id": "c82848b60dbf308f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CTF/HTB/TMUX whitespace remover.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "TMUX whitespace remover"
+            }
+          },
+          {
+            "id": "03b321bc1ee13a81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Stream/SETUP_GUIDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SETUP_GUIDE"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6ef5768269860cc4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f85f90c68e112aa1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a44158c1c6915adf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "276bf231fe87d856",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3434bf30ead6b0c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Linux/App download and make world run-able.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "App download and make world run-able"
+            }
+          },
+          {
+            "id": "4e4f58df7aa8e821",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Linux/TryHackMe/Reverse shell - bash upgrade.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Reverse shell - bash upgrade"
+            }
+          },
+          {
+            "id": "8a05d3ddc65acda6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.51103591918945
+  },
+  "right": {
+    "id": "f574baf1cafd6ad8",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "a44158c1c6915adf",
+  "lastOpenFiles": [
+    "docs/CTF/HTB/Baby/logs/~syncthing~cmd.log.tmp",
+    "docs/CTF/HTB/Baby/logs/~syncthing~out.log.tmp",
+    "docs/CTF/HTB/Baby/loot/smbmapCarolineRobinson.txt",
+    "docs/CTF/HTB/Baby/loot/~syncthing~.ldapUserInfoAll.txt.swp.tmp",
+    "docs/CTF/HTB/Baby/loot/~syncthing~users.txt.tmp",
+    "docs/CTF/HTB/Baby/loot/~syncthing~.ldapUserInfo.txt.swp.tmp",
+    "docs/CTF/HTB/Baby/~syncthing~attack-chain.md.tmp",
+    "docs/CTF/HTB/Baby/loot/~syncthing~credentials.md.tmp",
+    "docs/CTF/HTB/Baby/loot/ldapUserInfoAll.txt",
+    "docs/CTF/HTB/Baby/loot/output.txt",
+    "docs/CTF/HTB/Baby/loot/~syncthing~output.txt.tmp",
+    "docs/CTF/HTB/Baby/attack-chain.md",
+    "docs/CTF/HTB/Baby/Baby writeup.md",
+    "docs/CTF/HTB/Baby/loot/credentials.md",
+    "docs/CTF/HTB/Jeeves/evidence/jeeves.PNG",
+    "docs/CTF/HTB/Jeeves/attack-chain.md",
+    "docs/CTF/HTB/Jeeves/loot/credentials.md",
+    "docs/CTF/HTB/Jeeves/Jeeves writeup.md",
+    "docs/CTF/HTB/Puppy/loot/puppy/images/banner.jpg",
+    "docs/CTF/HTB/Puppy/loot/puppy/images/Levi.jpg",
+    "docs/CTF/HTB/Puppy/loot/puppy/images/antony.jpg",
+    "docs/CTF/HTB/Puppy/loot/puppy/assets/webfonts/fa-brands-400.svg",
+    "docs/CTF/HTB/Puppy/loot/puppy/assets/css/images/overlay.png",
+    "docs/CTF/HTB/Puppy/loot/puppy/images/adam.jpg",
+    "docs/CTF/HTB/Puppy/loot/puppy/assets/webfonts/fa-solid-900.svg",
+    "docs/CTF/HTB/Puppy/loot/puppy/images/jamie.jpg",
+    "docs/CTF/HTB/Puppy/loot/puppy/assets/css/images/highlight.png",
+    "docs/CTF/HTB/certified/Certified writeup.md",
+    "docs/Stream/SETUP_GUIDE.md",
+    "docs/CTF/HTB/Puppy/Puppy writeup.md",
+    "docs/CTF/HTB/Puppy/attack-chain.md",
+    "docs/CTF/HTB/Puppy/loot/credentials.md",
+    "docs/CTF/HTB/theFrizz/loot/credentials.md",
+    "docs/CTF/HTB/theFrizz/theFrizz writeup.md",
+    "docs/CTF/HTB/certified/attack-chain.md",
+    "docs/CTF/HTB/certified/loot/credentials.md",
+    "docs/CTF/HTB/certified/Untitled.md",
+    "docs/Pentesting Notes/Methodology.md",
+    "docs/CTF/HTB/theFrizz/attack-chain.md",
+    "docs/CTF/HTB/theFrizz/wapt/lib/site-packages/werkzeug/debug/shared/ICON_LICENSE.md",
+    "docs/CTF/HTB/theFrizz/wapt/lib/site-packages/soupsieve-2.5.dist-info/licenses/LICENSE.md",
+    "docs/CTF/HTB/theFrizz/wapt/lib/site-packages/share/doc/iniparse-0.5/README.md",
+    "docs/CTF/HTB/blackfield/blackfield.md",
+    "docs/AI/Ralph Loop Primer.md",
+    "docs/AI/free models.md",
+    "docs/Pentesting Notes/Services/mysql.md",
+    "docs/Certifications and courses/OSCP/Untitled.canvas",
+    "docs/Images/Untitled.canvas",
+    "Images/Untitled.canvas",
+    "hidden/Rea Information Systems/Untitled.canvas"
+  ]
+}

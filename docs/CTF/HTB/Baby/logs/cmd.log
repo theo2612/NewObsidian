@@ -16,3 +16,31 @@
 [2026-02-06 17:29:01] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/BabyServicesVersions.txt $IP
 [2026-02-06 17:44:42] [pane=%0] [CMD] ll nmap
 [2026-02-06 17:48:09] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-02-07 10:37:35] [pane=%0] [CMD] ll
+[2026-02-07 10:45:41] [pane=%0] [CMD] nxc smb $IP -u '' -h ''
+[2026-02-07 10:46:25] [pane=%0] [CMD] nxc smb baby.vl -u '' -p ''
+[2026-02-07 10:46:57] [pane=%0] [CMD] : #note null auth true on smb
+[2026-02-07 10:47:14] [pane=%0] [CMD] smbclient //$IP/ -N
+[2026-02-07 10:47:39] [pane=%0] [CMD] smbclient //10.129.234.71/ -N
+[2026-02-07 10:49:17] [pane=%0] [CMD] smbclient //10.129.234.71/ -U ''%''
+[2026-02-07 10:52:03] [pane=%0] [CMD] smbclient -L //$IP -U ''
+[2026-02-07 10:52:10] [pane=%0] [CMD] smbclient -L //$IP -U ''
+[2026-02-07 10:53:41] [pane=%0] [CMD] smbclient -L //$IP -N
+[2026-02-07 10:55:09] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --shares
+[2026-02-07 10:55:55] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --users
+[2026-02-07 10:56:09] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --groups
+[2026-02-07 10:58:32] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --pass-pol
+[2026-02-07 11:03:39] [pane=%0] [CMD] : #note nxc smb annon bind could not access shares, users, group, or password policies
+[2026-02-07 11:06:08] [pane=%0] [CMD] nxc ldap $IP -u '' -p '' --query "(sAMAccountName=Administrator)" ""
+[2026-02-07 11:07:23] [pane=%0] [CMD] rm -f /home/b7h30/.nxc/workspaces/default/ldap.db
+[2026-02-07 11:07:26] [pane=%0] [CMD] nxc
+[2026-02-07 11:07:29] [pane=%0] [CMD] nxc ldap $IP -u '' -p '' --query "(sAMAccountName=Administrator)" ""
+[2026-02-07 11:12:23] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=user)" | grep sAMAccountName
+[2026-02-07 11:12:37] [pane=%0] [CMD] ll
+[2026-02-07 11:12:51] [pane=%0] [CMD] cd loot
+[2026-02-07 11:13:12] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=user)" | grep sAMAccountName | tee users.txt
+[2026-02-07 11:13:18] [pane=%0] [CMD] cat users.txt
+[2026-02-07 11:13:27] [pane=%0] [CMD] vim users.txt
+[2026-02-07 11:17:58] [pane=%0] [CMD] : #note ldapsearch reveals users saved to user.txt
+[2026-02-07 11:19:29] [pane=%0] [CMD] smbclient -N -L //$IP
+[2026-02-07 11:20:29] [pane=%0] [CMD] smbclient -N -L //baby.vl

@@ -77,12 +77,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CTF/HTB/Jeeves/Jeeves writeup.md",
+                "file": "docs/CTF/HTB/Baby/Baby writeup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jeeves writeup"
+              "title": "Baby writeup"
             }
           },
           {
@@ -91,7 +91,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/CTF/HTB/Puppy/loot/credentials.md",
+                "file": "docs/CTF/HTB/Baby/loot/credentials.md",
                 "mode": "source",
                 "source": false
               },
@@ -212,31 +212,32 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a44158c1c6915adf",
+  "active": "88e6fdc25b9cee16",
   "lastOpenFiles": [
+    "docs/CTF/HTB/Baby/attack-chain.md.tmp.561126.1770481265814",
+    "docs/CTF/HTB/Baby/loot/users.txt~",
+    "docs/CTF/HTB/Baby/loot/users.txt",
+    "docs/CTF/HTB/Baby/loot/credentials.md",
+    "docs/CTF/HTB/Baby/Baby writeup.md",
+    "docs/CTF/HTB/Jeeves/loot/credentials.md",
+    "docs/CTF/HTB/Jeeves/Jeeves writeup.md",
+    "docs/CTF/HTB/Puppy/loot/credentials.md",
     "docs/CTF/HTB/Baby/attack-chain.md",
     "docs/CTF/HTB/Baby/attack-chain.md.tmp.561126.1770418010633",
-    "docs/CTF/HTB/Baby/loot/credentials.md",
     "docs/CTF/HTB/Baby/loot/credentials.md.tmp.561126.1770418005780",
-    "docs/CTF/HTB/Baby/Baby writeup.md",
     "docs/CTF/HTB/Baby/Baby writeup.md.tmp.561126.1770418003616",
     "docs/CTF/HTB/Baby/nmap/BabyServicesVersions.txt",
     "docs/CTF/HTB/Baby/nmap/BabyAllPorts.xml",
     "docs/CTF/HTB/Baby/nmap/BabyAllPorts.gnmap",
     "docs/CTF/HTB/Baby/nmap/BabyAllPorts.nmap",
     "docs/CTF/HTB/Baby/bloodhound",
-    "docs/CTF/HTB/Baby/evidence",
-    "docs/CTF/HTB/Baby/loot",
     "docs/Pentesting Notes/Attacks/sql injection/1 SQL Injection.excalidraw.md",
     "docs/CTF/Playbook.md",
-    "docs/CTF/HTB/Jeeves/Jeeves writeup.md",
     "docs/CTF/HTB/Jeeves/evidence/jeeves.PNG",
     "docs/CTF/HTB/Puppy/Puppy writeup.md",
     "docs/Pentesting Notes/Methodology.md",
     "docs/CTF/HTB/TMUX whitespace remover.md",
     "docs/CTF/HTB/Jeeves/attack-chain.md",
-    "docs/CTF/HTB/Jeeves/loot/credentials.md",
-    "docs/CTF/HTB/Puppy/loot/credentials.md",
     "docs/Certifications and courses/OSCP HTB boxes/CozyHosting.md",
     "docs/CTF/HTB/Puppy/loot/puppy/assets/css/images/overlay.png",
     "docs/CTF/HTB/Puppy/loot/puppy/assets/css/images/highlight.png",
@@ -259,7 +260,6 @@
     "docs/CTF/HTB/theFrizz/loot/credentials.md",
     "docs/CTF/HTB/theFrizz/theFrizz writeup.md",
     "docs/CTF/HTB/theFrizz/attack-chain.md",
-    "docs/CTF/HTB/theFrizz/wapt/lib/site-packages/werkzeug/debug/shared/ICON_LICENSE.md",
     "docs/Certifications and courses/OSCP/Untitled.canvas",
     "docs/Images/Untitled.canvas",
     "Images/Untitled.canvas",

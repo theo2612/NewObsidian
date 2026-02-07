@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Wed Feb  4 19:23:02 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate 3000 -Pn -oA Jeeves/nmap/JeevesAllPorts 10.129.228.112
+Host: 10.129.228.112 ()	Status: Up
+Host: 10.129.228.112 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 50000/open/tcp//ibm-db2///	Ignored State: filtered (65531)
+# Nmap done at Wed Feb  4 19:23:46 2026 -- 1 IP address (1 host up) scanned in 44.36 seconds

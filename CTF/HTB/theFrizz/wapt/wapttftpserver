@@ -1,0 +1,18 @@
+
+{
+	"ServiceName": "WAPTTftpServer",
+	"ServiceDisplayName": "WAPTTftpServer",
+	"ServiceExecutable": "\"c:\\wapt\\wapttftpserver.exe\"",
+	"Log": ["sllError","sllLastError","sllException","sllExceptionOS","sllNewRun","sllDDDError"], // "*" or a set of "sllNone","sllInfo","sllDebug","sllTrace","sllWarning","sllError","sllEnter","sllLeave","sllLastError","sllException","sllExceptionOS","sllMemory","sllStackTrace","sllFail","sllSQL","sllCache","sllResult","sllDB","sllHTTP","sllClient","sllServer","sllServiceCall","sllServiceReturn","sllUserAuth","sllCustom1","sllCustom2","sllCustom3","sllCustom4","sllNewRun","sllDDDError","sllDDDInfo","sllMonitoring"
+	"LogPath": "c:\\wapt\\log",
+	"LogRotateFileCount": 2,
+	"FtpRootDir": "c:\\wapt\\waptserver\\repository\\wads\\pxe",
+	"ListeningIP": "0.0.0.0",
+	"ListeningPort": "69",
+	"PIDFilename": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\wapttftpserver.pid",
+	"IniFilename": "c:\\wapt\\conf\\waptserver.ini",
+	"LogLevel": "",
+	"Username": "",
+	"SessionPortMin": 0,
+	"SessionPortMax": 0
+}

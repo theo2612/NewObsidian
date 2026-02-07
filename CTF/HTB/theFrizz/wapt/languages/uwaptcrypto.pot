@@ -1,0 +1,23 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: uwaptcrypto.rsbadkeydataorbadkeypassword
+msgid "Unable to read key data. Either supplied password is wrong or not proper key data (must be PKCS#8 or PKCS#12)"
+msgstr ""
+
+#: uwaptcrypto.rscertificatefilealreadyexists
+msgid "The certificate file % already exists"
+msgstr ""
+
+#: uwaptcrypto.rscertificateisnotca
+msgid "The certificate % is not flagged for Certificate Authority usage."
+msgstr ""
+
+#: uwaptcrypto.rsemptypemdata
+msgid "Unable to read certificate/key data. PEM data is empty"
+msgstr ""
+
+#: uwaptcrypto.rsnotpemdata
+msgid "Unable to read certificate/key data. This is not a PEM encoded data"
+msgstr ""
+

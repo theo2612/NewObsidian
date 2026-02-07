@@ -1,0 +1,28 @@
+# Nmap 7.98 scan initiated Fri Feb  6 17:24:46 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate 3000 -Pn -oA nmap/BabyAllPorts 10.129.234.71
+Nmap scan report for 10.129.234.71
+Host is up (0.031s latency).
+Not shown: 65514 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+9389/tcp  open  adws
+49664/tcp open  unknown
+49667/tcp open  unknown
+57920/tcp open  unknown
+57921/tcp open  unknown
+57929/tcp open  unknown
+59620/tcp open  unknown
+59632/tcp open  unknown
+
+# Nmap done at Fri Feb  6 17:25:30 2026 -- 1 IP address (1 host up) scanned in 44.38 seconds

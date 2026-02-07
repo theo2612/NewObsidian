@@ -1,0 +1,13 @@
+[options]
+db_name=wapt
+#db_host=
+db_user=wapt
+#db_password=
+
+wapt_user=admin
+wapt_password=
+#loglevel=warning
+
+#client_tasks_timeout=0.3
+#client_connect_timeout=1
+#client_read_timeout=10

@@ -1,0 +1,976 @@
+[4mGAWK[24m(1)                                                         Utility Commands                                                         [4mGAWK[24m(1)
+
+[1mNAME[0m
+       gawk - pattern scanning and processing language
+
+[1mSYNOPSIS[0m
+       [1mgawk [22m[ POSIX or GNU style options ] [1m-f [4m[22mprogram-file[24m [ [1m-- [22m] file ...
+       [1mgawk [22m[ POSIX or GNU style options ] [ [1m-- [22m] [4mprogram-text[24m file ...
+
+[1mREADME FIRST[0m
+       This manual page is provided as a courtesy.  Please note that the One Source Of Truth for [4mgawk[24m is the Texinfo manual, available online in
+       several  formats  at [4mhttps://www.gnu.org/software/gawk/manual[24m.  It may also be installed in the Info subsystem on your system, and avail‐
+       able therefore via the [4minfo[24m(1) command.
+
+       In the case of any contradiction between the Texinfo manual and this man page, the manual should be considered to be authoritative.
+
+[1mDESCRIPTION[0m
+       [4mGawk[24m is the GNU Project's implementation of the AWK programming language.  It conforms to the definition of the  language  in  the  POSIX
+       1003.1  standard.   This  version in turn is based on the description in [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage[24m, by Aho, Kernighan, and Weinberger.
+       [4mGawk[24m provides the additional features found in the current version of Brian Kernighan's [4mawk[24m and numerous GNU-specific extensions.
+
+       The command line consists of options to [4mgawk[24m itself, the AWK program text (if not supplied via the [1m-f [22mor [1m--include [22moptions),  and  values
+       to be made available in the [1mARGC [22mand [1mARGV [22mpre-defined AWK variables.
+
+[1mPREFACE[0m
+       This  manual  page  is  intentionally as terse as possible.  Full details are provided in [4mGAWK:[24m [4mEffective[24m [4mAWK[24m [4mProgramming[24m, and you should
+       look there for the full story on any specific feature.  Where possible, links to the online version of the manual are provided.
+
+[1mOPTION FORMAT[0m
+       [4mGawk[24m options may be either traditional POSIX-style one letter options, or GNU-style long options.  POSIX options start with a single “-”,
+       while long options start with “--”.  Long options are provided for both GNU-specific features and for POSIX-mandated features.
+
+       [4mGawk[24m-specific options are typically used in long-option form.  Arguments to long options are either joined with the option by an [1m=  [22msign,
+       with  no  intervening spaces, or they may be provided in the next command line argument.  Long options may be abbreviated, as long as the
+       abbreviation remains unique.
+
+       Additionally, every long option has a corresponding short option, so that the option's functionality may be  used  from  within  [1m#!  [22mexe‐
+       cutable scripts.
+
+[1mOPTIONS[0m
+       [4mGawk[24m accepts the following options.  Standard options are listed first, followed by options for [4mgawk[24m extensions, listed alphabetically by
+       short option.
+
+       [1m-f [4m[22mprogram-file[24m, [1m--file [4m[22mprogram-file[0m
+              Read  the AWK program source from the file [4mprogram-file[24m, instead of from the first command line argument.  Multiple [1m-f [22moptions may
+              be used.  Files read with [1m-f [22mare treated as if they begin with an implicit [1m@namespace "awk" [22mstatement.
+
+       [1m-F [4m[22mfs[24m, [1m--field-separator [4m[22mfs[0m
+              Use [4mfs[24m for the input field separator (the value of the [1mFS [22mpredefined variable).
+
+       [1m-v [4m[22mvar[24m[1m=[4m[22mval[24m, [1m--assign [4m[22mvar[24m[1m=[4m[22mval[0m
+              Assign the value [4mval[24m to the variable [4mvar[24m, before execution of the program begins.  Such variable values are available to the [1mBEGIN[0m
+              rule of an AWK program.
+
+       [1m-b[22m, [1m--characters-as-bytes[0m
+              Treat all input data as single-byte characters.  The [1m--posix [22moption overrides this one.
+
+       [1m-c[22m, [1m--traditional[0m
+              Run in [4mcompatibility[24m mode.  In compatibility mode, [4mgawk[24m behaves identically to Brian Kernighan's [4mawk[24m; none of the GNU-specific ex‐
+              tensions are recognized.
+
+       [1m-C[22m, [1m--copyright[0m
+              Print the short version of the GNU copyright information message on the standard output and exit successfully.
+
+       [1m-d[22m[[4mfile[24m], [1m--dump-variables[22m[[1m=[4m[22mfile[24m]
+              Print a sorted list of global variables, their types and final values to [4mfile[24m.  The default file is [1mawkvars.out [22min the current di‐
+              rectory.
+
+       [1m-D[22m[[4mfile[24m], [1m--debug[22m[[1m=[4m[22mfile[24m]
+              Enable debugging of AWK programs.  By default, the debugger reads commands interactively from the keyboard (standard input).   The
+              optional [4mfile[24m argument specifies a file with a list of commands for the debugger to execute non-interactively.
+              In  this  mode of execution, [4mgawk[24m loads the AWK source code and then prompts for debugging commands.  [4mGawk[24m can only debug AWK pro‐
+              gram source provided with the [1m-f [22mand [1m--include [22moptions.  The debugger is  documented  in  [4mGAWK:[24m  [4mEffective[24m  [4mAWK[24m  [4mProgramming[24m;  see
+              [4mhttps://www.gnu.org/software/gawk/manual/html_node/Debugger.html#Debugger[24m.
+
+       [1m-e [4m[22mprogram-text[24m, [1m--source [4m[22mprogram-text[0m
+              Use [4mprogram-text[24m as AWK program source code.  Each argument supplied via [1m-e [22mis treated as if it begins with an implicit [1m@namespace[0m
+              [1m"awk" [22mstatement.
+
+       [1m-E [4m[22mfile[24m, [1m--exec [4m[22mfile[0m
+              Similar to [1m-f[22m, however, this option is the last one processed.  This should be used with [1m#! [22mscripts, particularly for CGI applica‐
+              tions,  to avoid passing in options or source code (!) on the command line from a URL.  This option disables command-line variable
+              assignments.
+
+       [1m-g[22m, [1m--gen-pot[0m
+              Scan and parse the AWK program, and generate a GNU [1m.pot [22m(Portable Object Template) format file on standard output with entries for
+              all localizable strings in the program.  The program itself is not executed.
+
+       [1m-h[22m, [1m--help[0m
+              Print a relatively short summary of the available options on the standard output.  Per the [4mGNU[24m  [4mCoding[24m  [4mStandards[24m,  these  options
+              cause an immediate, successful exit.
+
+       [1m-i [4m[22minclude-file[24m, [1m--include [4m[22minclude-file[0m
+              Load  an  awk source library.  This searches for the library using the [1mAWKPATH [22menvironment variable.  If the initial search fails,
+              another attempt will be made after appending the [1m.awk [22msuffix.  The file will be loaded only  once  (i.e.,  duplicates  are  elimi‐
+              nated),  and the code does not constitute the main program source.  Files read with [1m--include [22mare treated as if they begin with an
+              implicit [1m@namespace "awk" [22mstatement.
+
+       [1m-I[22m, [1m--trace[0m
+              Print the internal byte code names as they are executed when running the program.  The trace is printed to standard  error.   Each
+              “op code” is preceded by a [1m+ [22msign in the output.
+
+       [1m-k[22m, [1m--csv[0m
+              Enable CSV special processing.  See [1mComma Separated Values[22m, below, for more detail.
+
+       [1m-l [4m[22mlib[24m, [1m--load [4m[22mlib[0m
+              Load  a  [4mgawk[24m extension from the shared library [4mlib[24m.  This searches for the library using the [1mAWKLIBPATH [22menvironment variable.  If
+              the initial search fails, another attempt will be made after appending the default shared library suffix for  the  platform.   The
+              library initialization routine is expected to be named [1mdl_load()[22m.
+
+       [1m-L [22m[[4mvalue[24m], [1m--lint[22m[[1m=[4m[22mvalue[24m]
+              Provide  warnings  about  constructs that are dubious or non-portable to other AWK implementations.  See [4mhttps://www.gnu.org/soft‐[0m
+              [4mware/gawk/manual/html_node/Options.html#Options[24m for the list of possible values for [4mvalue[24m.
+
+       [1m-M[22m, [1m--bignum[0m
+              Force arbitrary precision arithmetic on numbers.  This option has no effect if [4mgawk[24m is not compiled to use the GNU  MPFR  and  GMP
+              libraries.  (In such a case, [4mgawk[24m issues a warning.)
+
+              [1mNOTE: [22mThis feature is [4mon[24m [4mparole[24m.  The primary [4mgawk[24m maintainer is no longer supporting it, although there is a member of the devel‐
+              opment team who is.  If this situation changes, the feature will be removed from [4mgawk[24m.
+
+       [1m-n[22m, [1m--non-decimal-data[0m
+              Recognize octal and hexadecimal values in input data.  [4mUse[24m [4mthis[24m [4moption[24m [4mwith[24m [4mgreat[24m [4mcaution![0m
+
+       [1m-N[22m, [1m--use-lc-numeric[0m
+              Force [4mgawk[24m to use the locale's decimal point character when parsing input data.
+
+       [1m-o[22m[[4mfile[24m], [1m--pretty-print[22m[[1m=[4m[22mfile[24m]
+              Output  a  pretty  printed version of the program to [4mfile[24m.  The default file is [1mawkprof.out [22min the current directory.  This option
+              implies [1m--no-optimize[22m.
+
+       [1m-O[22m, [1m--optimize[0m
+              Enable [4mgawk[24m's default optimizations upon the internal representation of the program.  This option is on by default.
+
+       [1m-p[22m[[4mprof-file[24m], [1m--profile[22m[[1m=[4m[22mprof-file[24m]
+              Start a profiling session, and send the profiling data to [4mprof-file[24m.  The default is [1mawkprof.out [22min the  current  directory.   The
+              profile  contains  execution counts of each statement in the program in the left margin and function call counts for each user-de‐
+              fined function.  [4mGawk[24m runs more slowly in this mode.  This option implies [1m--no-optimize[22m.
+
+       [1m-P[22m, [1m--posix[0m
+              This turns on [4mcompatibility[24m mode, and disables a number of common extensions.
+
+       [1m-r[22m, [1m--re-interval[0m
+              Enable the use of [4minterval[24m [4mexpressions[24m in regular expression matching.  Interval expressions are enabled by default, but this  op‐
+              tion remains for backwards compatibility.
+
+       [1m-s[22m, [1m--no-optimize[0m
+              Disable [4mgawk[24m's default optimizations upon the internal representation of the program.
+
+       [1m-S[22m, [1m--sandbox[0m
+              Run  [4mgawk[24m  in  sandbox  mode,  disabling  the [1msystem() [22mfunction, input redirection with [1mgetline[22m, output redirection with [1mprint [22mand
+              [1mprintf[22m, and loading dynamic extensions.  Command execution (through pipelines) is also disabled.
+
+       [1m-t[22m, [1m--lint-old[0m
+              Provide warnings about constructs that are not portable to the original version of UNIX [4mawk[24m.
+
+       [1m-V[22m, [1m--version[0m
+              Print version information for this particular copy of [4mgawk[24m on the standard output.  This is useful when reporting bugs.   Per  the
+              [4mGNU[24m [4mCoding[24m [4mStandards[24m, these options cause an immediate, successful exit.
+
+       [1m--     [22mSignal the end of options.  This is useful to allow further arguments to the AWK program itself to start with a “-”.
+
+       In compatibility mode, any other options are flagged as invalid, but are otherwise ignored.  In normal operation, as long as program text
+       has been supplied, unknown options are passed on to the AWK program in the [1mARGV [22marray for processing.
+
+       For POSIX compatibility, the [1m-W [22moption may be used, followed by the name of a long option.
+
+[1mAWK PROGRAM EXECUTION[0m
+       An AWK program consists of a sequence of optional directives, pattern-action statements, and optional function definitions.
+
+              [1m@include "[4m[22mfilename[24m[1m"[0m
+              [1m@load "[4m[22mfilename[24m[1m"[0m
+              [1m@namespace "[4m[22mname[24m[1m"[0m
+              [4mpattern[24m   [1m{ [4m[22maction[24m [4mstatements[24m [1m}[0m
+              [1mfunction [4m[22mname[24m[1m([4m[22mparameter[24m [4mlist[24m[1m) { [4m[22mstatements[24m [1m}[0m
+
+       [4mGawk[24m first reads the program source from the [4mprogram-file[24m(s) if specified, from arguments to [1m--source[22m, or from the first non-option argu‐
+       ment on the command line.  The [1m-f [22mand [1m--source [22moptions may be used multiple times on the command line.  [4mGawk[24m reads the program text as if
+       all the [4mprogram-file[24ms and command line source texts had been concatenated together.
+
+       In  addition, lines beginning with [1m@include [22mmay be used to include other source files into your program.  This is equivalent to using the
+       [1m--include [22moption.
+
+       Lines beginning with [1m@load [22mmay be used to load extension functions into your program.  This is equivalent to using the [1m--load [22moption.
+
+       The environment variable [1mAWKPATH [22mspecifies a search path to use when finding source files named with the [1m-f [22mand  [1m--include  [22moptions.   If
+       this  variable does not exist, the default path is [1m".:/usr/local/share/awk"[22m.  (The actual directory may vary, depending upon how [4mgawk[24m was
+       built and installed.)  If a file name given to the [1m-f [22moption contains a “/” character, no path search is performed.
+
+       The environment variable [1mAWKLIBPATH [22mspecifies a search path to use when finding source files named with the [1m--load [22moption.  If this vari‐
+       able does not exist, the default path is [1m"/usr/local/lib/gawk"[22m.  (The actual directory may vary, depending upon how [4mgawk[24m  was  built  and
+       installed.)
+
+       [4mGawk[24m  executes  AWK  programs  in the following order.  First, all variable assignments specified via the [1m-v [22moption are performed.  Next,
+       [4mgawk[24m compiles the program into an internal form.  Then, [4mgawk[24m executes the code in the [1mBEGIN [22mrule(s) (if any), and then proceeds  to  read
+       each file named in the [1mARGV [22marray (up to [1mARGV[ARGC-1][22m).  If there are no files named on the command line, [4mgawk[24m reads the standard input.
+
+       If  a  filename  on  the command line has the form [4mvar[24m[1m=[4m[22mval[24m it is treated as a variable assignment.  The variable [4mvar[24m will be assigned the
+       value [4mval[24m.  (This happens after any [1mBEGIN [22mrule(s) have been run.)
+
+       If the value of a particular element of [1mARGV [22mis empty ([1m""[22m), [4mgawk[24m skips over it.
+
+       For each input file, if a [1mBEGINFILE [22mrule exists, [4mgawk[24m executes the associated code before processing the contents  of  the  file.   Simi‐
+       larly, [4mgawk[24m executes the code associated with [1mENDFILE [22mrules after processing the file.
+
+       For  each record in the input, [4mgawk[24m tests to see if it matches any [4mpattern[24m in the AWK program.  For each pattern that the record matches,
+       [4mgawk[24m executes the associated [4maction[24m.  The patterns are tested in the order they occur in the program.
+
+       Finally, after all the input is exhausted, [4mgawk[24m executes the code in the [1mEND [22mrule(s) (if any).
+
+   [1mCommand Line Directories[0m
+       According to POSIX, files named on the [4mawk[24m command line must be text files.  The behavior is “undefined” if they are not.  Most  versions
+       of [4mawk[24m treat a directory on the command line as a fatal error.
+
+       For  [4mgawk[24m,  a  directory on the command line produces a warning, but is otherwise skipped.  If either of the [1m--posix [22mor [1m--traditional [22mop‐
+       tions is given, then [4mgawk[24m reverts to treating directories on the command line as a fatal error.
+
+[1mVARIABLES, RECORDS AND FIELDS[0m
+       AWK variables are dynamic; they come into existence when they are first used.  Their values are either floating-point numbers or strings,
+       or both, depending upon how they are used.  Additionally, [4mgawk[24m allows variables to have regular-expression type.  AWK also has one dimen‐
+       sional arrays; arrays with multiple dimensions may be simulated.  However, [4mgawk[24m provides true  arrays  of  arrays.   Several  pre-defined
+       variables are set as a program runs; these are described as needed and summarized below.
+
+   [1mRecords[0m
+       Normally,  records  are  separated  by newline characters.  You can control how records are separated by assigning values to the built-in
+       variable [1mRS[22m.  See [4mhttps://www.gnu.org/software/gawk/manual/html_node/Records.html[24m for the details.
+
+   [1mFields[0m
+       As each input record is read, [4mgawk[24m splits the record into [4mfields[24m, using the value of the [1mFS [22mvariable as the field  separator.   Addition‐
+       ally,  [1mFIELDWIDTHS  [22mand  [1mFPAT  [22mmay  be  used  to  control  input field splitting.  See the details, starting at [4mhttps://www.gnu.org/soft‐[0m
+       [4mware/gawk/manual/html_node/Fields.html[24m.
+
+       Each field in the input record may be referenced by its position: [1m$1[22m, [1m$2[22m, and so on.  [1m$0 [22mis  the  whole  record,  including  leading  and
+       trailing whitespace.
+
+       The variable [1mNF [22mis set to the total number of fields in the input record.
+
+       References  to  non-existent  fields (i.e., fields after [1m$NF[22m) produce the null string.  However, assigning to a non-existent field (e.g.,
+       [1m$(NF+2) = 5[22m) increases the value of [1mNF[22m, creates any intervening fields with the null string as their values, and causes the value  of  [1m$0[0m
+       to  be  recomputed,  with  the  fields  being separated by the value of [1mOFS[22m.  References to negative numbered fields cause a fatal error.
+       Decrementing [1mNF [22mcauses the values of fields past the new value to be lost, and the value of [1m$0 [22mto be recomputed, with  the  fields  being
+       separated by the value of [1mOFS[22m.
+
+       Assigning  a  value to an existing field causes the whole record to be rebuilt when [1m$0 [22mis referenced.  Similarly, assigning a value to [1m$0[0m
+       causes the record to be resplit, creating new values for the fields.
+
+   [1mComma Separated Values[0m
+       When invoked with either the [1m-k [22mor the [1m--csv [22moption, [4mgawk[24m does not use regular record determination  and  field  splitting  as  described
+       above.   Instead,  records are terminated by unquoted newlines, and fields are separated by commas.  Double-quotes may be used to enclose
+       fields containing commas, newlines, or doubled  double-quotes.   See  [4mhttps://www.gnu.org/software/gawk/manual/html_node/Comma-Separated-[0m
+       [4mFields.html[24m for more details.
+
+   [1mBuilt-in Variables[0m
+       [4mGawk[24m's  built-in  variables  are  listed  below.   This list is purposely terse.  For details, see [4mhttps://www.gnu.org/software/gawk/man‐[0m
+       [4mual/html_node/Built_002din-Variables[24m.
+
+       [1mARGC        [22mThe number of command line arguments.
+
+       [1mARGIND      [22mThe index in [1mARGV [22mof the current file being processed.
+
+       [1mARGV        [22mArray of command line arguments.  The array is indexed from 0 to [1mARGC [22m- 1.
+
+       [1mBINMODE     [22mOn non-POSIX systems,  specifies  use  of  “binary”  mode  for  all  file  I/O.   See  [4mhttps://www.gnu.org/software/gawk/man‐[0m
+                   [4mual/html_node/PC-Using.html[24m for the details.
+
+       [1mCONVFMT     [22mThe conversion format for numbers, [1m"%.6g"[22m, by default.
+
+       [1mENVIRON     [22mAn  array  containing the values of the current environment.  The array is indexed by the environment variables, each element
+                   being the value of that variable.
+
+       [1mERRNO       [22mIf a system error occurs either doing a redirection for [1mgetline[22m, during a read for [1mgetline[22m, or during a [1mclose()[22m,  then  [1mERRNO[0m
+                   is set to a string describing the error.  The value is subject to translation in non-English locales.
+
+       [1mFIELDWIDTHS [22mA  whitespace-separated  list  of field widths.  When set, [4mgawk[24m parses the input into fields of fixed width, instead of using
+                   the value of the [1mFS [22mvariable as the field separator.  Each field width may optionally be preceded by a colon-separated  value
+                   specifying the number of characters to skip before the field starts.
+
+       [1mFILENAME    [22mThe  name  of the current input file.  If no files are specified on the command line, the value of [1mFILENAME [22mis “-”.  However,
+                   [1mFILENAME [22mis undefined inside the [1mBEGIN [22mrule (unless set by [1mgetline[22m).
+
+       [1mFNR         [22mThe input record number in the current input file.
+
+       [1mFPAT        [22mA regular expression describing the contents of the fields in a record.  When set, [4mgawk[24m parses the input into  fields,  where
+                   the fields match the regular expression, instead of using the value of [1mFS [22mas the field separator.
+
+       [1mFS          [22mThe  input field separator, a space by default.  See [4mhttps://www.gnu.org/software/gawk/manual/html_node/Field-Separators.html[0m
+                   for the details.
+
+       [1mFUNCTAB     [22mAn array whose indices and corresponding values are the names of all the user-defined or extension functions in the  program.
+                   [1mNOTE[22m: You may not use the [1mdelete [22mstatement with the [1mFUNCTAB [22marray.
+
+       [1mIGNORECASE  [22mControls  the  case-sensitivity  of all regular expression and string operations.  See [4mhttps://www.gnu.org/software/gawk/man‐[0m
+                   [4mual/html_node/Case_002dsensitivity.html[24m for details.
+
+       [1mLINT        [22mProvides dynamic control of the [1m--lint [22moption from within an AWK program.
+
+       [1mNF          [22mThe number of fields in the current input record.
+
+       [1mNR          [22mThe total number of input records seen so far.
+
+       [1mOFMT        [22mThe output format for numbers, [1m"%.6g"[22m, by default.
+
+       [1mOFS         [22mThe output field separator, a space by default.
+
+       [1mORS         [22mThe output record separator, by default a newline.
+
+       [1mPREC        [22mThe working precision of arbitrary precision floating-point numbers, 53 by default.
+
+       [1mPROCINFO    [22mThe elements of this array provide access to information  about  the  running  AWK  program.   See  [4mhttps://www.gnu.org/soft‐[0m
+                   [4mware/gawk/manual/html_node/Auto_002dset[24m for the details.
+
+       [1mROUNDMODE   [22mThe  rounding mode to use for arbitrary precision arithmetic on numbers, by default [1m"N" [22m(IEEE-754 roundTiesToEven mode).  See
+                   [4mhttps://www.gnu.org/software/gawk/manual/html_node/Setting-the-rounding-mode[24m for the details.
+
+       [1mRS          [22mThe input record separator, by default a newline.
+
+       [1mRT          [22mThe record terminator.  [4mGawk[24m sets [1mRT [22mto the input text that matched the character or regular expression specified by [1mRS[22m.
+
+       [1mRSTART      [22mThe index of the first character matched by [1mmatch()[22m; 0 if no match.
+
+       [1mRLENGTH     [22mThe length of the string matched by [1mmatch()[22m; -1 if no match.
+
+       [1mSUBSEP      [22mThe string used to separate multiple subscripts in array elements, by default [1m"\034"[22m.
+
+       [1mSYMTAB      [22mAn array whose indices are the names of all currently defined global variables and arrays in the program.  You  may  not  use
+                   the [1mdelete [22mstatement with the [1mSYMTAB [22marray, nor assign to elements with an index that is not a variable name.
+
+       [1mTEXTDOMAIN  [22mThe text domain of the AWK program; used to find the localized translations for the program's strings.
+
+   [1mArrays[0m
+       Arrays  are  subscripted  with an expression between square brackets ([1m[ [22mand [1m][22m).  If the expression is an expression list ([4mexpr[24m, [4mexpr[24m ...)
+       then the array subscript is a string consisting of the concatenation of the (string) value of each expression, separated by the value  of
+       the [1mSUBSEP [22mvariable.  This facility is used to simulate multiply dimensioned arrays.  For example:
+
+              [1mi = "A"; j = "B"; k = "C"[0m
+              [1mx[i, j, k] = "hello, world\n"[0m
+
+       assigns  the  string  [1m"hello, world\n" [22mto the element of the array [1mx [22mwhich is indexed by the string [1m"A\034B\034C"[22m.  All arrays in AWK are
+       associative, i.e., indexed by string values.
+
+       The special operator [1min [22mmay be used to test if an array has an index consisting of a particular value:
+
+              [1mif (val in array)[0m
+                   [1mprint array[val][0m
+
+       If the array has multiple subscripts, use [1m(i, j) in array[22m.
+
+       The [1min [22mconstruct may also be used in a [1mfor [22mloop to iterate over all the elements of an array.  However, the [1m(i,  j)  in  array  [22mconstruct
+       only works in tests, not in [1mfor [22mloops.
+
+       An  element may be deleted from an array using the [1mdelete [22mstatement.  The [1mdelete [22mstatement may also be used to delete the entire contents
+       of an array, just by specifying the array name without a subscript.
+
+       [4mgawk[24m supports  true  multidimensional  arrays.   It  does  not  require  that  such  arrays  be  “rectangular”  as  in  C  or  C++.   See
+       [4mhttps://www.gnu.org/software/gawk/manual/html_node/Arrays[24m for details.
+
+   [1mNamespaces[0m
+       [4mGawk[24m provides a simple [4mnamespace[24m facility to help work around the fact that all variables in AWK are global.
+
+       A  [4mqualified[24m  [4mname[24m consists of a two simple identifiers joined by a double colon ([1m::[22m).  The left-hand identifier represents the namespace
+       and the right-hand identifier is the variable within it.  All simple (non-qualified) names are considered to be in  the  “current”  name‐
+       space;  the  default  namespace is [1mawk[22m.  However, simple identifiers consisting solely of uppercase letters are forced into the [1mawk [22mname‐
+       space, even if the current namespace is different.
+
+       You change the current namespace with an [1m@namespace "[4m[22mname[24m[1m" [22mdirective.
+
+       The standard predefined builtin function names may not be used as namespace names.  The names of additional functions  provided  by  [4mgawk[0m
+       may  be  used  as  namespace  names  or  as  simple  identifiers  in  other  namespaces.  For more details, see [4mhttps://www.gnu.org/soft‐[0m
+       [4mware/gawk/manual/html_node/Namespaces.html#Namespaces[24m.
+
+   [1mVariable Typing And Conversion[0m
+       Variables and fields may be (floating point) numbers, or strings, or both.  They may also be regular expressions.  How  the  value  of  a
+       variable  is  interpreted depends upon its context.  If used in a numeric expression, it will be treated as a number; if used as a string
+       it will be treated as a string.
+
+       To force a variable to be treated as a number, add zero to it; to force it to be treated as  a  string,  concatenate  it  with  the  null
+       string.
+
+       Uninitialized variables have the numeric value zero and the string value "" (the null, or empty, string).
+
+       When  a string must be converted to a number, the conversion is accomplished using [4mstrtod[24m(3).  A number is converted to a string by using
+       the value of [1mCONVFMT [22mas a format string for [4msprintf[24m(3), with the numeric value of the variable as the argument.  However, even though all
+       numbers in AWK are floating-point, integral values are [4malways[24m converted as integers.
+
+       [4mGawk[24m performs comparisons as follows: If two variables are numeric, they are compared numerically.  If one value is numeric and the other
+       has a string value that is a “numeric string,” then comparisons are also done numerically.  Otherwise, the numeric value is converted  to
+       a string and a string comparison is performed.  Two strings are compared, of course, as strings.
+
+       Note  that string constants, such as [1m"57"[22m, are [4mnot[24m numeric strings, they are string constants.  The idea of “numeric string” only applies
+       to fields, [1mgetline [22minput, [1mFILENAME[22m, [1mARGV [22melements, [1mENVIRON [22melements and the elements of an array created by [1msplit()  [22mor  [1mpatsplit()  [22mthat
+       are numeric strings.  The basic idea is that [4muser[24m [4minput[24m, and only user input, that looks numeric, should be treated that way.
+
+   [1mOctal and Hexadecimal Constants[0m
+       You  may use C-style octal and hexadecimal constants in your AWK program source code.  For example, the octal value [1m011 [22mis equal to deci‐
+       mal [1m9[22m, and the hexadecimal value [1m0x11 [22mis equal to decimal 17.
+
+   [1mString Constants[0m
+       String constants in AWK are sequences of characters enclosed between double quotes (like [1m"value"[22m).  Within strings,  certain  [4mescape[24m  [4mse‐[0m
+       [4mquences[24m are recognized, as in C.  See [4mhttps://www.gnu.org/software/gawk/manual/html_node/Escape-Sequences[24m for the details.
+
+   [1mRegexp Constants[0m
+       A regular expression constant is a sequence of characters enclosed between forward slashes (like [1m/value/[22m).
+
+       The  escape  sequences described in the manual may also be used inside constant regular expressions (e.g., [1m/[ \t\f\n\r\v]/ [22mmatches white‐
+       space characters).
+
+       [4mGawk[24m provides [4mstrongly[24m [4mtyped[24m regular expression constants.  These are written with a leading [1m@ [22msymbol (like  so:  [1m@/value/[22m).   Such  con‐
+       stants may be assigned to scalars (variables, array elements) and passed to user-defined functions.  Variables that have been so assigned
+       have regular expression type.
+
+[1mPATTERNS AND ACTIONS[0m
+       AWK  is  a line-oriented language.  The pattern comes first, and then the action.  Action statements are enclosed in [1m{ [22mand [1m}[22m.  Either the
+       pattern may be missing, or the action may be missing, but, of course, not both.  If the pattern is missing, the action executes for every
+       single record of input.  A missing action is equivalent to
+
+              [1m{ print }[0m
+
+       which prints the entire record.
+
+       Comments begin with the [1m# [22mcharacter, and continue until the end of the line.  Empty lines may be used to separate statements.   Normally,
+       a  statement  ends  with a newline, however, this is not the case for lines ending in a comma, [1m{[22m, [1m?[22m, [1m:[22m, [1m&&[22m, or [1m||[22m.  Lines ending in [1mdo [22mor
+       [1melse [22malso have their statements automatically continued on the following line.  In other cases, a line can be continued by ending it with
+       a “\”, in which case the newline is ignored.  However, a “\” after a [1m# [22mis not special.
+
+       Multiple statements may be put on one line by separating them with a “;”.  This applies to both the statements within the action part  of
+       a pattern-action pair (the usual case), and to the pattern-action statements themselves.
+
+   [1mPatterns[0m
+       AWK patterns may be one of the following:
+
+              [1mBEGIN[0m
+              [1mEND[0m
+              [1mBEGINFILE[0m
+              [1mENDFILE[0m
+              [1m/[4m[22mregular[24m [4mexpression[24m[1m/[0m
+              [4mrelational[24m [4mexpression[0m
+              [4mpattern[24m [1m&& [4m[22mpattern[0m
+              [4mpattern[24m [1m|| [4m[22mpattern[0m
+              [4mpattern[24m [1m? [4m[22mpattern[24m [1m: [4m[22mpattern[0m
+              [1m([4m[22mpattern[24m[1m)[0m
+              [1m! [4m[22mpattern[0m
+              [4mpattern1[24m[1m, [4m[22mpattern2[0m
+
+       [1mBEGIN  [22mand  [1mEND  [22mare  two  special  kinds of patterns which are not tested against the input.  The action parts of all [1mBEGIN [22mpatterns are
+       merged as if all the statements had been written in a single [1mBEGIN [22mrule.  They are executed before any of the input is read.   Similarly,
+       all  the  [1mEND [22mrules are merged, and executed when all the input is exhausted (or when an [1mexit [22mstatement is executed).  [1mBEGIN [22mand [1mEND [22mpat‐
+       terns cannot be combined with other patterns in pattern expressions.  [1mBEGIN [22mand [1mEND [22mpatterns cannot have missing action parts.
+
+       [1mBEGINFILE [22mand [1mENDFILE [22mare additional special patterns whose actions are executed before reading the first record of each command-line in‐
+       put file and after reading the last record of each file.  Inside the [1mBEGINFILE [22mrule, the value of [1mERRNO [22mis the empty string if  the  file
+       was  opened  successfully.   Otherwise,  there is some problem with the file and the code should use [1mnextfile [22mto skip it.  If that is not
+       done, [4mgawk[24m produces its usual fatal error for files that cannot be opened.
+
+       For [1m/[4m[22mregular[24m [4mexpression[24m[1m/ [22mpatterns, the associated statement is executed for each input record that matches the regular expression.  Regu‐
+       lar expressions are essentially the same as those in [4megrep[24m(1).   See  [4mhttps://www.gnu.org/software/gawk/manual/html_node/Regexp.html[24m  for
+       the details on regular expressions.
+
+       A  [4mrelational[24m  [4mexpression[24m  may  use  any  of the operators defined below in the section on actions.  These generally test whether certain
+       fields match certain regular expressions.
+
+       The [1m&&[22m, [1m||[22m, and [1m!  [22moperators are logical AND, logical OR, and logical NOT, respectively, as in C.  They do short-circuit evaluation, also
+       as in C, and are used for combining more primitive pattern expressions.  As in most languages, parentheses may be used to change the  or‐
+       der of evaluation.
+
+       The  [1m?:  [22moperator  is like the same operator in C.  If the first pattern is true then the pattern used for testing is the second pattern,
+       otherwise it is the third.  Only one of the second and third patterns is evaluated.
+
+       The [4mpattern1[24m[1m, [4m[22mpattern2[24m form of an expression is called a [4mrange[24m [4mpattern[24m.  It matches all input records starting with a record that matches
+       [4mpattern1[24m, and continuing until a record that matches [4mpattern2[24m, inclusive.  It does not combine with any other sort of pattern expression.
+
+   [1mActions[0m
+       Action statements are enclosed in braces, [1m{ [22mand [1m}[22m.  Action statements consist of the usual assignment, conditional,  and  looping  state‐
+       ments found in most languages.  The operators, control statements, and input/output statements available are patterned after those in C.
+
+   [1mOperators[0m
+       The operators in AWK, in order of decreasing precedence, are:
+
+       [1m([22m...[1m)       [22mGrouping
+
+       [1m$           [22mField reference.
+
+       [1m++ --       [22mIncrement and decrement, both prefix and postfix.
+
+       [1m^           [22mExponentiation.
+
+       [1m+ - !       [22mUnary plus, unary minus, and logical negation.
+
+       [1m* / %       [22mMultiplication, division, and modulus.
+
+       [1m+ -         [22mAddition and subtraction.
+
+       [4mspace[24m       String concatenation.
+
+       [1m|   |&      [22mPiped I/O for [1mgetline[22m, [1mprint[22m, and [1mprintf[22m.
+
+       [1m< > <= >= == !=[0m
+                   The regular relational operators.
+
+       [1m~ !~        [22mRegular expression match, negated match.
+
+       [1min          [22mArray membership.
+
+       [1m&&          [22mLogical AND.
+
+       [1m||          [22mLogical OR.
+
+       [1m?:          [22mThe  C  conditional  expression.   This has the form [4mexpr1[24m [1m? [4m[22mexpr2[24m [1m: [4m[22mexpr3[24m.  If [4mexpr1[24m is true, the value of the expression is
+                   [4mexpr2[24m, otherwise it is [4mexpr3[24m.  Only one of [4mexpr2[24m and [4mexpr3[24m is evaluated.
+
+       [1m= += -= *= /= %= ^=[0m
+                   Assignment.  Both absolute assignment [1m([4m[22mvar[24m [1m= [4m[22mvalue[24m[1m) [22mand operator-assignment (the other forms) are supported.
+
+   [1mControl Statements[0m
+       The control statements are as follows:
+
+              [1mif ([4m[22mcondition[24m[1m) [4m[22mstatement[24m [ [1melse [4m[22mstatement[24m ]
+              [1mwhile ([4m[22mcondition[24m[1m) [4m[22mstatement[0m
+              [1mdo [4m[22mstatement[24m [1mwhile ([4m[22mcondition[24m[1m)[0m
+              [1mfor ([4m[22mexpr1[24m[1m; [4m[22mexpr2[24m[1m; [4m[22mexpr3[24m[1m) [4m[22mstatement[0m
+              [1mfor ([4m[22mvar[24m [1min [4m[22marray[24m[1m) [4m[22mstatement[0m
+              [1mbreak[0m
+              [1mcontinue[0m
+              [1mdelete [4m[22marray[24m[1m[[4m[22mindex[24m[1m][0m
+              [1mdelete [4m[22marray[0m
+              [1mexit [22m[ [4mexpression[24m ]
+              [1m{ [4m[22mstatements[24m [1m}[0m
+              [1mswitch ([4m[22mexpression[24m[1m) {[0m
+              [1mcase [4m[22mvalue[24m[1m|[4m[22mregex[24m [1m: [4m[22mstatement[0m
+              [4m...[0m
+              [ [1mdefault: [4m[22mstatement[24m ]
+              [1m}[0m
+
+   [1mI/O Statements[0m
+       The input/output statements are as follows:
+
+       [1mclose([4m[22mfile[24m [[1m, [4m[22mhow[24m][1m)   [22mClose an open file, pipe or coprocess.  The optional [4mhow[24m should only be used when closing one end of a two-way pipe
+                             to a coprocess.  It must be a string value, either [1m"to" [22mor [1m"from"[22m.
+
+       [1mgetline               [22mSet [1m$0 [22mfrom the next input record; set [1mNF[22m, [1mNR[22m, [1mFNR[22m, [1mRT[22m.
+
+       [1mgetline <[4m[22mfile[24m         Set [1m$0 [22mfrom the next record of [4mfile[24m; set [1mNF[22m, [1mRT[22m.
+
+       [1mgetline [4m[22mvar[24m           Set [4mvar[24m from the next input record; set [1mNR[22m, [1mFNR[22m, [1mRT[22m.
+
+       [1mgetline [4m[22mvar[24m [1m<[4m[22mfile[24m     Set [4mvar[24m from the next record of [4mfile[24m; set [1mRT[22m.
+
+       [4mcommand[24m [1m| getline [22m[[4mvar[24m]
+                             Run [4mcommand[24m, piping the output either into [1m$0 [22mor [4mvar[24m, as above, and [1mRT[22m.
+
+       [4mcommand[24m [1m|& getline [22m[[4mvar[24m]
+                             Run [4mcommand[24m as a coprocess piping the output either into [1m$0 [22mor [4mvar[24m, as above, and [1mRT[22m.  (The [4mcommand[24m can also  be  a
+                             socket.  See the subsection [1mSpecial File Names[22m, below.)
+
+       [1mfflush([22m[[4mfile[24m][1m)        [22mFlush  any  buffers  associated  with  the  open output file or pipe [4mfile[24m.  If [4mfile[24m is missing or if it is the null
+                             string, then flush all open output files and pipes.
+
+       [1mnext                  [22mStop processing the current input record.  Read the next input record and start processing over with the first pat‐
+                             tern in the AWK program.  Upon reaching the end of the input data, execute any [1mEND [22mrule(s).
+
+       [1mnextfile              [22mStop processing the current input file.  The next input record read comes from the next input file.   Update  [1mFILE‐[0m
+                             [1mNAME  [22mand [1mARGIND[22m, reset [1mFNR [22mto 1, and start processing over with the first pattern in the AWK program.  Upon reach‐
+                             ing the end of the input data, execute any [1mENDFILE [22mand [1mEND [22mrule(s).
+
+       [1mprint                 [22mPrint the current record.  The output record is terminated with the value of [1mORS[22m.
+
+       [1mprint [4m[22mexpr-list[24m       Print expressions.  Each expression is separated by the value of [1mOFS[22m.  The output record  is  terminated  with  the
+                             value of [1mORS[22m.
+
+       [1mprint [4m[22mexpr-list[24m [1m>[4m[22mfile[24m Print expressions on [4mfile[24m.  Each expression is separated by the value of [1mOFS[22m.  The output record is terminated with
+                             the value of [1mORS[22m.
+
+       [1mprintf [4m[22mfmt,[24m [4mexpr-list[24m Format and print.
+
+       [1mprintf [4m[22mfmt,[24m [4mexpr-list[24m [1m>[4m[22mfile[0m
+                             Format and print on [4mfile[24m.
+
+       [1msystem([4m[22mcmd-line[24m[1m)      [22mExecute  the  command [4mcmd-line[24m, and return the exit status.  (This may not be available on non-POSIX systems.)  See
+                             [4mhttps://www.gnu.org/software/gawk/manual/html_node/I_002fO-Functions.html#I_002fO-Functions[24m for the full details on
+                             the exit status.
+
+       Additional output redirections are allowed for [1mprint [22mand [1mprintf[22m.
+
+       [1mprint ... >> [4m[22mfile[0m
+              Append output to the [4mfile[24m.
+
+       [1mprint ... | [4m[22mcommand[0m
+              Write on a pipe.
+
+       [1mprint ... |& [4m[22mcommand[0m
+              Send data to a coprocess or socket.  (See also the subsection [1mSpecial File Names[22m, below.)
+
+       The [1mgetline [22mfunction returns 1 on success, zero on end of file, and -1 on an error.  If the [4merrno[24m(3) value indicates that the I/O  opera‐
+       tion  may  be  retried, and [1mPROCINFO["[4m[22minput[24m[1m", "RETRY"] [22mis set, then -2 is returned instead of -1, and further calls to [1mgetline [22mmay be at‐
+       tempted.  Upon an error, [1mERRNO [22mis set to a string describing the problem.
+
+       [1mNOTE[22m: Failure in opening a two-way socket results in a non-fatal error being returned to the calling function.   If  using  a  pipe,  co‐
+       process,  or  socket  to  [1mgetline[22m,  or from [1mprint [22mor [1mprintf [22mwithin a loop, you [4mmust[24m use [1mclose() [22mto create new instances of the command or
+       socket.  AWK does not automatically close pipes, sockets, or coprocesses when they return EOF.
+
+       The AWK versions of the [1mprintf [22mstatement and [1msprintf() [22mfunction are similar to those of C.  For  details,  see  [4mhttps://www.gnu.org/soft‐[0m
+       [4mware/gawk/manual/html_node/Printf.html[24m.
+
+   [1mSpecial File Names[0m
+       When doing I/O redirection from either [1mprint [22mor [1mprintf [22minto a file, or via [1mgetline [22mfrom a file, [4mgawk[24m recognizes certain special filenames
+       internally.   These filenames allow access to open file descriptors inherited from [4mgawk[24m's parent process (usually the shell).  These file
+       names may also be used on the command line to name data files.  The filenames are:
+
+       [1m-           [22mThe standard input.
+
+       [1m/dev/stdin  [22mThe standard input.
+
+       [1m/dev/stdout [22mThe standard output.
+
+       [1m/dev/stderr [22mThe standard error output.
+
+       [1m/dev/fd/[4m[22mn[24m   The file associated with the open file descriptor [4mn[24m.
+
+       The following special filenames may be used with the [1m|& [22mcoprocess operator for creating TCP/IP network connections:
+
+       [1m/inet/tcp/[4m[22mlport[24m[1m/[4m[22mrhost[24m[1m/[4m[22mrport[0m
+       [1m/inet4/tcp/[4m[22mlport[24m[1m/[4m[22mrhost[24m[1m/[4m[22mrport[0m
+       [1m/inet6/tcp/[4m[22mlport[24m[1m/[4m[22mrhost[24m[1m/[4m[22mrport[0m
+              Files for a TCP/IP connection on local port [4mlport[24m to remote host [4mrhost[24m on remote port [4mrport[24m.  Use a port of [1m0 [22mto have  the  system
+              pick a port.  Use [1m/inet4 [22mto force an IPv4 connection, and [1m/inet6 [22mto force an IPv6 connection.  Plain [1m/inet [22muses the system default
+              (most likely IPv4).  Usable only with the [1m|& [22mtwo-way I/O operator.
+
+       [1m/inet/udp/[4m[22mlport[24m[1m/[4m[22mrhost[24m[1m/[4m[22mrport[0m
+       [1m/inet4/udp/[4m[22mlport[24m[1m/[4m[22mrhost[24m[1m/[4m[22mrport[0m
+       [1m/inet6/udp/[4m[22mlport[24m[1m/[4m[22mrhost[24m[1m/[4m[22mrport[0m
+              Similar, but use UDP/IP instead of TCP/IP.
+
+   [1mNumeric Functions[0m
+       AWK has the following built-in arithmetic functions:
+
+       [1matan2([4m[22my[24m[1m, [4m[22mx[24m[1m)   [22mReturn the arctangent of [4my/x[24m in radians.
+
+       [1mcos([4m[22mexpr[24m[1m)     [22mReturn the cosine of [4mexpr[24m, which is in radians.
+
+       [1mexp([4m[22mexpr[24m[1m)     [22mThe exponential function.
+
+       [1mint([4m[22mexpr[24m[1m)     [22mTruncate to integer.
+
+       [1mlog([4m[22mexpr[24m[1m)     [22mThe natural logarithm function.
+
+       [1mrand()        [22mReturn a random number [4mN[24m, between zero and one, such that 0 ≤ [4mN[24m < 1.
+
+       [1msin([4m[22mexpr[24m[1m)     [22mReturn the sine of [4mexpr[24m, which is in radians.
+
+       [1msqrt([4m[22mexpr[24m[1m)    [22mReturn the square root of [4mexpr[24m.
+
+       [1msrand([22m[[4mexpr[24m][1m) [22mUse  [4mexpr[24m as the new seed for the random number generator.  If no [4mexpr[24m is provided, use the time of day.  Return the previ‐
+                     ous seed for the random number generator.
+
+   [1mString Functions[0m
+       [4mGawk[24m has the following built-in string functions; details are provided in [4mhttps://www.gnu.org/software/gawk/manual/html_node/String-Func‐[0m
+       [4mtions[24m.
+
+       [1masort([4m[22ms[24m [[1m, [4m[22md[24m [[1m, [4m[22mhow[24m] ][1m) [22mReturn the number of elements in the source array [4ms[24m.  Sort the contents of [4ms[24m using [4mgawk[24m's normal rules  for  com‐
+                               paring  values,  and replace the indices of the sorted values [4ms[24m with sequential integers starting with 1.  If the
+                               optional destination array [4md[24m is specified, first duplicate [4ms[24m into [4md[24m, and then sort [4md[24m, leaving the indices of  the
+                               source  array [4ms[24m unchanged.  The optional string [4mhow[24m controls the direction and the comparison mode.  Valid values
+                               for [4mhow[24m are  described  in  [4mhttps://www.gnu.org/software/gawk/manual/html_node/String-Functions.html#String-Func‐[0m
+                               [4mtions[24m.   [4ms[24m  and  [4md[24m  are  allowed to be the same array; this only makes sense when supplying the third argument as
+                               well.
+
+       [1masorti([4m[22ms[24m [[1m, [4m[22md[24m [[1m, [4m[22mhow[24m] ][1m)[0m
+                               Return the number of elements in the source array [4ms[24m.  The behavior is the same as that of  [1masort()[22m,  except  that
+                               the  array  [4mindices[24m are used for sorting, not the array values.  When done, the array is indexed numerically, and
+                               the values are those of the original indices.  The original values are lost; thus provide a second array  if  you
+                               wish  to  preserve the original.  The purpose of the optional string [4mhow[24m is the same as for [1masort()[22m.  Here too, [4ms[0m
+                               and [4md[24m are allowed to be the same array; this only makes sense when supplying the third argument as well.
+
+       [1mgensub([4m[22mr[24m[1m, [4m[22ms[24m[1m, [4m[22mh[24m [[1m, [4m[22mt[24m][1m)   [22mSearch the target string [4mt[24m for matches of the regular expression [4mr[24m.  If [4mh[24m is a string beginning with [1mg [22mor [1mG[22m, then
+                               replace all matches of [4mr[24m with [4ms[24m.  Otherwise, [4mh[24m is a number indicating which match of [4mr[24m to replace.  If [4mt[24m  is  not
+                               supplied, use [1m$0 [22minstead.  Within the replacement text [4ms[24m, the sequence [1m\[4m[22mn[24m, where [4mn[24m is a digit from 1 to 9, may be
+                               used to indicate just the text that matched the [4mn[24m'th parenthesized subexpression.  The sequence [1m\0 [22mrepresents the
+                               entire  matched  text,  as does the character [1m&[22m.  Unlike [1msub() [22mand [1mgsub()[22m, the modified string is returned as the
+                               result of the function, and the original target string is [4mnot[24m changed.
+
+       [1mgsub([4m[22mr[24m[1m, [4m[22ms[24m [[1m, [4m[22mt[24m][1m)        [22mFor each substring matching the regular expression [4mr[24m in the string [4mt[24m, substitute the string  [4ms[24m,  and  return  the
+                               number  of  substitutions.  If [4mt[24m is not supplied, use [1m$0[22m.  An [1m& [22min the replacement text is replaced with the text
+                               that  was  actually  matched.   Use  [1m\&  [22mto  get  a  literal  [1m&[22m.    (This   must   be   typed   as   [1m"\\&"[22m;   see
+                               [4mhttps://www.gnu.org/software/gawk/manual/html_node/Gory-Details.html#Gory-Details[24m  for a fuller discussion of the
+                               rules for ampersands and backslashes in the replacement text of [1msub()[22m, [1mgsub()[22m, and [1mgensub()[22m.)
+
+       [1mindex([4m[22ms[24m[1m, [4m[22mt[24m[1m)             [22mReturn the index of the string [4mt[24m in the string [4ms[24m, or zero if [4mt[24m is not present.  (This implies that character  in‐
+                               dices start at one.)
+
+       [1mlength([22m[[4ms[24m][1m)             [22mReturn  the  length  of the string [4ms[24m, or the length of [1m$0 [22mif [4ms[24m is not supplied.  With an array argument, [1mlength()[0m
+                               returns the number of elements in the array.
+
+       [1mmatch([4m[22ms[24m[1m, [4m[22mr[24m [[1m, [4m[22ma[24m][1m)       [22mReturn the position in [4ms[24m where the regular expression [4mr[24m occurs, or zero if [4mr[24m is not present, and set  the  values
+                               of  [1mRSTART  [22mand  [1mRLENGTH[22m.   Note  that  the  argument  order  is  the  same as for the [1m~ [22moperator: [4mstr[24m [1m~ [4m[22mre[24m.  See
+                               [4mhttps://www.gnu.org/software/gawk/manual/html_node/String-Functions.html#String-Functions[24m for  a  description  of
+                               how the array [4ma[24m is filled if it is provided.
+
+       [1mpatsplit([4m[22ms[24m[1m, [4m[22ma[24m [[1m, [4m[22mr[24m [[1m, [4m[22mseps[24m] ][1m)[0m
+                               Split  the  string  [4ms[24m  into the array [4ma[24m and the separators array [4mseps[24m on the regular expression [4mr[24m, and return the
+                               number of fields.  Element values are the portions of [4ms[24m that matched [4mr[24m.  The value of  [1mseps[[4m[22mi[24m[1m]  [22mis  the  possibly
+                               null  separator  that appeared after [1ma[[4m[22mi[24m[1m][22m.  The value of [1mseps[0] [22mis the possibly null leading separator.  If [4mr[24m is
+                               omitted, [1mFPAT [22mis used instead.  The arrays [4ma[24m and [4mseps[24m are cleared first.  Splitting behaves identically to  field
+                               splitting with [1mFPAT[22m.
+
+       [1msplit([4m[22ms[24m[1m, [4m[22ma[24m [[1m, [4m[22mr[24m [[1m, [4m[22mseps[24m] ][1m)[0m
+                               Split  the  string  [4ms[24m  into the array [4ma[24m and the separators array [4mseps[24m on the regular expression [4mr[24m, and return the
+                               number of fields.  If [4mr[24m is omitted, [1mFS [22mis used instead.  The arrays [4ma[24m and [4mseps[24m are cleared first.  [1mseps[[4m[22mi[24m[1m] [22mis the
+                               field separator matched by [4mr[24m between [1ma[[4m[22mi[24m[1m] [22mand [1ma[[4m[22mi[24m[1m+1][22m.  Splitting behaves identically to field splitting.
+
+       [1msprintf([4m[22mfmt[24m[1m, [4m[22mexpr-list[24m[1m) [22mPrint [4mexpr-list[24m according to [4mfmt[24m, and return the resulting string.
+
+       [1mstrtonum([4m[22mstr[24m[1m)           [22mExamine [4mstr[24m, and return its numeric value.  If [4mstr[24m begins with a leading [1m0[22m, treat it as an octal number.  If  [4mstr[0m
+                               begins with a leading [1m0x [22mor [1m0X[22m, treat it as a hexadecimal number.  Otherwise, assume it is a decimal number.
+
+       [1msub([4m[22mr[24m[1m, [4m[22ms[24m [[1m, [4m[22mt[24m][1m)         [22mJust like [1mgsub()[22m, but replace only the first matching substring.  Return either zero or one.
+
+       [1msubstr([4m[22ms[24m[1m, [4m[22mi[24m [[1m, [4m[22mn[24m][1m)      [22mReturn the at most [4mn[24m-character substring of [4ms[24m starting at [4mi[24m.  If [4mn[24m is omitted, use the rest of [4ms[24m.
+
+       [1mtolower([4m[22mstr[24m[1m)            [22mReturn  a copy of the string [4mstr[24m, with all the uppercase characters in [4mstr[24m translated to their corresponding low‐
+                               ercase counterparts.  Non-alphabetic characters are left unchanged.
+
+       [1mtoupper([4m[22mstr[24m[1m)            [22mReturn a copy of the string [4mstr[24m, with all the lowercase characters in [4mstr[24m translated to their  corresponding  up‐
+                               percase counterparts.  Non-alphabetic characters are left unchanged.
+
+       [4mGawk[24m is multibyte aware.  This means that [1mindex()[22m, [1mlength()[22m, [1msubstr() [22mand [1mmatch() [22mall work in terms of characters, not bytes.
+
+   [1mTime Functions[0m
+       [4mGawk[24m  provides  the following functions for obtaining time stamps and formatting them.  Details are provided in [4mhttps://www.gnu.org/soft‐[0m
+       [4mware/gawk/manual/html_node/Time-Functions[24m.
+
+       [1mmktime([4m[22mdatespec[24m [[1m, [4m[22mutc-flag[24m][1m)[0m
+                 Turn [4mdatespec[24m into a time stamp of the same form as returned by [1msystime()[22m, and return the result.  If [4mutc-flag[24m is  present  and
+                 is non-zero or non-null, the time is assumed to be in the UTC time zone; otherwise, the time is assumed to be in the local time
+                 zone.   If  [4mdatespec[24m  does  not  contain  enough  elements  or if the resulting time is out of range, [1mmktime() [22mreturns -1.  See
+                 [4mhttps://www.gnu.org/software/gawk/manual/html_node/Time-Functions.html#Time-Functions[24m for the details of [4mdatespec[24m.
+
+       [1mstrftime([22m[[4mformat[24m [[1m, [4m[22mtimestamp[24m[[1m, [4m[22mutc-flag[24m]]][1m)[0m
+                 Format [4mtimestamp[24m according to the specification in [4mformat[24m.  If [4mutc-flag[24m is present and is non-zero or non-null, the  result  is
+                 in  UTC,  otherwise  the result is in local time.  The [4mtimestamp[24m should be of the same form as returned by [1msystime()[22m.  If [4mtime‐[0m
+                 [4mstamp[24m is missing, the current time of day is used.  If [4mformat[24m is missing, a default format equivalent to the output of  [4mdate[24m(1)
+                 is  used.  The default format is available in [1mPROCINFO["strftime"][22m.  See the specification for the [1mstrftime() [22mfunction in ISO C
+                 for the format conversions that are guaranteed to be available.
+
+       [1msystime() [22mReturn the current time of day as the number of seconds since the Epoch (1970-01-01 00:00:00 UTC on POSIX systems).
+
+   [1mBit Manipulations Functions[0m
+       [4mGawk[24m supplies the following bit manipulation functions.  They work by converting double-precision floating point values to [1muintmax_t  [22min‐
+       tegers,  doing the operation, and then converting the result back to floating point.  Passing negative operands to any of these functions
+       causes a fatal error.
+
+       The functions are:
+
+       [1mand([4m[22mv1[24m[1m, [4m[22mv2[24m [, ...][1m) [22mReturn the bitwise AND of the values provided in the argument list.  There must be at least two.
+
+       [1mcompl([4m[22mval[24m[1m)          [22mReturn the bitwise complement of [4mval[24m.
+
+       [1mlshift([4m[22mval[24m[1m, [4m[22mcount[24m[1m)  [22mReturn the value of [4mval[24m, shifted left by [4mcount[24m bits.
+
+       [1mor([4m[22mv1[24m[1m, [4m[22mv2[24m [, ...][1m)  [22mReturn the bitwise OR of the values provided in the argument list.  There must be at least two.
+
+       [1mrshift([4m[22mval[24m[1m, [4m[22mcount[24m[1m)  [22mReturn the value of [4mval[24m, shifted right by [4mcount[24m bits.
+
+       [1mxor([4m[22mv1[24m[1m, [4m[22mv2[24m [, ...][1m) [22mReturn the bitwise XOR of the values provided in the argument list.  There must be at least two.
+
+   [1mType Functions[0m
+       The following functions provide type related information about their arguments.
+
+       [1misarray([4m[22mx[24m[1m) [22mReturn true if [4mx[24m is an array, false otherwise.
+
+       [1mtypeof([4m[22mx[24m[1m)  [22mReturn a string indicating the type of [4mx[24m.  The string will be one of [1m"array"[22m, [1m"number"[22m, [1m"regexp"[22m, [1m"string"[22m,  [1m"strnum"[22m,  [1m"unas‐[0m
+                  [1msigned"[22m, or [1m"undefined"[22m.
+
+   [1mInternationalization Functions[0m
+       The  following  functions  may  be  used  from  within  your  AWK  program  for  translating  strings at run-time.  For full details, see
+       [4mhttps://www.gnu.org/software/gawk/manual/html_node/I18N-Functions.html#I18N-Functions[24m.
+
+       [1mbindtextdomain([4m[22mdirectory[24m [[1m, [4m[22mdomain[24m][1m)[0m
+              Specify the directory where [4mgawk[24m looks for the [1m.gmo [22mfiles, in case they will not or cannot be placed in the “standard”  locations.
+              It returns the directory where [4mdomain[24m is “bound.”
+              The  default  [4mdomain[24m  is the value of [1mTEXTDOMAIN[22m.  If [4mdirectory[24m is the null string ([1m""[22m), then [1mbindtextdomain() [22mreturns the current
+              binding for the given [4mdomain[24m.
+
+       [1mdcgettext([4m[22mstring[24m [[1m, [4m[22mdomain[24m [[1m, [4m[22mcategory[24m]][1m)[0m
+              Return the translation of [4mstring[24m in text domain [4mdomain[24m for locale category [4mcategory[24m.  The default value for [4mdomain[24m is the  current
+              value of [1mTEXTDOMAIN[22m.  The default value for [4mcategory[24m is [1m"LC_MESSAGES"[22m.
+
+       [1mdcngettext([4m[22mstring1[24m[1m, [4m[22mstring2[24m[1m, [4m[22mnumber[24m [[1m, [4m[22mdomain[24m [[1m, [4m[22mcategory[24m]][1m)[0m
+              Return  the  plural form used for [4mnumber[24m of the translation of [4mstring1[24m and [4mstring2[24m in text domain [4mdomain[24m for locale category [4mcate‐[0m
+              [4mgory[24m.  The default value for [4mdomain[24m is the current value of [1mTEXTDOMAIN[22m.  The default value for [4mcategory[24m is [1m"LC_MESSAGES"[22m.
+
+   [1mBoolean Valued Functions[0m
+       You can create special Boolean-typed values; see the manual for how they work and why they exist.
+
+       [1mmkbool([4m[22mexpression[24m[1m)[0m
+              Based on the boolean value of [4mexpression[24m return either a true value or a false value.  True values have numeric value one.   False
+              values have numeric value zero.
+
+[1mUSER-DEFINED FUNCTIONS[0m
+       Functions in AWK are defined as follows:
+
+              [1mfunction [4m[22mname[24m[1m([4m[22mparameter[24m [4mlist[24m[1m) { [4m[22mstatements[24m [1m}[0m
+
+       Functions execute when they are called from within expressions in either patterns or actions.  Actual parameters supplied in the function
+       call  are used to instantiate the formal parameters declared in the function.  Arrays are passed by reference, other variables are passed
+       by value.
+
+       Local variables are declared as extra parameters in the parameter list.  The convention is to separate local variables from real  parame‐
+       ters by extra spaces in the parameter list.  For example:
+
+              [1mfunction  f(p, q,     a, b)   # a and b are local[0m
+              [1m{[0m
+                   [1m...[0m
+              [1m}[0m
+
+              [1m/abc/     { ... ; f(1, 2) ; ... }[0m
+
+       The  left  parenthesis  in a function call is required to immediately follow the function name, without any intervening whitespace.  This
+       restriction does not apply to the built-in functions listed above.
+
+       Functions may call each other and may be recursive.  Function parameters used as local variables are initialized to the null  string  and
+       the number zero upon function invocation.
+
+       Use  [1mreturn [4m[22mexpr[24m to return a value from a function.  The return value is undefined if no value is provided, or if the function returns by
+       “falling off” the end.
+
+       Functions may be called indirectly.  To do this, assign the name of the function to be called, as a string, to a variable.  Then use  the
+       variable as if it were the name of a function, prefixed with an [1m@ [22msign, like so:
+              [1mfunction myfunc()[0m
+              [1m{[0m
+                   [1mprint "myfunc called"[0m
+                   [1m...[0m
+              [1m}[0m
+
+              [1m{    ...[0m
+                   [1mthe_func = "myfunc"[0m
+                   [1m@the_func()    # call through the_func to myfunc[0m
+                   [1m...[0m
+              [1m}[0m
+
+       If  [1m--lint  [22mhas been provided, [4mgawk[24m warns about calls to undefined functions at parse time, instead of at run time.  Calling an undefined
+       function at run time is a fatal error.
+
+[1mDYNAMICALLY LOADING NEW FUNCTIONS[0m
+       You can dynamically add new functions written in C or C++ to the running [4mgawk[24m interpreter with the [1m@load [22mstatement.  The full details are
+       beyond the scope of this manual page; see [4mhttps://www.gnu.org/software/gawk/manual/html_node/Dynamic-Extensions.html#Dynamic-Extensions[24m.
+
+[1mSIGNALS[0m
+       The [4mgawk[24m profiler accepts two signals.  [1mSIGUSR1 [22mcauses it to dump a profile and function call stack to the profile file, which is  either
+       [1mawkprof.out[22m, or whatever file was named with the [1m--profile [22moption.  It then continues to run.  [1mSIGHUP [22mcauses [4mgawk[24m to dump the profile and
+       function call stack and then exit.
+
+[1mINTERNATIONALIZATION[0m
+       String  constants  are  sequences  of characters enclosed in double quotes.  In non-English speaking environments, it is possible to mark
+       strings in the AWK program as requiring translation to the local natural language.  Such strings are marked in the  AWK  program  with  a
+       leading underscore (“_”).  For example,
+
+              [1mgawk 'BEGIN { print "hello, world" }'[0m
+
+       always prints [1mhello, world[22m.  But,
+
+              [1mgawk 'BEGIN { print _"hello, world" }'[0m
+
+       might print [1mbonjour, monde [22min France.  See [4mhttps://www.gnu.org/software/gawk/manual/html_node/Internationalization.html#Internationaliza‐[0m
+       [4mtion[24m for the steps involved in producing and running a localizable AWK program.
+
+[1mGNU EXTENSIONS[0m
+       [4mGawk[24m   has   a   too-large   number   of   extensions  to  POSIX  [4mawk[24m.   They  are  described  in  [4mhttps://www.gnu.org/software/gawk/man‐[0m
+       [4mual/html_node/POSIX_002fGNU.html[24m.  All the extensions can be disabled by invoking [4mgawk[24m with the [1m--traditional [22mor [1m--posix [22moptions.
+
+[1mENVIRONMENT VARIABLES[0m
+       The [1mAWKPATH [22menvironment variable can be used to provide a list of directories that [4mgawk[24m searches when looking for files named via the [1m-f[22m,
+       [1m--file[22m, [1m-i [22mand [1m--include [22moptions, and the [1m@include [22mdirective.  If the initial search fails, the path is searched  again  after  appending
+       [1m.awk [22mto the filename.
+
+       The  [1mAWKLIBPATH [22menvironment variable can be used to provide a list of directories that [4mgawk[24m searches when looking for files named via the
+       [1m-l [22mand [1m--load [22moptions.
+
+       The [1mGAWK_PERSIST_FILE [22menvironment variable, if present, specifies a file to use as the backing store for persistent  memory.   See  [4mGAWK:[0m
+       [4mEffective[24m [4mAWK[24m [4mProgramming[24m for the details.
+
+       The  [1mGAWK_READ_TIMEOUT  [22menvironment  variable can be used to specify a timeout in milliseconds for reading input from a terminal, pipe or
+       two-way communication including sockets.
+
+       For connection to a remote host via socket, [1mGAWK_SOCK_RETRIES [22mcontrols the number of retries, and [1mGAWK_MSEC_SLEEP  [22mthe  interval  between
+       retries.   The  interval  is in milliseconds.  On systems that do not support [4musleep[24m(3), the value is rounded up to an integral number of
+       seconds.
+
+       If [1mPOSIXLY_CORRECT [22mexists in the environment, then [4mgawk[24m behaves exactly as if [1m--posix [22mhad been specified on the command line.  If  [1m--lint[0m
+       has been specified, [4mgawk[24m issues a warning message to this effect.
+
+[1mEXIT STATUS[0m
+       If the [1mexit [22mstatement is used with a value, then [4mgawk[24m exits with the numeric value given to it.
+
+       Otherwise, if there were no problems during execution, [4mgawk[24m exits with the value of the C constant [1mEXIT_SUCCESS[22m.  This is usually zero.
+
+       If an error occurs, [4mgawk[24m exits with the value of the C constant [1mEXIT_FAILURE[22m.  This is usually one.
+
+       If [4mgawk[24m exits because of a fatal error, the exit status is 2.  On non-POSIX systems, this value may be mapped to [1mEXIT_FAILURE[22m.
+
+[1mVERSION INFORMATION[0m
+       This man page documents [4mgawk[24m, version 5.3.
+
+[1mAUTHORS[0m
+       The  original version of UNIX [4mawk[24m was designed and implemented by Alfred Aho, Peter Weinberger, and Brian Kernighan of Bell Laboratories.
+       Ozan Yigit is the current maintainer.  Brian Kernighan occasionally dabbles in its development.
+
+       Paul Rubin and Jay Fenlason, of the Free Software Foundation, wrote [4mgawk[24m, to be compatible with the original version of  [4mawk[24m  distributed
+       in Seventh Edition UNIX.  John Woods contributed a number of bug fixes.  David Trueman, with contributions from Arnold Robbins, made [4mgawk[0m
+       compatible with the new version of UNIX [4mawk[24m.  Arnold Robbins is the current maintainer.
+
+       See [4mGAWK:[24m [4mEffective[24m [4mAWK[24m [4mProgramming[24m for a full list of the contributors to [4mgawk[24m and its documentation.
+
+       See the [1mREADME [22mfile in the [4mgawk[24m distribution for up-to-date information about maintainers and which ports are currently supported.
+
+[1mBUG REPORTS AND QUESTIONS[0m
+       If you find a bug in [4mgawk[24m, please use the [4mgawkbug[24m(1) program to report it.
+
+       Full  instructions  for  reporting  a bug are provided in [4mhttps://www.gnu.org/software/gawk/manual/html_node/Bugs.html[24m.  [4mPlease[24m carefully
+       read and follow the instructions given there.  This will make bug reporting and resolution much easier for everyone involved.  Really.
+
+       On the other hand, if you have a question as to how to accomplish a particular task using [4mawk[24m or [4mgawk[24m, send an email to [1mhelp-gawk@gnu.org[0m
+       with your request for help.
+
+[1mBUGS[0m
+       The [1m-F [22moption is not necessary given the command line variable assignment feature; it remains only for backwards compatibility.
+
+       This manual page is too long; [4mgawk[24m has too many features.
+
+[1mSEE ALSO[0m
+       [4megrep[24m(1), [4msed[24m(1), [4mgawkbug[24m(1), [4mprintf[24m(3), and [4mstrftime[24m(3).
+
+       [4mThe[24m [4mAWK[24m [4mProgramming[24m [4mLanguage[24m, second edition, Alfred V. Aho, Brian  W.  Kernighan,  Peter  J.  Weinberger,  Addison-Wesley,  2023.   ISBN
+       9-780138-269722.
+
+       [4mGAWK:[24m  [4mEffective[24m [4mAWK[24m [4mProgramming[24m, Edition 5.3, shipped with the [4mgawk[24m source.  The current version of this document is available online at
+       [4mhttps://www.gnu.org/software/gawk/manual[24m.
+
+       The GNU [1mgettext [22mdocumentation, available online at [4mhttps://www.gnu.org/software/gettext[24m.
+
+[1mEXAMPLES[0m
+       Print and sort the login names of all users:
+
+            [1mBEGIN     { FS = ":" }[0m
+                 [1m{ print $1 | "sort" }[0m
+
+       Count lines in a file:
+
+                 [1m{ nlines++ }[0m
+            [1mEND  { print nlines }[0m
+
+       Precede each line by its number in the file:
+
+            [1m{ print FNR, $0 }[0m
+
+       Concatenate and line number (a variation on a theme):
+
+            [1m{ print NR, $0 }[0m
+
+       Run an external command for particular lines of data:
+
+            [1mtail -f access_log |[0m
+            [1mawk '/myhome.html/ { system("nmap " $1 ">> logdir/myhome.html") }'[0m
+
+[1mCOPYING PERMISSIONS[0m
+       Copyright © 1989, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2001, 2002, 2003, 2004, 2005, 2007, 2009, 2010, 2011, 2012, 2013,
+       2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Free Software Foundation, Inc.
+
+       Permission is granted to make and distribute verbatim copies of this manual page provided the copyright notice and this permission notice
+       are preserved on all copies.
+
+       Permission is granted to copy and distribute modified versions of this manual page under the conditions for  verbatim  copying,  provided
+       that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.
+
+       Permission is granted to copy and distribute translations of this manual page into another language, under the above conditions for modi‐
+       fied versions, except that this permission notice may be stated in a translation approved by the Foundation.
+
+Free Software Foundation                                          March 23 2025                                                          [4mGAWK[24m(1)

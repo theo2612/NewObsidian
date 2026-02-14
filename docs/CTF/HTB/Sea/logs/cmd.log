@@ -1,0 +1,33 @@
+[2026-02-11 06:13:12] [pane=%0] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/Sea
+[2026-02-11 06:13:13] [pane=%0] [CMD] ll
+[2026-02-11 06:16:26] [pane=%0] [CMD] echo export IP=10.129.20.143 > ~/.ip
+[2026-02-11 06:17:12] [pane=%0] [CMD] echo $IP
+[2026-02-11 06:17:20] [pane=%0] [CMD] cat $IP
+[2026-02-11 06:17:27] [pane=%0] [CMD] source ~/.ip
+[2026-02-11 06:17:28] [pane=%0] [CMD] cat $IP
+[2026-02-11 06:17:34] [pane=%0] [CMD] echo $IP
+[2026-02-11 06:18:15] [pane=%0] [CMD] mkdir -p nmap ffuf loot evidence bloodhound
+[2026-02-11 06:20:48] [pane=%0] [CMD] nmap -p- --min-rate 3000 -Pn -oA nmap/SeaAllPorts $IP
+[2026-02-11 06:21:27] [pane=%0] [CMD] ll nmap
+[2026-02-11 06:26:11] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' nmap/SeaAllPorts.nmap  | cut -d/ -f1 | paste -sd,)
+[2026-02-11 06:26:17] [pane=%0] [CMD] echo $ports
+[2026-02-11 06:26:46] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/BabyServicesVersions.txt $IP
+[2026-02-11 06:29:41] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-02-11 06:31:55] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/SeaServicesVersions $IP
+[2026-02-11 06:35:12] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-02-11 06:37:55] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt
+[2026-02-11 06:39:07] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/combined_directories.txt
+[2026-02-11 06:41:36] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/combined_directories.txt -fc 403 -v
+[2026-02-11 06:45:29] [pane=%0] [CMD] wc -l /usr/share/seclists/Discovery/Web-Content/combined_directories.txt
+[2026-02-11 06:54:35] [pane=%0] [CMD] wc -l /usr/share/seclists/Discovery/Web-Content/combined_directories.txt
+[2026-02-11 07:03:16] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -fc 403 -v
+[2026-02-11 07:04:13] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -fc 403 -v -X POST
+[2026-02-11 07:05:54] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -fc 403 -v -X OPTIONS
+[2026-02-11 07:06:04] [pane=%1] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/Sea
+[2026-02-11 07:06:22] [pane=%1] [CMD] cat nmap/SeaServicesVersions
+[2026-02-11 07:10:35] [pane=%1] [CMD] : #note nmap done, 21 and 80 only. fuzzing website and found a contact page and a loginURL page with input field
+[2026-02-11 07:11:36] [pane=%0] [CMD] ffuf -u http://10.129.20.143/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -fc 403 -v -X GET
+[2026-02-12 09:15:31] [pane=%0] [CMD] curl -sI http://10.129.2.3
+[2026-02-14 14:29:30] [pane=%0] [CMD] ll
+[2026-02-14 14:43:50] [pane=%0] [CMD] echo export IP=10.129.6.48 > ~/.ip
+[2026-02-14 14:43:55] [pane=%0] [CMD] source ~/.ip

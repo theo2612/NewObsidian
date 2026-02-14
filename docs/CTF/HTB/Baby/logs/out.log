@@ -7231,3 +7231,20 @@
 [2026-02-07 16:03:18] [w=1:tmux] [p=%1] [OUT] ▽*Evil-WinRM* PS C:\Users\Administrator\Documents> *Evil-WinRM* PS C:\Users\Administrator\Documents> ccdcd cd .cd ..cd ../cd ../Dcd ../Decd ../Descd ../Deskcd ../Deskocd ../Deskcd ../Desktcd ../Desktocd ../Desktop*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ../Desktop
 [2026-02-07 16:03:30] [w=1:tmux] [p=%1] [OUT] *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> uyytyttytyptypetype type rtype rotype rootype roottype root.type root.ttype root.txtype root.txt*Evil-WinRM* PS C:\Users\Administrator\Desktop> type root.txt
 [2026-02-07 16:03:30] [w=1:tmux] [p=%1] [OUT] 14406432396b532e8cb30cb72ae4acbb
+[2026-02-11 05:53:08] [w=2:tmux] [p=%2] [OUT] exuutt=exut==  exutu ex exiftool http://10.129.228.112/jeeves.PNG 2>/dev/null || curl -s http://10.129.228.112/jeeves.PNG -o ../evidence/jeeves.PNG && exiftool ../evidence/jeeves.PNGexieeexiit
+[2026-02-11 05:53:09] [w=2:tmux] [p=%2] [OUT] exit
+[2026-02-11 05:53:09] [pane=%2] [CMD_START] exit
+[2026-02-11 05:53:11] [w=1:tmux] [p=%1] [OUT] *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop> *Evil-WinRM* PS C:\Users\Administrator\Desktop>
+[2026-02-11 05:53:12] [w=1:tmux] [p=%1] [OUT] ^C
+[2026-02-11 05:53:12] [w=1:tmux] [p=%1] [OUT] Warning: Press "y" to exit, press any other key to continue
+[2026-02-11 05:53:16] [w=1:tmux] [p=%1] [OUT] *Evil-WinRM* PS C:\> *Evil-WinRM* PS C:\> y
+[2026-02-11 05:53:16] [w=1:tmux] [p=%1] [OUT] Warning: Press "y" to exit, press any other key to continue
+[2026-02-11 05:53:16] [w=1:tmux] [p=%1] [OUT] Info: Exiting...
+[2026-02-11 05:53:19] [w=1:tmux] [p=%1] [OUT] exit
+[2026-02-11 05:53:19] [pane=%1] [CMD_START] exit
+[2026-02-11 05:53:22] [w=0:tmux] [p=%0] [OUT] *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> llll*Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public> *Evil-WinRM* PS C:\Users\Public>
+[2026-02-11 05:53:22] [w=0:tmux] [p=%0] [OUT] Warning: Press "y" to exit, press any other key to continue
+[2026-02-11 05:53:22] [w=0:tmux] [p=%0] [OUT] Info: Exiting...
+[2026-02-11 05:53:25] [w=0:tmux] [p=%0] [OUT] exyyty ex exiftool http://10.129.228.112/jeeves.PNG 2>/dev/null || curl -s http://10.129.228.112/jeeves.PNG -o ../evidence/jeeves.PNG && exiftool ../evidence/jeeves.PNGexi cexiit
+[2026-02-11 05:53:25] [w=0:tmux] [p=%0] [OUT] exit
+[2026-02-11 05:53:25] [pane=%0] [CMD_START] exit

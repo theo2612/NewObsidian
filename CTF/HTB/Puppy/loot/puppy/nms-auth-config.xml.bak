@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ldap-config>
+    <server>
+        <host>DC.PUPPY.HTB</host>
+        <port>389</port>
+        <base-dn>dc=PUPPY,dc=HTB</base-dn>
+        <bind-dn>cn=steph.cooper,dc=puppy,dc=htb</bind-dn>
+        <bind-password>ChefSteph2025!</bind-password>
+    </server>
+    <user-attributes>
+        <attribute name="username" ldap-attribute="uid" />
+        <attribute name="firstName" ldap-attribute="givenName" />
+        <attribute name="lastName" ldap-attribute="sn" />
+        <attribute name="email" ldap-attribute="mail" />
+    </user-attributes>
+    <group-attributes>
+        <attribute name="groupName" ldap-attribute="cn" />
+        <attribute name="groupMember" ldap-attribute="member" />
+    </group-attributes>
+    <search-filter>
+        <filter>(&(objectClass=person)(uid=%s))</filter>
+    </search-filter>
+</ldap-config>

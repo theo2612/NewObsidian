@@ -1,0 +1,217 @@
+﻿[PyScripter]
+Version=3.6.4.0
+
+[Project]
+ClassName=TProjectRootNode
+StoreRelativePaths=TRUE
+ShowFileExtensions=FALSE
+
+[Project\ChildNodes\Node0]
+ClassName=TProjectFilesNode
+
+[Project\ChildNodes\Node0\ChildNodes\Node0]
+ClassName=TProjectFolderNode
+Name=wapt
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node0]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\common.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\setuphelpers.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\setuphelpers_linux.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node3]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\setuphelpers_macos.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node4]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\setuphelpers_unix.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node5]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\setuphelpers_windows.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node6]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\wapt-get.ini
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node7]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\wapt-get.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes\Node8]
+ClassName=TProjectFileNode
+FileName=%(wapt_base_dir)s\waptpackage.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node0\ChildNodes]
+Count=9
+
+[Project\ChildNodes\Node0\ChildNodes\Node1]
+ClassName=TProjectFileNode
+FileName=$[Project-Path]changelog.txt
+
+[Project\ChildNodes\Node0\ChildNodes\Node2]
+ClassName=TProjectFileNode
+FileName=$[Project-Path]control
+
+[Project\ChildNodes\Node0\ChildNodes\Node3]
+ClassName=TProjectFileNode
+FileName=$[Project-Path]..\setup.py
+
+[Project\ChildNodes\Node0\ChildNodes\Node4]
+ClassName=TProjectFileNode
+FileName=$[Project-Path]..\update_package.py
+
+[Project\ChildNodes\Node0\ChildNodes]
+Count=5
+
+[Project\ChildNodes\Node1]
+ClassName=TProjectRunConfiguationsNode
+
+[Project\ChildNodes\Node1\ChildNodes\Node0]
+ClassName=TProjectRunConfiguationNode
+Name=WAPT: install
+
+[Project\ChildNodes\Node1\ChildNodes\Node0\RunConfig]
+ScriptName=%(wapt_base_dir)s\wapt-get.py
+Description=Launch package installation.
+EngineType=peRemote
+ReinitializeBeforeRun=TRUE
+Parameters=install "$[Project-Path].."
+WorkingDir=$[Project-Path]..
+WriteOutputToFile=FALSE
+OutputFileName=$[ActiveScript-NoExt].log
+AppendToFile=FALSE
+
+[Project\ChildNodes\Node1\ChildNodes\Node0\RunConfig\ExternalRun]
+Caption=External Run
+Description=Run script using an external Python Interpreter
+ApplicationName=$[PythonExe-Short]
+Parameters=$[ActiveScript-Short]
+WorkingDirectory=$[ActiveScript-Dir]
+
+[Project\ChildNodes\Node1\ChildNodes\Node1]
+ClassName=TProjectRunConfiguationNode
+Name=WAPT: remove
+
+[Project\ChildNodes\Node1\ChildNodes\Node1\RunConfig]
+ScriptName=%(wapt_base_dir)s\wapt-get.py
+Description=Launch uninstallation (the uninstallation code found in local wapt database, remember to launch after an installation).
+EngineType=peRemote
+ReinitializeBeforeRun=TRUE
+Parameters=remove "$[Project-Path].."
+WorkingDir=$[Project-Path]..
+WriteOutputToFile=FALSE
+OutputFileName=$[ActiveScript-NoExt].log
+AppendToFile=FALSE
+
+[Project\ChildNodes\Node1\ChildNodes\Node1\RunConfig\ExternalRun]
+Caption=External Run
+Description=Run script using an external Python Interpreter
+ApplicationName=$[PythonExe-Short]
+Parameters=$[ActiveScript-Short]
+WorkingDirectory=$[ActiveScript-Dir]
+
+[Project\ChildNodes\Node1\ChildNodes\Node2]
+ClassName=TProjectRunConfiguationNode
+Name=WAPT: uninstall
+
+[Project\ChildNodes\Node1\ChildNodes\Node2\RunConfig]
+ScriptName=%(wapt_base_dir)s\wapt-get.py
+Description=Launch uninstallation code (for debugging purpose, it only runs the code of uninstall function).
+EngineType=peRemote
+ReinitializeBeforeRun=TRUE
+Parameters=uninstall "$[Project-Path].."
+WorkingDir=$[Project-Path]..
+WriteOutputToFile=FALSE
+OutputFileName=$[ActiveScript-NoExt].log
+AppendToFile=FALSE
+
+[Project\ChildNodes\Node1\ChildNodes\Node2\RunConfig\ExternalRun]
+Caption=External Run
+Description=Run script using an external Python Interpreter
+ApplicationName=$[PythonExe-Short]
+Parameters=$[ActiveScript-Short]
+WorkingDirectory=$[Project-Path]..
+
+[Project\ChildNodes\Node1\ChildNodes\Node3]
+ClassName=TProjectRunConfiguationNode
+Name=WAPT: session-setup
+
+[Project\ChildNodes\Node1\ChildNodes\Node3\RunConfig]
+ScriptName=%(wapt_base_dir)s\wapt-get.py
+Description=Launch session-setup (it runs directly as current user).
+EngineType=peRemote
+ReinitializeBeforeRun=TRUE
+Parameters=session-setup "$[Project-Path].."
+WorkingDir=$[Project-Path]..
+WriteOutputToFile=FALSE
+OutputFileName=$[ActiveScript-NoExt].log
+AppendToFile=FALSE
+
+[Project\ChildNodes\Node1\ChildNodes\Node3\RunConfig\ExternalRun]
+Caption=External Run
+Description=Run script using an external Python Interpreter
+ApplicationName=$[PythonExe-Short]
+Parameters=$[ActiveScript-Short]
+WorkingDirectory=$[ActiveScript-Dir]
+
+[Project\ChildNodes\Node1\ChildNodes\Node4]
+ClassName=TProjectRunConfiguationNode
+Name=WAPT: audit
+
+[Project\ChildNodes\Node1\ChildNodes\Node4\RunConfig]
+ScriptName=%(wapt_base_dir)s\wapt-get.py
+Description=Launch package audit.
+EngineType=peRemote
+ReinitializeBeforeRun=TRUE
+Parameters=audit -f "$[Project-Path].."
+WorkingDir=$[Project-Path]..
+WriteOutputToFile=FALSE
+OutputFileName=$[ActiveScript-NoExt].log
+AppendToFile=FALSE
+
+[Project\ChildNodes\Node1\ChildNodes\Node4\RunConfig\ExternalRun]
+Caption=External Run
+Description=Run script using an external Python Interpreter
+ApplicationName=$[PythonExe-Short]
+Parameters=$[ActiveScript-Short]
+WorkingDirectory=$[ActiveScript-Dir]
+
+[Project\ChildNodes\Node1\ChildNodes\Node5]
+ClassName=TProjectRunConfiguationNode
+Name=WAPT: update-package
+
+[Project\ChildNodes\Node1\ChildNodes\Node5\RunConfig]
+ScriptName=%(wapt_base_dir)s\wapt-get.py
+Description=Launch update_package (it usually serve to update binaries of the package).
+EngineType=peRemote
+ReinitializeBeforeRun=TRUE
+Parameters=update-package-sources "$[Project-Path].."
+WorkingDir=$[Project-Path]..
+WriteOutputToFile=FALSE
+OutputFileName=$[ActiveScript-NoExt].log
+AppendToFile=FALSE
+
+[Project\ChildNodes\Node1\ChildNodes\Node5\RunConfig\ExternalRun]
+Caption=External Run
+Description=Run script using an external Python Interpreter
+ApplicationName=$[PythonExe-Short]
+Parameters=$[ActiveScript-Short]
+WorkingDirectory=$[ActiveScript-Dir]
+
+[Project\ChildNodes\Node1\ChildNodes]
+Count=6
+
+[Project\ChildNodes]
+Count=2
+
+[Project\ExtraPythonPath]
+Count=0
+

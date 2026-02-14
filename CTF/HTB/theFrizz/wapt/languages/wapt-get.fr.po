@@ -1,0 +1,128 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-01-22 10:13+0200\n"
+"Last-Translator: mcadorel-adm <ss>\n"
+"Language-Team: moi\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: uwaptres.rscanceled
+msgid "canceled"
+msgstr "Annulé"
+
+#: uwaptres.rscanceledtask
+msgid "Cancelled %s"
+msgstr "%s annulé"
+
+#: uwaptres.rscertificatecopyfailure
+msgid "Couldn't copy certificate %s to %s."
+msgstr "Echec de la copie du certificat %s vers %s."
+
+#: uwaptres.rscname
+msgid "CNAME: %s"
+msgstr "CNAME: %s"
+
+#: uwaptres.rscompletionprogress
+msgid "%s : %.0f%% completed"
+msgstr "%s : %.0f%% terminé"
+
+#: uwaptres.rsdlstoppedbyuser
+msgid "Download stopped by the user"
+msgstr "Téléchargement interrompu par l'utilisateur."
+
+#: uwaptres.rsdnsdomain
+msgid "DNS Domain : %s"
+msgstr "Domaine DNS : %s"
+
+#: uwaptres.rsdnsserver
+msgid "DNS Server : %s"
+msgstr "Serveur DNS : %s"
+
+#: uwaptres.rserrorcanceling
+msgid "Error cancelling: %s"
+msgstr "Erreur de l'annulation : %s"
+
+#: uwaptres.rserrorlaunchingupdate
+msgid "Error launching update: %s"
+msgstr "Erreur lors du lancement de la mise à jour : %s"
+
+#: uwaptres.rserrorlaunchingupgrade
+msgid "Error launching upgrade: %s"
+msgstr "Erreur lors du lancement de l'upgrade : %s"
+
+#: uwaptres.rserrorwithmessage
+msgctxt "uwaptres.rserrorwithmessage"
+msgid "Error : %s"
+msgstr "Erreur : %s"
+
+#: uwaptres.rsinnosetupunavailable
+msgid "Innosetup is unavailable (path : %s), please install it first."
+msgstr "Innosetup n'est pas disponible (emplacement : %s), veuillez l'installer en premier lieu."
+
+#: uwaptres.rsinstallon
+msgid "  install on c:\\wapt : --setup -s"
+msgstr "  installation sur c:\\wapt : --setup -s"
+
+#: uwaptres.rslongtaskerror
+msgid "Error launching longtask: %s"
+msgstr "Erreur lors du lancement de longtask : %s"
+
+#: uwaptres.rsmainrepourl
+msgid "Main repo url: %s"
+msgstr "URL du dépôt principal : %s"
+
+#: uwaptres.rsnorunningtask
+msgid "No running tasks"
+msgstr "Aucune tâche en cours"
+
+#: uwaptres.rsoptrepo
+msgid " -r --repo : URL of dependencies libs"
+msgstr " -r --repo : URL des librairies des dépendances"
+
+#: uwaptres.rspending
+msgid "Pending : "
+msgstr "En attente :"
+
+#: uwaptres.rsrunningtask
+msgid "Running task %d: %s, status:%s"
+msgstr "Exécution de la tâche %d : %s, statut :%s"
+
+#: uwaptres.rssrv
+msgid "SRV: %s"
+msgstr "SRV: %s"
+
+#: uwaptres.rsstoplistening
+msgid "Stop listening to events"
+msgstr "Interruption de l'écoute des événements"
+
+#: uwaptres.rstasklisterror
+msgid "Error getting task list: %s"
+msgstr "Erreur lors de la constitution de la liste : %s"
+
+#: uwaptres.rsundefwaptsrvinini
+msgid "wapt_server is not defined in your %s ini file"
+msgstr "wapt_server n'est pas défini dans votre fichier %s ini"
+
+#: uwaptres.rsusage
+msgid "Usage: %s -h"
+msgstr "Usage : %s -h"
+
+#: uwaptres.rswaptgetupgrade
+msgid "WAPT-GET Upgrade using repository at %s"
+msgstr "Upgrade de WAPT-get depuis le dépôt : %s"
+
+#: uwaptres.rswaptupgrade
+msgid " waptupgrade : upgrade wapt-get.exe and database"
+msgstr "WAPTupgrade : upgrade de wapt-get.exe et de la base de données"
+
+#: uwaptres.rswin32exewrapper
+msgid "Win32 Exe wrapper: %s %s"
+msgstr "Wrapper Win32.exe : %s %s"
+
+#: uwaptres.rswinterruptreceived
+msgid "W: interrupt received, killing serverâ¦"
+msgstr "W: Interception de l'interruption, arrêt du serveur"
+

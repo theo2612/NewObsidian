@@ -1,0 +1,52 @@
+# Nmap 7.98 scan initiated Sat Jan 24 14:14:28 2026 as: /usr/lib/nmap/nmap --privileged -p53,88,135,139,389,445,464,593,636,3268,5985,9389,49667,49693,49694,49695,49745,49780 -sSCV --min-rate=2000 -Pn -oN certifiedNmapServicesVersions.txt 10.129.231.186
+Nmap scan report for 10.129.231.186
+Host is up (0.035s latency).
+
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-01-25 02:13:51Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-01-25T02:15:24+00:00; +6h59m16s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Not valid before: 2025-06-11T21:05:29
+|_Not valid after:  2105-05-23T21:05:29
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Not valid before: 2025-06-11T21:05:29
+|_Not valid after:  2105-05-23T21:05:29
+|_ssl-date: 2026-01-25T02:15:24+00:00; +6h59m16s from scanner time.
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: certified.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-01-25T02:15:24+00:00; +6h59m16s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.certified.htb, DNS:certified.htb, DNS:CERTIFIED
+| Not valid before: 2025-06-11T21:05:29
+|_Not valid after:  2105-05-23T21:05:29
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+49667/tcp open  msrpc         Microsoft Windows RPC
+49693/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49694/tcp open  msrpc         Microsoft Windows RPC
+49695/tcp open  msrpc         Microsoft Windows RPC
+49745/tcp open  msrpc         Microsoft Windows RPC
+49780/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-01-25T02:14:47
+|_  start_date: N/A
+|_clock-skew: mean: 6h59m16s, deviation: 0s, median: 6h59m15s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 24 14:16:08 2026 -- 1 IP address (1 host up) scanned in 100.16 seconds

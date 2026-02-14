@@ -1,0 +1,33 @@
+# Nmap 7.95 scan initiated Sat Dec 27 14:31:25 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 --min-rate=3000 -Pn -oN AdministratorNmapOpenPorts.txt 10.10.11.42
+Nmap scan report for 10.10.11.42
+Host is up (0.030s latency).
+Not shown: 65509 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+9389/tcp  open  adws
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+54626/tcp open  unknown
+54637/tcp open  unknown
+54642/tcp open  unknown
+54645/tcp open  unknown
+54664/tcp open  unknown
+55783/tcp open  unknown
+
+# Nmap done at Sat Dec 27 14:31:40 2025 -- 1 IP address (1 host up) scanned in 14.98 seconds

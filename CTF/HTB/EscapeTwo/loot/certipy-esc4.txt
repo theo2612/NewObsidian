@@ -1,0 +1,90 @@
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 15 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'sequel-DC01-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'sequel-DC01-CA'
+[*] Checking web enrollment for CA 'sequel-DC01-CA' @ 'DC01.sequel.htb'
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : sequel-DC01-CA
+    DNS Name                            : DC01.sequel.htb
+    Certificate Subject                 : CN=sequel-DC01-CA, DC=sequel, DC=htb
+    Certificate Serial Number           : 152DBD2D8E9C079742C0F3BFF2A211D3
+    Certificate Validity Start          : 2024-06-08 16:50:40+00:00
+    Certificate Validity End            : 2124-06-08 17:00:40+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : SEQUEL.HTB\Administrators
+      Access Rights
+        ManageCa                        : SEQUEL.HTB\Administrators
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        ManageCertificates              : SEQUEL.HTB\Administrators
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Enroll                          : SEQUEL.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : DunderMifflinAuthentication
+    Display Name                        : Dunder Mifflin Authentication
+    Certificate Authorities             : sequel-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireCommonName
+    Enrollment Flag                     : PublishToDs
+                                          AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1000 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-01-15T22:01:28+00:00
+    Template Last Modified              : 2026-01-15T22:01:29+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Cert Publishers
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Cert Publishers
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Cert Publishers
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Cert Publishers
+    [+] User ACL Principals             : SEQUEL.HTB\Cert Publishers
+    [!] Vulnerabilities
+      ESC4                              : User has dangerous permissions.

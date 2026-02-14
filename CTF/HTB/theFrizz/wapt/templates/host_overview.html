@@ -1,0 +1,180 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  body {
+    font-family: Segoe UI;
+  }
+
+  table {
+    width:100%;
+  }
+
+  th {
+     text-align: left;
+  }
+   
+  th, td {
+    border-bottom: 1px solid #ddd;
+    padding:2px;
+  }
+
+  .danger {
+    color: red;
+  }
+
+  .correct {
+    color:green;
+  }
+
+  #windows {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADDSURBVEiJ7ZXBDYJAEEXfrKtXLWGvnqzB0IB2pBVpARAtAROMV/sQGQ9AQgLqqigx+o87f/+byRxGVJV3SLbxiNPAybOAMgAjDskcKg7UAQ7EgQ4BrgLqASbRYBxKtI+rAfdkJTrMmjvoDzEKKCig5yUQApP8wU8WslXur35qby+mtaQ/4HcBFtWpn9MeAbz9hT4wgcjGy5mmS2Dh7S/0/Uv+A7oHWDDzWyfvZYAG43VToXYy6SVFafdIA90d/VdVNnABJ+JY4qi0v3QAAAAASUVORK5CYII=)
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline;
+  }
+
+  #debian {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABDAAAAQwBlqf4UAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHxSURBVEiJrdU9axRRFAbg58QQLBR/gIKCgggm0YBWFhEtVFDERtHCUrBKJWJhY5NGEG3EQqwFkRTBiCKx0iZBlCBoY5HCIo0GYsgHx2Jmw2azM7sxvnDhzvk+997zTmSmBiLiFu7oHsu4mplvKi0yc21hAsPNsrqFH/iNwSqbnk1UW4WdGI+IPe2U/yMB7MariNjVqujt5BkRg7iJOUzjfWbOtTE9jBcRcTYzlxvC2g4iYhRj+IafOI7PEXGiNFlscTmFe111EBFXcAz9mTnfJP+ERziK02g++yFcWBeo6hXhJXrL/QEcKve9eNvQtfgPY6LjK4qIHZjNzJVStD8zv5YFrWChSVeLqjv4g9Wm7yNRoC8i9irupSu0vYPMXI2IRYiIUBzJCH5hAU+3lKCRJyKGMnMaUxExnc280iXqnul93FjL9g/BaxOUw/QwIkYiouNAVqHWMTNnIuI7BiPiS2Yu/Y8EfRGxvUU2g5428g2+3SR43WVxVVjn3+lspxTzMFTafsAS9ime7DwGFJTdFp3o+qJiBgYUbHoJHzGL6xjH+boAnTrYpviFLuN5KZtEf7kfw7W6AJ06SAVNTyqoGJ6hQdcP8KS0a4tOHZzDKO7iIC7jNk7ijIJxHyOqS9xI17nFVUvX76xn0c1itYyxhr9jUgkYCdhkKgAAAABJRU5ErkJggg==)
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline;
+  }
+  </style>
+</head>
+<body>
+ 
+<h2>{{ host_info.computer_name }}</h2>
+<h3>Overview</h3>
+{{# os }}
+{{/ os }}
+<table>
+  <tr>
+    <td>Domain</td><td><b>{{ host_info.domain_name }}</b></td>
+  </tr>
+  <tr>
+    <td>FQDN name</td><td><b>{{ Lower computer_fqdn }}</b></td>
+  </tr>
+  <tr>
+    <td>OS</td><td><div id="{{ host_capabilities.os }}"></div>{{ os_name }} <strong>{{^ host_info.windows_version_prettyname}}{{ host_info.os_version }}{{/ host_info.windows_version_prettyname}}{{ host_info.windows_version_prettyname }}</strong></td>
+  </tr>
+  <tr>
+    <td>Version de Wapt</td><td><strong>{{ wapt_status.wapt-version-full }} </td>
+  </tr>
+  <tr>
+    <td>Fabricant</td><td><strong>{{manufacturer}}</strong></td>
+  </tr>
+  <tr>
+    <td>Produit</td><td><strong>{{productname}}</strong></td>
+  </tr>
+  <tr>
+    <td>BIOS version</td><td><strong>{{#if manufacturer,"<>","Apple Inc." }}{{ dmi.BIOS_Information.Version }}{{/if}}{{#if manufacturer,"=","Apple Inc." }}{{ dmi.BIOS.Version }}{{/if}}</strong></td>
+  </tr>
+    
+  <tr>
+    <td>N° de série</td><td><strong>{{serialnr}}
+      {{#if manufacturer,"=","Acer" }}<input type="button" OnClick="https://www.acer.com/fr-fr/support?search={{serialnr}};{{sub serialnr,1,2}}.{{sub serialnr,3,5}}.{{sub serialnr,8,3}};{{productname}}&filter=global_download" value="Aller au support Acer"</input>{{/if}}
+      {{#if manufacturer,"=","Dell Inc." }}<input type="button" OnClick="https://www.dell.com/support/home/fr-fr/product-support/servicetag/{{serialnr}}/overview" value="Aller au support {{ manufacturer }}"</input>{{/if}}
+      {{#if manufacturer,"=","ASUSTeK COMPUTER INC." }}<input type="button" OnClick="https://www.asus.com/fr/supportonly/{{Lower productname}}/helpdesk_bios/" value="Aller au support {{ manufacturer }}"</input>{{/if}}
+      {{#if manufacturer,"=","LENOVO" }}<input type="button" OnClick="{{# HttpGetSafe ,"https://pcsupport.lenovo.com/fr/fr/api/v4/mse/getserial?productId=",serialnr }}https://pcsupport.lenovo.com/fr/fr/products/{{Lower Id}}" value="Aller au support {{ manufacturer }}{{/ HttpGetSafe }}"</input>       
+      {{/if}} 
+      {{#if manufacturer,"=","Hewlett-Packard" }}
+       {{# HttpGetSafe ,"https://support.hp.com/wcc-services/searchresult/fr-fr?q=",serialnr,"&context=pdp" }}
+        {{#data.searchResults}}
+          {{#categories}}
+            {{#subCategoryList}}
+              {{#productList}}
+          <input type="button" OnClick="https://support.hp.com/fr-fr/{{ targetUrl }}" value="Aller au support {{ manufacturer }}"</input>
+              {{/productList}}
+            {{/subCategoryList}}  
+          {{/categories}}
+        {{/data.searchResults}}
+       {{/ HttpGetSafe }}
+      {{/if}} 
+    </strong></td>
+  </tr>
+  <tr>
+    <td>CPU Name</td><td><strong>{{ host_info.cpu_name }}</strong></td>
+  </tr>
+  <tr>
+    <td>Physical RAM</td><td><strong>{{ HumanBytes host_metrics.physical_memory }}</strong></td>
+  </tr>
+  {{#  wmi.Win32_DesktopMonitor }}
+  {{#  ScreenWidth }}
+  <tr>
+    <td>#{{-index}} Screen resolution</td><td><strong>{{ ScreenWidth }} x {{ ScreenHeight }} ({{ wmi.Win32_DesktopMonitor.PixelsPerXLogicalInch }}dpi)</strong></td>
+  </tr>
+  {{/  ScreenWidth }}
+  {{/ wmi.Win32_DesktopMonitor }}
+
+  {{# values host_metrics.local_drives }}
+  {{#Size}}<tr>
+    <td>Drive {{ Name }}</td><td><strong>{{ HumanBytes Size}}</strong> (Free: {{HumanBytes FreeSpace}} {{FreePercent}}%)</td>
+  </tr>
+  {{/Size}}
+  {{/ values host_metrics.local_drives }}
+
+
+</table>
+
+{{# host_metrics.local_drives.C.FreePercent }}
+<h3>Space</h3>
+<table>
+  <tr>
+    <td>Free space (%)</td><td><b class="{{#if host_metrics.local_drives.C.FreePercent,<=,20}}danger{{/if}}">{{ host_metrics.local_drives.C.FreePercent }} %</b></td>
+  </tr>
+</table>
+{{/ host_metrics.local_drives.C.FreePercent  }}
+  
+  <h3>Local admin list</h3>
+  <ul>
+  {{#host_info.local_groups.Administrateurs}}
+		<li>{{.}}</li>
+	{{/host_info.local_groups.Administrateurs}}
+  {{#host_info.local_groups.Administrators}}
+		<li>{{.}}</li>
+	{{/host_info.local_groups.Administrators}}
+  {{#host_info.local_groups.sudo}}
+		<li>{{.}}</li>
+	{{/host_info.local_groups.sudo}}
+  {{#host_info.local_groups.root}}
+		<li>{{.}}</li>
+	{{/host_info.local_groups.root}}
+  </ul>
+  <h3>Connected ips:</h3>
+  <ul>
+  {{#connected_ips }}
+  <li>{{.}}</li>
+  {{/connected_ips}}
+  </ul>
+  <h3>Users:</h3>
+  <ul>
+  <li><b>{{ host_metrics.last_logged_on_user }} (last logged in)</b></li>
+  {{#host_info.profiles_users }}
+  <li>{{.}}</li>
+  {{/host_info.profiles_users}}
+  </ul>
+  <!-- 
+  <h3>Paquets</h3>
+      <ul>
+          {{.#installed_packages }}
+          <li>{{#name}}<strong>{{name}} </strong>{{/name}}({{package}} - {{version}})</li>
+          {{./installed_packages}}
+      </ul>
+      {{.^installed_packages }}
+      <div>Pas de paquets... </div>
+      {{./installed_packages}}
+  <h3>Logiciels</h3>
+      <ul>
+          {{.#installed_softwares }}
+          <li><strong>{{name}}</strong> ({{ version }}) {{#if install_date<>""}}installé le {{DateFmt install_date,"dd/mm/yyy"}}{{/if }}</li>
+          {{./installed_softwares}}
+      </ul>
+      {{.^installed_softwares }}
+      <div>Pas de logiciels... </div>
+      {{./installed_softwares}}
+   -->
+
+</body></html>

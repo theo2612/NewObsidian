@@ -1,0 +1,122 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tviswaptexit.actshowdetails.caption
+msgid "Show details"
+msgstr ""
+
+#: tviswaptexit.actskip.caption
+msgid "Not now"
+msgstr ""
+
+#: tviswaptexit.actstopcountdown.caption
+msgid "Stop count down"
+msgstr ""
+
+#: tviswaptexit.actupgrade.caption
+msgid "Install / Upgrade packages"
+msgstr ""
+
+#: tviswaptexit.caption
+msgid "WAPT Softwares Updates"
+msgstr ""
+
+#: tviswaptexit.cbskipwindowsupdates.caption
+msgid "Skip the installation of Windows Updates"
+msgstr ""
+
+#: tviswaptexit.labdontshutdown.caption
+msgid ""
+"Upgrades in progress...\n"
+"Don't shutdown your computer !"
+msgstr ""
+
+#: tviswaptexit.label1.caption
+msgid "Pending tasks"
+msgstr ""
+
+#: tviswaptexit.labpendingupgrades.caption
+msgid "Pending upgrades"
+msgstr ""
+
+#: tviswaptexit.labwaptupgrades.caption
+msgctxt "tviswaptexit.labwaptupgrades.caption"
+msgid "Checking if WAPT Packages installs or updates are pending."
+msgstr ""
+
+#: tviswaptexit.labwuaupgrades.caption
+msgid "Windows Updates pending."
+msgstr ""
+
+#: uwaptexitres.rscheckingupgrades
+msgctxt "uwaptexitres.rscheckingupgrades"
+msgid "Checking if WAPT Packages installs or updates are pending."
+msgstr ""
+
+#: uwaptexitres.rsclosing
+msgid "Closing..."
+msgstr ""
+
+#: uwaptexitres.rsconfirmcancelrunningtask
+#, object-pascal-format
+msgid "There is a running job %s. Are you sure you want to cancel it ? This may corrupt the current installation."
+msgstr ""
+
+#: uwaptexitres.rsconfirmcanceltask
+msgid "Confirm the cancellation of current task"
+msgstr ""
+
+#: uwaptexitres.rserrortriggeringtask
+#, object-pascal-format
+msgid "Error triggering action: %s"
+msgstr ""
+
+#: uwaptexitres.rserrorwininetflags
+#, object-pascal-format
+msgid "Internal error in SetToIgnoreCerticateErrors when trying to get wininet flags. %s"
+msgstr ""
+
+#: uwaptexitres.rsinterruptupdate
+msgid "Interrupt software update"
+msgstr ""
+
+#: uwaptexitres.rslaunchsoftwareupdate
+msgid "Launch software update"
+msgstr ""
+
+#: uwaptexitres.rspendingremoves
+#, object-pascal-format
+msgid "%d packages to uninstall"
+msgstr ""
+
+#: uwaptexitres.rssoftwareupdatein
+#, object-pascal-format
+msgid "Updating software in %s sec..."
+msgstr ""
+
+#: uwaptexitres.rsupdatesavailable
+#, object-pascal-format
+msgid "%d WAPT installs or updates pending"
+msgstr ""
+
+#: uwaptexitres.rsupdatingsoftware
+msgid "Updating software"
+msgstr ""
+
+#: uwaptexitres.rsupgraderunning
+msgid "Upgrade running..."
+msgstr ""
+
+#: uwaptexitres.rswaptservicenotrunning
+msgid "WAPTService is not running"
+msgstr ""
+
+#: uwaptexitres.rswaptupgradespending
+msgid "Some upgrades are pending, launch upgrades after timeout expired or manual action"
+msgstr ""
+
+#: uwaptexitres.rswuaupdatesavailable
+#, object-pascal-format
+msgid "%d Windows Updates pending"
+msgstr ""
+

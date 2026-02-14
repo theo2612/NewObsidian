@@ -1,0 +1,4 @@
+#!ipxe
+kernel http://ftp.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux auto=true fb=false priority=critical preseed/locale=en_US netcfg/get_hostname={{hostname}} url={{server_url}}api/v3/get_wads_config?mac_address=${net0/mac}&conf_only=true&ip_address=${net0/ip}&uuid=${uuid} DEBCONF_DEBUG=5
+initrd http://ftp.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz
+boot   

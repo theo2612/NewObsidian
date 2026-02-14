@@ -1,0 +1,125 @@
+msgid "Do you wish to apply them now ?"
+msgstr "Content-Type: text/plain; charset=UTF-8Voulez-vous les appliquer maintenant ?"
+
+#: tviswaptexit.actshowdetails.caption
+msgid "Show details"
+msgstr "Afficher les détails"
+
+#: tviswaptexit.actskip.caption
+msgid "Not now"
+msgstr "Pas maintenant"
+
+#: tviswaptexit.actstopcountdown.caption
+msgid "Stop count down"
+msgstr "Stopper le décompte"
+
+#: tviswaptexit.actupgrade.caption
+msgid "Install / Upgrade packages"
+msgstr "Installer ou mettre à jour"
+
+#: tviswaptexit.caption
+msgid "WAPT Softwares Updates"
+msgstr "WAPT - Mises à jour de logiciels "
+
+#: tviswaptexit.cbskipwindowsupdates.caption
+msgid "Skip the installation of Windows Updates"
+msgstr "Ne pas installer les mises à jour Windows"
+
+#: tviswaptexit.labdontshutdown.caption
+msgid ""
+"Upgrades in progress...\n"
+"Don't shutdown your computer !"
+msgstr ""
+"Mises à jour en cours\n"
+"Ne pas arrêter votre ordinateur\n"
+
+#: tviswaptexit.label1.caption
+msgid "Pending tasks"
+msgstr "Tâches en attente"
+
+#: tviswaptexit.labpendingupgrades.caption
+msgid "Pending upgrades"
+msgstr "Mises à jour en attente"
+
+#: tviswaptexit.labwaptupgrades.caption
+msgctxt "tviswaptexit.labwaptupgrades.caption"
+msgid "Checking if WAPT Packages installs or updates are pending."
+msgstr "Vérification des installations WAPT en attente"
+
+#: tviswaptexit.labwuaupgrades.caption
+msgid "Windows Updates pending."
+msgstr "Mises à jour Windows en attente"
+
+#: uwaptexitres.rscheckingupgrades
+msgctxt "uwaptexitres.rscheckingupgrades"
+msgid "Checking if WAPT Packages installs or updates are pending."
+msgstr "Vérification des installations WAPT en attente"
+
+#: uwaptexitres.rsclosing
+msgid "Closing..."
+msgstr "Fermeture..."
+
+#: uwaptexitres.rsconfirmcancelrunningtask
+#, object-pascal-format
+msgid "There is a running job %s. Are you sure you want to cancel it ? This may corrupt the current installation."
+msgstr "Il y a une tâche en cours %s. Êtes-vous sûr de vouloir l'arrêter ? Cela pourrait corrompre votre installation."
+
+#: uwaptexitres.rsconfirmcanceltask
+msgid "Confirm the cancellation of current task"
+msgstr "Confirmer l'arrêt de la tâche en cours"
+
+#: uwaptexitres.rserrortriggeringtask
+#, object-pascal-format
+msgid "Error triggering action: %s"
+msgstr "Erreur lors du lanacement de l'action: %s"
+
+#: uwaptexitres.rserrorwininetflags
+#, object-pascal-format
+msgid "Internal error in SetToIgnoreCerticateErrors when trying to get wininet flags. %s"
+msgstr "Erreur interne dans SetToIgnoreCerticateErrors, lors de l'acquisition des flags wininet. %s"
+
+#: uwaptexitres.rsinterruptupdate
+msgid "Interrupt software update"
+msgstr "Interrompre la mise à jour des logiciels"
+
+#: uwaptexitres.rslaunchsoftwareupdate
+msgid "Launch software update"
+msgstr "Lancer la mise à jour des logiciels"
+
+#: uwaptexitres.rspendingremoves
+#, object-pascal-format
+msgid "%d packages to uninstall"
+msgstr "%d paquets à désinstaller"
+
+#: uwaptexitres.rssoftwareupdatein
+#, object-pascal-format
+msgid "Updating software in %s sec..."
+msgstr "Mise à jour des logiciels dans %s sec..."
+
+#: uwaptexitres.rsupdatesavailable
+#, object-pascal-format
+msgctxt "uwaptexitres.rsupdatesavailable"
+msgid "%d WAPT installs or updates pending"
+msgstr "%d installations WAPT en attente"
+
+#: uwaptexitres.rsupdatingsoftware
+msgid "Updating software"
+msgstr "Mise à jour des logiciels"
+
+#: uwaptexitres.rsupgraderunning
+msgid "Upgrade running..."
+msgstr "Mises à jour en cours..."
+
+#: uwaptexitres.rswaptservicenotrunning
+msgid "WAPTService is not running"
+msgstr "Le service WAPT ne fonctionne pas"
+
+#: uwaptexitres.rswaptupgradespending
+msgid "Some upgrades are pending, launch upgrades after timeout expired or manual action"
+msgstr "Des mises à jour sont en attente, lancement après le délai ou sur action manuelle"
+
+#: uwaptexitres.rswuaupdatesavailable
+#, object-pascal-format
+msgid "%d Windows Updates pending"
+msgstr "%d Mises à jour Windows en attente"
+

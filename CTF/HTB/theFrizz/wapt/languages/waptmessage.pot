@@ -1,0 +1,41 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tviswaptmessage.caption
+msgid "Message"
+msgstr ""
+
+#: tviswaptmessage.panmessage.caption
+msgid "panMessage"
+msgstr ""
+
+#: uwaptmessageres.rsconfirmcaption
+msgid "Confirm"
+msgstr ""
+
+#: uwaptmessageres.rsconfirmopenurl
+#, object-pascal-format
+msgid ""
+"Are you sure you want to open URL \n"
+"%s\n"
+" in your browser ?"
+msgstr ""
+
+#: uwaptmessageres.rsconfirmpostform
+#, object-pascal-format
+msgid ""
+"You are about to send your answer to the URL\n"
+"%s\n"
+"Do you want to continue ?"
+msgstr ""
+
+#: uwaptmessageres.rshelp
+msgid ""
+"USAGE : waptmessage [-h] [-f file] [message] [-s widthXheight] \n"
+"-h  Display this help message.\n"
+"-b  <base64-string> : Load HTML message by decoding this base64 encoded string\n"
+"-f  <html filename> Reads message from a file.\n"
+"-c  initialize stdout console on windows (for STDOUT form post).\n"
+"-s <width>X<height> Requested size for the window.\n"
+msgstr ""
+

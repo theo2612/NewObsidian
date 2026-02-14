@@ -1,0 +1,76 @@
+[2026-01-14 20:59:57] [pane=%0] [CMD_START] echo "clean output test"
+[2026-01-14 20:59:57] [w=0:zsh] [p=%0] [OUT] clean output test
+[2026-01-14 21:00:09] [pane=%0] [CMD_START] ls /tmp | head -3
+[2026-01-14 21:00:09] [w=0:zsh] [p=%0] [OUT] claude
+[2026-01-14 21:00:09] [w=0:zsh] [p=%0] [OUT] claude-22b4-cwd
+[2026-01-14 21:00:09] [w=0:zsh] [p=%0] [OUT] claude-2c74-cwd
+[2026-01-14 21:00:17] [pane=%0] [CMD_START] whoami
+[2026-01-14 21:00:17] [w=0:zsh] [p=%0] [OUT] b7h30
+[2026-01-14 21:01:03] [pane=%0] [CMD_START] ping -c 3 10.10.11.51
+[2026-01-14 21:01:03] [w=0:zsh] [p=%0] [OUT] PING 10.10.11.51 (10.10.11.51) 56(84) bytes of data.
+[2026-01-14 21:01:03] [w=0:zsh] [p=%0] [OUT] 64 bytes from 10.10.11.51: icmp_seq=1 ttl=127 time=31.5 ms
+[2026-01-14 21:01:04] [w=0:zsh] [p=%0] [OUT] 64 bytes from 10.10.11.51: icmp_seq=2 ttl=127 time=30.0 ms
+[2026-01-14 21:01:05] [w=0:zsh] [p=%0] [OUT] 64 bytes from 10.10.11.51: icmp_seq=3 ttl=127 time=32.8 ms
+[2026-01-14 21:01:05] [w=0:zsh] [p=%0] [OUT] --- 10.10.11.51 ping statistics ---
+[2026-01-14 21:01:05] [w=0:zsh] [p=%0] [OUT] 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+[2026-01-14 21:01:05] [w=0:zsh] [p=%0] [OUT] rtt min/avg/max/mdev = 30.005/31.454/32.844/1.159 ms
+[2026-01-14 21:01:11] [pane=%0] [CMD_START] nxc smb 10.10.11.51 -u oscar -p '86LxLBMgEWaKUnBG' --shares
+[2026-01-14 21:01:12] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:False)
+[2026-01-14 21:01:13] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             [+] sequel.htb\oscar:86LxLBMgEWaKUnBG
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             [*] Enumerated shares
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             Share           Permissions     Remark
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             -----           -----------     ------
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             Accounting Department READ
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             ADMIN$                          Remote Admin
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             C$                              Default share
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             IPC$            READ            Remote IPC
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             NETLOGON        READ            Logon server share
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             SYSVOL          READ            Logon server share
+[2026-01-14 21:01:15] [w=0:zsh] [p=%0] [OUT] SMB         10.10.11.51     445    DC01             Users           READ
+[2026-01-14 21:01:54] [pane=%0] [CMD_START] ls -la /tmp | head -5
+[2026-01-14 21:01:54] [w=0:zsh] [p=%0] [OUT] total 33276
+[2026-01-14 21:01:54] [w=0:zsh] [p=%0] [OUT] drwxrwxrwt 24 root  root       920 Jan 14 21:01 .
+[2026-01-14 21:01:54] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 19 root  root      4096 Jan 14 00:16 ..
+[2026-01-14 21:01:54] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x  3 b7h30 b7h30       60 Jan 13 22:07 claude
+[2026-01-14 21:01:54] [w=0:zsh] [p=%0] [OUT] -rw-rw-r--  1 b7h30 b7h30       12 Jan 13 23:03 claude-22b4-cwd
+[2026-01-15 10:24:00] [pane=%0] [CMD_START] ll
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] total 18824
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30     5157 Nov 10 15:39  10.10.11.187_ldap-rootdse.txt
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 7 b7h30 b7h30     4096 Aug  6 15:12  bls
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30     4096 Dec 24 00:51  codex_agents
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30     1403 Aug  7 21:45  cracked_show.txt
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30     6078 Aug  7 22:01  creds_pairs_expanded.txt
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30     2692 Aug  7 21:46  creds_pairs.txt
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 2 b7h30 b7h30     4096 May 25  2025  Desktop
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 4 b7h30 b7h30     4096 Jan 12 22:16  Documents
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 3 b7h30 b7h30     4096 Jan  3 22:12  Downloads
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30   143836 Aug  7 08:03  exfil
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 4 b7h30 b7h30     4096 Jul 24 18:09  go
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 9 b7h30 b7h30     4096 Nov 26 14:36  htb
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 Dec 23 18:43 '""#{@htb_log_root}'
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30     4096 Aug 18 15:37  kali-audit
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30    89754 Aug 18 14:48  kali-audit.tgz
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rwxrwxr-x 1 b7h30 b7h30     5484 Aug 18 14:46  kali-inventory.sh
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30     4096 Dec 17 17:08  loot
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 2 b7h30 b7h30     4096 May 25  2025  Music
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rwxrwxr-x 1 b7h30 b7h30 18874368 Dec 15 19:56  ntds.dit
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 Nov 18 12:51  offsec
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 2 b7h30 b7h30     4096 Jan  4 07:41  Pictures
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 6 b7h30 b7h30     4096 May 26  2025  powerlevel10k
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 4 b7h30 b7h30     4096 Jan 14 21:43  Projects
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 2 b7h30 b7h30     4096 May 25  2025  Public
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 Jul 24 16:54  reports
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30     4096 Nov 18 12:51  results
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 Jul  8  2025  rsl
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 2 b7h30 b7h30     4096 Dec 17 16:47  s
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 May 27  2025  Sync
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 2 b7h30 b7h30     4096 May 25  2025  Templates
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwx------ 1 b7h30 b7h30        0 Jan 15 10:04  thinclient_drives
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 Jul  7  2025  thm
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30    19953 Dec 21 01:05  tmux-client-1518116.log
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 3 b7h30 b7h30     4096 Nov 10 15:34  tools
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] -rw-rw-r-- 1 b7h30 b7h30       51 Aug  7 21:23  users_try.txt
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxr-xr-x 2 b7h30 b7h30     4096 May 25  2025  Videos
+[2026-01-15 10:24:00] [w=0:zsh] [p=%0] [OUT] drwxrwxr-x 8 b7h30 b7h30     4096 Aug  8 16:13  writehat
+[2026-01-15 11:31:41] [pane=%0] [CMD_START] tmux kill-session-t TestLog 2>/dev/null
+[2026-01-15 11:31:47] [pane=%0] [CMD_START] tmux kill-session -t TestLog 2>/dev/null

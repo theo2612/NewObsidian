@@ -1,0 +1,59 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: utiscommandline.rsbadvalueforkeyininifile
+msgid "Invalid value % for the key % in ini file %"
+msgstr ""
+
+#: utiscommandline.rsconfigfiledoesnotexists
+msgid "Config file % does not exists"
+msgstr ""
+
+#: utiscommandline.rserroraddingoption
+msgid "Error when setting option \"%\": %"
+msgstr ""
+
+#: utiscommandline.rsinvalidvalueforoption
+msgid "Invalid value \"%\" for option \"%\": %"
+msgstr ""
+
+#: utiscommandline.rsmissingoptionforaction
+msgid "Missing required option \"%\" for action \"%\""
+msgstr ""
+
+#: utiscommandline.rsmissingvalueforoption
+msgid "missing value for option %"
+msgstr ""
+
+#: utiscommandline.rsnotafloatnumber
+msgid "value % is not a float number"
+msgstr ""
+
+#: utiscommandline.rsnotamemberof
+msgid "\"%\" is not one of %"
+msgstr ""
+
+#: utiscommandline.rsnotaninteger
+msgid "value % is not an integer"
+msgstr ""
+
+#: utiscommandline.rsnotenoughargsforaction
+msgid "Not enough args supplied for action \"%\". Minimum is %"
+msgstr ""
+
+#: utiscommandline.rsswitchdontexpectvalue
+msgid "switch % does not expect a value"
+msgstr ""
+
+#: utiscommandline.rstoomanyargsforaction
+msgid "Too many args supplied for action \"%\". Maximum is %"
+msgstr ""
+
+#: utiscommandline.rsunknownaction
+msgid "Unknown action %"
+msgstr ""
+
+#: utiscommandline.rsunknowncommandlineoption
+msgid "Unknown command line option \"%\""
+msgstr ""
+

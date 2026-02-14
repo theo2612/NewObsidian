@@ -1,0 +1,7 @@
+set verbose on
+set context persistent nowriters
+set metadata C:\Windows\Temp\0xdf.cab
+add volume c: alias 0xdf
+create
+expose %0xdf% e:
+

@@ -1,4 +1,5 @@
 site_name: RustBelt RedTeam Forge
+site_url: https://forge.b7h30.com
 
 theme:
     name: 'material'

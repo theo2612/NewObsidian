@@ -1,0 +1,120 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: uwaptres.rscanceled
+msgid "canceled"
+msgstr ""
+
+#: uwaptres.rscanceledtask
+msgid "Cancelled %s"
+msgstr ""
+
+#: uwaptres.rscertificatecopyfailure
+msgid "Couldn't copy certificate %s to %s."
+msgstr ""
+
+#: uwaptres.rscname
+msgid "CNAME: %s"
+msgstr ""
+
+#: uwaptres.rscompletionprogress
+msgid "%s : %.0f%% completed"
+msgstr ""
+
+#: uwaptres.rsdlstoppedbyuser
+msgid "Download stopped by the user"
+msgstr ""
+
+#: uwaptres.rsdnsdomain
+msgid "DNS Domain : %s"
+msgstr ""
+
+#: uwaptres.rsdnsserver
+msgid "DNS Server : %s"
+msgstr ""
+
+#: uwaptres.rserrorcanceling
+msgid "Error cancelling: %s"
+msgstr ""
+
+#: uwaptres.rserrorlaunchingupdate
+msgid "Error launching update: %s"
+msgstr ""
+
+#: uwaptres.rserrorlaunchingupgrade
+msgid "Error launching upgrade: %s"
+msgstr ""
+
+#: uwaptres.rserrorwithmessage
+msgctxt "uwaptres.rserrorwithmessage"
+msgid "Error : %s"
+msgstr ""
+
+#: uwaptres.rsinnosetupunavailable
+msgid "Innosetup is unavailable (path : %s), please install it first."
+msgstr ""
+
+#: uwaptres.rsinstallon
+msgid "  install on c:\\wapt : --setup -s"
+msgstr ""
+
+#: uwaptres.rslongtaskerror
+msgid "Error launching longtask: %s"
+msgstr ""
+
+#: uwaptres.rsmainrepourl
+msgid "Main repo url: %s"
+msgstr ""
+
+#: uwaptres.rsnorunningtask
+msgid "No running tasks"
+msgstr ""
+
+#: uwaptres.rsoptrepo
+msgid " -r --repo : URL of dependencies libs"
+msgstr ""
+
+#: uwaptres.rspending
+msgid "Pending : "
+msgstr ""
+
+#: uwaptres.rsrunningtask
+msgid "Running task %d: %s, status:%s"
+msgstr ""
+
+#: uwaptres.rssrv
+msgid "SRV: %s"
+msgstr ""
+
+#: uwaptres.rsstoplistening
+msgid "Stop listening to events"
+msgstr ""
+
+#: uwaptres.rstasklisterror
+msgid "Error getting task list: %s"
+msgstr ""
+
+#: uwaptres.rsundefwaptsrvinini
+msgid "wapt_server is not defined in your %s ini file"
+msgstr ""
+
+#: uwaptres.rsusage
+msgid "Usage: %s -h"
+msgstr ""
+
+#: uwaptres.rswaptgetupgrade
+msgid "WAPT-GET Upgrade using repository at %s"
+msgstr ""
+
+#: uwaptres.rswaptupgrade
+msgid " waptupgrade : upgrade wapt-get.exe and database"
+msgstr ""
+
+#: uwaptres.rswin32exewrapper
+msgid "Win32 Exe wrapper: %s %s"
+msgstr ""
+
+#: uwaptres.rswinterruptreceived
+msgid "W: interrupt received, killing serverâ¦"
+msgstr ""
+

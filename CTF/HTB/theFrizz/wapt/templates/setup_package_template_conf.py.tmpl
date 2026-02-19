@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+from setuphelpers import isfile
+
+def install():
+    WAPT.install_json_config_file('waptconfig.json', control.package)
+
+def uninstall():
+    WAPT.remove_json_config(control.package)
+
+def audit():
+    conf_location = WAPT.get_json_config_filename(control.package)
+
+    if isfile(conf_location):
+        print("Conf %s found" % (conf_location))
+        certificates = WAPT.get_json_config_certificates_filenames(control.package)
+        for crt in certificates:
+            if not isfile(crt):
+                print("Certificate %s not found" % (crt))
+                return "ERROR"
+            else:
+                print("Certificate %s found" % (crt))
+        return "OK"
+    else:
+        print("Conf %s not found" % (conf_location))
+        return "ERROR"

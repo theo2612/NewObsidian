@@ -1,0 +1,4 @@
+angela@sequel.htb:0fwz7Q4mSpurIt99
+oscar@sequel.htb:86LxLBMgEWaKUnBG
+kevin@sequel.htb:Md9Wlq1E5bZnVDVo
+sa@sequel.htb:MSSQLP@ssw0rd!

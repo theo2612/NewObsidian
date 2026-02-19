@@ -1,0 +1,3 @@
+[console_scripts]
+rpmfile = rpmfile.cli:console_script_entry_point
+

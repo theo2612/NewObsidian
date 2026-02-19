@@ -1,0 +1,3 @@
+# requesting: memberOf 
+memberOf: CN=Management,CN=Users,DC=certified,DC=htb
+memberOf: CN=Remote Management Users,CN=Builtin,DC=certified,DC=htb

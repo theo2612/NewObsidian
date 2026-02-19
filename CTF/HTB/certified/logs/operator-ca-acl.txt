@@ -1,0 +1,27 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=certified,DC=htb> with scope subtree
+# filter: (cn=operator ca)
+# requesting: nTSecurityDescriptor 
+#
+
+# operator ca, Users, certified.htb
+dn: CN=operator ca,CN=Users,DC=certified,DC=htb
+
+# search reference
+ref: ldap://ForestDnsZones.certified.htb/DC=ForestDnsZones,DC=certified,DC=htb
+
+# search reference
+ref: ldap://DomainDnsZones.certified.htb/DC=DomainDnsZones,DC=certified,DC=htb
+
+# search reference
+ref: ldap://certified.htb/CN=Configuration,DC=certified,DC=htb
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 5
+# numEntries: 1
+# numReferences: 3

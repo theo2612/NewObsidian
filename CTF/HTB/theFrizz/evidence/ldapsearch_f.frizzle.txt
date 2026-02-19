@@ -1,0 +1,133 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=frizz,DC=htb> with scope subtree
+# filter: (objectClass=user)
+# requesting: sAMAccountName description 
+#
+
+# Administrator, Users, frizz.htb
+dn: CN=Administrator,CN=Users,DC=frizz,DC=htb
+description: Built-in account for administering the computer/domain
+sAMAccountName: Administrator
+
+# Guest, Users, frizz.htb
+dn: CN=Guest,CN=Users,DC=frizz,DC=htb
+description: Built-in account for guest access to the computer/domain
+sAMAccountName: Guest
+
+# FRIZZDC, Domain Controllers, frizz.htb
+dn: CN=FRIZZDC,OU=Domain Controllers,DC=frizz,DC=htb
+sAMAccountName: FRIZZDC$
+
+# krbtgt, Users, frizz.htb
+dn: CN=krbtgt,CN=Users,DC=frizz,DC=htb
+description: Key Distribution Center Service Account
+sAMAccountName: krbtgt
+
+# f.frizzle, Class_Frizz, frizz.htb
+dn: CN=f.frizzle,OU=Class_Frizz,DC=frizz,DC=htb
+description: Wizard in Training
+sAMAccountName: f.frizzle
+
+# w.li, Class_Frizz, frizz.htb
+dn: CN=w.li,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: w.li
+
+# h.arm, Class_Frizz, frizz.htb
+dn: CN=h.arm,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: h.arm
+
+# M.SchoolBus, Class_Frizz, frizz.htb
+dn: CN=M.SchoolBus,OU=Class_Frizz,DC=frizz,DC=htb
+description: Desktop Administrator
+sAMAccountName: M.SchoolBus
+
+# d.hudson, Class_Frizz, frizz.htb
+dn: CN=d.hudson,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: d.hudson
+
+# k.franklin, Class_Frizz, frizz.htb
+dn: CN=k.franklin,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: k.franklin
+
+# l.awesome, Class_Frizz, frizz.htb
+dn: CN=l.awesome,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: l.awesome
+
+# t.wright, Class_Frizz, frizz.htb
+dn: CN=t.wright,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: t.wright
+
+# r.tennelli, Class_Frizz, frizz.htb
+dn: CN=r.tennelli,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: r.tennelli
+
+# J.perlstein, Class_Frizz, frizz.htb
+dn: CN=J.perlstein,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: J.perlstein
+
+# a.perlstein, Class_Frizz, frizz.htb
+dn: CN=a.perlstein,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: a.perlstein
+
+# p.terese, Class_Frizz, frizz.htb
+dn: CN=p.terese,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: p.terese
+
+# v.frizzle, Class_Frizz, frizz.htb
+dn: CN=v.frizzle,OU=Class_Frizz,DC=frizz,DC=htb
+description: The Wizard
+sAMAccountName: v.frizzle
+
+# g.frizzle, Class_Frizz, frizz.htb
+dn: CN=g.frizzle,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: g.frizzle
+
+# c.sandiego, Class_Frizz, frizz.htb
+dn: CN=c.sandiego,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: c.sandiego
+
+# c.ramon, Class_Frizz, frizz.htb
+dn: CN=c.ramon,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: c.ramon
+
+# m.ramon, Class_Frizz, frizz.htb
+dn: CN=m.ramon,OU=Class_Frizz,DC=frizz,DC=htb
+description: Student
+sAMAccountName: m.ramon
+
+# w.Webservice, Class_Frizz, frizz.htb
+dn: CN=w.Webservice,OU=Class_Frizz,DC=frizz,DC=htb
+description: Service for the website
+sAMAccountName: w.Webservice
+
+# search reference
+ref: ldap://ForestDnsZones.frizz.htb/DC=ForestDnsZones,DC=frizz,DC=htb
+
+# search reference
+ref: ldap://DomainDnsZones.frizz.htb/DC=DomainDnsZones,DC=frizz,DC=htb
+
+# search reference
+ref: ldap://frizz.htb/CN=Configuration,DC=frizz,DC=htb
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 26
+# numEntries: 22
+# numReferences: 3

@@ -1,0 +1,132 @@
+{
+    "version": "0.2.4",
+    "configurations": [
+        {
+            "name": "WAPT: install",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": false,
+            "program": "${config:python.wapt-get}",
+            "args": [
+                "install",
+                "--no-ide",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "linux": {
+                "sudo": true
+            },
+            "osx": {
+                "sudo": true
+            },
+            "python": "${command:python.interpreterPath}",
+            "pythonArgs": [
+                "-I"
+            ]
+        },
+        {
+            "name": "WAPT: remove",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": false,
+            "program": "${config:python.wapt-get}",
+            "args": [
+                "remove",
+                "--no-ide",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "linux": {
+                "sudo": true
+            },
+            "osx": {
+                "sudo": true
+            },
+            "python": "${command:python.interpreterPath}",
+            "pythonArgs": [
+                "-I"
+            ]
+        },
+        {
+            "name": "WAPT: uninstall",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": false,
+            "program": "${config:python.wapt-get}",
+            "args": [
+                "uninstall",
+                "--no-ide",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "linux": {
+                "sudo": true
+            },
+            "osx": {
+                "sudo": true
+            },
+            "python": "${command:python.interpreterPath}",
+            "pythonArgs": [
+                "-I"
+            ]
+        },
+        {
+            "name": "WAPT: session-setup",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": false,
+            "program": "${config:python.wapt-get}",
+            "args": [
+                "session-setup",
+                "--no-ide",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "python": "${command:python.interpreterPath}",
+            "pythonArgs": [
+                "-I"
+            ]
+        },
+        {
+            "name": "WAPT: audit",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": false,
+            "program": "${config:python.wapt-get}",
+            "args": [
+                "audit",
+                "-f",
+                "--no-ide",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "linux": {
+                "sudo": true
+            },
+            "osx": {
+                "sudo": true
+            },
+            "python": "${command:python.interpreterPath}",
+            "pythonArgs": [
+                "-I"
+            ]
+        },
+        {
+            "name": "WAPT: update-package",
+            "type": "python",
+            "request": "launch",
+            "justMyCode": false,
+            "program": "${config:python.wapt-get}",
+            "args": [
+                "update-package-sources",
+                "--no-ide",
+                "${workspaceFolder}"
+            ],
+            "console": "integratedTerminal",
+            "python": "${command:python.interpreterPath}",
+            "pythonArgs": [
+                "-I"
+            ]
+        }
+    ]
+}

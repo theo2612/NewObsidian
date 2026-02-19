@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Wed Feb 11 06:20:48 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate 3000 -Pn -oA nmap/SeaAllPorts 10.129.20.143
+Nmap scan report for 10.129.20.143
+Host is up (0.031s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Wed Feb 11 06:21:01 2026 -- 1 IP address (1 host up) scanned in 13.51 seconds

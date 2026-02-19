@@ -1,0 +1,413 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tfrmnextprevious.labpage.caption
+msgid "Page : 1/5"
+msgstr ""
+
+#: tfrmpackage.actcanceltask.caption
+msgid "ActCancelTask"
+msgstr ""
+
+#: tfrmpackage.btncancel.caption
+msgctxt "tfrmpackage.btncancel.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tfrmpackage.btninstallupgrade.caption
+msgctxt "tfrmpackage.btninstallupgrade.caption"
+msgid "Install"
+msgstr ""
+
+#: tfrmpackage.btnremove.caption
+msgctxt "tfrmpackage.btnremove.caption"
+msgid "Remove"
+msgstr ""
+
+#: tfrmpackage.labdate.caption
+msgid "19/12/2024"
+msgstr ""
+
+#: tfrmpackage.labdescription.caption
+msgid "Adobe AIR is a runtime for software created with Adobe Flash and ActionScript without using a web browser. oezkoezfezkofezkfezofezkfezofezkfezofezkfez"
+msgstr ""
+
+#: tfrmpackage.labelprogressioninstall.caption
+msgid "0%"
+msgstr ""
+
+#: tfrmpackage.labpackagename.caption
+msgid "tis-adobeair"
+msgstr ""
+
+#: tfrmpackage.labversion.caption
+msgid "1.5.2-0"
+msgstr ""
+
+#: tfrmpackage.textwaitinstall.caption
+msgctxt "tfrmpackage.textwaitinstall.caption"
+msgid "Waiting for install..."
+msgstr ""
+
+#: tvislogin.butcancel.caption
+msgctxt "tvislogin.butcancel.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tvislogin.caption
+msgid "Sign in"
+msgstr ""
+
+#: tvislogin.statictext1.caption
+msgid "Login : "
+msgstr ""
+
+#: tvislogin.statictext2.caption
+msgid "Password :"
+msgstr ""
+
+#: tvislogin.warningtext.caption
+msgid "Wrong password or login !"
+msgstr ""
+
+#: tvissettings.btnchangeuser.caption
+msgid "Change User"
+msgstr ""
+
+#: tvissettings.butcancel.caption
+msgctxt "tvissettings.butcancel.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tvissettings.caption
+msgid "Settings"
+msgstr ""
+
+#: tvissettings.labuser.caption
+msgctxt "tvissettings.labuser.caption"
+msgid "Current User:"
+msgstr ""
+
+#: tvissettings.language.caption
+msgid "Language : "
+msgstr ""
+
+#: tviswaptself.actcanceltask.caption
+msgid "Cancel task(s)"
+msgstr ""
+
+#: tviswaptself.acthidedetailsclick.caption
+msgctxt "tviswaptself.acthidedetailsclick.caption"
+msgid "Hide"
+msgstr ""
+
+#: tviswaptself.actsearchpackages.caption
+msgid "Search"
+msgstr ""
+
+#: tviswaptself.actshowtaskbar.caption
+msgctxt "tviswaptself.actshowtaskbar.caption"
+msgid "Task bar"
+msgstr ""
+
+#: tviswaptself.acttriggersearch.caption
+msgid "Trigger Search"
+msgstr ""
+
+#: tviswaptself.actupdatecatalogue.caption
+msgid "Update catalog"
+msgstr ""
+
+#: tviswaptself.actupdatepackageslist.caption
+msgid "ActUpdatePackagesList"
+msgstr ""
+
+#: tviswaptself.actupgradeall.caption
+msgid "Upgrade all"
+msgstr ""
+
+#: tviswaptself.btnclose.caption
+msgid "Close"
+msgstr ""
+
+#: tviswaptself.btnhidetaskbar.caption
+msgctxt "tviswaptself.btnhidetaskbar.caption"
+msgid "Hide"
+msgstr ""
+
+#: tviswaptself.caption
+msgid "WAPT Self-service"
+msgstr ""
+
+#: tviswaptself.labcategories.caption
+msgid "Categories"
+msgstr ""
+
+#: tviswaptself.labstatus.caption
+msgctxt "tviswaptself.labstatus.caption"
+msgid "Sorry there is no result found."
+msgstr ""
+
+#: tviswaptself.labuser.caption
+msgctxt "tviswaptself.labuser.caption"
+msgid "Current User:"
+msgstr ""
+
+#: tviswaptself.menuitem6.caption
+msgid "Select &All"
+msgstr ""
+
+#: tviswaptself.menuitemhtmlcopy.caption
+msgid "C&opy"
+msgstr ""
+
+#: tviswaptself.menuitemhtmlfind.caption
+msgid "F&ind"
+msgstr ""
+
+#: tviswaptself.packagesradiogrp.caption
+msgid "Packages"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[0].text
+msgid "ID"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[10].text
+msgid "result"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[11].text
+msgid "runstatus"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[12].text
+msgid "created_by"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[13].text
+msgid "progress"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[14].text
+msgid "summary"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[15].text
+msgid "finish_date"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[16].text
+msgid "classname"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[17].text
+msgid "logs"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[18].text
+msgid "pidlist"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[19].text
+msgid "usecache"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[1].text
+msgid "Status"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[20].text
+msgid "packagenames"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[21].text
+msgid "force"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[22].text
+msgid "task_status"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[23].text
+msgid "start_not_after"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[24].text
+msgid "start_not_before"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[2].text
+msgid "order"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[3].text
+msgid "Description"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[4].text
+msgid "priority"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[5].text
+msgid "notify_user"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[6].text
+msgid "start_date"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[7].text
+msgid "create_date"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[8].text
+msgid "notify_server_on_finish"
+msgstr ""
+
+#: tviswaptself.sogridtasks.header.columns[9].text
+msgid "notify_server_on_start"
+msgstr ""
+
+#: tviswaptself.sortbyradiogrp.caption
+msgid "Sort by"
+msgstr ""
+
+#: uwaptselfres.rsactioninstall
+msgctxt "uwaptselfres.rsactioninstall"
+msgid "Install"
+msgstr ""
+
+#: uwaptselfres.rsactionremove
+msgctxt "uwaptselfres.rsactionremove"
+msgid "Remove"
+msgstr ""
+
+#: uwaptselfres.rsactionupgrade
+msgid "Upgrade"
+msgstr ""
+
+#: uwaptselfres.rsallcategories
+msgctxt "uwaptselfres.rsallcategories"
+msgid "All"
+msgstr ""
+
+#: uwaptselfres.rscurrentuser
+#, object-pascal-format
+msgid "Current User : %s"
+msgstr ""
+
+#: uwaptselfres.rserrortriggeringtask
+#, object-pascal-format
+msgid "Error triggering action: %s"
+msgstr ""
+
+#: uwaptselfres.rsforce
+#, object-pascal-format
+msgid ""
+"An operation has failed do you want to force the installation/removal?\n"
+"Operation : %s"
+msgstr ""
+
+#: uwaptselfres.rsimpacted_processes
+#, object-pascal-format
+msgid ""
+"Some processes (see list below) may be closed during installation/removal.\n"
+"Do you want to continue ?\n"
+"Impacted processes : %s"
+msgstr ""
+
+#: uwaptselfres.rslogin
+msgid "Login"
+msgstr ""
+
+#: uwaptselfres.rsnopackagefound
+msgid "There is no result"
+msgstr ""
+
+#: uwaptselfres.rsno_rules
+msgid "There is no rules for self-service"
+msgstr ""
+
+#: uwaptselfres.rspassword
+msgid "Password"
+msgstr ""
+
+#: uwaptselfres.rsservicenotrunning
+msgctxt "uwaptselfres.rsservicenotrunning"
+msgid "The local Wapt service is not answering to our requests. It is problably not started. Aborting."
+msgstr ""
+
+#: uwaptselfres.rssortbydateasc
+msgid "Sort by date : asc"
+msgstr ""
+
+#: uwaptselfres.rssortbydatedesc
+msgid "Sort by date : desc"
+msgstr ""
+
+#: uwaptselfres.rssortbydatenewest
+msgid "Date : most recent"
+msgstr ""
+
+#: uwaptselfres.rssortbydateoldest
+msgid "Date : oldest"
+msgstr ""
+
+#: uwaptselfres.rssortbynameasc
+msgid "Name : A-Z"
+msgstr ""
+
+#: uwaptselfres.rssortbynamedec
+msgid "Name : Z-A"
+msgstr ""
+
+#: uwaptselfres.rsstatusall
+msgctxt "uwaptselfres.rsstatusall"
+msgid "All"
+msgstr ""
+
+#: uwaptselfres.rsstatusinstalled
+msgctxt "uwaptselfres.rsstatusinstalled"
+msgid "Installed"
+msgstr ""
+
+#: uwaptselfres.rsstatusnotinstalled
+msgid "Not Installed"
+msgstr ""
+
+#: uwaptselfres.rsstatuspckinstalled
+msgctxt "uwaptselfres.rsstatuspckinstalled"
+msgid "Installed"
+msgstr ""
+
+#: uwaptselfres.rsstatusupgradable
+msgid "Upgradable"
+msgstr ""
+
+#: uwaptselfres.rstaskbar
+msgctxt "uwaptselfres.rstaskbar"
+msgid "Task bar"
+msgstr ""
+
+#: uwaptselfres.rswaitinginstall
+msgctxt "uwaptselfres.rswaitinginstall"
+msgid "Waiting for install..."
+msgstr ""
+
+#: uwaptselfres.rswaitingremove
+msgid "Waiting for uninstall..."
+msgstr ""
+
+#: uwaptselfres.rswarningnologinorpassword
+msgid "Please enter a login/password"
+msgstr ""
+
+#: uwaptselfres.rswarningpasswordloginblank
+msgid "Your password or login is empty"
+msgstr ""
+
+#: uwaptselfres.rswrong_password_username
+msgid "Wrong username or password"
+msgstr ""
+

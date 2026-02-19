@@ -1,0 +1,8 @@
+# Nmap 7.95 scan initiated Sat Jan 10 01:06:29 2026 as: /usr/lib/nmap/nmap --privileged -p53,88,135,139,389,445,464,593,636,1433,3268,3269,5985,9389,47001,49664,49665,49666,49667,49689,49690,49693,49706,49722,49743,49798 -sSCV --min-rate=2000 -Pn -oN EscapeTwo/logs/nmap/NmapServicesVersions.txt 10.10.11.35
+Nmap scan report for CICADA-DC (10.10.11.35)
+Host is up.
+All 26 scanned ports on CICADA-DC (10.10.11.35) are in ignored states.
+Not shown: 26 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 10 01:06:36 2026 -- 1 IP address (1 host up) scanned in 7.44 seconds

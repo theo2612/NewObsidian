@@ -1,0 +1,536 @@
+Certificate Authorities
+  0
+    CA Name                             : sequel-DC-CA
+    DNS Name                            : dc.sequel.htb
+    Certificate Subject                 : CN=sequel-DC-CA, DC=sequel, DC=htb
+    Certificate Serial Number           : 1EF2FA9A7E6EADAD4F5382F4CE283101
+    Certificate Validity Start          : 2022-11-18 20:58:46+00:00
+    Certificate Validity End            : 2121-11-18 21:08:46+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : SEQUEL.HTB\Administrators
+      Access Rights
+        ManageCa                        : SEQUEL.HTB\Administrators
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        ManageCertificates              : SEQUEL.HTB\Administrators
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Enroll                          : SEQUEL.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : UserAuthentication
+    Display Name                        : UserAuthentication
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 10 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:10:22+00:00
+    Template Last Modified              : 2024-01-19T00:26:38+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Administrator
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Domain Users
+    [!] Vulnerabilities
+      ESC1                              : Enrollee supplies subject and template allows client authentication.
+  1
+    Template Name                       : KerberosAuthentication
+    Display Name                        : Kerberos Authentication
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDomainDns
+                                          SubjectAltRequireDns
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+                                          Smart Card Logon
+                                          KDC Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 50 years
+    Renewal Period                      : 50 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2024-01-18T23:13:28+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Enterprise Read-only Domain Controllers
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+        Write Property AutoEnroll       : SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+  2
+    Template Name                       : DirectoryEmailReplication
+    Display Name                        : Directory Email Replication
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDirectoryGuid
+                                          SubjectAltRequireDns
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Extended Key Usage                  : Directory Service Email Replication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Enterprise Read-only Domain Controllers
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+        Write Property AutoEnroll       : SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+  3
+    Template Name                       : DomainControllerAuthentication
+    Display Name                        : Domain Controller Authentication
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+                                          Smart Card Logon
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Enterprise Read-only Domain Controllers
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+        Write Property AutoEnroll       : SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+  4
+    Template Name                       : SubCA
+    Display Name                        : Subordinate Certification Authority
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : True
+    Any Purpose                         : True
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Private Key Flag                    : ExportableKey
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+  5
+    Template Name                       : WebServer
+    Display Name                        : Web Server
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+  6
+    Template Name                       : DomainController
+    Display Name                        : Domain Controller
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDirectoryGuid
+                                          SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Enterprise Read-only Domain Controllers
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Controllers
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Enterprise Domain Controllers
+  7
+    Template Name                       : Machine
+    Display Name                        : Computer
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Computers
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Computers
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Domain Computers
+    [*] Remarks
+      ESC2 Target Template              : Template can be targeted as part of ESC2 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.
+      ESC3 Target Template              : Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.
+  8
+    Template Name                       : EFSRecovery
+    Display Name                        : EFS Recovery Agent
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : File Recovery
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+  9
+    Template Name                       : Administrator
+    Display Name                        : Administrator
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Microsoft Trust List Signing
+                                          Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+  10
+    Template Name                       : EFS
+    Display Name                        : Basic EFS
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Domain Users
+  11
+    Template Name                       : User
+    Display Name                        : User
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:08:46+00:00
+    Template Last Modified              : 2022-11-18T21:08:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Domain Users
+    [*] Remarks
+      ESC2 Target Template              : Template can be targeted as part of ESC2 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.
+      ESC3 Target Template              : Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template has schema version 1.

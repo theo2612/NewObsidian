@@ -1,0 +1,54 @@
+# Nmap 7.98 scan initiated Fri Feb  6 17:29:01 2026 as: /usr/lib/nmap/nmap --privileged -p53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389,49664,49667,57920,57921,57929,59620,59632 -sSCV --min-rate=2000 -Pn -oN nmap/BabyServicesVersions.txt 10.129.234.71
+Nmap scan report for 10.129.234.71
+Host is up (0.031s latency).
+
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-02-06 22:29:12Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: baby.vl, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: baby.vl, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: BABY
+|   NetBIOS_Domain_Name: BABY
+|   NetBIOS_Computer_Name: BABYDC
+|   DNS_Domain_Name: baby.vl
+|   DNS_Computer_Name: BabyDC.baby.vl
+|   DNS_Tree_Name: baby.vl
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-02-06T22:30:03+00:00
+|_ssl-date: 2026-02-06T22:30:43+00:00; +5s from scanner time.
+| ssl-cert: Subject: commonName=BabyDC.baby.vl
+| Not valid before: 2026-02-05T20:51:38
+|_Not valid after:  2026-08-07T20:51:38
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp  open  mc-nmf        .NET Message Framing
+49664/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+57920/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+57921/tcp open  msrpc         Microsoft Windows RPC
+57929/tcp open  msrpc         Microsoft Windows RPC
+59620/tcp open  msrpc         Microsoft Windows RPC
+59632/tcp open  msrpc         Microsoft Windows RPC
+Service Info: Host: BABYDC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-02-06T22:30:04
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 4s, deviation: 0s, median: 3s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  6 17:30:40 2026 -- 1 IP address (1 host up) scanned in 98.58 seconds

@@ -1,0 +1,28 @@
+# Nmap 7.98 scan initiated Wed Jan 28 18:02:15 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=3000 -vvv -oN puppyNmapOpenPorts.txt 10.129.232.75
+Nmap scan report for 10.129.232.75
+Host is up, received echo-reply ttl 127 (0.031s latency).
+Scanned at 2026-01-28 18:02:15 EST for 44s
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack ttl 127
+111/tcp   open  rpcbind          syn-ack ttl 127
+135/tcp   open  msrpc            syn-ack ttl 127
+139/tcp   open  netbios-ssn      syn-ack ttl 127
+389/tcp   open  ldap             syn-ack ttl 127
+445/tcp   open  microsoft-ds     syn-ack ttl 127
+464/tcp   open  kpasswd5         syn-ack ttl 127
+636/tcp   open  ldapssl          syn-ack ttl 127
+2049/tcp  open  nfs              syn-ack ttl 127
+3260/tcp  open  iscsi            syn-ack ttl 127
+3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+49664/tcp open  unknown          syn-ack ttl 127
+49667/tcp open  unknown          syn-ack ttl 127
+49669/tcp open  unknown          syn-ack ttl 127
+49676/tcp open  unknown          syn-ack ttl 127
+49694/tcp open  unknown          syn-ack ttl 127
+60715/tcp open  unknown          syn-ack ttl 127
+61839/tcp open  unknown          syn-ack ttl 127
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Jan 28 18:02:59 2026 -- 1 IP address (1 host up) scanned in 44.44 seconds

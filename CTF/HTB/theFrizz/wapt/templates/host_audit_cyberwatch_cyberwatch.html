@@ -1,0 +1,143 @@
+<html>
+<style type="text/css">
+
+body {
+	font-family: Segoe UI;
+}
+
+h3 {
+	padding-top:10%!important;
+}
+
+.server_vulnerable {
+  color: #aa0202;
+  font-weight: bold;
+ }
+ 
+.server_compliant {
+  color: #51cc8a;
+  font-weight: bold;
+ }
+ 
+ .level_high {
+	color:white;
+	background-color: orange;
+	border: 5px solid #aa0202;
+	padding: 5px;
+ }
+ 
+  .level_critical {
+	color:white;
+	background-color: red;
+	border: 5px solid #aa0202;
+ }
+ 
+ 
+ table {
+	width:100%;
+}
+ th {
+ text-align: left;
+ }
+ 
+ th, td {
+  border-bottom: 1px solid #ddd;
+  padding:5px;
+}
+
+table.header td {
+	border-left: 5px solid #aa0202;
+	border-bottom: none;
+	padding-right: 30px;
+	vertical-align:middle;
+}
+
+.ok {
+	color:#51cc8a;
+  font-weight: bold;
+}
+
+.error {
+	color: #aa0202;
+}
+	
+.footer {
+	padding-top: 20px;
+}
+ 
+ </style>
+<body>
+
+<h2>{{value.hostname}}</h2>
+
+
+
+
+<table class="header">
+	<tr>
+		<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAsQAAALEBxi1JjQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMVSURBVEiJrdVbiJdVFAXwX9MYeRk1J81Gs5pqQuxqIiKWBFOQRReMSgop0yBhQuhCEVFQL0KB3YzAQuhmJXRHZkorJSofKqjoIaKLRhEFZWXpQNPDXn/m7zQzQbThg3POd87ea6+99jn8f3YGlv3Xw9MwB6eiY5j/C7AdG4b+OOhfEF2L4/ADvkMrZqA9axvxK7bgRLyIHXgQu0YL8ABa8DA+G2FPF+7CLLyPb3EuHsVirBkuwMlBfRv+yNpYLArysfgG7+EnnI9O/InlWKpoOhI7sb1lCCX34Z4478AjeE5x/3Ocz8J6bMq+q3BJnD8VirpxiqIRjMM2TM68G30JOpIdhbfwthLBy+jBOuzB2VTRBPXaoFyE1bgoCBdgJY7I3j14HPuxF1fjabRl7SRcmOCEipcybksmE1SR1+EhHNOE/HA8jzebkG/HObgYmxvoG3YzLsv4DixpymplxjOxCreqYr4W56/H2dHJAmYr+RKUZwUFnKk03ZlvQwKux/c4FCtwDR7Dbzn3NcZgkpL1jOYAk5XMpmM3BnBpHIxTel6KXzAv2W7CM6pWy+Nrh6oX1XztjQB7s9gh3ae68mOcrrjuD2UrVIHfxUTV3e05s6sJ+S5MpVS0P4sDBhuvH4fgd4zP2qd4FneGrs4mFoS+fRm3NoC3NDn9Eidk/AEW4hPMD33Xq4LuxI14Q12AX+TM8fgq4+kBgar+1Iy3BPlh6A2SLtV0a3G7knF39m9U10vj7JgA7ms4PzipzcZHGc/FO6GpB0/m2604vxefJ4t9oW0xpiTIPCWcrY0gE5JuSwL2Kl1TiunDlYrzmapLX8AtQTsxWTWK/YQSyQF2g9K2ONpmsHsn5d/9qqt7DD46U1TTLcx8vrqu/2Fj8ApOy/zYZLJ6uM3J9nIl4blZmzYkExz4HrSrq/kmfKjoOk8VfZlSyF/qFm0PgPWqSWeogq9Rch7RpqhrY1UCNKxNCWGOwSu9YUuCvGs0x83WqqjZiuvU6zTUJuMKvIq7A2BYG+3RHx90F6g+6VdZDShaetUj/+NoaP8GVqqvm9B0yMIAAAAASUVORK5CYII="/>&nbsp;Status<br/><b><span class="{{value.status}}">{{#if value.status="server_vulnerable"}} vulnerable {{/if}}{{#if value.status="server_compliant"}} server compliant {{/if}}</span></b></td>
+		<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3/OAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGQSURBVEiJtda/ihRBEMfxT+mCmYHgnqBuJKIgiIGo4BmZmhj5AIKBYHAvYGoiYiKCgVwuZop4D6CXHIpwmpkorBweCIIKcmUws8c6jDt/cAoaerq76tu/6upmIjMNaXvaLIqIhxGx1IuQmQsbziKx3LS2rrVRsIItjPsIWAiIiAnOYRW9UjRqmL+FB/jtfyuIiP24hkf4oqeCRSm6jieZ+Q1TFQURcTsiTjQBalMUEXtxE5fLoToFN/AdHyLiOK7WhPo8iogVTCoTh7CRmR/nALsKysM/iIu4i3t4j0+VOD9GeIftGvqLuf42Dsx9n8dTLEfEUZzElczcqQYZZeZaTfC/LDMzIn5GxL7M/IULWMMx3MFqXfCZc6uGDUzK/iucwn1FCR/5l1/TPZi3KcYRMS13vomXOJyZ1dzvWhfArJLO4G2ZkmcR8XyRU1fAWLH79dlgNrz3rZ7rOcCS4oBft3XqChgrHr/BAKexk5lbQwEu6bD7roCpoigGA3xVXKr1poW9AGU5PsabLoAY+rflD+iV4VQGCJq4AAAAAElFTkSuQmCC"/>&nbsp;Vulnérabilités prioritaires<br/><b><a href="{{value.cyberwatch_url}}/servers/{{value.id}}#server_cve_announcements">{{value.cve_announcements_count}}</a></b></td>
+		<td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAACxAAAAsQHGLUmNAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAN1JREFUSInt1DFqQkEQxvGf8ZWSxkukCIhI6hwgbcr0KYR0YmNnYWObIhAQhIAEyxQJFh7BIgSvIIJn0GJXELXIwnsQJX9YdmYHvuWbgeGfBDJ08IFWzHMR3dJGFz+4wxr9WKuinqA7w2r/8QvfMZ4LTra8xQ9/e0bHHEzRi+JXGO7UnjBIdHBAJrTpM97lBMG/wyVuUClCvC5Mfo0FrvMQLe3E77hFE8+Y4CHWHnGfoDvGC1wcKWbCgHMfcg1LoUXLmOdOBQ0FDblwznvZjRS87Jp4TXRwwHksu9NjA+rmRk0IqYNmAAAAAElFTkSuQmCC"/>&nbsp;Défauts de sécurité critiques / majeurs<br/><b>{{^ security_issues}}N/A{{/ security_issues}}{{ security_issues}}</b></td>
+	</tr>
+</table>
+<br/>
+<a href="{{value.cyberwatch_url}}/servers/{{value.id}}#server_summary">See full report on Cyberwatch</a>
+
+
+	<h3>Security issues</h3>
+	{{^ values value.security_issues}}
+	N/A
+	{{/ values value.security_issues}}
+	
+	<table>
+	{{# value.security_issues}}
+		<tr>
+			<th>Detection date</th>
+			<th>Title</th>
+			<th>Level</th>
+		</tr>
+	{{/ value.security_issues}}
+		{{# values value.security_issues}}
+		<tr>
+		<td>{{detected_at}}</td> <td>{{title}}</td> <td><span class="{{level}}">{{#if level="level_high"}}important{{/if}}{{#if level="level_critical"}}critical{{/if}}</span></td>
+		</tr>
+		{{/ values value.security_issues}}
+	</table>
+	<a href="{{value.cyberwatch_url}}/servers/{{value.id}}#server_security_issues">See full report on Cyberwatch</a>
+
+	<h3>Required patches</h3>
+	
+	
+	{{^ value.updates}}
+	N/A
+	{{/ value.updates}}
+	<table>
+	{{# value.updates}}
+	<tr>
+		<th>Technologie</th>
+		<th>Action corrective</th>
+	</tr>
+	{{/ value.updates}}
+
+	{{# values value.updates}}
+	<tr>
+	  <td>{{current.product}} ({{target.product}}) </td><td> <span class="error">{{current.version}}</span> <span>&#8594;</span> <span class="ok">{{target.version}}</span></td>
+	  {{# show_cve}}
+	  CVE list : 
+	  <ul>
+	  {{# cve_announcements }}
+	  <li><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name={{.}}">{{.}}</a></li>
+	  {{/ cve_announcements }}
+	  </ul>
+	  {{/ show_cve}}
+	</tr>
+	{{/ values value.updates}}
+	</table>
+	<a href="{{value.cyberwatch_url}}/servers/{{value.id}}#server_updates">See full report on Cyberwatch</a>
+<div class="footer">
+	<span>
+		<i>Powered by WAPT x Cyberwatch</i>
+	</span>
+</div>
+</body>
+</html>

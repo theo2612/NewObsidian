@@ -1,0 +1,11 @@
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+	NETLOGON        Disk      Logon server share 
+	Public          Disk      
+	SYSVOL          Disk      Logon server share 
+Reconnecting with SMB1 for workgroup listing.
+Unable to connect with SMB1 -- no workgroup available

@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+from setuphelpers import *
+
+r"""
+Usable WAPT package functions: install(), uninstall(), session_setup(), audit(), update_package()
+
+"""
+# Declaring global variables - Warnings: 1) WAPT context is only available in package functions; 2) Global variables are not persistent between calls
+
+
+def install():
+    run(r'"%(installer)s" %(silentflags)s')
+
+
+

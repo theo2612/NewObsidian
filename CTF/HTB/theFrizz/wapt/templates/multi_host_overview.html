@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+  <table border=1 cellpadding=2 cellspacing=0>
+  <tr><th>Name</th><th>Description</th><th>OS</th><th>Users</th><th>IP</th><!--<th>IP externe</th>--></tr>
+  {{#selected}}
+      <tr>
+        <td>{{Lower computer_fqdn }}</td>
+        <td>{{description}}</td>
+        <td>{{os_name}}</td>
+        <td>{{{connected_users}}}</td>
+        <td>{{main_ip}}</td>
+        <!--<td>{{host_audit/reportlocation/geoip/value/ip}}<br>{{host_audit/reportlocation/geoip/value/city}} </td>-->
+      </tr>
+  {{/selected}}
+  </table>
+</body>
+</html>

@@ -1,0 +1,330 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: uwaptres.rsbuildwaptagent
+msgid "Building customized waptagent.exe installer"
+msgstr "Création de l'installeur waptagent.exe personnalisé"
+
+#: uwaptres.rsbuildwaptupgradepackage
+msgid "Building waptupgrade package"
+msgstr "Création du paquet waptupgrade"
+
+#: uwaptres.rscanceled
+msgid "canceled"
+msgstr "Annulé"
+
+#: uwaptres.rscanceledtask
+#, object-pascal-format
+msgid "Cancelled %s"
+msgstr "Annulé %s"
+
+#: uwaptres.rscertificatecopyfailure
+#, object-pascal-format
+msgid "Couldn't copy certificate %s to %s."
+msgstr "Impossible de copier le certificat %s dans %s."
+
+#: uwaptres.rscertificateorkeyinitilizationerror
+msgid "Couldn't not properly initialize the key or certificate"
+msgstr ""
+
+#: uwaptres.rscheckserverexehashfailed
+msgid "Checking hashes of executables on server (waptbinaries.sha256) against Tranquil IT certificate has failed: %."
+msgstr "La vérification de la signature Tranquil IT des hashes des binaires du serveur (waptbinaries.sha256) a échoué: %."
+
+#: uwaptres.rscname
+#, object-pascal-format
+msgid "CNAME: %s"
+msgstr ""
+
+#: uwaptres.rscompletionprogress
+#, object-pascal-format
+msgid "%s : %.0f%% completed"
+msgstr "%s : %.0f%% complété"
+
+#: uwaptres.rsdnsdomain
+#, object-pascal-format
+msgid "DNS Domain : %s"
+msgstr "Domaine DNS : %s"
+
+#: uwaptres.rsdnsserver
+#, object-pascal-format
+msgid "DNS Server : %s"
+msgstr "Serveur DNS : %s"
+
+#: uwaptres.rserrorcanceling
+#, object-pascal-format
+msgid "Error cancelling: %s"
+msgstr "Erreur annulation : %s"
+
+#: uwaptres.rserrorlaunchingregister
+#, object-pascal-format
+msgid "Error launching register: %s"
+msgstr "Erreur, lancement d'un enregistrement : %s"
+
+#: uwaptres.rserrorlaunchingupdate
+#, object-pascal-format
+msgid "Error launching update: %s"
+msgstr "Erreur au lancement de la mise à jour : %s"
+
+#: uwaptres.rserrorlaunchingupgrade
+#, object-pascal-format
+msgid "Error launching upgrade: %s"
+msgstr "Erreur au lancement de l'application de la mise à jour: %s"
+
+#: uwaptres.rserrorrenamingfolder
+#, object-pascal-format
+msgid ""
+"Can't rename %s in %s\n"
+"try to close opened files in this directory"
+msgstr ""
+
+#: uwaptres.rserrorwithmessage
+#, object-pascal-format
+msgid "Error : %s"
+msgstr "Erreur : %s"
+
+#: uwaptres.rsinnosetupunavailable
+#, object-pascal-format
+msgid "Innosetup is unavailable (path : %s), please install it first."
+msgstr "Innosetup n'est pas disponible (chemin : %s), veuillez l'installer d'abord."
+
+#: uwaptres.rsinstallon
+msgid "  install on c:\\wapt : --setup -s"
+msgstr "  installer sur c:\\wapt : --setup -s"
+
+#: uwaptres.rslongtaskerror
+#, object-pascal-format
+msgid "Error launching longtask: %s"
+msgstr "Erreur au lancement d'une tâche longue : %s"
+
+#: uwaptres.rsmainrepourl
+#, object-pascal-format
+msgid "Main repo url: %s"
+msgstr "Url principale du dépôt: %s"
+
+#: uwaptres.rsnopubliccertsdir
+msgid "Public certs dir % does not exist"
+msgstr "Le dossier de certificats % n'existe pas"
+
+#: uwaptres.rsnorunningtask
+msgid "No running tasks"
+msgstr "Pas de tâche lancée"
+
+#: uwaptres.rsoptrepo
+msgid " -r --repo : URL of dependencies libs"
+msgstr ""
+
+#: uwaptres.rspackagesourcesnotupdated
+#, object-pascal-format
+msgctxt "uwaptres.rspackagesourcesnotupdated"
+msgid "Package %s already up-to-date : update-package skipped."
+msgstr "Le paquet %s est déjà à jour : update-package est ignoré."
+
+#: uwaptres.rspackageversionupdated
+#, object-pascal-format
+msgid "Package %s version updated to %s (before %s), do you want to upload the new package ?"
+msgstr ""
+
+#: uwaptres.rspending
+msgid "Pending : "
+msgstr "En attente : "
+
+#: uwaptres.rsqueryapplyupdates
+msgid "Some of your changes are not yet saved. Do you want to save your changes ?"
+msgstr "Certains de vos changements ne sont pas sauvés. Voulez-vous les sauvegarder ?"
+
+#: uwaptres.rsrunningtask
+#, object-pascal-format
+msgid "Running task %d: %s, status:%s"
+msgstr "Lancement de la tâche %d: %s, Statut : %s"
+
+#: uwaptres.rsservercertificatewithoutaltnames
+msgid "The https server certificate % has no Subject Alt Names. Some https client will likely fail to check it. (see RFC2818 3.1)"
+msgstr "The certificat https du serveur % n'a pas de Subject Alt Names. Certains clients https vont probablement ne pas pouvoir se connecter (see RFC2818 3.1)"
+
+#: uwaptres.rssrvwapt
+#, object-pascal-format
+msgid "wapt SRV: %s"
+msgstr ""
+
+#: uwaptres.rssrvwaptserver
+#, object-pascal-format
+msgid "waptserver SRV: %s"
+msgstr ""
+
+#: uwaptres.rsstoplistening
+msgid "Stop listening to events"
+msgstr "Arrêt de l'écoute des événements"
+
+#: uwaptres.rstasklisterror
+#, object-pascal-format
+msgid "Error getting task list: %s"
+msgstr "Erreur lors de l'obtention de la liste de tâche : %s"
+
+#: uwaptres.rsunabletogetservercertificateforurl
+msgid "Unable to get https server certificate for url %: %"
+msgstr "Erreur à l'extraction du certificat https du serveur pour l'URL %: %"
+
+#: uwaptres.rsundefwaptsrvinini
+#, object-pascal-format
+msgid "wapt_server is not defined in your %s ini file"
+msgstr "wapt_server n'est pas défini dans votre (%s) fichier ini"
+
+#: uwaptres.rsuploading
+#, fuzzy, badformat
+msgid "Uploading %"
+msgstr "Envoi %s"
+
+#: uwaptres.rsuploadinprogresstitle
+msgid "Started uploading to WAPT server..."
+msgstr "Démarrage de l'envoi au serveur WAPT..."
+
+#: uwaptres.rsuploadwaptagent
+msgid "Uploading customized waptagent.exe installer"
+msgstr "Envoi de l'installeur waptagent.exe customisé"
+
+#: uwaptres.rsusage
+#, object-pascal-format
+msgid "Usage: %s -h"
+msgstr ""
+
+#: uwaptres.rswaptdeployversionmismatch
+msgid "waptdeploy.exe version % is not matching waptsetup.exe %"
+msgstr "La version de waptdeploy.exe % ne correspond pas à la version de waptsetup.exe %"
+
+#: uwaptres.rswaptgethelp
+msgid ""
+" waptupgrade : download waptsetup.exe from wapt repository and run it silently.\n"
+"   --repourl=<url> : URL of wapt repository where to get waptagent/waptsetup.exe.\n"
+" tasks : check if some tasks are running or pending in queue\n"
+" check-licences : display status of licences on the server\n"
+" add-licence <filename.lic> : register a licence on the server\n"
+" build-waptagent : get waptsetup.exe from server, and stuff it with current agent configuration (-c parameter). \n"
+"                   build a waptupgrade package, and upload both to server.\n"
+"                   the embedded config is named \"default\" or can be specified with --config-name=<name>\n"
+"   --config-name=<name>  set the name of the configuration in installer.\n"
+"   --DeployWaptAgentLocally copyt waptagent and waptupgrade to local server repository location instead of remote server upload.\n"
+" create-keycert [options] :\n"
+"   --CommonName= common name\n"
+"   --CommonName64= common name encoded in base64 (if accents, spaces etc...)\n"
+"   --CodeSigning=0/1 (default: 1)\n"
+"   --CA=0/1 (default: 1)\n"
+"   --ClientAuth=0/1 (default: 1)\n"
+"   --PrivateKeyPassword64=\n"
+"   --PrivateKeyPassword=\n"
+"   -NoPrivateKeyPassword\n"
+"   -F : force overwrite existing\n"
+"   --Country=\n"
+"   --Locality=\n"
+"   --Organization=\n"
+"   --OrgUnit=\n"
+"   --Email=\n"
+"   --CAKeyFilename= (default: default_ca_key_path in waptconsole.ini)\n"
+"   --CACertFilename= (default: default_ca_cert_path in waptconsole.ini)\n"
+"   --CAKeyPassword=\n"
+"   --NoCAKeyPassword : CA key is not encrypted\n"
+"   --BaseDir= directory where to store created keys and certificates (default: personal_certificate_path directory of waptconsole.ini)\n"
+"   --EnrollNewCert: copies the certificate to wapt\\ssl\n"
+"   --SetAsDefaultPersonalCert: certificate path is set to personal_certificate_path of waptconsole.ini\n"
+"\n"
+"Agent configuration using Json \n"
+"-------------------------\n"
+"   add-config-from-url <url>   : append a dynamic json config to conf.d, extract trusted certificates.\n"
+"     --json-config-name=<name>  overwrite the name of configuration.\n"
+"     --json-config-priority=<number>  specify configuration order. lower priorities are overwritten by higher priorities.\n"
+"   reset-config-from-url <url> : removes all previous config/certificates and dynamic config and apply json to wapt-get.ini\n"
+"   set-config-from-url <url>   : overwrite wapt-get.ini with json config, keep dynamic configs\n"
+"\n"
+"Debug tools\n"
+"------------\n"
+"   ping                     : check if local agent service is running.\n"
+"   check-json <filename>    : check the signature of a json wapt file (rules, ...) against wapt\\ssl certificates.\n"
+"   dmiinfo                  : output the DMI hardware informations from system BIOS.\n"
+"   sysinfo                  : output the basic system informations (uuid,manufacturer, model, bios, serial...).\n"
+"   dnsdebug                 : display some informations about DNS configuration.\n"
+"   checkport  <ip:port>     : Check if TCP <port> is opened on <ip> host..\n"
+"   check-package <package-filename1> [<package-filename2>, ..] : Check signature of packages (unzip them in temporary dir)\n"
+"   check-valid-codesigning-cert      : Check that current waptconsole configuration has a proper codesigning certificate and private key.\n"
+msgstr ""
+
+#: uwaptres.rswaptgetupgrade
+#, object-pascal-format
+msgid "WAPT-GET Upgrade using repository at %s"
+msgstr "WAPT-GET Upgrade utilisant le dépôt suivant : %s"
+
+#: uwaptres.rswaptlicencebadserveruuid
+msgid "Licence has not been activated for this server uuid."
+msgstr "La licence n'a pas été activée pour cet identifiant de serveur."
+
+#: uwaptres.rswaptlicenceduplicated
+#, object-pascal-format
+msgid "Duplicated licence nr %s"
+msgstr "Licence dupliquée nr %s"
+
+#: uwaptres.rswaptlicenceexpirationwarning
+#, object-pascal-format
+msgid "Licence will expire in %d days, keep in mind to renew them."
+msgstr "Votre licence va expirer dans %d jour(s), n'oubliez pas de la renouveler."
+
+#: uwaptres.rswaptlicenceexpired
+#, object-pascal-format
+msgid "Expired licence: %s with nr %s"
+msgstr "La licence %s avec nr %s a expiré."
+
+#: uwaptres.rswaptlicencenotvalid
+#, object-pascal-format
+msgid ""
+"Unable to read licence:\n"
+"%s\n"
+"The following exception occurs:\n"
+"%s\n"
+msgstr ""
+"Impossible de lire la licence :\n"
+"%s\n"
+"L'exception suivant a eu lieu :\n"
+"%s\n"
+
+#: uwaptres.rswaptlicencenotyetvalid
+#, object-pascal-format
+msgid "Not yet valid licence: %s with nr %s"
+msgstr "La licence %s no %s n'est pas encore valide."
+
+#: uwaptres.rswaptlicencetoomanyhosts
+#, object-pascal-format
+msgid "Maximum number of hosts (%d/%d) reached, switching to Wapt %s mode."
+msgstr "Le nombre maximum de machines autorisées par la licence a été atteint (%d/%d), passage en mode %s."
+
+#: uwaptres.rswaptnovalidlicencefound
+#, object-pascal-format
+msgid "No valid licence found for server %s, switching to Wapt %s mode"
+msgstr "Pas de licence valide trouvée pour le serveur %s, passage en mode %s"
+
+#: uwaptres.rswaptserverunreachable
+msgid "Waptserver access error %"
+msgstr "Erreur d'accès au serveur Wapt %"
+
+#: uwaptres.rswin32exewrapper
+#, object-pascal-format
+msgid "%s: %s %s"
+msgstr ""
+
+#: uwaptres.rswinterruptreceived
+msgid "W: interrupt received, killing server…"
+msgstr ""
+
+#: uwaptres.rswssrunning
+msgid "WAPTService is running"
+msgstr "Le service WAPTService est en cours"
+
+#: uwaptres.rswssstarting
+msgid "WAPTService is starting"
+msgstr "Le service WAPTService est en cours de démarrage"
+
+#: uwaptres.rswssstopped
+msgid "WAPTService stopped"
+msgstr "Le service WAPTService est arrêté"
+
+#: uwaptres.rswssstopping
+msgid "WAPTService is stopping"
+msgstr "Le service WAPTService est en cours d'arrêt"
+

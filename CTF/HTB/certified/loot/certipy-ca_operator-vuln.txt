@@ -1,0 +1,90 @@
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 15 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'certified-DC01-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'certified-DC01-CA'
+[*] Checking web enrollment for CA 'certified-DC01-CA' @ 'DC01.certified.htb'
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : certified-DC01-CA
+    DNS Name                            : DC01.certified.htb
+    Certificate Subject                 : CN=certified-DC01-CA, DC=certified, DC=htb
+    Certificate Serial Number           : 36472F2C180FBB9B4983AD4D60CD5A9D
+    Certificate Validity Start          : 2024-05-13 15:33:41+00:00
+    Certificate Validity End            : 2124-05-13 15:43:41+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : CERTIFIED.HTB\Administrators
+      Access Rights
+        ManageCa                        : CERTIFIED.HTB\Administrators
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        ManageCertificates              : CERTIFIED.HTB\Administrators
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Enroll                          : CERTIFIED.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : CertifiedAuthentication
+    Display Name                        : Certified Authentication
+    Certificate Authorities             : certified-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : PublishToDs
+                                          AutoEnrollment
+                                          NoSecurityExtension
+    Extended Key Usage                  : Server Authentication
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1000 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-05-13T15:48:52+00:00
+    Template Last Modified              : 2024-05-13T15:55:20+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFIED.HTB\operator ca
+                                          CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFIED.HTB\Administrator
+        Full Control Principals         : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFIED.HTB\Domain Admins
+                                          CERTIFIED.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CERTIFIED.HTB\operator ca
+    [!] Vulnerabilities
+      ESC9                              : Template has no security extension.
+    [*] Remarks
+      ESC9                              : Other prerequisites may be required for this to be exploitable. See the wiki for more details.

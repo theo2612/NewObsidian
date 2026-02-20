@@ -3875,10 +3875,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#flags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Next Steps
+        Flags
       
     </span>
   </a>
@@ -25606,10 +25606,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#flags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Next Steps
+        Flags
       
     </span>
   </a>
@@ -25642,7 +25642,12 @@ reverse shell as www-data → database.json bcrypt hash →
 hashcat -m 3200 → mychemicalromance → SSH as amay →
 ss -tlnp → port 8080 internal → SSH tunnel (-L 9090:127.0.0.1:8080) →
 System Monitor app (HTTP Basic, amay creds reused) →
-command injection / path traversal in log analyzer? → in progress
+Burp intercept → log_file parameter (full path, unsanitized) →
+path traversal (/etc/shadow reads as root) →
+command injection (;id) → root flag leaked →
+reverse shell attempts failed (.bashrc exit) →
+SSH key injection via command injection →
+SSH as root → root flag ✅
 </code></pre></div>
 <h2 id="branch-points">Branch Points<a class="headerlink" href="#branch-points" title="Permanent link">&para;</a></h2>
 <ul>
@@ -25652,12 +25657,12 @@ command injection / path traversal in log analyzer? → in progress
 <li><strong>Password reuse:</strong> WonderCMS admin password <code>mychemicalromance</code> reused for SSH user <code>amay</code></li>
 <li><strong>Privesc path:</strong> No sudo, no SUID → <code>ss -tlnp</code> revealed internal port 8080 → System Monitor app</li>
 <li><strong>Password reuse again:</strong> amay:mychemicalromance worked for HTTP Basic Auth on internal app</li>
+<li><strong>Root access method:</strong> Path traversal confirmed root execution → command injection for RCE → reverse shell unstable → pivoted to SSH key injection for stable shell</li>
 </ul>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Intercept System Monitor form submissions to find injectable parameters</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Test command injection / path traversal in log file analyzer</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Get root flag</li>
+<h2 id="flags">Flags<a class="headerlink" href="#flags" title="Permanent link">&para;</a></h2>
+<ul>
+<li>User: ✅</li>
+<li>Root: ✅ <code>7fec1998c3419eb978cd445a6b819bcc</code></li>
 </ul>
 
 

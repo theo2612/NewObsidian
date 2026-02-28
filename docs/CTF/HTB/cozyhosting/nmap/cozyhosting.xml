@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Feb 21 12:21:06 2026 as: /usr/lib/nmap/nmap -&#45;privileged -p- -&#45;min-rate 3000 -Pn -oA nmap/cozyhosting 10.129.229.88 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -p- -&#45;min-rate 3000 -Pn -oA nmap/cozyhosting 10.129.229.88" start="1771694466" startstr="Sat Feb 21 12:21:06 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1771694467" endtime="1771694482"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.229.88" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="reset" count="65533" proto="tcp" ports="1-21,23-79,81-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="33866" rttvar="1601" to="100000"/>
+</host>
+<runstats><finished time="1771694482" timestr="Sat Feb 21 12:21:22 2026" summary="Nmap done at Sat Feb 21 12:21:22 2026; 1 IP address (1 host up) scanned in 15.86 seconds" elapsed="15.86" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
